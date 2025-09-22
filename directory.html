@@ -2,148 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Bee Planet Connection - Directory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Apiculture Directory | Bee Planet Connection</title>
-  <meta name="description" content="A curated directory of organizations supporting apiculture and beekeeping worldwide: associations, research institutes, NGOs, government agencies, and trade bodies.">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body { font-family: Georgia, serif; margin:0; background:#faf7f1; color:#333; }
-    header { text-align:center; padding:30px 20px; }
-    .intro { max-width:900px; margin:0 auto; padding:20px; font-size:1.1em; line-height:1.5; }
-    .filters { max-width:900px; margin:20px auto; display:flex; flex-wrap:wrap; gap:10px; }
-    select, input[type="text"] { padding:8px; border:1px solid #ccc; border-radius:6px; }
-    #directory-list { max-width:900px; margin:20px auto; display:grid; gap:16px; }
-    .card { background:#fff; border:1px solid #ddd; border-radius:10px; padding:16px; }
-    .card h3 { margin-top:0; }
-    .card a { color:#0645AD; text-decoration:none; }
-    .card a:hover { text-decoration:underline; }
-    footer { text-align:center; padding:20px; font-size:0.9em; background:#fff; border-top:1px solid #ddd; }
-  </style>
-
-  <!-- Schema.org JSON-LD for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Global Apiculture Directory",
-    "description": "Directory of organizations supporting apiculture worldwide: associations, research bodies, NGOs, and government units.",
-    "about": {
-      "@type": "Thing",
-      "name": "Apiculture"
-    }
-  }
-  </script>
 </head>
 <body>
   <header>
-    <h1>🌍 Global Apiculture Directory</h1>
-    <p class="lede">Connecting beekeepers, researchers, NGOs, and governments worldwide</p>
+    <h1>Bee Planet Connection Directory</h1>
+    <p>A global index of apiculture bodies, guidance &amp; news.</p>
   </header>
 
-  <section class="intro">
-    <p>
-      This directory collates key organizations that support apiculture in all its forms: 
-      honey bees, bumblebees, stingless bees, and solitary pollinators. 
-      Here you’ll find national beekeeper associations, research institutes, government agencies, NGOs, and trade bodies — 
-      from the United Kingdom to Europe and across the globe.
-    </p>
-    <p>
-      Use the filters below to explore by region or organization type, or simply search by name or keyword.
-    </p>
-  </section>
+  <main>
+    <section id="filters">
+      <label for="region">Filter by Region:</label>
+      <select id="region">
+        <option value="all">All</option>
+      </select>
 
-  <!-- Filters -->
-  <div class="filters">
-    <select id="filter-region">
-      <option value="">All Regions</option>
-      <option value="UK">United Kingdom</option>
-      <option value="Europe">Europe</option>
-      <option value="Global">Global</option>
-      <option value="Americas">Americas</option>
-      <option value="Asia">Asia</option>
-      <option value="Africa">Africa</option>
-      <option value="Oceania">Oceania</option>
-    </select>
+      <label for="type">Filter by Type:</label>
+      <select id="type">
+        <option value="all">All</option>
+      </select>
+    </section>
 
-    <select id="filter-type">
-      <option value="">All Types</option>
-      <option value="Association">Beekeepers Association</option>
-      <option value="Government">Government Agency</option>
-      <option value="NGO">NGO / Non-profit</option>
-      <option value="Research">Research / Academic</option>
-      <option value="Trade">Trade / Professional</option>
-    </select>
+    <section id="directory">
+      <p id="loading">Loading directory…</p>
+    </section>
+  </main>
 
-    <input type="text" id="search-box" placeholder="Search by name or keyword...">
-  </div>
-
-  <!-- Directory List -->
-  <div id="directory-list">
-    <p>Loading directory...</p>
-  </div>
-
-  <footer>
-    <p>© 2025 Bee Planet Connection · A nonprofit project supporting global apiculture.</p>
-  </footer>
-
-  <script>
+  <script defer>
     async function loadDirectory() {
+      const directoryEl = document.getElementById("directory");
+      const loadingEl = document.getElementById("loading");
+
       try {
-        const res = await fetch("data/directory.seed.json");
-        const data = await res.json();
-
-        const list = document.getElementById("directory-list");
-        const regionFilter = document.getElementById("filter-region");
-        const typeFilter = document.getElementById("filter-type");
-        const searchBox = document.getElementById("search-box");
-
-        function render() {
-          const regionVal = regionFilter.value.toLowerCase();
-          const typeVal = typeFilter.value.toLowerCase();
-          const searchVal = searchBox.value.toLowerCase();
-
-          const filtered = data.filter(item => {
-            const matchesRegion = !regionVal || (item.region && item.region.toLowerCase().includes(regionVal));
-            const matchesType = !typeVal || (item.type && item.type.toLowerCase().includes(typeVal));
-            const matchesSearch = !searchVal ||
-              item.name.toLowerCase().includes(searchVal) ||
-              (item.description && item.description.toLowerCase().includes(searchVal));
-            return matchesRegion && matchesType && matchesSearch;
-          });
-
-          list.innerHTML = "";
-          if (filtered.length === 0) {
-            list.innerHTML = "<p>No matching organizations found.</p>";
-            return;
-          }
-
-          filtered.forEach(item => {
-            const card = document.createElement("div");
-            card.className = "card";
-            card.innerHTML = `
-              <h3>${item.name}</h3>
-              <p><strong>Region:</strong> ${item.country || item.region}</p>
-              <p><strong>Type:</strong> ${item.type}</p>
-              <p>${item.description || ""}</p>
-              ${item.website ? `<p><a href="${item.website}" target="_blank">🌐 Visit website</a></p>` : ""}
-              ${item.contact ? `<p><strong>Contact:</strong> ${item.contact}</p>` : ""}
-            `;
-            list.appendChild(card);
-          });
+        const response = await fetch("data/directory.seed.json");
+        if (!response.ok) {
+          throw new Error(`HTTP error! ${response.status}`);
         }
 
-        regionFilter.addEventListener("change", render);
-        typeFilter.addEventListener("change", render);
-        searchBox.addEventListener("input", render);
+        const data = await response.json();
+        loadingEl.remove();
 
-        render();
+        if (!data || data.length === 0) {
+          directoryEl.innerHTML = "<p>No entries found.</p>";
+          return;
+        }
+
+        const list = document.createElement("ul");
+        data.forEach(entry => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <strong>${entry.name}</strong><br>
+            <em>${entry.region}</em> - ${entry.type}<br>
+            <a href="${entry.url}" target="_blank" rel="noopener noreferrer">${entry.url}</a>
+          `;
+          list.appendChild(li);
+        });
+        directoryEl.appendChild(list);
       } catch (err) {
-        document.getElementById("directory-list").innerHTML = "<p>Error loading directory data.</p>";
-        console.error(err);
+        loadingEl.textContent = `Error loading directory: ${err.message}`;
       }
     }
 
-    loadDirectory();
+    document.addEventListener("DOMContentLoaded", loadDirectory);
   </script>
 </body>
 </html>
