@@ -1,0 +1,94 @@
+{
+  "sections": [
+    "Directory",
+    "Knowledge",
+    "Health & Biosecurity",
+    "Habitat & Conservation",
+    "Policy & Regulation",
+    "Data & Maps",
+    "Events & Training",
+    "Blog"
+  ],
+  "directory_facets": {
+    "organisation_type": [
+      "Federation/Association",
+      "Government/Inspectorate",
+      "Research/Lab",
+      "NGO/Foundation",
+      "University",
+      "Standard/Code body",
+      "Certification/Program",
+      "Journal/Publisher",
+      "Data portal"
+    ],
+    "apiculture_scope": [
+      "Honey bee",
+      "Bumble bees",
+      "Stingless bees",
+      "Solitary bees"
+    ],
+    "audience": [
+      "Hobbyist",
+      "Sideline/Commercial",
+      "Researcher",
+      "Farmer/Grower",
+      "Educator",
+      "Policymaker",
+      "Urban beekeeping"
+    ],
+    "topics": [
+      "Varroa",
+      "AFB",
+      "EFB",
+      "Small Hive Beetle",
+      "Tropilaelaps",
+      "Nosema",
+      "Viruses",
+      "Nutrition/Forage",
+      "Genetics & Breeding",
+      "Queen rearing",
+      "Pesticides & risk",
+      "Biosecurity",
+      "Overwintering",
+      "Honey authenticity",
+      "Data",
+      "Policy",
+      "Habitat",
+      "Certification",
+      "Education",
+      "Surveillance",
+      "Industry",
+      "Events",
+      "Research",
+      "Journals",
+      "Methods"
+    ],
+    "geography": [
+      "Global",
+      "Africa",
+      "Americas",
+      "Asia",
+      "Europe",
+      "Oceania"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "pt",
+      "ar",
+      "zh",
+      "ru"
+    ]
+  },
+  "example_entity": {
+    "name": "Apimondia",
+    "type": "Federation/Association",
+    "areaServed": "Global",
+    "topics": ["Honey authenticity", "Policy"],
+    "url": "https://apimondia.org",
+    "languages": ["en", "fr", "es", "it", "de"],
+    "verified": "2025-09-22"
+  }
+}
