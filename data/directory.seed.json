@@ -1,38 +1,185 @@
 [
   {
-    "name": "British Beekeepers Association",
-    "region": "Europe",
-    "type": "National Association",
-    "url": "https://www.bbka.org.uk"
-  },
-  {
-    "name": "United States Department of Agriculture – Honey Bee Research",
-    "region": "North America",
-    "type": "Government Research",
-    "url": "https://www.ars.usda.gov/oc/br/bee-research/"
-  },
-  {
     "name": "Apimondia",
+    "type": "Federation/Association",
     "region": "Global",
-    "type": "Federation",
-    "url": "https://www.apimondia.org"
+    "country": "Global",
+    "scope": ["Honey bee"],
+    "topics": ["Policy", "Honey authenticity", "Events"],
+    "languages": ["en", "fr", "es", "it", "de"],
+    "url": "https://www.apimondia.org",
+    "description": "International federation of beekeepers’ associations; congresses, working groups, and policy statements.",
+    "verified": "2025-09-22"
   },
+  {
+    "name": "International Bee Research Association (IBRA)",
+    "type": "Journal/Publisher",
+    "region": "Europe",
+    "country": "United Kingdom",
+    "scope": ["Honey bee", "Bumble bees", "Stingless bees", "Solitary bees"],
+    "topics": ["Research", "Journals", "Methods"],
+    "languages": ["en"],
+    "url": "https://www.ibrabee.org",
+    "description": "Publishes Journal of Apicultural Research and Bee World; education and outreach.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "COLOSS Association",
+    "type": "Research/Lab",
+    "region": "Europe",
+    "country": "Switzerland",
+    "scope": ["Honey bee"],
+    "topics": ["Varroa", "AFB", "EFB", "Viruses", "Methods"],
+    "languages": ["en"],
+    "url": "https://coloss.org",
+    "description": "International research network on managed bee health; producer of the BEEBOOK methods.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "FAO – International Pollinators Initiative (IPI)",
+    "type": "International Organisation",
+    "region": "Global",
+    "country": "Global",
+    "scope": ["Honey bee", "Bumble bees", "Stingless bees", "Solitary bees"],
+    "topics": ["Policy", "Habitat", "Agriculture"],
+    "languages": ["en", "fr", "es", "ar", "zh", "ru"],
+    "url": "https://www.fao.org/pollination",
+    "description": "UN-level umbrella programme supporting pollinator-friendly agriculture and national strategies.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "EU Bee Partnership / EU Pollinator Hub",
+    "type": "Data portal",
+    "region": "Europe",
+    "country": "European Union",
+    "scope": ["Honey bee", "Bumble bees", "Solitary bees"],
+    "topics": ["Data", "Monitoring", "Policy"],
+    "languages": ["en"],
+    "url": "https://food.ec.europa.eu",
+    "description": "European collaboration sharing data on bee and pollinator health and pressures.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "National Bee Unit (BeeBase)",
+    "type": "Government/Inspectorate",
+    "region": "Europe",
+    "country": "United Kingdom",
+    "scope": ["Honey bee"],
+    "topics": ["Biosecurity", "AFB", "EFB", "SHB", "Surveillance"],
+    "languages": ["en"],
+    "url": "https://www.nationalbeeunit.com",
+    "description": "Statutory bee health service for England & Wales; guidance, alerts and notifiable diseases.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "American Beekeeping Federation (ABF)",
+    "type": "Federation/Association",
+    "region": "Americas",
+    "country": "United States",
+    "scope": ["Honey bee"],
+    "topics": ["Industry", "Policy", "Events"],
+    "languages": ["en"],
+    "url": "https://www.abfnet.org",
+    "description": "National industry body representing U.S. beekeepers; advocacy and annual conference.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "Canadian Honey Council (CHC)",
+    "type": "Federation/Association",
+    "region": "Americas",
+    "country": "Canada",
+    "scope": ["Honey bee"],
+    "topics": ["Industry", "Policy", "Biosecurity"],
+    "languages": ["en", "fr"],
+    "url": "https://honeycouncil.ca",
+    "description": "National industry association for Canadian beekeepers; resources and policy engagement.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "Pollinator Partnership (Bee Friendly Farming)",
+    "type": "Certification/Program",
+    "region": "Americas",
+    "country": "United States",
+    "scope": ["Honey bee", "Bumble bees", "Solitary bees"],
+    "topics": ["Habitat", "Certification", "Agriculture"],
+    "languages": ["en"],
+    "url": "https://www.pollinator.org",
+    "description": "Non-profit running habitat and education programs; Bee Friendly Farming certification for growers.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "Bee Informed Partnership",
+    "type": "Data portal",
+    "region": "Americas",
+    "country": "United States",
+    "scope": ["Honey bee"],
+    "topics": ["Data", "Surveys", "Management"],
+    "languages": ["en"],
+    "url": "https://beeinformed.org",
+    "description": "Long-running U.S. colony loss and management surveys plus extension resources.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "USDA-ARS Bee Research Labs",
+    "type": "Research/Lab",
+    "region": "Americas",
+    "country": "United States",
+    "scope": ["Honey bee"],
+    "topics": ["Varroa", "Nutrition", "Breeding", "Pathogens"],
+    "languages": ["en"],
+    "url": "https://www.ars.usda.gov",
+    "description": "U.S. federal research centers working on bee health, nutrition, genetics, and management.",
+    "verified": "2025-09-22"
+  },
+  {
+    "name": "British Beekeepers Association (BBKA)",
+    "type": "Federation/Association",
+    "region": "Europe",
+    "country": "United Kingdom",
+    "scope": ["Honey bee"],
+    "topics": ["Education", "Hobbyist", "Training"],
+    "languages": ["en"],
+    "url": "https://www.bbka.org.uk",
+    "description": "Charity supporting beekeeping education and local association network across England and Wales.",
+    "verified": "2025-09-22"
+  },
+
+  // --- Merged in from prior seed (not in your list) ---
+
   {
     "name": "Bee Life European Beekeeping Coordination",
-    "region": "Europe",
     "type": "NGO",
-    "url": "https://www.bee-life.eu"
+    "region": "Europe",
+    "country": "European Union",
+    "scope": ["Honey bee", "Bumble bees"],
+    "topics": ["Policy", "Advocacy"],
+    "languages": ["en"],
+    "url": "https://www.bee-life.eu",
+    "description": "EU-focused NGO coordinating beekeeping interests and policy advocacy.",
+    "verified": "2025-09-22"
   },
   {
-    "name": "Australian Honey Bee Industry Council",
-    "region": "Oceania",
+    "name": "Australian Honey Bee Industry Council (AHBIC)",
     "type": "Industry Body",
-    "url": "https://honeybee.org.au"
+    "region": "Oceania",
+    "country": "Australia",
+    "scope": ["Honey bee"],
+    "topics": ["Industry", "Policy", "Biosecurity"],
+    "languages": ["en"],
+    "url": "https://honeybee.org.au",
+    "description": "Peak industry body representing Australia's honey bee and pollination sectors.",
+    "verified": "2025-09-22"
   },
   {
-    "name": "Food and Agriculture Organization of the United Nations (FAO) – Apiculture",
-    "region": "Global",
+    "name": "FAO – Apiculture",
     "type": "International Organisation",
-    "url": "https://www.fao.org/apiculture"
+    "region": "Global",
+    "country": "Global",
+    "scope": ["Honey bee", "Bumble bees", "Stingless bees", "Solitary bees"],
+    "topics": ["Guidance", "Agriculture", "Policy"],
+    "languages": ["en"],
+    "url": "https://www.fao.org/apiculture",
+    "description": "FAO resources and guidance on apiculture within broader agricultural programmes.",
+    "verified": "2025-09-22"
   }
 ]
