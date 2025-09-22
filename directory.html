@@ -6,106 +6,148 @@
   <title>Apiculture Directory | Bee Planet Connection</title>
   <meta name="description" content="Browse and filter apiculture organisations, associations, and resources worldwide." />
   <style>
-    body { font-family: system-ui, sans-serif; margin: 0; background: #faf7f1; color: #333; }
-    header { background: #fff8e8; border-bottom: 1px solid #ddd; padding: 1rem; }
-    h1 { margin: 0; }
-    .filters { display: flex; flex-wrap: wrap; gap: 1rem; padding: 1rem; background: #fff; border-bottom: 1px solid #ddd; }
-    .filters select { padding: 0.5rem; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; padding: 1rem; }
-    .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
-    .card h2 { margin-top: 0; }
-    footer { text-align: center; padding: 2rem; color: #666; font-size: 0.9rem; }
+    :root{--paper:#faf7f1;--ink:#333;--line:#e0d7c6}
+    html,body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    header{background:#fff8e8;border-bottom:1px solid var(--line);padding:1rem}
+    h1{margin:0}
+    .filters{display:flex;flex-wrap:wrap;gap:.75rem;padding:1rem;background:#fff;border-bottom:1px solid var(--line)}
+    .filters select,.filters input{padding:.55rem .7rem;border:1px solid var(--line);border-radius:10px;background:#fff}
+    .filters input{min-width:220px}
+    .count{margin-left:auto;color:#6a645a}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;padding:1rem}
+    .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem}
+    .card h2{margin:.2rem 0 .3rem;font-size:1.05rem}
+    .meta{color:#6a645a;font-size:.9rem}
+    footer{text-align:center;padding:2rem;color:#6a645a;font-size:.9rem}
   </style>
+
+  <!-- Breadcrumbs (static) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://beeplanetconnection.org/"},
+      {"@type":"ListItem","position":2,"name":"Directory","item":"https://beeplanetconnection.org/directory.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
     <h1>Global Apiculture Directory</h1>
-    <p>Browse organisations and resources worldwide</p>
+    <p class="meta">Browse organisations and resources worldwide</p>
   </header>
 
   <section class="filters">
+    <input id="q" type="search" placeholder="Search name, topics, country…" aria-label="Search directory" />
     <select id="regionFilter"><option value="">All Regions</option></select>
     <select id="countryFilter"><option value="">All Countries</option></select>
     <select id="typeFilter"><option value="">All Types</option></select>
     <select id="scopeFilter"><option value="">All Scopes</option></select>
     <select id="topicFilter"><option value="">All Topics</option></select>
+    <span class="count" id="count">—</span>
   </section>
 
-  <main class="cards" id="cards"></main>
+  <main class="cards" id="cards" aria-live="polite"></main>
 
   <footer>
-    Bee Planet Connection © 2025 — Illustrations by E.H. Shepard (Public Domain)
+    Bee Planet Connection © 2025 — Illustrations by E. H. Shepard (Public Domain)
   </footer>
 
   <script>
-    async function loadJSON(url) {
-      const res = await fetch(url);
-      return await res.json();
+    async function loadJSON(url){ const r = await fetch(url); if(!r.ok) throw new Error("Fetch failed: "+url); return r.json(); }
+
+    function uniq(list){
+      return [...new Set(list.flatMap(v => Array.isArray(v) ? v : [v]).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b)));
     }
 
-    function createCard(item) {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <h2>${item.name}</h2>
-        <p><strong>Region:</strong> ${item.region || ''}</p>
-        <p><strong>Country:</strong> ${item.country || ''}</p>
-        <p><strong>Type:</strong> ${item.type || ''}</p>
-        <p><strong>Scope:</strong> ${item.scope || ''}</p>
-        <p><strong>Topics:</strong> ${item.topics ? item.topics.join(', ') : ''}</p>
-        <p><a href="${item.url}" target="_blank">Visit Website</a></p>
+    function optionize(selectId, values){
+      const sel = document.getElementById(selectId);
+      values.forEach(v => { const o=document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o); });
+    }
+
+    function matches(item, state){
+      const blob = (item.name+" "+item.description+" "+item.country+" "+(item.topics||[]).join(" ")).toLowerCase();
+      if(state.q && !blob.includes(state.q.toLowerCase())) return false;
+      if(state.region && item.region !== state.region) return false;
+      if(state.country && item.country !== state.country) return false;
+      if(state.type && item.type !== state.type) return false;
+      if(state.scope && !(item.scope||[]).includes(state.scope)) return false;
+      if(state.topic && !(item.topics||[]).includes(state.topic)) return false;
+      return true;
+    }
+
+    function cardHTML(item){
+      return `
+        <article class="card">
+          <h2><a href="${item.url}" target="_blank" rel="noopener">${item.name}</a></h2>
+          <p class="meta">${item.type} · ${item.country}${item.region && item.region!=='Global' ? ' ('+item.region+')' : ''}</p>
+          <p>${item.description || ''}</p>
+          <p class="meta"><strong>Scope:</strong> ${(item.scope||[]).join(', ') || '—'}</p>
+          <p class="meta"><strong>Topics:</strong> ${(item.topics||[]).join(', ') || '—'}</p>
+        </article>
       `;
-      return card;
     }
 
-    function populateFilters(data, field, elementId) {
-      const select = document.getElementById(elementId);
-      const options = [...new Set(data.map(d => d[field]).flat().filter(Boolean))].sort();
-      for (const opt of options) {
-        const optionEl = document.createElement('option');
-        optionEl.value = opt;
-        optionEl.textContent = opt;
-        select.appendChild(optionEl);
-      }
+    // Emit JSON-LD for current results (ItemList + per-item Organization)
+    function emitJSONLD(list){
+      // ItemList
+      const itemList = {
+        "@context":"https://schema.org",
+        "@type":"ItemList",
+        "itemListElement": list.map((it,i)=>({
+          "@type":"ListItem",
+          "position": i+1,
+          "url": it.url
+        }))
+      };
+
+      // Organizations
+      const orgs = list.map(it => ({
+        "@context":"https://schema.org",
+        "@type":"Organization",
+        "name": it.name,
+        "url": it.url,
+        "areaServed": it.country || it.region || "Global",
+        "knowsAbout": (it.topics || []).slice(0,8),
+        "description": it.description || undefined
+      }));
+
+      // Replace or create tag
+      let tag = document.getElementById('ld-results');
+      if(!tag){ tag = document.createElement('script'); tag.type='application/ld+json'; tag.id='ld-results'; document.body.appendChild(tag); }
+      tag.textContent = JSON.stringify([itemList, ...orgs]);
     }
 
-    function filterData(data) {
-      const region = document.getElementById('regionFilter').value;
-      const country = document.getElementById('countryFilter').value;
-      const type = document.getElementById('typeFilter').value;
-      const scope = document.getElementById('scopeFilter').value;
-      const topic = document.getElementById('topicFilter').value;
-
-      return data.filter(d =>
-        (!region || d.region === region) &&
-        (!country || d.country === country) &&
-        (!type || d.type === type) &&
-        (!scope || d.scope === scope) &&
-        (!topic || (d.topics && d.topics.includes(topic)))
-      );
-    }
-
-    async function init() {
+    (async function init(){
       const data = await loadJSON('./data/directory.seed.json');
 
-      populateFilters(data, 'region', 'regionFilter');
-      populateFilters(data, 'country', 'countryFilter');
-      populateFilters(data, 'type', 'typeFilter');
-      populateFilters(data, 'scope', 'scopeFilter');
-      populateFilters(data, 'topics', 'topicFilter');
+      // Build filter options
+      optionize('regionFilter',  uniq(data.map(d=>d.region)));
+      optionize('countryFilter', uniq(data.map(d=>d.country)));
+      optionize('typeFilter',    uniq(data.map(d=>d.type)));
+      optionize('scopeFilter',   uniq(data.map(d=>d.scope || [])));
+      optionize('topicFilter',   uniq(data.map(d=>d.topics || [])));
 
-      function render() {
-        const cards = document.getElementById('cards');
-        cards.innerHTML = '';
-        const filtered = filterData(data);
-        filtered.forEach(item => cards.appendChild(createCard(item)));
-      }
+      const state = { q:'', region:'', country:'', type:'', scope:'', topic:'' };
 
-      document.querySelectorAll('.filters select').forEach(sel => sel.addEventListener('change', render));
+      const render = () => {
+        const list = data.filter(d => matches(d, state));
+        document.getElementById('cards').innerHTML = list.map(cardHTML).join('');
+        document.getElementById('count').textContent = `${list.length} result${list.length===1?'':'s'}`;
+        emitJSONLD(list);
+      };
+
+      // Bind controls
+      document.getElementById('q').addEventListener('input', e => { state.q = e.target.value; render(); });
+      ['region','country','type','scope','topic'].forEach(key=>{
+        document.getElementById(key+'Filter').addEventListener('change', e => { state[key] = e.target.value; render(); });
+      });
+
       render();
-    }
-
-    init();
+    })();
   </script>
 </body>
 </html>
+
