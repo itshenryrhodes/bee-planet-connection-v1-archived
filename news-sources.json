@@ -1,0 +1,18 @@
+{
+  "feeds": [
+    "https://www.pollinator.org/blog?format=rss",
+    "https://www.eea.europa.eu/en/newsroom/newsroom-rss",
+    "https://environment.ec.europa.eu/news_en?format=rss"
+  ],
+  "pages": [
+    "https://www.apimondia.org/latest.html",
+    "https://coloss.org/tag/bee-health/"
+  ],
+  "allow_domains": [
+    "pollinator.org",
+    "eea.europa.eu",
+    "environment.ec.europa.eu",
+    "apimondia.org",
+    "coloss.org"
+  ]
+}
