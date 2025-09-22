@@ -1,153 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apiculture Directory | Bee Planet Connection</title>
-  <meta name="description" content="Browse and filter apiculture organisations, associations, and resources worldwide." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Apiculture Directory | Bee Planet Connection</title>
+  <meta name="description" content="A curated directory of organizations supporting apiculture and beekeeping worldwide: associations, research institutes, NGOs, government agencies, and trade bodies.">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    :root{--paper:#faf7f1;--ink:#333;--line:#e0d7c6}
-    html,body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif}
-    header{background:#fff8e8;border-bottom:1px solid var(--line);padding:1rem}
-    h1{margin:0}
-    .filters{display:flex;flex-wrap:wrap;gap:.75rem;padding:1rem;background:#fff;border-bottom:1px solid var(--line)}
-    .filters select,.filters input{padding:.55rem .7rem;border:1px solid var(--line);border-radius:10px;background:#fff}
-    .filters input{min-width:220px}
-    .count{margin-left:auto;color:#6a645a}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;padding:1rem}
-    .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem}
-    .card h2{margin:.2rem 0 .3rem;font-size:1.05rem}
-    .meta{color:#6a645a;font-size:.9rem}
-    footer{text-align:center;padding:2rem;color:#6a645a;font-size:.9rem}
+    body { font-family: Georgia, serif; margin:0; background:#faf7f1; color:#333; }
+    header { text-align:center; padding:30px 20px; }
+    .intro { max-width:900px; margin:0 auto; padding:20px; font-size:1.1em; line-height:1.5; }
+    .filters { max-width:900px; margin:20px auto; display:flex; flex-wrap:wrap; gap:10px; }
+    select, input[type="text"] { padding:8px; border:1px solid #ccc; border-radius:6px; }
+    #directory-list { max-width:900px; margin:20px auto; display:grid; gap:16px; }
+    .card { background:#fff; border:1px solid #ddd; border-radius:10px; padding:16px; }
+    .card h3 { margin-top:0; }
+    .card a { color:#0645AD; text-decoration:none; }
+    .card a:hover { text-decoration:underline; }
+    footer { text-align:center; padding:20px; font-size:0.9em; background:#fff; border-top:1px solid #ddd; }
   </style>
 
-  <!-- Breadcrumbs (static) -->
+  <!-- Schema.org JSON-LD for SEO -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://beeplanetconnection.org/"},
-      {"@type":"ListItem","position":2,"name":"Directory","item":"https://beeplanetconnection.org/directory.html"}
-    ]
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Global Apiculture Directory",
+    "description": "Directory of organizations supporting apiculture worldwide: associations, research bodies, NGOs, and government units.",
+    "about": {
+      "@type": "Thing",
+      "name": "Apiculture"
+    }
   }
   </script>
 </head>
 <body>
   <header>
-    <h1>Global Apiculture Directory</h1>
-    <p class="meta">Browse organisations and resources worldwide</p>
+    <h1>🌍 Global Apiculture Directory</h1>
+    <p class="lede">Connecting beekeepers, researchers, NGOs, and governments worldwide</p>
   </header>
 
-  <section class="filters">
-    <input id="q" type="search" placeholder="Search name, topics, country…" aria-label="Search directory" />
-    <select id="regionFilter"><option value="">All Regions</option></select>
-    <select id="countryFilter"><option value="">All Countries</option></select>
-    <select id="typeFilter"><option value="">All Types</option></select>
-    <select id="scopeFilter"><option value="">All Scopes</option></select>
-    <select id="topicFilter"><option value="">All Topics</option></select>
-    <span class="count" id="count">—</span>
+  <section class="intro">
+    <p>
+      This directory collates key organizations that support apiculture in all its forms: 
+      honey bees, bumblebees, stingless bees, and solitary pollinators. 
+      Here you’ll find national beekeeper associations, research institutes, government agencies, NGOs, and trade bodies — 
+      from the United Kingdom to Europe and across the globe.
+    </p>
+    <p>
+      Use the filters below to explore by region or organization type, or simply search by name or keyword.
+    </p>
   </section>
 
-  <main class="cards" id="cards" aria-live="polite"></main>
+  <!-- Filters -->
+  <div class="filters">
+    <select id="filter-region">
+      <option value="">All Regions</option>
+      <option value="UK">United Kingdom</option>
+      <option value="Europe">Europe</option>
+      <option value="Global">Global</option>
+      <option value="Americas">Americas</option>
+      <option value="Asia">Asia</option>
+      <option value="Africa">Africa</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+
+    <select id="filter-type">
+      <option value="">All Types</option>
+      <option value="Association">Beekeepers Association</option>
+      <option value="Government">Government Agency</option>
+      <option value="NGO">NGO / Non-profit</option>
+      <option value="Research">Research / Academic</option>
+      <option value="Trade">Trade / Professional</option>
+    </select>
+
+    <input type="text" id="search-box" placeholder="Search by name or keyword...">
+  </div>
+
+  <!-- Directory List -->
+  <div id="directory-list">
+    <p>Loading directory...</p>
+  </div>
 
   <footer>
-    Bee Planet Connection © 2025 — Illustrations by E. H. Shepard (Public Domain)
+    <p>© 2025 Bee Planet Connection · A nonprofit project supporting global apiculture.</p>
   </footer>
 
   <script>
-    async function loadJSON(url){ const r = await fetch(url); if(!r.ok) throw new Error("Fetch failed: "+url); return r.json(); }
+    async function loadDirectory() {
+      try {
+        const res = await fetch("data/directory.seed.json");
+        const data = await res.json();
 
-    function uniq(list){
-      return [...new Set(list.flatMap(v => Array.isArray(v) ? v : [v]).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b)));
+        const list = document.getElementById("directory-list");
+        const regionFilter = document.getElementById("filter-region");
+        const typeFilter = document.getElementById("filter-type");
+        const searchBox = document.getElementById("search-box");
+
+        function render() {
+          const regionVal = regionFilter.value.toLowerCase();
+          const typeVal = typeFilter.value.toLowerCase();
+          const searchVal = searchBox.value.toLowerCase();
+
+          const filtered = data.filter(item => {
+            const matchesRegion = !regionVal || (item.region && item.region.toLowerCase().includes(regionVal));
+            const matchesType = !typeVal || (item.type && item.type.toLowerCase().includes(typeVal));
+            const matchesSearch = !searchVal ||
+              item.name.toLowerCase().includes(searchVal) ||
+              (item.description && item.description.toLowerCase().includes(searchVal));
+            return matchesRegion && matchesType && matchesSearch;
+          });
+
+          list.innerHTML = "";
+          if (filtered.length === 0) {
+            list.innerHTML = "<p>No matching organizations found.</p>";
+            return;
+          }
+
+          filtered.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+              <h3>${item.name}</h3>
+              <p><strong>Region:</strong> ${item.country || item.region}</p>
+              <p><strong>Type:</strong> ${item.type}</p>
+              <p>${item.description || ""}</p>
+              ${item.website ? `<p><a href="${item.website}" target="_blank">🌐 Visit website</a></p>` : ""}
+              ${item.contact ? `<p><strong>Contact:</strong> ${item.contact}</p>` : ""}
+            `;
+            list.appendChild(card);
+          });
+        }
+
+        regionFilter.addEventListener("change", render);
+        typeFilter.addEventListener("change", render);
+        searchBox.addEventListener("input", render);
+
+        render();
+      } catch (err) {
+        document.getElementById("directory-list").innerHTML = "<p>Error loading directory data.</p>";
+        console.error(err);
+      }
     }
 
-    function optionize(selectId, values){
-      const sel = document.getElementById(selectId);
-      values.forEach(v => { const o=document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o); });
-    }
-
-    function matches(item, state){
-      const blob = (item.name+" "+item.description+" "+item.country+" "+(item.topics||[]).join(" ")).toLowerCase();
-      if(state.q && !blob.includes(state.q.toLowerCase())) return false;
-      if(state.region && item.region !== state.region) return false;
-      if(state.country && item.country !== state.country) return false;
-      if(state.type && item.type !== state.type) return false;
-      if(state.scope && !(item.scope||[]).includes(state.scope)) return false;
-      if(state.topic && !(item.topics||[]).includes(state.topic)) return false;
-      return true;
-    }
-
-    function cardHTML(item){
-      return `
-        <article class="card">
-          <h2><a href="${item.url}" target="_blank" rel="noopener">${item.name}</a></h2>
-          <p class="meta">${item.type} · ${item.country}${item.region && item.region!=='Global' ? ' ('+item.region+')' : ''}</p>
-          <p>${item.description || ''}</p>
-          <p class="meta"><strong>Scope:</strong> ${(item.scope||[]).join(', ') || '—'}</p>
-          <p class="meta"><strong>Topics:</strong> ${(item.topics||[]).join(', ') || '—'}</p>
-        </article>
-      `;
-    }
-
-    // Emit JSON-LD for current results (ItemList + per-item Organization)
-    function emitJSONLD(list){
-      // ItemList
-      const itemList = {
-        "@context":"https://schema.org",
-        "@type":"ItemList",
-        "itemListElement": list.map((it,i)=>({
-          "@type":"ListItem",
-          "position": i+1,
-          "url": it.url
-        }))
-      };
-
-      // Organizations
-      const orgs = list.map(it => ({
-        "@context":"https://schema.org",
-        "@type":"Organization",
-        "name": it.name,
-        "url": it.url,
-        "areaServed": it.country || it.region || "Global",
-        "knowsAbout": (it.topics || []).slice(0,8),
-        "description": it.description || undefined
-      }));
-
-      // Replace or create tag
-      let tag = document.getElementById('ld-results');
-      if(!tag){ tag = document.createElement('script'); tag.type='application/ld+json'; tag.id='ld-results'; document.body.appendChild(tag); }
-      tag.textContent = JSON.stringify([itemList, ...orgs]);
-    }
-
-    (async function init(){
-      const data = await loadJSON('./data/directory.seed.json');
-
-      // Build filter options
-      optionize('regionFilter',  uniq(data.map(d=>d.region)));
-      optionize('countryFilter', uniq(data.map(d=>d.country)));
-      optionize('typeFilter',    uniq(data.map(d=>d.type)));
-      optionize('scopeFilter',   uniq(data.map(d=>d.scope || [])));
-      optionize('topicFilter',   uniq(data.map(d=>d.topics || [])));
-
-      const state = { q:'', region:'', country:'', type:'', scope:'', topic:'' };
-
-      const render = () => {
-        const list = data.filter(d => matches(d, state));
-        document.getElementById('cards').innerHTML = list.map(cardHTML).join('');
-        document.getElementById('count').textContent = `${list.length} result${list.length===1?'':'s'}`;
-        emitJSONLD(list);
-      };
-
-      // Bind controls
-      document.getElementById('q').addEventListener('input', e => { state.q = e.target.value; render(); });
-      ['region','country','type','scope','topic'].forEach(key=>{
-        document.getElementById(key+'Filter').addEventListener('change', e => { state[key] = e.target.value; render(); });
-      });
-
-      render();
-    })();
+    loadDirectory();
   </script>
 </body>
 </html>
-
