@@ -1,55 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bee Planet Connection</title>
-  <meta name="description" content="A global, neutral index of apiculture bodies, guidance and news." />
-  <link rel="icon" href="/img/pooh/pooh_172.webp">
+  <meta name="description" content="Bee Planet Connection – global nonprofit connecting apiculture resources, professional bodies, and beekeeping knowledge worldwide.">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    :root{--ink:#3a3327;--leaf:#506c4f;--paper:#faf7f1;--line:#e7dcc7;--maxw:960px}
-    html,body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
-    header{background:linear-gradient(180deg,#fff8e8,transparent);border-bottom:1px solid #e9e1d2}
-    h1{font:700 40px/1.1 Georgia,serif;margin:0}
-    p.lede{color:#6f6759}
-    nav{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 0}
-    nav a{padding:10px 12px;border:1px dashed var(--line);border-radius:999px;background:#fff;text-decoration:none;color:var(--ink);font-weight:600}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
-    .muted{color:#7a7060;font-size:14px}
-    footer{padding:24px;color:#7a7060;text-align:center}
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      background: #faf7f1;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    nav a:hover {
+      background: #f1efe9;
+      transform: translateY(-2px);
+    }
+    section.hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #faf7f1;
+    }
+    section.hero img {
+      max-width: 640px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #fff;
+      border-top: 1px solid #ddd;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>Bee Planet Connection</h1>
-      <p class="lede">A global, neutral index of apiculture bodies, guidance & news.</p>
-      <nav>
-        <a href="/directory.html">Directory</a>
-        <a href="/design-preview.html">Design Preview</a>
-      </nav>
-    </div>
+    <h1>🐝 Bee Planet Connection</h1>
+    <p>A nonprofit hub for global apiculture resources and knowledge sharing</p>
   </header>
 
-  <main class="wrap">
-    <section class="grid">
-      <article class="card">
-        <h2>Explore the Directory</h2>
-        <p class="muted">Browse verified organisations by region, type, scope and topics.</p>
-        <p><a href="/directory.html">Open Directory →</a></p>
-      </article>
-      <article class="card">
-        <h2>See the Look & Feel</h2>
-        <p class="muted">Preview the Winnie-the-Pooh (E. H. Shepard) design elements.</p>
-        <p><a href="/design-preview.html">Open Design Preview →</a></p>
-      </article>
-    </section>
-  </main>
+  <!-- Hero Image -->
+  <section class="hero">
+    <img 
+      src="/img/pooh/pooh-hero.webp" 
+      alt="Colourised illustration of Winnie-the-Pooh and Christopher Robin">
+  </section>
+
+  <!-- Navigation Cards -->
+  <nav>
+    <a href="directory.html">🌍 Global Directory</a>
+    <a href="design-preview.html">🎨 Design Preview</a>
+    <a href="blog.html">📰 Blog & News</a>
+    <a href="about.html">💡 About</a>
+  </nav>
 
   <footer>
-    Illustrations by E. H. Shepard (1926/1928), public domain in the United States.
+    <p>© 2025 Bee Planet Connection. A nonprofit project supporting global apiculture.</p>
   </footer>
 </body>
 </html>
