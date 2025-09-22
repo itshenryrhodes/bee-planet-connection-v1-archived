@@ -22,27 +22,19 @@ def slugify(s):
 def classify_tags(title, summary, source):
     text = f"{title} {summary}".lower()
     tags = set()
-    # topics
     if any(k in text for k in ["varroa", "mite"]): tags.add("varroa")
     if any(k in text for k in ["foulbrood","afb","efb"]): tags.add("foulbrood")
-    if "honey fraud" in text or "adulteration" in text: tags.add("honey-authenticity")
-    if "policy" in text or "regulation" in text or "eu vote" in text: tags.add("policy")
-    if "habitat" in text or "forage" in text or "flower" in text or "biodiversity" in text: tags.add("habitat")
-    if "training" in text or "workshop" in text or "course" in text: tags.add("training")
-    if "survey" in text or "data" in text or "report" in text: tags.add("data")
-    if "stingless" in text or "meliponi" in text: tags.add("stingless-bees")
+    if "policy" in text or "regulation" in text: tags.add("policy")
+    if "habitat" in text or "forage" in text: tags.add("habitat")
+    if "training" in text or "workshop" in text: tags.add("training")
+    if "stingless" in text: tags.add("stingless-bees")
     if "bumble" in text: tags.add("bumblebees")
-    if "solitary" in text or "osm" in text or "megachile" in text: tags.add("solitary-bees")
-
-    # sources → regions
+    if "solitary" in text: tags.add("solitary-bees")
     netloc = source.replace("www.","")
-    if any(k in netloc for k in ["eea.europa.eu","environment.ec.europa.eu","apimondia.org","coloss.org"]):
-        tags.add("europe")
-        tags.add("global") if "apimondia" in netloc else None
-    if "pollinator.org" in netloc:
-        tags.add("americas")
-
-    # default
+    if "pollinator.org" in netloc: tags.add("americas")
+    if "eea.europa.eu" in netloc or "environment.ec.europa.eu" in netloc: tags.add("europe")
+    if "apimondia.org" in netloc: tags.add("global")
+    if "coloss.org" in netloc: tags.add("europe")
     if not tags: tags.add("general")
     return sorted(tags)
 
@@ -64,7 +56,6 @@ def fetch_feed(url):
     return items
 
 def scrape_latest(url):
-    """Headline scrape for sources without RSS (keeps to allowed domains)."""
     r = requests.get(url, timeout=25)
     r.raise_for_status()
     doc = html.fromstring(r.text)
@@ -91,8 +82,7 @@ def scrape_latest(url):
 def write_link_post(item):
     slug = f"{item['date']}-{slugify(item['title'])}"
     path = os.path.join(POSTS_DIR, f"{slug}.md")
-    if os.path.exists(path):
-        return None
+    if os.path.exists(path): return None
     fm = {
         "title": item['title'],
         "date": item['date'],
@@ -100,21 +90,18 @@ def write_link_post(item):
         "link": item['url'],
         "tags": item.get("tags", [])
     }
-    # YAML front matter
     lines = ["---"]
     for k,v in fm.items():
         if isinstance(v, list):
             lines.append(f"{k}: [{', '.join(v)}]")
         else:
             safe = str(v).replace('"','\\"')
-            lines.append(f'{k}: "{safe}"' if k in ("title","source","link") else f"{k}: {safe}")
+            lines.append(f'{k}: "{safe}"')
     lines.append("---\n")
     body = (item['summary'] or "").strip()
-    if body:
-        lines.append(body+"\n")
-    lines.append(f"> Read at **{item['source']}** → {item['url']}\n")
-    with open(path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+    if body: lines.append(body+"\\n")
+    lines.append(f"> Read at **{item['source']}** → {item['url']}\\n")
+    with open(path, "w", encoding="utf-8") as f: f.write("\\n".join(lines))
     return path
 
 def build_index_json(items):
@@ -140,10 +127,9 @@ def build_site_rss(items, site="https://beeplanetconnection.org"):
         rss.append("</item>")
     rss.append("</channel></rss>")
     with open(os.path.join(BLOG_DIR, "feed.xml"), "w", encoding="utf-8") as f:
-        f.write("\n".join(rss))
+        f.write("\\n".join(rss))
 
 def build_posts_schema(items, site="https://beeplanetconnection.org"):
-    """Write a JSON-LD array with BlogPosting objects for the latest items."""
     items.sort(key=lambda x: x["date"], reverse=True)
     latest = items[:40]
     schema = []
@@ -156,17 +142,9 @@ def build_posts_schema(items, site="https://beeplanetconnection.org"):
             "dateModified": it["date"],
             "url": it["url"],
             "mainEntityOfPage": f"{site}/blog/",
-            "isPartOf": {
-                "@type": "Blog",
-                "name": "Bee Planet Connection News",
-                "url": f"{site}/blog/"
-            },
+            "isPartOf": {"@type": "Blog","name": "Bee Planet Connection News","url": f"{site}/blog/"},
             "keywords": ", ".join(it.get("tags", [])),
-            "publisher": {
-                "@type": "Organization",
-                "name": "Bee Planet Connection",
-                "url": site
-            }
+            "publisher": {"@type": "Organization","name": "Bee Planet Connection","url": site}
         })
     with open(os.path.join(POSTS_DIR, "schema.jsonld"), "w", encoding="utf-8") as f:
         json.dump(schema, f, ensure_ascii=False, indent=2)
@@ -174,29 +152,20 @@ def build_posts_schema(items, site="https://beeplanetconnection.org"):
 # --- main ---
 all_items = []
 for u in CFG.get("feeds", []):
-    try:
-        all_items += fetch_feed(u)
-    except Exception as e:
-        print("Feed error:", u, e)
-
+    try: all_items += fetch_feed(u)
+    except Exception as e: print("Feed error:", u, e)
 for u in CFG.get("pages", []):
-    try:
-        all_items += scrape_latest(u)
-    except Exception as e:
-        print("Scrape error:", u, e)
+    try: all_items += scrape_latest(u)
+    except Exception as e: print("Scrape error:", u, e)
 
-# de-duplicate by URL
-seen = set()
-unique = []
+# Deduplicate by URL
+seen, unique = set(), []
 for it in all_items:
-    if not it.get("url") or it["url"] in seen:
-        continue
+    if not it.get("url") or it["url"] in seen: continue
     seen.add(it["url"])
     unique.append(it)
 
-for it in unique:
-    write_link_post(it)
-
+for it in unique: write_link_post(it)
 build_index_json(unique)
 build_site_rss(unique)
 build_posts_schema(unique)
