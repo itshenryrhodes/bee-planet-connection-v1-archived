@@ -1,0 +1,45 @@
+{
+  "name": "Bee Planet Connection",
+  "short_name": "Bee Planet",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F7F7EE",
+  "theme_color": "#228B22",
+  "description": "Connecting people, bees and knowledge — practical guides, research, and resources for pollinator health.",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "science", "reference"],
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Wiki",
+      "short_name": "Wiki",
+      "url": "/wiki/"
+    },
+    {
+      "name": "Read Blog",
+      "short_name": "Blog",
+      "url": "/blog.html"
+    },
+    {
+      "name": "Directory",
+      "short_name": "Directory",
+      "url": "/directory.html"
+    }
+  ],
+  "prefer_related_applications": false
+}
