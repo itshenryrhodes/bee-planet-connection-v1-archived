@@ -4,14 +4,10 @@ title: Directory
 description: Global apiculture organisations, associations and resources.
 ---
 
-<section class="hero" role="banner" aria-label="Directory hero">
-  <div class="hero-bg" style="background-image:url('{{ '/img/hero-directory.jpg' | relative_url }}')"></div>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <h1>Apiculture Directory</h1>
-    <p class="lead">Explore organisations, federations, and research bodies working to protect pollinators worldwide.</p>
-  </div>
-</section>
+{% include hero.html
+   title="Apiculture Directory"
+   subtitle="Explore organisations, federations, and research bodies working to protect pollinators worldwide."
+   fallback="directory" %}
 
 <section class="section">
   <div class="container">
