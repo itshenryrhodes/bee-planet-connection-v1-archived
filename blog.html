@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Bee Planet Connection — Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Updates from Bee Planet Connection: apiculture resources, research notes, and project milestones." />
+  <link rel="canonical" href="https://www.beeplanetconnection.org/blog.html" />
+  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate" type="application/rss+xml" title="Bee Planet Connection — RSS" href="/feed.xml" />
+  <meta property="og:title" content="Bee Planet Connection — Blog" />
+  <meta property="og:description" content="News, notes, and resources from the Bee Planet Connection project." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.beeplanetconnection.org/blog.html" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand">Bee Planet Connection</a>
+      <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/directory.html">Directory</a>
+        <a href="/knowledge-apiculture.html">Knowledge</a>
+        <a class="active" href="/blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Blog</h1>
+    <p class="page-intro">Short updates on apiculture research, site changes, and project notes.</p>
+
+    <noscript>
+      <div class="post-card" style="border-left:4px solid #f59e0b">
+        JavaScript is disabled. Enable it to view the posts list. You can still <a href="/blog/2025-09-23-welcome.html">read the welcome post here</a>.
+      </div>
+    </noscript>
+
+    <div id="error-box" class="post-card" style="display:none; border-left:4px solid #ef4444; color:#ef4444;"></div>
+    <div id="posts-list" class="posts-list" role="list"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Bee Planet Connection</small>
+    </div>
+  </footer>
+
+  <!-- Cache-bust posts.js to avoid stale CDN -->
+  <script>
+    (function loadPostsScript() {
+      const s = document.createElement('script');
+      const v = new Date().toISOString().slice(0,10).replace(/-/g,''); // yyyymmdd
+      s.src = "/blog/posts.js?v=" + v;
+      s.async = true;
+      s.onerror = function() {
+        const box = document.getElementById('error-box');
+        box.style.display = 'block';
+        box.innerHTML = '<strong>Error:</strong> Could not load <code>/blog/posts.js</code>. Check that the file exists at <code>blog/posts.js</code> (no leading slash in GitHub path), then refresh.';
+      };
+      document.head.appendChild(s);
+    })();
+  </script>
+
+  <script>
+    (function() {
+      function render(posts) {
+        const el = document.getElementById('posts-list');
+        if (!posts || !posts.length) {
+          el.innerHTML = '<p>No posts yet. Coming soon.</p>';
+          return;
+        }
+        const sorted = posts.slice().sort((a,b) => b.date.localeCompare(a.date));
+        el.innerHTML = sorted.map(p => `
+          <article class="post-card" role="listitem">
+            <h2 class="post-title"><a href="${p.url}">${p.title}</a></h2>
+            <div class="post-meta">
+              <time datetime="${p.date}">${new Date(p.date).toLocaleDateString('en-GB', { year:'numeric', month:'long', day:'numeric' })}</time>
+              ${p.tags && p.tags.length ? ` · <span class="tags">${p.tags.map(t=>`<span class="tag">#${t}</span>`).join(' ')}</span>` : ''}
+            </div>
+            ${p.excerpt ? `<p class="post-excerpt">${p.excerpt}</p>` : ''}
+            <p><a class="post-read" href="${p.url}">Read more →</a></p>
+          </article>
+        `).join('');
+      }
+
+      // Wait briefly for posts.js; then render or show a helpful message
+      function tryRender() {
+        try {
+          if (window.BPC_POSTS) {
+            render(window.BPC_POSTS);
+          } else {
+            document.getElementById('posts-list').innerHTML = '<p>Loading posts… If this message persists, ensure <code>/blog/posts.js</code> defines <code>window.BPC_POSTS</code>.</p>';
+          }
+        } catch (e) {
+          const box = document.getElementById('error-box');
+          box.style.display = 'block';
+          box.innerHTML = '<strong>Render error:</strong> ' + e.message;
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('year').textContent = new Date().getFullYear();
+        setTimeout(tryRender, 200);
+      });
+    })();
+  </script>
+</body>
+</html>
