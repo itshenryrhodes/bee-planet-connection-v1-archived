@@ -1,9 +1,36 @@
 title: Bee Planet Connection
 description: Connecting people, bees and knowledge
-permalink: pretty
+url: https://www.beeplanetconnection.org
+
+# Keep .html URLs so existing links work
+permalink: none
+
 markdown: kramdown
-theme: null
-plugins: []
+
+# GA4 (set from your tag)
+google_analytics_id: G-NGF4SB4DL0
+
+# GitHub Pages–approved plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Collections (optional: move wiki pages into _wiki later)
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:name/
+
+# Sensible defaults
+defaults:
+  - scope: { path: "" }
+    values:
+      layout: default
+      image: /img/social-share.png
+
+# Exclusions
 exclude:
   - README.md
   - LICENSE
