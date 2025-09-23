@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wiki Index | Bee Planet Connection</title>
+  <meta name="description" content="Searchable index of all Bee Planet Connection wiki articles." />
+  <link rel="canonical" href="https://www.beeplanetconnection.org/wiki/wiki.html" />
+  <style>
+    :root { --ink:#0b1020; --muted:#6b7280; --line:#e5e7eb; --bg:#f8fafc; --card:#ffffff; }
+    * { box-sizing:border-box }
+    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Inter,sans-serif; color:var(--ink); line-height:1.6; }
+    header { background:var(--bg); border-bottom:1px solid var(--line); }
+    header .wrap, main { max-width:1100px; margin:0 auto; padding:1rem 1.25rem; }
+    h1 { margin:.25rem 0 .25rem; font-size:1.7rem; }
+    nav a { color:#0a58ca; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    .meta { color:var(--muted); font-size:.92rem; }
+    .search { margin:.6rem 0 1rem; display:flex; gap:.5rem; align-items:center; }
+    .search input { flex:1; padding:.65rem .75rem; border:1px solid var(--line); border-radius:.6rem; }
+    .count { color:var(--muted); font-size:.92rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:.6rem .9rem; }
+    .tile { border:1px solid var(--line); border-radius:.7rem; background:#fff; padding:.6rem .7rem; }
+    .tile a { text-decoration:none; color:#0a58ca; display:block; font-weight:600; }
+    .tile .url { font-size:.85rem; color:var(--muted); word-break:break-all; margin-top:.15rem; }
+    .empty { padding:1rem; border:1px dashed var(--line); border-radius:.7rem; background:#fff; }
+    footer { border-top:1px solid var(--line); margin-top:1.25rem; background:var(--bg); }
+    footer .wrap { max-width:1100px; margin:0 auto; padding:1rem 1.25rem; font-size:.95rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav><a href="../index.html">Home</a> · <a href="../knowledge-apiculture.html">Knowledge Base</a> · <a href="../sitemap.xml">Sitemap</a></nav>
+      <h1>Wiki Index</h1>
+      <p class="meta">Last updated: 2025-09-23 · This index auto-loads pages from <code>/wiki/</code> listed in the site sitemap.</p>
+      <div class="search">
+        <input id="q" type="search" placeholder="Type to filter topics…" aria-label="Filter topics" />
+        <span class="count" id="count">Loading…</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid" id="grid" aria-live="polite" aria-busy="true"></div>
+    <div class="empty" id="empty" style="display:none">
+      No wiki pages found yet under <code>/wiki/</code>. If you’ve just moved articles, they’ll appear here once <code>sitemap.xml</code> includes them. You can still reach legacy articles from the root via the <a href="../sitemap.xml">sitemap</a>.
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © Bee Planet Connection · <a href="../robots.txt">robots.txt</a> · <a href="../feed.xml">RSS</a>
+    </div>
+  </footer>
+
+  <script>
+    (async function() {
+      const grid = document.getElementById('grid');
+      const empty = document.getElementById('empty');
+      const count = document.getElementById('count');
+      const input = document.getElementById('q');
+
+      function titleFromUrl(u) {
+        try {
+          const path = new URL(u, location.href).pathname;
+          const file = path.split('/').pop() || '';
+          const base = file.replace(/\.(html?|md)$/i, '');
+          return base.replace(/[-_]+/g, ' ')
+                     .replace(/\b\w/g, c => c.toUpperCase());
+        } catch { return u; }
+      }
+
+      function render(items) {
+        grid.innerHTML = '';
+        for (const it of items) {
+          const div = document.createElement('div');
+          div.className = 'tile';
+          div.innerHTML = `<a href="${it.loc}">${it.title}</a><div class="url">${it.loc}</div>`;
+          grid.appendChild(div);
+        }
+        count.textContent = `${items.length} page${items.length === 1 ? '' : 's'}`;
+        document.querySelector('main .grid').setAttribute('aria-busy', 'false');
+        empty.style.display = items.length ? 'none' : '';
+      }
+
+      async function load() {
+        try {
+          const res = await fetch('../sitemap.xml', { cache: 'no-store' });
+          const text = await res.text();
+          const xml = new DOMParser().parseFromString(text, 'application/xml');
+          const urls = Array.from(xml.querySelectorAll('url > loc'))
+            .map(n => n.textContent.trim())
+            .filter(loc => /\/wiki\//.test(loc) && /\.(html?|htm)$/i.test(loc));
+          const items = urls.map(loc => ({ loc, title: titleFromUrl(loc) }))
+                            .sort((a,b) => a.title.localeCompare(b.title));
+          render(items);
+
+          input.addEventListener('input', () => {
+            const q = input.value.trim().toLowerCase();
+            const filtered = items.filter(it => it.title.toLowerCase().includes(q));
+            render(filtered);
+          });
+        } catch (e) {
+          console.error(e);
+          count.textContent = 'Error loading index';
+          render([]);
+        }
+      }
+
+      load();
+    })();
+  </script>
+</body>
+</html>
