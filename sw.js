@@ -9,14 +9,10 @@ const BPC_STATIC_CACHE = `${BPC_CACHE_VERSION}-static`;
 const BPC_PAGES_CACHE  = `${BPC_CACHE_VERSION}-pages`;
 
 const CORE_ASSETS = [
-  '/',                      // shell
-  '/index.html',
-  '/blog.html',
-  '/directory.html',
-  '/about.html',
-  '/contact.html',
-  '/thanks.html',
-  '/privacy.html',
+  '/', '/index.html',
+  '/blog.html', '/directory.html',
+  '/about.html', '/contact.html',
+  '/thanks.html', '/privacy.html',
   '/accessibility.html',
   '/assets/css/tokens-forest-honey.css',
   '/assets/css/site.css',
@@ -28,10 +24,9 @@ const CORE_ASSETS = [
   '/img/icon-192.png',
   '/img/icon-512.png',
   '/manifest.webmanifest',
-  '/sitemap.xml',
-  '/feed.xml',
+  '/sitemap.xml', '/feed.xml',
 
-  // Precache Pooh hero images for all sections
+  // Precache Pooh hero images
   '/img/pooh/pooh-hero.webp',
   '/img/pooh/pooh_091.webp',
   '/img/pooh/pooh_094-1.webp',
@@ -70,7 +65,7 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-// Helper: cache-first for static assets
+// Cache-first for static assets
 async function cacheFirst(req) {
   const cache = await caches.open(BPC_STATIC_CACHE);
   const cached = await cache.match(req);
@@ -80,11 +75,11 @@ async function cacheFirst(req) {
     if (res && res.ok) cache.put(req, res.clone());
     return res;
   } catch (e) {
-    return cached; // fallback
+    return cached;
   }
 }
 
-// Helper: network-first for pages (HTML)
+// Network-first for HTML pages
 async function networkFirst(req) {
   const cache = await caches.open(BPC_PAGES_CACHE);
   try {
@@ -102,17 +97,14 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // Only handle same-origin requests
   if (url.origin !== location.origin) return;
 
-  // HTML navigations -> network-first
   if (request.mode === 'navigate' ||
       (request.headers.get('accept') || '').includes('text/html')) {
     event.respondWith(networkFirst(request));
     return;
   }
 
-  // Static assets: CSS/JS/Images/Web Manifest -> cache-first
   if (/\.(?:css|js|png|jpg|jpeg|webp|svg|ico|xml|json)$/.test(url.pathname)) {
     event.respondWith(cacheFirst(request));
     return;
