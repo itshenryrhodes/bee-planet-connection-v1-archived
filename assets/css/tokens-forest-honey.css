@@ -1,0 +1,31 @@
+:root{
+  /* Core brand */
+  --bp-forest:#228B22;   /* primary */
+  --bp-honey:#EDBC4E;    /* accent */
+  --bp-earth:#8B6528;    /* secondary */
+
+  /* Neutrals & text */
+  --bp-ivory:#F7F7EE;    /* background */
+  --bp-white:#FFFFFF;
+  --bp-charcoal:#333333; /* body text */
+
+  /* States */
+  --bp-success:#2E8B57;
+  --bp-info:#2F6FED;
+  --bp-warning:#C28A2E;
+  --bp-danger:#A3362E;
+
+  /* Elevation & radii */
+  --radius-lg:18px;
+  --radius-md:14px;
+  --radius-sm:10px;
+  --shadow-1:0 6px 20px rgba(0,0,0,.12);
+  --shadow-2:0 10px 30px rgba(0,0,0,.16);
+
+  /* Layout & type */
+  --container:1200px;
+  --font-sans: system-ui,-apple-system,Segoe UI,Roboto,Inter,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  --fz-500: 1.125rem;
+  --fz-700: clamp(1.6rem, 1.5vw + 1rem, 2.4rem);
+  --fz-800: clamp(2rem, 2.8vw + 1rem, 3.5rem);
+}
