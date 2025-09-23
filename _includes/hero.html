@@ -1,28 +1,40 @@
-{%- assign fallback_kind = include.fallback | default: 'default' -%}
-{%- capture fallback_image -%}
-  {%- if fallback_kind == 'blog' -%}/img/hero-blog.jpg
-  {%- elsif fallback_kind == 'wiki' -%}/img/hero-wiki.jpg
-  {%- elsif fallback_kind == 'directory' -%}/img/hero-directory.jpg
-  {%- elsif fallback_kind == 'knowledge' -%}/img/hero-knowledge.jpg
-  {%- else -%}/img/hero.jpg{%- endif -%}
-{%- endcapture -%}
+{%- assign key = page.hero_key | default: include.key -%}
+{%- assign page_images = page.hero_images -%}
+{%- assign data_set = site.data.heroes[key] -%}
+{%- assign images = page_images | default: data_set.images -%}
+{%- assign overlay = page.hero_overlay | default: data_set.overlay | default: 'dark' -%}
+{%- assign ctas = page.hero_cta | default: data_set.cta -%}
 
-<section class="hero" role="banner" aria-label="{{ include.title | default: site.title }}">
-  {%- if include.hero -%}
-    <div class="hero-bg" style="background-image:url('{{ include.hero | relative_url }}')"></div>
-  {%- else -%}
-    <div class="hero-bg" style="background-image:url('{{ fallback_image | strip | relative_url }}')"></div>
-  {%- endif -%}
-  <div class="hero-overlay"></div>
+{%- if images and images.size > 0 -%}
+  {%- comment -%}
+    Generate a "random" index from site build time and page path.
+    This ensures a different image may be chosen on refresh or per page,
+    but remains stable during a single render.
+  {%- endcomment -%}
+  {%- assign seed = site.time | date: "%s" | plus: page.url | size -%}
+  {%- assign random_index = seed | modulo: images.size -%}
+  {%- assign chosen = images[random_index] -%}
+{%- else -%}
+  {%- assign chosen = "/img/pooh/pooh-hero.webp" -%} <!-- fallback -->
+{%- endif -%}
+
+<section class="hero" role="banner" aria-label="{{ include.title | default: page.title | default: site.title }}">
+  <div class="hero-slide is-active" style="background-image:url('{{ chosen | relative_url }}')"></div>
+
+  <div class="hero-overlay hero-overlay--{{ overlay }}"></div>
+
   <div class="container hero-content">
-    <h1>{{ include.title | default: site.title }}</h1>
-    {%- if include.subtitle -%}
-      <p class="lead">{{ include.subtitle }}</p>
+    <h1>{{ include.title | default: page.title | default: site.title }}</h1>
+    {%- if include.subtitle or page.description -%}
+      <p class="lead">{{ include.subtitle | default: page.description }}</p>
     {%- endif -%}
-    {%- if include.cta_href and include.cta_label -%}
-      <div class="hero-ctas">
-        <a class="btn btn--accent" href="{{ include.cta_href | relative_url }}">{{ include.cta_label }}</a>
-      </div>
+    {%- if ctas and ctas.size > 0 -%}
+    <div class="hero-ctas">
+      {%- for c in ctas -%}
+        {%- assign variant = c.variant | default: 'accent' -%}
+        <a class="btn btn--{{ variant }}" href="{{ c.href | relative_url }}">{{ c.label }}</a>
+      {%- endfor -%}
+    </div>
     {%- endif -%}
   </div>
 </section>
