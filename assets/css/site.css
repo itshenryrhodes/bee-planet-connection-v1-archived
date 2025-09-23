@@ -28,8 +28,23 @@ body{
 }
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--brand)}
-.brand img{display:block;border-radius:8px}
 .brand span{font-weight:700;letter-spacing:.2px}
+
+/* Exact logo sizing */
+.brand img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Slightly smaller logo on narrow screens */
+@media (max-width: 520px){
+  .brand img{
+    width: 32px;
+    height: 32px;
+  }
+}
 
 .menu-toggle{display:none;background:transparent;border:1px solid #e6eee9;border-radius:10px;padding:6px 10px}
 .site-nav{display:flex;gap:12px;align-items:center}
