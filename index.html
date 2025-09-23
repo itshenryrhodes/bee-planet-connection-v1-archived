@@ -58,9 +58,17 @@
       </ul>
     </section>
 
-    <section>
+    <section id="latest" style="margin-top: 28px;">
+      <h2>Latest post</h2>
+      <div id="latest-post" class="post-card">
+        <p>Loading latest post…</p>
+      </div>
+      <p style="margin-top: 8px;"><a class="post-read" href="/blog.html">View all posts →</a></p>
+    </section>
+
+    <section style="margin-top: 28px;">
       <h2>About</h2>
-      <p>Bee Planet Connection is an independent project built to make apiculture resources easier to find and share.  
+      <p>Bee Planet Connection is an independent project built to make apiculture resources easier to find and share.
       From international federations like <a href="https://www.apimondia.org" target="_blank" rel="noopener">Apimondia</a> to specialist publishers such as <a href="https://www.ibrabee.org" target="_blank" rel="noopener">IBRA</a>, our aim is to curate links that matter.</p>
     </section>
   </main>
@@ -70,8 +78,39 @@
       <small>© <span id="year"></span> Bee Planet Connection</small>
     </div>
   </footer>
+
+  <!-- Bring in the posts list and render the newest one -->
+  <script src="/blog/posts.js"></script>
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+      const target = document.getElementById('latest-post');
+      function renderLatest(posts) {
+        if (!posts || !posts.length) {
+          target.innerHTML = '<p>No posts yet. <a href="/blog.html">Visit the blog →</a></p>';
+          return;
+        }
+        const sorted = posts.slice().sort((a, b) => b.date.localeCompare(a.date));
+        const p = sorted[0];
+        const dateStr = new Date(p.date).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+        target.innerHTML = `
+          <h3 class="post-title" style="margin-top:0"><a href="${p.url}">${p.title}</a></h3>
+          <div class="post-meta">
+            <time datetime="${p.date}">${dateStr}</time>
+            ${p.tags && p.tags.length ? ` · <span class="tags">${p.tags.map(t => `<span class="tag">#${t}</span>`).join(' ')}</span>` : ''}
+          </div>
+          ${p.excerpt ? `<p class="post-excerpt">${p.excerpt}</p>` : ''}
+          <p><a class="post-read" href="${p.url}">Read more →</a></p>
+        `;
+      }
+      // If posts.js loaded and set window.BPC_POSTS, render.
+      if (window.BPC_POSTS) {
+        renderLatest(window.BPC_POSTS);
+      } else {
+        // Fallback in case posts.js didn't populate yet.
+        target.innerHTML = '<p><a href="/blog.html">View the blog →</a></p>';
+      }
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
   </script>
 </body>
 </html>
