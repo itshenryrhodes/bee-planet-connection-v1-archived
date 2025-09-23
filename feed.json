@@ -1,0 +1,18 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Bee Planet Connection",
+  "home_page_url": "https://www.beeplanetconnection.org/",
+  "feed_url": "https://www.beeplanetconnection.org/feed.json",
+  "description": "Apiculture resources, research notes, and project milestones.",
+  "language": "en-GB",
+  "items": [
+    {
+      "id": "https://www.beeplanetconnection.org/blog/2025-09-23-welcome.html",
+      "url": "https://www.beeplanetconnection.org/blog/2025-09-23-welcome.html",
+      "title": "Welcome — why Bee Planet Connection exists",
+      "content_text": "A quick hello and what we’re building with Bee Planet Connection: a clean, curated hub for apiculture.",
+      "date_published": "2025-09-23T07:00:00Z",
+      "tags": ["apiculture", "project"]
+    }
+  ]
+}
