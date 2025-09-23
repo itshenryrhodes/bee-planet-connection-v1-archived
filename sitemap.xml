@@ -1,18 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.beeplanetconnection.org/</loc>
-  </url>
-  <url>
-    <loc>https://www.beeplanetconnection.org/directory.html</loc>
-  </url>
-  <url>
-    <loc>https://www.beeplanetconnection.org/knowledge-apiculture.html</loc>
-  </url>
-  <url>
-    <loc>https://www.beeplanetconnection.org/blog.html</loc>
-  </url>
-  <url>
-    <loc>https://www.beeplanetconnection.org/blog/2025-09-23-welcome.html</loc>
-  </url>
+
+  <!-- Core pages -->
+  <url><loc>https://www.beeplanetconnection.org/</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/blog.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/directory.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/knowledge-apiculture.html</loc></url>
+
+  <!-- Wiki pages (canonicals only) -->
+  <url><loc>https://www.beeplanetconnection.org/wiki/apiary-setup.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/apis-mellifera-subspecies.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-culture-and-tradition.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-education-and-outreach.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-friendly-planting-guides.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-physiology.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-poisonings-and-incidents.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-products-and-health.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-products-economics.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-research-and-publications.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bee-taxonomy-and-evolution.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/beekeeping-and-climate-change.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/beekeeping-tools-and-protective-gear.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bees-and-biodiversity.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/bees-in-agriculture.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/behaviour-and-communication.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/breeding-and-genetics.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/brood-diseases-overview.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/caste-and-lifecycle.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/colony-biosecurity-and-hygiene.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/colony-collapse-disorder.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/disease-management-strategies.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/ethics-and-welfare.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/extraction-filtration-and-cream-honey.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/feeding-strategies.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/forage-by-season.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/forage-ecology.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/foulbroods-and-nosema.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/frames-foundation-and-supers.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/history-of-beekeeping.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/history-of-honey-hunting.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/hive-microbiome.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/hive-types.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/honey-adulteration-and-testing.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/honey-bee-species-and-lineages.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/honey-in-culture-and-religion.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/honey-types-and-characteristics.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/hygienic-behaviour-and-breeding.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/inspections-and-records.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/insulation-and-ventilation.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/international-trade-and-honey-markets.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/migratory-beekeeping.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/pesticide-exposure-and-mitigation.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/pesticides-and-regulation.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/planting-guides-and-seed-mixes.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/pollination-contracts.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/propolis-pollen-and-royal-jelly.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/queen-health-and-requeening.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/small-hive-beetle-and-tropilaelaps.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/stress-and-heat-management.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/swarm-control.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/traditional-hives-and-practices.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/urban-beekeeping.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/urban-vs-rural-forage.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/varroa-destructor-and-ipm.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/viruses-in-honey-bees.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/water-sources-and-microclimate.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/wax-rendering-and-uses.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/wild-pollinators.html</loc></url>
+
 </urlset>
