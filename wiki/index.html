@@ -1,36 +1,23 @@
-<!-- wiki/index.html -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Wiki · Bee Planet Connection</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preload" href="/assets/css/site.css" as="style">
-  <link rel="stylesheet" href="/assets/css/site.css">
-</head>
-<body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/directory.html">Directory</a>
-      <a aria-current="page" href="/wiki/">Wiki</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
-  </header>
+---
+layout: default
+title: Wiki · Bee Planet Connection
+description: Reference articles spanning bee biology, beekeeping practice, flora, and policy.
+---
 
-  <main class="container">
+<section class="section" aria-label="Wiki">
+  <div class="container">
     <h1>Bee Planet Wiki</h1>
-    <p>Browse articles across apiculture topics:</p>
-    <ul>
-      <li><a href="/wiki/bee-products-in-modern-pharmacology.html">Bee Products in Modern Pharmacology</a></li>
-      <!-- Add new wiki articles here as you create them -->
-    </ul>
-  </main>
+    <p>Browse articles across apiculture topics. We’re expanding this section rapidly — check back often.</p>
 
-  <footer class="site-footer">
-    <p>&copy; Bee Planet Connection</p>
-  </footer>
-</body>
-</html>
+    <h2>Featured</h2>
+    <ul>
+      <!-- Add your wiki articles here as they’re created under /wiki/ -->
+      <!-- Example stubs — create these pages next so the deep links on home can target them -->
+      <li><a href="{{ '/wiki/bee-physiology.html' | relative_url }}">Bee Physiology</a></li>
+      <li><a href="{{ '/wiki/bee-friendly-planting-guides.html' | relative_url }}">Bee-friendly Planting Guides</a></li>
+      <li><a href="{{ '/wiki/apiary-setup.html' | relative_url }}">Apiary Setup</a></li>
+    </ul>
+
+    <p>Looking for the directory? Head to <a href="{{ '/directory.html' | relative_url }}">Apiculture Directory</a>.</p>
+  </div>
+</section>
