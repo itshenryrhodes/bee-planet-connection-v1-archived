@@ -1,67 +1,25 @@
 ---
 layout: default
 title: Blog
-description: News, research and commentary from Bee Planet Connection.
+description: Fresh research and seasonal updates from Bee Planet Connection.
+hero_key: blog
 ---
 
-<!-- Hero -->
-<section class="hero" role="banner" aria-label="Blog hero">
-  <div class="hero-bg" style="background-image:url('{{ '/img/hero-blog.jpg' | relative_url }}')"></div>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <h1>Bee Planet Blog</h1>
-    <p class="lead">Fresh research, seasonal updates, and stories from the world of bees and beekeepers.</p>
-    <div class="hero-ctas">
-      <a class="btn btn--accent" href="{{ '/wiki/wiki.html' | relative_url }}">Explore the Wiki</a>
-      <a class="btn btn--light" href="{{ '/' | relative_url }}">Back to Home</a>
-    </div>
-  </div>
-</section>
+{% include hero.html
+   key=page.hero_key
+   title="Bee Planet Blog"
+   subtitle="Research highlights, seasonal tips and current affairs in apiculture." %}
 
-<!-- Latest Posts -->
 <section class="section">
   <div class="container">
-    <div class="section-head">
-      <h2>Latest posts</h2>
-      <p>New and notable from our team and community.</p>
-    </div>
-
-    <div class="cards">
-      <!-- Post card 1 -->
-      <article class="card">
-        <div class="card-head"><h3><a href="{{ '/blog/2025-09-23-colony-loss-research.html' | relative_url }}" style="color:#fff; text-decoration:none;">Colony Loss Research</a></h3></div>
-        <div class="card-body">
-          <p>A roundup of colony loss research and what it means for beekeepers.</p>
-          <p><a href="{{ '/blog/2025-09-23-colony-loss-research.html' | relative_url }}">Read post →</a></p>
-        </div>
-      </article>
-
-      <!-- Post card 2 -->
-      <article class="card">
-        <div class="card-head"><h3><a href="{{ '/blog/2025-09-23-honey-authenticity-guide.html' | relative_url }}" style="color:#fff; text-decoration:none;">Honey Authenticity Guide</a></h3></div>
-        <div class="card-body">
-          <p>How to think about honey authenticity and common testing approaches.</p>
-          <p><a href="{{ '/blog/2025-09-23-honey-authenticity-guide.html' | relative_url }}">Read post →</a></p>
-        </div>
-      </article>
-
-      <!-- Post card 3 -->
-      <article class="card">
-        <div class="card-head"><h3><a href="{{ '/blog/2025-09-23-welcome.htm' | relative_url }}" style="color:#fff; text-decoration:none;">Welcome</a></h3></div>
-        <div class="card-body">
-          <p>A short welcome note to Bee Planet Connection.</p>
-          <p><a href="{{ '/blog/2025-09-23-welcome.htm' | relative_url }}">Read post →</a></p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Band -->
-<section class="cta-band" aria-label="Stay updated">
-  <div class="container cta-inner">
-    <h2>Stay in the loop</h2>
-    <p>New research, seasonal tips and practical how-tos — straight to your inbox.</p>
-    <a class="btn btn--dark" href="{{ '/' | relative_url }}">Back to Home</a>
+    <h2>Latest posts</h2>
+    <ul>
+      {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+        </li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS →</a></p>
   </div>
 </section>
