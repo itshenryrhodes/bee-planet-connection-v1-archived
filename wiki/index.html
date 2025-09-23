@@ -1,19 +1,84 @@
 ---
 layout: default
-title: Wiki · Bee Planet Connection
-description: Reference articles spanning bee biology, beekeeping practice, flora, and policy.
+title: Bee Planet Connection
+description: Connecting people, bees and knowledge — practical guides, research, and resources for beekeeping and pollinator health.
+hero_key: home
 ---
 
-<section class="section" aria-label="Wiki">
-  <h1>Bee Planet Wiki</h1>
-  <p>Browse articles across apiculture topics. We’re expanding this section rapidly — check back often.</p>
+{% include hero.html
+   key=page.hero_key
+   title="Connecting people, bees and knowledge"
+   subtitle="Practical guides, research, and resources for better beekeeping and thriving pollinator habitats."
+   image="/img/hero/home.jpg"
+   image_alt="Illustration of beekeeper with hive smoker"
+   cta_href="/blog.html"
+   cta_label="See latest posts"
+%}
 
-  <h2>Featured</h2>
-  <ul>
-    <li><a href="{{ '/wiki/bee-physiology.html' | relative_url }}">Bee Physiology</a></li>
-    <li><a href="{{ '/wiki/bee-friendly-planting-guides.html' | relative_url }}">Bee-friendly Planting Guides</a></li>
-    <li><a href="{{ '/wiki/apiary-setup.html' | relative_url }}">Apiary Setup</a></li>
-  </ul>
+<section id="get-started" class="section section--cards" aria-label="Featured resources">
+  <div class="container">
+    <div class="section-head">
+      <h2>Quick links</h2>
+      <p>Jump straight into popular topics and resources.</p>
+    </div>
 
-  <p>Looking for the directory? Head to <a href="{{ '/directory.html' | relative_url }}">Apiculture Directory</a>.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-head"><h3>Bee Physiology</h3></div>
+        <div class="card-body">
+          <p>Understand anatomy, behaviour and lifecycle — the bedrock of good husbandry.</p>
+          <p><a href="{{ '/wiki/bee-physiology.html' | relative_url }}">Open article →</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Planting Guides</h3></div>
+        <div class="card-body">
+          <p>Create nectar-rich spaces with year-round forage, from balconies to orchards.</p>
+          <p><a href="{{ '/wiki/bee-friendly-planting-guides.html' | relative_url }}">Open article →</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Apiary Setup</h3></div>
+        <div class="card-body">
+          <p>Site selection, equipment and layout — set up safely and sustainably.</p>
+          <p><a href="{{ '/wiki/apiary-setup.html' | relative_url }}">Open article →</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Apiculture Directory</h3></div>
+        <div class="card-body">
+          <p>Explore organisations, federations and research bodies supporting pollinators worldwide.</p>
+          <p><a href="{{ '/directory.html' | relative_url }}">Open directory →</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Latest Blog Posts</h3></div>
+        <div class="card-body">
+          <p>Fresh research and seasonal updates from our editorial team.</p>
+          <p><a href="{{ '/blog.html' | relative_url }}">Open blog →</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
+
+<section class="cta-band" aria-label="Stay updated">
+  <div class="container cta-inner">
+    <h2>Stay in the loop</h2>
+    <p>New research, seasonal tips and practical how-tos — straight to your inbox.</p>
+    <a class="btn btn--dark" href="{{ '/blog.html' | relative_url }}">See latest posts</a>
+  </div>
+</section>
+
+<!-- Register Service Worker -->
+<script>
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
+      .then(reg => console.log("Service Worker registered:", reg.scope))
+      .catch(err => console.error("Service Worker registration failed:", err));
+  }
+</script>
