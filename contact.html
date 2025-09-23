@@ -45,7 +45,6 @@ hero_key: community
           <input type="text" name="company" tabindex="-1" autocomplete="off" />
         </label>
 
-        <!-- Submission metadata -->
         <input type="hidden" name="page_url" value="{{ page.url | absolute_url }}">
         <input type="hidden" name="site" value="{{ site.title }}">
 
@@ -76,7 +75,6 @@ hero_key: community
 </div>
 
 <script>
-  // Form backend endpoint (Formspree)
   const BPC_FORM_ENDPOINT = "https://formspree.io/f/myznywvv";
 
   (function(){
@@ -90,43 +88,35 @@ hero_key: community
     }
 
     if(!form) return;
-
     const startedAt = Date.now();
 
     form.addEventListener('submit', async (e)=>{
       e.preventDefault();
       setStatus('', true);
-
       const fd = new FormData(form);
 
-      // Honeypot check
       if((fd.get('company')||'').trim() !== '') {
-        // Pretend success to bots
         showFlashThenRedirect();
         return;
       }
 
-      // Time-trap (≥ 3s)
       if(Date.now() - startedAt < 3000){
         setStatus('Please take a moment to complete the form.', false);
         return;
       }
 
-      // Validity
       if(!form.checkValidity()){
         setStatus('Please complete all required fields.', false);
         form.reportValidity();
         return;
       }
 
-      // Rate limit (local, 1 per 60s)
       const last = Number(localStorage.getItem('bpc-last-submit')||0);
       if(Date.now() - last < 60000){
         setStatus('Please wait a moment before sending another message.', false);
         return;
       }
 
-      // Payload expected by Formspree
       const payload = Object.fromEntries(fd.entries());
 
       try{
@@ -151,10 +141,9 @@ hero_key: community
       if(flash){
         flash.removeAttribute('aria-hidden');
         flash.classList.add('show');
-        // brief pause for the tick animation, then redirect
         setTimeout(function(){
           window.location.href = "{{ '/thanks.html' | relative_url }}";
-        }, 900); // ~0.9s for a snappy feel
+        }, 900);
       }else{
         window.location.href = "{{ '/thanks.html' | relative_url }}";
       }
@@ -163,7 +152,6 @@ hero_key: community
 </script>
 
 <style>
-  /* Form UI */
   #bpc-contact input, #bpc-contact textarea{
     width:100%; padding:.7rem .8rem; border:1.5px solid rgba(0,0,0,.15);
     border-radius:12px; background:#fff; color:var(--bp-charcoal);
@@ -173,8 +161,6 @@ hero_key: community
   }
   #bpc-contact label span{ display:block; font-weight:600; margin-bottom:.25rem; }
   #bpc-contact .hp{ position:absolute; left:-9999px; }
-
-  /* Success Flash Overlay */
   #bpc-flash{
     position: fixed; inset: 0; display: none; align-items: center; justify-content: center;
     background: rgba(0,0,0,.25); z-index: 9999;
