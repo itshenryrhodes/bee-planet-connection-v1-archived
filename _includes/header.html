@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Bee Planet Connection home">
+      <span class="brand-mark">🐝</span>
+      <span class="brand-text">{{ site.title }}</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="{{ '/blog.html' | relative_url }}">Blog</a>
+      <a href="{{ '/directory.html' | relative_url }}">Directory</a>
+      <a href="{{ '/wiki/wiki.html' | relative_url }}">Wiki</a>
+      <a class="btn btn--outline" href="{{ '#get-started' | relative_url }}">Get started</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </div>
+</header>
