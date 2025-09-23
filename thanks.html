@@ -1,0 +1,28 @@
+---
+layout: default
+title: Thanks
+description: Thank you for getting in touch with Bee Planet Connection.
+hero_key: community
+---
+
+{% include hero.html
+   key=page.hero_key
+   title="Message sent"
+   subtitle="Thanks for reaching out — we’ll be in touch soon." %}
+
+<section class="section">
+  <div class="container">
+    <p>Your message has been received. We aim to respond within a couple of working days.</p>
+    <p>
+      In the meantime you might like to explore:
+    </p>
+    <ul>
+      <li><a href="{{ '/wiki/' | relative_url }}">Our Wiki</a> — practical and educational resources</li>
+      <li><a href="{{ '/blog.html' | relative_url }}">Our Blog</a> — research highlights and seasonal updates</li>
+      <li><a href="{{ '/directory.html' | relative_url }}">The Directory</a> — organisations and journals worldwide</li>
+    </ul>
+    <p>
+      <a class="btn btn--accent" href="{{ '/' | relative_url }}">Back to Home</a>
+    </p>
+  </div>
+</section>
