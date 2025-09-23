@@ -16,7 +16,7 @@
   </footer>
 
   <script>
-    // basic menu toggle (no framework)
+    // Basic menu toggle (no framework)
     const btn = document.querySelector('.menu-toggle');
     const menu = document.getElementById('site-menu');
     if (btn && menu) {
@@ -28,27 +28,27 @@
     }
   </script>
 
-  <!-- Register Service Worker (force fresh fetch & clear logs) -->
+  <!-- Register Service Worker with detailed logs -->
   <script>
     (function(){
       if (!('serviceWorker' in navigator)) {
-        console.warn('[BPC] SW not supported in this browser.');
+        console.warn('[BPC] Service Worker not supported in this browser.');
         return;
       }
-      // Force a fresh fetch of sw.js by adding a version query (prevents stale SW script)
+
+      // Add a version query string to avoid stale SW caching
       var swUrl = '{{ "/sw.js" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}';
 
       window.addEventListener('load', function(){
         navigator.serviceWorker.register(swUrl, { scope: '/' })
           .then(function(reg){
-            console.log('[BPC] SW registered:', reg.scope);
-            // Optional: log when it’s ready/active
-            navigator.serviceWorker.ready.then(function(r){
-              console.log('[BPC] SW ready:', r.active && r.active.state);
-            });
+            console.log('[BPC] Service Worker registered with scope:', reg.scope);
+            if (reg.installing) console.log('[BPC] SW state: installing');
+            if (reg.waiting) console.log('[BPC] SW state: waiting');
+            if (reg.active) console.log('[BPC] SW state: active');
           })
           .catch(function(err){
-            console.error('[BPC] SW registration failed:', err);
+            console.error('[BPC] Service Worker registration failed:', err);
           });
       });
     })();
