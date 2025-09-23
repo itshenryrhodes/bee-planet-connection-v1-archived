@@ -1,77 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Knowledge — Bee Planet Connection</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Knowledge resources for apiculture: methods, journals, and trusted research links curated by Bee Planet Connection." />
-  <link rel="canonical" href="https://www.beeplanetconnection.org/knowledge-apiculture.html" />
-  <link rel="stylesheet" href="/css/site.css" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="alternate" type="application/rss+xml" title="Bee Planet Connection — RSS" href="/feed.xml" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Knowledge — Bee Planet Connection" />
-  <meta property="og:description" content="Methods, journals, and research resources for apiculture." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.beeplanetconnection.org/knowledge-apiculture.html" />
-  <meta property="og:image" content="https://www.beeplanetconnection.org/img/beeplanet-og.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Knowledge Hub – Apiculture Wiki | Bee Planet Connection</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <meta name="description" content="A structured wiki of apiculture knowledge: bee biology, hive management, pests and diseases, forage, honey authenticity, regulation, and more."/>
+  <style>
+    body { font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6; margin:0; color:#222; }
+    header, footer { padding:1rem; background:#f6f7f9; }
+    header h1 { margin:0 0 .5rem; }
+    nav a { margin-right:.75rem; text-decoration:none; }
+    main { max-width: 1000px; margin:2rem auto; padding:0 1rem; }
+    .intro { margin-bottom:1.25rem; color:#444; }
+    .grid { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:1.25rem; }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+    section.taxon { border:1px solid #eee; border-radius:12px; padding:1rem; background:#fff; }
+    section.taxon h2 { margin:.25rem 0 .5rem; font-size:1.1rem; }
+    section.taxon p { margin:.25rem 0 .5rem; color:#555; }
+    ul.links { margin:.5rem 0 0; padding-left:1rem; }
+    ul.links li { margin:.25rem 0; }
+    .badge { display:inline-block; font-size:.8rem; padding:.15rem .5rem; border:1px solid #ddd; border-radius:999px; margin-left:.5rem; color:#555; }
+    .note { font-size:.9rem; color:#555; margin-top:1.5rem; }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="/" class="brand">Bee Planet Connection</a>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/directory.html">Directory</a>
-        <a class="active" href="/knowledge-apiculture.html">Knowledge</a>
-        <a href="/blog.html">Blog</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Apiculture Knowledge Hub</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="directory.html">Directory</a> |
+      <a href="knowledge-apiculture.html" aria-current="page">Knowledge</a> |
+      <a href="blog.html">Blog</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1 class="page-title">Knowledge Resources</h1>
-    <p class="page-intro">Trusted methods, journals, and research links for apiculture, collected and curated for clarity and ease of access.</p>
+  <main>
+    <p class="intro">
+      A structured, growing wiki of all things apiculture — from bee biology and forage to hive management,
+      honey authenticity, and pollination. Pages below are grouped by theme; we’ll keep expanding and cross-linking.
+    </p>
 
-    <section class="directory">
-      <article class="post-card">
-        <h2>Journal of Apicultural Research</h2>
-        <p><em>Publisher:</em> International Bee Research Association (IBRA)</p>
-        <p><a href="https://www.tandfonline.com/toc/tjar20/current" target="_blank" rel="noopener">tandfonline.com/toc/tjar20/current</a></p>
-        <p>Peer-reviewed scientific articles on all aspects of honey bee biology, health, and management.</p>
-      </article>
+    <div class="grid">
+      <!-- 1) Bee biology & ecology -->
+      <section class="taxon" id="bee-biology">
+        <h2>Bee biology & ecology <span class="badge">Start here</span></h2>
+        <p>Caste, lifecycle, behaviour, species and subspecies, and how bees fit into their ecosystems.</p>
+        <ul class="links">
+          <li><a href="wiki/honey-bee-species-and-lineages.html">Honey bee species & lineages</a></li>
+          <li><a href="wiki/caste-and-lifecycle.html">Caste system & lifecycle</a></li>
+          <li><a href="wiki/behaviour-and-communication.html">Behaviour & communication (waggle dance, thermoregulation)</a></li>
+          <li><a href="wiki/nutrition-and-microbiome.html">Nutrition & microbiome</a></li>
+          <li><a href="wiki/forage-ecology.html">Forage ecology & plant–pollinator interactions</a></li>
+        </ul>
+      </section>
 
-      <article class="post-card">
-        <h2>Bee World</h2>
-        <p><em>Publisher:</em> International Bee Research Association (IBRA)</p>
-        <p><a href="https://www.tandfonline.com/toc/tbee20/current" target="_blank" rel="noopener">tandfonline.com/toc/tbee20/current</a></p>
-        <p>Accessible journal linking scientific research with practical beekeeping knowledge worldwide.</p>
-      </article>
+      <!-- 2) Hives, equipment & techniques -->
+      <section class="taxon" id="equipment">
+        <h2>Hives, equipment & techniques</h2>
+        <p>Hive types, frames, supers, PPE, smokers, ventilation and practical setup tips.</p>
+        <ul class="links">
+          <li><a href="wiki/hive-types.html">Hive types (National, Langstroth, Dadant, Flow, top-bar)</a></li>
+          <li><a href="wiki/frames-foundation-and-supers.html">Frames, foundation & supers</a></li>
+          <li><a href="wiki/tools-and-ppe.html">Tools & PPE</a></li>
+          <li><a href="wiki/insulation-and-ventilation.html">Insulation & ventilation</a></li>
+          <li><a href="wiki/apiary-setup.html">Apiary setup & siting</a></li>
+        </ul>
+      </section>
 
-      <article class="post-card">
-        <h2>FAO Beekeeping Resources</h2>
-        <p><em>Publisher:</em> Food and Agriculture Organization of the United Nations</p>
-        <p><a href="http://www.fao.org/pollination/resources/en/" target="_blank" rel="noopener">fao.org/pollination/resources</a></p>
-        <p>Guidelines, manuals, and technical papers on sustainable beekeeping and pollination services.</p>
-      </article>
+      <!-- 3) Practice & seasonal management -->
+      <section class="taxon" id="seasonal">
+        <h2>Beekeeping practice & seasonal management</h2>
+        <p>Inspections, swarm control, queen rearing, feeding, wintering, and tidy records.</p>
+        <ul class="links">
+          <li><a href="wiki/inspections-and-records.html">Inspections & record-keeping</a></li>
+          <li><a href="wiki/swarm-control.html">Swarm control</a></li>
+          <li><a href="wiki/queen-rearing-basics.html">Queen rearing basics</a></li>
+          <li><a href="wiki/feeding-strategies.html">Feeding strategies</a></li>
+          <li><a href="wiki/wintering-colonies.html">Wintering colonies</a></li>
+        </ul>
+      </section>
 
-      <article class="post-card">
-        <h2>COLOSS Honey Bee Research Association</h2>
-        <p><em>Type:</em> Global research network</p>
-        <p><a href="https://coloss.org" target="_blank" rel="noopener">coloss.org</a></p>
-        <p>International network addressing honey bee colony losses and promoting healthy bee populations through coordinated research.</p>
-      </article>
-    </section>
+      <!-- 4) Pests, diseases & health -->
+      <section class="taxon" id="health">
+        <h2>Pests, diseases & health</h2>
+        <p>Varroa and friends, disease ID, integrated pest management, hygiene and resilience.</p>
+        <ul class="links">
+          <li><a href="wiki/varroa-destructor-and-ipm.html">Varroa destructor & IPM</a></li>
+          <li><a href="wiki/foulbroods-and-nosema.html">Foulbroods & Nosema</a></li>
+          <li><a href="wiki/viruses-in-honey-bees.html">Viruses in honey bees</a></li>
+          <li><a href="wiki/small-hive-beetle-and-tropilaelaps.html">Small hive beetle & Tropilaelaps</a></li>
+          <li><a href="wiki/hygienic-behaviour-and-breeding.html">Hygienic behaviour & breeding</a></li>
+        </ul>
+      </section>
+
+      <!-- 5) Forage, flora & habitat -->
+      <section class="taxon" id="forage">
+        <h2>Forage, flora & habitat</h2>
+        <p>Plant lists by season, urban vs rural forage, seed mixes, water and microclimate.</p>
+        <ul class="links">
+          <li><a href="wiki/forage-by-season.html">Forage by season</a></li>
+          <li><a href="wiki/urban-vs-rural-forage.html">Urban vs rural forage</a></li>
+          <li><a href="wiki/planting-guides-and-seed-mixes.html">Planting guides & seed mixes</a></li>
+          <li><a href="wiki/water-sources-and-microclimate.html">Water sources & microclimate</a></li>
+        </ul>
+      </section>
+
+      <!-- 6) Honey & hive products -->
+      <section class="taxon" id="products">
+        <h2>Honey & hive products</h2>
+        <p>Honey types, extraction, moisture control, wax, propolis, pollen and mead.</p>
+        <ul class="links">
+          <li><a href="wiki/honey-types-and-characteristics.html">Honey types & characteristics</a></li>
+          <li><a href="wiki/extraction-filtration-and-cream-honey.html">Extraction, filtration & cream honey</a></li>
+          <li><a href="wiki/wax-rendering-and-uses.html">Wax rendering & uses</a></li>
+          <li><a href="wiki/propolis-pollen-and-royal-jelly.html">Propolis, pollen & royal jelly</a></li>
+          <li><a href="wiki/mead-and-value-add.html">Mead & value-add products</a></li>
+        </ul>
+      </section>
+
+      <!-- 7) Honey authenticity & quality -->
+      <section class="taxon" id="authenticity">
+        <h2>Honey authenticity & quality</h2>
+        <p>Adulteration risks, lab methods, standards, labelling and supply-chain integrity.</p>
+        <ul class="links">
+          <li><a href="wiki/honey-adulteration-overview.html">Honey adulteration overview</a></li>
+          <li><a href="wiki/laboratory-methods-nmr-irms-hplc.html">Laboratory methods (NMR, IRMS, HPLC, melissopalynology)</a></li>
+          <li><a href="wiki/standards-and-labelling.html">Standards & labelling</a></li>
+          <li><a href="wiki/supply-chain-integrity.html">Supply-chain integrity</a></li>
+        </ul>
+      </section>
+
+      <!-- 8) Pollination & agriculture -->
+      <section class="taxon" id="pollination">
+        <h2>Pollination & agriculture</h2>
+        <p>Crop calendars, stocking rates, contracts and pollination economics.</p>
+        <ul class="links">
+          <li><a href="wiki/crop-pollination-calendars.html">Crop pollination calendars</a></li>
+          <li><a href="wiki/stocking-rates-and-logistics.html">Stocking rates & logistics</a></li>
+          <li><a href="wiki/pollination-contracts.html">Pollination contracts</a></li>
+          <li><a href="wiki/pollination-economics-and-risk.html">Economics & risk</a></li>
+        </ul>
+      </section>
+
+      <!-- 9) Regulation, standards & safety -->
+      <section class="taxon" id="regulation">
+        <h2>Regulation, standards & safety</h2>
+        <p>Registrations, movement controls, residues, food safety and traceability.</p>
+        <ul class="links">
+          <li><a href="wiki/national-regulations-and-registration.html">National regulations & registration</a></li>
+          <li><a href="wiki/residues-and-mrls.html">Residues & MRLs</a></li>
+          <li><a href="wiki/food-safety-and-hygiene.html">Food safety & hygiene</a></li>
+          <li><a href="wiki/insurance-and-liability.html">Insurance & liability</a></li>
+        </ul>
+      </section>
+
+      <!-- 10) Research, organisations & education -->
+      <section class="taxon" id="organisations">
+        <h2>Research, organisations & education</h2>
+        <p>Associations, journals, surveys, datasets, courses and certifications.</p>
+        <ul class="links">
+          <li><a href="wiki/associations-and-federations.html">Associations & federations</a></li>
+          <li><a href="wiki/journals-and-key-surveys.html">Journals & key surveys</a></li>
+          <li><a href="wiki/datasets-and-tools.html">Datasets & tools</a></li>
+          <li><a href="wiki/courses-and-certifications.html">Courses & certifications</a></li>
+        </ul>
+      </section>
+
+      <!-- 11) History, culture & ethics -->
+      <section class="taxon" id="history">
+        <h2>History, culture & ethics</h2>
+        <p>Traditional hives, cultural practices, ethics and wild vs managed debates.</p>
+        <ul class="links">
+          <li><a href="wiki/history-of-beekeeping.html">History of beekeeping</a></li>
+          <li><a href="wiki/traditional-hives-and-practices.html">Traditional hives & practices</a></li>
+          <li><a href="wiki/ethics-and-welfare.html">Ethics & welfare</a></li>
+          <li><a href="wiki/public-engagement-and-citizen-science.html">Public engagement & citizen science</a></li>
+        </ul>
+      </section>
+
+      <!-- 12) Glossary & how-tos -->
+      <section class="taxon" id="glossary">
+        <h2>Glossary & how-tos</h2>
+        <p>Plain-English definitions and quick checklists for common tasks.</p>
+        <ul class="links">
+          <li><a href="wiki/glossary.html">Glossary of terms</a></li>
+          <li><a href="wiki/how-to-checklist-swarm-control.html">How-to checklist: swarm control</a></li>
+          <li><a href="wiki/how-to-checklist-winter-prep.html">How-to checklist: winter prep</a></li>
+          <li><a href="wiki/how-to-checklist-honey-extraction.html">How-to checklist: honey extraction</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <p class="note">
+      Sourcing approach: we’ll rephrase from open sources (e.g., Wikipedia) and credit/link where helpful, adding practical UK/EU context.
+      As pages go live, these links will turn into fully cross-linked articles.
+    </p>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Bee Planet Connection</small>
-    </div>
+  <footer>
+    <p>&copy; 2025 Bee Planet Connection. All rights reserved.</p>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
