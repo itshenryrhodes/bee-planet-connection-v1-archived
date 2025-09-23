@@ -2,23 +2,14 @@
 layout: default
 title: Bee Planet Connection
 description: Connecting people, bees and knowledge — practical guides, research, and resources for beekeeping and pollinator health.
+hero_key: home
 ---
 
-<!-- Hero -->
-<section class="hero" role="banner" aria-label="Site introduction">
-  <div class="hero-bg" style="background-image:url('{{ '/img/hero.jpg' | relative_url }}')"></div>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <h1>Connecting people, bees and knowledge</h1>
-    <p class="lead">Practical guides, research, and resources for better beekeeping and thriving pollinator habitats.</p>
-    <div class="hero-ctas">
-      <a class="btn btn--accent" href="{{ '/wiki/wiki.html' | relative_url }}">Explore the Wiki</a>
-      <a class="btn btn--light" href="{{ '/blog.html' | relative_url }}">Read the Blog</a>
-    </div>
-  </div>
-</section>
+{% include hero.html
+   key=page.hero_key
+   title="Connecting people, bees and knowledge"
+   subtitle="Practical guides, research, and resources for better beekeeping and thriving pollinator habitats." %}
 
-<!-- Quick links section -->
 <section id="get-started" class="section section--cards" aria-label="Featured resources">
   <div class="container">
     <div class="section-head">
@@ -70,7 +61,6 @@ description: Connecting people, bees and knowledge — practical guides, researc
   </div>
 </section>
 
-<!-- CTA Band -->
 <section class="cta-band" aria-label="Stay updated">
   <div class="container cta-inner">
     <h2>Stay in the loop</h2>
@@ -78,3 +68,12 @@ description: Connecting people, bees and knowledge — practical guides, researc
     <a class="btn btn--dark" href="{{ '/blog.html' | relative_url }}">See latest posts</a>
   </div>
 </section>
+
+<!-- Register Service Worker -->
+<script>
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
+      .then(reg => console.log("Service Worker registered:", reg.scope))
+      .catch(err => console.error("Service Worker registration failed:", err));
+  }
+</script>
