@@ -7,7 +7,7 @@
   <url><loc>https://www.beeplanetconnection.org/directory.html</loc></url>
   <url><loc>https://www.beeplanetconnection.org/knowledge-apiculture.html</loc></url>
 
-  <!-- Wiki pages (canonicals only) -->
+  <!-- Wiki pages (canonicals only, including new 7) -->
   <url><loc>https://www.beeplanetconnection.org/wiki/apiary-setup.html</loc></url>
   <url><loc>https://www.beeplanetconnection.org/wiki/apis-mellifera-subspecies.html</loc></url>
   <url><loc>https://www.beeplanetconnection.org/wiki/bee-culture-and-tradition.html</loc></url>
@@ -56,6 +56,13 @@
   <url><loc>https://www.beeplanetconnection.org/wiki/pollination-contracts.html</loc></url>
   <url><loc>https://www.beeplanetconnection.org/wiki/propolis-pollen-and-royal-jelly.html</loc></url>
   <url><loc>https://www.beeplanetconnection.org/wiki/queen-health-and-requeening.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/queen-rearing-and-grafting.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/making-and-managing-nucs.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/overwintering-colonies.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/robbing-prevention-and-hive-security.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/wax-moth-and-comb-storage.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/drone-brood-removal-for-varroa.html</loc></url>
+  <url><loc>https://www.beeplanetconnection.org/wiki/precision-apiculture-sensors-and-data.html</loc></url>
   <url><loc>https://www.beeplanetconnection.org/wiki/small-hive-beetle-and-tropilaelaps.html</loc></url>
   <url><loc>https://www.beeplanetconnection.org/wiki/stress-and-heat-management.html</loc></url>
   <url><loc>https://www.beeplanetconnection.org/wiki/swarm-control.html</loc></url>
