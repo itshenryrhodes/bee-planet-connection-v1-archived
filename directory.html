@@ -4,9 +4,330 @@ title: Directory
 description: Associations, journals, vendors and training across the world.
 ---
 
-{% include hero.html section="directory" title="Resource directory" subtitle="Find associations, journals, vendors and training." %}
+{% include hero.html section="directory" title="Resource directory" subtitle="Search and filter apiculture organisations worldwide." %}
 
 <div class="container" style="padding:24px 0">
-  <p>Browse the global directory of apiculture organisations and resources.</p>
-  <!-- Your existing directory table/list stays here -->
+  <noscript>
+    <p><strong>Heads up:</strong> The interactive directory needs JavaScript. You can still <a class="text-link" href="{{ 'data/directory.seed.json' | relative_url }}">download the JSON</a>.</p>
+  </noscript>
+
+  <!-- Controls -->
+  <form id="dir-form" aria-label="Directory filters" class="dir-controls" onsubmit="return false;">
+    <div class="dir-row">
+      <label for="q">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search name, description, topics…" autocomplete="off">
+    </div>
+
+    <div class="dir-grid">
+      <div class="dir-col">
+        <label for="type">Type</label>
+        <select id="type" name="type">
+          <option value="">Any</option>
+        </select>
+      </div>
+
+      <div class="dir-col">
+        <label for="region">Region</label>
+        <select id="region" name="region">
+          <option value="">Any</option>
+        </select>
+      </div>
+
+      <div class="dir-col">
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option value="">Any</option>
+        </select>
+      </div>
+
+      <div class="dir-col">
+        <label for="lang">Language</label>
+        <select id="lang" name="lang">
+          <option value="">Any</option>
+        </select>
+      </div>
+
+      <div class="dir-col">
+        <label for="sort">Sort</label>
+        <select id="sort" name="sort">
+          <option value="name_asc">Name (A–Z)</option>
+          <option value="name_desc">Name (Z–A)</option>
+          <option value="recent">Recently verified</option>
+          <option value="type">Type</option>
+          <option value="region">Region</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="dir-actions">
+      <button class="btn" type="button" id="applyBtn">Apply</button>
+      <button class="btn ghost" type="button" id="resetBtn" aria-label="Reset filters">Reset</button>
+      <span id="count" class="dir-count" aria-live="polite"></span>
+    </div>
+  </form>
+
+  <!-- Results -->
+  <section id="results" class="dir-results" aria-live="polite" aria-busy="true">
+    <div class="panel">
+      <p>Loading directory…</p>
+    </div>
+  </section>
+
+  <!-- Footer helper -->
+  <div class="dir-help">
+    <p>Missing a great resource? <a class="text-link" href="{{ 'contact.html' | relative_url }}">Tell us</a> and we’ll add it.</p>
+  </div>
 </div>
+
+<style>
+  /* Lightweight styling specific to the directory (keeps global CSS clean) */
+  .dir-controls{border:1px solid #e6eee9;border-radius:16px;padding:16px;margin-bottom:18px;background:#fff}
+  .dir-row{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+  .dir-row label{min-width:70px;color:var(--muted)}
+  .dir-row input[type="search"]{flex:1;padding:10px 12px;border:1px solid #dfe7e2;border-radius:10px}
+
+  .dir-grid{display:grid;gap:12px;margin:8px 0 12px 0;grid-template-columns:repeat(12,1fr)}
+  .dir-col{grid-column:span 12}
+  .dir-col select{width:100%;padding:10px 12px;border:1px solid #dfe7e2;border-radius:10px;background:#fff}
+  @media (min-width:780px){ .dir-col{grid-column:span 3} }
+
+  .dir-actions{display:flex;align-items:center;gap:12px;margin-top:6px;flex-wrap:wrap}
+  .dir-count{color:var(--muted)}
+
+  .dir-results{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+  .dir-card{grid-column:span 12;background:#fff;border:1px solid #e6eee9;border-radius:16px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+  @media (min-width:780px){ .dir-card{grid-column:span 6} }
+  @media (min-width:1040px){ .dir-card{grid-column:span 4} }
+
+  .dir-name{margin:0 0 6px 0;font-size:18px}
+  .dir-meta{font-size:14px;color:var(--muted);margin:0 0 10px 0}
+  .taglist{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  .tag{border:1px solid #dfe7e2;padding:2px 8px;border-radius:999px;font-size:12px;background:#f8fbf9}
+  .dir-desc{margin:10px 0 0 0}
+  .dir-link{display:inline-block;margin-top:10px}
+</style>
+
+<script>
+(function() {
+  const DATA_URL = "{{ 'data/directory.seed.json' | relative_url }}";
+
+  // Elements
+  const form = document.getElementById('dir-form');
+  const qEl = document.getElementById('q');
+  const typeEl = document.getElementById('type');
+  const regionEl = document.getElementById('region');
+  const topicEl = document.getElementById('topic');
+  const langEl = document.getElementById('lang');
+  const sortEl = document.getElementById('sort');
+  const resultsEl = document.getElementById('results');
+  const countEl = document.getElementById('count');
+  const applyBtn = document.getElementById('applyBtn');
+  const resetBtn = document.getElementById('resetBtn');
+
+  /** State **/
+  let DATA = [];
+  let FILTERS = {
+    q: '',
+    type: '',
+    region: '',
+    topic: '',
+    lang: '',
+    sort: 'name_asc'
+  };
+
+  // Utils
+  const uniq = arr => Array.from(new Set(arr.filter(Boolean))).sort((a,b) => (a||'').localeCompare(b||''));
+  const norm = s => (s||'').toString().toLowerCase();
+  const has = (arr, val) => Array.isArray(arr) && arr.map(norm).includes(norm(val));
+
+  function readQuery() {
+    const p = new URLSearchParams(window.location.search);
+    FILTERS.q = p.get('q') || '';
+    FILTERS.type = p.get('type') || '';
+    FILTERS.region = p.get('region') || '';
+    FILTERS.topic = p.get('topic') || '';
+    FILTERS.lang = p.get('lang') || '';
+    FILTERS.sort = p.get('sort') || 'name_asc';
+  }
+
+  function writeQuery() {
+    const p = new URLSearchParams();
+    Object.entries(FILTERS).forEach(([k,v]) => { if (v) p.set(k,v); });
+    const newUrl = p.toString() ? ('?' + p.toString()) : window.location.pathname;
+    history.replaceState(null, '', newUrl);
+  }
+
+  function applyFormToFilters() {
+    FILTERS.q = qEl.value.trim();
+    FILTERS.type = typeEl.value;
+    FILTERS.region = regionEl.value;
+    FILTERS.topic = topicEl.value;
+    FILTERS.lang = langEl.value;
+    FILTERS.sort = sortEl.value || 'name_asc';
+  }
+
+  function setFormFromFilters() {
+    qEl.value = FILTERS.q;
+    typeEl.value = FILTERS.type;
+    regionEl.value = FILTERS.region;
+    topicEl.value = FILTERS.topic;
+    langEl.value = FILTERS.lang;
+    sortEl.value = FILTERS.sort;
+  }
+
+  function populateFacetOptions() {
+    const types = uniq(DATA.map(d => d.type));
+    const regions = uniq(DATA.map(d => d.region));
+    const topics = uniq(DATA.flatMap(d => d.topics || []));
+    const langs  = uniq(DATA.flatMap(d => d.languages || []));
+
+    // Helper to fill a select with options
+    function fill(select, values) {
+      const current = select.value;
+      select.innerHTML = '<option value="">Any</option>' +
+        values.map(v => `<option value="${encodeURIComponent(v)}">${escapeHtml(v)}</option>`).join('');
+      // restore if possible
+      select.value = current;
+      if (select.value !== current) { select.value = ''; }
+    }
+
+    fill(typeEl, types);
+    fill(regionEl, regions);
+    fill(topicEl, topics);
+    fill(langEl, langs);
+  }
+
+  function escapeHtml(s){
+    return (s||'').toString()
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;')
+      .replace(/'/g,'&#39;');
+  }
+
+  function filterAndSort(data) {
+    let out = data.filter(d => {
+      // Search
+      if (FILTERS.q) {
+        const q = norm(FILTERS.q);
+        const hay = [
+          d.name, d.description, d.type, d.region, d.country,
+          ...(d.scope||[]), ...(d.topics||[]), ...(d.languages||[])
+        ].map(norm).join(' ');
+        if (!hay.includes(q)) return false;
+      }
+      // Facets
+      if (FILTERS.type && norm(d.type) !== norm(decodeURIComponent(FILTERS.type))) return false;
+      if (FILTERS.region && norm(d.region) !== norm(decodeURIComponent(FILTERS.region))) return false;
+      if (FILTERS.topic && !has(d.topics||[], decodeURIComponent(FILTERS.topic))) return false;
+      if (FILTERS.lang && !has(d.languages||[], decodeURIComponent(FILTERS.lang))) return false;
+      return true;
+    });
+
+    // Sort
+    switch (FILTERS.sort) {
+      case 'name_desc':
+        out.sort((a,b)=> (a.name||'').localeCompare(b.name||'') * -1); break;
+      case 'recent':
+        out.sort((a,b)=> (b.verified||'').localeCompare(a.verified||'')); break;
+      case 'type':
+        out.sort((a,b)=> (a.type||'').localeCompare(b.type||'') || (a.name||'').localeCompare(b.name||'')); break;
+      case 'region':
+        out.sort((a,b)=> (a.region||'').localeCompare(b.region||'') || (a.name||'').localeCompare(b.name||'')); break;
+      case 'name_asc':
+      default:
+        out.sort((a,b)=> (a.name||'').localeCompare(b.name||'')); break;
+    }
+
+    return out;
+  }
+
+  function render(list) {
+    resultsEl.setAttribute('aria-busy', 'true');
+
+    if (!list.length) {
+      resultsEl.innerHTML = `
+        <div class="panel">
+          <p>No results. Try clearing a filter or changing your search.</p>
+        </div>`;
+      countEl.textContent = '0 results';
+      resultsEl.removeAttribute('aria-busy');
+      return;
+    }
+
+    const html = list.map(d => {
+      const topics = (d.topics||[]).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
+      const scope  = (d.scope||[]).map(s => `<span class="tag">${escapeHtml(s)}</span>`).join('');
+      const langs  = (d.languages||[]).map(l => `<span class="tag">${escapeHtml(l)}</span>`).join('');
+      const website = d.url ? `<a class="text-link dir-link" href="${escapeHtml(d.url)}" target="_blank" rel="noopener">Open website →</a>` : '';
+      const verified = d.verified ? ` • Verified ${escapeHtml(d.verified)}` : '';
+      const regionCountry = [d.region, d.country].filter(Boolean).join(' · ');
+
+      return `
+        <article class="dir-card">
+          <h3 class="dir-name">${escapeHtml(d.name)}</h3>
+          <p class="dir-meta">
+            ${escapeHtml(d.type || '')}${regionCountry ? ' • ' + escapeHtml(regionCountry) : ''}${verified}
+          </p>
+          ${topics ? `<div class="taglist" aria-label="Topics">${topics}</div>` : ''}
+          ${scope ? `<div class="taglist" aria-label="Scope">${scope}</div>` : ''}
+          ${langs ? `<div class="taglist" aria-label="Languages">${langs}</div>` : ''}
+          ${d.description ? `<p class="dir-desc">${escapeHtml(d.description)}</p>` : ''}
+          ${website}
+        </article>
+      `;
+    }).join('');
+
+    resultsEl.innerHTML = html;
+    countEl.textContent = list.length + (list.length === 1 ? ' result' : ' results');
+    resultsEl.removeAttribute('aria-busy');
+  }
+
+  function refresh() {
+    applyFormToFilters();
+    writeQuery();
+    const list = filterAndSort(DATA);
+    render(list);
+  }
+
+  // Events
+  applyBtn.addEventListener('click', refresh);
+  resetBtn.addEventListener('click', () => {
+    FILTERS = { q:'', type:'', region:'', topic:'', lang:'', sort:'name_asc' };
+    setFormFromFilters();
+    writeQuery();
+    render(filterAndSort(DATA));
+  });
+
+  // Live search on typing (debounced)
+  let t;
+  qEl.addEventListener('input', () => {
+    clearTimeout(t);
+    t = setTimeout(refresh, 160);
+  });
+
+  // Load
+  readQuery();
+  setFormFromFilters();
+
+  fetch(DATA_URL, { cache: 'no-store' })
+    .then(r => r.json())
+    .then(json => {
+      DATA = Array.isArray(json) ? json : [];
+      populateFacetOptions();
+      // After populating selects, reapply filter values (in case options were missing before)
+      setFormFromFilters();
+      render(filterAndSort(DATA));
+    })
+    .catch(err => {
+      console.error('Directory load failed:', err);
+      resultsEl.innerHTML = `
+        <div class="panel">
+          <p>We couldn’t load the directory right now. Try again later or <a class="text-link" href="${DATA_URL}">download the JSON</a>.</p>
+        </div>`;
+      countEl.textContent = '';
+      resultsEl.removeAttribute('aria-busy');
+    });
+})();
+</script>
