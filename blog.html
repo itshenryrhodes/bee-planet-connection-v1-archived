@@ -1,25 +1,20 @@
 ---
 layout: default
 title: Blog
-description: Fresh research and seasonal updates from Bee Planet Connection.
-hero_key: blog
+description: News, research, and practical takes from the apiculture world.
 ---
 
-{% include hero.html
-   key=page.hero_key
-   title="Bee Planet Blog"
-   subtitle="Research highlights, seasonal tips and current affairs in apiculture." %}
+{% include hero.html section="blog" title="Insights from the hive" subtitle="News, research and practical takes" %}
 
-<section class="section">
-  <div class="container">
-    <h2>Latest posts</h2>
-    <ul>
-      {% for post in site.posts limit:5 %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
-        </li>
-      {% endfor %}
-    </ul>
-    <p><a href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS →</a></p>
-  </div>
-</section>
+<div class="container" style="padding:24px 0">
+  <h2>Latest posts</h2>
+  <ul>
+    {% assign posts = site.pages | where_exp: 'p', 'p.path contains "blog/"' | sort: 'date' | reverse %}
+    {% for p in posts %}
+      <li>
+        <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+        {% if p.date %}<small> — {{ p.date | date: "%-d %b %Y" }}</small>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
