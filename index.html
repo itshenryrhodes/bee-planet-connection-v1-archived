@@ -1,116 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Bee Planet Connection</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Bee Planet Connection — a curated hub for apiculture resources, research, organisations, and practical methods." />
-  <link rel="canonical" href="https://www.beeplanetconnection.org/" />
-  <link rel="stylesheet" href="/css/site.css" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="alternate" type="application/rss+xml" title="Bee Planet Connection — RSS" href="/feed.xml" />
+---
+layout: default
+title: Bee Planet Connection
+description: Connecting people, bees and knowledge — environmental and educational resources for beekeeping and pollinator health.
+---
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Bee Planet Connection" />
-  <meta property="og:description" content="A clean, fast hub for beekeeping research, organisations, and methods." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.beeplanetconnection.org/" />
-  <meta property="og:image" content="https://www.beeplanetconnection.org/img/beeplanet-og.png" />
-
-  <!-- Schema.org Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Bee Planet Connection",
-    "url": "https://www.beeplanetconnection.org/",
-    "logo": "https://www.beeplanetconnection.org/img/logo.png",
-    "sameAs": [
-      "https://www.apimondia.org",
-      "https://www.ibrabee.org"
-    ]
-  }
-  </script>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <a href="/" class="brand">Bee Planet Connection</a>
-      <nav class="nav">
-        <a class="active" href="/index.html">Home</a>
-        <a href="/directory.html">Directory</a>
-        <a href="/knowledge-apiculture.html">Knowledge</a>
-        <a href="/blog.html">Blog</a>
-      </nav>
+<section class="hero" role="banner" aria-label="Site introduction">
+  <!-- Replace img/hero.jpg with your selected hero image -->
+  <div class="hero-bg" style="background-image:url('{{ '/img/hero.jpg' | relative_url }}')"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Connecting people, bees and knowledge</h1>
+    <p class="lead">
+      Practical guides, research, and resources for better beekeeping and thriving pollinator habitats.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn btn--accent" href="{{ '/wiki/wiki.html' | relative_url }}">Explore the Wiki</a>
+      <a class="btn btn--light" href="{{ '/blog.html' | relative_url }}">Read the Blog</a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main class="container">
-    <h1 class="page-title">Bee Planet Connection</h1>
-    <p class="page-intro">A curated hub for apiculture: organisations, methods, research, and trustworthy links — fast, clean, and free from clutter.</p>
-
-    <section>
-      <h2>Explore</h2>
-      <ul>
-        <li><a href="/directory.html"><strong>Directory</strong></a> — authoritative associations, federations, and journals.</li>
-        <li><a href="/knowledge-apiculture.html"><strong>Knowledge</strong></a> — research methods, beekeeping practice, and learning resources.</li>
-        <li><a href="/blog.html"><strong>Blog</strong></a> — project updates, new links, and apiculture notes.</li>
-      </ul>
-    </section>
-
-    <section id="latest" style="margin-top: 28px;">
-      <h2>Latest post</h2>
-      <div id="latest-post" class="post-card">
-        <p>Loading latest post…</p>
-      </div>
-      <p style="margin-top: 8px;"><a class="post-read" href="/blog.html">View all posts →</a></p>
-    </section>
-
-    <section style="margin-top: 28px;">
-      <h2>About</h2>
-      <p>Bee Planet Connection is an independent project built to make apiculture resources easier to find and share.
-      From international federations like <a href="https://www.apimondia.org" target="_blank" rel="noopener">Apimondia</a> to specialist publishers such as <a href="https://www.ibrabee.org" target="_blank" rel="noopener">IBRA</a>, our aim is to curate links that matter.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Bee Planet Connection</small>
+<section id="get-started" class="section section--cards" aria-label="Featured resources">
+  <div class="container">
+    <div class="section-head">
+      <h2>Start with these</h2>
+      <p>Hand-picked pages to get you moving — from bee biology to planting for pollinators.</p>
     </div>
-  </footer>
+    <div class="cards">
+      <article class="card">
+        <div class="card-head"><h3>Bee Physiology</h3></div>
+        <div class="card-body"><p>Understand anatomy, behaviour and lifecycle — the bedrock of good husbandry.</p></div>
+        <a class="card-link" href="{{ '/wiki/bee-physiology.html' | relative_url }}">Bee Physiology</a>
+      </article>
 
-  <!-- Bring in the posts list and render the newest one -->
-  <script src="/blog/posts.js"></script>
-  <script>
-    (function () {
-      const target = document.getElementById('latest-post');
-      function renderLatest(posts) {
-        if (!posts || !posts.length) {
-          target.innerHTML = '<p>No posts yet. <a href="/blog.html">Visit the blog →</a></p>';
-          return;
-        }
-        const sorted = posts.slice().sort((a, b) => b.date.localeCompare(a.date));
-        const p = sorted[0];
-        const dateStr = new Date(p.date).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
-        target.innerHTML = `
-          <h3 class="post-title" style="margin-top:0"><a href="${p.url}">${p.title}</a></h3>
-          <div class="post-meta">
-            <time datetime="${p.date}">${dateStr}</time>
-            ${p.tags && p.tags.length ? ` · <span class="tags">${p.tags.map(t => `<span class="tag">#${t}</span>`).join(' ')}</span>` : ''}
-          </div>
-          ${p.excerpt ? `<p class="post-excerpt">${p.excerpt}</p>` : ''}
-          <p><a class="post-read" href="${p.url}">Read more →</a></p>
-        `;
-      }
-      // If posts.js loaded and set window.BPC_POSTS, render.
-      if (window.BPC_POSTS) {
-        renderLatest(window.BPC_POSTS);
-      } else {
-        // Fallback in case posts.js didn't populate yet.
-        target.innerHTML = '<p><a href="/blog.html">View the blog →</a></p>';
-      }
-      document.getElementById('year').textContent = new Date().getFullYear();
-    })();
-  </script>
-</body>
-</html>
+      <article class="card">
+        <div class="card-head"><h3>Planting Guides</h3></div>
+        <div class="card-body"><p>Create nectar-rich spaces with year-round forage, from balconies to orchards.</p></div>
+        <a class="card-link" href="{{ '/wiki/bee-friendly-planting-guides.html' | relative_url }}">Planting Guides</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Apiary Setup</h3></div>
+        <div class="card-body"><p>Site selection, equipment and layout — set up safely and sustainably.</p></div>
+        <a class="card-link" href="{{ '/wiki/apiary-setup.html' | relative_url }}">Apiary Setup</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" aria-label="Keep updated">
+  <div class="container cta-inner">
+    <h2>Stay in the loop</h2>
+    <p>New research, seasonal tips and practical how-tos — straight to your inbox.</p>
+    <a class="btn btn--dark" href="{{ '/blog.html' | relative_url }}">See latest posts</a>
+  </div>
+</section>
