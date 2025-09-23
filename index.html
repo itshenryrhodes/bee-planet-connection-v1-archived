@@ -5,15 +5,20 @@
   <title>Bee Planet Connection — Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Connecting people, bees and knowledge — practical guides, research, and resources for beekeeping and pollinator health.">
+  <!-- build: v4 -->
 
-  <!-- Favicon & Manifest -->
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.webp" type="image/webp">
-  <link rel="manifest" href="/manifest.webmanifest">
 
-  <!-- Unregister any previous Service Worker to stop stale caching -->
+  <!-- Kill any old service worker & caches so this build shows -->
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()));
+      navigator.serviceWorker.getRegistrations()
+        .then(regs => regs.forEach(r => r.unregister()))
+        .catch(()=>{});
+      if (window.caches && caches.keys) {
+        caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
+      }
     }
   </script>
 
@@ -26,60 +31,78 @@
     gtag('config', 'G-NGF4SB4DL0');
   </script>
 
-  <!-- Minimal, self-contained CSS so this renders correctly even if your site.css is stale -->
+  <!-- Page CSS (self-contained) -->
   <style>
     :root{
-      --brand:#12223A; --honey:#F7B500; --cream:#FFF8E6; --ink:#0E1117; --ink-muted:#606774; --line:#E6E8EE;
-      --radius-lg:16px; --radius-md:12px; --radius-sm:8px;
-      --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.5rem; --space-6:2rem; --space-8:3rem;
-      --shadow-1:0 2px 8px rgba(10,16,30,.08);
+      --brand:#12223A;     /* navy */
+      --honey:#F7B500;     /* accent */
+      --cream:#FFF8E6;     /* soft tint */
+      --ink:#0E1117;       /* body text */
+      --muted:#606774;     /* secondary text */
+      --line:#E6E8EE;      /* borders */
+      --radius:16px;
+      --s2:.5rem; --s3:.75rem; --s4:1rem; --s5:1.5rem; --s6:2rem; --s8:3rem;
+      --shadow:0 2px 8px rgba(10,16,30,.08);
+      --max:1100px;
     }
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial;
-         color:var(--ink); background:#fff}
-    a{color:var(--brand); text-decoration:none} a:hover{text-decoration:underline}
-    .container{max-width:1100px; margin:0 auto; padding:0 var(--space-4)}
-    .skip-link{position:absolute; left:-9999px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial;
+      color:var(--ink);
+      background:#fff;
+    }
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--max);margin:0 auto;padding:0 var(--s4)}
+
     /* Header */
-    .site-header{border-bottom:1px solid var(--line); background:#fff; position:sticky; top:0; z-index:10}
-    .header-bar{display:flex; align-items:center; justify-content:space-between; gap:var(--space-4); padding:var(--space-4) 0}
-    .brand{display:flex; align-items:center; gap:var(--space-3); font-weight:700; color:var(--brand)}
-    .brand-mark{height:32px; width:auto}
-    .nav a{margin:0 var(--space-3); font-weight:600; color:var(--ink)} .nav a[aria-current="page"]{color:var(--brand)}
+    .site-header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+    .header-bar{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);padding:var(--s4) 0}
+    .brand{display:flex;align-items:center;gap:.75rem;font-weight:800;color:var(--brand)}
+    .brand img{height:32px;width:auto}
+    .nav a{margin:0 .75rem;font-weight:600;color:var(--ink)}
+    .nav a[aria-current="page"]{color:var(--brand)}
+
     /* Hero (compact, side image) */
-    .hero{background:var(--cream); padding:var(--space-8) 0}
-    .hero-inner{display:grid; grid-template-columns:1.3fr .7fr; gap:var(--space-6); align-items:center}
-    .hero h1{font-size:2rem; line-height:1.2; margin:0 0 var(--space-3)}
-    .hero .lead{color:var(--ink-muted); margin:0 0 var(--space-5)}
-    .btn{display:inline-block; background:var(--honey); color:#111; padding:.75rem 1.1rem; border-radius:10px; font-weight:700; box-shadow:var(--shadow-1)}
-    .hero-figure{margin:0; justify-self:end}
-    .hero-figure img{display:block; max-width:360px; width:100%; height:auto; border-radius:14px; box-shadow:var(--shadow-1)}
-    @media (max-width: 900px){ .hero-inner{grid-template-columns:1fr; text-align:left} .hero-figure{justify-self:start} }
-    /* Cards */
-    .section{padding:var(--space-8) 0}
+    .hero{background:var(--cream);padding:var(--s8) 0;border-bottom:1px solid var(--line)}
+    .hero-inner{display:grid;grid-template-columns:1.3fr .7fr;gap:var(--s6);align-items:center}
+    .hero h1{font-size:2rem;line-height:1.2;margin:0 0 .75rem}
+    .hero .lead{color:var(--muted);margin:0 0 var(--s5)}
+    .btn{display:inline-block;background:var(--honey);color:#111;padding:.75rem 1.1rem;border-radius:10px;font-weight:700;box-shadow:var(--shadow)}
+    .hero-figure{margin:0;justify-self:end}
+    .hero-figure img{display:block;max-width:360px;width:100%;height:auto;border-radius:14px;box-shadow:var(--shadow)}
+    @media (max-width:900px){
+      .hero-inner{grid-template-columns:1fr}
+      .hero-figure{justify-self:start}
+    }
+
+    /* Sections & cards */
+    .section{padding:var(--s8) 0}
     .section-head h2{margin:.25rem 0}
-    .section-head p{color:var(--ink-muted); margin:0 0 var(--space-5)}
-    .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space-5)}
-    @media (max-width: 900px){ .cards{grid-template-columns:1fr}}
-    .card{border:1px solid var(--line); border-radius:var(--radius-lg); padding:var(--space-5); box-shadow:var(--shadow-1); background:#fff}
+    .section-head p{color:var(--muted);margin:0 0 var(--s5)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s5)}
+    @media (max-width:900px){.cards{grid-template-columns:1fr}}
+    .card{border:1px solid var(--line);border-radius:var(--radius);padding:var(--s5);box-shadow:var(--shadow);background:#fff}
     .card h3{margin-top:0}
-    .card .card-body p:last-child{margin-bottom:0}
+    .card p:last-child{margin-bottom:0}
+
     /* CTA band */
-    .cta-band{background:#FDFBF4; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:var(--space-8) 0}
-    .cta-inner{display:flex; align-items:center; justify-content:space-between; gap:var(--space-4)}
-    .btn--dark{background:var(--brand); color:#fff}
-    @media (max-width: 900px){ .cta-inner{flex-direction:column; align-items:flex-start}}
+    .cta-band{background:#FDFBF4;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:var(--s8) 0}
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--s4)}
+    .btn--dark{background:var(--brand);color:#fff}
+    @media (max-width:900px){.cta-inner{flex-direction:column;align-items:flex-start}}
+
     /* Footer */
-    .site-footer{border-top:1px solid var(--line); padding:var(--space-6) 0; color:var(--ink-muted)}
+    .site-footer{border-top:1px solid var(--line);padding:var(--s6) 0;color:var(--muted)}
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
     <div class="container header-bar">
       <a class="brand" href="/">
-        <img class="brand-mark" src="/img/logo.svg" alt="Bee Planet Connection" onerror="this.remove()">
+        <img src="/img/logo.svg" alt="Bee Planet Connection" onerror="this.remove()">
         <span>Bee Planet Connection</span>
       </a>
       <nav class="nav" aria-label="Primary">
@@ -104,7 +127,7 @@
           <p><a class="btn" href="/blog.html">See latest posts</a></p>
         </div>
         <figure class="hero-figure">
-          <!-- Use a smaller image here; replace with your preferred asset -->
+          <!-- Replace with your smaller image if needed -->
           <img src="/img/hero/home.jpg" alt="Beekeeper illustration">
         </figure>
       </div>
@@ -177,5 +200,12 @@
       <p>&copy; 2025 Bee Planet Connection</p>
     </div>
   </footer>
+
+  <!-- One-time SW cleanup register (safe if no SW exists) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(()=>{});
+    }
+  </script>
 </body>
 </html>
