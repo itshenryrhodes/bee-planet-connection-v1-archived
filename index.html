@@ -1,91 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
   <title>Bee Planet Connection</title>
-  <meta name="description" content="Bee Planet Connection – global nonprofit connecting apiculture resources, professional bodies, and beekeeping knowledge worldwide.">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Georgia, serif;
-      margin: 0;
-      background: #faf7f1;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 30px 20px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 20px;
-    }
-    nav a {
-      display: block;
-      padding: 15px 20px;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: all 0.2s ease;
-    }
-    nav a:hover {
-      background: #f1efe9;
-      transform: translateY(-2px);
-    }
-    section.hero {
-      text-align: center;
-      padding: 40px 20px;
-      background: #faf7f1;
-    }
-    section.hero img {
-      max-width: 640px;
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      background: #fff;
-      border-top: 1px solid #ddd;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Bee Planet Connection — a curated hub for apiculture resources, research, organisations, and practical methods." />
+  <link rel="canonical" href="https://www.beeplanetconnection.org/" />
+  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate" type="application/rss+xml" title="Bee Planet Connection — RSS" href="/feed.xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bee Planet Connection" />
+  <meta property="og:description" content="A clean, fast hub for beekeeping research, organisations, and methods." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.beeplanetconnection.org/" />
+  <meta property="og:image" content="https://www.beeplanetconnection.org/img/beeplanet-og.png" />
+
+  <!-- Schema.org Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bee Planet Connection",
+    "url": "https://www.beeplanetconnection.org/",
+    "logo": "https://www.beeplanetconnection.org/img/logo.png",
+    "sameAs": [
+      "https://www.apimondia.org",
+      "https://www.ibrabee.org"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <h1>🐝 Bee Planet Connection</h1>
-    <p>A nonprofit hub for global apiculture resources and knowledge sharing</p>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand">Bee Planet Connection</a>
+      <nav class="nav">
+        <a class="active" href="/index.html">Home</a>
+        <a href="/directory.html">Directory</a>
+        <a href="/knowledge-apiculture.html">Knowledge</a>
+        <a href="/blog.html">Blog</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Image with responsive picture -->
-  <section class="hero">
-    <picture>
-      <source srcset="/img/pooh/pooh-hero-small.webp" media="(max-width: 600px)">
-      <img 
-        src="/img/pooh/pooh-hero.webp" 
-        alt="Colourised illustration of Winnie-the-Pooh and Christopher Robin">
-    </picture>
-  </section>
+  <main class="container">
+    <h1 class="page-title">Bee Planet Connection</h1>
+    <p class="page-intro">A curated hub for apiculture: organisations, methods, research, and trustworthy links — fast, clean, and free from clutter.</p>
 
-  <!-- Navigation Cards -->
-  <nav>
-    <a href="directory.html">🌍 Global Directory</a>
-    <a href="design-preview.html">🎨 Design Preview</a>
-    <a href="blog.html">📰 Blog & News</a>
-    <a href="about.html">💡 About</a>
-  </nav>
+    <section>
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="/directory.html"><strong>Directory</strong></a> — authoritative associations, federations, and journals.</li>
+        <li><a href="/knowledge-apiculture.html"><strong>Knowledge</strong></a> — research methods, beekeeping practice, and learning resources.</li>
+        <li><a href="/blog.html"><strong>Blog</strong></a> — project updates, new links, and apiculture notes.</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>© 2025 Bee Planet Connection. A nonprofit project supporting global apiculture.</p>
+    <section>
+      <h2>About</h2>
+      <p>Bee Planet Connection is an independent project built to make apiculture resources easier to find and share.  
+      From international federations like <a href="https://www.apimondia.org" target="_blank" rel="noopener">Apimondia</a> to specialist publishers such as <a href="https://www.ibrabee.org" target="_blank" rel="noopener">IBRA</a>, our aim is to curate links that matter.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Bee Planet Connection</small>
+    </div>
   </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
