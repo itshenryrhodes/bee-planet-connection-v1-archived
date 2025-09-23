@@ -1,34 +1,41 @@
-// sw.js — self-destruct & cache purge
+/* Bee Planet Connection Service Worker */
+const CACHE_NAME = 'bpc-v5'; // bump on each deploy to invalidate stale caches
+const ASSETS = [
+  '/',
+  '/index.html',
+  '/assets/css/site.css',
+  '/img/icons/logo-64.png',
+  '/manifest.webmanifest'
+];
+
 self.addEventListener('install', (event) => {
-  // Take control immediately
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+  );
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil((async () => {
-    // Delete all caches
-    const names = await caches.keys();
-    await Promise.all(names.map((n) => caches.delete(n)));
-
-    // Unregister this SW
-    await self.registration.unregister();
-
-    // Force-refresh all open tabs
-    const clientsList = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
-    for (const client of clientsList) {
-      try {
-        const url = new URL(client.url);
-        url.searchParams.set('nocache', Date.now().toString());
-        client.navigate(url.toString());
-      } catch (_) {}
-    }
-
-    // Claim control during this cycle (then we're gone)
-    await self.clients.claim();
+    const keys = await caches.keys();
+    await Promise.all(keys.map((k) => (k !== CACHE_NAME ? caches.delete(k) : undefined)));
   })());
+  self.clients.claim();
 });
 
-// Always go to network (no caching)
 self.addEventListener('fetch', (event) => {
-  event.respondWith(fetch(event.request));
+  const { request } = event;
+  if (request.headers.get('accept')?.includes('text/html')) {
+    event.respondWith(
+      fetch(request).then((resp) => {
+        const copy = resp.clone();
+        caches.open(CACHE_NAME).then((c) => c.put(request, copy));
+        return resp;
+      }).catch(() => caches.match(request))
+    );
+  } else {
+    event.respondWith(
+      caches.match(request).then((cached) => cached || fetch(request))
+    );
+  }
 });
