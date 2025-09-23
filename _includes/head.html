@@ -25,8 +25,8 @@
 <link rel="manifest" href="{{ 'manifest.webmanifest' | relative_url }}">
 <meta name="theme-color" content="#0B3D2E">
 
-<!-- CSS -->
-<link rel="stylesheet" href="{{ 'assets/css/site.css' | relative_url }}">
+<!-- CSS with cache-busting query string -->
+<link rel="stylesheet" href="{{ 'assets/css/site.css?v=' | append: site.time | relative_url }}">
 
 <!-- SEO tags -->
 {% seo %}
