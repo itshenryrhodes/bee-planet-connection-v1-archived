@@ -5,9 +5,37 @@
     <link>https://www.beeplanetconnection.org/</link>
     <description>Updates from Bee Planet Connection: apiculture resources, research notes, and project milestones.</description>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 23 Sep 2025 07:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Sep 2025 10:20:00 +0000</lastBuildDate>
     <ttl>60</ttl>
 
+    <!-- Post 4 -->
+    <item>
+      <title>Colony losses in 2025 — what COLOSS research means for your bees</title>
+      <link>https://www.beeplanetconnection.org/blog/2025-09-23-colony-loss-research-guide.html</link>
+      <guid isPermaLink="true">https://www.beeplanetconnection.org/blog/2025-09-23-colony-loss-research-guide.html</guid>
+      <pubDate>Tue, 23 Sep 2025 10:20:00 +0000</pubDate>
+      <description><![CDATA[A bright, breezy guide to the big drivers of colony losses this season — and six practical fixes for hobbyists and pros.]]></description>
+    </item>
+
+    <!-- Post 3 -->
+    <item>
+      <title>Why honey authenticity matters in 2025 — and how to choose better</title>
+      <link>https://www.beeplanetconnection.org/blog/2025-09-23-honey-authenticity-guide.html</link>
+      <guid isPermaLink="true">https://www.beeplanetconnection.org/blog/2025-09-23-honey-authenticity-guide.html</guid>
+      <pubDate>Tue, 23 Sep 2025 08:30:00 +0000</pubDate>
+      <description><![CDATA[EU labelling rules tighten by 2026 and investigations keep surfacing. Here’s what’s changing — and how to navigate authenticity.]]></description>
+    </item>
+
+    <!-- Post 2 -->
+    <item>
+      <title>First updates — directory, feeds, and blog pipeline</title>
+      <link>https://www.beeplanetconnection.org/blog/2025-09-23-first-updates.html</link>
+      <guid isPermaLink="true">https://www.beeplanetconnection.org/blog/2025-09-23-first-updates.html</guid>
+      <pubDate>Tue, 23 Sep 2025 09:10:00 +0000</pubDate>
+      <description><![CDATA[A short update: directory entries, RSS/JSON feeds, sitemap, and the end-to-end posting flow now live.]]></description>
+    </item>
+
+    <!-- Post 1 -->
     <item>
       <title>Welcome — why Bee Planet Connection exists</title>
       <link>https://www.beeplanetconnection.org/blog/2025-09-23-welcome.html</link>
@@ -15,6 +43,5 @@
       <pubDate>Tue, 23 Sep 2025 07:00:00 +0000</pubDate>
       <description><![CDATA[A quick hello and what we’re building: a clean, curated hub for beekeeping research, organisations, and practical resources.]]></description>
     </item>
-
   </channel>
 </rss>
