@@ -28,12 +28,30 @@
     }
   </script>
 
-  <!-- Register Service Worker (safe, uses relative_url) -->
+  <!-- Register Service Worker (force fresh fetch & clear logs) -->
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
-        .catch(err => console.error("SW registration failed:", err));
-    }
+    (function(){
+      if (!('serviceWorker' in navigator)) {
+        console.warn('[BPC] SW not supported in this browser.');
+        return;
+      }
+      // Force a fresh fetch of sw.js by adding a version query (prevents stale SW script)
+      var swUrl = '{{ "/sw.js" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}';
+
+      window.addEventListener('load', function(){
+        navigator.serviceWorker.register(swUrl, { scope: '/' })
+          .then(function(reg){
+            console.log('[BPC] SW registered:', reg.scope);
+            // Optional: log when it’s ready/active
+            navigator.serviceWorker.ready.then(function(r){
+              console.log('[BPC] SW ready:', r.active && r.active.state);
+            });
+          })
+          .catch(function(err){
+            console.error('[BPC] SW registration failed:', err);
+          });
+      });
+    })();
   </script>
 </body>
 </html>
