@@ -8,7 +8,12 @@ hero_key: home
 {% include hero.html
    key=page.hero_key
    title="Connecting people, bees and knowledge"
-   subtitle="Practical guides, research, and resources for better beekeeping and thriving pollinator habitats." %}
+   subtitle="Practical guides, research, and resources for better beekeeping and thriving pollinator habitats."
+   image="/img/hero/home.jpg"
+   image_alt="Illustration of beekeeper with hive smoker"
+   cta_href="/blog.html"
+   cta_label="See latest posts"
+%}
 
 <section id="get-started" class="section section--cards" aria-label="Featured resources">
   <div class="container">
@@ -22,8 +27,7 @@ hero_key: home
         <div class="card-head"><h3>Bee Physiology</h3></div>
         <div class="card-body">
           <p>Understand anatomy, behaviour and lifecycle — the bedrock of good husbandry.</p>
-          <!-- Temp: point to wiki landing until /wiki/bee-physiology.html exists -->
-          <p><a href="{{ '/wiki/' | relative_url }}">Open article →</a></p>
+          <p><a href="{{ '/wiki/bee-physiology.html' | relative_url }}">Open article →</a></p>
         </div>
       </article>
 
@@ -31,8 +35,7 @@ hero_key: home
         <div class="card-head"><h3>Planting Guides</h3></div>
         <div class="card-body">
           <p>Create nectar-rich spaces with year-round forage, from balconies to orchards.</p>
-          <!-- Temp: point to wiki landing until /wiki/bee-friendly-planting-guides.html exists -->
-          <p><a href="{{ '/wiki/' | relative_url }}">Open article →</a></p>
+          <p><a href="{{ '/wiki/bee-friendly-planting-guides.html' | relative_url }}">Open article →</a></p>
         </div>
       </article>
 
@@ -40,8 +43,7 @@ hero_key: home
         <div class="card-head"><h3>Apiary Setup</h3></div>
         <div class="card-body">
           <p>Site selection, equipment and layout — set up safely and sustainably.</p>
-          <!-- Temp: point to wiki landing until /wiki/apiary-setup.html exists -->
-          <p><a href="{{ '/wiki/' | relative_url }}">Open article →</a></p>
+          <p><a href="{{ '/wiki/apiary-setup.html' | relative_url }}">Open article →</a></p>
         </div>
       </article>
 
@@ -57,3 +59,26 @@ hero_key: home
         <div class="card-head"><h3>Latest Blog Posts</h3></div>
         <div class="card-body">
           <p>Fresh research and seasonal updates from our editorial team.</p>
+          <p><a href="{{ '/blog.html' | relative_url }}">Open blog →</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" aria-label="Stay updated">
+  <div class="container cta-inner">
+    <h2>Stay in the loop</h2>
+    <p>New research, seasonal tips and practical how-tos — straight to your inbox.</p>
+    <a class="btn btn--dark" href="{{ '/blog.html' | relative_url }}">See latest posts</a>
+  </div>
+</section>
+
+<!-- Register Service Worker -->
+<script>
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
+      .then(reg => console.log("Service Worker registered:", reg.scope))
+      .catch(err => console.error("Service Worker registration failed:", err));
+  }
+</script>
