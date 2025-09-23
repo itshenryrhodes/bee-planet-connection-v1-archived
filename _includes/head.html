@@ -1,29 +1,32 @@
 <!-- _includes/head.html -->
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>{{ page.title | default: site.title | default: "Bee Planet Connection" }}</title>
+<meta name="description" content="{{ page.description | default: site.description | default: 'Connecting people, bees and knowledge' }}" />
 
-<title>
-  {% if page.title %}{{ page.title }} · {% endif %}{{ site.title | default: "Bee Planet Connection" }}
-</title>
-{% if page.description or site.description %}
-<meta name="description" content="{{ page.description | default: site.description | escape }}" />
+{% if jekyll.environment == "production" and site.google_analytics_id %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics_id }}');
+</script>
 {% endif %}
 
-<link rel="icon" href="{{ '/favicon.webp' | relative_url }}" type="image/webp">
-<link rel="manifest" href="{{ '/manifest.webmanifest' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<!-- Icons & Manifest -->
+<link rel="icon" href="{{ 'favicon.ico' | relative_url }}" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ 'img/icons/logo-16.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ 'img/icons/logo-32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ 'img/icons/logo-48.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="64x64" href="{{ 'img/icons/logo-64.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ 'img/icons/logo-180.png' | relative_url }}">
+<link rel="manifest" href="{{ 'manifest.webmanifest' | relative_url }}">
+<meta name="theme-color" content="#0B3D2E">
 
-{% if site.plugins contains 'jekyll-seo-tag' %}
-  {% seo %}
-{% endif %}
+<!-- CSS -->
+<link rel="stylesheet" href="{{ 'assets/css/site.css' | relative_url }}">
 
-{% if site.google_analytics_id %}
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics_id }}');
-  </script>
-{% endif %}
+<!-- SEO tags -->
+{% seo %}
