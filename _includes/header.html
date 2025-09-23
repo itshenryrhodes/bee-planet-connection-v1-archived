@@ -1,18 +1,22 @@
 <!-- _includes/header.html -->
-<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Bee Planet Connection home">
+      <img src="{{ 'img/icons/logo-64.png' | relative_url }}" width="32" height="32" alt="">
+      <span>Bee Planet Connection</span>
+    </a>
 
-<header class="site-header">
-  <nav class="nav" aria-label="Primary">
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Navigation Menu</button>
-    <div id="site-menu" class="menu">
-      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
-      <a href="{{ '/blog.html' | relative_url }}" {% if page.url == '/blog.html' %}aria-current="page"{% endif %}>Blog</a>
-      <a href="{{ '/directory.html' | relative_url }}" {% if page.url == '/directory.html' %}aria-current="page"{% endif %}>Directory</a>
-      <a href="{{ '/wiki/' | relative_url }}" {% if page.url == '/wiki/' %}aria-current="page"{% endif %}>Wiki</a>
-      <a href="{{ '/about.html' | relative_url }}" {% if page.url == '/about.html' %}aria-current="page"{% endif %}>About</a>
-      <a href="{{ '/contact.html' | relative_url }}" {% if page.url == '/contact.html' %}aria-current="page"{% endif %}>Contact</a>
-      <a href="{{ '/accessibility.html' | relative_url }}" {% if page.url == '/accessibility.html' %}aria-current="page"{% endif %}>Accessibility</a>
-      <a href="{{ '/privacy.html' | relative_url }}" {% if page.url == '/privacy.html' %}aria-current="page"{% endif %}>Privacy</a>
-    </div>
-  </nav>
+    <button class="menu-toggle" aria-controls="site-menu" aria-expanded="false" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <nav id="site-menu" class="site-nav" role="navigation" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ 'wiki/index.html' | relative_url }}">Wiki</a>
+      <a href="{{ 'directory.html' | relative_url }}">Directory</a>
+      <a href="{{ 'blog.html' | relative_url }}">Blog</a>
+      <a href="{{ 'about.html' | relative_url }}">About</a>
+      <a class="cta" href="{{ 'contact.html' | relative_url }}">Contact</a>
+    </nav>
+  </div>
 </header>
