@@ -1,78 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bee Planet Connection</title>
+---
+layout: default
+title: Bee Planet Connection
+description: Connecting people, bees and knowledge
+---
 
-  <!-- Theme color for mobile browsers -->
-  <meta name="theme-color" content="#f9c400">
+{% include hero.html section="home" title="Connecting people, bees and knowledge" subtitle="A global hub for apiculture: learn, share, and explore." %}
 
-  <!-- Favicon and app icons -->
-  <link rel="shortcut icon" href="img/icons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/logo-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/logo-32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="img/icons/logo-48.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="img/icons/logo-64.png">
-  <link rel="icon" type="image/png" sizes="128x128" href="img/icons/logo-128.png">
-  <link rel="icon" type="image/png" sizes="180x180" href="img/icons/logo-180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/icons/logo-192.png">
-  <link rel="icon" type="image/png" sizes="256x256" href="img/icons/logo-256.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="img/icons/logo-512.png">
+<section class="home-panels">
+  <div class="container grid">
+    <article class="panel">
+      <h2>Latest blog</h2>
+      {% assign posts = site.pages | where_exp: 'p', 'p.path contains "blog/"' | sort: 'date' | reverse %}
+      {% if posts and posts.size > 0 %}
+        {% assign latest = posts[0] %}
+        <h3><a href="{{ latest.url | relative_url }}">{{ latest.title | default: latest.name }}</a></h3>
+        {% if latest.excerpt %}
+          <p>{{ latest.excerpt }}</p>
+        {% else %}
+          <p>{{ latest.description | default: "News, research and practical tips from the apiculture world." }}</p>
+        {% endif %}
+        <a class="text-link" href="{{ 'blog.html' | relative_url }}">See all posts →</a>
+      {% else %}
+        <p>No posts yet. <a class="text-link" href="{{ 'blog.html' | relative_url }}">Visit the blog</a>.</p>
+      {% endif %}
+    </article>
 
-  <!-- Apple Touch Icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/logo-180.png">
+    <article class="panel">
+      <h2>Wiki spotlight</h2>
+      {% assign wiki_pages = site.pages | where_exp: 'w', 'w.path contains "wiki/"' %}
+      {% if wiki_pages and wiki_pages.size > 0 %}
+        {% assign featured = wiki_pages | first %}
+        <h3><a href="{{ featured.url | relative_url }}">{{ featured.title | default: featured.name }}</a></h3>
+        <p>{{ featured.description | default: "Practical, well-researched articles for beginners to pros." }}</p>
+        <a class="text-link" href="{{ 'wiki/index.html' | relative_url }}">Browse the wiki →</a>
+      {% else %}
+        <p>We’re building the knowledge base. Check back soon!</p>
+      {% endif %}
+    </article>
 
-  <!-- Web App Manifest -->
-  <link rel="manifest" href="manifest.json">
+    <article class="panel">
+      <h2>Resource directory</h2>
+      <p>Find associations, journals, vendors and training across the world.</p>
+      <a class="text-link" href="{{ 'directory.html' | relative_url }}">Open the directory →</a>
+    </article>
+  </div>
+</section>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="img/icons/logo-128.png" alt="Bee Planet Connection Logo">
-    </div>
-    <h1>Bee Planet Connection</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="wiki/wiki.html">Wiki</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h2>Connecting people, bees, and knowledge</h2>
-      <p>Bee Planet Connection is a global hub for apiculture: education, resources, and community for beekeepers everywhere.</p>
-    </section>
-
-    <section class="features">
-      <article>
-        <h3>Wiki</h3>
-        <p>Explore in-depth articles on bee physiology, species, hive management, and more.</p>
-        <a href="wiki/wiki.html">Visit Wiki</a>
-      </article>
-      <article>
-        <h3>Directory</h3>
-        <p>Find associations, research groups, and suppliers supporting global beekeeping.</p>
-        <a href="directory.html">View Directory</a>
-      </article>
-      <article>
-        <h3>Blog</h3>
-        <p>Read the latest updates, insights, and news from the apiculture world.</p>
-        <a href="blog.html">Go to Blog</a>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Bee Planet Connection. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<section class="cta-band">
+  <div class="container cta-inner">
+    <h2>Have something to add?</h2>
+    <p>Contribute an article, share a dataset, or suggest a resource.</p>
+    <a class="btn" href="{{ 'contact.html' | relative_url }}">Get in touch</a>
+  </div>
+</section>
