@@ -2,58 +2,17 @@
 layout: default
 title: Accessibility
 description: Accessibility statement for Bee Planet Connection.
+hero_key: community
 ---
+
+{% include hero.html
+   key=page.hero_key
+   title="Accessibility Statement"
+   subtitle="Making our content accessible to all beekeepers and pollinator allies." %}
 
 <section class="section">
   <div class="container">
-    <div class="section-head">
-      <h1>Accessibility statement</h1>
-      <p>We want as many people as possible to be able to use Bee Planet Connection.</p>
-    </div>
-
-    <article class="content">
-      <h2>Our commitment</h2>
-      <p>We are working to ensure this website is accessible to everyone by following the
-      <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a>, aiming for level AA compliance.</p>
-
-      <h2>Measures we’ve taken</h2>
-      <ul>
-        <li>Semantic HTML with clear landmarks (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>).</li>
-        <li>Accessible, keyboard-operable navigation (including a “skip to content” link).</li>
-        <li>Responsive layouts and readable typography.</li>
-        <li>High-contrast colour palette with a dark-mode option.</li>
-        <li>Descriptive link text and button labels where possible.</li>
-        <li>Images intended as content support <code>alt</code> attributes.</li>
-      </ul>
-
-      <h2>Compatibility and technology</h2>
-      <p>This site is designed to work with the latest versions of major browsers, including Chrome, Safari, Firefox, and Edge.
-      It should work on modern mobile devices and desktop operating systems.</p>
-
-      <h2>Known limitations</h2>
-      <p>We’re aware of some areas that may not fully meet WCAG 2.1 AA yet:</p>
-      <ul>
-        <li>Some older images may be missing descriptive alternative text.</li>
-        <li>Third-party embeds or links may not fully meet our standards.</li>
-      </ul>
-      <p>We are actively improving these areas as we build out content.</p>
-
-      <h2>Feedback and contact</h2>
-      <p>If you encounter accessibility barriers or have suggestions, please let us know. We’ll do our best to fix issues promptly.</p>
-      <p><a class="btn btn--outline" href="{{ '/contact.html' | relative_url }}">Send accessibility feedback</a></p>
-
-      <h2>Requesting content in alternative formats</h2>
-      <p>Need information in a different format (e.g., large print, easy read, audio)? Contact us and tell us which page you need and the format required.</p>
-
-      <h2>Enforcement</h2>
-      <p>If you are not satisfied with our response, you may be able to escalate your complaint through relevant national bodies or digital accessibility organisations.</p>
-
-      <hr style="margin:1.5rem 0;border:0;border-top:1px solid rgba(0,0,0,.1);" />
-
-      <p><small>
-        Prepared: 23 September 2025 · Last reviewed: 23 September 2025<br>
-        Target conformance: WCAG 2.1 AA
-      </small></p>
-    </article>
+    <h2>Commitment</h2>
+    <p>We aim to meet WCAG 2.1 AA standards. If you encounter barriers to accessing our content, please contact us via the <a href="{{ '/contact.html' | relative_url }}">contact page</a>.</p>
   </div>
 </section>
