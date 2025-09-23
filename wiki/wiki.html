@@ -4,32 +4,114 @@ title: Wiki
 description: Knowledge base for bees, beekeeping, and pollinator health.
 ---
 
-{% include hero.html
-   title="Bee Planet Wiki"
-   subtitle="Guides, facts and educational articles on apiculture and pollinator ecosystems."
-   fallback="wiki" %}
+<!-- Hero -->
+<section class="hero" role="banner" aria-label="Wiki hero">
+  <div class="hero-bg" style="background-image:url('{{ '/img/hero-wiki.jpg' | relative_url }}')"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Bee Planet Wiki</h1>
+    <p class="lead">Guides, facts and educational articles on apiculture and pollinator ecosystems.</p>
+    <div class="hero-ctas">
+      <a class="btn btn--accent" href="{{ '/directory.html' | relative_url }}">Explore the Directory</a>
+      <a class="btn btn--light" href="{{ '/' | relative_url }}">Back to Home</a>
+    </div>
+  </div>
+</section>
 
-<section class="section section--cards">
+<!-- Overview -->
+<section class="section">
   <div class="container">
     <div class="section-head">
-      <h2>Explore topics</h2>
+      <h2>About the Wiki</h2>
+      <p>This is a living, community-curated knowledge base. Start with the featured topics below, or browse all pages as we grow the library.</p>
     </div>
+  </div>
+</section>
+
+<!-- Topic cards -->
+<section class="section section--cards" aria-label="Explore topics">
+  <div class="container">
     <div class="cards">
+      <!-- Bee Physiology -->
       <article class="card">
         <div class="card-head"><h3>Bee Physiology</h3></div>
-        <div class="card-body"><p>Understand anatomy, behaviour and lifecycle.</p></div>
-        <a class="card-link" href="{{ '/wiki/bee-physiology.html' | relative_url }}">Bee Physiology</a>
+        <div class="card-body">
+          <p>Understand anatomy, behaviour and lifecycle — the bedrock of good husbandry.</p>
+          <p><a href="{{ '/wiki/bee-physiology.html' | relative_url }}" aria-label="Open Bee Physiology">Open article →</a></p>
+        </div>
       </article>
+
+      <!-- Planting Guides -->
       <article class="card">
         <div class="card-head"><h3>Planting Guides</h3></div>
-        <div class="card-body"><p>Create nectar-rich environments to support pollinators.</p></div>
-        <a class="card-link" href="{{ '/wiki/bee-friendly-planting-guides.html' | relative_url }}">Planting Guides</a>
+        <div class="card-body">
+          <p>Create nectar-rich environments to support pollinators year-round.</p>
+          <p><a href="{{ '/wiki/bee-friendly-planting-guides.html' | relative_url }}" aria-label="Open Planting Guides">Open article →</a></p>
+        </div>
       </article>
+
+      <!-- Apiary Setup -->
       <article class="card">
         <div class="card-head"><h3>Apiary Setup</h3></div>
-        <div class="card-body"><p>Site selection and hive placement for healthy colonies.</p></div>
-        <a class="card-link" href="{{ '/wiki/apiary-setup.html' | relative_url }}">Apiary Setup</a>
+        <div class="card-body">
+          <p>Site selection, hive placement and equipment for safe, sustainable apiaries.</p>
+          <p><a href="{{ '/wiki/apiary-setup.html' | relative_url }}" aria-label="Open Apiary Setup">Open article →</a></p>
+        </div>
+      </article>
+
+      <!-- Apis mellifera Subspecies -->
+      <article class="card">
+        <div class="card-head"><h3>Apis mellifera Subspecies</h3></div>
+        <div class="card-body">
+          <p>Overview of regional subspecies and key traits relevant to management.</p>
+          <p><a href="{{ '/wiki/apis-mellifera-subspecies.html' | relative_url }}" aria-label="Open Apis mellifera Subspecies">Open article →</a></p>
+        </div>
+      </article>
+
+      <!-- Bee Culture and Tradition -->
+      <article class="card">
+        <div class="card-head"><h3>Bee Culture &amp; Tradition</h3></div>
+        <div class="card-body">
+          <p>From ancient symbolism to modern festivals — how bees shaped culture.</p>
+          <p><a href="{{ '/wiki/bee-culture-and-tradition.html' | relative_url }}" aria-label="Open Bee Culture and Tradition">Open article →</a></p>
+        </div>
+      </article>
+
+      <!-- Bee Education and Outreach -->
+      <article class="card">
+        <div class="card-head"><h3>Education &amp; Outreach</h3></div>
+        <div class="card-body">
+          <p>Programmes, lesson ideas and resources for schools and communities.</p>
+          <p><a href="{{ '/wiki/bee-education-and-outreach.html' | relative_url }}" aria-label="Open Bee Education and Outreach">Open article →</a></p>
+        </div>
+      </article>
+
+      <!-- Poisonings and Incidents -->
+      <article class="card">
+        <div class="card-head"><h3>Poisonings &amp; Incidents</h3></div>
+        <div class="card-body">
+          <p>Recognise symptoms, document cases and report appropriately.</p>
+          <p><a href="{{ '/wiki/bee-poisonings-and-incidents.html' | relative_url }}" aria-label="Open Bee Poisonings and Incidents">Open article →</a></p>
+        </div>
+      </article>
+
+      <!-- Bee Products in Pharmacology -->
+      <article class="card">
+        <div class="card-head"><h3>Bee Products &amp; Pharmacology</h3></div>
+        <div class="card-body">
+          <p>Current research on honey, propolis, venom and royal jelly.</p>
+          <p><a href="{{ '/wiki/bee-products-in-modern-pharmacology.html' | relative_url }}" aria-label="Open Bee Products in Modern Pharmacology">Open article →</a></p>
+        </div>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section class="cta-band" aria-label="Contribute to the Wiki">
+  <div class="container cta-inner">
+    <h2>Contribute to the Wiki</h2>
+    <p>Spot an error, want to add a page, or share a great resource? Contributions keep this living reference improving.</p>
+    <a class="btn btn--dark" href="{{ '/blog.html' | relative_url }}">Share via the Blog</a>
   </div>
 </section>
