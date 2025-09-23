@@ -1,211 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Bee Planet Connection — Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Connecting people, bees and knowledge — practical guides, research, and resources for beekeeping and pollinator health.">
-  <!-- build: v4 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bee Planet Connection</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.webp" type="image/webp">
+  <!-- Favicon and app icons -->
+  <link rel="shortcut icon" href="img/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/logo-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/logo-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/icons/logo-48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="img/icons/logo-64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="img/icons/logo-128.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="img/icons/logo-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icons/logo-192.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="img/icons/logo-256.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="img/icons/logo-512.png">
 
-  <!-- Kill any old service worker & caches so this build shows -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations()
-        .then(regs => regs.forEach(r => r.unregister()))
-        .catch(()=>{});
-      if (window.caches && caches.keys) {
-        caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
-      }
-    }
-  </script>
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/logo-180.png">
 
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGF4SB4DL0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-NGF4SB4DL0');
-  </script>
-
-  <!-- Page CSS (self-contained) -->
-  <style>
-    :root{
-      --brand:#12223A;     /* navy */
-      --honey:#F7B500;     /* accent */
-      --cream:#FFF8E6;     /* soft tint */
-      --ink:#0E1117;       /* body text */
-      --muted:#606774;     /* secondary text */
-      --line:#E6E8EE;      /* borders */
-      --radius:16px;
-      --s2:.5rem; --s3:.75rem; --s4:1rem; --s5:1.5rem; --s6:2rem; --s8:3rem;
-      --shadow:0 2px 8px rgba(10,16,30,.08);
-      --max:1100px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial;
-      color:var(--ink);
-      background:#fff;
-    }
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:var(--max);margin:0 auto;padding:0 var(--s4)}
-
-    /* Header */
-    .site-header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
-    .header-bar{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);padding:var(--s4) 0}
-    .brand{display:flex;align-items:center;gap:.75rem;font-weight:800;color:var(--brand)}
-    .brand img{height:32px;width:auto}
-    .nav a{margin:0 .75rem;font-weight:600;color:var(--ink)}
-    .nav a[aria-current="page"]{color:var(--brand)}
-
-    /* Hero (compact, side image) */
-    .hero{background:var(--cream);padding:var(--s8) 0;border-bottom:1px solid var(--line)}
-    .hero-inner{display:grid;grid-template-columns:1.3fr .7fr;gap:var(--s6);align-items:center}
-    .hero h1{font-size:2rem;line-height:1.2;margin:0 0 .75rem}
-    .hero .lead{color:var(--muted);margin:0 0 var(--s5)}
-    .btn{display:inline-block;background:var(--honey);color:#111;padding:.75rem 1.1rem;border-radius:10px;font-weight:700;box-shadow:var(--shadow)}
-    .hero-figure{margin:0;justify-self:end}
-    .hero-figure img{display:block;max-width:360px;width:100%;height:auto;border-radius:14px;box-shadow:var(--shadow)}
-    @media (max-width:900px){
-      .hero-inner{grid-template-columns:1fr}
-      .hero-figure{justify-self:start}
-    }
-
-    /* Sections & cards */
-    .section{padding:var(--s8) 0}
-    .section-head h2{margin:.25rem 0}
-    .section-head p{color:var(--muted);margin:0 0 var(--s5)}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s5)}
-    @media (max-width:900px){.cards{grid-template-columns:1fr}}
-    .card{border:1px solid var(--line);border-radius:var(--radius);padding:var(--s5);box-shadow:var(--shadow);background:#fff}
-    .card h3{margin-top:0}
-    .card p:last-child{margin-bottom:0}
-
-    /* CTA band */
-    .cta-band{background:#FDFBF4;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:var(--s8) 0}
-    .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--s4)}
-    .btn--dark{background:var(--brand);color:#fff}
-    @media (max-width:900px){.cta-inner{flex-direction:column;align-items:flex-start}}
-
-    /* Footer */
-    .site-footer{border-top:1px solid var(--line);padding:var(--s6) 0;color:var(--muted)}
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-bar">
-      <a class="brand" href="/">
-        <img src="/img/logo.svg" alt="Bee Planet Connection" onerror="this.remove()">
-        <span>Bee Planet Connection</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="/" aria-current="page">Home</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/directory.html">Directory</a>
-        <a href="/wiki/">Wiki</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/accessibility.html">Accessibility</a>
-        <a href="/privacy.html">Privacy</a>
-      </nav>
+  <header>
+    <div class="logo">
+      <img src="img/icons/logo-128.png" alt="Bee Planet Connection Logo">
     </div>
+    <h1>Bee Planet Connection</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wiki/wiki.html">Wiki</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-label="Hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Connecting people, bees and knowledge</h1>
-          <p class="lead">Practical guides, research, and resources for better beekeeping and thriving pollinator habitats.</p>
-          <p><a class="btn" href="/blog.html">See latest posts</a></p>
-        </div>
-        <figure class="hero-figure">
-          <!-- Replace with your smaller image if needed -->
-          <img src="/img/hero/home.jpg" alt="Beekeeper illustration">
-        </figure>
-      </div>
+  <main>
+    <section class="hero">
+      <h2>Connecting people, bees, and knowledge</h2>
+      <p>Bee Planet Connection is a global hub for apiculture: education, resources, and community for beekeepers everywhere.</p>
     </section>
 
-    <section id="get-started" class="section" aria-label="Featured resources">
-      <div class="container">
-        <div class="section-head">
-          <h2>Quick links</h2>
-          <p>Jump straight into popular topics and resources.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-head"><h3>Bee Physiology</h3></div>
-            <div class="card-body">
-              <p>Understand anatomy, behaviour and lifecycle — the bedrock of good husbandry.</p>
-              <p><a href="/wiki/bee-physiology.html">Open article →</a></p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-head"><h3>Planting Guides</h3></div>
-            <div class="card-body">
-              <p>Create nectar-rich spaces with year-round forage, from balconies to orchards.</p>
-              <p><a href="/wiki/bee-friendly-planting-guides.html">Open article →</a></p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-head"><h3>Apiary Setup</h3></div>
-            <div class="card-body">
-              <p>Site selection, equipment and layout — set up safely and sustainably.</p>
-              <p><a href="/wiki/apiary-setup.html">Open article →</a></p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-head"><h3>Apiculture Directory</h3></div>
-            <div class="card-body">
-              <p>Explore organisations, federations and research bodies supporting pollinators worldwide.</p>
-              <p><a href="/directory.html">Open directory →</a></p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-head"><h3>Latest Blog Posts</h3></div>
-            <div class="card-body">
-              <p>Fresh research and seasonal updates from our editorial team.</p>
-              <p><a href="/blog.html">Open blog →</a></p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-band" aria-label="Stay updated">
-      <div class="container cta-inner">
-        <div>
-          <h2>Stay in the loop</h2>
-          <p>New research, seasonal tips and practical how-tos — straight to your inbox.</p>
-        </div>
-        <a class="btn btn--dark" href="/blog.html">See latest posts</a>
-      </div>
+    <section class="features">
+      <article>
+        <h3>Wiki</h3>
+        <p>Explore in-depth articles on bee physiology, species, hive management, and more.</p>
+        <a href="wiki/wiki.html">Visit Wiki</a>
+      </article>
+      <article>
+        <h3>Directory</h3>
+        <p>Find associations, research groups, and suppliers supporting global beekeeping.</p>
+        <a href="directory.html">View Directory</a>
+      </article>
+      <article>
+        <h3>Blog</h3>
+        <p>Read the latest updates, insights, and news from the apiculture world.</p>
+        <a href="blog.html">Go to Blog</a>
+      </article>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Bee Planet Connection</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Bee Planet Connection. All rights reserved.</p>
   </footer>
-
-  <!-- One-time SW cleanup register (safe if no SW exists) -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').catch(()=>{});
-    }
-  </script>
 </body>
 </html>
