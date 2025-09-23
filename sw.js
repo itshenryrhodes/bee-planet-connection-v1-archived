@@ -1,10 +1,10 @@
 /* Bee Planet Connection – Service Worker
    Strategy:
-   - Precache core shell (HTML/CSS/JS/feeds).
+   - Precache core shell (HTML/CSS/JS, icons, hero images).
    - Cache-first for static assets (CSS/JS/images).
    - Network-first for navigations (pages), fallback to cache if offline.
 */
-const BPC_CACHE_VERSION = 'bpc-v1.0.0';
+const BPC_CACHE_VERSION = 'bpc-v1.1.0';
 const BPC_STATIC_CACHE = `${BPC_CACHE_VERSION}-static`;
 const BPC_PAGES_CACHE  = `${BPC_CACHE_VERSION}-pages`;
 
@@ -24,11 +24,29 @@ const CORE_ASSETS = [
   '/img/favicon-16.png',
   '/img/favicon-32.png',
   '/img/favicon.webp',
+  '/img/favicon.svg',
   '/img/icon-192.png',
   '/img/icon-512.png',
   '/manifest.webmanifest',
   '/sitemap.xml',
-  '/feed.xml'
+  '/feed.xml',
+
+  // Precache Pooh hero images for all sections
+  '/img/pooh/pooh-hero.webp',
+  '/img/pooh/pooh_091.webp',
+  '/img/pooh/pooh_094-1.webp',
+  '/img/pooh/pooh_103.webp',
+  '/img/pooh/pooh_105.webp',
+  '/img/pooh/pooh_112.webp',
+  '/img/pooh/pooh_115.webp',
+  '/img/pooh/pooh_131.webp',
+  '/img/pooh/pooh_139.webp',
+  '/img/pooh/pooh_143.webp',
+  '/img/pooh/pooh_150.webp',
+  '/img/pooh/pooh_16.webp',
+  '/img/pooh/pooh_172.webp',
+  '/img/pooh/pooh_174.webp',
+  '/img/pooh/pooh_175.webp'
 ];
 
 // Install: precache core assets
@@ -62,7 +80,7 @@ async function cacheFirst(req) {
     if (res && res.ok) cache.put(req, res.clone());
     return res;
   } catch (e) {
-    return cached; // last resort
+    return cached; // fallback
   }
 }
 
