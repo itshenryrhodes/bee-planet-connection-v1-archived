@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Core pages -->
-  <url><loc>https://www.beeplanetconnection.org/index.html</loc><lastmod>2025-09-23</lastmod><priority>0.9</priority></url>
-  <url><loc>https://www.beeplanetconnection.org/knowledge-apiculture.html</loc><lastmod>2025-09-23</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.beeplanetconnection.org/blog.html</loc><lastmod>2025-09-23</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.beeplanetconnection.org/directory.html</loc><lastmod>2025-09-23</lastmod><priority>0.5</priority></url>
-  <url><loc>https://www.beeplanetconnection.org/design-preview.html</loc><lastmod>2025-09-23</lastmod><priority>0.3</priority></url>
-  <url><loc>https://www.beeplanetconnection.org/bee_planet_connection_starter_site_index.html</loc><lastmod>2025-09-23</lastmod><priority>0.3</priority></url>
-
-  <!-- Feeds (optional to include in sitemap, but harmless) -->
-  <url><loc>https://www.beeplanetconnection.org/feed.xml</loc><lastmod>2025-09-23</lastmod><priority>0.2</priority></url>
-  <url><loc>https://www.beeplanetconnection.org/feed.json</loc><lastmod>2025-09-23</lastmod><priority>0.2</priority></url>
-
-  <!-- Blog posts -->
-  <url><loc>https://www.beeplanetconnection.org/blog/2025-09-23-colony-loss-research.html</loc><lastmod>2025-09-23</lastmod><priority>0.6</priority></url>
-  <!-- This post currently exists at the root; include it here if you intend to keep it live. -->
-  <url><loc>https://www.beeplanetconnection.org/2025-09-23-honey-authenticity-guide.html</loc><lastmod>2025-09-23</lastmod><priority>0.4</priority></url>
-
-  <!-- Wiki index + known wiki article(s) -->
-  <url><loc>https://www.beeplanetconnection.org/wiki/wiki.html</loc><lastmod>2025-09-23</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.beeplanetconnection.org/wiki/bee-products-in-modern-pharmacology.html</loc><lastmod>2025-09-23</lastmod><priority>0.5</priority></url>
-
+  <url>
+    <loc>https://www.beeplanetconnection.org/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.beeplanetconnection.org/wiki/wiki.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.beeplanetconnection.org/directory.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.beeplanetconnection.org/blog.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.beeplanetconnection.org/about.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <!-- Icon folder (optional for crawlers that scan assets) -->
+  <url>
+    <loc>https://www.beeplanetconnection.org/img/icons/</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
