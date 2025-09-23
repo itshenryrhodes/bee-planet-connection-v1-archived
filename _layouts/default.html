@@ -1,3 +1,4 @@
+<!-- _layouts/default.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,25 +7,33 @@
 <body>
   {% include header.html %}
 
-  <main id="main-content">
+  <main id="main" class="container">
     {{ content }}
   </main>
 
-  {% include footer.html %}
+  <footer class="site-footer">
+    <p>&copy; {{ "now" | date: "%Y" }} Bee Planet Connection</p>
+  </footer>
 
   <script>
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.main-nav');
-    if (toggle && nav) {
-      toggle.addEventListener('click', () => {
-        const expanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!expanded));
-        nav.classList.toggle('open');
+    // basic menu toggle (no framework)
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('site-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', (!expanded).toString());
+        menu.classList.toggle('open');
       });
     }
-    const y = document.getElementById('year');
-    if (y) y.textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Register Service Worker (safe, uses relative_url) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
+        .catch(err => console.error("SW registration failed:", err));
+    }
   </script>
 </body>
 </html>
