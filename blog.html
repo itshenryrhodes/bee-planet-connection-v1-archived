@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bee Planet Connection - Blog</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* Optional light styling if styles.css doesn't define these */
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 0; color: #222; }
+    header, footer { padding: 1rem; background: #f6f7f9; }
+    header h1 { margin: 0 0 .5rem; }
+    nav a { margin-right: .75rem; text-decoration: none; }
+    main { max-width: 860px; margin: 2rem auto; padding: 0 1rem; }
+    h2 { margin-top: 0; }
+    .posts { list-style: none; padding: 0; margin: 0; }
+    .post { padding: 1rem 0; border-bottom: 1px solid #eee; display: grid; grid-template-columns: 140px 1fr; gap: 1rem; align-items: start; }
+    .post:last-child { border-bottom: 0; }
+    .post time { display: inline-block; font-size: .9rem; color: #555; white-space: nowrap; }
+    .post a { font-size: 1.05rem; font-weight: 600; text-decoration: none; }
+    .post p { margin: .35rem 0 0; color: #444; }
+    @media (max-width: 560px) {
+      .post { grid-template-columns: 1fr; }
+      .post time { margin-bottom: .25rem; }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,21 +32,39 @@
       <a href="index.html">Home</a> |
       <a href="directory.html">Directory</a> |
       <a href="knowledge-apiculture.html">Knowledge</a> |
-      <a href="blog.html">Blog</a>
+      <a href="blog.html" aria-current="page">Blog</a>
     </nav>
   </header>
 
   <main>
     <section>
       <h2>Latest Posts</h2>
-      <ul>
-        <li>
-          <a href="blog/2025-09-23-welcome.html">Welcome to Bee Planet Connection</a>
-          <p>A quick hello and an introduction to what Bee Planet Connection is all about.</p>
+      <ul class="posts">
+        <!-- Most recent: TODAY (Tue 23 Sep 2025) -->
+        <li class="post">
+          <time datetime="2025-09-23">Tue 23 Sep 2025</time>
+          <div>
+            <a href="blog/2025-09-23-colony-loss-research.html">Colony losses: what the latest research is (really) saying</a>
+            <p>A clear-eyed look at 2024–2025 winter/summer colony losses, drivers like varroa, forage, weather and pesticides, and what practical steps beekeepers can take now.</p>
+          </div>
         </li>
-        <li>
-          <a href="blog/2025-09-23-honey-authenticity-guide.html">A Guide to Honey Authenticity</a>
-          <p>Why honey fraud matters and how science and apiculture research are tackling the problem.</p>
+
+        <!-- Yesterday: Mon 22 Sep 2025 -->
+        <li class="post">
+          <time datetime="2025-09-22">Mon 22 Sep 2025</time>
+          <div>
+            <a href="blog/2025-09-23-honey-authenticity-guide.html">A guide to honey authenticity</a>
+            <p>Why honey fraud matters, how labs test for it, and the tools regulators and producers are using to protect consumers and genuine beekeepers.</p>
+          </div>
+        </li>
+
+        <!-- Last Sunday: Sun 21 Sep 2025 -->
+        <li class="post">
+          <time datetime="2025-09-21">Sun 21 Sep 2025</time>
+          <div>
+            <a href="blog/2025-09-23-welcome.html">Welcome to Bee Planet Connection</a>
+            <p>A quick hello and what to expect here: practical insights, trusted research, and a love of all things apiculture.</p>
+          </div>
         </li>
       </ul>
     </section>
