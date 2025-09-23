@@ -1,14 +1,15 @@
-title: Bee Planet Connection
-description: Connecting people, bees and knowledge
-url: https://www.beeplanetconnection.org
+title: "Bee Planet Connection"
+description: "Connecting people, bees and knowledge"
+url: "https://www.beeplanetconnection.org"
+baseurl: ""  # IMPORTANT: empty for root custom domain
 
-# Keep .html URLs so existing links work
-permalink: none
+# Keep .html URLs for pages/collections (posts can still use pretty if you want)
+permalink: "/:path/:basename:output_ext"
 
 markdown: kramdown
 
-# GA4 (set from your tag)
-google_analytics_id: G-NGF4SB4DL0
+# GA4 (exposed to templates if you want to pull via {{ site.google_analytics_id }})
+google_analytics_id: "G-NGF4SB4DL0"
 
 # GitHub Pages–approved plugins
 plugins:
@@ -17,18 +18,25 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
 
-# Collections (optional: move wiki pages into _wiki later)
+# Collections (outputs wiki pages to /wiki/*.html)
 collections:
   wiki:
     output: true
-    permalink: /wiki/:name/
+    permalink: "/wiki/:name.html"
 
 # Sensible defaults
 defaults:
-  - scope: { path: "" }
+  - scope:
+      path: ""
     values:
       layout: default
       image: /img/social-share.png
+
+# SEO tag defaults (optional but useful)
+# You can remove or adjust these if you set them in head.html already.
+# seo:
+#   type: Website
+#   name: "Bee Planet Connection"
 
 # Exclusions
 exclude:
@@ -37,3 +45,6 @@ exclude:
   - node_modules
   - scripts
   - .github
+  # If you keep jekyll-feed enabled, remove any manually committed feed files:
+  # - feed.xml
+  # - feed.json
