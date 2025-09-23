@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Bee Planet Connection</title>
+    <link>https://www.beeplanetconnection.org/</link>
+    <description>Updates from Bee Planet Connection: apiculture resources, research notes, and project milestones.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 23 Sep 2025 07:00:00 +0000</lastBuildDate>
+    <ttl>60</ttl>
+
+    <!-- Post 1 -->
+    <item>
+      <title>Welcome — why Bee Planet Connection exists</title>
+      <link>https://www.beeplanetconnection.org/blog/2025-09-23-welcome.html</link>
+      <guid isPermaLink="true">https://www.beeplanetconnection.org/blog/2025-09-23-welcome.html</guid>
+      <pubDate>Tue, 23 Sep 2025 07:00:00 +0000</pubDate>
+      <description><![CDATA[A quick hello and what we’re building: a clean, curated hub for beekeeping research, organisations, and practical resources.]]></description>
+    </item>
+
+    <!-- Duplicate <item> blocks for each new post -->
+  </channel>
+</rss>
