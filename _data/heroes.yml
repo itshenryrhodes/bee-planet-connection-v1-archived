@@ -1,0 +1,65 @@
+home:
+  images:
+    - /img/pooh/pooh-hero.webp   # Colour Pooh for homepage
+  overlay: dark
+  cta:
+    - { label: "Explore the Wiki", href: "/wiki/" }
+    - { label: "Read the Blog", href: "/blog.html", variant: light }
+
+blog:
+  images:
+    - /img/pooh/pooh_091.webp
+    - /img/pooh/pooh_094-1.webp
+  overlay: dark
+  cta:
+    - { label: "Back to Home", href: "/", variant: light }
+
+directory:
+  images:
+    - /img/pooh/pooh_103.webp
+    - /img/pooh/pooh_105.webp
+  overlay: dark
+  cta:
+    - { label: "Explore the Wiki", href: "/wiki/" }
+    - { label: "Back to Home", href: "/", variant: light }
+
+wiki:
+  images:
+    - /img/pooh/pooh_112.webp
+    - /img/pooh/pooh_115.webp
+  overlay: dark
+  cta:
+    - { label: "Explore the Directory", href: "/directory.html" }
+    - { label: "Back to Home", href: "/", variant: light }
+
+guides:
+  images:
+    - /img/pooh/pooh_131.webp
+    - /img/pooh/pooh_139.webp
+  overlay: dark
+  cta:
+    - { label: "Start with Basics", href: "/wiki/apiary-setup.html" }
+
+events:
+  images:
+    - /img/pooh/pooh_143.webp
+    - /img/pooh/pooh_150.webp
+  overlay: dark
+  cta:
+    - { label: "Upcoming Conferences", href: "/events/" }
+
+resources:
+  images:
+    - /img/pooh/pooh_16.webp
+    - /img/pooh/pooh_172.webp
+  overlay: dark
+  cta:
+    - { label: "Download Guides", href: "/resources/" }
+
+community:
+  images:
+    - /img/pooh/pooh_174.webp
+    - /img/pooh/pooh_175.webp
+  overlay: dark
+  cta:
+    - { label: "How to Contribute", href: "/community/" }
