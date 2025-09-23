@@ -5,10 +5,6 @@ layout: null
 
 /* Bee Planet Connection Service Worker
    Auto-versioned on each deploy via Jekyll timestamp.
-   Strategy:
-   - HTML: network-first (fresh content), fallback to cache when offline).
-   - CSS/JS: stale-while-revalidate.
-   - Images/fonts: cache-first with background refresh.
 */
 
 const BUILD_TS = '{{ site.time | date: "%Y%m%d%H%M%S" }}';
