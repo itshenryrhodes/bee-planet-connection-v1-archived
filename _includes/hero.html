@@ -1,40 +1,42 @@
-{%- assign key = page.hero_key | default: include.key -%}
-{%- assign page_images = page.hero_images -%}
-{%- assign data_set = site.data.heroes[key] -%}
-{%- assign images = page_images | default: data_set.images -%}
-{%- assign overlay = page.hero_overlay | default: data_set.overlay | default: 'dark' -%}
-{%- assign ctas = page.hero_cta | default: data_set.cta -%}
+<!-- _includes/hero.html -->
+{%- assign section_key = include.section | default: "home" -%}
+{%- assign herodata = site.data.heroes[section_key] -%}
+{%- assign images = herodata.images | default: nil -%}
+{%- assign overlay = herodata.overlay | default: "dark" -%}
+{%- assign ctas = herodata.cta | default: nil -%}
 
-{%- if images and images.size > 0 -%}
-  {%- comment -%}
-    Generate a "random" index from site build time and page path.
-    This ensures a different image may be chosen on refresh or per page,
-    but remains stable during a single render.
-  {%- endcomment -%}
-  {%- assign seed = site.time | date: "%s" | plus: page.url | size -%}
-  {%- assign random_index = seed | modulo: images.size -%}
-  {%- assign chosen = images[random_index] -%}
-{%- else -%}
-  {%- assign chosen = "/img/pooh/pooh-hero.webp" -%} <!-- fallback -->
-{%- endif -%}
+{%- assign hero_title = include.title | default: page.title | default: "Connecting people, bees and knowledge" -%}
+{%- assign hero_subtitle = include.subtitle | default: page.description | default: "" -%}
 
-<section class="hero" role="banner" aria-label="{{ include.title | default: page.title | default: site.title }}">
-  <div class="hero-slide is-active" style="background-image:url('{{ chosen | relative_url }}')"></div>
-
-  <div class="hero-overlay hero-overlay--{{ overlay }}"></div>
-
-  <div class="container hero-content">
-    <h1>{{ include.title | default: page.title | default: site.title }}</h1>
-    {%- if include.subtitle or page.description -%}
-      <p class="lead">{{ include.subtitle | default: page.description }}</p>
-    {%- endif -%}
-    {%- if ctas and ctas.size > 0 -%}
-    <div class="hero-ctas">
-      {%- for c in ctas -%}
-        {%- assign variant = c.variant | default: 'accent' -%}
-        <a class="btn btn--{{ variant }}" href="{{ c.href | relative_url }}">{{ c.label }}</a>
-      {%- endfor -%}
+<section class="hero {% if overlay == 'light' %}overlay-light{% else %}overlay-dark{% endif %}">
+  <div class="hero-media" data-images='{{ images | jsonify | default: "[]" }}'></div>
+  <div class="hero-content container">
+    <h1>{{ hero_title }}</h1>
+    {% if hero_subtitle %}<p class="lead">{{ hero_subtitle }}</p>{% endif %}
+    {% if ctas and ctas.size > 0 %}
+    <div class="hero-actions">
+      {% for item in ctas %}
+        {% assign v = item.variant | default: "" %}
+        <a class="btn {% if v == 'light' %}ghost{% endif %}" href="{{ item.href | relative_url }}">{{ item.label }}</a>
+      {% endfor %}
     </div>
-    {%- endif -%}
+    {% endif %}
   </div>
 </section>
+
+<script>
+(function() {
+  try {
+    var section = document.currentScript.previousElementSibling.previousElementSibling;
+    var media = section && section.querySelector('.hero-media');
+    if (!media || !media.dataset.images) return;
+    var imgs = JSON.parse(media.dataset.images);
+    if (Array.isArray(imgs) && imgs.length) {
+      var chosen = imgs[Math.floor(Math.random() * imgs.length)];
+      if (typeof chosen === 'string') {
+        media.style.setProperty('--hero-image', 'url("' + chosen + '")');
+      }
+    }
+  } catch (e) { /* no-op */ }
+})();
+</script>
