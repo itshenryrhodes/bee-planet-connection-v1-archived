@@ -1,0 +1,28 @@
+{%- assign fallback_kind = include.fallback | default: 'default' -%}
+{%- capture fallback_image -%}
+  {%- if fallback_kind == 'blog' -%}/img/hero-blog.jpg
+  {%- elsif fallback_kind == 'wiki' -%}/img/hero-wiki.jpg
+  {%- elsif fallback_kind == 'directory' -%}/img/hero-directory.jpg
+  {%- elsif fallback_kind == 'knowledge' -%}/img/hero-knowledge.jpg
+  {%- else -%}/img/hero.jpg{%- endif -%}
+{%- endcapture -%}
+
+<section class="hero" role="banner" aria-label="{{ include.title | default: site.title }}">
+  {%- if include.hero -%}
+    <div class="hero-bg" style="background-image:url('{{ include.hero | relative_url }}')"></div>
+  {%- else -%}
+    <div class="hero-bg" style="background-image:url('{{ fallback_image | strip | relative_url }}')"></div>
+  {%- endif -%}
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>{{ include.title | default: site.title }}</h1>
+    {%- if include.subtitle -%}
+      <p class="lead">{{ include.subtitle }}</p>
+    {%- endif -%}
+    {%- if include.cta_href and include.cta_label -%}
+      <div class="hero-ctas">
+        <a class="btn btn--accent" href="{{ include.cta_href | relative_url }}">{{ include.cta_label }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
