@@ -1,156 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Apiculture Knowledge Base | Bee Planet Connection</title>
-  <meta name="description" content="Your high-level hub for beekeeping knowledge at Bee Planet Connection. Browse categories and jump into the detailed wiki." />
-  <link rel="canonical" href="https://www.beeplanetconnection.org/knowledge-apiculture.html" />
-  <style>
-    :root { --ink:#0b1020; --muted:#6b7280; --line:#e5e7eb; --bg:#f8fafc; --card:#ffffff; }
-    * { box-sizing:border-box }
-    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Inter,sans-serif; color:var(--ink); line-height:1.6; background:#fff; }
-    header { background:var(--bg); border-bottom:1px solid var(--line); }
-    header .wrap, main { max-width:1100px; margin:0 auto; padding:1rem 1.25rem; }
-    h1 { margin:0.2rem 0 0.5rem; font-size:1.8rem; }
-    nav a { color:#0a58ca; text-decoration:none; }
-    nav a:hover { text-decoration:underline; }
-    .meta { color:var(--muted); font-size:.92rem; }
-    .lede { margin:.5rem 0 1rem; }
-    .cta { display:inline-block; margin:.4rem .3rem 0 0; padding:.55rem .8rem; border:1px solid var(--line); border-radius:.6rem; background:var(--card); text-decoration:none; }
-    .cta:hover { background:#f9fafb; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; margin-top:.75rem; }
-    .card { border:1px solid var(--line); border-radius:.9rem; padding:1rem; background:var(--card); }
-    .card h3 { margin:.1rem 0 .3rem; font-size:1.05rem; }
-    .card p { margin:.3rem 0 .6rem; color:var(--muted); }
-    .card a { text-decoration:none; color:#0a58ca; }
-    .list { display:flex; flex-wrap:wrap; gap:.35rem .7rem; margin-top:.5rem }
-    .list a { padding:.25rem .5rem; border:1px solid var(--line); border-radius:.5rem; text-decoration:none; }
-    footer { border-top:1px solid var(--line); margin-top:1.25rem; background:var(--bg); }
-    footer .wrap { max-width:1100px; margin:0 auto; padding:1rem 1.25rem; font-size:.95rem; color:var(--muted); }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="wrap">
-      <nav><a href="index.html">Home</a> · <a href="blog.html">Blog</a> · <a href="directory.html">Directory</a> · <a href="sitemap.xml">Sitemap</a></nav>
-      <h1>Apiculture Knowledge Base</h1>
-      <p class="meta">Last updated: 2025-09-23 · This page is your overview hub. For detailed topics, use the <a href="wiki/wiki.html">Wiki Index</a>.</p>
-      <p class="lede">A bright, breezy home for bee brains 🐝 — skim the categories below, then dive into the article-level <strong>Wiki</strong> when you’re ready for the nitty-gritty.</p>
-      <a class="cta" href="wiki/wiki.html">Open the full Wiki index</a>
-      <a class="cta" href="feed.xml">Subscribe to updates (RSS)</a>
+---
+layout: default
+title: Apiculture Knowledge
+description: Overview of apiculture knowledge resources across Bee Planet Connection.
+---
+
+<section class="hero" role="banner" aria-label="Knowledge hero">
+  <div class="hero-bg" style="background-image:url('{{ '/img/hero-knowledge.jpg' | relative_url }}')"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Apiculture Knowledge</h1>
+    <p class="lead">Jump into curated educational content spanning bee biology, planting, and practical beekeeping.</p>
+  </div>
+</section>
+
+<section class="section section--cards">
+  <div class="container">
+    <div class="cards">
+      <article class="card">
+        <div class="card-head"><h3>Wiki</h3></div>
+        <div class="card-body"><p>Structured articles and guides maintained as a living resource.</p></div>
+        <a class="card-link" href="{{ '/wiki/wiki.html' | relative_url }}">Wiki</a>
+      </article>
+      <article class="card">
+        <div class="card-head"><h3>Blog</h3></div>
+        <div class="card-body"><p>Research highlights, seasonal notes and commentary.</p></div>
+        <a class="card-link" href="{{ '/blog.html' | relative_url }}">Blog</a>
+      </article>
+      <article class="card">
+        <div class="card-head"><h3>Directory</h3></div>
+        <div class="card-body"><p>Organisations advancing pollinator health and apiculture worldwide.</p></div>
+        <a class="card-link" href="{{ '/directory.html' | relative_url }}">Directory</a>
+      </article>
     </div>
-  </header>
-
-  <main>
-    <section class="grid">
-      <article class="card">
-        <h3>Biology & Behaviour</h3>
-        <p>From castes and lifecycle to communication, navigation, and vision.</p>
-        <div class="list">
-          <a href="wiki/caste-and-lifecycle.html">Caste & lifecycle</a>
-          <a href="wiki/behaviour-and-communication.html">Behaviour</a>
-          <a href="wiki/honey-bee-navigation.html">Navigation</a>
-          <a href="wiki/bee-vision-and-colour-perception.html">Vision</a>
-          <a href="wiki/bee-memory-and-learning.htm">Memory & learning</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Health & Biosecurity</h3>
-        <p>Key diseases, pests, IPM strategies, and colony hygiene.</p>
-        <div class="list">
-          <a href="wiki/varroa-destructor-and-ipm.html">Varroa & IPM</a>
-          <a href="wiki/foulbroods-and-nosema.html">Foulbroods & Nosema</a>
-          <a href="wiki/brood-diseases-overview.html">Brood diseases</a>
-          <a href="wiki/colony-biosecurity-and-hygiene.html">Biosecurity</a>
-          <a href="wiki/small-hive-beetle-and-tropilaelaps.html">SHB & Tropilaelaps</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Forage & Ecology</h3>
-        <p>Planting guides, seasonal forage, and pollination ecology.</p>
-        <div class="list">
-          <a href="wiki/bee-friendly-planting-guides.html">Bee-friendly planting</a>
-          <a href="wiki/forage-by-season.html">Forage by season</a>
-          <a href="wiki/forage-ecology.html">Forage ecology</a>
-          <a href="wiki/pollination-ecology.html">Pollination ecology</a>
-          <a href="wiki/bees-and-biodiversity.html">Bees & biodiversity</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Beekeeping Practice</h3>
-        <p>Apiary setup, inspections, hive types, and seasonal management.</p>
-        <div class="list">
-          <a href="wiki/apiary-setup.html">Apiary setup</a>
-          <a href="wiki/inspections-and-records.html">Inspections & records</a>
-          <a href="wiki/hive-types.html">Hive types</a>
-          <a href="wiki/overwintering-colonies.html">Overwintering</a>
-          <a href="wiki/swarm-control.html">Swarm control</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Products & Markets</h3>
-        <p>Honey types, testing, extraction, economics, and trade.</p>
-        <div class="list">
-          <a href="wiki/honey-types-and-characteristics.html">Honey types</a>
-          <a href="wiki/honey-adulteration-and-testing.html">Adulteration & testing</a>
-          <a href="wiki/extraction-filtration-and-cream-honey.html">Extraction & creaming</a>
-          <a href="wiki/hive-products-economics.html">Products economics</a>
-          <a href="wiki/international-trade-and-honey-markets.html">Trade & markets</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Genetics & Breeding</h3>
-        <p>Subspecies, hygienic behaviour, and queen rearing.</p>
-        <div class="list">
-          <a href="wiki/apis-mellifera-subspecies.html">A. mellifera subspecies</a>
-          <a href="wiki/breeding-and-genetics.html">Breeding & genetics</a>
-          <a href="wiki/hygienic-behaviour-and-breeding.html">Hygienic behaviour</a>
-          <a href="wiki/queen-rearing-and-grafting.html">Queen rearing</a>
-          <a href="wiki/bee-breeding-for-traits.html">Selecting traits</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Policy & Environment</h3>
-        <p>Regulation, pesticides, climate change, and ethics.</p>
-        <div class="list">
-          <a href="wiki/bee-law-and-regulations.html">Bee law & regulations</a>
-          <a href="wiki/pesticides-and-regulation.html">Pesticides & regulation</a>
-          <a href="wiki/beekeeping-and-climate-change.html">Climate change</a>
-          <a href="wiki/ethics-and-welfare.html">Ethics & welfare</a>
-          <a href="wiki/pesticide-exposure-and-mitigation.html">Exposure mitigation</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Culture, History & Outreach</h3>
-        <p>Ancient practices, global traditions, and education.</p>
-        <div class="list">
-          <a href="wiki/beekeeping-in-ancient-civilisations.html">Ancient civilisations</a>
-          <a href="wiki/traditional-hives-and-practices.html">Traditional hives</a>
-          <a href="wiki/beekeeping-practices-around-the-world.html">Around the world</a>
-          <a href="wiki/bee-education-and-outreach.html">Education & outreach</a>
-          <a href="wiki/honey-in-culture-and-religion.html">Culture & religion</a>
-        </div>
-      </article>
-    </section>
-
-    <section style="margin-top:1.25rem">
-      <h2>Explore everything</h2>
-      <p>Ready to nerd out properly? Head to the <a href="wiki/wiki.html"><strong>Wiki Index</strong></a> for a searchable list of all articles under <code>/wiki/</code>. If a page hasn’t been moved yet, you’ll still find it via the <a href="sitemap.xml">sitemap</a>.</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      © Bee Planet Connection · <a href="robots.txt">robots.txt</a> · <a href="feed.json">JSON Feed</a>
-    </div>
-  </footer>
-</body>
-</html>
+  </div>
+</section>
