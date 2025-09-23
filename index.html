@@ -1,84 +1,181 @@
----
-layout: default
-title: Bee Planet Connection
-description: Connecting people, bees and knowledge — practical guides, research, and resources for beekeeping and pollinator health.
-hero_key: home
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Bee Planet Connection — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Connecting people, bees and knowledge — practical guides, research, and resources for beekeeping and pollinator health.">
 
-{% include hero.html
-   key=page.hero_key
-   title="Connecting people, bees and knowledge"
-   subtitle="Practical guides, research, and resources for better beekeeping and thriving pollinator habitats."
-   image="/img/hero/home.jpg"
-   image_alt="Illustration of beekeeper with hive smoker"
-   cta_href="/blog.html"
-   cta_label="See latest posts"
-%}
+  <!-- Favicon & Manifest -->
+  <link rel="icon" href="/favicon.webp" type="image/webp">
+  <link rel="manifest" href="/manifest.webmanifest">
 
-<section id="get-started" class="section section--cards" aria-label="Featured resources">
-  <div class="container">
-    <div class="section-head">
-      <h2>Quick links</h2>
-      <p>Jump straight into popular topics and resources.</p>
+  <!-- Unregister any previous Service Worker to stop stale caching -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()));
+    }
+  </script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGF4SB4DL0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NGF4SB4DL0');
+  </script>
+
+  <!-- Minimal, self-contained CSS so this renders correctly even if your site.css is stale -->
+  <style>
+    :root{
+      --brand:#12223A; --honey:#F7B500; --cream:#FFF8E6; --ink:#0E1117; --ink-muted:#606774; --line:#E6E8EE;
+      --radius-lg:16px; --radius-md:12px; --radius-sm:8px;
+      --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.5rem; --space-6:2rem; --space-8:3rem;
+      --shadow-1:0 2px 8px rgba(10,16,30,.08);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial;
+         color:var(--ink); background:#fff}
+    a{color:var(--brand); text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1100px; margin:0 auto; padding:0 var(--space-4)}
+    .skip-link{position:absolute; left:-9999px}
+    /* Header */
+    .site-header{border-bottom:1px solid var(--line); background:#fff; position:sticky; top:0; z-index:10}
+    .header-bar{display:flex; align-items:center; justify-content:space-between; gap:var(--space-4); padding:var(--space-4) 0}
+    .brand{display:flex; align-items:center; gap:var(--space-3); font-weight:700; color:var(--brand)}
+    .brand-mark{height:32px; width:auto}
+    .nav a{margin:0 var(--space-3); font-weight:600; color:var(--ink)} .nav a[aria-current="page"]{color:var(--brand)}
+    /* Hero (compact, side image) */
+    .hero{background:var(--cream); padding:var(--space-8) 0}
+    .hero-inner{display:grid; grid-template-columns:1.3fr .7fr; gap:var(--space-6); align-items:center}
+    .hero h1{font-size:2rem; line-height:1.2; margin:0 0 var(--space-3)}
+    .hero .lead{color:var(--ink-muted); margin:0 0 var(--space-5)}
+    .btn{display:inline-block; background:var(--honey); color:#111; padding:.75rem 1.1rem; border-radius:10px; font-weight:700; box-shadow:var(--shadow-1)}
+    .hero-figure{margin:0; justify-self:end}
+    .hero-figure img{display:block; max-width:360px; width:100%; height:auto; border-radius:14px; box-shadow:var(--shadow-1)}
+    @media (max-width: 900px){ .hero-inner{grid-template-columns:1fr; text-align:left} .hero-figure{justify-self:start} }
+    /* Cards */
+    .section{padding:var(--space-8) 0}
+    .section-head h2{margin:.25rem 0}
+    .section-head p{color:var(--ink-muted); margin:0 0 var(--space-5)}
+    .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space-5)}
+    @media (max-width: 900px){ .cards{grid-template-columns:1fr}}
+    .card{border:1px solid var(--line); border-radius:var(--radius-lg); padding:var(--space-5); box-shadow:var(--shadow-1); background:#fff}
+    .card h3{margin-top:0}
+    .card .card-body p:last-child{margin-bottom:0}
+    /* CTA band */
+    .cta-band{background:#FDFBF4; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:var(--space-8) 0}
+    .cta-inner{display:flex; align-items:center; justify-content:space-between; gap:var(--space-4)}
+    .btn--dark{background:var(--brand); color:#fff}
+    @media (max-width: 900px){ .cta-inner{flex-direction:column; align-items:flex-start}}
+    /* Footer */
+    .site-footer{border-top:1px solid var(--line); padding:var(--space-6) 0; color:var(--ink-muted)}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="/">
+        <img class="brand-mark" src="/img/logo.svg" alt="Bee Planet Connection" onerror="this.remove()">
+        <span>Bee Planet Connection</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/directory.html">Directory</a>
+        <a href="/wiki/">Wiki</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/accessibility.html">Accessibility</a>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="cards">
-      <article class="card">
-        <div class="card-head"><h3>Bee Physiology</h3></div>
-        <div class="card-body">
-          <p>Understand anatomy, behaviour and lifecycle — the bedrock of good husbandry.</p>
-          <p><a href="{{ '/wiki/bee-physiology.html' | relative_url }}">Open article →</a></p>
+  <main id="main">
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Connecting people, bees and knowledge</h1>
+          <p class="lead">Practical guides, research, and resources for better beekeeping and thriving pollinator habitats.</p>
+          <p><a class="btn" href="/blog.html">See latest posts</a></p>
         </div>
-      </article>
+        <figure class="hero-figure">
+          <!-- Use a smaller image here; replace with your preferred asset -->
+          <img src="/img/hero/home.jpg" alt="Beekeeper illustration">
+        </figure>
+      </div>
+    </section>
 
-      <article class="card">
-        <div class="card-head"><h3>Planting Guides</h3></div>
-        <div class="card-body">
-          <p>Create nectar-rich spaces with year-round forage, from balconies to orchards.</p>
-          <p><a href="{{ '/wiki/bee-friendly-planting-guides.html' | relative_url }}">Open article →</a></p>
+    <section id="get-started" class="section" aria-label="Featured resources">
+      <div class="container">
+        <div class="section-head">
+          <h2>Quick links</h2>
+          <p>Jump straight into popular topics and resources.</p>
         </div>
-      </article>
 
-      <article class="card">
-        <div class="card-head"><h3>Apiary Setup</h3></div>
-        <div class="card-body">
-          <p>Site selection, equipment and layout — set up safely and sustainably.</p>
-          <p><a href="{{ '/wiki/apiary-setup.html' | relative_url }}">Open article →</a></p>
-        </div>
-      </article>
+        <div class="cards">
+          <article class="card">
+            <div class="card-head"><h3>Bee Physiology</h3></div>
+            <div class="card-body">
+              <p>Understand anatomy, behaviour and lifecycle — the bedrock of good husbandry.</p>
+              <p><a href="/wiki/bee-physiology.html">Open article →</a></p>
+            </div>
+          </article>
 
-      <article class="card">
-        <div class="card-head"><h3>Apiculture Directory</h3></div>
-        <div class="card-body">
-          <p>Explore organisations, federations and research bodies supporting pollinators worldwide.</p>
-          <p><a href="{{ '/directory.html' | relative_url }}">Open directory →</a></p>
-        </div>
-      </article>
+          <article class="card">
+            <div class="card-head"><h3>Planting Guides</h3></div>
+            <div class="card-body">
+              <p>Create nectar-rich spaces with year-round forage, from balconies to orchards.</p>
+              <p><a href="/wiki/bee-friendly-planting-guides.html">Open article →</a></p>
+            </div>
+          </article>
 
-      <article class="card">
-        <div class="card-head"><h3>Latest Blog Posts</h3></div>
-        <div class="card-body">
-          <p>Fresh research and seasonal updates from our editorial team.</p>
-          <p><a href="{{ '/blog.html' | relative_url }}">Open blog →</a></p>
+          <article class="card">
+            <div class="card-head"><h3>Apiary Setup</h3></div>
+            <div class="card-body">
+              <p>Site selection, equipment and layout — set up safely and sustainably.</p>
+              <p><a href="/wiki/apiary-setup.html">Open article →</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head"><h3>Apiculture Directory</h3></div>
+            <div class="card-body">
+              <p>Explore organisations, federations and research bodies supporting pollinators worldwide.</p>
+              <p><a href="/directory.html">Open directory →</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head"><h3>Latest Blog Posts</h3></div>
+            <div class="card-body">
+              <p>Fresh research and seasonal updates from our editorial team.</p>
+              <p><a href="/blog.html">Open blog →</a></p>
+            </div>
+          </article>
         </div>
-      </article>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Stay updated">
+      <div class="container cta-inner">
+        <div>
+          <h2>Stay in the loop</h2>
+          <p>New research, seasonal tips and practical how-tos — straight to your inbox.</p>
+        </div>
+        <a class="btn btn--dark" href="/blog.html">See latest posts</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Bee Planet Connection</p>
     </div>
-  </div>
-</section>
-
-<section class="cta-band" aria-label="Stay updated">
-  <div class="container cta-inner">
-    <h2>Stay in the loop</h2>
-    <p>New research, seasonal tips and practical how-tos — straight to your inbox.</p>
-    <a class="btn btn--dark" href="{{ '/blog.html' | relative_url }}">See latest posts</a>
-  </div>
-</section>
-
-<!-- Register Service Worker -->
-<script>
-  if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
-      .then(reg => console.log("Service Worker registered:", reg.scope))
-      .catch(err => console.error("Service Worker registration failed:", err));
-  }
-</script>
+  </footer>
+</body>
+</html>
