@@ -1,26 +1,18 @@
+<!-- _includes/header.html -->
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark">🐝</span>
-      <span class="brand-name">{{ site.title }}</span>
-    </a>
-
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="{{ '/wiki/' | relative_url }}">Wiki</a>
-      <a href="{{ '/blog.html' | relative_url }}">Blog</a>
-      <a href="{{ '/directory.html' | relative_url }}">Directory</a>
-      <a href="{{ '/guides/' | relative_url }}" aria-disabled="true" title="Coming soon">Guides</a>
-      <a href="{{ '/events/' | relative_url }}" aria-disabled="true" title="Coming soon">Events</a>
-      <a href="{{ '/resources/' | relative_url }}" aria-disabled="true" title="Coming soon">Resources</a>
-      <a href="{{ '/community/' | relative_url }}" aria-disabled="true" title="Coming soon">Community</a>
-      <a href="{{ '/about.html' | relative_url }}">About</a>
-      <a href="{{ '/search.html' | relative_url }}" class="search-link" aria-label="Search">🔍</a>
-    </nav>
-
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-    </button>
-  </div>
+  <nav class="nav" aria-label="Primary">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Navigation Menu</button>
+    <div id="site-menu" class="menu">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/blog.html' | relative_url }}" {% if page.url == '/blog.html' %}aria-current="page"{% endif %}>Blog</a>
+      <a href="{{ '/directory.html' | relative_url }}" {% if page.url == '/directory.html' %}aria-current="page"{% endif %}>Directory</a>
+      <a href="{{ '/wiki/' | relative_url }}" {% if page.url == '/wiki/' %}aria-current="page"{% endif %}>Wiki</a>
+      <a href="{{ '/about.html' | relative_url }}" {% if page.url == '/about.html' %}aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/contact.html' | relative_url }}" {% if page.url == '/contact.html' %}aria-current="page"{% endif %}>Contact</a>
+      <a href="{{ '/accessibility.html' | relative_url }}" {% if page.url == '/accessibility.html' %}aria-current="page"{% endif %}>Accessibility</a>
+      <a href="{{ '/privacy.html' | relative_url }}" {% if page.url == '/privacy.html' %}aria-current="page"{% endif %}>Privacy</a>
+    </div>
+  </nav>
 </header>
