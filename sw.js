@@ -3,10 +3,7 @@ permalink: /sw.js
 layout: null
 ---
 
-/* Bee Planet Connection Service Worker
-   Auto-versioned on each deploy via Jekyll timestamp.
-*/
-
+/* Bee Planet Connection Service Worker — auto-versioned */
 const BUILD_TS = '{{ site.time | date: "%Y%m%d%H%M%S" }}';
 const CACHE_NAME = `bpc-${BUILD_TS}`;
 
@@ -19,10 +16,7 @@ const PRECACHE = [
 ];
 
 async function putInCache(request, response) {
-  try {
-    const cache = await caches.open(CACHE_NAME);
-    await cache.put(request, response.clone());
-  } catch (_) {}
+  try { const cache = await caches.open(CACHE_NAME); await cache.put(request, response.clone()); } catch (_) {}
 }
 
 self.addEventListener('install', (event) => {
@@ -41,19 +35,12 @@ self.addEventListener('activate', (event) => {
   })());
 });
 
-function isHTML(req) {
-  const accept = req.headers.get('accept') || '';
-  return accept.includes('text/html');
-}
-function isCSS(req) {
-  return req.destination === 'style' || req.url.endsWith('.css');
-}
-function isScript(req) {
-  return req.destination === 'script' || req.url.endsWith('.js');
-}
-function isAsset(req) {
-  return ['image', 'font'].includes(req.destination) ||
-         /\.(png|jpe?g|webp|gif|svg|ico|woff2?|ttf|eot)$/.test(new URL(req.url).pathname);
+function isHTML(req){ return (req.headers.get('accept')||'').includes('text/html'); }
+function isCSS(req){ return req.destination === 'style' || req.url.endsWith('.css'); }
+function isScript(req){ return req.destination === 'script' || req.url.endsWith('.js'); }
+function isAsset(req){
+  return ['image','font'].includes(req.destination) ||
+    /\.(png|jpe?g|webp|gif|svg|ico|woff2?|ttf|eot)$/.test(new URL(req.url).pathname);
 }
 
 self.addEventListener('fetch', (event) => {
@@ -61,62 +48,67 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
 
   if (isHTML(request)) {
+    // Network-first for documents
     event.respondWith((async () => {
       try {
         const net = await fetch(request, { cache: 'no-store' });
-        const u = new URL(request.url);
-        u.searchParams.set('v', BUILD_TS);
+        const u = new URL(request.url); u.searchParams.set('v', BUILD_TS);
         await putInCache(u.toString(), net);
         return net.clone();
-      } catch (_) {
+      } catch {
         const cache = await caches.open(CACHE_NAME);
-        const cached = await cache.match(request) || await cache.match('/');
-        return cached || new Response('Offline', { status: 503, statusText: 'Offline' });
+        return (await cache.match(request)) || (await cache.match('/')) || new Response('Offline', { status: 503 });
       }
     })());
     return;
   }
 
-  if (isCSS(request) || isScript(request)) {
+  if (isCSS(request)) {
+    // Network-first for CSS so style tweaks appear immediately
+    event.respondWith((async () => {
+      try {
+        const net = await fetch(request, { cache: 'no-store' });
+        await putInCache(request, net);
+        return net.clone();
+      } catch {
+        const cache = await caches.open(CACHE_NAME);
+        return (await cache.match(request)) || new Response('', { status: 504 });
+      }
+    })());
+    return;
+  }
+
+  if (isScript(request)) {
+    // Stale-while-revalidate for JS
     event.respondWith((async () => {
       const cache = await caches.open(CACHE_NAME);
       const cached = await cache.match(request);
-      const fetchPromise = fetch(request).then((resp) => {
-        putInCache(request, resp);
-        return resp.clone();
-      }).catch(() => undefined);
+      const fetchPromise = fetch(request).then((resp) => { putInCache(request, resp); return resp.clone(); }).catch(()=>undefined);
       return cached || (await fetchPromise) || new Response('', { status: 504 });
     })());
     return;
   }
 
   if (isAsset(request)) {
+    // Cache-first for images/fonts
     event.respondWith((async () => {
       const cache = await caches.open(CACHE_NAME);
       const cached = await cache.match(request);
-      if (cached) {
-        fetch(request).then((resp) => putInCache(request, resp)).catch(() => {});
-        return cached;
-      }
+      if (cached) { fetch(request).then((resp)=>putInCache(request, resp)).catch(()=>{}); return cached; }
       try {
         const net = await fetch(request);
         await putInCache(request, net);
         return net.clone();
-      } catch (_) {
-        return new Response('', { status: 504 });
-      }
+      } catch { return new Response('', { status: 504 }); }
     })());
     return;
   }
 
-  event.respondWith((async () => {
-    try { return await fetch(request); }
-    catch (_) {
-      const cache = await caches.open(CACHE_NAME);
-      const cached = await cache.match(request);
-      return cached || new Response('', { status: 504 });
-    }
-  })());
+  // Default passthrough
+  event.respondWith(fetch(request).catch(async () => {
+    const cache = await caches.open(CACHE_NAME);
+    return (await cache.match(request)) || new Response('', { status: 504 });
+  }));
 });
 
 self.addEventListener('message', (event) => {
