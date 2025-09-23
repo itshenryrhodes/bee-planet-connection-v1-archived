@@ -25,8 +25,14 @@
 <link rel="manifest" href="{{ 'manifest.webmanifest' | relative_url }}">
 <meta name="theme-color" content="#0B3D2E">
 
-<!-- CSS with cache-busting query string -->
+<!-- CSS (cache-busted each build) -->
 <link rel="stylesheet" href="{{ 'assets/css/site.css?v=' | append: site.time | relative_url }}">
+
+<!-- Inline override so it applies immediately even if a stale CSS is cached -->
+<style>
+  .brand img{width:40px;height:40px;display:block;border-radius:8px}
+  @media (max-width:520px){.brand img{width:32px;height:32px}}
+</style>
 
 <!-- SEO tags -->
 {% seo %}
