@@ -1,10 +1,14 @@
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Bee Planet Connection</p>
-    <nav class="footer-nav" aria-label="Footer">
+  <div class="footer-inner">
+    <p>© <span id="year"></span> {{ site.title }}</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="{{ '/privacy.html' | relative_url }}">Privacy</a>
+      <a href="{{ '/accessibility.html' | relative_url }}" aria-disabled="true" title="Coming soon">Accessibility</a>
+      <a href="{{ '/contact.html' | relative_url }}" aria-disabled="true" title="Coming soon">Contact</a>
       <a href="{{ '/blog.html' | relative_url }}">Blog</a>
-      <a href="{{ '/directory.html' | relative_url }}">Directory</a>
-      <a href="{{ '/wiki/wiki.html' | relative_url }}">Wiki</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>
     </nav>
   </div>
 </footer>
