@@ -1,0 +1,12 @@
+title: Bee Planet Connection
+description: Connecting people, bees and knowledge
+permalink: pretty
+markdown: kramdown
+theme: null
+plugins: []
+exclude:
+  - README.md
+  - LICENSE
+  - node_modules
+  - scripts
+  - .github
