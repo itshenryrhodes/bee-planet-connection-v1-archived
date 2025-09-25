@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bee Planet Connection</title>
-  <meta name="description" content="Connecting people, bees and knowledge. Bee Planet Connection is your hub for global apiculture resources, news, and education.">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Connecting people, bees and knowledge — a global hub for apiculture resources, news, and education." />
+  <link rel="icon" href="img/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="img/icons/logo-180.png">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGF4SB4DL0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-NGF4SB4DL0');
+  </script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="img/logo-128.png" alt="Bee Planet Connection Logo"></a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Bee Planet Connection home">
+        <img src="img/icons/logo-128.png" alt="Bee Planet Connection Logo" class="logo">
+        <span class="brand-text">Bee Planet Connection</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="wiki/wiki.html">Wiki</a>
+        <a href="directory.html">Directory</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="wiki/wiki.html">Wiki</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Welcome to Bee Planet Connection</h1>
-      <p>Connecting people, bees and knowledge — a global hub for apiculture, beekeeping, and sustainable futures.</p>
-      <a href="directory.html" class="btn">Explore the Directory</a>
+      <div class="container">
+        <h1>Connecting people, bees and knowledge</h1>
+        <p class="lead">A global hub for apiculture: learn, share, and explore.</p>
+        <div class="cta-row">
+          <a class="btn" href="wiki/wiki.html">Explore the Wiki</a>
+          <a class="btn btn-outline" href="blog.html">Read the Blog</a>
+        </div>
+      </div>
     </section>
 
-    <section class="features">
-      <div class="feature">
+    <section class="grid container">
+      <article class="card">
         <h2>Knowledge Base</h2>
         <p>Dive into articles, guides, and research from the world of bees and beekeeping.</p>
-        <a href="wiki/wiki.html" class="btn">Start Reading</a>
-      </div>
-      <div class="feature">
+        <a class="link" href="wiki/wiki.html">Start reading →</a>
+      </article>
+      <article class="card">
         <h2>Community Directory</h2>
-        <p>Find beekeepers, associations, and organisations across the globe.</p>
-        <a href="directory.html" class="btn">View Directory</a>
-      </div>
-      <div class="feature">
+        <p>Find beekeepers, associations, vendors and training across the world.</p>
+        <a class="link" href="directory.html">Open the directory →</a>
+      </article>
+      <article class="card">
         <h2>Latest News & Blogs</h2>
         <p>Stay up to date with research, events, and stories from the hive.</p>
-        <a href="blog.html" class="btn">Read Blog</a>
-      </div>
+        <a class="link" href="blog.html">See all posts →</a>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Bee Planet Connection. All rights reserved.</p>
-    <p>Contact: <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Bee Planet Connection. All rights reserved.</p>
+      <p>Contact: <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
+    </div>
   </footer>
 </body>
 </html>
