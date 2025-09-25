@@ -1,21 +1,16 @@
-<!-- _includes/header.html -->
-<header class="site-header" role="banner">
-  <div class="container header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Bee Planet Connection home">
-      <!-- Now pointing to /img/icons/ -->
-      <img src="{{ 'img/icons/logo-128.png' | relative_url }}" width="40" height="40" alt="Bee Planet Connection logo">
-      <span>Bee Planet Connection</span>
+<header class="site-header" role="banner" style="background:#fff;border-bottom:1px solid #eee;padding:0.5rem 1rem;">
+  <div class="container" style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;">
+    <a class="site-title" href="/" style="font-weight:bold;font-size:1.2rem;text-decoration:none;color:#222;">
+      Bee Planet Connection
     </a>
-
-    <button class="menu-toggle" aria-controls="site-menu" aria-expanded="false" aria-label="Toggle menu">☰</button>
-
-    <nav id="site-menu" class="site-nav" role="navigation" aria-label="Primary">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ 'wiki/index.html' | relative_url }}">Wiki</a>
-      <a href="{{ 'directory.html' | relative_url }}">Directory</a>
-      <a href="{{ 'blog.html' | relative_url }}">Blog</a>
-      <a href="{{ 'about.html' | relative_url }}">About</a>
-      <a class="cta" href="{{ 'contact.html' | relative_url }}">Contact</a>
+    <nav class="site-nav" role="navigation">
+      <ul style="list-style:none;margin:0;padding:0;display:flex;gap:1rem;">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/blog.html" class="nav-link">Blog</a></li>
+        <li><a href="/directory.html" class="nav-link">Directory</a></li>
+        <li><a href="/wiki/" class="nav-link">Wiki</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
   </div>
 </header>
