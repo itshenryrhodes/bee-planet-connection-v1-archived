@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact - Bee Planet Connection</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="img/icons/logo-180.png">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGF4SB4DL0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-NGF4SB4DL0');
+  </script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="img/logo-128.png" alt="Bee Planet Connection Logo"></a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Bee Planet Connection home">
+        <img src="img/icons/logo-128.png" alt="Bee Planet Connection Logo" class="logo">
+        <span class="brand-text">Bee Planet Connection</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="wiki/wiki.html">Wiki</a>
+        <a href="directory.html">Directory</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="wiki/wiki.html">Wiki</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <section class="contact">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you. Whether you’ve got questions, feedback, or want to collaborate, drop us a line:</p>
-      <p><strong>Email:</strong> <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
-    </section>
+  <main class="container page">
+    <h1>Contact us</h1>
+    <p>We’d love to hear from you. Whether you’ve got questions, feedback, or want to collaborate, drop us a line:</p>
+    <p><strong>Email:</strong> <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Bee Planet Connection. All rights reserved.</p>
-    <p>Contact: <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Bee Planet Connection. All rights reserved.</p>
+      <p>Contact: <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
+    </div>
   </footer>
 </body>
 </html>
