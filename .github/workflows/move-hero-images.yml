@@ -1,0 +1,57 @@
+name: Move hero images to /img/hero
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Create target folder
+        run: mkdir -p img/hero
+
+      - name: Move hero images (jpg + webp)
+        shell: bash
+        run: |
+          set -e
+          shopt -s nullglob
+
+          # Patterns to look for (root and /img), but ignore ones already in /img/hero
+          candidates=( hero-*-*.jpg hero-*-*.webp img/hero-*-*.jpg img/hero-*-*.webp img/hero-*.jpg img/hero-*.webp )
+
+          moved_any=0
+          for f in "${candidates[@]}"; do
+            # Skip if it's already in img/hero/
+            [[ "$f" == img/hero/* ]] && continue
+
+            # Only move files that match our naming convention hero-XX-size.ext
+            base="$(basename "$f")"
+            if [[ "$base" == hero-*-*.jpg || "$base" == hero-*-*.webp ]]; then
+              echo "Moving $f -> img/hero/$base"
+              git mv "$f" "img/hero/$base" 2>/dev/null || mv "$f" "img/hero/$base"
+              moved_any=1
+            fi
+          done
+
+          if [[ $moved_any -eq 0 ]]; then
+            echo "No hero files found to move. (Nothing to do.)"
+          fi
+
+      - name: Commit & push (if changed)
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add -A
+            git commit -m "Move hero images into img/hero/"
+            git push
+          else
+            echo "Nothing to commit."
+          fi
