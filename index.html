@@ -1,55 +1,57 @@
----
-layout: default
-title: Bee Planet Connection
-description: Connecting people, bees and knowledge
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bee Planet Connection</title>
+  <meta name="description" content="Connecting people, bees and knowledge. Bee Planet Connection is your hub for global apiculture resources, news, and education.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo-128.png" alt="Bee Planet Connection Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="wiki/wiki.html">Wiki</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-{% include hero.html section="home" title="Connecting people, bees and knowledge" subtitle="A global hub for apiculture: learn, share, and explore." %}
+  <main>
+    <section class="hero">
+      <h1>Welcome to Bee Planet Connection</h1>
+      <p>Connecting people, bees and knowledge — a global hub for apiculture, beekeeping, and sustainable futures.</p>
+      <a href="directory.html" class="btn">Explore the Directory</a>
+    </section>
 
-<section class="home-panels">
-  <div class="container grid">
-    <article class="panel">
-      <h2>Latest blog</h2>
-      {% assign posts = site.pages | where_exp: 'p', 'p.path contains "blog/"' | sort: 'date' | reverse %}
-      {% if posts and posts.size > 0 %}
-        {% assign latest = posts[0] %}
-        <h3><a href="{{ latest.url | relative_url }}">{{ latest.title | default: latest.name }}</a></h3>
-        {% if latest.excerpt %}
-          <p>{{ latest.excerpt }}</p>
-        {% else %}
-          <p>{{ latest.description | default: "News, research and practical tips from the apiculture world." }}</p>
-        {% endif %}
-        <a class="text-link" href="{{ 'blog.html' | relative_url }}">See all posts →</a>
-      {% else %}
-        <p>No posts yet. <a class="text-link" href="{{ 'blog.html' | relative_url }}">Visit the blog</a>.</p>
-      {% endif %}
-    </article>
+    <section class="features">
+      <div class="feature">
+        <h2>Knowledge Base</h2>
+        <p>Dive into articles, guides, and research from the world of bees and beekeeping.</p>
+        <a href="wiki/wiki.html" class="btn">Start Reading</a>
+      </div>
+      <div class="feature">
+        <h2>Community Directory</h2>
+        <p>Find beekeepers, associations, and organisations across the globe.</p>
+        <a href="directory.html" class="btn">View Directory</a>
+      </div>
+      <div class="feature">
+        <h2>Latest News & Blogs</h2>
+        <p>Stay up to date with research, events, and stories from the hive.</p>
+        <a href="blog.html" class="btn">Read Blog</a>
+      </div>
+    </section>
+  </main>
 
-    <article class="panel">
-      <h2>Wiki spotlight</h2>
-      {% assign wiki_pages = site.pages | where_exp: 'w', 'w.path contains "wiki/"' %}
-      {% if wiki_pages and wiki_pages.size > 0 %}
-        {% assign featured = wiki_pages | first %}
-        <h3><a href="{{ featured.url | relative_url }}">{{ featured.title | default: featured.name }}</a></h3>
-        <p>{{ featured.description | default: "Practical, well-researched articles for beginners to pros." }}</p>
-        <a class="text-link" href="{{ 'wiki/index.html' | relative_url }}">Browse the wiki →</a>
-      {% else %}
-        <p>We’re building the knowledge base. Check back soon!</p>
-      {% endif %}
-    </article>
-
-    <article class="panel">
-      <h2>Resource directory</h2>
-      <p>Find associations, journals, vendors and training across the world.</p>
-      <a class="text-link" href="{{ 'directory.html' | relative_url }}">Open the directory →</a>
-    </article>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container cta-inner">
-    <h2>Have something to add?</h2>
-    <p>Contribute an article, share a dataset, or suggest a resource.</p>
-    <a class="btn" href="{{ 'contact.html' | relative_url }}">Get in touch</a>
-  </div>
-</section>
+  <footer>
+    <p>&copy; 2025 Bee Planet Connection. All rights reserved.</p>
+    <p>Contact: <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
+  </footer>
+</body>
+</html>
