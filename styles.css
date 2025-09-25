@@ -1,0 +1,44 @@
+:root{
+  --bg:#ffffff; --text:#0a0a0a; --muted:#666;
+  --brand:#143a52; /* deep navy */
+  --accent:#f4b400; /* warm honey */
+  --card:#f7fafc; --border:#e6edf3;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+.site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--border)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand-text{font-weight:700;color:var(--brand)}
+.logo{width:40px;height:40px;border-radius:8px}
+
+.nav{display:flex;gap:14px;flex-wrap:wrap}
+.nav a{padding:8px 10px;border-radius:10px;text-decoration:none;color:var(--brand);font-weight:600}
+.nav a.active,.nav a:hover{background:var(--card)}
+
+.hero{background:linear-gradient(180deg,#fff, #fef6e7 60%);border-bottom:1px solid var(--border)}
+.hero .container{padding:56px 0}
+.hero h1{margin:0 0 8px 0;font-size:clamp(28px,4vw,44px);color:var(--brand);line-height:1.2}
+.lead{color:#243b53;max-width:52ch}
+.cta-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;background:var(--brand);color:#fff;text-decoration:none;font-weight:700}
+.btn-outline{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:32px auto}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+.card h2{margin:0 0 6px 0}
+.link{color:var(--brand);text-decoration:none;font-weight:700}
+.link:hover{text-decoration:underline}
+
+.page{padding:32px 0}
+
+.site-footer{margin-top:40px;border-top:1px solid var(--border);background:#fff}
+.site-footer .container{padding:18px 0;color:var(--muted)}
+.site-footer a{color:var(--brand);text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
