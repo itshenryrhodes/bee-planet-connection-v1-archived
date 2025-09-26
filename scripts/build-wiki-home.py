@@ -10,34 +10,54 @@ OUT = os.path.join(WIKI_DIR, "index.html")
 
 TAXO = {
   "Management & Practices": [
-    "management","inspection","checklist","swarm","demaree","snelgrove","equalisation","brood","supering","hive","nuc","requeening","queen-introduction","queenless","marking","clipping","split","apiary","winter","overwinter","autumn","spring","summer","ventilation","insulation","feeding","emergency","smoker","smoke","spray","space","comb","frame","foundation","polystyrene","top-bar","langstroth","national","mouse-guard","robber"
+    "management","inspection","checklist","swarm","demaree","snelgrove","equalisation","brood",
+    "supering","hive","nuc","requeening","queen-introduction","queenless","marking","clipping",
+    "split","apiary","winter","overwinter","autumn","spring","summer","ventilation","insulation",
+    "feeding","emergency","smoker","spray","space","comb","frame","foundation","polystyrene",
+    "top-bar","langstroth","national","mouse-guard","robber"
   ],
   "Health & Diseases": [
-    "varroa","foulbrood","nosema","chalkbrood","sacbrood","virus","cbpv","stonebrood","pests","beetle","tropilaelaps","tracheal","biosecurity","hygiene","quarantine","treatment","oxalic","formic","thymol","ipm","hygienic"
+    "varroa","foulbrood","nosema","chalkbrood","sacbrood","virus","cbpv","stonebrood","pests",
+    "beetle","tropilaelaps","tracheal","biosecurity","hygiene","quarantine","treatment",
+    "oxalic","formic","thymol","ipm","hygienic"
   ],
   "Biology & Behaviour": [
-    "biology","anatomy","physiology","genetics","genomics","pheromone","mandibular","nasonov","brood-pheromone","dance","waggle","navigation","orientation","memory","learning","thermoregulation","drone","queen","worker","caste","temperament","behaviour","communication","swarm-behaviour","decision"
+    "biology","anatomy","physiology","genetics","genomics","pheromone","mandibular","nasonov",
+    "brood-pheromone","dance","waggle","navigation","orientation","memory","learning",
+    "thermoregulation","drone","queen","worker","caste","temperament","behaviour","communication",
+    "swarm-behaviour","decision"
   ],
   "Plants & Forage": [
-    "forage","ivy","lavender","clover","willow","meadow","hedgerow","planting","seed","calendar","pollen","nectar","dearth","wildflower","urban-ecozone","tropical-forage","temperate-continental","grassland","forest","desert","island","mountain","subtropical","water-sources","rain-garden","pollinator","hedge","ponds"
+    "forage","ivy","lavender","clover","willow","meadow","hedgerow","planting","seed","calendar",
+    "pollen","nectar","dearth","wildflower","urban-ecozone","tropical-forage","temperate-continental",
+    "grassland","forest","desert","island","mountain","subtropical","water-sources","rain-garden",
+    "pollinator","hedge","ponds"
   ],
   "Pollination & Agriculture": [
-    "pollination","orchard","apple","blueberry","sunflower","osr","grower","fees","contracts","invoices","insurance","migratory","greenhouse"
+    "pollination","orchard","apple","blueberry","sunflower","osr","grower","fees","contracts",
+    "invoices","insurance","migratory","greenhouse"
   ],
   "Equipment & Workshop": [
-    "equipment","tool","smoker","extractor","wax","foundation","frames","wiring","uncapping","press","jigs","paint","preservatives","scales","weigh"
+    "equipment","tool","smoker","extractor","wax","foundation","frames","wiring","uncapping",
+    "press","jigs","paint","preservatives","scales","weigh"
   ],
   "Products & Processing": [
-    "honey","extraction","comb-honey","chunk-honey","creamed-honey","moisture","refractometer","adulteration","grading","tasting","varietals","vinegar","oxymel","beeswax","candle","rendering","bleaching","propolis","pollen","royal-jelly","value-added"
+    "honey","extraction","comb-honey","chunk-honey","creamed-honey","moisture","refractometer",
+    "adulteration","grading","tasting","varietals","vinegar","oxymel","beeswax","candle","rendering",
+    "bleaching","propolis","pollen","royal-jelly","value-added"
   ],
   "Business, Legal & Safety": [
-    "pricing","economics","trade","label","branding","compliance","insurance","risk","liability","safety","ladder","first-aid","audit","contracts","legal","membership"
+    "pricing","economics","trade","label","branding","compliance","insurance","risk","liability",
+    "safety","ladder","first-aid","audit","contracts","legal","membership"
   ],
   "Tech & Data": [
-    "sensor","iot","data","analytics","computer-vision","thermal","audio","genomics","crispr","open-source","security"
+    "sensor","iot","data","analytics","computer-vision","thermal","audio","genomics","crispr",
+    "open-source","security"
   ],
   "Education, Community & Culture": [
-    "education","outreach","workshop","events","mentoring","content-calendar","podcasting","press-kit","press","community","code-of-conduct","moderation","photography","history","culture","religion","mythology","art","famous","women","ancient","medieval"
+    "education","outreach","workshop","events","mentoring","content-calendar","podcasting","press-kit",
+    "press","community","code-of-conduct","moderation","photography","history","culture","religion",
+    "mythology","art","famous","women","ancient","medieval"
   ]
 }
 
@@ -144,11 +164,10 @@ def main():
     og_image = fr_img or fr_src
     today = datetime.date.today().isoformat()
 
-    # compact category sections (limit items per category)
     sections = []
     for cat in category_order:
         items = cats.get(cat, [])
-        if not items: 
+        if not items:
             continue
         anchor = cat.lower().replace("&","and").replace(" ","-")
         sections.append(f"""
@@ -160,7 +179,6 @@ def main():
           <div class="more"><a href="/wiki/#{escape(anchor)}">Browse more in {escape(cat)} →</a></div>
         </section>
         """)
-
     sections_html = "\n".join(sections)
 
     html = f"""<!doctype html>
@@ -227,39 +245,6 @@ def main():
       </footer>
     </div>
   </div>
-
-  <script>
-  (function(){{
-     const a=document.querySelectorAll('.grid li a');
-     const rt=document.createElement('div');
-     rt.className='kicker';
-     var words=0;
-     a.forEach(x=>{{words+=x.textContent.trim().split(/\\s+/).length;}});
-  }})();
-  </script>
-
-  <style>
-    .wiki-home .topnav{{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin:1rem 0}}
-    .wiki-home .brand{{font-weight:700}}
-    .wiki-home .count{{opacity:.7;margin-left:.5rem}}
-    .wiki-home .quicklinks a{{margin-left:.75rem;white-space:nowrap}}
-    .featured .hero{{position:relative;border-radius:16px;overflow:hidden;max-height:360px}}
-    .featured .hero img{{width:100%;height:360px;object-fit:cover;display:block}}
-    .featured .overlay{{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,.1));}}
-    .featured .copy{{position:absolute;left:24px;right:24px;bottom:20px;color:#fff}}
-    .featured .ftitle{{margin:0 0 .25rem 0}}
-    .featured .fdesc{{margin:.25rem 0 .5rem 0;opacity:.9}}
-    .recent h2, .cat h2{{margin-top:2rem}}
-    .grid{{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.5rem 1rem}}
-    .grid li{{padding:.25rem 0}}
-    .grid .meta{{opacity:.6;margin-left:.25rem;font-size:.9em}}
-    .more{{margin-top:.5rem}}
-    @media (max-width: 720px) {{
-      .featured .hero{{max-height:260px}}
-      .featured .hero img{{height:260px}}
-      .wiki-home .quicklinks{{display:none}}
-    }}
-  </style>
 </body>
 </html>
 """
