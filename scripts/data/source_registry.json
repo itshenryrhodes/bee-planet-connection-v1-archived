@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "notes": "Domains approved for retrieval. Wikipedia allowed for discovery only; not to be cited for protocols/regulations.",
+  "text_licenses_allowed": ["official-pub", "gov", "journal-abstract", "association", "extension"],
+  "image_licenses_allowed": ["CC0", "CC-BY", "CC-BY-SA"],
+  "sources": [
+    {"name": "UK National Bee Unit (BeeBase)", "base": "https://www.nationalbeeunit.com", "kind": "gov"},
+    {"name": "UK Government (DEFRA/APH)", "base": "https://www.gov.uk", "kind": "gov"},
+    {"name": "USDA ARS Bee Research", "base": "https://www.ars.usda.gov", "kind": "gov"},
+    {"name": "EFSA", "base": "https://www.efsa.europa.eu", "kind": "gov"},
+    {"name": "FAO / Codex", "base": "https://www.fao.org", "kind": "official-pub"},
+    {"name": "Apimondia", "base": "https://www.apimondia.org", "kind": "association"},
+    {"name": "COLOSS", "base": "https://coloss.org", "kind": "association"},
+    {"name": "BBKA", "base": "https://www.bbka.org.uk", "kind": "association"},
+    {"name": "Cornell CALS", "base": "https://cals.cornell.edu", "kind": "extension"},
+    {"name": "UC Davis", "base": "https://entomology.ucdavis.edu", "kind": "extension"},
+    {"name": "OMAFRA", "base": "https://www.ontario.ca", "kind": "extension"},
+    {"name": "Wikimedia Commons (images)", "base": "https://commons.wikimedia.org", "kind": "image"},
+    {"name": "Openverse (images)", "base": "https://api.openverse.org", "kind": "image-api"}
+  ],
+  "discovery": {
+    "use_wikipedia": true,
+    "wikipedia_note": "Use for discovery only; replace with primary sources before merge."
+  }
+}
