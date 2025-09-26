@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+import os, re, glob, datetime
+from html import escape
+
+WIKI_DIR = "wiki"
+OUT = os.path.join(WIKI_DIR, "index.html")
+
+TAXONOMY = {
+  "Management": ["split","swarm","queen","nuc","inspection","requeening","brood","excluder","super","equalisation","demaree","snelgrove"],
+  "Health & Pests": ["varroa","chalkbrood","nosema","virus","dwv","cbpv","foulbrood","wax-moth","tracheal","stonebrood","hygiene","biosecurity"],
+  "Equipment": ["frame","foundation","extractor","smoker","hive","roof","crownboard","excluder","screened","wiring","top-bar","flow"],
+  "Products": ["honey","wax","propolis","pollen","royal jelly","comb","press","creamed","varietal"],
+  "Pollination": ["pollination","orchard","osr","heather","contract","density","placement","bumble","mason","leafcutter"],
+  "Environment & Plants": ["forage","hedge","wildflower","ivy","willow","lavender","clover","calendar","habitat","climate","agroforestry"],
+  "History & Culture": ["ancient","rome","greece","egypt","history","culture","myth","art","symbol","napoleon"],
+  "Education & Community": ["school","workshop","outreach","community","training","programme","event","newsletter","press","pr"],
+  "Tech & Data": ["sensor","ai","vision","thermal","scale","apiary data","iot","open-source","genomics","big data","remote"],
+  "Business & Compliance": ["label","compliance","grading","legal","insurance","license","pricing","budget","kpi","grant","metrology"]
+}
+
+def pick_category(slug, title):
+    s = (slug + " " + title).lower()
+    for cat, keys in TAXONOMY.items():
+        if any(k in s for k in keys):
+            return cat
+    return "General"
+
+def read_meta(path):
+    html = open(path, encoding="utf-8").read()
+    title = re.search(r"<title>(.*?)</title>", html, re.I|re.S)
+    desc  = re.search(r'<meta name="description" content="(.*?)"', html, re.I)
+    updated = re.search(r'<meta name="last-updated" content="(.*?)"', html, re.I)
+    title = title.group(1).strip() if title else os.path.basename(path)
+    desc  = desc.group(1).strip() if desc else ""
+    updated = updated.group(1).strip() if updated else ""
+    return title, desc, updated
+
+pages = []
+for f in sorted(glob.glob(os.path.join(WIKI_DIR, "*.html"))):
+    if os.path.basename(f) in ("index.html","wiki.html"):
+        continue
+    slug = os.path.basename(f)
+    title, desc, updated = read_meta(f)
+    cat = pick_category(slug, title)
+    pages.append({"slug": slug, "title": title, "desc": desc, "updated": updated, "cat": cat})
+
+total = len(pages)
+pages_sorted = sorted(pages, key=lambda p: p["title"].lower())
+cats = {}
+for p in pages_sorted:
+    cats.setdefault(p["cat"], []).append(p)
+
+def dt(v):
+    try:return datetime.date.fromisoformat(v)
+    except: return datetime.date.min
+featured = max(pages_sorted, key=lambda p: dt(p["updated"]) if p["updated"] else datetime.date.min) if pages_sorted else {"slug":"", "title":"", "desc":""}
+
+def render_card(p):
+    return f'''
+    <div class="card">
+      <h3><a href="/wiki/{escape(p["slug"])}">{escape(p["title"])}</a></h3>
+      <p class="kicker">{escape((p["desc"] or "")[:140]) + ("…" if (p["desc"] or "") and len(p["desc"])>140 else "")}</p>
+      <div><span class="tag">{escape(p["cat"])}</span></div>
+    </div>'''
+
+sections = ""
+for cat, plist in sorted(cats.items()):
+    items = "\n".join(render_card(p) for p in plist[:12])
+    sections += f'''
+    <section class="container" id="cat-{escape(cat.lower().replace(" ","-"))}">
+      <h2 style="margin:6px 0 10px 0">{escape(cat)}</h2>
+      <div class="grid cols-3">{items}</div>
+      <div class="footer-note" style="margin-top:8px">This category has {len(plist)} articles.</div>
+    </section>'''
+
+html = f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bee Planet Wiki</title>
+  <meta name="description" content="Structured knowledgebase for beekeepers: techniques, health, equipment, plants, pollination, history, tech, and more.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/wiki.css">
+</head>
+<body>
+  <header class="container" style="padding-top:28px">
+    <div style="display:flex;gap:16px;align-items:center;justify-content:space-between">
+      <h1 style="margin:0">Bee Planet Wiki</h1>
+      <div class="badge">Total articles: {total}</div>
+    </div>
+    <p class="kicker">Browse by category, jump to a topic, or read today’s featured article.</p>
+  </header>
+
+  <main class="container">
+    <div class="page">
+      <section class="hero">
+        <picture>
+          <source srcset="/assets/wiki/{featured["slug"].replace(".html",".webp")}" type="image/webp">
+          <img src="/assets/wiki/{featured["slug"].replace(".html",".jpg")}" alt="Featured: {escape(featured["title"])}">
+        </picture>
+        <div class="overlay"></div>
+        <div class="title">Featured: {escape(featured["title"])}</div>
+      </section>
+      <div class="article">
+        <p class="kicker">{escape(featured["desc"])}</p>
+        <p><a class="badge" href="/wiki/{escape(featured["slug"])}">Read featured article →</a></p>
+      </div>
+    </div>
+  </main>
+
+  {sections}
+
+  <footer class="container" style="padding-bottom:40px">
+    <div class="footer-note">Want to suggest edits or nominate a new featured article? <a href="/contact.html">Contact us</a>.</div>
+  </footer>
+</body>
+</html>'''
+
+os.makedirs(WIKI_DIR, exist_ok=True)
+with open(OUT, "w", encoding="utf-8") as f:
+    f.write(html)
+
+print(f"✅ Built {OUT} with {total} articles. Featured: {featured.get('title','')}")

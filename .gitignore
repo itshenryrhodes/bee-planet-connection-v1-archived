@@ -4,3 +4,4 @@ node_modules/
 dist/
 .env
 wiki_quality_report.csv
+wiki/_backup/
