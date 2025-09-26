@@ -130,6 +130,22 @@ def render_list(items, limit=12):
         lis.append(f'<li><a href="{escape(i["url"])}">{escape(i["title"])}</a></li>')
     return "\n".join(lis)
 
+def signup_block():
+    return """
+      <div class="nl-wrap">
+        <h2 class="nl-title">Subscribe to the newsletter</h2>
+        <p class="nl-kicker">New articles and seasonal checklists. No spam.</p>
+        <form class="nl-form" data-nl-form>
+          <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <button type="submit" data-nl-btn>Subscribe</button>
+          <div class="nl-consent">
+            <label><input type="checkbox" name="consent" required> I agree to receive email updates from Bee Planet Connection.</label>
+          </div>
+          <div class="nl-msg" data-nl-msg></div>
+        </form>
+      </div>
+    """
+
 def main():
     pages = []
     for p in glob.glob(os.path.join(WIKI_DIR, "*.html")):
@@ -200,6 +216,7 @@ def main():
   <meta name="twitter:description" content="Browse {total} articles across management, health, biology, forage, pollination and more.">
   <meta name="twitter:image" content="{escape(og_image)}">
   <link rel="stylesheet" href="/assets/css/wiki.css">
+  <link rel="stylesheet" href="/assets/css/newsletter.css">
 </head>
 <body>
   <div class="container">
@@ -238,13 +255,16 @@ def main():
         </ul>
       </section>
 
+      {signup_block()}
+
       {sections_html}
 
       <footer class="sitefoot">
-        <div>© {datetime.date.today().year} Bee Planet Connection · <a href="{REPO_URL}">Source</a></div>
+        <div>© {datetime.date.today().year} Bee Planet Connection · <a href="{REPO_URL}">Source</a> · <a href="/newsletter/">Newsletter</a></div>
       </footer>
     </div>
   </div>
+  <script src="/assets/js/newsletter.js"></script>
 </body>
 </html>
 """
