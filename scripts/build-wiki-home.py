@@ -3,7 +3,9 @@ import os, re, glob, datetime
 from html import escape
 
 WIKI_DIR = "wiki"
+ASSET_DIR = "assets/wiki"
 OUT = os.path.join(WIKI_DIR, "index.html")
+FEATURED_CFG = "data/featured.json"  # optional curated featured {"slug":"...html"}
 
 TAXONOMY = {
   "Management": ["split","swarm","queen","nuc","inspection","requeening","brood","excluder","super","equalisation","demaree","snelgrove"],
@@ -37,9 +39,10 @@ def read_meta(path):
 
 pages = []
 for f in sorted(glob.glob(os.path.join(WIKI_DIR, "*.html"))):
-    if os.path.basename(f) in ("index.html","wiki.html"):
+    b = os.path.basename(f)
+    if b in ("index.html","wiki.html"):
         continue
-    slug = os.path.basename(f)
+    slug = b
     title, desc, updated = read_meta(f)
     cat = pick_category(slug, title)
     pages.append({"slug": slug, "title": title, "desc": desc, "updated": updated, "cat": cat})
@@ -50,27 +53,52 @@ cats = {}
 for p in pages_sorted:
     cats.setdefault(p["cat"], []).append(p)
 
+# Featured
+featured = None
+if os.path.exists(FEATURED_CFG):
+    import json
+    try:
+        cfg = json.load(open(FEATURED_CFG, encoding="utf-8"))
+        featured = next((x for x in pages_sorted if x["slug"] == cfg.get("slug")), None)
+    except Exception:
+        pass
+
 def dt(v):
-    try:return datetime.date.fromisoformat(v)
+    try: return datetime.date.fromisoformat(v)
     except: return datetime.date.min
-featured = max(pages_sorted, key=lambda p: dt(p["updated"]) if p["updated"] else datetime.date.min) if pages_sorted else {"slug":"", "title":"", "desc":""}
+
+if not featured and pages_sorted:
+    featured = max(pages_sorted, key=lambda p: dt(p["updated"]) if p["updated"] else datetime.date.min)
+
+# Hero image path (fallback)
+def hero_src(slug, ext):
+    if not slug: return f"/{ASSET_DIR}/_default-hero.{ext}"
+    base = slug.replace(".html", f".{ext}")
+    path = os.path.join(ASSET_DIR, base)
+    return f"/{ASSET_DIR}/{base}" if os.path.exists(path) else f"/{ASSET_DIR}/_default-hero.{ext}"
 
 def render_card(p):
     return f'''
     <div class="card">
       <h3><a href="/wiki/{escape(p["slug"])}">{escape(p["title"])}</a></h3>
       <p class="kicker">{escape((p["desc"] or "")[:140]) + ("…" if (p["desc"] or "") and len(p["desc"])>140 else "")}</p>
-      <div><span class="tag">{escape(p["cat"])}</span></div>
+      <div><span class="badge">{escape(p["cat"])}</span></div>
     </div>'''
+
+# Topnav
+topnav = ' '.join([f'<a href="#cat-{escape(c.lower().replace(" ","-"))}">{escape(c)}</a>' for c in sorted(cats.keys())][:10])
+quick = '<a href="/wiki/index.html">Home</a> · <a href="/wiki/wiki.html">A–Z</a> · <a href="/contact.html">Suggest edit</a>'
 
 sections = ""
 for cat, plist in sorted(cats.items()):
-    items = "\n".join(render_card(p) for p in plist[:12])
+    items = "\n".join(render_card(p) for p in plist[:6])
     sections += f'''
     <section class="container" id="cat-{escape(cat.lower().replace(" ","-"))}">
       <h2 style="margin:6px 0 10px 0">{escape(cat)}</h2>
       <div class="grid cols-3">{items}</div>
-      <div class="footer-note" style="margin-top:8px">This category has {len(plist)} articles.</div>
+      <div class="footer-note" style="margin-top:8px">
+        {len(plist)} articles in {escape(cat)} · <a href="/wiki/wiki.html#cat-{escape(cat.lower().replace(" ","-"))}">Browse all →</a>
+      </div>
     </section>'''
 
 html = f'''<!doctype html>
@@ -78,32 +106,32 @@ html = f'''<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>Bee Planet Wiki</title>
-  <meta name="description" content="Structured knowledgebase for beekeepers: techniques, health, equipment, plants, pollination, history, tech, and more.">
+  <meta name="description" content="Knowledgebase for beekeepers: techniques, health, equipment, plants, pollination, history, tech, and more.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/wiki.css">
 </head>
 <body>
-  <header class="container" style="padding-top:28px">
-    <div style="display:flex;gap:16px;align-items:center;justify-content:space-between">
+  <header class="container" style="padding-top:20px">
+    <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap">
       <h1 style="margin:0">Bee Planet Wiki</h1>
       <div class="badge">Total articles: {total}</div>
     </div>
-    <p class="kicker">Browse by category, jump to a topic, or read today’s featured article.</p>
+    <div class="topnav" style="margin-top:10px">{topnav} <span style="flex:1"></span> {quick}</div>
   </header>
 
   <main class="container">
     <div class="page">
       <section class="hero">
         <picture>
-          <source srcset="/assets/wiki/{featured["slug"].replace(".html",".webp")}" type="image/webp">
-          <img src="/assets/wiki/{featured["slug"].replace(".html",".jpg")}" alt="Featured: {escape(featured["title"])}">
+          <source srcset="{hero_src(featured["slug"] if featured else '', 'webp')}" type="image/webp">
+          <img src="{hero_src(featured["slug"] if featured else '', 'jpg')}" alt="Featured">
         </picture>
         <div class="overlay"></div>
-        <div class="title">Featured: {escape(featured["title"])}</div>
+        <div class="title">Featured: {escape(featured["title"] if featured else '—')}</div>
       </section>
       <div class="article">
-        <p class="kicker">{escape(featured["desc"])}</p>
-        <p><a class="badge" href="/wiki/{escape(featured["slug"])}">Read featured article →</a></p>
+        <p class="kicker">{escape(featured["desc"] if featured else '')}</p>
+        {'<p><a class="badge" href="/wiki/'+escape(featured["slug"])+'">Read featured article →</a></p>' if featured else ''}
       </div>
     </div>
   </main>
@@ -111,7 +139,7 @@ html = f'''<!doctype html>
   {sections}
 
   <footer class="container" style="padding-bottom:40px">
-    <div class="footer-note">Want to suggest edits or nominate a new featured article? <a href="/contact.html">Contact us</a>.</div>
+    <div class="footer-note">Want to suggest edits or nominate a featured article? <a href="/contact.html">Contact us</a>.</div>
   </footer>
 </body>
 </html>'''
@@ -120,4 +148,4 @@ os.makedirs(WIKI_DIR, exist_ok=True)
 with open(OUT, "w", encoding="utf-8") as f:
     f.write(html)
 
-print(f"✅ Built {OUT} with {total} articles. Featured: {featured.get('title','')}")
+print("✅ Built wiki/index.html (condensed).")
