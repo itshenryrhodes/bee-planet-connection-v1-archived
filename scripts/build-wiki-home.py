@@ -53,7 +53,7 @@ cats = {}
 for p in pages_sorted:
     cats.setdefault(p["cat"], []).append(p)
 
-# Featured
+# Featured article
 featured = None
 if os.path.exists(FEATURED_CFG):
     import json
