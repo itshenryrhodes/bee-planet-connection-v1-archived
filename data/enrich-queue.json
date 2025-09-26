@@ -1,496 +1,321 @@
 [
   {
-    "slug": "pollination-service-insurance.html",
+    "slug": "sustainable-beekeeping.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "pollinator-conservation-programs.html",
+    "slug": "sustainable-materials-in-hives.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "pollinator-diversity.html",
+    "slug": "swarm-behaviour-and-dynamics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "polystyrene-hives-pros-and-cons.html",
+    "slug": "swarm-control.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "ponds-and-bee-safety.html",
+    "slug": "swarm-prevention-through-space-management.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "portable-extraction-setups.html",
+    "slug": "swarm-retrieval-safety.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "precision-apiculture-sensors-and-data.html",
+    "slug": "technology-in-pollination-services.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "press-and-pr-for-beekeepers.html",
+    "slug": "temperate-continental-forage-calendar.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "press-honey-method.html",
+    "slug": "therapeutic-beekeeping.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "press-kit-for-beekeepers.html",
+    "slug": "thermal-imaging-of-hives.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "pricing-beekeeping-services.html",
+    "slug": "thymol-treatment-guide.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "project-management-for-bee-projects.html",
+    "slug": "timber-selection-for-frames.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "prop-house-for-bee-plants.html",
+    "slug": "time-saving-hive-workflows.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "propolis-chemical-profile.html",
+    "slug": "timing-of-hive-placement.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "propolis-harvest-and-applications.html",
+    "slug": "top-bar-hives-overview.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "propolis-management-in-hives.html",
+    "slug": "tracheal-mites-overview.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "propolis-pollen-and-royal-jelly.html",
+    "slug": "traditional-hives-and-practices.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "propolis-tincture-making.html",
+    "slug": "training-apiary-setup.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "public-engagement-and-outreach.html",
+    "slug": "transporting-bees-by-car.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "public-footpaths-and-apiaries.html",
+    "slug": "tropical-forage-calendar.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "public-liability-and-beekeeping.html",
+    "slug": "uk-forage-calendar-basics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-balling-and-prevention.html",
+    "slug": "uncapping-tools-and-techniques.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-bank-management.html",
+    "slug": "urban-apiary-siting-guidelines.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-bee-overview.html",
+    "slug": "urban-beekeeping-overview.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-breeding-programmes.html",
+    "slug": "urban-beekeeping.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-cages-and-candy-recipes.html",
+    "slug": "urban-ecozone-beekeeping.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-caging-and-release-timing.html",
+    "slug": "urban-vs-rural-forage.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-cups-vs-queen-cells.html",
+    "slug": "value-added-hive-products.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-excluder-issues-and-fixes.html",
+    "slug": "value-of-pollination-to-crops.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-excluders-pros-and-cons.html",
+    "slug": "varroa-destructor-and-ipm.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-health-and-requeening.html",
+    "slug": "varroa-monitoring-methods.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-import-considerations.html",
+    "slug": "varroa-resistance-research.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-introduction-failure-modes.html",
+    "slug": "varroa-treatment-options.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-introduction-methods.html",
+    "slug": "vehicle-checklist-for-apiary-trips.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-line-tracking.html",
+    "slug": "ventilation-shims-and-quilts.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-mandibular-pheromone.html",
+    "slug": "video-gear-for-fieldwork.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-marking-and-clipping.html",
+    "slug": "video-storytelling-for-beekeepers.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-pheromones-and-colony-regulation.html",
+    "slug": "viruses-in-honey-bees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-quality-assessment.html",
+    "slug": "viruses-in-honeybees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-rearing-and-grafting.html",
+    "slug": "waggle-dance-and-bee-communication.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queen-rearing-basics.html",
+    "slug": "wasp-pressure-management.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "queenless-colony-diagnostics.html",
+    "slug": "water-quality-and-bees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "rain-gardens-and-pollinators.html",
+    "slug": "water-sources-and-microclimate.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "raised-beds-and-bee-plants.html",
+    "slug": "water-sources-for-bees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "record-keeping-for-beekeepers.html",
+    "slug": "wax-and-honey-storage-conditions.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "regional-forage-calendars-overview.html",
+    "slug": "wax-bleaching-and-cleaning.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "regional-pollination-guides.html",
+    "slug": "wax-moth-and-comb-storage.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "remote-sensing-in-apiculture.html",
+    "slug": "wax-moth-biology-and-control.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "requeening-calendar.html",
+    "slug": "wax-processing-and-foundation.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "risk-assessment-for-apiaries.html",
+    "slug": "wax-product-ideas.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "robber-screens-overview.html",
+    "slug": "wax-rendering-and-uses.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "robbing-behaviour-and-prevention.html",
+    "slug": "weighing-scales-and-legal-metrology.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "robbing-prevention-and-hive-security.html",
+    "slug": "wild-pollinators.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "robotic-pollination-concepts.html",
+    "slug": "wildflower-meadow-establishment.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "royal-jelly-and-its-uses.html",
+    "slug": "willow-as-spring-forage.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "royal-jelly-composition.html",
+    "slug": "windbreaks-and-shelterbelts.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "royal-jelly-overview.html",
+    "slug": "winter-checks-and-emergency-feed.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "royal-jelly-production-in-hives.html",
+    "slug": "winter-feeding-strategies.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "sacbrood-virus-overview.html",
+    "slug": "winter-wraps-and-insulation-panels.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "salt-spray-and-coastal-apiaries.html",
+    "slug": "women-in-beekeeping-history.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "school-beekeeping-programmes.html",
+    "slug": "worker-bee-roles.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "screened-bottom-boards.html",
+    "slug": "working-with-farmers-and-landowners.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "seasonal-colony-cycle.html",
+    "slug": "writing-apiary-risk-method-statements.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "seed-collection-and-storage.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "sensor-networks-for-apiaries.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "seo-for-bee-planet-connection.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "shared-apiaries-best-practices.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "shook-swarm-procedure.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "signs-your-colony-is-struggling.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "signs-your-colony-is-thriving.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "small-hive-beetle-and-tropilaelaps.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "small-hive-beetle-overview.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "small-scale-honey-house-setup.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "smoke-vs-spray-which-when.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "smoker-maintenance-and-cleaning.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "smoker-techniques-and-fuels.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "snelgrove-board-method.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "social-media-guidelines-for-bee-groups.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "soil-health-and-pollinators.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "solar-power-for-apiaries.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "solitary-bees-overview.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "split-colony-techniques.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "spring-build-up-checklist.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "spring-equalisation-techniques.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "stainless-vs-galvanised-equipment.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "sterilising-beekeeping-equipment.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "stingless-beekeeping.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "stingless-bees-in-tropics.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "stingless-bees-overview.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "stonebrood-overview.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "storm-prep-for-apiaries.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "stress-and-heat-management.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "subtropical-forage-calendar.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "summer-management-checklist.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "sunflower-pollination-overview.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "supercedure-cell-management.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "supering-strategies.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "supersedure-signs-vs-emergency-cells.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "supersedure-vs-swarming.html",
+    "slug": "writing-risk-assessments-beekeeping.html",
     "type": "overview",
     "target_words": 1100
   }
