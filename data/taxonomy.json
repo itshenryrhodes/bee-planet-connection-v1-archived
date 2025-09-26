@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "notes": "Authoritative taxonomy for Bee Planet Connection wiki. Domains > subdomains > topics. Each topic gets a unique slug.",
+  "domains": [
+    {
+      "key": "biology",
+      "name": "Bee biology & behaviour",
+      "subdomains": [
+        {
+          "key": "physiology",
+          "name": "Physiology",
+          "topics": [
+            {
+              "slug": "thermoregulation-in-honey-bees",
+              "title": "Thermoregulation in Honey Bees",
+              "description": "How colonies regulate brood nest temperature and respond to heat/cold stress.",
+              "synonyms": ["temperature regulation", "colony heat management"],
+              "see_also": ["insulation-and-ventilation", "stress-and-heat-management"],
+              "keywords": ["thermoregulation", "temperature", "heat stress", "ventilation"],
+              "priority": "high",
+              "image_topics": ["honey bee cluster heat", "thermoregulation brood nest"]
+            }
+          ]
+        },
+        {
+          "key": "behaviour",
+          "name": "Behaviour",
+          "topics": [
+            {
+              "slug": "queen-mating-flight-dynamics",
+              "title": "Queen Mating Flight Dynamics",
+              "description": "Timing, drone congregation areas, and environmental factors affecting queen mating.",
+              "synonyms": ["DCA", "drone congregation area"],
+              "see_also": ["queen-rearing-and-grafting", "drone-biology-and-roles"],
+              "keywords": ["queen", "mating flight", "DCA", "weather windows"],
+              "priority": "medium",
+              "image_topics": ["queen honey bee mating flight sky"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pests",
+      "name": "Pests & pathogens",
+      "subdomains": [
+        {
+          "key": "mites",
+          "name": "Mites",
+          "topics": [
+            {
+              "slug": "tracheal-mite-acarapis-woodi",
+              "title": "Tracheal Mites (Acarapis woodi)",
+              "description": "Biology, diagnosis, and management of tracheal mites in honey bees.",
+              "synonyms": ["Acarapis woodi"],
+              "see_also": ["varroa-destructor-and-ipm", "hive-microbiome"],
+              "keywords": ["tracheal mites", "acarapis", "acaricide"],
+              "priority": "medium",
+              "image_topics": ["Acarapis woodi microscope"]
+            }
+          ]
+        },
+        {
+          "key": "viral",
+          "name": "Viral diseases",
+          "topics": [
+            {
+              "slug": "deformed-wing-virus",
+              "title": "Deformed Wing Virus (DWV)",
+              "description": "Transmission, symptoms, and integrated control with Varroa management.",
+              "synonyms": ["DWV", "deformed wing"],
+              "see_also": ["varroa-destructor-and-ipm", "viruses-in-honey-bees"],
+              "keywords": ["DWV", "virus", "Varroa"],
+              "priority": "high",
+              "image_topics": ["deformed wing virus bee"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "forage",
+      "name": "Forage & plants",
+      "subdomains": [
+        {
+          "key": "plants",
+          "name": "Plant profiles",
+          "topics": [
+            {
+              "slug": "heather-calluna-vulgaris-as-forage",
+              "title": "Heather (Calluna vulgaris) as Forage",
+              "description": "Nectar/pollen profile, flowering window, honey characteristics, regional notes.",
+              "synonyms": ["ling heather"],
+              "see_also": ["forage-by-season", "honey-types-and-characteristics"],
+              "keywords": ["heather", "forage", "calluna"],
+              "priority": "medium",
+              "image_topics": ["heather moorland bees"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "practice",
+      "name": "Beekeeping practice & equipment",
+      "subdomains": [
+        {
+          "key": "monitoring",
+          "name": "Monitoring & sensors",
+          "topics": [
+            {
+              "slug": "hive-scales-and-weight-analysis",
+              "title": "Hive Scales & Weight Analysis",
+              "description": "How to interpret hive weight data for nectar flow, swarming, and winter stores.",
+              "synonyms": ["hive scale telemetry"],
+              "see_also": ["inspections-and-records", "precision-apiculture-sensors-and-data"],
+              "keywords": ["scales", "telemetry", "weight"],
+              "priority": "low",
+              "image_topics": ["hive scale platform beehive"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "economics",
+      "name": "Economics & markets",
+      "subdomains": [
+        {
+          "key": "pollination",
+          "name": "Pollination markets",
+          "topics": [
+            {
+              "slug": "almond-pollination-economics",
+              "title": "Almond Pollination Economics",
+              "description": "Pricing, logistics, and risk management for commercial almond pollination.",
+              "synonyms": [],
+              "see_also": ["pollination-contracts", "migratory-beekeeping"],
+              "keywords": ["almond", "pollination", "pricing"],
+              "priority": "medium",
+              "image_topics": ["almond orchard hives"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "history",
+      "name": "History & culture",
+      "subdomains": [
+        {
+          "key": "traditions",
+          "name": "Traditions",
+          "topics": [
+            {
+              "slug": "skep-beekeeping-history",
+              "title": "Skep Beekeeping (History)",
+              "description": "Traditional straw skeps, their use and reasons for decline.",
+              "synonyms": ["straw skep"],
+              "see_also": ["traditional-hives-and-practices", "history-of-beekeeping"],
+              "keywords": ["skep", "history"],
+              "priority": "low",
+              "image_topics": ["straw skep beekeeping archive"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "policy",
+      "name": "Conservation & policy",
+      "subdomains": [
+        {
+          "key": "programmes",
+          "name": "Conservation programmes",
+          "topics": [
+            {
+              "slug": "agri-environment-schemes-for-pollinators",
+              "title": "Agri-environment Schemes for Pollinators",
+              "description": "Overview of schemes supporting pollinator habitat across UK/EU/US.",
+              "synonyms": ["AES", "wildflower margins"],
+              "see_also": ["pollinator-conservation-programs", "forage-ecology"],
+              "keywords": ["policy", "conservation", "habitat"],
+              "priority": "medium",
+              "image_topics": ["wildflower field pollinators"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "climate",
+      "name": "Climate & environment",
+      "subdomains": [
+        {
+          "key": "risk",
+          "name": "Climate risks",
+          "topics": [
+            {
+              "slug": "heatwaves-and-colony-stress",
+              "title": "Heatwaves & Colony Stress",
+              "description": "Impacts of extreme heat events and practical mitigation for colonies.",
+              "synonyms": ["heat waves", "thermal stress"],
+              "see_also": ["stress-and-heat-management", "insulation-and-ventilation"],
+              "keywords": ["heat", "climate", "stress"],
+              "priority": "high",
+              "image_topics": ["beehive heatwave shade"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "wild",
+      "name": "Wild pollinators",
+      "subdomains": [
+        {
+          "key": "species",
+          "name": "Species & ecology",
+          "topics": [
+            {
+              "slug": "bumble-bee-nesting-habitats",
+              "title": "Bumble Bee Nesting Habitats",
+              "description": "Where bumble bees nest and how to protect their habitat.",
+              "synonyms": ["Bombus nesting"],
+              "see_also": ["pollinator-diversity", "pollination-ecology"],
+              "keywords": ["bumble bee", "nesting"],
+              "priority": "low",
+              "image_topics": ["bumble bee nest habitat"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "methods",
+      "name": "Science & methods",
+      "subdomains": [
+        {
+          "key": "lab",
+          "name": "Laboratory methods",
+          "topics": [
+            {
+              "slug": "viral-diagnostics-rt-qpcr",
+              "title": "Viral Diagnostics (RT-qPCR)",
+              "description": "Sampling, controls, and interpretation of RT-qPCR for bee viruses.",
+              "synonyms": ["PCR bees", "DWV qPCR"],
+              "see_also": ["viruses-in-honey-bees", "bee-genomics-and-dna-research"],
+              "keywords": ["RT-qPCR", "diagnostics", "virus"],
+              "priority": "low",
+              "image_topics": ["lab qPCR bees"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
