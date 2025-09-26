@@ -17,6 +17,7 @@
   <meta name="twitter:description" content="Browse 568 articles across management, health, biology, forage, pollination and more.">
   <meta name="twitter:image" content="/assets/wiki/queen-introduction-methods.jpg">
   <link rel="stylesheet" href="/assets/css/wiki.css">
+  <link rel="stylesheet" href="/assets/css/newsletter.css">
 </head>
 <body>
   <div class="container">
@@ -28,7 +29,7 @@
         </div>
         <nav class="quicklinks">
           <a href="#management-and-practices">Management &amp; Practices</a> · <a href="#health-and-diseases">Health &amp; Diseases</a> · <a href="#biology-and-behaviour">Biology &amp; Behaviour</a> · <a href="#plants-and-forage">Plants &amp; Forage</a> · <a href="#pollination-and-agriculture">Pollination &amp; Agriculture</a> · <a href="#equipment-and-workshop">Equipment &amp; Workshop</a> · <a href="#products-and-processing">Products &amp; Processing</a> · <a href="#business,-legal-and-safety">Business, Legal &amp; Safety</a> · <a href="#tech-and-data">Tech &amp; Data</a> · <a href="#education,-community-and-culture">Education, Community &amp; Culture</a> · <a href="#general">General</a>
-          <a href="/wiki/propolis-chemical-profile.html" class="rand">Random</a>
+          <a href="/wiki/carbon-footprint-of-beekeeping.html" class="rand">Random</a>
           <a href="https://github.com/itshenryrhodes/bee-planet-connection/issues/new" target="_blank" rel="noopener">Suggest an edit</a>
         </nav>
       </header>
@@ -54,6 +55,21 @@
           <li><a href="/wiki/2025-09-23-honey-authenticity-guide.html">2025-09-23-honey-authenticity-guide.html</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/absconding-vs-swarming.html">Absconding vs Swarming</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/accessibility-in-bee-education.html">Accessibility in Bee Education</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/accessibility-on-websites.html">Accessibility on Websites</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/advanced-beekeeper-skill-tree.html">Advanced Beekeeper Skill Tree</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/africanised-honey-bees-overview.html">Africanised Honey Bees: Overview</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/africanized-honey-bees-history.html">Africanized Honey Bees: History</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/ai-for-bee-health-monitoring.html">AI for Bee Health Monitoring</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/alarms-pheromones-in-bees.html">Alarm Pheromones in Bees</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/allotment-apiaries-overview.html">Allotment Apiaries: Overview</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/almond-pollination-overview.html">Almond Pollination: Overview</a><span class="meta"> · 2025-09-26</span></li><li><a href="/wiki/american-foulbrood-overview.html">American Foulbrood: Overview</a><span class="meta"> · 2025-09-26</span></li>
         </ul>
       </section>
+
+      
+      <div class="nl-wrap">
+        <h2 class="nl-title">Subscribe to the newsletter</h2>
+        <p class="nl-kicker">New articles and seasonal checklists. No spam.</p>
+        <form class="nl-form" data-nl-form>
+          <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <button type="submit" data-nl-btn>Subscribe</button>
+          <div class="nl-consent">
+            <label><input type="checkbox" name="consent" required> I agree to receive email updates from Bee Planet Connection.</label>
+          </div>
+          <div class="nl-msg" data-nl-msg></div>
+        </form>
+      </div>
+    
 
       
         <section id="management-and-practices" class="cat">
@@ -272,42 +288,10 @@
         
 
       <footer class="sitefoot">
-        <div>© 2025 Bee Planet Connection · <a href="https://github.com/itshenryrhodes/bee-planet-connection">Source</a></div>
+        <div>© 2025 Bee Planet Connection · <a href="https://github.com/itshenryrhodes/bee-planet-connection">Source</a> · <a href="/newsletter/">Newsletter</a></div>
       </footer>
     </div>
   </div>
-
-  <script>
-  (function(){
-     const a=document.querySelectorAll('.grid li a');
-     const rt=document.createElement('div');
-     rt.className='kicker';
-     var words=0;
-     a.forEach(x=>{words+=x.textContent.trim().split(/\s+/).length;});
-  })();
-  </script>
-
-  <style>
-    .wiki-home .topnav{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin:1rem 0}
-    .wiki-home .brand{font-weight:700}
-    .wiki-home .count{opacity:.7;margin-left:.5rem}
-    .wiki-home .quicklinks a{margin-left:.75rem;white-space:nowrap}
-    .featured .hero{position:relative;border-radius:16px;overflow:hidden;max-height:360px}
-    .featured .hero img{width:100%;height:360px;object-fit:cover;display:block}
-    .featured .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,.1));}
-    .featured .copy{position:absolute;left:24px;right:24px;bottom:20px;color:#fff}
-    .featured .ftitle{margin:0 0 .25rem 0}
-    .featured .fdesc{margin:.25rem 0 .5rem 0;opacity:.9}
-    .recent h2, .cat h2{margin-top:2rem}
-    .grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.5rem 1rem}
-    .grid li{padding:.25rem 0}
-    .grid .meta{opacity:.6;margin-left:.25rem;font-size:.9em}
-    .more{margin-top:.5rem}
-    @media (max-width: 720px) {
-      .featured .hero{max-height:260px}
-      .featured .hero img{height:260px}
-      .wiki-home .quicklinks{display:none}
-    }
-  </style>
+  <script src="/assets/js/newsletter.js"></script>
 </body>
 </html>

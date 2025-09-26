@@ -5,28 +5,37 @@
   <title>Bee Planet Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="alternate" type="application/rss+xml" title="Bee Planet Blog RSS" href="/blog/feed.xml">
-  <link rel="stylesheet" href="/assets/css/wiki.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/newsletter.css">
 </head>
 <body>
   <div class="container">
     <div class="page">
-      <div class="article">
-        <h1>Bee Planet Blog</h1>
-        <p class="kicker"><a href="/blog/feed.xml">Subscribe via RSS</a> · <a href="/blog/archive.html">Archive</a></p>
-        <ul class="bloglist">
-          <li><a href="/blog/2025-09-23-colony-loss-research-guide.html">Colony losses in 2025 — what COLOSS research means for your bees</a><span class="meta"> · 23 Sep 2025</span></li>
-<li><a href="/blog/2025-09-23-colony-loss-research.html">2025-09-23-colony-loss-research</a><span class="meta"> · 23 Sep 2025</span></li>
-<li><a href="/blog/2025-09-23-welcome.html">Welcome — why Bee Planet Connection exists</a><span class="meta"> · 23 Sep 2025</span></li>
-        </ul>
-        <div class="footer-note"><a href="/blog/archive.html">See all posts →</a></div>
-      </div>
+      <header class="blog-top">
+        <div class="brand">Bee Planet Blog</div>
+        <div class="kicker"><a href="/blog/feed.xml">Subscribe via RSS</a> <a href="/blog/archive.html">Archive</a></div>
+      </header>
+      
+<div class="nl-wrap">
+  <h2 class="nl-title">Subscribe to the newsletter</h2>
+  <p class="nl-kicker">New posts and seasonal roundups. No spam.</p>
+  <form class="nl-form" data-nl-form>
+    <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+    <button type="submit" data-nl-btn>Subscribe</button>
+    <div class="nl-consent">
+      <label><input type="checkbox" name="consent" required> I agree to receive email updates from Bee Planet Connection.</label>
+    </div>
+    <div class="nl-msg" data-nl-msg></div>
+  </form>
+</div>
+
+      <ul class="postlist">
+        <li><a class="title" href="/blog/2025-09-23-colony-loss-research-guide.html">Colony losses in 2025 — what COLOSS research means for your bees</a><span class="meta"> · 23 Sep 2025</span></li>
+<li><a class="title" href="/blog/2025-09-23-colony-loss-research.html">Colony Loss Research</a><span class="meta"> · 23 Sep 2025</span></li>
+<li><a class="title" href="/blog/2025-09-23-welcome.html">Welcome — why Bee Planet Connection exists</a><span class="meta"> · 23 Sep 2025</span></li>
+      </ul>
     </div>
   </div>
-  <style>
-    .bloglist{list-style:none;margin:0;padding:0}
-    .bloglist li{padding:.25rem 0}
-    .bloglist .meta{opacity:.65;margin-left:.35rem;font-size:.95em}
-    .kicker a{margin-right:.75rem}
-  </style>
+  <script src="/assets/js/newsletter.js"></script>
 </body>
 </html>
