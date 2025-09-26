@@ -50,6 +50,21 @@ items = "\n".join([
     for p in posts[:20]
 ])
 
+signup = """
+<div class="nl-wrap">
+  <h2 class="nl-title">Subscribe to the newsletter</h2>
+  <p class="nl-kicker">New posts and seasonal roundups. No spam.</p>
+  <form class="nl-form" data-nl-form>
+    <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+    <button type="submit" data-nl-btn>Subscribe</button>
+    <div class="nl-consent">
+      <label><input type="checkbox" name="consent" required> I agree to receive email updates from Bee Planet Connection.</label>
+    </div>
+    <div class="nl-msg" data-nl-msg></div>
+  </form>
+</div>
+"""
+
 html = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -58,6 +73,7 @@ html = f"""<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="alternate" type="application/rss+xml" title="Bee Planet Blog RSS" href="/blog/feed.xml">
   <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/newsletter.css">
 </head>
 <body>
   <div class="container">
@@ -66,11 +82,13 @@ html = f"""<!doctype html>
         <div class="brand">Bee Planet Blog</div>
         <div class="kicker"><a href="/blog/feed.xml">Subscribe via RSS</a> <a href="/blog/archive.html">Archive</a></div>
       </header>
+      {signup}
       <ul class="postlist">
         {items}
       </ul>
     </div>
   </div>
+  <script src="/assets/js/newsletter.js"></script>
 </body>
 </html>"""
 
