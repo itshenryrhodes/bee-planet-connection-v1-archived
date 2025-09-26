@@ -101,3 +101,4 @@ a:hover{text-decoration:underline;color:var(--brand-ink)}
   .hero{max-height:240px}
   .hero img{height:240px}
 }
+section.enriched-content{display:block;visibility:visible;}
