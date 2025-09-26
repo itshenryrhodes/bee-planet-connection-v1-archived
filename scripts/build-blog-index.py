@@ -19,17 +19,16 @@ def extract_title(path, name):
         raw = open(path, encoding="utf-8", errors="ignore").read(8000)
     except:
         return os.path.splitext(name)[0]
-    if name.lower().endswith(".md"):
-        m = re.search(r"^\s*#\s+(.+)$", raw, re.M)
-        if m:
-            return m.group(1).strip()
-    t = re.search(r"<title>(.*?)</title>", raw, re.I | re.S)
+    m = re.search(r"<h1>(.*?)</h1>", raw, re.I|re.S)
+    if m:
+        return re.sub(r"\s+"," ",m.group(1)).strip()
+    t = re.search(r"<title>(.*?)</title>", raw, re.I|re.S)
     if t:
-        return re.sub(r"\s+", " ", t.group(1)).strip()
+        return re.sub(r"\s+"," ",t.group(1)).strip()
     return os.path.splitext(name)[0]
 
 posts = []
-for ext in ("*.md","*.html"):
+for ext in ("*.html","*.md"):
     for p in glob.glob(os.path.join(BLOG_DIR, ext)):
         name = os.path.basename(p)
         if name in ("index.html","archive.html","feed.xml"):
@@ -46,7 +45,7 @@ def sort_key(p):
 posts.sort(key=sort_key, reverse=True)
 
 items = "\n".join([
-    f'<li><a href="{escape(p["url"])}">{escape(p["title"])}</a>'
+    f'<li><a class="title" href="{escape(p["url"])}">{escape(p["title"])}</a>'
     f'<span class="meta">{" · "+escape(p["date"]) if p["date"] else ""}</span></li>'
     for p in posts[:20]
 ])
@@ -58,27 +57,20 @@ html = f"""<!doctype html>
   <title>Bee Planet Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="alternate" type="application/rss+xml" title="Bee Planet Blog RSS" href="/blog/feed.xml">
-  <link rel="stylesheet" href="/assets/css/wiki.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
 </head>
 <body>
   <div class="container">
     <div class="page">
-      <div class="article">
-        <h1>Bee Planet Blog</h1>
-        <p class="kicker"><a href="/blog/feed.xml">Subscribe via RSS</a> · <a href="/blog/archive.html">Archive</a></p>
-        <ul class="bloglist">
-          {items}
-        </ul>
-        <div class="footer-note"><a href="/blog/archive.html">See all posts →</a></div>
-      </div>
+      <header class="blog-top">
+        <div class="brand">Bee Planet Blog</div>
+        <div class="kicker"><a href="/blog/feed.xml">Subscribe via RSS</a> <a href="/blog/archive.html">Archive</a></div>
+      </header>
+      <ul class="postlist">
+        {items}
+      </ul>
     </div>
   </div>
-  <style>
-    .bloglist{{list-style:none;margin:0;padding:0}}
-    .bloglist li{{padding:.25rem 0}}
-    .bloglist .meta{{opacity:.65;margin-left:.35rem;font-size:.95em}}
-    .kicker a{{margin-right:.75rem}}
-  </style>
 </body>
 </html>"""
 
