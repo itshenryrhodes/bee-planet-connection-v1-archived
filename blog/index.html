@@ -1,121 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bee Planet Connection | News</title>
-<meta name="description" content="Latest apiculture and pollinator news curated from trusted sources worldwide.">
-<link rel="alternate" type="application/rss+xml" title="BPC News" href="/blog/feed.xml">
-
-<style>
-  body{font-family:Georgia,serif;margin:0;background:#faf7f1;color:#333}
-  header,footer{text-align:center;padding:24px}
-  .wrap{max-width:960px;margin:0 auto;padding:16px}
-  .filters{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-start;margin:10px 0}
-  select,input{padding:8px;border:1px solid #e0d7c6;border-radius:10px;background:#fff}
-  .post{background:#fff;border:1px solid #e0d7c6;border-radius:12px;padding:14px;margin:12px 0}
-  .post h2{margin:.2rem 0 .4rem;font-size:1.15rem}
-  .meta{color:#6f6759;font-size:.9rem}
-  .tags{margin-top:6px}
-  .tag{display:inline-block;margin:2px 6px 0 0;padding:2px 8px;border:1px solid #e0d7c6;border-radius:999px;font-size:.85rem;color:#6f6759}
-</style>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Blog",
-  "name":"Bee Planet Connection News",
-  "url":"https://beeplanetconnection.org/blog/",
-  "description":"Curated apiculture and pollinator news."
-}
-</script>
+  <meta charset="utf-8">
+  <title>Bee Planet Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/wiki.css">
 </head>
-
 <body>
-<header>
-  <h1>📰 Bee Planet Connection — News</h1>
-  <p class="meta">Curated updates from Apimondia, COLOSS, Pollinator Partnership, EU/EEA, and more.</p>
-</header>
-
-<main class="wrap">
-  <div class="filters">
-    <input id="q" type="search" placeholder="Search title…">
-    <select id="tag">
-      <option value="">All tags</option>
-    </select>
-    <select id="source">
-      <option value="">All sources</option>
-    </select>
+  <div class="container">
+    <div class="page">
+      <div class="article">
+        <h1>Bee Planet Blog</h1>
+        <p class="kicker">Updates, research highlights, and project notes.</p>
+        <ul class="bloglist">
+          <li><a href="/blog/2025-09-23-colony-loss-research-guide.html">Colony losses in 2025 — what COLOSS research means for your bees</a><span class="meta"> · 23 Sep 2025</span></li>
+<li><a href="/blog/2025-09-23-colony-loss-research.html">2025-09-23-colony-loss-research</a><span class="meta"> · 23 Sep 2025</span></li>
+<li><a href="/blog/2025-09-23-welcome.html">Welcome — why Bee Planet Connection exists</a><span class="meta"> · 23 Sep 2025</span></li>
+<li><a href="/blog/index.html">Bee Planet Connection | News</a><span class="meta"></span></li>
+        </ul>
+        <div class="footer-note">Looking for older posts? See the <a href="/blog/archive.html">full archive</a>.</div>
+      </div>
+    </div>
   </div>
-
-  <div id="list">Loading…</div>
-</main>
-
-<footer>
-  <p><a href="/blog/feed.xml">RSS feed</a> · <a href="/">Home</a> · <a href="/directory.html">Directory</a></p>
-</footer>
-
-<script>
-async function fetchJSON(path){
-  const res = await fetch(path, {cache:'no-store'});
-  if(!res.ok) throw new Error('fetch failed '+path);
-  return res.json();
-}
-
-function uniq(arr){ return [...new Set(arr)]; }
-
-function injectSchema(){
-  fetchJSON('/blog/posts/schema.jsonld').then(schema => {
-    const s = document.createElement('script');
-    s.type = 'application/ld+json';
-    s.textContent = JSON.stringify(schema);
-    document.head.appendChild(s);
-  }).catch(()=>{});
-}
-
-async function init(){
-  const posts = await fetchJSON('/blog/posts/index.json').catch(()=>[]);
-  const listEl = document.getElementById('list');
-  const q = document.getElementById('q');
-  const tag = document.getElementById('tag');
-  const source = document.getElementById('source');
-
-  // populate filters
-  const allTags = uniq(posts.flatMap(p => p.tags || [])).sort();
-  allTags.forEach(t => { const o=document.createElement('option'); o.value=t; o.textContent=t; tag.appendChild(o); });
-  const allSources = uniq(posts.map(p => p.source)).sort();
-  allSources.forEach(s => { const o=document.createElement('option'); o.value=s; o.textContent=s; source.appendChild(o); });
-
-  function render(){
-    const tq = (q.value || '').toLowerCase();
-    const tt = tag.value;
-    const ts = source.value;
-    const filtered = posts.filter(p => {
-      const okQ = !tq || p.title.toLowerCase().includes(tq);
-      const okT = !tt || (p.tags||[]).includes(tt);
-      const okS = !ts || p.source === ts;
-      return okQ && okT && okS;
-    });
-
-    listEl.innerHTML = filtered.map(p => `
-      <article class="post">
-        <h2><a href="${p.url}" target="_blank" rel="noopener">${p.title}</a></h2>
-        <p class="meta">${new Date(p.date).toLocaleDateString()} · ${p.source}</p>
-        ${p.summary ? `<p>${p.summary}</p>` : ""}
-        ${(p.tags && p.tags.length) ? `<div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>` : ""}
-        <p><a href="${p.url}" target="_blank" rel="noopener">Read at ${p.source} →</a></p>
-      </article>
-    `).join('') || "<p>No posts yet.</p>";
-  }
-
-  q.addEventListener('input', render);
-  tag.addEventListener('change', render);
-  source.addEventListener('change', render);
-  render();
-  injectSchema();
-}
-
-init();
-</script>
 </body>
 </html>
