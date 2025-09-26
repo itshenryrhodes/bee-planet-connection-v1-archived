@@ -1,57 +1,52 @@
-<!-- _layouts/default.html -->
 <!doctype html>
 <html lang="en">
-<head>
-  {% include head.html %}
-</head>
-<body>
-  {% include header.html %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <main id="main" class="container">
-    {{ content }}
-  </main>
+    <title>{% if page.title %}{{ page.title }}{% else %}Bee Planet Connection{% endif %}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
 
-  <footer class="site-footer">
-    <p>&copy; {{ "now" | date: "%Y" }} Bee Planet Connection</p>
-  </footer>
+    <!-- Favicons & app icons -->
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/logo-32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ '/logo-48.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ '/logo-64.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="128x128" href="{{ '/logo-128.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="180x180" href="{{ '/logo-180.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ '/logo-192.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="256x256" href="{{ '/logo-256.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ '/logo-512.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/logo-180.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/manifest.webmanifest' | relative_url }}">
 
-  <script>
-    // Basic menu toggle (no framework)
-    const btn = document.querySelector('.menu-toggle');
-    const menu = document.getElementById('site-menu');
-    if (btn && menu) {
-      btn.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', (!expanded).toString());
-        menu.classList.toggle('open');
-      });
-    }
-  </script>
+    <!-- Styles -->
+    <link rel="preload" as="style" href="{{ '/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
 
-  <!-- Register Service Worker with detailed logs -->
-  <script>
-    (function(){
-      if (!('serviceWorker' in navigator)) {
-        console.warn('[BPC] Service Worker not supported in this browser.');
-        return;
-      }
+    {% if page.hero %}
+      {% include hero.html %}
+    {% endif %}
 
-      // Add a version query string to avoid stale SW caching
-      var swUrl = '{{ "/sw.js" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}';
+    <main id="content" role="main">
+      {{ content }}
+    </main>
 
-      window.addEventListener('load', function(){
-        navigator.serviceWorker.register(swUrl, { scope: '/' })
-          .then(function(reg){
-            console.log('[BPC] Service Worker registered with scope:', reg.scope);
-            if (reg.installing) console.log('[BPC] SW state: installing');
-            if (reg.waiting) console.log('[BPC] SW state: waiting');
-            if (reg.active) console.log('[BPC] SW state: active');
-          })
-          .catch(function(err){
-            console.error('[BPC] Service Worker registration failed:', err);
-          });
-      });
-    })();
-  </script>
-</body>
+    <footer class="site-footer" role="contentinfo" style="border-top:1px solid #eee;margin-top:2rem;padding:1rem 0;">
+      <div class="container" style="max-width:1100px;margin:0 auto;padding:0 1rem;color:#666;font-size:0.95rem;">
+        <p style="margin:0;">
+          © {{ "now" | date: "%Y" }} Bee Planet Connection — <a href="{{ '/privacy.html' | relative_url }}">Privacy</a> ·
+          <a href="{{ '/accessibility.html' | relative_url }}">Accessibility</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="{{ '/sw.js' | relative_url }}" defer></script>
+  </body>
 </html>

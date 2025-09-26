@@ -1,42 +1,58 @@
-<!-- _includes/hero.html -->
-{%- assign section_key = include.section | default: "home" -%}
-{%- assign herodata = site.data.heroes[section_key] -%}
-{%- assign images = herodata.images | default: nil -%}
-{%- assign overlay = herodata.overlay | default: "dark" -%}
-{%- assign ctas = herodata.cta | default: nil -%}
+{%- comment -%}
+Reusable compact hero
 
-{%- assign hero_title = include.title | default: page.title | default: "Connecting people, bees and knowledge" -%}
-{%- assign hero_subtitle = include.subtitle | default: page.description | default: "" -%}
+Usage on a page (front matter):
+hero:
+  title: "Connecting people, bees and knowledge"
+  subtitle: "Practical guides, research, and resources for a thriving pollinator planet."
+  cta_text: "Explore the Wiki"
+  cta_url: "/wiki/"
+  image_base: "/img/hero-01"   # expects -mobile.jpg, -sm.jpg, -md.jpg, -lg.jpg
+{%- endcomment -%}
 
-<section class="hero {% if overlay == 'light' %}overlay-light{% else %}overlay-dark{% endif %}">
-  <div class="hero-media" data-images='{{ images | jsonify | default: "[]" }}'></div>
-  <div class="hero-content container">
-    <h1>{{ hero_title }}</h1>
-    {% if hero_subtitle %}<p class="lead">{{ hero_subtitle }}</p>{% endif %}
-    {% if ctas and ctas.size > 0 %}
-    <div class="hero-actions">
-      {% for item in ctas %}
-        {% assign v = item.variant | default: "" %}
-        <a class="btn {% if v == 'light' %}ghost{% endif %}" href="{{ item.href | relative_url }}">{{ item.label }}</a>
-      {% endfor %}
+{%- assign base = page.hero.image_base | default: "/img/hero-01" -%}
+{%- assign mobile = base | append: "-mobile.jpg" -%}
+{%- assign sm = base | append: "-sm.jpg" -%}
+{%- assign md = base | append: "-md.jpg" -%}
+{%- assign lg = base | append: "-lg.jpg" -%}
+
+<section class="hero hero--compact" style="position:relative; overflow:hidden; --hero-h:36vh; max-height:420px;">
+  <picture>
+    <source media="(max-width: 480px)" srcset="{{ mobile | relative_url }}">
+    <source media="(max-width: 900px)" srcset="{{ sm | relative_url }}">
+    <source media="(max-width: 1280px)" srcset="{{ md | relative_url }}">
+    <img
+      src="{{ lg | relative_url }}"
+      alt="{{ page.hero.alt | default: page.hero.title | default: 'Bee Planet Connection hero' }}"
+      style="width:100%; height:var(--hero-h); object-fit:cover; display:block;"
+      loading="eager" fetchpriority="high"
+    />
+  </picture>
+
+  <div aria-hidden="true" style="position:absolute; inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,.35) 60%, rgba(0,0,0,.42) 100%);">
+  </div>
+
+  <div class="hero__content" style="position:absolute; inset:0; display:grid; place-items:center; text-align:center; padding:1rem;">
+    <div style="max-width:980px; padding:0 1rem; color:#fff;">
+      {%- if page.hero.title -%}
+      <h1 style="margin:0 0 .4rem; font-size:clamp(1.35rem, 2.5vw + .6rem, 2rem); line-height:1.2;">
+        {{ page.hero.title }}
+      </h1>
+      {%- endif -%}
+
+      {%- if page.hero.subtitle -%}
+      <p style="margin:.25rem auto .75rem; font-size:clamp(.95rem, 1.1vw + .6rem, 1.125rem); max-width:60ch; opacity:.95;">
+        {{ page.hero.subtitle }}
+      </p>
+      {%- endif -%}
+
+      {%- if page.hero.cta_text and page.hero.cta_url -%}
+      <a href="{{ page.hero.cta_url | relative_url }}" class="btn primary"
+         style="display:inline-block; padding:.6rem .9rem; border-radius:10px; background:#ffd166; color:#222; text-decoration:none; font-weight:600;">
+        {{ page.hero.cta_text }}
+      </a>
+      {%- endif -%}
     </div>
-    {% endif %}
   </div>
 </section>
-
-<script>
-(function() {
-  try {
-    var section = document.currentScript.previousElementSibling.previousElementSibling;
-    var media = section && section.querySelector('.hero-media');
-    if (!media || !media.dataset.images) return;
-    var imgs = JSON.parse(media.dataset.images);
-    if (Array.isArray(imgs) && imgs.length) {
-      var chosen = imgs[Math.floor(Math.random() * imgs.length)];
-      if (typeof chosen === 'string') {
-        media.style.setProperty('--hero-image', 'url("' + chosen + '")');
-      }
-    }
-  } catch (e) { /* no-op */ }
-})();
-</script>

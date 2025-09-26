@@ -1,49 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact - Bee Planet Connection</title>
-  <link rel="icon" href="img/icons/favicon.ico">
-  <link rel="apple-touch-icon" href="img/icons/logo-180.png">
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGF4SB4DL0"></script>
+---
+layout: default
+title: Contact
+description: Get in touch with Bee Planet Connection.
+---
+
+<section class="container" style="max-width:900px;margin:0 auto;padding:2rem 1rem;">
+  <h1>Contact</h1>
+  <p>Questions, suggestions, or collaboration ideas? Send us a message below.</p>
+
+  <!-- Replace VENDOR_ACTION_URL with your provider endpoint (Formspree/Basin/Getform/etc).
+       If your vendor gave you a full embed snippet, paste it in place of the entire <form>…</form>. -->
+  <form id="contact-form" action="VENDOR_ACTION_URL" method="POST" novalidate style="margin-top:1rem;">
+    <!-- Example hidden fields your vendor may require -->
+    <!-- <input type="hidden" name="_subject" value="New message from Bee Planet Connection"> -->
+    <!-- <input type="hidden" name="_redirect" value="https://www.beeplanetconnection.org/thanks.html"> -->
+
+    <!-- Honeypot (anti-spam) -->
+    <div style="position:absolute;left:-5000px;">
+      <label>Do not fill this field: <input type="text" name="_hp"></label>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" required
+               style="width:100%;padding:0.6rem;border:1px solid #ccc;border-radius:8px;">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required
+               style="width:100%;padding:0.6rem;border:1px solid #ccc;border-radius:8px;">
+      </div>
+    </div>
+
+    <div style="margin-top:0.75rem;">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required
+                style="width:100%;padding:0.6rem;border:1px solid #ccc;border-radius:8px;"></textarea>
+    </div>
+
+    <button type="submit" class="btn primary" style="margin-top:0.9rem;">Send</button>
+
+    <p id="form-success" role="status" style="display:none;color:green;margin-top:0.75rem;">
+      Thank you — your message has been sent.
+    </p>
+    <p id="form-error" role="alert" style="display:none;color:#b00020;margin-top:0.75rem;">
+      Sorry, something went wrong. Please try again or email <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a>.
+    </p>
+  </form>
+
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date()); gtag('config', 'G-NGF4SB4DL0');
+    (function () {
+      var form = document.getElementById('contact-form');
+      var ok = document.getElementById('form-success');
+      var err = document.getElementById('form-error');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        // If you paste a vendor embed snippet that auto-handles submission,
+        // you can remove this JS block entirely.
+        if (form.action === 'VENDOR_ACTION_URL') return; // let vendor handle once you add URL
+
+        e.preventDefault();
+        err.style.display = 'none';
+        ok.style.display = 'none';
+
+        var hp = form.querySelector('[name="_hp"]');
+        if (hp && hp.value) { return; } // silent fail for bots
+
+        var data = new FormData(form);
+
+        fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        }).then(function (res) {
+          if (res.ok) {
+            ok.style.display = '';
+            form.reset();
+          } else {
+            return res.json().then(function () { throw new Error('Bad response'); })
+              .catch(function () { throw new Error('Submit failed'); });
+          }
+        }).catch(function () {
+          err.style.display = '';
+        });
+      });
+    })();
   </script>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Bee Planet Connection home">
-        <img src="img/icons/logo-128.png" alt="Bee Planet Connection Logo" class="logo">
-        <span class="brand-text">Bee Planet Connection</span>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="wiki/">Wiki</a>
-        <a href="directory.html">Directory</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container page">
-    <h1>Contact us</h1>
-    <p>We’d love to hear from you. Whether you’ve got questions, feedback, or want to collaborate, drop us a line:</p>
-    <p><strong>Email:</strong> <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p class="small">© 2025 Bee Planet Connection. All rights reserved.</p>
-      <p class="small">Contact: <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
-    </div>
-  </footer>
-</body>
-</html>
+  <hr style="margin:2rem 0;border:none;border-top:1px solid #eee;">
+  <p>Prefer email? Write to <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a>.</p>
+</section>

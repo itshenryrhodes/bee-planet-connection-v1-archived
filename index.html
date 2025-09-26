@@ -1,70 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bee Planet Connection</title>
-  <meta name="description" content="Connecting people, bees and knowledge — a global hub for apiculture resources, news, and education." />
-  <link rel="icon" href="img/icons/favicon.ico">
-  <link rel="apple-touch-icon" href="img/icons/logo-180.png">
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGF4SB4DL0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date()); gtag('config', 'G-NGF4SB4DL0');
-  </script>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Bee Planet Connection home">
-        <img src="img/icons/logo-128.png" alt="Bee Planet Connection Logo" class="logo">
-        <span class="brand-text">Bee Planet Connection</span>
-      </a>
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="wiki/">Wiki</a>
-        <a href="directory.html">Directory</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+---
+layout: default
+title: Bee Planet Connection
+description: Connecting people, bees and knowledge.
+hero:
+  title: "Connecting people, bees and knowledge"
+  subtitle: "Explore practical guides, research, and resources for apiculture and pollinators."
+  cta_text: "Explore the Wiki"
+  cta_url: "/wiki/"
+  image_base: "/img/hero-01"
+---
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <span class="badge">🐝 Your global apiculture hub</span>
-          <h1>Connecting people, bees and knowledge</h1>
-          <p class="lead">Learn, share and explore beekeeping and pollinator science with a friendly, practical focus — from guides and research to community directories and news.</p>
-          <div class="cta-row">
-            <a class="btn primary" href="wiki/">Explore the Wiki</a>
-            <a class="btn hollow" href="blog.html">Read the Blog</a>
-          </div>
-        </div>
-        <div class="hero-media">
-          <!-- Replace this image with your preferred hero visual -->
-          <img class="hero-img" src="img/hero/home-hero.jpg" alt="Honey bees and beekeeping imagery">
-        </div>
-      </div>
-    </section>
+<section class="container" style="max-width:1100px;margin:0 auto;padding:1.5rem 1rem 2rem;">
+  <section aria-label="Highlights" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+    <article class="card" style="border:1px solid #eee;border-radius:12px;padding:1rem;">
+      <h3 style="margin:0 0 0.5rem;">Start reading</h3>
+      <p style="margin:0 0 0.75rem;">Dive into bee biology, hive management, forage ecology and more.</p>
+      <a class="link" href="wiki/">Start reading →</a>
+    </article>
 
-    <!-- FEATURED BLOCKS -->
-    <section class="section">
-      <div class="container grid cols-3">
-        <article class="card">
-          <h2>Knowledge Base</h2>
-          <p>Dive into practical articles and research — bee biology, hive management, seasonal checklists and more.</p>
-          <a class="link" href="wiki/">Start reading →</a>
-        </article>
-        <article class="card">
-          <h2>Community Directory</h2>
-          <p>Find beekeepers, associations, suppliers, training and equipment vendors across the world.</p>
-          <a class="link" href="directory.html">Open the directory →</a>
-        </article>
-        <article class="c
+    <article class="card" style="border:1px solid #eee;border-radius:12px;padding:1rem;">
+      <h3 style="margin:0 0 0.5rem;">Latest posts</h3>
+      <p style="margin:0 0 0.75rem;">Updates, commentary, and practical tips for beekeepers.</p>
+      <a class="link" href="blog.html">Go to blog →</a>
+    </article>
+
+    <article class="card" style="border:1px solid #eee;border-radius:12px;padding:1rem;">
+      <h3 style="margin:0 0 0.5rem;">Find resources</h3>
+      <p style="margin:0 0 0.75rem;">Federations, journals, labs, and community initiatives worldwide.</p>
+      <a class="link" href="directory.html">Browse directory →</a>
+    </article>
+  </section>
+</section>
