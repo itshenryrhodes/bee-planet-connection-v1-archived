@@ -5,39 +5,38 @@ from html import escape
 BLOG_DIR = "blog"
 OUT = os.path.join(BLOG_DIR, "archive.html")
 
-def human_date(s):
-    m = re.match(r"(\d{4}-\d{2}-\d{2})", s)
-    if m:
-        try:
-            return datetime.date.fromisoformat(m.group(1)).strftime("%d %b %Y")
-        except:
-            pass
-    return ""
+def human_date_from_name(name):
+    m = re.match(r"(\d{4}-\d{2}-\d{2})", name)
+    if not m:
+        return ""
+    try:
+        return datetime.date.fromisoformat(m.group(1)).strftime("%d %b %Y")
+    except:
+        return ""
 
-def read_title_and_date(path):
-    name = os.path.basename(path)
-    raw = open(path, encoding="utf-8", errors="ignore").read(8000)
-    h1 = re.search(r"^\s*#\s+(.+)$", raw, re.M)
-    ttl = h1.group(1).strip() if h1 else None
-    if not ttl:
-        ttag = re.search(r"<title>(.*?)</title>", raw, re.I|re.S)
-        ttl = ttag.group(1).strip() if ttag else os.path.splitext(name)[0]
-    date = human_date(name)
-    if not date:
-        fm = re.search(r"^date:\s*([0-9\-]{8,10})", raw, re.I|re.M)
-        if fm:
-            try:
-                date = datetime.date.fromisoformat(fm.group(1)).strftime("%d %b %Y")
-            except:
-                pass
-    return ttl, date
+def extract_title(path, name):
+    try:
+        raw = open(path, encoding="utf-8", errors="ignore").read(8000)
+    except:
+        return os.path.splitext(name)[0]
+    m = re.search(r"<h1>(.*?)</h1>", raw, re.I|re.S)
+    if m:
+        return re.sub(r"\s+"," ",m.group(1)).strip()
+    t = re.search(r"<title>(.*?)</title>", raw, re.I|re.S)
+    if t:
+        return re.sub(r"\s+"," ",t.group(1)).strip()
+    return os.path.splitext(name)[0]
 
 posts = []
-for ext in ("*.md","*.html"):
+for ext in ("*.html","*.md"):
     for p in glob.glob(os.path.join(BLOG_DIR, ext)):
-        ttl, d = read_title_and_date(p)
-        url = "/blog/" + os.path.basename(p).replace(".md",".html")
-        posts.append({"title": ttl, "date": d, "url": url, "name": os.path.basename(p)})
+        name = os.path.basename(p)
+        if name in ("index.html","archive.html","feed.xml"):
+            continue
+        title = extract_title(p, name)
+        date  = human_date_from_name(name)
+        url   = "/blog/" + name.replace(".md",".html")
+        posts.append({"title": title, "date": date, "url": url, "name": name})
 
 def sort_key(p):
     m = re.match(r"(\d{4}-\d{2}-\d{2})", p["name"])
@@ -46,8 +45,8 @@ def sort_key(p):
 posts.sort(key=sort_key, reverse=True)
 
 items = "\n".join([
-    f'<li><a href="{escape(p["url"])}">{escape(p["title"])}</a>'
-    f'<span class="meta">{(" · " + p["date"]) if p["date"] else ""}</span></li>'
+    f'<li><a class="title" href="{escape(p["url"])}">{escape(p["title"])}</a>'
+    f'<span class="meta">{" · "+escape(p["date"]) if p["date"] else ""}</span></li>'
     for p in posts
 ])
 
@@ -55,21 +54,21 @@ html = f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Bee Planet Blog — Archive</title>
+  <title>Blog Archive — Bee Planet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/wiki.css">
+  <link rel="alternate" type="application/rss+xml" title="Bee Planet Blog RSS" href="/blog/feed.xml">
+  <link rel="stylesheet" href="/assets/css/blog.css">
 </head>
 <body>
   <div class="container">
     <div class="page">
-      <div class="article">
-        <h1>Blog Archive</h1>
-        <p class="kicker">All posts, newest first.</p>
-        <ul class="bloglist">
-          {items}
-        </ul>
-        <div class="footer-note"><a href="/blog/index.html">← Back to recent posts</a></div>
-      </div>
+      <header class="blog-top">
+        <div class="brand">All posts</div>
+        <div class="kicker"><a href="/blog/">Latest</a> <a href="/blog/feed.xml">RSS</a></div>
+      </header>
+      <ul class="postlist">
+        {items}
+      </ul>
     </div>
   </div>
 </body>
