@@ -165,7 +165,7 @@ def main():
         block = f'\n<section class="enriched-content">\n{html_block}\n</section>\n'
         ok = inject_into_page(slug, block)
         if ok:
-            print(f"✅ Enriched {slug} · links {linked}/{target}")
+            print(f"[OK] Enriched {slug} · links {linked}/{target}")
             done += 1
     print(f"Finished. Enriched {done}/{len(queue)}")
 
