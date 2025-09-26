@@ -41,7 +41,7 @@ def main():
         linkmap[phrase.strip().lower()] = slug.strip()
 
     json.dump(linkmap, open(OUT, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
-    print(f"[OK] Wrote {OUT} with {len(linkmap)} phrases.")
+    print(f"✅ Wrote {OUT} with {len(linkmap)} phrases.")
 
 if __name__ == "__main__":
     main()
