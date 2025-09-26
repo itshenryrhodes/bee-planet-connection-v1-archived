@@ -53,7 +53,7 @@ cats = {}
 for p in pages_sorted:
     cats.setdefault(p["cat"], []).append(p)
 
-# Featured article
+# Featured
 featured = None
 if os.path.exists(FEATURED_CFG):
     import json
@@ -91,7 +91,7 @@ quick = '<a href="/wiki/index.html">Home</a> · <a href="/wiki/wiki.html">A–Z<
 
 sections = ""
 for cat, plist in sorted(cats.items()):
-    items = "\n".join(render_card(p) for p in plist[:6])
+    items = "\n".join(render_card(p) for p in plist[:6])  # condensed
     sections += f'''
     <section class="container" id="cat-{escape(cat.lower().replace(" ","-"))}">
       <h2 style="margin:6px 0 10px 0">{escape(cat)}</h2>
