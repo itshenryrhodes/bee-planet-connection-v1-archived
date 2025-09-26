@@ -25,6 +25,11 @@ fi
 
 git push origin main
 
+# report missing hero images after deploy
+if [ -f scripts/report-missing-heroes.py ]; then
+  python scripts/report-missing-heroes.py || true
+fi
+
 echo "✅ Deploy complete."
 echo "📝 Reminder: next time just run:"
 echo "    bash scripts/deploy.sh \"Your commit message\""
