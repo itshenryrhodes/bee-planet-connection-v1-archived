@@ -19,6 +19,9 @@ fi
 if [ -f scripts/build-blog-archive.py ]; then
   python scripts/build-blog-archive.py || true
 fi
+if [ -f scripts/make-default-heroes.py ]; then
+  python scripts/make-default-heroes.py || true
+fi
 if [ -f scripts/backfill-heroes.py ]; then
   python scripts/backfill-heroes.py || true
 fi
