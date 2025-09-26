@@ -1,151 +1,272 @@
 #!/usr/bin/env python3
-import os, re, glob, datetime
+import os, re, glob, json, random, datetime
 from html import escape
 
+REPO_URL = "https://github.com/itshenryrhodes/bee-planet-connection"
 WIKI_DIR = "wiki"
 ASSET_DIR = "assets/wiki"
+DATA_FEATURED = "data/featured.json"
 OUT = os.path.join(WIKI_DIR, "index.html")
-FEATURED_CFG = "data/featured.json"  # optional curated featured {"slug":"...html"}
 
-TAXONOMY = {
-  "Management": ["split","swarm","queen","nuc","inspection","requeening","brood","excluder","super","equalisation","demaree","snelgrove"],
-  "Health & Pests": ["varroa","chalkbrood","nosema","virus","dwv","cbpv","foulbrood","wax-moth","tracheal","stonebrood","hygiene","biosecurity"],
-  "Equipment": ["frame","foundation","extractor","smoker","hive","roof","crownboard","excluder","screened","wiring","top-bar","flow"],
-  "Products": ["honey","wax","propolis","pollen","royal jelly","comb","press","creamed","varietal"],
-  "Pollination": ["pollination","orchard","osr","heather","contract","density","placement","bumble","mason","leafcutter"],
-  "Environment & Plants": ["forage","hedge","wildflower","ivy","willow","lavender","clover","calendar","habitat","climate","agroforestry"],
-  "History & Culture": ["ancient","rome","greece","egypt","history","culture","myth","art","symbol","napoleon"],
-  "Education & Community": ["school","workshop","outreach","community","training","programme","event","newsletter","press","pr"],
-  "Tech & Data": ["sensor","ai","vision","thermal","scale","apiary data","iot","open-source","genomics","big data","remote"],
-  "Business & Compliance": ["label","compliance","grading","legal","insurance","license","pricing","budget","kpi","grant","metrology"]
+TAXO = {
+  "Management & Practices": [
+    "management","inspection","checklist","swarm","demaree","snelgrove","equalisation","brood","supering","hive","nuc","requeening","queen-introduction","queenless","marking","clipping","split","apiary","winter","overwinter","autumn","spring","summer","ventilation","insulation","feeding","emergency","smoker","smoke","spray","space","comb","frame","foundation","polystyrene","top-bar","langstroth","national","mouse-guard","robber"
+  ],
+  "Health & Diseases": [
+    "varroa","foulbrood","nosema","chalkbrood","sacbrood","virus","cbpv","stonebrood","pests","beetle","tropilaelaps","tracheal","biosecurity","hygiene","quarantine","treatment","oxalic","formic","thymol","ipm","hygienic"
+  ],
+  "Biology & Behaviour": [
+    "biology","anatomy","physiology","genetics","genomics","pheromone","mandibular","nasonov","brood-pheromone","dance","waggle","navigation","orientation","memory","learning","thermoregulation","drone","queen","worker","caste","temperament","behaviour","communication","swarm-behaviour","decision"
+  ],
+  "Plants & Forage": [
+    "forage","ivy","lavender","clover","willow","meadow","hedgerow","planting","seed","calendar","pollen","nectar","dearth","wildflower","urban-ecozone","tropical-forage","temperate-continental","grassland","forest","desert","island","mountain","subtropical","water-sources","rain-garden","pollinator","hedge","ponds"
+  ],
+  "Pollination & Agriculture": [
+    "pollination","orchard","apple","blueberry","sunflower","osr","grower","fees","contracts","invoices","insurance","migratory","greenhouse"
+  ],
+  "Equipment & Workshop": [
+    "equipment","tool","smoker","extractor","wax","foundation","frames","wiring","uncapping","press","jigs","paint","preservatives","scales","weigh"
+  ],
+  "Products & Processing": [
+    "honey","extraction","comb-honey","chunk-honey","creamed-honey","moisture","refractometer","adulteration","grading","tasting","varietals","vinegar","oxymel","beeswax","candle","rendering","bleaching","propolis","pollen","royal-jelly","value-added"
+  ],
+  "Business, Legal & Safety": [
+    "pricing","economics","trade","label","branding","compliance","insurance","risk","liability","safety","ladder","first-aid","audit","contracts","legal","membership"
+  ],
+  "Tech & Data": [
+    "sensor","iot","data","analytics","computer-vision","thermal","audio","genomics","crispr","open-source","security"
+  ],
+  "Education, Community & Culture": [
+    "education","outreach","workshop","events","mentoring","content-calendar","podcasting","press-kit","press","community","code-of-conduct","moderation","photography","history","culture","religion","mythology","art","famous","women","ancient","medieval"
+  ]
 }
 
-def pick_category(slug, title):
-    s = (slug + " " + title).lower()
-    for cat, keys in TAXONOMY.items():
-        if any(k in s for k in keys):
-            return cat
+def read_meta(path):
+    name = os.path.basename(path)
+    html = open(path, encoding="utf-8", errors="ignore").read()
+    t = re.search(r"<title>(.*?)</title>", html, re.I|re.S)
+    title = t.group(1).strip() if t else os.path.splitext(name)[0].replace("-", " ").title()
+    d = re.search(r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']', html, re.I)
+    desc = d.group(1).strip() if d else ""
+    lm = re.search(r'<meta\s+name=["\']last-updated["\']\s+content=["\'](.*?)["\']', html, re.I)
+    if lm:
+        last_upd = lm.group(1).strip()
+    else:
+        ts = datetime.datetime.fromtimestamp(os.path.getmtime(path))
+        last_upd = ts.strftime("%Y-%m-%d")
+    slug = name
+    url = f"/wiki/{slug}"
+    return {"title": title, "desc": desc, "slug": slug, "url": url, "last": last_upd}
+
+def pick_category(fname, title):
+    low = f"{fname.lower()} {title.lower()}"
+    for cat, keys in TAXO.items():
+        for k in keys:
+            if k in low:
+                return cat
     return "General"
 
-def read_meta(path):
-    html = open(path, encoding="utf-8").read()
-    title = re.search(r"<title>(.*?)</title>", html, re.I|re.S)
-    desc  = re.search(r'<meta name="description" content="(.*?)"', html, re.I)
-    updated = re.search(r'<meta name="last-updated" content="(.*?)"', html, re.I)
-    title = title.group(1).strip() if title else os.path.basename(path)
-    desc  = desc.group(1).strip() if desc else ""
-    updated = updated.group(1).strip() if updated else ""
-    return title, desc, updated
+def latest_updated(items, n=12):
+    def key(i):
+        try:
+            return datetime.datetime.fromisoformat(i["last"])
+        except:
+            return datetime.datetime.min
+    return sorted(items, key=key, reverse=True)[:n]
 
-pages = []
-for f in sorted(glob.glob(os.path.join(WIKI_DIR, "*.html"))):
-    b = os.path.basename(f)
-    if b in ("index.html","wiki.html"):
-        continue
-    slug = b
-    title, desc, updated = read_meta(f)
-    cat = pick_category(slug, title)
-    pages.append({"slug": slug, "title": title, "desc": desc, "updated": updated, "cat": cat})
+def hero_for(slug):
+    base = os.path.join(ASSET_DIR, slug.replace(".html",""))
+    webp = base + ".webp"
+    jpg = base + ".jpg"
+    if os.path.exists(webp):
+        return (f"/{webp.replace(os.sep,'/')}", "image/webp", f"/{jpg.replace(os.sep,'/')}")
+    if os.path.exists(jpg):
+        return (f"/{jpg.replace(os.sep,'/')}", "image/jpeg", f"/{jpg.replace(os.sep,'/')}")
+    dwebp = os.path.join(ASSET_DIR, "_default-hero.webp")
+    djpg = os.path.join(ASSET_DIR, "_default-hero.jpg")
+    if os.path.exists(dwebp):
+        return (f"/{dwebp.replace(os.sep,'/')}", "image/webp", f"/{djpg.replace(os.sep,'/')}" if os.path.exists(djpg) else f"/{dwebp.replace(os.sep,'/')}")
+    return (f"/{djpg.replace(os.sep,'/')}", "image/jpeg", f"/{djpg.replace(os.sep,'/')}" if os.path.exists(djpg) else "")
 
-total = len(pages)
-pages_sorted = sorted(pages, key=lambda p: p["title"].lower())
-cats = {}
-for p in pages_sorted:
-    cats.setdefault(p["cat"], []).append(p)
+def load_featured(candidates):
+    if os.path.exists(DATA_FEATURED):
+        try:
+            data = json.load(open(DATA_FEATURED, encoding="utf-8"))
+            slug = data.get("slug","").strip()
+            for c in candidates:
+                if c["slug"] == slug:
+                    return c
+        except:
+            pass
+    return latest_updated(candidates, 1)[0] if candidates else None
 
-# Featured
-featured = None
-if os.path.exists(FEATURED_CFG):
-    import json
-    try:
-        cfg = json.load(open(FEATURED_CFG, encoding="utf-8"))
-        featured = next((x for x in pages_sorted if x["slug"] == cfg.get("slug")), None)
-    except Exception:
-        pass
+def build_nav(categories):
+    anchors = [f'<a href="#{escape(cat.lower().replace("&","and").replace(" ","-"))}">{escape(cat)}</a>' for cat in categories]
+    return " · ".join(anchors)
 
-def dt(v):
-    try: return datetime.date.fromisoformat(v)
-    except: return datetime.date.min
+def render_list(items, limit=12):
+    lis = []
+    for i in items[:limit]:
+        lis.append(f'<li><a href="{escape(i["url"])}">{escape(i["title"])}</a></li>')
+    return "\n".join(lis)
 
-if not featured and pages_sorted:
-    featured = max(pages_sorted, key=lambda p: dt(p["updated"]) if p["updated"] else datetime.date.min)
+def main():
+    pages = []
+    for p in glob.glob(os.path.join(WIKI_DIR, "*.html")):
+        b = os.path.basename(p)
+        if b in ("index.html", "wiki.html"):
+            continue
+        meta = read_meta(p)
+        meta["category"] = pick_category(b, meta["title"])
+        pages.append(meta)
 
-# Hero image path (fallback)
-def hero_src(slug, ext):
-    if not slug: return f"/{ASSET_DIR}/_default-hero.{ext}"
-    base = slug.replace(".html", f".{ext}")
-    path = os.path.join(ASSET_DIR, base)
-    return f"/{ASSET_DIR}/{base}" if os.path.exists(path) else f"/{ASSET_DIR}/_default-hero.{ext}"
+    total = len(pages)
+    if total == 0:
+        os.makedirs(WIKI_DIR, exist_ok=True)
+        open(OUT, "w", encoding="utf-8").write("<!doctype html><meta charset='utf-8'><title>Wiki</title><p>No articles yet.</p>")
+        print("✅ Built wiki/index.html (empty).")
+        return
 
-def render_card(p):
-    return f'''
-    <div class="card">
-      <h3><a href="/wiki/{escape(p["slug"])}">{escape(p["title"])}</a></h3>
-      <p class="kicker">{escape((p["desc"] or "")[:140]) + ("…" if (p["desc"] or "") and len(p["desc"])>140 else "")}</p>
-      <div><span class="badge">{escape(p["cat"])}</span></div>
-    </div>'''
+    featured = load_featured(pages)
+    fr_src, fr_type, fr_img = hero_for(featured["slug"])
+    recent = latest_updated(pages, 12)
 
-# Topnav
-topnav = ' '.join([f'<a href="#cat-{escape(c.lower().replace(" ","-"))}">{escape(c)}</a>' for c in sorted(cats.keys())][:10])
-quick = '<a href="/wiki/index.html">Home</a> · <a href="/wiki/wiki.html">A–Z</a> · <a href="/contact.html">Suggest edit</a>'
+    cats = {}
+    for p in pages:
+        cats.setdefault(p["category"], []).append(p)
+    for c in cats:
+        cats[c] = sorted(cats[c], key=lambda x: x["title"].lower())
 
-sections = ""
-for cat, plist in sorted(cats.items()):
-    items = "\n".join(render_card(p) for p in plist[:6])  # condensed
-    sections += f'''
-    <section class="container" id="cat-{escape(cat.lower().replace(" ","-"))}">
-      <h2 style="margin:6px 0 10px 0">{escape(cat)}</h2>
-      <div class="grid cols-3">{items}</div>
-      <div class="footer-note" style="margin-top:8px">
-        {len(plist)} articles in {escape(cat)} · <a href="/wiki/wiki.html#cat-{escape(cat.lower().replace(" ","-"))}">Browse all →</a>
-      </div>
-    </section>'''
+    category_order = [c for c in TAXO.keys() if c in cats] + [c for c in sorted(cats.keys()) if c not in TAXO]
+    navlinks = build_nav(category_order)
+    random_article = random.choice(pages)
 
-html = f'''<!doctype html>
+    og_image = fr_img or fr_src
+    today = datetime.date.today().isoformat()
+
+    # compact category sections (limit items per category)
+    sections = []
+    for cat in category_order:
+        items = cats.get(cat, [])
+        if not items: 
+            continue
+        anchor = cat.lower().replace("&","and").replace(" ","-")
+        sections.append(f"""
+        <section id="{escape(anchor)}" class="cat">
+          <h2>{escape(cat)}</h2>
+          <ul class="grid">
+            {render_list(items, limit=12)}
+          </ul>
+          <div class="more"><a href="/wiki/#{escape(anchor)}">Browse more in {escape(cat)} →</a></div>
+        </section>
+        """)
+
+    sections_html = "\n".join(sections)
+
+    html = f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Bee Planet Wiki</title>
-  <meta name="description" content="Knowledgebase for beekeepers: techniques, health, equipment, plants, pollination, history, tech, and more.">
+  <meta name="description" content="A growing knowledgebase for beekeepers: management, biology, health, forage, pollination, tech, and more.">
+  <link rel="canonical" href="/wiki/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="last-updated" content="{escape(today)}">
+  <meta property="og:title" content="Bee Planet Wiki">
+  <meta property="og:description" content="Browse {total} articles across management, health, biology, forage, pollination and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.beeplanetconnection.org/wiki/">
+  <meta property="og:image" content="{escape(og_image)}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bee Planet Wiki">
+  <meta name="twitter:description" content="Browse {total} articles across management, health, biology, forage, pollination and more.">
+  <meta name="twitter:image" content="{escape(og_image)}">
   <link rel="stylesheet" href="/assets/css/wiki.css">
 </head>
 <body>
-  <header class="container" style="padding-top:20px">
-    <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap">
-      <h1 style="margin:0">Bee Planet Wiki</h1>
-      <div class="badge">Total articles: {total}</div>
-    </div>
-    <div class="topnav" style="margin-top:10px">{topnav} <span style="flex:1"></span> {quick}</div>
-  </header>
+  <div class="container">
+    <div class="page wiki-home">
+      <header class="topnav">
+        <div class="left">
+          <a class="brand" href="/wiki/">Bee Planet Wiki</a>
+          <span class="count">{total} articles</span>
+        </div>
+        <nav class="quicklinks">
+          {navlinks}
+          <a href="{escape(random_article["url"])}" class="rand">Random</a>
+          <a href="{REPO_URL}/issues/new" target="_blank" rel="noopener">Suggest an edit</a>
+        </nav>
+      </header>
 
-  <main class="container">
-    <div class="page">
-      <section class="hero">
-        <picture>
-          <source srcset="{hero_src(featured["slug"] if featured else '', 'webp')}" type="image/webp">
-          <img src="{hero_src(featured["slug"] if featured else '', 'jpg')}" alt="Featured">
-        </picture>
-        <div class="overlay"></div>
-        <div class="title">Featured: {escape(featured["title"] if featured else '—')}</div>
+      <section class="featured">
+        <div class="hero">
+          <picture>
+            {"<source srcset=\""+escape(fr_src)+"\" type=\""+escape(fr_type)+"\">" if fr_src else ""}
+            <img src="{escape(fr_src)}" alt="{escape(featured["title"])} hero">
+          </picture>
+          <div class="overlay"></div>
+          <div class="copy">
+            <h1 class="ftitle"><a href="{escape(featured["url"])}">{escape(featured["title"])}</a></h1>
+            <p class="fdesc">{escape(featured["desc"] or "Featured article")}</p>
+            <div class="fmeta">Last updated: {escape(featured["last"])} · <a href="{escape(featured["url"])}">Read article</a> · <a href="{REPO_URL}/edit/main/wiki/{escape(featured["slug"])}" target="_blank" rel="noopener">Edit on GitHub</a></div>
+          </div>
+        </div>
       </section>
-      <div class="article">
-        <p class="kicker">{escape(featured["desc"] if featured else '')}</p>
-        {'<p><a class="badge" href="/wiki/'+escape(featured["slug"])+'">Read featured article →</a></p>' if featured else ''}
-      </div>
+
+      <section class="recent">
+        <h2>Recently updated</h2>
+        <ul class="grid">
+          {"".join([f'<li><a href="{escape(p["url"])}">{escape(p["title"])}</a><span class="meta"> · {escape(p["last"])}</span></li>' for p in recent])}
+        </ul>
+      </section>
+
+      {sections_html}
+
+      <footer class="sitefoot">
+        <div>© {datetime.date.today().year} Bee Planet Connection · <a href="{REPO_URL}">Source</a></div>
+      </footer>
     </div>
-  </main>
+  </div>
 
-  {sections}
+  <script>
+  (function(){{
+     const a=document.querySelectorAll('.grid li a');
+     const rt=document.createElement('div');
+     rt.className='kicker';
+     var words=0;
+     a.forEach(x=>{{words+=x.textContent.trim().split(/\\s+/).length;}});
+  }})();
+  </script>
 
-  <footer class="container" style="padding-bottom:40px">
-    <div class="footer-note">Want to suggest edits or nominate a featured article? <a href="/contact.html">Contact us</a>.</div>
-  </footer>
+  <style>
+    .wiki-home .topnav{{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin:1rem 0}}
+    .wiki-home .brand{{font-weight:700}}
+    .wiki-home .count{{opacity:.7;margin-left:.5rem}}
+    .wiki-home .quicklinks a{{margin-left:.75rem;white-space:nowrap}}
+    .featured .hero{{position:relative;border-radius:16px;overflow:hidden;max-height:360px}}
+    .featured .hero img{{width:100%;height:360px;object-fit:cover;display:block}}
+    .featured .overlay{{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,.1));}}
+    .featured .copy{{position:absolute;left:24px;right:24px;bottom:20px;color:#fff}}
+    .featured .ftitle{{margin:0 0 .25rem 0}}
+    .featured .fdesc{{margin:.25rem 0 .5rem 0;opacity:.9}}
+    .recent h2, .cat h2{{margin-top:2rem}}
+    .grid{{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.5rem 1rem}}
+    .grid li{{padding:.25rem 0}}
+    .grid .meta{{opacity:.6;margin-left:.25rem;font-size:.9em}}
+    .more{{margin-top:.5rem}}
+    @media (max-width: 720px) {{
+      .featured .hero{{max-height:260px}}
+      .featured .hero img{{height:260px}}
+      .wiki-home .quicklinks{{display:none}}
+    }}
+  </style>
 </body>
-</html>'''
+</html>
+"""
+    os.makedirs(WIKI_DIR, exist_ok=True)
+    with open(OUT, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"✅ Built {OUT} (polished home, {total} articles).")
 
-os.makedirs(WIKI_DIR, exist_ok=True)
-with open(OUT, "w", encoding="utf-8") as f:
-    f.write(html)
-
-print("✅ Built wiki/index.html (condensed).")
+if __name__ == "__main__":
+    main()
