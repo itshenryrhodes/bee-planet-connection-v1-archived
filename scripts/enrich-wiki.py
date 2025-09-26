@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import os, re, json, datetime, glob, html as ihtml
+import os, re, json, datetime, html as ihtml
 
 QUEUE = "data/enrich-queue.json"
 LINKMAP = "data/linkmap.json"
@@ -17,94 +17,157 @@ def load_queue():
 
 def load_linkmap():
     if os.path.exists(LINKMAP):
-bash scripts/deploy.sh "Wiki: enrichment batch with link density 7"ch"/linkmap.j
-C:\Users\user\AppData\Local\Programs\Python\Python313\python.exe: can't open file 'C:\\Users\\user\\OneDrive\\Documents\\GitHub\\bee-planet-connection\\scripts\\wiki-linkmap.py': [Errno 2] No such file or directory
-✅ Enriched queen-introduction-methods.html · links 0/7
-✅ Enriched varroa-monitoring-methods.html · links 0/6
-✅ Enriched overwintering-checklist.html · links 0/6
-✅ Enriched hive-insulation-and-ventilation.html · links 0/7
-✅ Enriched swarm-prevention-through-space-management.html · links 0/6
-Finished. Enriched 5/5
-fatal: pathspec 'data/linkmap.json' did not match any files
-On branch main
-Your branch is up to date with 'origin/main'.
+        return json.load(open(LINKMAP, encoding="utf-8"))
+    return {}
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   wiki/hive-insulation-and-ventilation.html
-        modified:   wiki/overwintering-checklist.html
-        modified:   wiki/queen-introduction-methods.html
-        modified:   wiki/swarm-prevention-through-space-management.html
-        modified:   wiki/varroa-monitoring-methods.html
+def read_file(p): 
+    return open(p, encoding="utf-8", errors="ignore").read()
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        data/enrich-queue.json
-        scripts/enrich-wiki.py
+def write_file(p, s):
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    with open(p, "w", encoding="utf-8") as f: 
+        f.write(s)
 
-no changes added to commit (use "git add" and/or "git commit -a")
-From https://github.com/itshenryrhodes/bee-planet-connection
- * branch            main       -> FETCH_HEAD
-Already up to date.
-✅ Built wiki\index.html (polished home, 568 articles).
-✅ Built blog\index.html with 3 posts.
-✅ Built blog\archive.html with 3 posts.
-✅ Built blog\feed.xml with 3 items.
-Wrote: assets/wiki\_default-hero.jpg
-Wrote: assets/wiki\_default-hero.webp
-⚠️  Could not refresh signups.csv: 'ascii' codec can't encode character '\u2026'' in position 14: ordinal not in range(128)
-
-cd ~/OneDrive/Documents/GitHub/bee-planet-connection
-
-mkdir -p scripts data
-
-cat > scripts/wiki-linkmap.py <<'PY'
-#!/usr/bin/env python3
-import os, re, glob, json
-from html import unescape
-
-WIKI = "wiki"
-OUT  = "data/linkmap.json"
-ALIASES_PATH = "data/aliases.json"
-
-def title_of(html, fallback):
+def title_of(html, slug):
     m = re.search(r"<title>(.*?)</title>", html, re.I|re.S)
-    return unescape(m.group(1).strip()) if m else fallback
+    return m.group(1).strip() if m else slug.replace("-"," ").title()
 
-def tokenize_title(t):
-    t = t.lower()
-    t = re.sub(r"[^a-z0-9\s-]", " ", t)
-    words = [w for w in t.split() if len(w) >= 4]
-    bigrams = [" ".join(words[i:i+2]) for i in range(len(words)-1)]
-    return list(dict.fromkeys(words + bigrams))
+def words(s): 
+    return len([w for w in re.split(r"\W+", s) if w.strip()])
+
+def house_hyphens(s): 
+    return s.replace("—", HOUSE["dash"]).replace("–", HOUSE["dash"])
+
+def gen_outline(slug, title, art_type, target_words):
+    if art_type == "definition":
+        target_words = max(400, min(target_words, 600))
+    elif art_type == "process":
+        target_words = max(900, min(target_words, 1200))
+    else:
+        target_words = max(1200, min(target_words, 1500))
+    intro = f"{title} can feel like a big moment in the apiary. With the right prep and a calm colony, it becomes routine. This guide covers what matters, how to do it well, and how to fix it when it wobbles."
+    sections = [
+      ("Why it matters", [
+        "A short, practical reason this topic improves outcomes.",
+        "When to act, seasonal timing, and impact on colony health or productivity."
+      ]),
+      ("General principles", [
+        "Clear, numbered rules of thumb that reduce risk.",
+        "Conditions for success and what to avoid."
+      ]),
+      ("Methods and approaches", [
+        "Step-by-step with alternatives for different contexts or seasons.",
+        "What to check before and after, how to verify success."
+      ]),
+      ("Risks and signs", [
+        "Common failure modes and early warning signs.",
+        "What to do next if it goes wrong."
+      ]),
+      ("Pro tips", [
+        "Tight, field-tested tips that save time, reduce stress, or increase acceptance."
+      ]),
+      ("Historical and regional context", [
+        "Short note on how practice evolved and regional preferences."
+      ]),
+      ("Related topics", [
+        "Three to five internal links that deepen understanding."
+      ]),
+      ("Conclusion", [
+        "One-paragraph wrap-up with the key action and a reminder to verify results."
+      ])
+    ]
+    md = [f"# {title}", "", house_hyphens(intro), ""]
+    for h, bullets in sections:
+        md.append(f"## {h}")
+        for b in bullets: md.append(f"- {house_hyphens(b)}")
+        md.append("")
+    current_wc = words("\n".join(md))
+    while current_wc < target_words - 120:
+        md.append("- Add one concrete example, with numbers where possible.")
+        current_wc = words("\n".join(md))
+    return "\n".join(md)
+
+def md_to_html(md):
+    md = md.replace("\r\n","\n")
+    out, in_list = [], False
+    for line in md.split("\n"):
+        if re.match(r"^\s*#\s", line):
+            out.append(f"<h1>{ihtml.escape(line.split('#',1)[1].strip())}</h1>"); continue
+        if re.match(r"^\s*##\s", line):
+            out.append(f"<h2>{ihtml.escape(line.split('##',1)[1].strip())}</h2>"); continue
+        if re.match(r"^\s*[-*]\s", line):
+            if not in_list: out.append("<ul>"); in_list=True
+            out.append(f"<li>{ihtml.escape(re.sub(r'^\\s*[-*]\\s','',line))}</li>"); continue
+        else:
+            if in_list: out.append("</ul>"); in_list=False
+        if line.strip()=="": out.append("")
+        else: out.append(f"<p>{ihtml.escape(line)}</p>")
+    if in_list: out.append("</ul>")
+    html = "\n".join(out)
+    html = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", html)
+    html = re.sub(r"\*([^*]+)\*", r"<em>\1</em>", html)
+    html = re.sub(r"\[([^\]]+)\]\((https?://[^\s)]+)\)", r'<a href="\2" rel="noopener" target="_blank">\1</a>', html)
+    return html
+
+def auto_link(html, slug, linkmap):
+    text, linked, per_phrase = html, 0, {}
+    total_wc = words(re.sub(r"<[^>]+>", " ", text))
+    target_links = min(MAX_LINKS_TOTAL, max(3, int((total_wc/1000.0)*MIN_LINKS_PER_1000)))
+    items = sorted(linkmap.items(), key=lambda kv: (-len(kv[0]), kv[0]))
+    for phrase, target_slug in items:
+        if linked >= target_links: break
+        if target_slug == slug: continue
+        patt = r'(?i)(?<![">/])\b(' + re.escape(phrase) + r')\b(?![^<]*>)'
+        def repl(m):
+            nonlocal linked
+            ph = m.group(1)
+            count = per_phrase.get(phrase, 0)
+            if linked >= target_links or count >= MAX_PER_PHRASE: return ph
+            linked += 1; per_phrase[phrase] = count + 1
+            return f'<a href="/wiki/{ihtml.escape(target_slug)}">{ihtml.escape(ph)}</a>'
+        text = re.sub(patt, repl, text, count=(target_links - linked))
+    return text, linked, target_links
+
+def inject_into_page(slug, block_html):
+    path = os.path.join(WIKI, slug)
+    if not os.path.exists(path): 
+        print(f"Skip (missing): {slug}"); return False
+    html = read_file(path)
+    if 'class="enriched-content"' in html:
+        html = re.sub(r'<section class="enriched-content">.*?</section>', block_html, html, flags=re.S)
+    else:
+        m = re.search(r"</nav>\s*<div class=['\"]article['\"][^>]*>", html, re.I)
+        pos = m.end() if m else html.lower().find("<body")
+        html = html[:pos] + "\n" + block_html + "\n" + html[pos:]
+    if not re.search(r'name=["\']last-updated["\']', html, re.I):
+        today = datetime.date.today().isoformat()
+        html = re.sub(r"</head>", f'  <meta name="last-updated" content="{today}">\n</head>', html, count=1, flags=re.I)
+    write_file(path, html); 
+    return True
 
 def main():
-    os.makedirs("data", exist_ok=True)
-    aliases = {}
-    if os.path.exists(ALIASES_PATH):
-        try:
-            aliases = json.load(open(ALIASES_PATH, encoding="utf-8"))
-        except:
-            aliases = {}
-
-    linkmap = {}
-    for path in glob.glob(os.path.join(WIKI, "*.html")):
-        slug = os.path.basename(path)
-        if slug in ("index.html","wiki.html"):
-            continue
-        html = open(path, encoding="utf-8", errors="ignore").read()
-        title = title_of(html, slug.replace(".html","").replace("-"," ").title())
-        phrases = set(tokenize_title(title))
-        phrases.add(title.lower())
-        for p in phrases:
-            linkmap.setdefault(p, slug)
-
-    for phrase, slug in aliases.items():
-        linkmap[phrase.strip().lower()] = slug.strip()
-
-    json.dump(linkmap, open(OUT, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
-    print(f"✅ Wrote {OUT} with {len(linkmap)} phrases.")
+    queue = load_queue()
+    linkmap = load_linkmap()
+    if not queue:
+        print("No items in data/enrich-queue.json"); return
+    done = 0
+    for item in queue:
+        slug = item["slug"]
+        art_type = item.get("type","process")
+        target_words = int(item.get("target_words", 1100))
+        path = os.path.join(WIKI, slug)
+        if not os.path.exists(path): 
+            print(f"Missing wiki page: {slug}"); continue
+        title = title_of(read_file(path), slug)
+        md = gen_outline(slug, title, art_type, target_words)
+        html_block = md_to_html(md)
+        html_block, linked, target = auto_link(html_block, slug, linkmap)
+        block = f'\n<section class="enriched-content">\n{html_block}\n</section>\n'
+        ok = inject_into_page(slug, block)
+        if ok:
+            print(f"✅ Enriched {slug} · links {linked}/{target}")
+            done += 1
+    print(f"Finished. Enriched {done}/{len(queue)}")
 
 if __name__ == "__main__":
     main()

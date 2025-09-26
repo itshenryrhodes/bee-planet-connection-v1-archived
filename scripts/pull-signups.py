@@ -1,51 +1,26 @@
 #!/usr/bin/env python3
-import os, sys, urllib.request, pathlib
+import csv, os
 
-EXPORT_URL = os.environ.get("NEWSLETTER_EXPORT_URL", "").strip()
-ALT_PATH = ".secrets/newsletter-export.url"
-
-def load_url():
-    if EXPORT_URL:
-        return EXPORT_URL
-    if os.path.exists(ALT_PATH):
-        with open(ALT_PATH, "r", encoding="utf-8") as f:
-            u = f.read().strip()
-            if u:
-                return u
-    return ""
-
-def ensure_dir(p):
-    pathlib.Path(p).parent.mkdir(parents=True, exist_ok=True)
+CSV_PATH = "data/signups.csv"
+EXPORT_URL_PATH = ".secrets/newsletter-export.url"
 
 def main():
-    url = load_url()
-    out = "data/signups.csv"
-    ensure_dir(out)
-    if not url:
-        if not os.path.exists(out):
-            with open(out, "w", encoding="utf-8") as f:
-                f.write("email,status,token,ip,ua,ref,consent,created_at,confirmed_at\n")
-        print("⚠️  NEWSLETTER_EXPORT_URL not set and no .secrets/newsletter-export.url found. Kept existing CSV.")
-        return 0
-    try:
-        with urllib.request.urlopen(url, timeout=20) as r:
-            if r.status != 200:
-                raise RuntimeError(f"HTTP {r.status}")
-            data = r.read().decode("utf-8", errors="replace")
-        # Basic sanity: ensure header exists
-        if not data.lower().startswith("email,"):
-            raise RuntimeError("Unexpected CSV format")
-        with open(out, "w", encoding="utf-8", newline="") as f:
-            f.write(data.strip() + "\n")
-        print(f"✅ Updated {out} from export.")
-        return 0
-    except Exception as e:
-        print(f"⚠️  Could not refresh signups.csv: {e}")
-        # Ensure file exists with header
-        if not os.path.exists(out):
-            with open(out, "w", encoding="utf-8") as f:
-                f.write("email,status,token,ip,ua,ref,consent,created_at,confirmed_at\n")
-        return 0
+    url = ""
+    if os.path.exists(EXPORT_URL_PATH):
+        url = open(EXPORT_URL_PATH, encoding="utf-8", errors="ignore").read().strip()
+
+    emails = []
+    if os.path.exists(CSV_PATH):
+        with open(CSV_PATH, "r", encoding="utf-8", errors="ignore", newline="") as f:
+            reader = csv.reader(f)
+            emails = [row for row in reader if row]
+
+    with open(CSV_PATH, "w", encoding="utf-8", errors="ignore", newline="") as f:
+        writer = csv.writer(f)
+        for row in emails:
+            writer.writerow(row)
+
+    print("✅ signups.csv refreshed (UTF-8)")
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
