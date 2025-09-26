@@ -7,6 +7,9 @@ cd "$REPO_ROOT"
 
 git pull --rebase origin main
 
+if [ -f scripts/md-to-html.py ]; then
+  python scripts/md-to-html.py || true
+fi
 if [ -f scripts/build-wiki-home.py ]; then
   python scripts/build-wiki-home.py || true
 fi
@@ -15,6 +18,12 @@ if [ -f scripts/build-blog-index.py ]; then
 fi
 if [ -f scripts/build-blog-archive.py ]; then
   python scripts/build-blog-archive.py || true
+fi
+if [ -f scripts/backfill-heroes.py ]; then
+  python scripts/backfill-heroes.py || true
+fi
+if [ -f scripts/build-rss.py ]; then
+  python scripts/build-rss.py || true
 fi
 
 git add -A
@@ -25,7 +34,6 @@ fi
 
 git push origin main
 
-# report missing hero images after deploy
 if [ -f scripts/report-missing-heroes.py ]; then
   python scripts/report-missing-heroes.py || true
 fi
