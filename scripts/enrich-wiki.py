@@ -1,173 +1,129 @@
 #!/usr/bin/env python3
-import os, re, json, datetime, html as ihtml
+import io, json, os, re, sys
+from typing import List, Dict
+from link_policy import (
+    load_patterns_terms, filter_candidates, apply_links_once, estimate_wordcount
+)
 
-QUEUE = "data/enrich-queue.json"
-LINKMAP = "data/linkmap.json"
-WIKI = "wiki"
-MIN_LINKS_PER_1000 = 7
-MAX_LINKS_TOTAL = 18
-MAX_PER_PHRASE = 2
-HOUSE = {"dash": "-", "tone_note": "Bright, breezy, factual."}
+WIKI_DIR = "wiki"
+QUEUE    = "data/enrich-queue.json"
+LINKMAP  = "data/linkmap.json"
 
-def load_queue():
-    if not os.path.exists(QUEUE): return []
-    q = json.load(open(QUEUE, encoding="utf-8"))
-    if isinstance(q, dict): q = [q]
-    return q
+SECTION_RE = re.compile(r'(<section[^>]*class="[^"]*\benriched-content\b[^"]*"[^>]*>)(.*?)(</section>)',
+                        re.I|re.S)
+H1_RE      = re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.I|re.S)
+TAG_RE     = re.compile(r"<[^>]+>")
+WS_RE      = re.compile(r"\s+")
 
-def load_linkmap():
-    if os.path.exists(LINKMAP):
-        return json.load(open(LINKMAP, encoding="utf-8"))
-    return {}
+def _read(path):  return io.open(path, encoding="utf-8", errors="ignore").read()
+def _write(path, s): io.open(path, "w", encoding="utf-8").write(s)
 
-def read_file(p): 
-    return open(p, encoding="utf-8", errors="ignore").read()
+def load_queue() -> List[Dict]:
+    if not os.path.exists(QUEUE):
+        return []
+    try:
+        return json.load(open(QUEUE, encoding="utf-8"))
+    except Exception:
+        return []
 
-def write_file(p, s):
-    os.makedirs(os.path.dirname(p), exist_ok=True)
-    with open(p, "w", encoding="utf-8") as f: 
-        f.write(s)
+def load_linkmap() -> Dict[str, List[str]]:
+    """
+    linkmap.json format created by wiki-linkmap.py:
+      { "phrase": ["target1.html","target2.html", ...], ... }
+    We will map to /wiki/*.html candidates.
+    """
+    if not os.path.exists(LINKMAP):
+        return {}
+    data = json.load(open(LINKMAP, encoding="utf-8"))
+    # Normalise to wiki/ targets
+    norm = {}
+    for phrase, targets in data.items():
+        norm[phrase] = [f"wiki/{t}" if not t.startswith("wiki/") else t for t in targets]
+    return norm
 
-def title_of(html, slug):
-    m = re.search(r"<title>(.*?)</title>", html, re.I|re.S)
-    return m.group(1).strip() if m else slug.replace("-"," ").title()
+def visible_text(html: str) -> str:
+    t = TAG_RE.sub(" ", html)
+    return WS_RE.sub(" ", t).strip()
 
-def words(s): 
-    return len([w for w in re.split(r"\W+", s) if w.strip()])
+def build_candidates(body_html: str, linkmap: Dict[str, List[str]]) -> List[Dict]:
+    """
+    Scan body text for any linkable phrases present in linkmap.
+    Keep first target (sorted) for determinism.
+    """
+    text_lower = visible_text(body_html).lower()
+    # Quick guard: do nothing for very short pieces
+    if len(text_lower) < 120:
+        return []
 
-def house_hyphens(s): 
-    return s.replace("—", HOUSE["dash"]).replace("–", HOUSE["dash"])
+    cands = []
+    for phrase, targets in linkmap.items():
+        p = phrase.strip()
+        if not p or len(p) < 4:
+            continue
+        if p.lower() in text_lower:
+            # Deterministic choice: prefer the shortest target slug
+            target = sorted(targets, key=lambda s: (len(os.path.basename(s)), s))[0]
+            cands.append({"phrase": p, "target": target})
+    return cands
 
-def gen_outline(slug, title, art_type, target_words):
-    if art_type == "definition":
-        target_words = max(400, min(target_words, 600))
-    elif art_type == "process":
-        target_words = max(900, min(target_words, 1200))
-    else:
-        target_words = max(1200, min(target_words, 1500))
-    intro = f"{title} can feel like a big moment in the apiary. With the right prep and a calm colony, it becomes routine. This guide covers what matters, how to do it well, and how to fix it when it wobbles."
-    sections = [
-      ("Why it matters", [
-        "A short, practical reason this topic improves outcomes.",
-        "When to act, seasonal timing, and impact on colony health or productivity."
-      ]),
-      ("General principles", [
-        "Clear, numbered rules of thumb that reduce risk.",
-        "Conditions for success and what to avoid."
-      ]),
-      ("Methods and approaches", [
-        "Step-by-step with alternatives for different contexts or seasons.",
-        "What to check before and after, how to verify success."
-      ]),
-      ("Risks and signs", [
-        "Common failure modes and early warning signs.",
-        "What to do next if it goes wrong."
-      ]),
-      ("Pro tips", [
-        "Tight, field-tested tips that save time, reduce stress, or increase acceptance."
-      ]),
-      ("Historical and regional context", [
-        "Short note on how practice evolved and regional preferences."
-      ]),
-      ("Related topics", [
-        "Three to five internal links that deepen understanding."
-      ]),
-      ("Conclusion", [
-        "One-paragraph wrap-up with the key action and a reminder to verify results."
-      ])
-    ]
-    md = [f"# {title}", "", house_hyphens(intro), ""]
-    for h, bullets in sections:
-        md.append(f"## {h}")
-        for b in bullets: md.append(f"- {house_hyphens(b)}")
-        md.append("")
-    current_wc = words("\n".join(md))
-    while current_wc < target_words - 120:
-        md.append("- Add one concrete example, with numbers where possible.")
-        current_wc = words("\n".join(md))
-    return "\n".join(md)
+def process_file(slug: str, linkmap: Dict[str, List[str]], allow_terms) -> int:
+    path = os.path.join(WIKI_DIR, slug)
+    if not os.path.exists(path):
+        print(f"[WARN] Missing wiki page: {slug}")
+        return 0
 
-def md_to_html(md):
-    md = md.replace("\r\n","\n")
-    out, in_list = [], False
-    for line in md.split("\n"):
-        if re.match(r"^\s*#\s", line):
-            out.append(f"<h1>{ihtml.escape(line.split('#',1)[1].strip())}</h1>"); continue
-        if re.match(r"^\s*##\s", line):
-            out.append(f"<h2>{ihtml.escape(line.split('##',1)[1].strip())}</h2>"); continue
-        if re.match(r"^\s*[-*]\s", line):
-            if not in_list: out.append("<ul>"); in_list=True
-            out.append(f"<li>{ihtml.escape(re.sub(r'^\\s*[-*]\\s','',line))}</li>"); continue
-        else:
-            if in_list: out.append("</ul>"); in_list=False
-        if line.strip()=="": out.append("")
-        else: out.append(f"<p>{ihtml.escape(line)}</p>")
-    if in_list: out.append("</ul>")
-    html = "\n".join(out)
-    html = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", html)
-    html = re.sub(r"\*([^*]+)\*", r"<em>\1</em>", html)
-    html = re.sub(r"\[([^\]]+)\]\((https?://[^\s)]+)\)", r'<a href="\2" rel="noopener" target="_blank">\1</a>', html)
-    return html
+    html = _read(path)
+    m = SECTION_RE.search(html)
+    if not m:
+        print(f"[WARN] No enriched-content section: {slug}")
+        return 0
 
-def auto_link(html, slug, linkmap):
-    text, linked, per_phrase = html, 0, {}
-    total_wc = words(re.sub(r"<[^>]+>", " ", text))
-    target_links = min(MAX_LINKS_TOTAL, max(3, int((total_wc/1000.0)*MIN_LINKS_PER_1000)))
-    items = sorted(linkmap.items(), key=lambda kv: (-len(kv[0]), kv[0]))
-    for phrase, target_slug in items:
-        if linked >= target_links: break
-        if target_slug == slug: continue
-        patt = r'(?i)(?<![">/])\b(' + re.escape(phrase) + r')\b(?![^<]*>)'
-        def repl(m):
-            nonlocal linked
-            ph = m.group(1)
-            count = per_phrase.get(phrase, 0)
-            if linked >= target_links or count >= MAX_PER_PHRASE: return ph
-            linked += 1; per_phrase[phrase] = count + 1
-            return f'<a href="/wiki/{ihtml.escape(target_slug)}">{ihtml.escape(ph)}</a>'
-        text = re.sub(patt, repl, text, count=(target_links - linked))
-    return text, linked, target_links
+    section_open, body_html, section_close = m.group(1), m.group(2), m.group(3)
+    # Extract H1 for topic signal
+    h1m = H1_RE.search(body_html)
+    h1_text = TAG_RE.sub(" ", h1m.group(1)).strip() if h1m else os.path.basename(slug).replace("-"," ").replace(".html","")
 
-def inject_into_page(slug, block_html):
-    path = os.path.join(WIKI, slug)
-    if not os.path.exists(path): 
-        print(f"Skip (missing): {slug}"); return False
-    html = read_file(path)
-    if 'class="enriched-content"' in html:
-        html = re.sub(r'<section class="enriched-content">.*?</section>', block_html, html, flags=re.S)
-    else:
-        m = re.search(r"</nav>\s*<div class=['\"]article['\"][^>]*>", html, re.I)
-        pos = m.end() if m else html.lower().find("<body")
-        html = html[:pos] + "\n" + block_html + "\n" + html[pos:]
-    if not re.search(r'name=["\']last-updated["\']', html, re.I):
-        today = datetime.date.today().isoformat()
-        html = re.sub(r"</head>", f'  <meta name="last-updated" content="{today}">\n</head>', html, count=1, flags=re.I)
-    write_file(path, html); 
-    return True
+    candidates = build_candidates(body_html, linkmap)
+    if not candidates:
+        print(f"[OK] Enriched {slug} · links 0/0 (no candidates)")
+        return 0
+
+    filtered = filter_candidates(slug, h1_text, body_html, candidates, allow_terms)
+    if not filtered:
+        print(f"[OK] Enriched {slug} · links 0/{len(candidates)} (all filtered by policy)")
+        return 0
+
+    new_body = apply_links_once(body_html, filtered)
+    if new_body == body_html:
+        print(f"[OK] Enriched {slug} · links 0/{len(filtered)} (no safe slots)")
+        return 0
+
+    new_html = html[:m.start(2)] + new_body + html[m.end(2):]
+    _write(path, new_html)
+
+    wc = estimate_wordcount(body_html)
+    print(f"[OK] Enriched {slug} · links {len(filtered)}/{len(candidates)} · ~{wc} words")
+    return len(filtered)
 
 def main():
     queue = load_queue()
-    linkmap = load_linkmap()
     if not queue:
-        print("No items in data/enrich-queue.json"); return
+        print("No items in data/enrich-queue.json")
+        return
+
+    linkmap = load_linkmap()
+    allow_terms = load_patterns_terms()
+
+    total = 0
     done = 0
     for item in queue:
-        slug = item["slug"]
-        art_type = item.get("type","process")
-        target_words = int(item.get("target_words", 1100))
-        path = os.path.join(WIKI, slug)
-        if not os.path.exists(path): 
-            print(f"Missing wiki page: {slug}"); continue
-        title = title_of(read_file(path), slug)
-        md = gen_outline(slug, title, art_type, target_words)
-        html_block = md_to_html(md)
-        html_block, linked, target = auto_link(html_block, slug, linkmap)
-        block = f'\n<section class="enriched-content">\n{html_block}\n</section>\n'
-        ok = inject_into_page(slug, block)
-        if ok:
-            print(f"[OK] Enriched {slug} · links {linked}/{target}")
-            done += 1
-    print(f"Finished. Enriched {done}/{len(queue)}")
+        slug = item.get("slug","").strip()
+        if not slug:
+            continue
+        done += 1
+        total += process_file(slug, linkmap, allow_terms)
+
+    print(f"Finished. Enriched {done}/{len(queue)} · total links inserted: {total}")
 
 if __name__ == "__main__":
     main()
