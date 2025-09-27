@@ -7,3 +7,5 @@ wiki_quality_report.csv
 wiki/_backup/
 __pycache__/
 *.pyc
+__pycache__/
+*.pyc
