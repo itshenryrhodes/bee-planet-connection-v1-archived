@@ -1,496 +1,446 @@
 [
   {
-    "slug": "beekeeping-and-livelihoods.html",
+    "slug": "drone-bees-overview.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-economics-and-markets.html",
+    "slug": "drone-biology-and-roles.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-education-events.html",
+    "slug": "drone-brood-removal-technique.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-in-20th-century.html",
+    "slug": "drone-management-and-genetics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-in-ancient-civilisations.html",
+    "slug": "drone-pollinators-overview.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-in-ancient-egypt.html",
+    "slug": "drone-saturation-in-mating-areas.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-in-ancient-greece.html",
+    "slug": "drought-management-for-bees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-in-ancient-rome.html",
+    "slug": "dwv-deformed-wing-virus.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-in-medieval-europe.html",
+    "slug": "ecommerce-setups-for-honey.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-ppe-and-safety.html",
+    "slug": "economics-of-pollination-services.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-practices-around-the-world.html",
+    "slug": "electric-fencing-for-apiaries.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beekeeping-tools-and-protective-gear.html",
+    "slug": "email-newsletters-for-bee-groups.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-and-agroforestry.html",
+    "slug": "emergency-queen-rearing.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-and-biodiversity.html",
+    "slug": "entrance-reducers-and-traffic.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-in-agriculture.html",
+    "slug": "escape-boards-and-clearing-supers.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-in-art-and-literature.html",
+    "slug": "ethical-issues-in-pollination.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-in-children-literature.html",
+    "slug": "ethics-and-welfare.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-in-political-history.html",
+    "slug": "event-ticketing-and-bookings.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-in-popular-culture.html",
+    "slug": "extraction-filtration-and-cream-honey.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-in-religion-and-mythology.html",
+    "slug": "extractor-types-and-setup.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bees-on-coins-and-emblems.html",
+    "slug": "fair-trade-honey.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beeswax-candle-making-basics.html",
+    "slug": "famous-beekeepers.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beeswax-food-wraps.html",
+    "slug": "farmers-market-selling-tips.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "beginner-mistakes-to-avoid.html",
+    "slug": "feeding-equipment-and-feeders.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "behaviour-and-communication.html",
+    "slug": "file-naming-conventions.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "big-data-in-apiculture.html",
+    "slug": "fire-risk-and-apiaries.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "black-queen-cell-virus.html",
+    "slug": "first-inspection-of-the-year.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "blueberry-pollination-basics.html",
+    "slug": "flow-hive-basics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "boots-and-apiary-footwear.html",
+    "slug": "food-safety-for-honey-packers.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "branding-and-labelling-for-honey.html",
+    "slug": "forage-by-season.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "branding-assets-and-style-guide.html",
+    "slug": "forage-ecology.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "breeding-and-genetics.html",
+    "slug": "forage-gaps-and-planting-calendar.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "breeding-for-hygienic-behaviour.html",
+    "slug": "forest-ecozone-beekeeping.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "brood-and-a-half-management.html",
+    "slug": "foulbroods-and-nosema.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "brood-break-strategies.html",
+    "slug": "foundation-storage-and-handling.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "brood-disease-biosecurity.html",
+    "slug": "frame-and-box-maintenance.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "brood-diseases-overview.html",
+    "slug": "frame-change-schedules.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "brood-pheromones-and-effects.html",
+    "slug": "frame-recycling-and-disposal.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "buckfast-bees-overview.html",
+    "slug": "frame-repair-jigs.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "building-a-bee-project-website.html",
+    "slug": "frame-rests-and-spacers.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bumblebee-biology-basics.html",
+    "slug": "frame-storage-and-wax-moths.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "bumblebees-in-pollination.html",
+    "slug": "frame-wiring-and-assembly.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "burr-comb-and-bridge-comb-control.html",
+    "slug": "frames-foundation-and-supers.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "carbon-footprint-of-beekeeping.html",
+    "slug": "fruit-tree-pollination-basics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "carniolan-bees-overview.html",
+    "slug": "fungicides-and-bees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "case-studies-in-pollination.html",
+    "slug": "future-of-pollination-services.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "caste-and-lifecycle.html",
+    "slug": "genomics-of-honeybees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "caucasian-bees-overview.html",
+    "slug": "gift-packs-and-seasonal-products.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "cbpv-chronic-bee-paralysis-virus.html",
+    "slug": "global-honey-production-statistics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "chalkbrood-diagnosis-and-management.html",
+    "slug": "glove-choices-and-hygiene.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "chalkbrood-outbreak-response.html",
+    "slug": "grant-application-templates.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "chalkbrood-prevention-tips.html",
+    "slug": "grant-funding-for-bee-projects.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "chilled-brood-recovery.html",
+    "slug": "grant-reporting-and-metrics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "chunk-honey-prep.html",
+    "slug": "grassland-ecozone-beekeeping.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "citizen-science-in-beekeeping.html",
+    "slug": "green-roofs-and-bees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "climate-adaptation-in-beekeeping.html",
+    "slug": "greenhouse-pollination-methods.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "climate-change-and-bees.html",
+    "slug": "grower-beekeeper-collaboration.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "climate-change-and-pollination.html",
+    "slug": "habitat-loss-and-pollinators.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "clover-management-for-bees.html",
+    "slug": "hand-pollination-vs-bees.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "clover-pollination-and-seed.html",
+    "slug": "heather-honey-management.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "coffee-and-cocoa-pollination.html",
+    "slug": "heather-honey-pressing.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "cold-snaps-and-spring-bees.html",
+    "slug": "heatwaves-and-apiary-cooling.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "colony-biosecurity-and-hygiene.html",
+    "slug": "hedge-planting-for-pollinators.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "colony-collapse-disorder.html",
+    "slug": "hedgehog-and-bee-friendly-gardens.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "colony-thermoregulation.html",
+    "slug": "history-of-beekeeping.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "comb-age-tracking-and-replacement.html",
+    "slug": "history-of-honey-hunting.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "comb-dry-down-and-storage.html",
+    "slug": "hive-density-recommendations.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "comb-honey-frames-and-supers.html",
+    "slug": "hive-microbiome.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "comb-honey-production.html",
+    "slug": "hive-paint-and-wood-preservatives.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "comb-rotation-and-renewal.html",
+    "slug": "hive-products-economics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "communication-templates-for-bee-groups.html",
+    "slug": "hive-products-in-cosmetics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "community-beekeeping-projects.html",
+    "slug": "hive-record-templates.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "community-code-of-conduct.html",
+    "slug": "hive-scales-and-remote-monitoring.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "community-outreach-packs.html",
+    "slug": "hive-tool-types-and-care.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "community-pollination-initiatives.html",
+    "slug": "honey-adulteration-detection.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "community-seed-swaps.html",
+    "slug": "honey-bee-navigation.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "computer-vision-for-bee-traffic.html",
+    "slug": "honey-bee-species-and-lineages.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "conservation-strategies-for-pollinators.html",
+    "slug": "honey-crystallisation-and-liquefaction.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "content-calendar-for-bee-blogs.html",
+    "slug": "honey-ferments-and-teas.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "contracts-vs-gentlemens-agreements.html",
+    "slug": "honey-in-culture-and-religion.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "costing-and-margins-for-honey.html",
+    "slug": "honey-in-world-folklore.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "cover-crops-for-bees.html",
+    "slug": "honey-in-wound-healing.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "creamed-honey-basics.html",
+    "slug": "honey-labelling-and-compliance-basics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "crisis-comms-for-bee-incidents.html",
+    "slug": "honey-moisture-and-refractometers.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "crispr-and-bee-research.html",
+    "slug": "honey-tasting-and-sensory.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "crop-diversification-and-bees.html",
+    "slug": "honey-trade-and-economics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "crop-pollination-with-osr.html",
+    "slug": "honey-types-and-characteristics.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "cross-comb-prevention.html",
+    "slug": "honey-varietals-overview.html",
     "type": "overview",
     "target_words": 1100
   },
   {
-    "slug": "cucumber-and-squash-pollination.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "cut-comb-honey-basics.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "data-standards-for-bee-research.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "decline-of-pollinators.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "desert-ecozone-beekeeping.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "direct-to-consumer-sales-basics.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "disaster-recovery-checklist.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "disease-management-strategies.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "diversified-farm-income-from-bees.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "double-brood-vs-single-brood.html",
-    "type": "overview",
-    "target_words": 1100
-  },
-  {
-    "slug": "drifting-and-robbing-prevention.html",
+    "slug": "honey-vinegar-and-oxymel.html",
     "type": "overview",
     "target_words": 1100
   }
