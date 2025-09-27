@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n<title>Bee Planet Connection News</title>\n<link>https://beeplanetconnection.org/blog/</link>\n<description>Curated apiculture & pollinator news</description>\n<item>\n<title><![CDATA[COLOSSPrevention of honey bee COlony LOSSes]]></title>\n<link>https://coloss.org/</link>\n<guid>7d5018773fdbbc0638fbf70d323b5bb4</guid>\n<pubDate>2025-09-27</pubDate>\n</item>\n<item>\n<title><![CDATA[.tdi_40{border-color:#ffffff!important;border-style:solid!important;border-width:1px 1px 1px 1px!important}@media (max-width:767px){.tdi_40{display:none!importa]]></title>\n<link>https://coloss.org/activities/beebook/</link>\n<guid>1342163a7c2bbc1f8275587bc2be1450</guid>\n<pubDate>2025-09-27</pubDate>\n</item>\n<item>\n<title><![CDATA[@media (min-width:768px) and (max-width:1018px){.tdi_42{display:none!important}}@media (max-width:767px){.tdi_42{display:none!important}}]]></title>\n<link>https://coloss.org/support/</link>\n<guid>356bc9e3f5a6c1af1a9ca61324c68420</guid>\n<pubDate>2025-09-27</pubDate>\n</item>\n</channel></rss>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Bee Planet Blog</title>
+  <link>https://www.beeplanetconnection.org/blog/</link>
+  <description>Bee Planet blog feed</description>
+  <lastBuildDate>Sat, 27 Sep 2025 06:43:04 +0000</lastBuildDate>
+  <item>
+  <title>Untitled</title>
+  <link>https://www.beeplanetconnection.org/blog/2025-09-23-welcome.html</link>
+  <guid>https://www.beeplanetconnection.org/blog/2025-09-23-welcome.html</guid>
+  <pubDate>Thu, 25 Sep 2025 19:55:43 +0000</pubDate>
+</item><item>
+  <title>Colony Loss Research</title>
+  <link>https://www.beeplanetconnection.org/blog/2025-09-23-colony-loss-research.html</link>
+  <guid>https://www.beeplanetconnection.org/blog/2025-09-23-colony-loss-research.html</guid>
+  <pubDate>Thu, 25 Sep 2025 19:55:43 +0000</pubDate>
+</item><item>
+  <title>Untitled</title>
+  <link>https://www.beeplanetconnection.org/blog/2025-09-23-colony-loss-research-guide.html</link>
+  <guid>https://www.beeplanetconnection.org/blog/2025-09-23-colony-loss-research-guide.html</guid>
+  <pubDate>Thu, 25 Sep 2025 19:55:43 +0000</pubDate>
+</item>
+</channel>
+</rss>
