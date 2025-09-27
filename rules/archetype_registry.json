@@ -1,0 +1,112 @@
+{
+  "varroa-thresholds": {
+    "match": ["varroa", "thymol", "oxalic", "mite"],
+    "whitelist_slugs": [
+      "varroa-monitoring-methods.html",
+      "varroa-treatment-options.html",
+      "requeening-calendar.html",
+      "overwintering-colonies.html",
+      "nutrition-and-pollen-diversity.html"
+    ],
+    "avoid": ["gift", "christmas"]
+  },
+  "foulbroods": {
+    "match": ["american foulbrood","european foulbrood","afb","efb","foulbrood"],
+    "whitelist_slugs": [
+      "american-foulbrood-overview.html",
+      "european-foulbrood-overview.html",
+      "shook-swarm-procedure.html",
+      "hive-hygiene-checklist.html",
+      "writing-risk-assessments-beekeeping.html"
+    ],
+    "avoid": []
+  },
+  "wax-moth-storage": {
+    "match": ["wax moth","comb storage","stored comb","galleria"],
+    "whitelist_slugs": [
+      "wax-moth-biology-and-control.html",
+      "comb-storage-and-wax-moths.html",
+      "comb-rotation-and-renewal.html",
+      "frame-storage-and-wax-moths.html",
+      "hive-insulation-and-ventilation.html"
+    ],
+    "avoid": []
+  },
+  "overwintering-zones": {
+    "match": ["overwintering","maritime","continental","alpine","winter cluster","fondant"],
+    "whitelist_slugs": [
+      "overwintering-colonies.html",
+      "hive-insulation-and-ventilation.html",
+      "winter-feeding-strategies.html",
+      "ventilation-shims-and-quilts.html",
+      "varroa-treatment-options.html"
+    ],
+    "avoid": []
+  },
+  "pesticide-mitigation": {
+    "match": ["pesticide","spray","drift","pollination contract","grower"],
+    "whitelist_slugs": [
+      "pollination-contracts-basics.html",
+      "ethics-and-welfare.html",
+      "risk-assessment-for-apiaries.html",
+      "working-with-farmers-and-landowners.html",
+      "record-keeping-for-beekeepers.html"
+    ],
+    "avoid": ["gift","shop"]
+  },
+  "forage-calendars": {
+    "match": ["forage calendar","uk forage","mediterranean forage","bloom windows"],
+    "whitelist_slugs": [
+      "uk-forage-calendar-basics.html",
+      "mediterranean-forage-calendar.html",
+      "bee-friendly-planting-guides.html",
+      "forage-gaps-and-planting-calendar.html",
+      "ivy-as-autumn-forage.html"
+    ],
+    "avoid": []
+  },
+  "queen-failure": {
+    "match": ["queen failure","spotty brood","drone-laying","supersedure"],
+    "whitelist_slugs": [
+      "queen-health-and-requeening.html",
+      "queen-introduction-methods.html",
+      "queen-introduction-failure-modes.html",
+      "brood-pattern-diagnostics.html",
+      "laying-workers-and-fixer-strategies.html"
+    ],
+    "avoid": []
+  },
+  "nutrition-feeding": {
+    "match": ["feeding","pollen substitute","fondant","syrup","nutrition"],
+    "whitelist_slugs": [
+      "feeding-strategies.html",
+      "pollen-substitutes-and-supplements.html",
+      "nutrition-and-pollen-diversity.html",
+      "honey-moisture-and-refractometers.html",
+      "forage-gaps-and-planting-calendar.html"
+    ],
+    "avoid": []
+  },
+  "pollination-contracts": {
+    "match": ["pollination contract","insurance","compliance","negotiation"],
+    "whitelist_slugs": [
+      "pollination-contracts-basics.html",
+      "pollination-contract-templates.html",
+      "pollination-invoices-and-records.html",
+      "public-liability-and-beekeeping.html",
+      "record-keeping-for-beekeepers.html"
+    ],
+    "avoid": []
+  },
+  "equipment-matrix": {
+    "match": ["hive types","warre","top bar","polystyrene","insulation"],
+    "whitelist_slugs": [
+      "hive-types.html",
+      "langstroth-vs-national-hives.html",
+      "top-bar-hives-overview.html",
+      "insulation-and-ventilation.html",
+      "stainless-vs-galvanised-equipment.html"
+    ],
+    "avoid": []
+  }
+}
