@@ -1,0 +1,24 @@
+{
+  "word_count": { "min": 700, "max": 3000 },
+  "forbid_emoji": true,
+  "forbid_scaffold_phrases": [
+    "why it matters",
+    "general principles",
+    "methods and approaches",
+    "risks and signs",
+    "pro tips",
+    "historical and regional context",
+    "related topics",
+    "conclusion",
+    "one-paragraph wrap-up",
+    "add one concrete example"
+  ],
+  "forbid_links_in_headings_h1_h3": true,
+  "enriched_section_selector": "section.enriched-content",
+  "linking": {
+    "conservative": true,
+    "require_internal_targets_exist": true,
+    "allow_external": false
+  },
+  "console_ascii": true
+}
