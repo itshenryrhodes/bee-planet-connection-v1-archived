@@ -1,50 +1,34 @@
 #!/usr/bin/env python3
-import pathlib, re, datetime
+# -*- coding: utf-8 -*-
+import datetime
+from pathlib import Path
+import xml.etree.ElementTree as ET
 
-REPO = pathlib.Path(__file__).resolve().parents[1]
-BASE_URL_DEFAULT = "https://www.beeplanetconnection.org"
-SITEMAP = REPO / "sitemap.xml"
-TODAY = datetime.date.today().isoformat()
+REPO_ROOT = Path(__file__).resolve().parents[1]
+BASE_URL = "https://www.beeplanetconnection.org"
+SITEMAP = REPO_ROOT / "sitemap.xml"
+WIKI_DIR = REPO_ROOT / "wiki"
 
-def detect_base_url():
-    cfg = REPO / "_config.yml"
-    if cfg.exists():
-        m = re.search(r'^\s*url:\s*("?)(.+?)\1\s*$', cfg.read_text(encoding="utf-8"), re.M)
-        if m: return m.group(2).rstrip("/")
-    cname = REPO / "CNAME"
-    if cname.exists():
-        domain = cname.read_text(encoding="utf-8").strip()
-        if domain: return f"https://{domain}"
-    return BASE_URL_DEFAULT
-
-def collect_paths():
-    paths = set()
-    for name in ["index.html","blog.html","directory.html","about.html","privacy.html","contact.html","wiki/wiki.html"]:
-        p = REPO / name
-        if p.exists(): paths.add("/" + name)
-    w = REPO / "wiki"
-    if w.exists():
-        for p in w.glob("*.html"):
-            paths.add("/wiki/" + p.name)
-    b = REPO / "blog"
-    if b.exists():
-        for p in b.glob("*.html"):
-            paths.add("/blog/" + p.name)
-    return sorted(paths)
-
-def build_sitemap(base_url, urls):
-    head = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    body = []
-    for path in urls:
-        body.append(f"  <url><loc>{base_url}{path}</loc><lastmod>{TODAY}</lastmod></url>\n")
-    return head + "".join(body) + "</urlset>\n"
+def url_el(loc, lastmod=None, changefreq="weekly", priority="0.6"):
+    url = ET.Element("url")
+    ET.SubElement(url, "loc").text = loc
+    if lastmod: ET.SubElement(url, "lastmod").text = lastmod
+    ET.SubElement(url, "changefreq").text = changefreq
+    ET.SubElement(url, "priority").text = priority
+    return url
 
 def main():
-    base = detect_base_url()
-    urls = collect_paths()
-    xml = build_sitemap(base, urls)
-    SITEMAP.write_text(xml, encoding="utf-8")
-    print(f"✅ Wrote sitemap.xml with {len(urls)} URLs (base={base})")
+    today = datetime.date.today().isoformat()
+    urlset = ET.Element("urlset", attrib={"xmlns":"http://www.sitemaps.org/schemas/sitemap/0.9"})
+    if (REPO_ROOT / "index.html").exists(): urlset.append(url_el(f"{BASE_URL}/", today, "weekly", "1.0"))
+    if (REPO_ROOT / "blog.html").exists(): urlset.append(url_el(f"{BASE_URL}/blog.html", today, "weekly", "0.8"))
+    if (REPO_ROOT / "directory.html").exists(): urlset.append(url_el(f"{BASE_URL}/directory.html", today, "monthly", "0.5"))
+    if (WIKI_DIR / "wiki.html").exists(): urlset.append(url_el(f"{BASE_URL}/wiki/wiki.html", today, "weekly", "0.9"))
+    for p in sorted(WIKI_DIR.glob("*.html")):
+        if p.name == "wiki.html": continue
+        urlset.append(url_el(f"{BASE_URL}/wiki/{p.name}", today, "monthly", "0.6"))
+    tree = ET.ElementTree(urlset); ET.indent(tree, space="  ", level=0)
+    SITEMAP.write_text('<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(urlset, encoding="unicode"), encoding="utf-8")
+    print(f"[OK] Wrote sitemap with {len(list(urlset))} URLs -> {SITEMAP.relative_to(REPO_ROOT)}")
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__": main()

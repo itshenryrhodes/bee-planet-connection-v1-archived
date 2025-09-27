@@ -1,62 +1,69 @@
 #!/usr/bin/env python3
-import pathlib, re, datetime
+# -*- coding: utf-8 -*-
+import re, datetime
+from pathlib import Path
+from collections import defaultdict
 
-REPO = pathlib.Path(__file__).resolve().parents[1]
-WIKI = REPO / "wiki"
-INDEX = WIKI / "wiki.html"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+WIKI_DIR = REPO_ROOT / "wiki"
+INDEX_FILE = WIKI_DIR / "wiki.html"
+FM_RE = re.compile(r"^---\s*(.*?)\s*---", re.DOTALL | re.MULTILINE)
 
-FRONT_MATTER = f"""---
+def parse_front_matter(text: str):
+    m = FM_RE.search(text)
+    if not m: return {}
+    meta = {}
+    for line in m.group(1).splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"): continue
+        if ":" in line:
+            k, v = line.split(":", 1); meta[k.strip()] = v.strip().strip('"')
+    return meta
+
+def collect_articles():
+    items = []
+    if not WIKI_DIR.exists(): return items
+    for p in sorted(WIKI_DIR.glob("*.html")):
+        if p.name == "wiki.html": continue
+        text = p.read_text(encoding="utf-8")
+        meta = parse_front_matter(text)
+        title = meta.get("title", p.stem.replace("-", " ").title())
+        category = meta.get("category", "Uncategorised")
+        canonical = meta.get("canonical", f"/wiki/{p.name}")
+        items.append({"title": title, "category": category, "href": canonical})
+    return items
+
+def build_index_html(groups):
+    today = datetime.date.today().isoformat()
+    parts = [f"""--- 
 title: "Bee Planet Connection Wiki"
 description: "All articles, grouped by category."
-last_updated: "{datetime.date.today().isoformat()}"
+last_updated: "{today}"
 canonical: "/wiki/wiki.html"
----
+--- 
 
 <article class="wiki-index">
   <header>
     <h1>Knowledge Base</h1>
     <p class="lede">Browse all topics. Use site search to filter.</p>
-    <div class="meta"><span>Last updated: {datetime.date.today().isoformat()}</span></div>
+    <div class="meta"><span>Last updated: {today}</span></div>
+    <hr />
   </header>
-  <div class="wiki-groups">
-"""
-
-FOOT = """
-  </div>
-</article>
-"""
-
-def parse_front_matter(text: str):
-    m = re.search(r"^---(.*?)---", text, re.S|re.M)
-    if not m: return {}
-    fm = m.group(1)
-    out = {}
-    for k in ("title","description","category"):
-        mm = re.search(rf'^{k}:\s*"(.*?)"\s*$', fm, re.M)
-        if mm: out[k] = mm.group(1)
-    return out
+"""]
+    for cat in sorted(groups.keys()):
+        parts.append(f'  <section class="wiki-group">\n    <h2>{cat}</h2>\n    <ul>')
+        for it in groups[cat]:
+            parts.append(f'      <li><a href="{it["href"]}">{it["title"]}</a></li>')
+        parts.append("    </ul>\n  </section>\n")
+    parts.append("</article>\n"); return "".join(parts)
 
 def main():
-    items = {}
-    for p in sorted(WIKI.glob("*.html")):
-        if p.name in ("wiki.html",) or p.name.startswith("_"): continue
-        txt = p.read_text(encoding="utf-8")
-        fm = parse_front_matter(txt)
-        title = fm.get("title", p.stem.replace("-", " ").title())
-        desc  = fm.get("description","")
-        cat   = fm.get("category","Uncategorized")
-        items.setdefault(cat, []).append((p.stem, title, desc))
+    items = collect_articles()
+    groups = defaultdict(list)
+    for it in items: groups[it["category"]].append(it)
+    html = build_index_html(groups)
+    INDEX_FILE.parent.mkdir(parents=True, exist_ok=True)
+    INDEX_FILE.write_text(html, encoding="utf-8", newline="\n")
+    print(f"[OK] Rebuilt {INDEX_FILE.relative_to(REPO_ROOT)} with {len(items)} articles across {len(groups)} categories.")
 
-    parts = [FRONT_MATTER]
-    for cat in sorted(items.keys()):
-        parts.append(f'    <section class="group">\n      <h2>{cat}</h2>\n      <ul>\n')
-        for slug, title, desc in sorted(items[cat], key=lambda x: x[1].lower()):
-            safe = desc.strip() if desc else ""
-            parts.append(f'        <li><a href="/wiki/{slug}.html">{title}</a><span class="desc"> — {safe}</span></li>\n')
-        parts.append('      </ul>\n    </section>\n')
-    parts.append(FOOT)
-    INDEX.write_text("".join(parts), encoding="utf-8")
-    print(f"✅ Rebuilt {INDEX.relative_to(REPO)}")
-
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__": main()
