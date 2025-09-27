@@ -1,0 +1,11 @@
+{
+  "name": "history_culture",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "Origins & Timeline", "hints": ["Earliest evidence; key innovations; UK milestones."]},
+    {"h2": "Culture & Symbols", "hints": ["Myth; heraldry; festivals; urban trends."]},
+    {"h2": "Modern Resonance", "optional": true, "hints": ["Sustainability; education; community."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ecology_environment",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "Overview", "hints": ["Definition; why it matters to bees and people."]},
+    {"h2": "Drivers & Mechanisms", "hints": ["Pesticides; habitat; climate; evidence base."]},
+    {"h2": "Impacts & Case Studies", "optional": true, "hints": ["Regional; crop systems; wild bees."]},
+    {"h2": "Mitigation & Best Practice", "hints": ["For growers; for beekeepers; policies."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}

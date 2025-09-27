@@ -1,0 +1,37 @@
+{
+  "$schema": "https://beeplanetconnection.org/schemas/archetype-registry.schema.json",
+  "_notes": [
+    "Map each wiki HTML filename (slug) to one of the archetypes below.",
+    "If a file isn't listed here, the enricher will try heuristics (keywords in title/content) and fall back to 'management_guide'."
+  ],
+  "archetypes": [
+    "disease_pest",
+    "management_guide",
+    "equipment_technology",
+    "product_substance",
+    "ecology_environment",
+    "economics_market",
+    "history_culture",
+    "urban_beekeeping",
+    "conservation_policy"
+  ],
+  "registry": {
+    "varroa-monitoring-methods.html": "disease_pest",
+    "american-foulbrood.html": "disease_pest",
+    "european-foulbrood.html": "disease_pest",
+    "overwintering-colonies.html": "management_guide",
+    "nutritional-gaps-and-feeding.html": "management_guide",
+    "equipment-and-technology.html": "equipment_technology",
+    "honey-processing.html": "product_substance",
+    "beeswax-guide.html": "product_substance",
+    "pollination-services.html": "ecology_environment",
+    "environmental-threats.html": "ecology_environment",
+    "economics-of-beekeeping.html": "economics_market",
+    "history-and-culture-of-beekeeping.html": "history_culture",
+    "urban-beekeeping.html": "urban_beekeeping",
+    "conservation-and-sustainability.html": "conservation_policy",
+    "bees-in-agriculture.html": "ecology_environment",
+    "queen-failure-diagnostics.html": "management_guide",
+    "wax-moth-prevention.html": "management_guide"
+  }
+}

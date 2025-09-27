@@ -1,0 +1,15 @@
+{
+  "name": "disease_pest",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "Overview", "hints": ["What it is; causal agent; why it matters; prevalence."]},
+    {"h2": "Biology & Transmission", "hints": ["Lifecycle where relevant; how it spreads; vectors."]},
+    {"h2": "Symptoms & Field Diagnosis", "hints": ["Practical signs; rope test etc.; photographic cues if available."]},
+    {"h2": "Impact on Colony", "hints": ["Brood pattern; productivity; survival; legal status if notifiable."]},
+    {"h2": "Control & Treatment", "hints": ["UK/EU legal realities; timings; integrated pest management; whole-apiary actions."]},
+    {"h2": "Seasonality & Regional Notes", "optional": true, "hints": ["Only if seasonality genuinely relevant; otherwise omit."]},
+    {"h2": "Prevention & Good Practice", "hints": ["Hygiene; equipment; biosecurity; record-keeping."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}

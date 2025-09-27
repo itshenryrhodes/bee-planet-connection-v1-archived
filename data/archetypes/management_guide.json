@@ -1,0 +1,14 @@
+{
+  "name": "management_guide",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "At-a-Glance", "hints": ["What to do; when; who it’s for (UK hobbyist vs pro)."]},
+    {"h2": "Why it Matters", "hints": ["Outcomes; risks if ignored; context vs climate zones."]},
+    {"h2": "Step-by-Step", "hints": ["Sequential actions; decision points; safety/legal notes."]},
+    {"h2": "Seasonality & Climate", "optional": true, "hints": ["Include only if adds value (e.g., overwintering)."]},
+    {"h2": "Common Pitfalls", "hints": ["Top mistakes; how to avoid; quick checks."]},
+    {"h2": "Tools & Materials", "optional": true, "hints": ["Only if relevant."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}

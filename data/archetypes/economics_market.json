@@ -1,0 +1,12 @@
+{
+  "name": "economics_market",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "Snapshot", "hints": ["Market size; production volumes; where the value sits."]},
+    {"h2": "Supply & Demand", "hints": ["Geography; seasonality; substitutes; trade."]},
+    {"h2": "Revenue Streams", "hints": ["Honey; wax; pollination; queens/nucs; services."]},
+    {"h2": "Risks & Compliance", "optional": true, "hints": ["Adulteration; contracts; insurance; regulation."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "product_substance",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "What It Is", "hints": ["Origin; how bees produce it; composition highlights."]},
+    {"h2": "Harvesting & Processing", "hints": ["Methods; hygiene; standards; moisture/quality."]},
+    {"h2": "Properties & Uses", "hints": ["Food; craft; medical; regulations; adulteration risks."]},
+    {"h2": "Market & Value", "optional": true, "hints": ["Local vs global; price drivers; certifications."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}

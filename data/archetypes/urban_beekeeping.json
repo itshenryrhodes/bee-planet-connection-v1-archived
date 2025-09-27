@@ -1,0 +1,12 @@
+{
+  "name": "urban_beekeeping",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "Overview", "hints": ["Why cities can work; productivity; diversity."]},
+    {"h2": "Set-up & Good Neighbour Policy", "hints": ["Flight paths; barriers; water; council norms."]},
+    {"h2": "Management in Urban Context", "hints": ["Inspections; varroa; forage; ethics."]},
+    {"h2": "Debates & Evidence", "optional": true, "hints": ["Competition with wild pollinators; studies."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}

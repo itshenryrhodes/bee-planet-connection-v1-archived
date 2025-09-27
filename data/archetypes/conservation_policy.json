@@ -1,0 +1,11 @@
+{
+  "name": "conservation_policy",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "Context", "hints": ["Status of pollinators; why action is needed."]},
+    {"h2": "Policy & Initiatives", "hints": ["UK/EU actions; Bees’ Needs; World Bee Day; citizen science."]},
+    {"h2": "Practical Actions", "hints": ["Landscapes; farms; gardens; beekeeping practices."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}

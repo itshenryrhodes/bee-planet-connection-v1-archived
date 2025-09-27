@@ -1,0 +1,13 @@
+{
+  "name": "equipment_technology",
+  "min_words": 700,
+  "max_words": 3000,
+  "sections": [
+    {"h2": "Overview", "hints": ["What it is; where it fits in beekeeping."]},
+    {"h2": "Types & Variants", "hints": ["Designs; materials; alternatives; pros/cons."]},
+    {"h2": "Using It Well", "hints": ["Set-up; operation; maintenance; safety."]},
+    {"h2": "Costs & Practicalities", "optional": true, "hints": ["Weights; sourcing; durability."]},
+    {"h2": "Recent Innovations", "optional": true, "hints": ["Sensors; analytics; automation."]},
+    {"h2": "Further Reading & Sources", "house_citations": true}
+  ]
+}
