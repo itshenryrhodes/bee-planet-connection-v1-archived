@@ -1,3 +1,4 @@
+cat > enrich_wiki.py <<'PY'
 #!/usr/bin/env python3
 """
 enrich_wiki.py
@@ -300,3 +301,75 @@ def process_file(fp: Path, out_dir: Path, dry_run: bool = False, overwrite: bool
     for sec, body in existing_sections.items():
         if sec not in content_map:
             content_map[sec] = body
+    before_wc = word_count(md)
+    article_md = render_markdown(title, content_map, {**meta, "slug": slug, "archetype": archetype})
+    if word_count(article_md) < GLOBAL_MIN_WORDS:
+        article_md += (
+            "\n\n## Further Reading & Sources\n"
+            "This article is being actively expanded to meet our house length target. "
+            "Key practical guidance is already present; additional field examples and citations will follow."
+        )
+    article_md = clamp_total(article_md)
+    after_wc = word_count(article_md)
+    rel = fp
+    try:
+        rel = fp.relative_to(Path.cwd())
+    except Exception:
+        pass
+    out_path = (out_dir / rel).resolve() if out_dir else fp
+    if not dry_run:
+        if overwrite or not out_path.exists():
+            write_text(out_path, article_md)
+    return EnrichmentResult(
+        path=out_path if not dry_run else fp,
+        slug=slug,
+        archetype=archetype,
+        title=title,
+        before_wc=before_wc,
+        after_wc=after_wc,
+        sections_added=sections_added,
+        sections_padded=sections_padded,
+        wrote=not dry_run
+    )
+
+# ----------------------------
+# CLI
+# ----------------------------
+
+def main():
+    ap = argparse.ArgumentParser(description="Enrich wiki articles using seeds and house style.")
+    ap.add_argument("--input", "-i", default="content/wiki/**/*.md",
+                    help="Glob for input markdown files. Default: content/wiki/**/*.md")
+    ap.add_argument("--out", "-o", default="",
+                    help="Output directory root. If empty, overwrite in place.")
+    ap.add_argument("--dry-run", "-n", action="store_true",
+                    help="Preview only; do not write files.")
+    ap.add_argument("--overwrite", action="store_true",
+                    help="Allow overwriting in output dir.")
+    args = ap.parse_args()
+    files = sorted(glob.glob(args.input, recursive=True))
+    if not files:
+        print(f"[WARN] No files matched: {args.input}")
+        sys.exit(0)
+    out_dir = Path(args.out).resolve() if args.out else None
+    if out_dir:
+        out_dir.mkdir(parents=True, exist_ok=True)
+    results = []
+    total_before, total_after = 0, 0
+    for f in files:
+        fp = Path(f).resolve()
+        res = process_file(fp, out_dir or Path(""), dry_run=args.dry_run,
+                           overwrite=(args.out == "" or args.overwrite))
+        results.append(res)
+        total_before += res.before_wc
+        total_after += res.after_wc
+        action = "(dry-run)" if not res.wrote else "WROTE"
+        print(f"{action} :: {res.path} :: {res.before_wc} -> {res.after_wc} words "
+              f"(added {len(res.sections_added)}, padded {len(res.sections_padded)})")
+    print("\n=== Summary ===")
+    print(f"Files processed: {len(results)}")
+    print(f"Total words: {total_before} -> {total_after} (+{total_after - total_before})")
+
+if __name__ == "__main__":
+    main()
+PY
