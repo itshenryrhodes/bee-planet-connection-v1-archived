@@ -1,0 +1,5 @@
+{
+  "Overview": "Consistent field names and timestamps make hive data portable.",
+  "Using It Well": "ISO 8601 times, unit metadata, device calibration records, per-hive IDs; avoid free-text for key events.",
+  "Recent Innovations": "LoRa gateways with offline caching and OTA updates."
+}
