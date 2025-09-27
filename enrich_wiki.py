@@ -1,4 +1,3 @@
-cat > enrich_wiki.py <<'PY'
 #!/usr/bin/env python3
 """
 enrich_wiki.py
@@ -13,7 +12,6 @@ Priority order:
 Sections enforce minimum word counts, and articles respect global min/max length.
 """
 
-from __future__ import annotations
 import argparse
 import glob
 import json
@@ -346,30 +344,4 @@ def main():
                     help="Preview only; do not write files.")
     ap.add_argument("--overwrite", action="store_true",
                     help="Allow overwriting in output dir.")
-    args = ap.parse_args()
-    files = sorted(glob.glob(args.input, recursive=True))
-    if not files:
-        print(f"[WARN] No files matched: {args.input}")
-        sys.exit(0)
-    out_dir = Path(args.out).resolve() if args.out else None
-    if out_dir:
-        out_dir.mkdir(parents=True, exist_ok=True)
-    results = []
-    total_before, total_after = 0, 0
-    for f in files:
-        fp = Path(f).resolve()
-        res = process_file(fp, out_dir or Path(""), dry_run=args.dry_run,
-                           overwrite=(args.out == "" or args.overwrite))
-        results.append(res)
-        total_before += res.before_wc
-        total_after += res.after_wc
-        action = "(dry-run)" if not res.wrote else "WROTE"
-        print(f"{action} :: {res.path} :: {res.before_wc} -> {res.after_wc} words "
-              f"(added {len(res.sections_added)}, padded {len(res.sections_padded)})")
-    print("\n=== Summary ===")
-    print(f"Files processed: {len(results)}")
-    print(f"Total words: {total_before} -> {total_after} (+{total_after - total_before})")
-
-if __name__ == "__main__":
-    main()
-PY
+    args =
