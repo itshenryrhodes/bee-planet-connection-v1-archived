@@ -1,61 +1,61 @@
 {
   "varroa-thresholds": {
-    "match": ["varroa", "thymol", "oxalic", "mite"],
+    "match": ["varroa", "mite load", "monitoring", "treatment window", "threshold"],
     "whitelist_slugs": [
       "varroa-monitoring-methods.html",
       "varroa-treatment-options.html",
-      "requeening-calendar.html",
-      "overwintering-colonies.html",
-      "nutrition-and-pollen-diversity.html"
+      "oxalic-acid-vapour-method.html",
+      "thymol-treatment-guide.html",
+      "overwintering-colonies.html"
     ],
-    "avoid": ["gift", "christmas"]
+    "avoid": ["gift","christmas"]
   },
   "foulbroods": {
     "match": ["american foulbrood","european foulbrood","afb","efb","foulbrood"],
     "whitelist_slugs": [
       "american-foulbrood-overview.html",
       "european-foulbrood-overview.html",
+      "brood-pattern-diagnostics.html",
       "shook-swarm-procedure.html",
-      "hive-hygiene-checklist.html",
-      "writing-risk-assessments-beekeeping.html"
+      "apiary-biosecurity-and-hygiene.html"
     ],
     "avoid": []
   },
   "wax-moth-storage": {
-    "match": ["wax moth","comb storage","stored comb","galleria"],
+    "match": ["wax moth","galleria","comb storage","freezing comb","bt aizawai"],
     "whitelist_slugs": [
       "wax-moth-biology-and-control.html",
-      "comb-storage-and-wax-moths.html",
-      "comb-rotation-and-renewal.html",
       "frame-storage-and-wax-moths.html",
+      "comb-rotation-and-renewal.html",
+      "comb-dry-down-and-storage.html",
       "hive-insulation-and-ventilation.html"
     ],
     "avoid": []
   },
   "overwintering-zones": {
-    "match": ["overwintering","maritime","continental","alpine","winter cluster","fondant"],
+    "match": ["overwintering","winter cluster","fondant","maritime","continental","alpine"],
     "whitelist_slugs": [
       "overwintering-colonies.html",
-      "hive-insulation-and-ventilation.html",
       "winter-feeding-strategies.html",
       "ventilation-shims-and-quilts.html",
+      "hive-insulation-and-ventilation.html",
       "varroa-treatment-options.html"
     ],
     "avoid": []
   },
   "pesticide-mitigation": {
-    "match": ["pesticide","spray","drift","pollination contract","grower"],
+    "match": ["pesticide","spray","drift","stewardship","grower agreement"],
     "whitelist_slugs": [
+      "pesticide-exposure-and-mitigation.html",
       "pollination-contracts-basics.html",
-      "ethics-and-welfare.html",
-      "risk-assessment-for-apiaries.html",
       "working-with-farmers-and-landowners.html",
+      "risk-assessment-for-apiaries.html",
       "record-keeping-for-beekeepers.html"
     ],
-    "avoid": ["gift","shop"]
+    "avoid": ["gift","shop","newsletter"]
   },
   "forage-calendars": {
-    "match": ["forage calendar","uk forage","mediterranean forage","bloom windows"],
+    "match": ["forage calendar","bloom window","uk forage","mediterranean forage"],
     "whitelist_slugs": [
       "uk-forage-calendar-basics.html",
       "mediterranean-forage-calendar.html",
@@ -66,7 +66,7 @@
     "avoid": []
   },
   "queen-failure": {
-    "match": ["queen failure","spotty brood","drone-laying","supersedure"],
+    "match": ["queen failure","supersedure","drone laying","spotty brood"],
     "whitelist_slugs": [
       "queen-health-and-requeening.html",
       "queen-introduction-methods.html",
@@ -77,18 +77,18 @@
     "avoid": []
   },
   "nutrition-feeding": {
-    "match": ["feeding","pollen substitute","fondant","syrup","nutrition"],
+    "match": ["feeding","pollen sub","syrup","fondant","nutrition gap"],
     "whitelist_slugs": [
       "feeding-strategies.html",
       "pollen-substitutes-and-supplements.html",
       "nutrition-and-pollen-diversity.html",
-      "honey-moisture-and-refractometers.html",
-      "forage-gaps-and-planting-calendar.html"
+      "forage-gaps-and-planting-calendar.html",
+      "honey-moisture-and-refractometers.html"
     ],
     "avoid": []
   },
   "pollination-contracts": {
-    "match": ["pollination contract","insurance","compliance","negotiation"],
+    "match": ["pollination contract","invoice","compliance","insurance","negotiation"],
     "whitelist_slugs": [
       "pollination-contracts-basics.html",
       "pollination-contract-templates.html",
@@ -99,13 +99,55 @@
     "avoid": []
   },
   "equipment-matrix": {
-    "match": ["hive types","warre","top bar","polystyrene","insulation"],
+    "match": ["hive types","langstroth","national","warre","top bar","poly","insulation"],
     "whitelist_slugs": [
       "hive-types.html",
       "langstroth-vs-national-hives.html",
       "top-bar-hives-overview.html",
       "insulation-and-ventilation.html",
       "stainless-vs-galvanised-equipment.html"
+    ],
+    "avoid": []
+  },
+  "swarm-prevention": {
+    "match": ["swarm prevention","space management","demaree","snelgrove"],
+    "whitelist_slugs": [
+      "swarm-prevention-through-space-management.html",
+      "demaree-method-for-swarm-control.html",
+      "snelgrove-board-method.html",
+      "supering-strategies.html",
+      "queen-rearing-basics.html"
+    ],
+    "avoid": []
+  },
+  "ipm-overview": {
+    "match": ["integrated pest management","ipm","thresholds","monitoring","rotation"],
+    "whitelist_slugs": [
+      "integrated-pest-management-for-bees.html",
+      "varroa-monitoring-methods.html",
+      "varroa-treatment-options.html",
+      "hygienic-behaviour-and-breeding.html",
+      "record-keeping-for-beekeepers.html"
+    ],
+    "avoid": []
+  },
+  "honey-processing": {
+    "match": ["extraction","moisture","refractometer","set honey","filtration"],
+    "whitelist_slugs": [
+      "honey-harvest-and-extraction-basics.html",
+      "extraction-filtration-and-cream-honey.html",
+      "honey-moisture-and-refractometers.html",
+      "honey-crystallisation-and-liquefaction.html"
+    ],
+    "avoid": []
+  },
+  "comb-hygiene": {
+    "match": ["comb rotation","old comb","frame wiring","foundation"],
+    "whitelist_slugs": [
+      "comb-rotation-and-renewal.html",
+      "frame-wiring-and-assembly.html",
+      "foundation-storage-and-handling.html",
+      "frame-and-box-maintenance.html"
     ],
     "avoid": []
   }
