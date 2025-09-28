@@ -1,95 +1,35 @@
-{%- comment -%}
-  Responsive hero include for Bee Planet Connection
-  Usage:
-    {% include wiki-hero.html hero_id="06" alt="Honey bee foraging on lavender" class="mb-8" %}
+{%- assign hid = include.hero_id | default: "01" -%}
+{%- assign alt = include.alt | default: "Hero image" -%}
+{%- assign klass = include.class | default: "" -%}
 
-  Conventions (saved to memory 2025-09-25):
-    - Four breakpoints only: mobile, sm, md, lg
-    - Two formats per breakpoint: .webp and .jpg
-    - Filenames: /img/hero/hero-{{id}}-{mobile|sm|md|lg}.{webp|jpg}
-      e.g. /img/hero/hero-01-mobile.webp, /img/hero/hero-01-mobile.jpg
+<picture class="hero block {{ klass }}">
+  <source srcset="/img/hero/hero-{{ hid }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-sm.webp"     media="(max-width: 768px)"  type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-md.webp"     media="(max-width: 1024px)" type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-lg.webp"                              type="image/webp">
 
-  Params:
-    - hero_id : string, required (e.g. "01", "02", "10")
-    - alt     : string, optional (default: "Hero image")
-    - class   : string, optional extra classes on <picture>
-{%- endcomment -%}
+  <source srcset="/img/hero/hero-{{ hid }}-mobile.jpg" media="(max-width: 480px)" type="image/jpeg">
+  <source srcset="/img/hero/hero-{{ hid }}-sm.jpg"     media="(max-width: 768px)"  type="image/jpeg">
+  <source srcset="/img/hero/hero-{{ hid }}-md.jpg"     media="(max-width: 1024px)" type="image/jpeg">
+  <source srcset="/img/hero/hero-{{ hid }}-lg.jpg"                              type="image/jpeg">
 
-{%- assign hid   = include.hero_id | default: "01" -%}_
-
-JSON
-# 1) Remove the truncated file (optional but clean)
-rm -f _includes/wiki-hero.html
-
-# 2) Create the full file with a here-doc (note the single quotes!)
-cat > _includes/wiki-hero.html <<'HTML'
-{%- comment -%}
-  Responsive hero include for Bee Planet Connection
-  Usage:
-    {% include wiki-hero.html hero_id="06" alt="Honey bee foraging on lavender" class="mb-8" %}
-
-  Conventions (saved to memory 2025-09-25):
-    - Four breakpoints only: mobile, sm, md, lg
-    - Two formats per breakpoint: .webp and .jpg
-    - Filenames: /img/hero/hero-{{id}}-{mobile|sm|md|lg}.{webp|jpg}
-      e.g. /img/hero/hero-01-mobile.webp, /img/hero/hero-01-mobile.jpg
-
-  Params:
-    - hero_id : string, required (e.g. "01", "02", "10")
-    - alt     : string, optional (default: "Hero image")
-    - class   : string, optional extra classes on <picture>
-{%- endcomment -%}
-
-{%- assign hid   = include.hero_id | default: "01" -%}_
-
-Ctrl + C
-
-Ctrl + C
-
-rm -f _includes/wiki-hero.html
-
-cat > _includes/wiki-hero.html <<'HTML'
-{%- comment -%}
-  Responsive hero include for Bee Planet Connection
-  Usage:
-    {% include wiki-hero.html hero_id="06" alt="Honey bee foraging on lavender" class="mb-8" %}
-
-  Conventions (saved to memory 2025-09-25):
-    - Four breakpoints only: mobile, sm, md, lg
-    - Two formats per breakpoint: .webp and .jpg
-    - Filenames: /img/hero/hero-{{id}}-{mobile|sm|md|lg}.{webp|jpg}
-      e.g. /img/hero/hero-01-mobile.webp, /img/hero/hero-01-mobile.jpg
-
-  Params:
-    - hero_id : string, required (e.g. "01", "02", "10")
-    - alt     : string, optional (default: "Hero image")
-    - class   : string, optional extra classes on <picture>
-{%- endcomment -%}
-
-{%- assign hid   = include.hero_id | default: "01" -%}
-{%- assign alt   = include.alt     | default: "Hero image" -%}
-{%- assign klass = include.class   | default: "" -%}
-
-<picture class="hero {{ klass }}">
-  <!-- WEBP sources (largest → smallest) -->
-  <source type="image/webp" srcset="/img/hero/hero-{{ hid }}-lg.webp"  media="(min-width: 1025px)">
-  <source type="image/webp" srcset="/img/hero/hero-{{ hid }}-md.webp"  media="(min-width: 769px)">
-  <source type="image/webp" srcset="/img/hero/hero-{{ hid }}-sm.webp"  media="(min-width: 481px)">
-  <source type="image/webp" srcset="/img/hero/hero-{{ hid }}-mobile.webp">
-
-  <!-- JPG fallbacks (largest → smallest) -->
-  <source type="image/jpeg" srcset="/img/hero/hero-{{ hid }}-lg.jpg"   media="(min-width: 1025px)">
-  <source type="image/jpeg" srcset="/img/hero/hero-{{ hid }}-md.jpg"   media="(min-width: 769px)">
-  <source type="image/jpeg" srcset="/img/hero/hero-{{ hid }}-sm.jpg"   media="(min-width: 481px)">
-  <source type="image/jpeg" srcset="/img/hero/hero-{{ hid }}-mobile.jpg">
-
-  <!-- Fallback img -->
   <img
     src="/img/hero/hero-{{ hid }}-lg.jpg"
     alt="{{ alt | escape }}"
+    width="1920"
+    height="1080"
     loading="eager"
+    fetchpriority="high"
     decoding="async"
-    class="w-full h-auto"
-    width="1600"
-    height="900">
+    sizes="(max-width: 480px) 100vw,
+           (max-width: 768px) 100vw,
+           (max-width: 1024px) 100vw,
+           100vw"
+    class="hero-img"
+  >
 </picture>
+
+<style>
+.hero.block { display:block; margin:0 auto; }
+.hero-img { width:100%; height:auto; display:block; }
+</style>
