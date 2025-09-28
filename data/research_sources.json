@@ -1,23 +1,335 @@
 {
   "version": "1.0",
   "domains": [
-    { "domain": "Bee health & pests", "sources": [] },
-    { "domain": "Management practices", "sources": [] },
-    { "domain": "Bee biology & behaviour", "sources": [] },
-    { "domain": "Environment & forage", "sources": [] },
-    { "domain": "Beekeeping equipment & tech", "sources": [] },
-    { "domain": "Products & processing", "sources": [] },
-    { "domain": "Economics & policy", "sources": [] },
-    { "domain": "Culture & history", "sources": [] },
-    { "domain": "Education & accessibility", "sources": [] },
-    { "domain": "Research & innovation", "sources": [] }
+    {
+      "domain": "Bee health & pests",
+      "sources": [
+        {
+          "title": "UK National Bee Unit (BeeBase) – Advisory Leaflets",
+          "author": "",
+          "year": 2024,
+          "type": "government_resource",
+          "url": "https://www.nationalbeeunit.com/resources/",
+          "authority": "Official UK gov guidance",
+          "scope": "Disease factsheets; practical control",
+          "tags": [
+            "uk",
+            "nbu",
+            "efb",
+            "afb",
+            "varroa"
+          ]
+        },
+        {
+          "title": "USDA ARS Bee Research Laboratory",
+          "author": "",
+          "year": 2023,
+          "type": "government_resource",
+          "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/",
+          "authority": "US federal research",
+          "scope": "Bee health research outputs",
+          "tags": [
+            "us",
+            "usda",
+            "varroa",
+            "nutrition"
+          ]
+        },
+        {
+          "title": "Bee Aware Australia",
+          "author": "",
+          "year": 2024,
+          "type": "ngo_resource",
+          "url": "https://beeaware.org.au/",
+          "authority": "National industry program (AUS)",
+          "scope": "Biosecurity, pests, surveillance",
+          "tags": [
+            "au",
+            "biosecurity",
+            "shb",
+            "varroa"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Management practices",
+      "sources": [
+        {
+          "title": "BBKA Advice & Guidance",
+          "author": "",
+          "year": 2022,
+          "type": "extension_guide",
+          "url": "https://www.bbka.org.uk/pages/category/advice-for-beekeepers",
+          "authority": "National beekeeping body (UK)",
+          "scope": "Practical management",
+          "tags": [
+            "uk",
+            "bbka",
+            "management"
+          ]
+        },
+        {
+          "title": "Teagasc Beekeeping Notes (Ireland)",
+          "author": "",
+          "year": 2023,
+          "type": "government_resource",
+          "url": "https://www.teagasc.ie/animals/other-animals/bees/",
+          "authority": "National ag extension",
+          "scope": "Seasonal notes, IPM",
+          "tags": [
+            "eu",
+            "extension"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Bee biology & behaviour",
+      "sources": [
+        {
+          "title": "Apidologie (journal)",
+          "author": "",
+          "year": 0,
+          "type": "journal",
+          "url": "https://www.apidologie.org/",
+          "authority": "Peer-reviewed",
+          "scope": "Bee biology, behaviour",
+          "tags": [
+            "journals",
+            "peer-reviewed"
+          ]
+        },
+        {
+          "title": "Journal of Apicultural Research (IBRA)",
+          "author": "",
+          "year": 0,
+          "type": "journal",
+          "url": "https://www.tandfonline.com/tjar",
+          "authority": "Peer-reviewed (IBRA)",
+          "scope": "Apiculture research",
+          "tags": [
+            "journals",
+            "peer-reviewed"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Environment & forage",
+      "sources": [
+        {
+          "title": "Bumblebee Conservation Trust – Resources",
+          "author": "",
+          "year": 2024,
+          "type": "ngo_resource",
+          "url": "https://www.bumblebeeconservation.org/resources/",
+          "authority": "UK NGO",
+          "scope": "Forage, ID, habitat",
+          "tags": [
+            "uk",
+            "environment",
+            "forage"
+          ]
+        },
+        {
+          "title": "EFSA Bee Health & Pesticides – Publications",
+          "author": "",
+          "year": 2023,
+          "type": "government_resource",
+          "url": "https://www.efsa.europa.eu/en/topics/topic/bee-health",
+          "authority": "EU agency",
+          "scope": "Risk assessment; bees & PPPs",
+          "tags": [
+            "eu",
+            "efsa",
+            "pesticides"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Beekeeping equipment & tech",
+      "sources": [
+        {
+          "title": "FAO – Beekeeping and Sustainable Livelihoods",
+          "author": "",
+          "year": 2021,
+          "type": "report",
+          "url": "https://www.fao.org/3/y5110e/y5110e00.htm",
+          "authority": "UN agency",
+          "scope": "Global smallholder guidance",
+          "tags": [
+            "fao",
+            "equipment",
+            "practice"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Products & processing",
+      "sources": [
+        {
+          "title": "UK Gov – Food labelling & composition (Honey)",
+          "author": "",
+          "year": 2024,
+          "type": "government_resource",
+          "url": "https://www.gov.uk/guidance/food-labelling-giving-food-information-to-consumers",
+          "authority": "Official UK gov guidance",
+          "scope": "Honey labelling framework",
+          "tags": [
+            "uk",
+            "regulation",
+            "products"
+          ]
+        },
+        {
+          "title": "Codex Alimentarius – Standard for Honey",
+          "author": "",
+          "year": 0,
+          "type": "database",
+          "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/",
+          "authority": "International standard",
+          "scope": "Quality & composition standard",
+          "tags": [
+            "codex",
+            "standards",
+            "honey"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Economics & policy",
+      "sources": [
+        {
+          "title": "FAO/UN – Pollination services & food security",
+          "author": "",
+          "year": 2023,
+          "type": "report",
+          "url": "https://www.fao.org/pollination/en/",
+          "authority": "UN agency",
+          "scope": "Pollination value & policy",
+          "tags": [
+            "fao",
+            "economics",
+            "policy"
+          ]
+        },
+        {
+          "title": "OECD – Pesticides & pollinators policy insights",
+          "author": "",
+          "year": 2022,
+          "type": "report",
+          "url": "https://www.oecd.org/",
+          "authority": "International org",
+          "scope": "Policy analysis",
+          "tags": [
+            "oecd",
+            "policy"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Culture & history",
+      "sources": [
+        {
+          "title": "IBRA – Historical resources",
+          "author": "",
+          "year": 0,
+          "type": "ngo_resource",
+          "url": "https://www.ibrabee.org.uk/",
+          "authority": "International NGO",
+          "scope": "History & archives",
+          "tags": [
+            "ibra",
+            "history"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Education & accessibility",
+      "sources": [
+        {
+          "title": "US Extension – eXtension/University resources",
+          "author": "",
+          "year": 2024,
+          "type": "extension_guide",
+          "url": "https://extension.org/",
+          "authority": "US extension network",
+          "scope": "Open ag education",
+          "tags": [
+            "us",
+            "extension",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "Research & innovation",
+      "sources": [
+        {
+          "title": "AGRIS (FAO) – Agriculture research index",
+          "author": "",
+          "year": 0,
+          "type": "database",
+          "url": "https://agris.fao.org/",
+          "authority": "UN database",
+          "scope": "Agriculture research index",
+          "tags": [
+            "fao",
+            "database"
+          ]
+        }
+      ]
+    }
   ],
   "tags": [
-    "varroa","efb","afb","shb","nosema","ipm","nutrition","queen","swarm","overwintering",
-    "forage","urban","climate","hedgerows","pesticides","contracts","labour","exports",
-    "langstroth","national","topbar","poly","sensors","weigh-scales","honey","wax","propolis",
-    "market","regulation","bbka","nbu","efsa","defra","fao","usda","journals","case-study",
-    "uk","eu","us","au"
+    "varroa",
+    "efb",
+    "afb",
+    "shb",
+    "nosema",
+    "ipm",
+    "nutrition",
+    "queen",
+    "swarm",
+    "overwintering",
+    "forage",
+    "urban",
+    "climate",
+    "hedgerows",
+    "pesticides",
+    "contracts",
+    "labour",
+    "exports",
+    "langstroth",
+    "national",
+    "topbar",
+    "poly",
+    "sensors",
+    "weigh-scales",
+    "honey",
+    "wax",
+    "propolis",
+    "market",
+    "regulation",
+    "bbka",
+    "nbu",
+    "efsa",
+    "defra",
+    "fao",
+    "usda",
+    "journals",
+    "case-study",
+    "uk",
+    "eu",
+    "us",
+    "au"
   ],
   "relations": []
 }
