@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "domains": [
+    { "domain": "Bee health & pests", "sources": [] },
+    { "domain": "Management practices", "sources": [] },
+    { "domain": "Bee biology & behaviour", "sources": [] },
+    { "domain": "Environment & forage", "sources": [] },
+    { "domain": "Beekeeping equipment & tech", "sources": [] },
+    { "domain": "Products & processing", "sources": [] },
+    { "domain": "Economics & policy", "sources": [] },
+    { "domain": "Culture & history", "sources": [] },
+    { "domain": "Education & accessibility", "sources": [] },
+    { "domain": "Research & innovation", "sources": [] }
+  ]
+}

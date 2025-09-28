@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Sources Registry",
+  "type": "object",
+  "properties": {
+    "version": { "type": "string" },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string" },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "author": { "type": "string" },
+                "year": { "type": "integer" },
+                "type": { "type": "string", "enum": ["textbook","extension_guide","journal","database","ngo_resource","government_resource","paper","report"] },
+                "url": { "type": "string" },
+                "authority": { "type": "string" },
+                "scope": { "type": "string" },
+                "region": { "type": "string" },
+                "tags": { "type": "array", "items": { "type": "string" } },
+                "relevance_score": { "type": "number" }
+              },
+              "required": ["title","year","type","authority","scope"]
+            }
+          }
+        },
+        "required": ["domain","sources"]
+      }
+    }
+  },
+  "required": ["version","domains"]
+}
