@@ -1,0 +1,35 @@
+{%- assign hid = include.hero_id | default: "01" -%}
+{%- assign alt = include.alt | default: "Hero image" -%}
+{%- assign klass = include.class | default: "" -%}
+
+<picture class="hero block {{ klass }}">
+  <source srcset="/img/hero/hero-{{ hid }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-sm.webp"     media="(max-width: 768px)"  type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-md.webp"     media="(max-width: 1024px)" type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-lg.webp"                              type="image/webp">
+
+  <source srcset="/img/hero/hero-{{ hid }}-mobile.jpg" media="(max-width: 480px)" type="image/jpeg">
+  <source srcset="/img/hero/hero-{{ hid }}-sm.jpg"     media="(max-width: 768px)"  type="image/jpeg">
+  <source srcset="/img/hero/hero-{{ hid }}-md.jpg"     media="(max-width: 1024px)" type="image/jpeg">
+  <source srcset="/img/hero/hero-{{ hid }}-lg.jpg"                              type="image/jpeg">
+
+  <img
+    src="/img/hero/hero-{{ hid }}-lg.jpg"
+    alt="{{ alt | escape }}"
+    width="1920"
+    height="1080"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+    sizes="(max-width: 480px) 100vw,
+           (max-width: 768px) 100vw,
+           (max-width: 1024px) 100vw,
+           100vw"
+    class="hero-img"
+  >
+</picture>
+
+<style>
+.hero.block { display:block; margin:0 auto; }
+.hero-img { width:100%; height:auto; display:block; }
+</style>
