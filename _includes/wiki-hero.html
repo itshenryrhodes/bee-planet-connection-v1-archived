@@ -1,25 +1,8 @@
-{%- comment -%}
-Compact alternating hero include.
-
-Front matter controls (per page):
-  hero_id: "01"            # required to show the hero on this page
-  hero_title: "Optional heading"  # defaults to page.title
-  hero_text: "Optional short paragraph"
-  hero_cta_text: "Read more"
-  hero_cta_href: "/wiki/wiki.html"
-  hero_side: "auto"        # "left" | "right" | "auto" (default: auto)
-
-Image naming (pre-agreed):
-  /img/hero/hero-{{id}}-{mobile|sm|md|lg}.webp
-  /img/hero/hero-{{id}}-{mobile|sm|md|lg}.jpg
-{%- endcomment -%}
-
 {%- assign hid = page.hero_id | default: nil -%}
 {%- if hid -%}
   {%- assign side = page.hero_side | default: "auto" -%}
   {%- capture id_digits -%}{{ hid | replace: " ", "" | replace: "-", "" | replace: "_", "" }}{%- endcapture -%}
   {%- assign id_num = id_digits | plus: 0 -%}
-
   {%- if side == "auto" -%}
     {%- assign parity = id_num | modulo: 2 -%}
     {%- if parity == 0 -%}
@@ -47,44 +30,14 @@ Image naming (pre-agreed):
 
       <div class="hero__media">
         <picture>
-          <!-- WebP sources -->
-          <source
-            type="image/webp"
-            srcset="/img/hero/hero-{{ hid }}-mobile.webp"
-            media="(max-width: 480px)">
-          <source
-            type="image/webp"
-            srcset="/img/hero/hero-{{ hid }}-sm.webp"
-            media="(max-width: 768px)">
-          <source
-            type="image/webp"
-            srcset="/img/hero/hero-{{ hid }}-md.webp"
-            media="(max-width: 1200px)">
-          <source
-            type="image/webp"
-            srcset="/img/hero/hero-{{ hid }}-lg.webp">
-
-          <!-- JPEG fallbacks -->
-          <source
-            type="image/jpeg"
-            srcset="/img/hero/hero-{{ hid }}-mobile.jpg"
-            media="(max-width: 480px)">
-          <source
-            type="image/jpeg"
-            srcset="/img/hero/hero-{{ hid }}-sm.jpg"
-            media="(max-width: 768px)">
-          <source
-            type="image/jpeg"
-            srcset="/img/hero/hero-{{ hid }}-md.jpg"
-            media="(max-width: 1200px)">
-          <img
-            class="hero__img"
-            loading="eager"
-            decoding="async"
-            alt="{{ page.hero_title | default: page.title | default: 'Hero image' }}"
-            src="/img/hero/hero-{{ hid }}-lg.jpg"
-            width="640"
-            height="400">
+          <source type="image/webp" srcset="/img/hero/hero-{{ hid }}-mobile.webp" media="(max-width: 480px)">
+          <source type="image/webp" srcset="/img/hero/hero-{{ hid }}-sm.webp" media="(max-width: 768px)">
+          <source type="image/webp" srcset="/img/hero/hero-{{ hid }}-md.webp" media="(max-width: 1200px)">
+          <source type="image/webp" srcset="/img/hero/hero-{{ hid }}-lg.webp">
+          <source type="image/jpeg" srcset="/img/hero/hero-{{ hid }}-mobile.jpg" media="(max-width: 480px)">
+          <source type="image/jpeg" srcset="/img/hero/hero-{{ hid }}-sm.jpg" media="(max-width: 768px)">
+          <source type="image/jpeg" srcset="/img/hero/hero-{{ hid }}-md.jpg" media="(max-width: 1200px)">
+          <img class="hero__img" loading="eager" decoding="async" alt="{{ page.hero_title | default: page.title | default: 'Hero image' }}" src="/img/hero/hero-{{ hid }}-lg.jpg" width="640" height="400">
         </picture>
       </div>
     </div>
