@@ -1,4 +1,3 @@
-/* === Compact Alternating Hero === */
 .hero.hero--compact {
   margin: 1.25rem 0 2rem;
   padding: clamp(0.75rem, 1.5vw, 1rem);
@@ -44,7 +43,6 @@
 }
 
 .hero__media {
-  /* Keep image modest in size */
   max-width: clamp(220px, 28vw, 360px);
 }
 
@@ -56,13 +54,12 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* Stack on small screens */
 @media (max-width: 720px) {
   .hero__inner {
     grid-template-columns: 1fr;
   }
   .hero__media {
-    order: 2; /* image under text on mobile */
+    order: 2;
     max-width: min(100%, 480px);
     margin: 0 auto;
   }
