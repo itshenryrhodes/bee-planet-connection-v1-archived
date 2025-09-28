@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0",
   "domains": [
     { "domain": "Bee health & pests", "sources": [] },
     { "domain": "Management practices", "sources": [] },
@@ -11,5 +11,13 @@
     { "domain": "Culture & history", "sources": [] },
     { "domain": "Education & accessibility", "sources": [] },
     { "domain": "Research & innovation", "sources": [] }
-  ]
+  ],
+  "tags": [
+    "varroa","efb","afb","shb","nosema","ipm","nutrition","queen","swarm","overwintering",
+    "forage","urban","climate","hedgerows","pesticides","contracts","labour","exports",
+    "langstroth","national","topbar","poly","sensors","weigh-scales","honey","wax","propolis",
+    "market","regulation","bbka","nbu","efsa","defra","fao","usda","journals","case-study",
+    "uk","eu","us","au"
+  ],
+  "relations": []
 }

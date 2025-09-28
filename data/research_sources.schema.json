@@ -2,37 +2,43 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Research Sources Registry",
   "type": "object",
+  "required": ["version","domains"],
   "properties": {
     "version": { "type": "string" },
     "domains": {
       "type": "array",
       "items": {
         "type": "object",
+        "required": ["domain","sources"],
         "properties": {
           "domain": { "type": "string" },
           "sources": {
             "type": "array",
             "items": {
               "type": "object",
+              "required": ["title","type","url","authority","scope"],
               "properties": {
                 "title": { "type": "string" },
                 "author": { "type": "string" },
                 "year": { "type": "integer" },
-                "type": { "type": "string", "enum": ["textbook","extension_guide","journal","database","ngo_resource","government_resource","paper","report"] },
+                "type": { 
+                  "type": "string",
+                  "enum": [
+                    "textbook","extension_guide","journal","database",
+                    "ngo_resource","government_resource","paper","report"
+                  ]
+                },
                 "url": { "type": "string" },
                 "authority": { "type": "string" },
                 "scope": { "type": "string" },
+                "notes": { "type": "string" },
                 "region": { "type": "string" },
-                "tags": { "type": "array", "items": { "type": "string" } },
-                "relevance_score": { "type": "number" }
-              },
-              "required": ["title","year","type","authority","scope"]
+                "tags": { "type": "array", "items": { "type": "string" } }
+              }
             }
           }
-        },
-        "required": ["domain","sources"]
+        }
       }
     }
-  },
-  "required": ["version","domains"]
+  }
 }
