@@ -1,35 +1,92 @@
-{%- assign hid = include.hero_id | default: "01" -%}
-{%- assign alt = include.alt | default: "Hero image" -%}
-{%- assign klass = include.class | default: "" -%}
+{%- comment -%}
+Compact alternating hero include.
 
-<picture class="hero block {{ klass }}">
-  <source srcset="/img/hero/hero-{{ hid }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
-  <source srcset="/img/hero/hero-{{ hid }}-sm.webp"     media="(max-width: 768px)"  type="image/webp">
-  <source srcset="/img/hero/hero-{{ hid }}-md.webp"     media="(max-width: 1024px)" type="image/webp">
-  <source srcset="/img/hero/hero-{{ hid }}-lg.webp"                              type="image/webp">
+Front matter controls (per page):
+  hero_id: "01"            # required to show the hero on this page
+  hero_title: "Optional heading"  # defaults to page.title
+  hero_text: "Optional short paragraph"
+  hero_cta_text: "Read more"
+  hero_cta_href: "/wiki/wiki.html"
+  hero_side: "auto"        # "left" | "right" | "auto" (default: auto)
 
-  <source srcset="/img/hero/hero-{{ hid }}-mobile.jpg" media="(max-width: 480px)" type="image/jpeg">
-  <source srcset="/img/hero/hero-{{ hid }}-sm.jpg"     media="(max-width: 768px)"  type="image/jpeg">
-  <source srcset="/img/hero/hero-{{ hid }}-md.jpg"     media="(max-width: 1024px)" type="image/jpeg">
-  <source srcset="/img/hero/hero-{{ hid }}-lg.jpg"                              type="image/jpeg">
+Image naming (pre-agreed):
+  /img/hero/hero-{{id}}-{mobile|sm|md|lg}.webp
+  /img/hero/hero-{{id}}-{mobile|sm|md|lg}.jpg
+{%- endcomment -%}
 
-  <img
-    src="/img/hero/hero-{{ hid }}-lg.jpg"
-    alt="{{ alt | escape }}"
-    width="1920"
-    height="1080"
-    loading="eager"
-    fetchpriority="high"
-    decoding="async"
-    sizes="(max-width: 480px) 100vw,
-           (max-width: 768px) 100vw,
-           (max-width: 1024px) 100vw,
-           100vw"
-    class="hero-img"
-  >
-</picture>
+{%- assign hid = page.hero_id | default: nil -%}
+{%- if hid -%}
+  {%- assign side = page.hero_side | default: "auto" -%}
+  {%- capture id_digits -%}{{ hid | replace: " ", "" | replace: "-", "" | replace: "_", "" }}{%- endcapture -%}
+  {%- assign id_num = id_digits | plus: 0 -%}
 
-<style>
-.hero.block { display:block; margin:0 auto; }
-.hero-img { width:100%; height:auto; display:block; }
-</style>
+  {%- if side == "auto" -%}
+    {%- assign parity = id_num | modulo: 2 -%}
+    {%- if parity == 0 -%}
+      {%- assign side = "right" -%}
+    {%- else -%}
+      {%- assign side = "left" -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  <section class="hero hero--compact hero--{{ side }}">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        {%- if page.hero_title or page.title -%}
+          <h1 class="hero__title">{{ page.hero_title | default: page.title }}</h1>
+        {%- endif -%}
+        {%- if page.hero_text -%}
+          <p class="hero__text">{{ page.hero_text }}</p>
+        {%- endif -%}
+        {%- if page.hero_cta_text and page.hero_cta_href -%}
+          <p class="hero__actions">
+            <a class="btn btn--primary" href="{{ page.hero_cta_href }}">{{ page.hero_cta_text }}</a>
+          </p>
+        {%- endif -%}
+      </div>
+
+      <div class="hero__media">
+        <picture>
+          <!-- WebP sources -->
+          <source
+            type="image/webp"
+            srcset="/img/hero/hero-{{ hid }}-mobile.webp"
+            media="(max-width: 480px)">
+          <source
+            type="image/webp"
+            srcset="/img/hero/hero-{{ hid }}-sm.webp"
+            media="(max-width: 768px)">
+          <source
+            type="image/webp"
+            srcset="/img/hero/hero-{{ hid }}-md.webp"
+            media="(max-width: 1200px)">
+          <source
+            type="image/webp"
+            srcset="/img/hero/hero-{{ hid }}-lg.webp">
+
+          <!-- JPEG fallbacks -->
+          <source
+            type="image/jpeg"
+            srcset="/img/hero/hero-{{ hid }}-mobile.jpg"
+            media="(max-width: 480px)">
+          <source
+            type="image/jpeg"
+            srcset="/img/hero/hero-{{ hid }}-sm.jpg"
+            media="(max-width: 768px)">
+          <source
+            type="image/jpeg"
+            srcset="/img/hero/hero-{{ hid }}-md.jpg"
+            media="(max-width: 1200px)">
+          <img
+            class="hero__img"
+            loading="eager"
+            decoding="async"
+            alt="{{ page.hero_title | default: page.title | default: 'Hero image' }}"
+            src="/img/hero/hero-{{ hid }}-lg.jpg"
+            width="640"
+            height="400">
+        </picture>
+      </div>
+    </div>
+  </section>
+{%- endif -%}
