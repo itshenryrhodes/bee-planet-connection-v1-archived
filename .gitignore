@@ -9,3 +9,7 @@ __pycache__/
 *.pyc
 __pycache__/
 *.pyc
+
+# Local JSON artifacts
+*.pretty.json
+*.bak
