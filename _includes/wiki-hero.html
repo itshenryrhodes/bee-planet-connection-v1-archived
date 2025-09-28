@@ -1,0 +1,13 @@
+{% assign hid = page.hero_id | default: "01" %}
+<picture class="hero block">
+  <!-- WebP sources -->
+  <source srcset="/img/hero/hero-{{ hid }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-sm.webp"     media="(max-width: 768px)"  type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-md.webp"     media="(max-width: 1200px)" type="image/webp">
+  <source srcset="/img/hero/hero-{{ hid }}-lg.webp"     media="(min-width: 1201px)" type="image/webp">
+  <!-- JPG fallbacks -->
+  <source srcset="/img/hero/hero-{{ hid }}-mobile.jpg"  media="(max-width: 480px)">
+  <source srcset="/img/hero/hero-{{ hid }}-sm.jpg"      media="(max-width: 768px)">
+  <source srcset="/img/hero/hero-{{ hid }}-md.jpg"      media="(max-width: 1200px)">
+  <img src="/img/hero/hero-{{ hid }}-lg.jpg" alt="{{ page.title | default: 'Bee Planet Connection' }} — hero">
+</picture>
