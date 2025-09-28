@@ -1,0 +1,83 @@
+{
+  "title": "Apiary data model & logbook: fields that drive decisions",
+  "slug": "disease_control_logbook",
+  "category": "Research & diagnostics",
+  "categories": ["Operations", "Bee health & pests"],
+  "taxonomy": {
+    "pillar": "Research & diagnostics",
+    "subpillars": ["Data & records"],
+    "topics": ["logbook", "data-model", "thresholds", "apiary-wide"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth", "overwintering"]
+  },
+  "tags": ["decision fields", "sampling cadence", "treatment logs", "traceability"],
+
+  "At-a-Glance": "A useful logbook is small but sharp. Keep identifiers consistent (Apiary, Hive, Box/Frame code), track cadence (visit #/week #), and record just the decision-driving fields: frames of bees, brood state/pattern, % mites/300, queen status, forage notes, and actions taken. Add treatment logs with start/remove dates and lot numbers, plus post-treatment verification. That’s it. When the model is lean and structured, you actually use it—and it pays you back with trends, timing and clean end-of-season reviews.",
+  
+  "Why it Matters": "Record bloat kills recordkeeping. If every inspection means a form marathon, you’ll stop. A lean data model keeps only what changes decisions. Frames of bees reflect strength; brood state/pattern shows trajectory; mite % sets thresholds; queen status frames risk; forage notes explain behaviour; actions link cause to effect. Treatments need their own clean lane for compliance and resistance management (start/stop/lot/verification). With those pieces, you can compare hives, roll up to apiary view, and run an end-of-season retro that actually changes next year’s plan. For clubs, a shared template means members talk the same language, leaders can spot trouble in aggregate, and training moves from anecdotes to evidence. The result is fewer emergencies, steadier winters and happier beekeepers.",
+  
+  "Step-by-Step": [
+    "Adopt fixed IDs for apiary/hive and a simple frame code.",
+    "Set a sampling cadence and stick to it.",
+    "Record only decision-driving fields each visit.",
+    "Log treatments with dates, lots and follow-up counts.",
+    "Review monthly and at season end; adjust the plan."
+  ],
+
+  "Context & Narrative": "Think of your logbook like a cockpit, not a diary. You want gauges, not paragraphs. A single sheet can power a whole season: one row per visit per hive with columns for frames of bees, brood state, pattern grade, mite %, queen status, forage note, and action. Another sheet holds treatments—product, lot, start/remove, and the follow-up count that proves it worked. Photographs and labels complement, not replace, the fields. \n\nThe magic shows up when you filter and graph. Frames of bees vs week number tells you who’s sprinting or sulking; mite % over time shows whether your IPM actually flattened the curve; brood pattern and queen notes explain temperament dips without guesswork. At the season retro, you can say ‘we missed our late-summer window in yard B’ with receipts, not vibes—and you’ll book an earlier slot next year. This is how hobbyists start feeling professional: not by buying more kit, but by measuring the right few things the same way, every time.",
+  
+  "Evidence Highlights": [
+    "Small, standard field sets increase completion and comparability.",
+    "Treatment start/remove/lot logs support compliance and resistance management.",
+    "Trended mite % and frames of bees predict winter outcomes better than anecdotes."
+  ],
+
+  "Data Tables": {
+    "log_headers": ["Date", "Week#", "Apiary", "Hive", "Frames of bees", "Brood (Y/N)", "Pattern (1–5)", "Mites/300 (%)", "Queen status", "Forage note", "Action"],
+    "treatment_headers": ["Apiary", "Hive", "Product", "Lot", "Start", "Remove", "Follow-up %", "Outcome"]
+  },
+
+  "Common Pitfalls": [
+    "Collecting fields you never read.",
+    "No follow-up counts—treatments remain unproven.",
+    "Inconsistent IDs break comparisons."
+  ],
+
+  "Callouts": [
+    {"type": "Checklist", "text": "ID fixed · Cadence set · Fields lean · Treatments logged · Verify"}
+  ],
+
+  "FAQs": [
+    {"q": "App or paper?", "a": "Use what you’ll actually complete; export to CSV at season end if digital."},
+    {"q": "How many fields is ‘lean’?", "a": "A dozen for visits; eight for treatments is plenty."}
+  ],
+
+  "Seasonality & Climate": "Fields don’t change, but emphasis does—winter logs lean on weight/ventilation; summer on brood and mites.",
+  
+  "Suggested Figures": [
+    {"alt": "One-page logbook layout", "caption": "Columns that capture decisions, not prose."}
+  ],
+
+  "Glossary": [
+    {"term": "Frames of bees", "def": "An estimate of frames covered with adult bees—proxy for strength."}
+  ],
+
+  "Cross-links": [
+    "diagnostic_field_notes",
+    "sampling_methods_playbook",
+    "ipm_plan_template"
+  ],
+
+  "Sources": [
+    {"name": "COLOSS BEEBOOK – colony assessment metrics", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "National Bee Unit – recordkeeping advice", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "USDA ARS – management & monitoring studies", "url": "https://www.ars.usda.gov/"}
+  ],
+
+  "Scrape-Guidance": "Derive minimal field lists from standards; provide CSV headers and examples that map directly to thresholds and actions."
+}

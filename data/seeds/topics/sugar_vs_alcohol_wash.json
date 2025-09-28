@@ -1,0 +1,88 @@
+{
+  "title": "Sugar roll vs alcohol wash: trade-offs & how to do each perfectly",
+  "slug": "sugar_vs_alcohol_wash",
+  "category": "Research & diagnostics",
+  "categories": ["Bee health & pests", "Operations"],
+  "taxonomy": {
+    "pillar": "Research & diagnostics",
+    "subpillars": ["Methods"],
+    "topics": ["sugar-roll", "alcohol-wash", "mite-counts", "sampling-accuracy"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["accuracy", "repeatability", "nurse bees", "percentage maths"],
+
+  "At-a-Glance": "Both methods work—pick the one you can execute flawlessly. Alcohol wash is quick and typically more accurate, but it sacrifices the sample; sugar roll keeps bees alive but demands proper dusting and timed shaking. Either way: sample ≈300 nurse bees from the brood nest, avoid the queen, and compute mites per 300 to compare across hives and time. Consistency beats ideology—use one method all season for trendlines you can trust, and verify after treatments.",
+  
+  "Why it Matters": "Debates about ‘which is best’ miss the point. Accuracy lives in technique: the right bees, a full sample, correct timings, and clear counting. Swapping methods mid-season destroys comparability and confidence. Alcohol washes reduce noise and speed decisions when time is tight; sugar rolls offer a no-kill path that clubs can demo without fuss. Choose with eyes open, then write down your SOP so every beekeeper in your group can replicate the result. Do that and you’ll spend less time arguing and more time catching mite curves before they bite into winter bees. Verification—post-treatment counts—closes the loop so you know your chosen product worked in real weather, on real colonies.",
+  
+  "Step-by-Step": [
+    "Collect ≈300 nurse bees from brood frames; queen-check.",
+    "For alcohol: immerse, shake per method, count mites; compute %.",
+    "For sugar: coat thoroughly, wait the timed interval, shake onto white tray; count and compute %.",
+    "Record brood state, weather and result.",
+    "Repeat on a 2–3 week cadence; verify post-treatment."
+  ],
+
+  "Context & Narrative": "On paper, the methods are simple; in the apiary, nerves and weather add noise. Make it boring. Prepare kit in a tote: jar with a marked 300-bee line, alcohol or sugar in a sealed container, a white tray, timer, and labels. Move calmly: sample from the brood nest for nurse bees, check for the queen, and step to a shaded area to run the test. With alcohol, follow the timed shakes and dump onto the tray to count; with sugar, the trick is patience—coat thoroughly, wait long enough for mites to release, then shake through mesh. Photograph the tray if counts are high so you can discuss later without returning to the hive. \n\nThe win is trendlines. If you keep the method identical each time, small rises are real and trigger timely action; if you alternate, you’ll debate artefacts. Post-treatment, the same method tells you quickly whether you actually shifted the curve. The take-home: choose, standardise, verify—and you’ll worry less and winter better.",
+  
+  "Evidence Highlights": [
+    "Alcohol washes typically show higher, more accurate counts than sugar if technique is sloppy.",
+    "Sugar rolls can match accuracy with correct coating and timings.",
+    "Method consistency improves trend detection more than method choice does.",
+    "Nurse-bee sampling reflects colony status better than foragers."
+  ],
+
+  "Data Tables": {
+    "method_compare": [
+      {"aspect": "Accuracy (with good technique)", "alcohol_wash": "High", "sugar_roll": "Moderate–High"},
+      {"aspect": "Bee mortality", "alcohol_wash": "Sample killed", "sugar_roll": "Sample survives"},
+      {"aspect": "Time per sample", "alcohol_wash": "Low", "sugar_roll": "Moderate"},
+      {"aspect": "Weather sensitivity", "alcohol_wash": "Low", "sugar_roll": "Higher (humidity)"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Sampling fewer than 300 bees; percentages wobble.",
+    "Rushing sugar roll timings; under-counting mites.",
+    "Switching methods mid-season."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Pre-measure sugar charges into film cans; faster and less messy at the apiary."}
+  ],
+
+  "FAQs": [
+    {"q": "Can I mix methods?", "a": "Not within a season. Pick one for comparability; switch only between seasons."},
+    {"q": "Entrance bees OK?", "a": "No—nurse bees from the brood nest carry the right signal."}
+  ],
+
+  "Seasonality & Climate": "Both suit active seasons. In damp spells, alcohol wash is more robust than sugar roll.",
+  
+  "Suggested Figures": [
+    {"alt": "Side-by-side SOP cards", "caption": "Pocket steps for alcohol vs sugar—timings and counts."}
+  ],
+
+  "Glossary": [
+    {"term": "SOP", "def": "Standard Operating Procedure—your stepwise, repeatable method."}
+  ],
+
+  "Cross-links": [
+    "sampling_methods_playbook",
+    "ipm_plan_template",
+    "varroa_monitoring_thresholds"
+  ],
+
+  "Sources": [
+    {"name": "COLOSS BEEBOOK – mite sampling methods", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "USDA ARS – protocol comparisons", "url": "https://www.ars.usda.gov/"},
+    {"name": "National Bee Unit – advisory notes", "url": "https://www.nationalbeeunit.com/resources/"}
+  ],
+
+  "Scrape-Guidance": "Extract step timings, sample sizes, accuracy notes, and pros/cons from standard methods; avoid brand specifics."
+}

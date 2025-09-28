@@ -1,0 +1,87 @@
+{
+  "title": "Asian hornet (Vespa velutina): rapid ID & reporting flow (UK/EU)",
+  "slug": "asian_hornet_rapid_id_reporting",
+  "category": "Biosecurity",
+  "categories": ["Operations", "Bee health & pests"],
+  "taxonomy": {
+    "pillar": "Biosecurity",
+    "subpillars": ["Invasive species"],
+    "topics": ["vespa-velutina", "rapid-id", "reporting"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "policy", "diagnostics"],
+    "regions": ["UK", "EU"],
+    "season": ["summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["ID cues", "nest reporting", "trap cautions", "biosecurity standstill"],
+
+  "At-a-Glance": "Asian hornet predation can devastate apiaries. Get the ID right (velvety dark body, single yellow band on abdomen, yellow legs; smaller than native Vespa crabro) and act fast. Do not destroy nests yourself. Use official reporting routes with clear photos, confirm location, and follow any biosecurity standstill instructions. Avoid indiscriminate trapping that kills non-targets; focus on surveillance and evidence. Good notes and timely reports help authorities triangulate and remove nests before they fragment or produce queens.",
+  
+  "Why it Matters": "Missed or misidentified Asian hornets waste precious response time; over-zealous trapping harms native insects without solving the problem. A clear, repeatable flow—spot, document, report—helps authorities coordinate rapid nest finding and removal while keeping communities safe. Beekeepers are often first to see the hovering, hawking behaviour at hive fronts; your photos and location details guide field teams. Comms matter: neighbours, local associations and farmers benefit from accurate, calm updates that avoid panic and discourage DIY nest attacks. The prize is big—stopping new nests before they produce queens limits spread dramatically. Conversely, a muddled response invites a spring surge of foundresses and a season of attrition.",
+  
+  "Step-by-Step": [
+    "Observe calmly; note size, colour, behaviour (hawking).",
+    "Photograph with scale; record GPS/address and time.",
+    "Report via official channel; include photos and notes.",
+    "Follow any standstill or trap guidance from authorities.",
+    "Log sightings; coordinate with local association updates."
+  ],
+
+  "Context & Narrative": "Invasives move fast; good process moves faster. The first time you see a dark hornet hovering in front of your hives, the temptation is to swat, trap, or chase. Resist. The goal is confirmation and coordination. Clear photos that show the single yellow abdominal band and the famously yellow legs are worth more than a dozen dead non-targets in a bottle trap. Once reported, national teams and local inspectors can triangulate flightlines, locate nests, and remove them safely. \n\nDIY nest attacks are dangerous and counter-productive; they scatter workers and can produce missed satellite nests. Likewise, blanket trapping sacrifices native hornets and wasps that play essential ecological roles. A targeted, time-boxed surveillance plan around apiaries and likely foraging lines beats permanent ‘kill boxes’. Share succinct, factual updates with neighbours and club channels—what to look for, how to report, and what not to do. When communities focus on signal over noise, more nests are removed sooner, and fewer queens survive to found the next season’s problem.",
+  
+  "Evidence Highlights": [
+    "Accurate visual ID hinges on colour pattern and leg colour (yellow).",
+    "Rapid, photo-backed reports accelerate official response and nest removal.",
+    "Indiscriminate trapping harms non-targets and offers limited control.",
+    "Calm community comms reduce misinformation and risky DIY attempts."
+  ],
+
+  "Data Tables": {
+    "id_comparison": [
+      {"feature": "Size", "asian_hornet": "Smaller than European hornet", "native_european_hornet": "Larger"},
+      {"feature": "Colour", "asian_hornet": "Dark, velvety; single yellow band", "native_european_hornet": "Brown/yellow with multiple bands"},
+      {"feature": "Legs", "asian_hornet": "Yellow", "native_european_hornet": "Brown"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Posting ‘maybe’ photos without scale or location.",
+    "Destroying nests DIY—dangerous and ineffective.",
+    "Permanent general traps killing non-targets."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Include a coin or hive tool in photos for quick scale reference."},
+    {"type": "Watch out", "text": "Follow standstill instructions—moving bees/kit can spread risk."}
+  ],
+
+  "FAQs": [
+    {"q": "Should I trap continuously?", "a": "No—prefer targeted surveillance periods guided by local advice."},
+    {"q": "Who removes nests?", "a": "Authorised teams; report and stand clear."}
+  ],
+
+  "Seasonality & Climate": "Sightings peak late summer–autumn when nests are large and hawking intensifies. Mild winters increase overwintered queen survival.",
+  
+  "Suggested Figures": [
+    {"alt": "Asian vs European hornet ID", "caption": "Side-by-side colour and size markers for quick checks."}
+  ],
+
+  "Glossary": [
+    {"term": "Hawking", "def": "Predators hovering to catch returning foragers at hive entrances."}
+  ],
+
+  "Cross-links": [
+    "apiary_biosecurity_basics",
+    "urban_stakeholder_neighbour_relations",
+    "varroa_monitoring_thresholds"
+  ],
+
+  "Sources": [
+    {"name": "Bee Aware / national biosecurity programmes (ID & response)", "url": "https://beeaware.org.au/"},
+    {"name": "GOV.UK – Bees’ Needs / public comms framing", "url": "https://www.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Lift official ID markers, reporting links/flows, and community-safe advice. Avoid generic trapping recipes; include cautions about non-targets."
+}

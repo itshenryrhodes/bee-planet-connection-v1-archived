@@ -1,8 +1,86 @@
 {
-  "Overview": "Foundation provides preset cell bases for fast, straight comb; foundationless allows natural cell size and reduces wax costs. Each fits different goals.",
-  "Types & Variants": "Wired wax, plastic foundation, and starter strips. Foundationless typically uses guides or beveled top bars to encourage straight comb.",
-  "Using It Well": "Keep frames dead-square and ensure hives are level. Insert one foundationless frame between straight drawn frames to guide comb. Inspect early to prevent cross-comb.",
-  "Costs & Practicalities": "Foundation adds cost but speeds up build; foundationless saves cost/weight but needs more supervision early.",
-  "Recent Innovations": "Food-grade plastics and precision-moulded cells improve durability; some producers offer recycled-wax foundation with traceability.",
-  "Further Reading & Sources": "Equipment manuals and peer guides on comb management and frame wiring."
+  "title": "Foundation vs foundationless: trade-offs, stability & wax purity",
+  "slug": "foundation_vs_foundationless",
+  "category": "Operations",
+  "categories": ["Products & processing"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Hardware & build"],
+    "topics": ["foundation", "foundationless", "natural-comb", "cell-size"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["reference", "how-to"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth"]
+  },
+  "tags": ["comb-stability", "wax-sourcing", "drift-control", "harvest"],
+
+  "At-a-Glance": "Foundation gives speed and stability—nice, straight comb fast—and simplifies extraction. Foundationless offers wax purity and flexible cell sizes but needs careful management: strong nectar, frames kept level, good spacing and frequent checks to keep comb straight. Many beekeepers blend styles: foundation in brood for order, a few foundationless frames for wax purity or drone management, and foundation in supers for robust extraction. Choose based on your goals (harvest vs wax quality) and how much time you have for comb shepherding.",
+  
+  "Why it Matters": "Comb choices ripple through your season. Foundation accelerates early build-up and keeps novice inspections calmer, but wax sourcing matters—residue-laden foundation undermines the ‘clean comb’ you’re trying to grow. Foundationless maximises control over wax purity and can encourage natural brood distribution, yet wavy comb can waste time and crush bees if neglected. A clear policy lets you enjoy the upsides without the drama: align choices to flow timing (draw during strong nectar), keep frames plumb and tight, and deploy straightening tricks (swap positions, vertical guides) early. A mixed strategy often wins in real apiaries—fast, tidy supers plus pockets of pure wax where you care about residue or specialty products.",
+  
+  "Step-by-Step": [
+    "Decide zones: brood vs supers; where purity/stability matter most.",
+    "If foundationless, install guides (wedges/strips) and keep frames tight/plumb.",
+    "Add frames during strong flows so bees draw straight and fast.",
+    "Inspect young comb frequently; correct cross-draw early.",
+    "Standardise extraction frames on foundation for fewer blowouts."
+  ],
+
+  "Context & Narrative": "The best comb policy is the one you can maintain on a busy June. Foundation makes early season feel easy—box goes on, lines stay straight, extraction day is uneventful. The compromise is trusting the wax supply; many solve this by rendering their own and swapping with known-good sources over time. Foundationless is a craft: you’re asking bees to hang sheets of architecture mid-air, so give them scaffolding—starter strips, tight frame spacing, and a level hive. Add frames into nectar, not dearth; new white comb slumps without income. \n\nCross-draw is a ‘now or never’ fix. If you catch it early, a quick rotate or lift-and-nudge straightens things; leave it and you create a puzzle that burns weekends. A hybrid approach often shines: brood boxes biased to foundation for orderly inspections; a couple of foundationless brood frames for drone management and clean wax; supers on foundation to survive centrifugal force. Over a season you’ll discover your own balance—driven by how fussy your local nectar is, your time budget, and whether you sell wax products that reward purity. Write it down so future-you remembers why you chose what you did.",
+  
+  "Evidence Highlights": [
+    "Foundation accelerates straight comb draw and reduces blowouts on extraction.",
+    "Foundationless improves control over wax purity; requires tighter management.",
+    "Early correction of cross-draw prevents chronic inspection issues."
+  ],
+
+  "Data Tables": {
+    "compare_table": [
+      {"aspect": "Stability", "foundation": "High", "foundationless": "Moderate (flow-dependent)"},
+      {"aspect": "Wax purity control", "foundation": "Supplier-dependent", "foundationless": "High"},
+      {"aspect": "Inspection ease", "foundation": "Easier", "foundationless": "Needs vigilance"},
+      {"aspect": "Extraction", "foundation": "Robust", "foundationless": "Higher blowout risk"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Adding foundationless frames during dearth → wavy comb.",
+    "Wide spacing/tilted hives → cross-draw.",
+    "Unknown wax sources for foundation."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Hang a simple plumb line in the box when adding foundationless—level frames draw straighter."}
+  ],
+
+  "FAQs": [
+    {"q": "Can I extract foundationless?", "a": "Yes, if fully capped and strong; reduce speed and support comb."},
+    {"q": "Cell size effects?", "a": "Focus on management outcomes; evidence for mite control via cell size alone is mixed."}
+  ],
+
+  "Seasonality & Climate": "Draw new comb during strong flows; hot climates need careful handling to avoid slump.",
+  
+  "Suggested Figures": [
+    {"alt": "Comb straightness guide", "caption": "Starter strips, frame spacing and early correction examples."}
+  ],
+
+  "Glossary": [
+    {"term": "Cross-draw", "def": "Comb built across multiple frame planes, complicating inspections."}
+  ],
+
+  "Cross-links": [
+    "comb_replacement_policy",
+    "honey_processing_basics",
+    "wax_moth_storage_management"
+  ],
+
+  "Sources": [
+    {"name": "BBKA / NBU – practical notes on comb management", "url": "https://www.bbka.org.uk/"},
+    {"name": "COLOSS – husbandry context", "url": "https://www.tandfonline.com/toc/tjar20/current"}
+  ],
+
+  "Scrape-Guidance": "Summarise stability/purity trade-offs, guide fixtures and early-correction methods from authoritative practice notes."
 }

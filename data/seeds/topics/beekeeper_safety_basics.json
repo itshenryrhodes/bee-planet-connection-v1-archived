@@ -1,0 +1,87 @@
+{
+  "title": "PPE & beekeeper safety: stings, heat & manual handling",
+  "slug": "beekeeper_safety_basics",
+  "category": "Operations",
+  "categories": ["Risk & compliance"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Safety"],
+    "topics": ["PPE", "stings", "anaphylaxis", "heat-stress", "manual-handling"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth"]
+  },
+  "tags": ["gloves", "veil integrity", "epinephrine plan", "lift technique"],
+
+  "At-a-Glance": "Dress for the day you actually have, not the one you hope for. Sound veil and zips, gloves that fit, boots that seal, and light layers that breathe. Carry a small first-aid kit, cold water, antihistamine, and know your anaphylaxis plan. Work in shade where possible, pace inspections in heat, and lift with legs—split heavy boxes rather than ‘being a hero’. Calm, predictable moves keep bees and backs happier; a short pre-flight check prevents kit failures that cascade into stings.",
+  
+  "Why it Matters": "Most beekeeping injuries are low-glamour and avoidable: eye stings from a tired veil, tweaked backs from awkward lifts, or heat stress during a ‘quick’ midday check. A written safety routine makes good days boring and bad days manageable. PPE integrity is non-negotiable—tiny holes or loose cuffs become bee doors under pressure. Heat is cumulative; water and shade breaks prevent errors and grumpy bees. Manual handling is about planning: split supers, use dollies, and stage kit so you’re not twisting with weight. Finally, know your response to serious sting reactions: who carries an auto-injector, who drives, and where the nearest access point is. Clubs that normalise safety checklists see fewer incidents and keep new beekeepers confident. The aim is longevity—the only way to get ‘experienced’ is to stay uninjured long enough.",
+  
+  "Step-by-Step": [
+    "Pre-flight: inspect veil, zips, cuffs; tape gaps if needed.",
+    "Hydrate; stage shade; plan inspection order to minimise lifts.",
+    "Lift smart: break loads into boxes; use legs; avoid twists.",
+    "Carry sting kit (scraper, antihistamine); know anaphylaxis protocol.",
+    "Debrief: note kit failures and replace before next visit."
+  ],
+
+  "Context & Narrative": "Safety looks like choreography. You arrive early or late to dodge heat, kit is staged on a clean tarp, and the smoker sits where you won’t kick it. Veil checks are a ritual—hold up to light, check seams and mesh. A missing thumb loop or loose cuff is an open invitation. When lifting, treat boxes like you would in a gym: stance wide, grip close, drive through legs, set down square; if it feels too heavy, it is. Break it down. \n\nSting management is about calm habits: scrape, don’t squeeze; step back and breathe; decide if the colony needs time or smoke. If anyone is at risk of anaphylaxis, the injector lives in the top pocket, not the car boot. Heat hides inside suits—sip water between hives, work in dappled shade, and switch to lighter gloves when appropriate. Write down the near-misses. The torn veil you ‘got away with’ this time becomes next week’s preventable sting unless you fix it. Over seasons, your personal SOP becomes second nature and new helpers learn by watching you not rush.",
+  
+  "Evidence Highlights": [
+    "Suit/veil integrity prevents facial/eye stings—the highest-impact PPE check.",
+    "Break-down lifts reduce back strain and accidents.",
+    "Hydration and shade lower defensive responses linked to hot, rushed handling."
+  ],
+
+  "Data Tables": {
+    "preflight_checklist": [
+      {"item": "Veil & seams intact", "status": ""},
+      {"item": "Cuffs/ankles sealed", "status": ""},
+      {"item": "Gloves fit/clean", "status": ""},
+      {"item": "Water available", "status": ""},
+      {"item": "Sting kit present", "status": ""}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "‘Quick look’ in midday heat escalating to chaos.",
+    "Overreaching with a heavy super; twisting under load.",
+    "Ignoring a damaged veil ‘until next time’."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Keep a lightweight cooling towel in your bee box for heat days—neck cooling calms you and the bees."}
+  ],
+
+  "FAQs": [
+    {"q": "Leather or nitrile gloves?", "a": "Use what gives control and confidence; thinner gloves reduce crush and improve handling."},
+    {"q": "How many supers can I lift?", "a": "As few as necessary—one at a time is fine. Speed comes from planning, not heroics."}
+  ],
+
+  "Seasonality & Climate": "Hot spells demand shorter sessions, shade and extra water; early spring needs warmer gloves and slower handling.",
+  
+  "Suggested Figures": [
+    {"alt": "Safe lift diagram", "caption": "Stance and lift path for brood boxes and supers."}
+  ],
+
+  "Glossary": [
+    {"term": "Anaphylaxis plan", "def": "Pre-agreed steps for severe allergic reactions including injector use and transport."}
+  ],
+
+  "Cross-links": [
+    "transport_strapping_best_practice",
+    "apiary_risk_register",
+    "club_apiary_operations"
+  ],
+
+  "Sources": [
+    {"name": "National safety guidance (ag/horticulture)", "url": "https://www.gov.uk/"},
+    {"name": "BBKA/NBU – beekeeper safety notes", "url": "https://www.nationalbeeunit.com/resources/"}
+  ],
+
+  "Scrape-Guidance": "Extract PPE integrity checks, manual handling basics, heat-stress advice, and sting response protocols from official safety guidance."
+}

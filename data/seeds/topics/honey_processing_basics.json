@@ -1,0 +1,82 @@
+{
+  "title": "Honey processing basics (hygiene, extraction, filtering, bottling)",
+  "slug": "honey_processing_basics",
+  "category": "Products & processing",
+  "categories": ["Operations", "Community & inclusion"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Extraction & bottling"],
+    "topics": ["extraction", "hygiene", "filtering", "bottling", "labelling"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["food safety", "water content", "jar prep", "crystallisation"],
+
+  "At-a-Glance": "Clean room, clean kit, dry supers. Warm combs flow faster and cleaner, so stage boxes in a warm, bee-tight space, uncap with sharp tools, and extract promptly. Keep a simple hygiene flow: sticky in one zone, clean in another, and rinse/sterilise between batches as appropriate. Coarse filter to remove wax; avoid over-fining which can strip character. Settle, check water content if you can, and bottle into warm, sterile jars with neat labels. Record batch details and keep samples. Professional habits at small scale save rework and protect quality.",
+  
+  "Why it Matters": "Honey sells itself—unless we mishandle it. Water creeps in from damp combs and rooms; grit and wax hide in rushed filtering; sticky floors invite pests and unhappy landlords. A lightweight, repeatable process avoids all that. Warm, bee-tight staging reduces moisture pickup and speeds extraction; sharp uncapping minimises debris. Filtering should be just enough to remove wax while preserving pollen and flavour. Settling clarifies without over-processing; jar prep prevents spoilage and label mess. Batch records matter for pride and compliance: you’ll know what jar came from which day and box if a customer asks. Done well, the whole job is enjoyable: fragrant, efficient, and good enough to gift or sell confidently.",
+  
+  "Step-by-Step": [
+    "Stage warm, dry supers in a bee-tight room.",
+    "Uncap cleanly; extract promptly to limit moisture gain.",
+    "Coarse filter; allow honey to settle before bottling.",
+    "Prep warm jars; fill, wipe, and lid firmly.",
+    "Label and record batch details; store cool and dark."
+  ],
+
+  "Context & Narrative": "Extraction day goes best when it’s boring. You lay tarps, set a clean table, and stage boxes so uncapping flows into extraction and then into settling—no backtracking. Warm combs are your friend: honey moves, foam is reduced and filters don’t choke. Coarse mesh handles wax; let gravity and time do most of the polishing. Water is the quiet spoiler; keep rooms dry and lids on. When bottling, a small warming cabinet for jars pays for itself in clean fills and tight lids. Labels matter more than we admit—clear product and weight, contact details and batch codes look professional and help you trace. A little discipline here turns ‘messy hobbyist’ into ‘quietly competent producer’. Your future self—storing a tidy winter’s worth of jars—will thank you.",
+  
+  "Evidence Highlights": [
+    "Warm, dry staging reduces moisture uptake and speeds extraction.",
+    "Coarse filtering retains character while removing wax particles.",
+    "Settling reduces bubbles/foam without over-processing.",
+    "Batch records support traceability and customer confidence."
+  ],
+
+  "Data Tables": {
+    "batch_log_headers": ["Date", "Apiary/box IDs", "Approx. water %", "Jar size", "Jar count", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Extracting in damp rooms; moisture creeps into honey.",
+    "Over-fining that strips character and clogs filters.",
+    "Skipping jar warming → messy fills and loose lids."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Warm jars to ~30–35 °C for cleaner fills and fewer bubbles."}
+  ],
+
+  "FAQs": [
+    {"q": "Do I need a refractometer?", "a": "Helpful but not mandatory—aim for capped, dry comb and good room conditions."},
+    {"q": "How fine should I filter?", "a": "Just enough to remove wax; avoid over-processing."}
+  ],
+
+  "Seasonality & Climate": "Humid spells slow uncapping and raise moisture risk—use dehumidifiers or delay extraction if needed.",
+  
+  "Suggested Figures": [
+    {"alt": "Extraction day layout", "caption": "Staged flow: uncap → extract → filter/settle → bottle."}
+  ],
+
+  "Glossary": [
+    {"term": "Settling tank", "def": "A vessel where honey rests so air and wax rise before bottling."}
+  ],
+
+  "Cross-links": [
+    "wax_moth_storage_management",
+    "apiary_setup_site_selection",
+    "pollination_service_playbook"
+  ],
+
+  "Sources": [
+    {"name": "Encyclopaedia Britannica – beekeeping: extraction overview", "url": "https://www.britannica.com/"},
+    {"name": "FAO – small-scale processing & handling context", "url": "https://www.fao.org/"}
+  ],
+
+  "Scrape-Guidance": "Extract hygienic workflow steps, staging and filtering guidance, and simple traceability practices from the listed sources."
+}

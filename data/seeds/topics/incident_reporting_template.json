@@ -1,0 +1,85 @@
+{
+  "title": "Incident reporting template: photos, timings & chain of events",
+  "slug": "incident_reporting_template",
+  "category": "Operations",
+  "categories": ["Risk & compliance"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Safety"],
+    "topics": ["incident-report", "photos", "witness", "pesticide-exposure", "property-damage"],
+    "audience": ["club-officer", "intermediate", "beginner"],
+    "intent": ["policy", "how-to"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["evidence pack", "contact chain", "regulatory reporting", "insurance"],
+
+  "At-a-Glance": "When something goes wrong, freeze, document, and notify. Safety first, then build an evidence pack: timestamped photos (wide → close), weather, product labels if relevant, witness names/contact, and a clean timeline (‘who did what when’). Use neutral language. Store samples only if safe and lawful. Notify the agreed contacts (landowner, insurer, association, regulator if required) using the same template each time. Close with actions taken and follow-up owners/dates. Calm paperwork turns a bad day into a manageable claim and a better system.",
+  
+  "Why it Matters": "Incidents—bee kills, spray drift, stings requiring medical care, property damage—can escalate quickly in the absence of facts. A consistent template protects people, relationships and organisations: it prevents speculation, accelerates insurer/regulator triage, and captures perishable details (wind, photos, labels) before they vanish. The habit of writing neutral, timestamped notes avoids blame spirals and keeps communication professional. For clubs, a shared incident path means new officers aren’t improvising under stress. Finally, well-kept reports feed back into your risk register: patterns emerge and controls improve.",
+  
+  "Step-by-Step": [
+    "Ensure safety; stop work; secure the area.",
+    "Record time, weather, location; take photos (wide → detail).",
+    "List people present; gather witness statements/contacts.",
+    "Capture labels/batch IDs if chemicals implicated (photos, not samples, unless trained).",
+    "Notify per contact chain; file the report; assign follow-ups."
+  ],
+
+  "Context & Narrative": "Picture a suspected spray incident. You arrive to piles of dying foragers. The urge to post online is strong; resist. Instead, start the template. Photo the approach, the apiary, affected frames, and any drift clues (spray rigs, flags, wind direction markers). Shoot labels on nearby chemical cans only if safe and permitted; don’t trespass or handle unknowns. Log wind, temp, and time precisely—those details often decide outcomes. Speak to witnesses kindly; write what they said, not what you wish they’d said. \n\nIf it’s a sting emergency, the template still helps: who, when, what first aid, who called whom, when transport left, and where to. For property damage (vehicle knocks a stand), the timeline and photos again de-dramatise the story. After the dust settles, the report closes with fixes and owners: signage moved, hedge planted, SOP tweaked. That loop—document → learn → change—builds credibility and reduces repeats. Keep blank forms in the apiary box and a cloud folder for uploads so no one has to invent a process mid-crisis.",
+  
+  "Evidence Highlights": [
+    "Contemporaneous notes carry more weight than recollections.",
+    "Wide-to-close photo sets provide context and detail for assessors.",
+    "Neutral language and contact chains accelerate resolution."
+  ],
+
+  "Data Tables": {
+    "report_fields": [
+      "Date/time", "Location (what3words/Grid ref)", "Weather (temp, wind, precip)",
+      "People present", "Description (neutral)", "Photos (list)", "Witness contacts",
+      "Products/labels seen", "Immediate actions", "Notifications sent", "Follow-ups/owners/dates"
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Posting publicly before notifying stakeholders.",
+    "Collecting risky samples without training/permission.",
+    "Vague times (‘afternoon’) instead of precise timestamps."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Use your phone’s voice notes to capture witness statements verbatim (with permission)."}
+  ],
+
+  "FAQs": [
+    {"q": "Do I need a special app?", "a": "Paper + phone camera works; consistency matters more than tools."},
+    {"q": "Report every sting?", "a": "Record any event needing medical care or generating a complaint/claim."}
+  ],
+
+  "Seasonality & Climate": "Spray events cluster in crop bloom windows; keep templates handy in spring/summer.",
+  
+  "Suggested Figures": [
+    {"alt": "Incident photo sequence", "caption": "How to capture scene context then details for a clear evidence pack."}
+  ],
+
+  "Glossary": [
+    {"term": "Contact chain", "def": "Pre-agreed list/order of who to notify and how."}
+  ],
+
+  "Cross-links": [
+    "apiary_risk_register",
+    "pollination_service_playbook",
+    "pesticide_exposure_mitigation"
+  ],
+
+  "Sources": [
+    {"name": "Regulatory incident guidance (environment/health)", "url": "https://www.gov.uk/"},
+    {"name": "Association templates & insurer advice", "url": "https://www.nationalbeeunit.com/resources/"}
+  ],
+
+  "Scrape-Guidance": "Lift incident evidence essentials (photos, timings, contacts) and notification expectations from regulator/insurer guidance."
+}

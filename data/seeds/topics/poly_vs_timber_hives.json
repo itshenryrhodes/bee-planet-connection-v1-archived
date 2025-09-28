@@ -1,0 +1,86 @@
+{
+  "title": "Poly vs timber hives: thermal performance, durability & handling",
+  "slug": "poly_vs_timber_hives",
+  "category": "Operations",
+  "categories": ["Seasonal management"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Hardware & build"],
+    "topics": ["poly", "timber", "insulation", "weight", "condensation"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["reference", "how-to"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["winter", "summer"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "overwintering", "growth"]
+  },
+  "tags": ["R-value", "durability", "repairs", "compatibility"],
+
+  "At-a-Glance": "Poly boxes insulate well and are lighter, often giving calmer winters and fast spring build. Timber is robust, repairable and heat-tolerant, with long service life if maintained. Poly demands careful tool use (don’t crush/over-tighten), UV-safe paint and compatible dimensions; timber needs weatherproofing and can be heavier in the field. Many apiaries mix: poly brood for winter efficiency, timber supers for rugged extraction and transport. Choose with your climate, handling capacity and kit ecosystem in mind.",
+  
+  "Why it Matters": "Hive material affects bee comfort, beekeeper safety and long-term cost. Better insulation can reduce winter stores burn and damp; lighter kit saves backs and broadens who can lift safely. But compatibility and durability matter too: poly edges dent if mishandled; timber can warp or rot if neglected. A clear policy stops the ‘random kit pile’ effect: pick a dominant format, ensure frame/box compatibility, and standardise roofs/floors/entrances so you can swap parts under pressure. Clubs with shared apiaries benefit from aligning on one system to simplify teaching and spares. The goal is predictable inspections, stable winters and minimal drama on honey days.",
+  
+  "Step-by-Step": [
+    "Audit existing kit; choose a dominant format for brood/supers.",
+    "Standardise dimensions and frame types across the apiary.",
+    "If adding poly, seal/paint to protect against UV and wear.",
+    "Train handling: no over-tightening, careful levering to avoid dents.",
+    "Monitor condensation; adjust ventilation/insulation as needed."
+  ],
+
+  "Context & Narrative": "Material debates usually hide practical concerns—weight, water and workflow. Poly makes winter quieter; bees sit in a snug box, less heat bleeds away, and you see fewer wet crownboards. That comfort shows up as earlier build in spring. Timber’s charm is its forgiving nature: you can scrape, scorch, screw and sand it back into shape, and it shrugs off summer heat inside extraction rooms. The pain points are obvious too: poly corners don’t love hive tools as levers; unpainted boxes sun-fade; timber boxes demand paint, roofs, and honest maintenance. \n\nThe beekeeper’s fix is standardisation. Decide what lives where: poly brood boxes for winter thrift, timber supers for crane-proof ruggedness, or all-in-one if you prefer simplicity. Make sure your floors and roofs mate cleanly with both so mix-and-match is painless. Then write small rules: paint poly once, check joints yearly; recoat timber on a schedule; train helpers how to lift without crushing edges. Those boring rules turn a ‘materials debate’ into a season that just works—bees dry and warm in January, boxes that stack square in July, and kit that lasts long enough to be a bargain.",
+  
+  "Evidence Highlights": [
+    "Higher insulation reduces heat loss and can improve winter moisture control.",
+    "Weight differences affect manual handling risk and speed.",
+    "Compatibility/standardisation reduces inspection friction."
+  ],
+
+  "Data Tables": {
+    "comparison": [
+      {"aspect": "Insulation", "poly": "High", "timber": "Moderate"},
+      {"aspect": "Weight", "poly": "Light", "timber": "Heavier"},
+      {"aspect": "Durability/repair", "poly": "Good; edge dents", "timber": "Excellent; repairable"},
+      {"aspect": "Cost over time", "poly": "Moderate; paint", "timber": "Moderate; maintenance"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Mixing incompatible dimensions → bee space chaos.",
+    "Unpainted poly degrading under UV.",
+    "Assuming poly needs zero ventilation—watch condensation."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Carry a thin hive tool or plastic wedge for poly to avoid edge gouges."}
+  ],
+
+  "FAQs": [
+    {"q": "Can I scorch poly for disinfection?", "a": "No—use approved chemical/steam methods; timber tolerates scorching."},
+    {"q": "Do bees prefer one?", "a": "They prefer dry, draft-free and consistent—your management matters most."}
+  ],
+
+  "Seasonality & Climate": "Cold, damp regions benefit more from insulation; hot climates value heat tolerance and shade.",
+  
+  "Suggested Figures": [
+    {"alt": "Stack compatibility diagram", "caption": "Mixing poly brood with timber supers—what to check."}
+  ],
+
+  "Glossary": [
+    {"term": "Bee space", "def": "Gap bees keep clear (≈6–9 mm); critical for compatibility."}
+  ],
+
+  "Cross-links": [
+    "ventilation_insulation_tuning",
+    "apiary_setup_site_selection",
+    "honey_processing_basics"
+  ],
+
+  "Sources": [
+    {"name": "BBKA/NBU – equipment guidance", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Apidologie – thermoregulation/insulation context", "url": "https://link.springer.com/journal/13592"}
+  ],
+
+  "Scrape-Guidance": "Capture thermal/handling implications and disinfection limitations from authoritative sources; avoid brand claims."
+}

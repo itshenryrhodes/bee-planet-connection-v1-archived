@@ -1,0 +1,85 @@
+{
+  "title": "Virus load basics: how Varroa drives DWV & friends",
+  "slug": "virus_load_basics",
+  "category": "Bee health & pests",
+  "categories": ["Research & diagnostics", "Operations"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Pathogens", "Diagnostics"],
+    "topics": ["viruses", "DWV", "varroa", "viral-load"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["reference", "how-to"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth", "overwintering"]
+  },
+  "tags": ["deformed wing virus", "thresholds", "monitoring", "IPM", "follow-up counts"],
+
+  "At-a-Glance": "Viruses are the quiet consequence of Varroa. Mites aren’t just parasites; they’re high-speed syringes that amplify and vector viruses such as DWV. As mite numbers rise, viral loads follow, shortening worker lifespans, denting brood patterns and clipping winter survival. The fix is indirect: count mites, time treatments, and confirm results—because virus management starts with Varroa management. A tidy log of infestation rates and key symptoms (deformed wings, dwindling foragers) gives you a narrative you can act on. Do this rhythmically and you’ll see steadier winters, cleaner spring build-up and fewer ‘mystery’ collapses.",
+  
+  "Why it Matters": "Colonies rarely fail ‘from nowhere’. Rising Varroa turns into rising virus, and rising virus turns into real-world problems: shorter-lived workers mean fewer foragers, patchy brood, and box weights that fall when they should climb. Left alone, this spiral bites hardest in late summer—just when winter bees are being raised. Managing viral risk doesn’t mean lab kits on every hive; it means consistent mite monitoring (sample ≈300 bees), well-timed reduction (late-summer course matched to temperature and brood), and a deliberate ‘mop-up’ during a brood break. The payoffs are concrete: calmer colonies, fewer emergency feeds, and a spring that starts with bees ready to work. For clubs and beginners, a shared vocabulary around ‘load’ and ‘thresholds’ turns hand-waving into decisions you can schedule and measure. Get the rhythm right and virus talk becomes a footnote, not a season-long saga.",
+  
+  "Step-by-Step": [
+    "Sample ≈300 bees; record % mites and brood state.",
+    "Map trends: 2–3 week cadence in season; more around treatments.",
+    "Treat on time (late-summer) and match to conditions/labels.",
+    "Use brood-break oxalic ‘mop-up’ where climate allows.",
+    "Re-check counts; log outcome and adjust next steps."
+  ],
+
+  "Context & Narrative": "Ask three beekeepers about viruses and you’ll hear three stories—usually about a colony that ‘looked fine’ until it didn’t. The thread through all of them is Varroa. Mites pierce bees and brood, moving viruses where they do the most damage. That’s why the beekeeper’s lever is upstream: keep mites down and virus drama stays down with them. The day-to-day practice is pleasantly unglamorous. You run a regular sampling plan through the season, write the numbers, and act when thresholds say so. You choose treatments that fit your temperature and brood state—thymol after harvest if the weather plays ball, a winter oxalic pass when brood is minimal—and you treat the whole apiary so one ‘free-rider’ hive doesn’t reinfest the rest. \n\nProof matters. A follow-up count two or three weeks after treatment tells you if real-life conditions matched the label and the blog post. If they didn’t, you’ll see it before winter. Alongside the numbers, keep an eye on the story the bees tell: deformed wings on the alighting board, dwindling foragers at what should be peak flow, young bees looking oddly old. Those are virus smoke signals that usually trace to mites a month earlier. With a steady logbook and a calm plan, you’ll convert vague worries into tidy actions—less ‘what happened?’ and more ‘we caught it on time’.",
+  
+  "Evidence Highlights": [
+    "Varroa infestation correlates strongly with DWV load and clinical signs.",
+    "Late-summer mite reduction protects winter bee cohorts from viral damage.",
+    "Apiary-wide treatment and follow-up counts reduce reinfestation/relapse.",
+    "Brood-break oxalic increases impact on phoretic mites."
+  ],
+
+  "Data Tables": {
+    "log_headers": ["Date", "Colony", "Mites/300 bees (%)", "Brood (Y/N)", "Treatment", "Follow-up %", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Treating ‘by feel’ rather than on measured thresholds.",
+    "Sampling too few bees; noisy, misleading data.",
+    "Skipping the post-treatment verification count."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Plot mite % over time—trends beat single numbers for decision-making."}
+  ],
+
+  "FAQs": [
+    {"q": "Do I need virus tests?", "a": "Most decisions are driven by mite data; lab tests are optional for special cases."},
+    {"q": "Why treat all hives?", "a": "Partial treatment invites reinfestation and uneven outcomes."}
+  ],
+
+  "Seasonality & Climate": "Viral risk peaks after harvest as mites surge. Plan a reduction before winter bees are reared; in mild climates, adjust for brood continuity.",
+  
+  "Suggested Figures": [
+    {"alt": "Varroa–virus curve", "caption": "Rising mites → rising viral load → falling lifespan."}
+  ],
+
+  "Glossary": [
+    {"term": "DWV", "def": "Deformed Wing Virus, commonly amplified by Varroa."},
+    {"term": "Viral load", "def": "Amount of virus present; often inferred from Varroa trends and symptoms."}
+  ],
+
+  "Cross-links": [
+    "varroa_monitoring_thresholds",
+    "oxalic_acid_application",
+    "thymol_treatment_guide",
+    "queen_quality_diagnostics"
+  ],
+
+  "Sources": [
+    {"name": "USDA ARS – Honey Bee Research (virus & Varroa interaction)", "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/"},
+    {"name": "Apidologie – peer-reviewed virus/Varroa studies", "url": "https://link.springer.com/journal/13592"},
+    {"name": "COLOSS BEEBOOK – monitoring methods", "url": "https://www.tandfonline.com/toc/tjar20/current"}
+  ],
+
+  "Scrape-Guidance": "Extract plain-English summaries of Varroa–virus links, decision points tied to mite thresholds, and examples of ‘measure → act → verify’ workflows from the listed sources."
+}

@@ -1,8 +1,88 @@
 {
-  "At-a-Glance": "Swarming is natural but avoidable with timely space management and queen control. Prevention saves honey and neighbours’ goodwill.",
-  "Why it Matters": "Unmanaged swarms reduce crop potential and can cause complaints. Preventing swarms keeps colonies productive and safe.",
-  "Step-by-Step": "Provide space ahead of flows; equalise brood and stores; remove queen cells or use controlled splits; requeen from young stock. Classic methods include Demaree, Pagden, or nucleus splits to bleed swarm pressure.",
-  "Seasonality & Climate": "Peak swarming coincides with spring build-up and early flows; move early before swarm cells proliferate.",
-  "Common Pitfalls": "Adding supers too late, skipping inspections during peak, and leaving multiple charged queen cells.",
-  "Tools & Materials": "Spare boxes, frames, marked queens, and nuc equipment for splits."
+  "title": "Swarm prevention & control: Demaree, splits, nucs, timing",
+  "slug": "swarm_prevention_control",
+  "category": "Operations",
+  "categories": ["Seasonal management"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Seasonal management"],
+    "topics": ["swarm-prevention", "demaree", "splits", "nucs", "timing"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "early-summer"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["queen cells", "space management", "timed splits", "brood manipulation"],
+
+  "At-a-Glance": "Swarming is a feature, not a bug—but we can steer it. Prevention starts with space (supers early) and regular inspections for charged queen cells. When cells appear, choose a plan: Demaree to relieve swarm pressure without losing brood, a controlled split to mimic a swarm while keeping bees, or a nuc to bank genetics and temper. The secret sauce is timing and follow-through—mark dates, check for new cells, and keep colonies balanced. Do this well and you’ll trade chaos for calm honey flows and tidy increases.",
+  
+  "Why it Matters": "A well-timed intervention saves honey, neighbours’ patience, and your weekends. Unmanaged swarms reduce workforce just as flows start, strand queens in awkward weather, and upset urban stakeholders. Good prevention (space early, weekly checks in prime season) avoids drama; good control (Demaree, splits, nucs) channels the colony’s urge into work for you, not against you. Each method has trade-offs: Demaree is elegant for honey production; splits and nucs build stock and resilience. The common denominator is structure—decisions made on evidence, logged by date, and checked on schedule. Results are tangible: steadier supers, fewer frantic phone calls, and bees doing what bees do best—growing into the space you provide.",
+  
+  "Step-by-Step": [
+    "Add space ahead of flows; inspect weekly in swarm season.",
+    "On finding charged cells, pick a method (Demaree/split/nuc).",
+    "Execute cleanly: kit ready, frames labelled, queen located.",
+    "Diary follow-ups (day 7, day 14) to catch new cells.",
+    "Rebalance boxes/space as the flow evolves."
+  ],
+
+  "Context & Narrative": "Swarm season arrives with hedges in flower and bees in a mood to reproduce. Prevention is the quiet craft: give space before it’s begged for, keep young queens in mind, and watch for the classic sign—charged cells with royal jelly. When they appear, finger-drumming won’t help; pick a lane. Demaree lifts most brood above a queen-excluder with drawn comb below the queen, bleeding swarm pressure while retaining foragers for honey. Splits are the honest imitation of a swarm: one part queenright, one part charged to raise their own—or supplied a mated queen. Nucs are your rainy-day fund, banking genetics and temper for later. \n\nNone of this works without a diary. The colony’s calendar is ruthless; day-7 and day-14 checks save you from ‘surprise’ cells and cast swarms. The tone to aim for is procedural, not theatrical: line up kit, label frames, and make changes with confidence. And don’t forget the people piece—urban neighbours love tidy beekeepers. A well-run swarm plan is quieter hives, happier streets, and a beekeeper who sees May and June as months to enjoy, not endure.",
+  
+  "Evidence Highlights": [
+    "Early space reduces swarm triggers and preserves foraging momentum.",
+    "Demaree relieves pressure while keeping honey production strong.",
+    "Timed follow-ups (≈day 7/14) catch secondary cells and cast risks.",
+    "Nucs preserve genetics and provide insurance queens."
+  ],
+
+  "Data Tables": {
+    "method_tradeoffs": [
+      {"method": "Demaree", "pros": "Keeps foragers; strong honey crop", "cons": "More boxes; careful timing"},
+      {"method": "Split", "pros": "Population control; build stock", "cons": "Forager loss; possible lower crop"},
+      {"method": "Nuc", "pros": "Insurance queens; training tool", "cons": "Resource draw; extra kit"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Adding space too late (cells already charged).",
+    "Missing day-7 checks after an intervention.",
+    "Splitting without enough nurse bees for the queenless unit."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Colour-code frames or use tags to track where brood and queen moved."},
+    {"type": "Checklist", "text": "Space early · Inspect weekly · Choose method · Diary follow-ups"}
+  ],
+
+  "FAQs": [
+    {"q": "Demaree vs split?", "a": "Demaree for honey flow continuity; split if you want increase or insurance."},
+    {"q": "Destroy all cells?", "a": "No; act on cause. Use methods that align with colony biology and your goals."}
+  ],
+
+  "Seasonality & Climate": "Peak risk in late spring–early summer. In cool springs, swarm timing shifts later; adjust inspection cadence accordingly.",
+  
+  "Suggested Figures": [
+    {"alt": "Demaree layout diagram", "caption": "Where brood, queen and excluders go—at a glance."}
+  ],
+
+  "Glossary": [
+    {"term": "Charged queen cell", "def": "A queen cup containing royal jelly and a larva—active swarming signal."}
+  ],
+
+  "Cross-links": [
+    "queen_quality_diagnostics",
+    "apiary_setup_basics",
+    "urban_stakeholder_neighbour_relations",
+    "forage_calendars_uk"
+  ],
+
+  "Sources": [
+    {"name": "Britannica/modern hive practice (supering, extraction context)", "url": "https://www.britannica.com/"},
+    {"name": "Applied UK practice (timing & routines)", "url": "https://theapiarist.org/"}
+  ],
+
+  "Scrape-Guidance": "Extract timing cues, method steps (Demaree/splits), and follow-up intervals. Emphasise diarying and neighbour-aware practice for urban contexts."
 }

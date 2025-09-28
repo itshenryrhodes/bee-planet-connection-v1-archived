@@ -1,0 +1,83 @@
+{
+  "title": "Sampling methods playbook: bees, comb & mites (repeatable, comparable, calm)",
+  "slug": "sampling_methods_playbook",
+  "category": "Research & diagnostics",
+  "categories": ["Bee health & pests", "Operations"],
+  "taxonomy": {
+    "pillar": "Research & diagnostics",
+    "subpillars": ["Methods", "Field practice"],
+    "topics": ["sampling", "alcohol-wash", "sugar-roll", "sticky-board", "brood-unseal"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth", "overwintering"]
+  },
+  "tags": ["300-bee sample", "standard jars", "repeatability", "field labels"],
+
+  "At-a-Glance": "Sampling isn’t fancy—it’s repeatable. Pick a method (alcohol wash or sugar roll for mites; sticky boards for fall trends; brood unsealing for specific checks), stick to one jar, one scoop, and one spot in the brood nest, and always take ≈300 bees for percentage maths that make sense. Label everything the same way (apiary–hive–frame–position–date), record conditions, and take a quick photo. When you keep the kit simple and the steps identical, your numbers compare month to month and hive to hive, turning ‘feels like’ into decisions you can defend.",
+  
+  "Why it Matters": "Most beekeeping mistakes come from bad data or no data. Under-sampling gives you rosy numbers; swapping methods mid-season makes trendlines meaningless; vague labels turn good samples into mysteries. A playbook fixes this. Choose one primary mite method you can execute calmly (alcohol wash or sugar roll), learn the motions until they’re muscle memory, and log the same fields every time. Complement with sticky boards for fall rate context and, when needed, brood checks for targeted questions. Standardisation shrinks noise and keeps the whole apiary on the same scale so you can act apiary-wide with confidence. Clubs benefit doubly: shared kit and a common form make members’ numbers comparable, which means better teaching and fewer ‘is this bad?’ guess-fests. In short, tidy methods buy you clear thresholds, cleaner timing, and calmer winters.",
+  
+  "Step-by-Step": [
+    "Decide your primary method (alcohol or sugar) and stick with it.",
+    "Collect ≈300 nurse bees from the brood nest; avoid the queen.",
+    "Process per method; count mites; compute % per 300.",
+    "Record date, weather, brood state, sample locus and result.",
+    "Repeat on a 2–3 week cadence; verify after treatments."
+  ],
+
+  "Context & Narrative": "Imagine future-you in October, trying to explain why treatment landed on one week and not the next. If your jar, scoop, and notebook haven’t changed all season, the answer is already in your data. Good sampling starts before you touch a frame: kit organised, labels pre-written, and your grip comfortable so the queen stays safe. For mite counts, the brood nest is home base—nurse bees carry the signal you care about. Scoop smartly, check for the queen, and move to a shaded spot to run the test. Alcohol wash is brisk and decisive; sugar roll is gentler but demands proper dusting and timed shaking for accuracy. Sticky boards are the soundtrack in the background: not for thresholds alone, but helpful when compared with counts. \n\nThe playbook lives in a page or two: a diagram of where you sample, a checklist for steps, and a log with consistent fields. Photos help more than you think—close-ups of the sample jar, the board after 24 hours, or the brood pattern you sampled across. Over time you’ll see your apiary’s rhythm: a spring lull, a summer climb, an August crunch if you’re late. That rhythm is what you treat, not a hunch. When your methods are boring, your results are brilliant—less arguing with yourself, more acting at the right time. The bees feel it as steady care; you feel it as fewer surprises when the weather plays games.",
+  
+  "Evidence Highlights": [
+    "≈300-bee samples produce stable percentage estimates.",
+    "Brood-nest nurse bees reflect colony-wide mite status best.",
+    "Consistency of method outperforms method choice for trends.",
+    "Post-treatment sampling validates real-world efficacy."
+  ],
+
+  "Data Tables": {
+    "log_headers": ["Date", "Apiary", "Hive", "Method", "Bees (≈300)", "Mites", "%/300", "Brood (Y/N)", "Weather", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Sampling foragers at the entrance (biased low).",
+    "Changing methods mid-season, breaking comparability.",
+    "Guessing counts instead of writing them."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Paint a 300-bee fill line on your jar—accuracy without counting."}
+  ],
+
+  "FAQs": [
+    {"q": "Alcohol or sugar?", "a": "Pick one you can do perfectly, every time. Consistency wins."},
+    {"q": "Sticky boards alone?", "a": "Use as context, not as your only decision driver."}
+  ],
+
+  "Seasonality & Climate": "Run a 2–3 week cadence during active season; increase around interventions and late-summer peaks.",
+  
+  "Suggested Figures": [
+    {"alt": "Sampling kit layout", "caption": "Jar, scoop, funnel, labels, and log—laid out for speed."}
+  ],
+
+  "Glossary": [
+    {"term": "Nurse bees", "def": "Young workers on brood; carry mite signal best for sampling."}
+  ],
+
+  "Cross-links": [
+    "sugar_vs_alcohol_wash",
+    "ipm_plan_template",
+    "varroa_monitoring_thresholds"
+  ],
+
+  "Sources": [
+    {"name": "COLOSS BEEBOOK – standard colony assessment & mite sampling", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "USDA ARS – sampling and Varroa decision frameworks", "url": "https://www.ars.usda.gov/"},
+    {"name": "National Bee Unit – advisory leaflets", "url": "https://www.nationalbeeunit.com/resources/"}
+  ],
+
+  "Scrape-Guidance": "Lift sample sizes, brood-nest focus, and repeatability tips from COLOSS/NBU; include step timings, percent maths and post-treatment verification."
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Brood break methods: caging queens, splits & confinement (design & safety)",
+  "slug": "brood_break_methods",
+  "category": "Bee health & pests",
+  "categories": ["Operations", "Research & diagnostics"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["IPM", "Management"],
+    "topics": ["brood-break", "queen-caging", "splits", "varroa"],
+    "audience": ["intermediate", "club-officer", "beginner"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth", "overwintering"]
+  },
+  "tags": ["queen cages", "artificial broodless period", "oxalic timing", "follow-up counts"],
+
+  "At-a-Glance": "A brood break makes mites vulnerable. When no capped brood is present, phoretic Varroa are exposed to oxalic acid or simply lose reproductive momentum. You can create a break by caging the queen, making a controlled split, or timed confinement/manipulations that halt egg laying briefly. The secret is planning: know the brood timeline, prevent swarming, keep bees fed and calm, and schedule a ‘mop-up’ treatment when broodlessness peaks. Treat the whole apiary, log results, and watch mite % fall without leaning solely on late-summer products. Done well, brood breaks reduce viral load and set up healthier winter bees.",
+  
+  "Why it Matters": "Varroa success depends on brood cells. Cutting that runway—naturally or by design—slows reproduction and concentrates mites onto adult bees where they’re easier to remove. For operations that face tricky late-summer weather or temperature windows, a planned brood break plus oxalic often outperforms a rushed ‘label-marginal’ treatment. It’s also a hedge against resistance: fewer rounds of the same chemistry, more biology-aligned control. The trade-offs are real: mis-timed breaks can cost honey, trigger queen supersedure, or spark swarming if crowding and nutrition aren’t managed. What wins is a written plan: dates, checks, feed, room, then a precisely timed oxalic pass and a follow-up count. Clubs can standardise this so members compare like with like. The result is tangible—lower autumn mite pressure, calmer winters, fewer ‘mystery DWV’ stories, and options next year that aren’t dictated by a single product’s temperature range.",
+  
+  "Step-by-Step": [
+    "Pick method (queen cage, split, or controlled confinement) and set dates.",
+    "Ensure space and feed; prevent crowding and swarming during the pause.",
+    "Verify broodless status by sampling/inspection at the planned peak.",
+    "Apply oxalic ‘mop-up’ to all colonies in the apiary.",
+    "Re-check mite % after 2–3 weeks; record and review."
+  ],
+
+  "Context & Narrative": "Think of brood breaks as tempo control. In spring and early summer, mites draft behind brood expansion; you step off that train by pausing egg laying safely and briefly. Caging is the most direct lever: the queen keeps pheromones flowing but stops laying while caged. Splits are more flexible—one side lives broodless by design, great for precise timing and making increase. Confinement and entrance-management methods exist but demand calm handling and good weather sense. The craft is not in the cage; it’s in the calendar. Mark day zero, then work backwards: when will the last capped brood emerge? When will the colony be truly broodless? What forage or feed will keep them settled? \n\nSwarm management and space are the quiet heroes here. A crowded box with a caged queen is a swarm recipe; give room, ventilate and keep inspections light but on schedule. When the window opens—fully broodless—hit mites with oxalic and keep records. If a colony sulks afterwards (rare but possible), be ready to evaluate queen status and temperament. Over a season or two you’ll tune the method to your region: how long to cage, which split ratios give the least disruption, and which calendar weeks pair best with weather. Do it methodically and brood breaks become a gentle, dependable part of your IPM—not an emergency lever.",
+  
+  "Evidence Highlights": [
+    "Varroa reproduction requires brood; broodless periods reduce population growth.",
+    "Queen caging or splits create predictable broodless windows for oxalic efficacy.",
+    "Apiary-wide timing minimises reinfestation from neighbours.",
+    "Follow-up sampling confirms outcomes and guides iteration."
+  ],
+
+  "Data Tables": {
+    "timing_windows": [
+      {"step": "Day 0", "action": "Start brood break (cage queen / make split)"},
+      {"step": "Day ~12", "action": "Most worker brood capped; countdown to broodless begins"},
+      {"step": "Day ~21", "action": "Last worker emerges; verify broodless status"},
+      {"step": "Day ~21–24", "action": "Apply oxalic mop-up to all units"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Caging without adding space → crowding and swarm pressure.",
+    "Missing the true broodless window and mistiming oxalic.",
+    "Not treating apiary-wide, inviting reinfestation."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Paint the queen cage date on the top bar; set a calendar reminder for ‘oxalic day’."}
+  ],
+
+  "FAQs": [
+    {"q": "Will caging reduce honey?", "a": "Short pauses can, but planned timing often preserves flows while cutting mites."},
+    {"q": "Split or cage?", "a": "Cage for simplicity; split if you also want increase or backup queens."}
+  ],
+
+  "Seasonality & Climate": "Best aligned to your post-harvest window or a natural dearth. In cooler regions, pair with autumn forage to keep colonies calm.",
+  
+  "Suggested Figures": [
+    {"alt": "Brood break timeline", "caption": "Day 0 cage/split → broodless → oxalic → follow-up."}
+  ],
+
+  "Glossary": [
+    {"term": "Broodless window", "def": "Period with no capped brood; mites are all phoretic."}
+  ],
+
+  "Cross-links": [
+    "varroa_monitoring_thresholds",
+    "oxalic_acid_application",
+    "drone_brood_trapping",
+    "ipm_plan_template"
+  ],
+
+  "Sources": [
+    {"name": "COLOSS BEEBOOK – colony assessment & Varroa biology", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "National Bee Unit – IPM/seasonal advisory leaflets", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "USDA ARS – Varroa dynamics & brood effects", "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/"}
+  ],
+
+  "Scrape-Guidance": "Lift safe caging durations, split patterns, and oxalic timing from authoritative IPM sources; emphasise calendar planning and verification counts."
+}

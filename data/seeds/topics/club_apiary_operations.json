@@ -1,0 +1,82 @@
+{
+  "title": "Club apiary operations: shared kit, duties & scheduling",
+  "slug": "club_apiary_operations",
+  "category": "Operations",
+  "categories": ["Community & inclusion"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Governance"],
+    "topics": ["club-apiary", "rota", "shared-equipment", "training-days", "comms"],
+    "audience": ["club-officer", "beginner", "intermediate"],
+    "intent": ["policy", "how-to"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth", "overwintering"]
+  },
+  "tags": ["rota", "kit-room", "mentor-buddy", "access rules"],
+
+  "At-a-Glance": "Club yards thrive on clarity: who holds keys, when inspections happen, who leads, and how kit is checked in/out. A simple rota and buddy system levels up beginners safely; a kit room with checklists keeps smokers, suits and tools ready; shared logs make teaching moments visible. Pair quiet ‘work bees’ with public ‘open days’ so learning and community both get space. Keep comms simple: one channel, brief weekly notes, and a single point of truth for schedules.",
+  
+  "Why it Matters": "Without structure, club yards drift—over-opened hives, missing tools, and confused newcomers. A light framework lets volunteers show up and contribute without guesswork: the rota says who leads and who supports; the buddy system ensures beginners get hands-on safely; the kit list prevents the ‘where are the gloves?’ dance. Shared records let members see decisions and progress, turning visits into lessons rather than mysteries. Clear access rules protect landowner relationships and insurance requirements, and a modest code of conduct keeps the tone warm and welcoming. Get these basics right and your club becomes a place where people learn, contribute and stick around—bees benefit, too.",
+  
+  "Step-by-Step": [
+    "Publish access rules, keyholders and inspection cadence.",
+    "Set a rota with lead/assistant roles; pair beginners with mentors.",
+    "Maintain a kit room: inventory, cleaning schedule, sign-in/out.",
+    "Run two event types: ‘work bee’ (maintenance) and ‘open day’ (teaching).",
+    "Centralise comms (one channel); post weekly notes & next actions."
+  ],
+
+  "Context & Narrative": "Imagine arriving to a yard that feels like a calm classroom. A whiteboard lists today’s plan: inspections on Hives 2–4, water station refresh, and a queen check on 5. The lead reads the safety card, assigns PPE, and pairs two beginners with a mentor on each hive. Tools come from a labelled shelf; empties go to a ‘dirty bin’ for cleaning after. After inspections, notes are written on a shared sheet (frames of bees, brood state, action) and photographed into the club’s folder. \n\nOn other weeks, a ‘work bee’ tackles stands, fencing or planting—no hive poking, just infrastructure. Monthly ‘open days’ invite members and curious locals with a set script: bee biology table, a glass demo hive (if safe/legal), and a tidy, signed path. Conflicts are handled with kindness and a short code of conduct—no airing personal grievances in front of beginners. The whole machine runs on simple comms: a single mailing list or chat, one calendar, and a recap after each session. This light governance turns chaos into craft: members learn faster, kit lasts longer, and the yard looks like somewhere a landowner is proud to host.",
+  
+  "Evidence Highlights": [
+    "Lead/assistant roles improve safety and learning outcomes.",
+    "Inventory/checklists reduce kit loss and downtime.",
+    "Single-channel comms reduce confusion and no-shows."
+  ],
+
+  "Data Tables": {
+    "rota_headers": ["Date", "Lead", "Assistant", "Mentor", "Focus hives", "Tasks", "Notes"],
+    "kit_inventory_headers": ["Item", "Qty", "Condition", "Last cleaned", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Too many comms channels; messages get lost.",
+    "Unstructured sessions → over-handling and defensive colonies.",
+    "No cleaning routine → sticky, unreliable kit."
+  ],
+
+  "Callouts": [
+    {"type": "Checklist", "text": "Access rules · Rota · Buddy pairs · Kit room · Single comms"}
+  ],
+
+  "FAQs": [
+    {"q": "Open every week?", "a": "Set a cadence that suits season and mentors—predictability beats frequency."},
+    {"q": "Can members borrow kit?", "a": "Yes, with sign-in/out and cleaning on return; record damage openly, not blamefully."}
+  ],
+
+  "Seasonality & Climate": "Winter focuses on talks/maintenance; spring on build-up teaching; summer on flow timing and swarm control.",
+  
+  "Suggested Figures": [
+    {"alt": "Kit room layout", "caption": "Shelves, ‘clean’/‘dirty’ bins, and sign-in board example."}
+  ],
+
+  "Glossary": [
+    {"term": "Work bee", "def": "Club session focused on infrastructure/maintenance rather than hive inspections."}
+  ],
+
+  "Cross-links": [
+    "diagnostic_field_notes",
+    "beekeeper_safety_basics",
+    "apiary_setup_site_selection"
+  ],
+
+  "Sources": [
+    {"name": "Association best-practice handbooks", "url": "https://www.bbka.org.uk/"},
+    {"name": "Volunteer management basics (H&S)", "url": "https://www.hse.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Lift rota templates, access/insurance expectations and volunteer management basics from association/H&S guidance; focus on simple, repeatable practices."
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Pollination service playbook (placement, acceptance checks, SLAs)",
+  "slug": "pollination_service_playbook",
+  "category": "Pollination & contracts",
+  "categories": ["Operations", "Risk & compliance"],
+  "taxonomy": {
+    "pillar": "Pollination & contracts",
+    "subpillars": ["Agreements & on-farm practice"],
+    "topics": ["contracts", "hive-strength", "no-spray-clauses", "placement", "incident-response"],
+    "audience": ["intermediate", "club-officer", "farmer"],
+    "intent": ["how-to", "policy", "reference"],
+    "regions": ["UK", "US"],
+    "season": ["spring", "summer"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["acceptance checklist", "notification", "indemnity", "SLA"],
+
+  "At-a-Glance": "Professional pollination runs on clear roles and repeatable checklists. Agree hive strength definitions and inspection rights, map placements and water sources, set no-spray windows with notification protocols, and document delivery/collection. On arrival, complete acceptance checks (strength, health, queen-right) with signatures from both sides. During bloom, keep comms short and factual—weather, spray intentions, issues. If a spray incident happens, stop, document thoroughly and escalate per contract. A tidy playbook prevents misunderstandings and keeps fruit, farmer and beekeeper aligned.",
+  
+  "Why it Matters": "Pollination is where beekeeping meets agriculture’s moving parts—sprays, irrigation, labour, deadlines. Vague expectations produce conflict: growers expect instant strength; beekeepers expect perfect spray timing; neither gets what they want. A written playbook with SLAs fixes this. Strength metrics and acceptance checks set the baseline; placement and water keep bees where they help most; notification clauses and indemnities turn ‘we hoped’ into ‘we agreed’. When something goes wrong (it will, someday), a pre-agreed incident pathway keeps relationships intact and insurers cooperative. The result is repeat business and calmer seasons for both parties—more fruit set, fewer 2 a.m. phone calls, and bees that work rather than wander.",
+  
+  "Step-by-Step": [
+    "Define hive strength and inspection/acceptance rights.",
+    "Map placements, access and water; confirm counts and dates.",
+    "Agree no-spray windows and notification protocol.",
+    "Deliver, inspect, and sign acceptance checklists.",
+    "Monitor and document; incident log if problems arise."
+  ],
+
+  "Context & Narrative": "A good pollination season reads like a logistics plan: neat lines of hives where bees actually forage, clear tracks for vehicles, and a shared calendar for sprays and irrigations. It starts with language. ‘Eight-frame strength’ means frames covered with adult bees—not a guess. Acceptance happens at delivery, not weeks later; both parties sign and photograph. Water is placed sensibly so bees don’t abandon the crop for a carp pond a field away. \n\nSprays are the sensitive bit. A notification protocol—who calls whom, how long before, what to do if weather shifts—prevents last-minute surprises. If an incident occurs, resist the blame dance; freeze the scene and document: time, products, wind, photos of bee kill and labels, samples if permitted. The contract provides the path from there. Beekeepers who run a grown-up playbook get invited back; growers who do the same get reliable bees. Everyone sleeps better during bloom.",
+  
+  "Evidence Highlights": [
+    "Strength definitions and acceptance checks reduce disputes.",
+    "Mapped placements and on-site water improve pollination efficiency.",
+    "Notification/no-spray clauses reduce spray incidents and losses.",
+    "Incident logs with photos and timings support fair resolution."
+  ],
+
+  "Data Tables": {
+    "acceptance_checklist": [
+      {"item": "Frames of bees", "target": "≥8", "status": ""},
+      {"item": "Queen-right", "target": "Yes", "status": ""},
+      {"item": "Disease check", "target": "Clear", "status": ""},
+      {"item": "Water source", "target": "In place", "status": ""},
+      {"item": "Placement map", "target": "Shared", "status": ""}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "No acceptance check—arguments later.",
+    "Unmapped placements leading to poor coverage.",
+    "No notification → avoidable spray kills."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Use a one-page acceptance form with photo boxes and signatures."},
+    {"type": "Checklist", "text": "Strength · Placement · Water · Notification · Incident path"}
+  ],
+
+  "FAQs": [
+    {"q": "What’s a fair strength spec?", "a": "Often ≥8 frames of adult bees per hive; agree locally and put it in writing."},
+    {"q": "How much lead time for sprays?", "a": "Agree a minimum (e.g., 24–48 h) with a named contact chain."}
+  ],
+
+  "Seasonality & Climate": "Bloom windows are tight; align deliveries with actual bud stages. Heat and wind alter bee flight—adjust placements accordingly.",
+  
+  "Suggested Figures": [
+    {"alt": "Pollination placement map", "caption": "Blocks, windbreaks and water locations for efficient coverage."}
+  ],
+
+  "Glossary": [
+    {"term": "Hive strength (frames of bees)", "def": "Frames covered with adult bees; used in acceptance checks."}
+  ],
+
+  "Cross-links": [
+    "pesticide_exposure_mitigation",
+    "pollination_contract_clauses",
+    "apiary_setup_site_selection"
+  ],
+
+  "Sources": [
+    {"name": "SARE – Pollination contracts & grower agreements", "url": "https://www.sare.org/"},
+    {"name": "GOV.UK – Bees’ Needs / public comms framing", "url": "https://www.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Lift clause headings, acceptance checklist structure, notification/indemnity examples and on-farm placement best practice from listed sources."
+}

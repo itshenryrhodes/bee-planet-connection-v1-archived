@@ -1,0 +1,81 @@
+{
+  "title": "Comb replacement policy: a 5-year rotation that actually happens",
+  "slug": "comb_replacement_policy",
+  "category": "Operations",
+  "categories": ["Bee health & pests"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Husbandry"],
+    "topics": ["comb-rotation", "hygiene", "wax-residues"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth", "overwintering"]
+  },
+  "tags": ["year-marking", "hygiene", "disease-risk", "residues"],
+
+  "At-a-Glance": "Old brood comb accumulates spores, residues and detritus. A simple rotation—swap ~20–25% of brood comb each season—keeps colonies on fresher wax without drama. Colour- or year-mark your top bars, cull the darkest frames first, and cycle in fresh foundation or drawn comb near the brood. Tie replacements to moments you’re already in the box (spring build-up, swarm control, post-harvest). Keep culls segregated and render when practical. Done little-and-often, rotation improves hygiene, brood patterns and spring build, while reducing disease carryover and residue worries.",
+  
+  "Why it Matters": "Comb is your colony’s living infrastructure. Over years it darkens with cocoons and collects spores (chalkbrood, Nosema), pesticide residues and micro-debris. That ‘history’ drags on brood health and can mislead your diagnostics. A policy makes rotation automatic instead of aspirational. By replacing a quarter of brood comb annually you spread cost and disruption, keep the queen laying on cleaner wax, and lower pathogen pressure. The policy also gives you structure for emergencies: suspect brood pattern? Move replacements forward in that hive. Clubs that teach a named, repeatable rotation help beginners avoid the common fate of ten-year-old frames that never quite get replaced. The result is cleaner spring arcs, better brood, and a safer baseline for disease management and food quality.",
+  
+  "Step-by-Step": [
+    "Year-mark frames (paint dot or numeral on top bars).",
+    "Each season, target 20–25% of brood frames for replacement.",
+    "Cull darkest/oldest first; render or bag and remove from apiary.",
+    "Insert new foundation/drawn comb adjacent to brood—not all at once.",
+    "Record in log; adjust if signs suggest faster rotation in a hive."
+  ],
+
+  "Context & Narrative": "Rotation works best when it’s invisible—baked into things you already do. In spring you add space and shape the brood nest; that’s when a tired frame quietly leaves and a new sheet slides in. The queen moves forward onto fresh wax and you avoid creating yawning gaps that chill brood. During swarm control, another tranche moves. After harvest, you take a last look before closing down: any frame that looks like a Victorian ceiling comes out. \n\nMarking years is the hack that keeps memory out of it. A dab of colour or a digit on the top bar tells you, at a glance, which frames are due without checking notes. Culls go straight into a ‘dirty kit’ tub—don’t let them linger in the apiary where robbing or wax moth can turn one job into three. Rendering keeps value in your system; wax becomes foundation, candles or trade. Rotation is also a disease control lever: if a colony shows persistent chalkbrood or patchy patterns, it moves up the queue. Over a couple of seasons, the whole apiary lightens—literally and figuratively—and problems blamed on ‘queens’ often evaporate when the nursery is clean and warm on fresh wax.",
+  
+  "Evidence Highlights": [
+    "Old brood comb concentrates spores and residues over time.",
+    "Regular replacement improves brood pattern and hygiene outcomes.",
+    "Tying rotation to routine manipulations reduces disruption."
+  ],
+
+  "Data Tables": {
+    "rotation_log_headers": ["Date", "Apiary", "Hive", "Frames removed (IDs)", "Frames added (IDs)", "Reason", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Mass replacement in one visit causing brood gaps and chill.",
+    "Letting culls sit around—robbery/wax moth risk.",
+    "No marking system → frames outstay their welcome."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Use a five-colour cycle (one per year) so you can ‘see’ age at a glance across the apiary."}
+  ],
+
+  "FAQs": [
+    {"q": "Foundation or foundationless for replacements?", "a": "Use what you run; priority is cadence, not style."},
+    {"q": "Supers too?", "a": "Rotate tired super comb more slowly; prioritise brood frames for hygiene."}
+  ],
+
+  "Seasonality & Climate": "Spring and early summer offer the smoothest acceptance of new comb; avoid big swaps in cold snaps.",
+  
+  "Suggested Figures": [
+    {"alt": "Five-year rotation diagram", "caption": "Colour-coded top bars showing which frames to cull each season."}
+  ],
+
+  "Glossary": [
+    {"term": "Render", "def": "Melt down cull comb to recover clean wax for reuse."}
+  ],
+
+  "Cross-links": [
+    "wax_moth_storage_management",
+    "chalkbrood_identification_actions",
+    "diagnostic_field_notes"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – hygiene & comb guidance", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "COLOSS – colony assessment context", "url": "https://www.tandfonline.com/toc/tjar20/current"}
+  ],
+
+  "Scrape-Guidance": "Extract hygiene rationale, rotation cadence ranges, and practical culling/handling steps from official guidance and standard methods."
+}

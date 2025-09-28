@@ -1,0 +1,84 @@
+{
+  "title": "Amitraz & synthetic options: overview, resistance & rotation",
+  "slug": "amitraz_and_synthetics_overview",
+  "category": "Bee health & pests",
+  "categories": ["Operations", "Risk & compliance"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Treatment"],
+    "topics": ["amitraz", "synthetics", "resistance", "residue"],
+    "audience": ["intermediate", "club-officer"],
+    "intent": ["reference", "policy"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["overwintering"]
+  },
+  "tags": ["rotation", "label adherence", "resistance management", "residues"],
+
+  "At-a-Glance": "Synthetics (e.g., amitraz) remain powerful Varroa tools when used exactly as labelled and rotated sensibly within an IPM plan. They bring predictability and speed—useful when weather or logistics block organic acids or thymol—but overuse invites resistance and residue concerns. Treat only when thresholds say so, rotate modes of action across seasons/years, remove strips on time, and record lots/batch use. Pair with non-chemical tactics (brood breaks, drone trapping) and verification counts, so synthetics are a scalpel, not a crutch.",
+  
+  "Why it Matters": "A mature IPM programme keeps options open. Synthetics can save a season—especially in poor weather—yet the very reliability that makes them attractive can breed complacency and resistance if used routinely without rotation or verification. Residues accumulate when strips overstay or when timings overlap with honey handling; regulators and consumers both notice. The balanced path is evidence-based: measure mites, treat when needed, pick a product that fits colony state and calendar, and rotate away next time. Clubs can reinforce good habits with loaner timers for strip removal, record templates for lot numbers, and training that frames synthetics as one of several levers. The result is better efficacy now and preserved efficacy later, with fewer residue worries and a healthier conversation with the public.",
+  
+  "Step-by-Step": [
+    "Decide from mite data, not habit; confirm treatment is warranted.",
+    "Apply per label; note placement, start date and lot/batch.",
+    "Set a removal date; do not leave strips beyond label duration.",
+    "Rotate mode of action next cycle/season.",
+    "Verify with a post-treatment mite sample."
+  ],
+
+  "Context & Narrative": "It’s tempting to reach for the ‘easy’ answer when weather wrecks your thymol window or brood won’t stop for oxalic. Synthetics earn their place in those gaps—steady performance, straightforward handling. But the long game is about stewardship. Resistance creeps in quietly, and residue issues tend to show up after practices harden into habits. Make it normal to log each course: product, lot, placement, start and pull dates, and verification samples afterwards. Treating fewer times—because you stacked non-chemical tactics earlier—means each synthetic course counts more and risks less. A year or two of disciplined rotation and timing is enough to feel the shift: lower baseline mites, fewer emergency interventions, and products that still work when you need them most.",
+  
+  "Evidence Highlights": [
+    "Repeated use without rotation raises resistance risk.",
+    "Overlong strip exposure increases residue loads and may affect queens/brood.",
+    "IPM stacking (brood break, drone trapping) reduces reliance on any one product.",
+    "Verification sampling catches underperformance early."
+  ],
+
+  "Data Tables": {
+    "treatment_log_headers": ["Date start", "Date remove", "Product", "Lot/batch", "Placement notes", "Follow-up % mites/300", "Outcome"]
+  },
+
+  "Common Pitfalls": [
+    "‘Set and forget’—leaving strips in beyond label duration.",
+    "Treating every year regardless of data.",
+    "Failing to rotate modes of action."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Use a physical tag on the top bar with the strip removal date—visible every inspection."}
+  ],
+
+  "FAQs": [
+    {"q": "Are synthetics ‘bad’?", "a": "They’re tools. Problems come from misuse and overuse—not from label-correct, rotated use in IPM."},
+    {"q": "Residues in honey?", "a": "Follow labels (supers off if required) and remove on time to minimise residue risk."}
+  ],
+
+  "Seasonality & Climate": "Often chosen in cool, unsettled late summers where thymol struggles; still pair with winter oxalic if broodless windows occur.",
+  
+  "Suggested Figures": [
+    {"alt": "Rotation wheel", "caption": "Alternating modes-of-action across seasons/years within an IPM."}
+  ],
+
+  "Glossary": [
+    {"term": "Mode of action (MoA)", "def": "How a product affects the target; rotate MoAs to slow resistance."}
+  ],
+
+  "Cross-links": [
+    "ipm_plan_template",
+    "varroa_monitoring_thresholds",
+    "brood_break_methods",
+    "oxalic_acid_application"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – treatment & residue advisories", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Apidologie – resistance and efficacy studies", "url": "https://link.springer.com/journal/13592"},
+    {"name": "USDA ARS – Varroa control research", "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/"}
+  ],
+
+  "Scrape-Guidance": "Summarise rotation principles, strip removal timing, residue cautions, and verification practices from authoritative sources; avoid brand-specific claims."
+}

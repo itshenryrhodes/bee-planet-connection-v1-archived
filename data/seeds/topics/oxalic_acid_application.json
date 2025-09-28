@@ -1,0 +1,92 @@
+{
+  "title": "Oxalic acid application: broodless ‘mop-up’ and brood-right variants",
+  "slug": "oxalic_acid_application",
+  "category": "Bee health & pests",
+  "categories": ["Operations", "Research & diagnostics"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Treatment"],
+    "topics": ["varroa", "oxalic-acid", "winter-treatment", "brood-break"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["overwintering"]
+  },
+  "tags": ["dribble", "vaporisation", "follow-up count", "brood break", "temperature windows"],
+
+  "At-a-Glance": "Oxalic acid shines when brood is minimal: it hits phoretic mites hard without leaving long-term residues in wax. In the UK that’s typically deep winter or any engineered brood break. Dribble (trickle) and vaporisation are the common approaches; both need careful dosing, PPE, and calm, efficient handling. The playbook: confirm brood status, choose the method that suits your kit and weather, treat all colonies in an apiary session, then verify with a follow-up count. Use it as a ‘mop-up’ after late-summer controls so your winter bees aren’t raised under heavy virus pressure.",
+  
+  "Why it Matters": "Varroa doesn’t just nibble—its real harm is amplifying viruses that shorten lifespans and hollow out colonies. Late-summer knock-backs are vital, but mites rebound if any remain on bees heading into winter. Oxalic acid—applied when there’s little or no brood—can remove a large share of phoretic mites in one tidy pass, protecting the cohort that must survive until spring. Used correctly it’s residue-light, cost-effective, and compatible with integrated control plans. The risks are mostly about misuse: wrong dose, poor timing, or rushed technique that stresses colonies or beekeepers. Getting the details right (brood status, temperature windows, apiary-wide application, and efficacy checks) turns a routine treatment into a winter-survival upgrade for your bees and a calmer off-season for you. In short, precise timing plus clean execution equals healthier winter clusters and better spring build-up.",
+  
+  "Step-by-Step": [
+    "Confirm brood status; aim for broodless or minimal brood.",
+    "Choose dribble or vaporisation to suit kit and weather.",
+    "Prepare PPE, dose, and applicator; brief the sequence.",
+    "Treat all colonies in one session (apiary-wide).",
+    "Record details and run a follow-up mite count in 2–3 weeks."
+  ],
+
+  "Context & Narrative": "Think of oxalic acid as the ‘finish carpentry’ of Varroa control. The heavy lifting often happens in late summer with thymol or other season-appropriate options; oxalic is the neat, timely pass that removes what’s left on the bees. That’s why broodlessness matters: if mites are hiding under caps, oxalic can’t reach them. In a UK winter, nature lends a hand with a brood break; in milder climates you can create one (e.g., caging or a planned pause) so oxalic does maximum work in minimum time. \n\nDribble is straightforward and quick: measured syrup applied evenly across seams of bees. Vaporisation is tidy and repeatable once you’ve drilled your workflow—clear entrances, load the pan, wait the recommended interval, let vapour settle. Either way, the sensible beekeeper treats the whole apiary; there’s little point in a pristine colony if its neighbour is a mite bus stop. \n\nThe other half of ‘good’ is proof: the follow-up count. If mites barely move after treatment, timing or method needs a rethink while there’s still season left to act. Keep the tone calm and procedural—PPE on, kit checked, notes in the log—so your winter round feels like a warm routine, not a cold scramble. Done well, oxalic turns anxious Decembers into boring ones (the best kind in beekeeping): solid clusters, tidy records, and no nasty surprises under the crownboard in March.",
+  
+  "Evidence Highlights": [
+    "Efficacy is highest during brood breaks; winter in temperate regions provides a natural window.",
+    "Dribble and vaporisation are both effective when dosed and applied per method guidance.",
+    "Apiary-wide application reduces reinfestation from neighbouring colonies.",
+    "Post-treatment counts verify impact and guide any corrective steps."
+  ],
+
+  "Data Tables": {
+    "method_comparison": [
+      {"aspect": "Best timing", "dribble": "Broodless mid-winter", "vaporisation": "Broodless; flexible in cool dry weather"},
+      {"aspect": "Duration per hive", "dribble": "≈1–2 min", "vaporisation": "≈3–5 min incl. warm-up"},
+      {"aspect": "Notes", "dribble": "Accurate dosing per seam; avoid overdosing", "vaporisation": "Seal drafts; observe re-entry interval"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Treating with significant brood present (reduced efficacy).",
+    "Inaccurate dosing or rushed application.",
+    "Partial apiary treatment enabling reinfestation.",
+    "Skipping the follow-up mite count."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Rehearse the route order so heat-loss or delays don’t vary exposure between hives."},
+    {"type": "Checklist", "text": "Brood check · Select method · PPE · Dose · Treat apiary-wide · Verify"}
+  ],
+
+  "FAQs": [
+    {"q": "Dribble or vaporise?", "a": "Either works—pick the method you can execute consistently and safely in your conditions."},
+    {"q": "Can I use oxalic with brood present?", "a": "It works best broodless; with brood you’ll need repeated passes or different tools."},
+    {"q": "Does it leave residues?", "a": "Used correctly, long-term wax residues are minimal compared to some alternatives."}
+  ],
+
+  "Seasonality & Climate": "Temperate winters give an ideal brood break; in milder zones create one to raise efficacy. Dry, calm conditions make application smoother and more consistent.",
+  
+  "Suggested Figures": [
+    {"alt": "Oxalic decision flow", "caption": "Brood check → choose method → dose → treat apiary-wide → verify."}
+  ],
+
+  "Glossary": [
+    {"term": "Brood break", "def": "A period with little/no capped brood—boosts oxalic efficacy."},
+    {"term": "Phoretic mite", "def": "Varroa riding on adult bees, exposed to oxalic treatments."}
+  ],
+
+  "Cross-links": [
+    "varroa_monitoring_thresholds",
+    "thymol_treatment_guide",
+    "apiary_biosecurity_basics",
+    "overwintering_preparation_uk"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – Varroa/seasonal guidance", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "COLOSS/standard methods (mite counts)", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "Applied practice timelines (UK beekeeping)", "url": "https://theapiarist.org/"}
+  ],
+
+  "Scrape-Guidance": "Lift timing rules (brood break emphasis), safe-use steps, indicative durations, and verification practices from official guidance and method papers only."
+}

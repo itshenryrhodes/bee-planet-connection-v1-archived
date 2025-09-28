@@ -1,0 +1,91 @@
+{
+  "title": "Queen health & virus resilience: field signs & actions",
+  "slug": "queen_health_resilience",
+  "category": "Research & diagnostics",
+  "categories": ["Bee health & pests", "Operations"],
+  "taxonomy": {
+    "pillar": "Research & diagnostics",
+    "subpillars": ["Colony assessment"],
+    "topics": ["queen-quality", "brood-pattern", "temperament", "viruses"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["diagnostics", "how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth", "overwintering"]
+  },
+  "tags": ["laying pattern", "supersedure cues", "age/origin", "data-led requeening"],
+
+  "At-a-Glance": "A good queen writes a tidy story: solid brood pattern, steady temperament, and colonies that rebound after sensible mite control. When patterns pepper, temper sours and workers look ‘old’ too soon, look upstream—mite/virus pressure, nutrition, or queen quality. Diagnose with a short list: age/origin, laying consistency, brood distribution, temper, and recent mite counts. Fix foundations first (mites, nutrition), then decide on requeening. Keeping simple, comparable notes turns ‘iffy queen’ from a hunch into a confident, timely action that lifts colony health and virus resilience.",
+  
+  "Why it Matters": "Poor queens get blamed for problems caused by mites, viruses or nutrition. That leads to expensive, unnecessary requeening—and colonies that still underperform because the root cause persists. A light-touch diagnostic puts numbers and cues on the table: frames of bees and brood, pattern quality, temperament score, queen age/origin, and current mite %. With that context you act rationally: if mites/virus are up, fix that first; if nutrition is thin, feed or plan forage; if the queen truly lags after foundations improve, requeen with stock known for hygiene and productivity. Clubs that teach this flow reduce churn, save members money, and breed better data. The downstream win is resilience: young, quality queens heading colonies that start spring with low virus baggage and respond strongly to flows.",
+  
+  "Step-by-Step": [
+    "Record queen age/origin and temperament score.",
+    "Assess laying pattern and brood distribution on comparable frames.",
+    "Check mite % and recent treatment history.",
+    "Improve foundations (mite control, nutrition) if weak.",
+    "Reassess; requeen if pattern/temper remain poor."
+  ],
+
+  "Context & Narrative": "Open a great brood box and you feel it—calm bees, neat arcs of pollen and honey, and brood like a quilt. That picture gets noisy when mites and viruses compress worker lifespan: patterns pepper, nurse bees thin out, and the colony behaves older than the calendar says. Before you pin it on the queen, gather basics. Note her age and source, write a quick 1–5 temperament score, and look at the pattern across multiple frames (not just your favourite). Then pull your last mite numbers and treatment dates. If the colony carried a high mite load into late summer, today’s patchiness may be delayed costs, not queen failure. Fix what you can now—mite control, feed if needed—and come back in a fortnight. If she still writes a messy story while the neighbour hive sings, that’s a queen call. Requeening into a cleaned-up environment lets new genetics show their best. Repeat this rhythm and your notes will quietly build a library of what ‘good’ looks like in your area, making next year’s decisions faster and kinder—for you and the bees.",
+  
+  "Evidence Highlights": [
+    "Brood pattern and temperament correlate with colony productivity and stability.",
+    "High Varroa/virus pressure degrades patterns; fix foundations before replacing queens.",
+    "Replacing aged/underperforming queens improves spring build-up and reduces swarming.",
+    "Consistent field metrics (scores, counts) improve decision quality."
+  ],
+
+  "Data Tables": {
+    "queen_diagnostic_log": [
+      {"field": "Date", "example": "2026-05-20"},
+      {"field": "Queen age/origin", "example": "2025 mated, local"},
+      {"field": "Temperament (1–5)", "example": "4"},
+      {"field": "Brood pattern", "example": "Solid/peppery"},
+      {"field": "Mites/300 bees (%)", "example": "2.3"},
+      {"field": "Action", "example": "Treat/review or requeen"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Requeening before addressing mites and nutrition.",
+    "Judging on one frame or one day’s mood.",
+    "No records → every year repeats the same doubts."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Photograph a ‘best brood frame’ each visit—your phone becomes a pattern archive."}
+  ],
+
+  "FAQs": [
+    {"q": "How old is ‘old’?", "a": "Many swap at 1–2 seasons; track performance rather than age alone."},
+    {"q": "Aggressive colony—queen or environment?", "a": "High mite load, dearth and weather all push temper up; rule them out first."}
+  ],
+
+  "Seasonality & Climate": "Evaluate after foundational fixes and outside dearths for a fair read. Requeen with enough season left for acceptance and laying.",
+  
+  "Suggested Figures": [
+    {"alt": "Pattern quality grid", "caption": "Photo examples of ‘solid’ vs ‘peppery’ with scoring tips."}
+  ],
+
+  "Glossary": [
+    {"term": "Pepperpot brood", "def": "Patchy brood with empty cells among cappings; various causes."}
+  ],
+
+  "Cross-links": [
+    "varroa_monitoring_thresholds",
+    "queen_quality_diagnostics",
+    "nutrition_pollen_substitutes_evidence",
+    "ipm_plan_template"
+  ],
+
+  "Sources": [
+    {"name": "COLOSS BEEBOOK – colony assessment & queen metrics", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "Apidologie – queen quality and productivity research", "url": "https://link.springer.com/journal/13592"},
+    {"name": "USDA ARS – virus/queen health interactions", "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/"}
+  ],
+
+  "Scrape-Guidance": "Extract field metrics for queen assessment, links to mite/virus context, and practical requeening triggers; prioritise standardised methods and peer-reviewed summaries."
+}

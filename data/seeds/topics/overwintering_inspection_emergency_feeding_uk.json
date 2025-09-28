@@ -1,0 +1,89 @@
+{
+  "title": "Overwintering inspection & emergency feeding (UK focus)",
+  "slug": "overwintering_inspection_emergency_feeding_uk",
+  "category": "Seasonal management",
+  "categories": ["Operations", "Bee health & pests"],
+  "taxonomy": {
+    "pillar": "Seasonal management",
+    "subpillars": ["Overwintering"],
+    "topics": ["hefting", "fondant", "stores-targets", "ventilation"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK"],
+    "season": ["winter", "early-spring"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["overwintering"]
+  },
+  "tags": ["oxalic timing", "emergency feed", "condensation control"],
+
+  "At-a-Glance": "Winter work is light but decisive: check from the outside, keep colonies dry and draft-free, and make food appear when needed. Heft to judge stores, add fondant above the cluster if boxes feel suspiciously light, and keep entrances clear of corpses and snow. Ventilation trumps damp—use a top vent or absorbent crownboard setup appropriate to your system, and resist the urge to over-open hives in cold snaps. In late winter a single oxalic ‘mop-up’ (timed to brood lull) can pay off. The aim is boring winters and lively March colonies.",
+  
+  "Why it Matters": "Most winter losses trace back to two culprits: starvation and moisture. Bees handle cold far better than damp, and a well-fed cluster shrugs off long spells under 10 °C. The trick is spotting risk early without harassing the bees. Hefting gives you a quick, low-impact sense of stores; a soft, prompt fondant placement buys weeks of safety. Good ventilation prevents condensation raining onto the cluster; entrance housekeeping keeps airflow steady and deters mice. A single oxalic treatment when brood is minimal knocks phoretic mites down before spring rearing. Do these small things calmly and you convert ‘winter roulette’ into a predictable routine—fewer dead-outs, fewer emergency feeds in March, and a spring that starts with bees working rather than catching up.",
+  
+  "Step-by-Step": [
+    "Heft monthly; if light, add fondant above cluster.",
+    "Keep entrances clear; fit mouseguards where needed.",
+    "Manage ventilation to avoid condensation on the cluster.",
+    "Time oxalic for a brood lull; verify later by sampling.",
+    "Resume full inspections once temperatures and forage allow."
+  ],
+
+  "Context & Narrative": "Winter asks for restraint. Lifting roofs for a peek rarely helps; hefting does. A mental (or written) baseline for each hive lets you spot a weight trend and act before bees start to starve. Fondant is a stress-free insurance policy when used judiciously—thin slab, right above the bees, wrapped to slow drying. A dry hive is a warm hive: modest ventilation, sound roofs, and insulation appropriate to your kit keep moisture moving the right way. \n\nThe quiet pleasure of good wintering is opening in March to steady, heavy boxes and bees that never panicked. An oxalic pass at a brood lull adds confidence by trimming mite carry-over into spring. Through it all, keep records. A line of weights, a few notes on weather, and a tick when you added feed tell you which colonies ride winter well and which need a different autumn plan next time.",
+  
+  "Evidence Highlights": [
+    "Starvation and damp are primary winter risks; ventilation and timely feed mitigate both.",
+    "Hefting is low-impact and actionable; fondant above cluster is effective emergency insurance.",
+    "Oxalic at brood lull reduces phoretic mites before spring build-up."
+  ],
+
+  "Data Tables": {
+    "winter_log": [
+      {"field": "Date", "example": "2026-01-15"},
+      {"field": "Heft feel", "example": "Heavy/OK/Light"},
+      {"field": "Action", "example": "Add fondant 0.5 kg"},
+      {"field": "Entrance clear", "example": "Yes/No"},
+      {"field": "Ventilation note", "example": "Quilt dry; no drip"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Over-inspecting in cold weather.",
+    "Feeding late after bees have already crashed.",
+    "Blocking ventilation in pursuit of ‘warmth’."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Cut a window in fondant wrap so bees access it without drying the slab."}
+  ],
+
+  "FAQs": [
+    {"q": "Syrup in winter?", "a": "Fondant beats syrup in cold; syrup chills bees and can ferment."},
+    {"q": "Open the brood box to check?", "a": "Avoid in cold spells—heft instead and feed if light."}
+  ],
+
+  "Seasonality & Climate": "UK winters vary; plan for prolonged damp. In cold snaps, focus on ventilation and entrance clearance; feed when hefts flag.",
+  
+  "Suggested Figures": [
+    {"alt": "Fondant placement diagram", "caption": "Thin slab directly above the cluster under insulation."}
+  ],
+
+  "Glossary": [
+    {"term": "Hefting", "def": "Lifting a hive from behind/side to judge weight vs a known baseline."}
+  ],
+
+  "Cross-links": [
+    "overwintering_preparation_uk",
+    "varroa_monitoring_thresholds",
+    "oxalic_acid_application",
+    "apiary_biosecurity_basics"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – Seasonal notes", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Apidologie – nutrition/overwintering studies", "url": "https://link.springer.com/journal/13592"},
+    {"name": "Applied UK practice notes", "url": "https://theapiarist.org/"}
+  ],
+
+  "Scrape-Guidance": "Extract winter risk priorities (stores, damp), fondant placement detail, ventilation principles, and brood-lull oxalic timing from the listed sources."
+}

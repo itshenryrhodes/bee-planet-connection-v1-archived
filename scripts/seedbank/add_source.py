@@ -1,45 +1,37 @@
 #!/usr/bin/env python3
-import json, sys, os
+import json, sys, pathlib
 
-if len(sys.argv) < 10:
-    print("usage: add_source.py <domain> <title> <author> <year> <type> <url> <authority> <scope> <region> [tags...]")
-    sys.exit(1)
+def main():
+    if len(sys.argv) < 7:
+        print("usage: add_source.py <domain> <type> <year> <title> <url> <authority> [scope] [tags...]")
+        sys.exit(1)
+    domain, stype, year, title, url, authority = sys.argv[1:7]
+    scope = sys.argv[7] if len(sys.argv) > 7 else ""
+    tags = sys.argv[8:] if len(sys.argv) > 8 else []
+    root = pathlib.Path(__file__).resolve().parents[2]
+    p = root/"data/research_sources.json"
+    data = json.load(open(p, encoding="utf-8"))
+    block = None
+    for d in data["domains"]:
+        if d["domain"].lower() == domain.lower():
+            block = d
+            break
+    if block is None:
+        block = {"domain": domain, "sources": []}
+        data["domains"].append(block)
+    src = {
+        "title": title,
+        "author": "",
+        "year": int(year) if year.isdigit() else None,
+        "type": stype,
+        "url": url,
+        "authority": authority,
+        "scope": scope,
+        "tags": tags
+    }
+    block["sources"].append(src)
+    json.dump(data, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print("[OK] added:", title)
 
-domain = sys.argv[1]
-title = sys.argv[2]
-author = sys.argv[3]
-year = int(sys.argv[4])
-stype = sys.argv[5]
-url = sys.argv[6]
-authority = sys.argv[7]
-scope = sys.argv[8]
-region = sys.argv[9]
-tags = sys.argv[10:]
-
-path = os.path.join("data","research_sources.json")
-with open(path, encoding="utf-8") as f:
-    data = json.load(f)
-
-entry = {
-  "title": title,
-  "author": author,
-  "year": year,
-  "type": stype,
-  "url": url,
-  "authority": authority,
-  "scope": scope,
-  "region": region,
-  "tags": tags,
-  "relevance_score": 0
-}
-
-for d in data["domains"]:
-    if d["domain"] == domain:
-        d["sources"].append(entry)
-        break
-else:
-    data["domains"].append({"domain": domain, "sources": [entry]})
-
-with open(path, "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-print("OK")
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,88 @@
+{
+  "title": "Chalkbrood: field identification & actions",
+  "slug": "chalkbrood_identification_actions",
+  "category": "Bee health & pests",
+  "categories": ["Diagnostics", "Operations"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Pathogens", "Diagnostics"],
+    "topics": ["chalkbrood", "brood-diseases", "hygiene", "queen"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "diagnostics"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["mummies", "ventilation", "comb policy", "queen change"],
+
+  "At-a-Glance": "Chalkbrood leaves unmistakable ‘mummies’—white or grey/black chalky larvae in cells or on the floor. It flares in cool, damp conditions, weak colonies and draughty boxes. The good news: it’s usually manageable with husbandry. Improve ventilation, reduce moisture, strengthen colonies (unite if needed), and rotate out tired comb. Persistent cases sometimes respond to a queen change. Treat it as a signal to tidy the environment and colony strength; most hives recover as the season warms and conditions improve.",
+  
+  "Why it Matters": "Chalkbrood isn’t as dramatic as AFB/EFB, but it steals momentum just when colonies should be building. Patches of dead brood mean fewer workers, less foraging, and a queen that can look unfairly blamed. Reaching for ‘cures’ misses the point: this is a disease that thrives on stress and damp. Small environmental changes—solid roofs, dry floors, sound ventilation, better site aspect—often turn it around. A comb replacement policy reduces background spore load. If a colony keeps sulking despite good conditions, consider genetics; a fresh queen from resilient stock can make the difference. The aim: return the colony to a state where chalkbrood can’t get traction.",
+  
+  "Step-by-Step": [
+    "Confirm ID: chalky ‘mummies’ in cells/on floor; rule out EFB/AFB.",
+    "Improve ventilation; fix leaks; reduce draughts.",
+    "Strengthen/unite weak colonies to maintain brood warmth.",
+    "Rotate out old comb; maintain tidy kit and spacing.",
+    "Monitor; requeen if cases persist despite good conditions."
+  ],
+
+  "Context & Narrative": "The first time you see chalkbrood, it looks worse than it is. You’ll tip a frame and spot a neat, sad row of chalky larvae—white turning grey/black—where healthy pupae should be. Panic fades when you remember it loves cold, damp and weakness. Many cases follow a chilly spring with leaky roofs, the wrong stand, or a box opened too often in marginal weather. The fix is mostly carpentry and common sense: dry, draft-free boxes, enough bees to warm the brood, and frames that aren’t holding a decade of history. Keep an eye on pattern—if the queen is laying well and brood is kept warm, the ‘mummies’ usually fade as the season improves. If they don’t, give the colony a fresh start genetically: a new queen often shifts behaviour and hygienic traits in your favour. Document changes and progress; you’ll learn which yards and kit combinations quietly breed chalkbrood—and how to starve it of chances.",
+  
+  "Evidence Highlights": [
+    "Cool, damp, weak-colony conditions correlate with outbreaks.",
+    "Ventilation, dryness and strong populations reduce incidence.",
+    "Comb rotation lowers background pathogen load.",
+    "Requeening can improve hygiene traits in persistent cases."
+  ],
+
+  "Data Tables": {
+    "hygiene_checklist": [
+      {"item": "Roof watertight", "status": "", "notes": ""},
+      {"item": "Floor dry/clean", "status": "", "notes": ""},
+      {"item": "Ventilation set", "status": "", "notes": ""},
+      {"item": "Comb age rotated", "status": "", "notes": ""}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Confusing chalkbrood with notifiable diseases and overreacting.",
+    "Over-inspecting in cold spells; chilling brood further.",
+    "Ignoring persistent damp and old comb."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Mark frames by year; rotate out the oldest first without sentimentality."}
+  ],
+
+  "FAQs": [
+    {"q": "Treatments?", "a": "Focus on husbandry; no silver-bullet medication is recommended for hobbyists."},
+    {"q": "Will it clear by itself?", "a": "Often improves with warmth and strength; fix environment first."}
+  ],
+
+  "Seasonality & Climate": "Common after cold, wet springs. Improve site aspects and hive dryness; monitor as temperatures rise.",
+  
+  "Suggested Figures": [
+    {"alt": "Chalkbrood mummies", "caption": "What to look for on frames and floors."}
+  ],
+
+  "Glossary": [
+    {"term": "Mummies", "def": "Desiccated larvae from chalkbrood infection—white to grey/black."}
+  ],
+
+  "Cross-links": [
+    "apiary_biosecurity_basics",
+    "comb_replacement_policy",
+    "ventilation_insulation_tuning"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – brood disease leaflets", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "USDA Handbook 690 – Diagnosis of Honey Bee Diseases", "url": "https://agresearch.montana.edu/knox/Downloads/HoneyBeeDiseasesUSDABook.pdf"},
+    {"name": "Apidologie – brood disease reviews", "url": "https://link.springer.com/journal/13592"}
+  ],
+
+  "Scrape-Guidance": "Extract characteristic signs, environmental risk factors, and husbandry fixes from official leaflets and manuals; avoid non-authoritative ‘home remedies’."
+}

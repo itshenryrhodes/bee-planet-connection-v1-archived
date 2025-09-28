@@ -1,0 +1,81 @@
+{
+  "title": "Bee-safe water systems: designs bees actually use",
+  "slug": "apiary_water_systems",
+  "category": "Operations",
+  "categories": ["Seasonal management", "Community & inclusion"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Setup"],
+    "topics": ["water", "hydration", "apiary-design", "neighbour-relations"],
+    "audience": ["beginner", "intermediate", "club-officer", "community-gardener"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth"]
+  },
+  "tags": ["floaters", "wicks", "salts", "training", "maintenance"],
+
+  "At-a-Glance": "Water keeps brood food flowing, cools hives by evaporation, and prevents nuisance at neighbours’ pools and AC units. Provide a constant, shallow, sun-warmed source with safe landing (cork/pebble floaters, rope wicks) and light mineral content so bees prefer it. Place it before bees arrive and keep it topped up and algae-managed. Shield from wind, refresh often in heat, and site it closer than competing sources. A good system is quiet to run: clean container, shaded corner, rough surfaces, and a twice-weekly check in hot spells.",
+  
+  "Why it Matters": "Dehydrated colonies stall brood feeding and overheat under summer loads. In towns, missing water is the #1 cause of complaints—bees discover the neighbour’s pond and won’t forget. A predictable, bee-friendly design trains foragers where you want them and reduces risk on hot days when water demand spikes. The details matter: slick plastic bowls drown bees; deep containers chill water they ignore; pure RO water is unattractive compared to faintly mineralised alternatives. By adding texture and micro-landings, you cut drownings; by adding a pinch of sea salt or a slate shard, you increase appeal; by placing early, you set the habit. Clubs can standardise a simple build so new members avoid the ‘bucket of disappointments’. The result is calmer colonies, happier neighbours and fewer emergency rescues during heatwaves.",
+  
+  "Step-by-Step": [
+    "Select a shallow, rough-sided container (trug/planter saucer).",
+    "Add pebbles/cork rafts and cotton/rope wicks for landings.",
+    "Place upwind/near apiary, dappled shade, sun-warmed.",
+    "Charge with clean water + tiny pinch of sea salt or slate piece.",
+    "Top up and scrub algae; refresh 2–3×/week in heat."
+  ],
+
+  "Context & Narrative": "Water duty is invisible when done right. Set the station before bees fly, nearer than any tempting gutters or ponds. A black tray warms quickly in spring; pebbles break surface tension so bees grip; a rope wick creates a running stream feel they love. One keeper’s trick: seat a chunk of slate in the tray—the minerals and warm surface are a strong draw vs sterile bowls. Place the setup where you pass daily so topping up is friction-free; if it lives ‘behind the shed’, it will run dry on the only hot weekend you’re away. \n\nTraining beats chasing. If bees have imprinted on the neighbour’s koi pond, you can still lure them back—move your station progressively closer to the hive and dose it slightly more ‘interesting’ (warm, faintly salty) than the competition for a week, then taper. Hygiene matters: scrub slime, change water often, and keep rafts plentiful so tired foragers don’t drown at day’s end. In droughts, double up: one station per 2–3 colonies keeps crowding down. Simple, tidy water is one of those quiet systems that makes you look like a pro and keeps spring brood patterns smooth when heat suddenly arrives.",
+  
+  "Evidence Highlights": [
+    "Bees seek warm, mineral-bearing water sources over cold, pure water.",
+    "Textured landings reduce drowning; shallow designs increase uptake.",
+    "Early placement ‘trains’ foragers and reduces nuisance visits."
+  ],
+
+  "Data Tables": {
+    "maintenance_log_headers": ["Date", "Top-up (L)", "Cleaned (Y/N)", "Temp (°C)", "Bee activity (Low/Med/High)", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Deep, smooth bowls → drownings.",
+    "Starting late; bees already prefer a neighbour source.",
+    "Letting stations run dry during heatwaves."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Add a slow-drip from a pierced bottle into a wick—fresh water without daily visits."}
+  ],
+
+  "FAQs": [
+    {"q": "Sugar in water?", "a": "No—use plain water; a tiny mineral cue is plenty."},
+    {"q": "How far from hives?", "a": "Close enough to ‘win’ vs other sources—often 3–10 m, upwind."}
+  ],
+
+  "Seasonality & Climate": "Demand spikes in hot, dry spells. In cold springs, choose dark containers to warm water.",
+  
+  "Suggested Figures": [
+    {"alt": "Water station diagram", "caption": "Shallow tray with pebbles, cork rafts and rope wick placement."}
+  ],
+
+  "Glossary": [
+    {"term": "Training (water)", "def": "Encouraging foragers to prefer a water source by early/consistent placement."}
+  ],
+
+  "Cross-links": [
+    "apiary_setup_site_selection",
+    "ventilation_insulation_tuning",
+    "urban_stakeholder_neighbour_relations"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – good practice notes", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Royal Botanic Gardens guidance (habitats)", "url": "https://www.kew.org/"}
+  ],
+
+  "Scrape-Guidance": "Extract water provision principles, placement tips and neighbour-friendly practices from official guidance; avoid anecdotal additives beyond light minerals."
+}

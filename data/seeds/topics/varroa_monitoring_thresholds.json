@@ -1,0 +1,92 @@
+{
+  "title": "Varroa monitoring thresholds & treatment windows",
+  "slug": "varroa_monitoring_thresholds",
+  "category": "Bee health & pests",
+  "categories": ["Operations", "Research & diagnostics"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Diagnostics", "Management"],
+    "topics": ["varroa", "thresholds", "mite-counts", "treatment-windows"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "reference", "diagnostics"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth", "overwintering"]
+  },
+  "tags": ["sugar roll", "alcohol wash", "oxalic acid", "thymol", "apiary-wide treatment", "follow-up counts"],
+
+  "At-a-Glance": "Varroa decisions come from data, not vibes. Take a consistent sample (≈300 bees), log your percentage infestation and brood status, compare against seasonal thresholds, and plan a treatment window that protects winter bees. Match products to temperature and brood state, rotate actives, and treat the whole apiary together to avoid reinfestation. Finish with a follow-up count so you know it worked. Do this every 2–3 weeks in season and you’ll move from firefighting to calm, timely interventions that keep virus pressure down, colonies stronger, and your winter cluster healthy and ready for spring build-up.",
+  
+  "Why it Matters": "Varroa is a force multiplier for trouble. Even modest mite loads elevate virus pressure and quietly erode colony resilience, so ‘looks fine to me’ can turn into light boxes, patchy brood and late-season disappointments. Regular monitoring turns guesswork into trendlines, letting you time treatments for maximum effect—typically late summer into early autumn to protect the bees that will carry the colony through winter. Choosing products that suit actual conditions (temperature and brood state) prevents wasted effort and chemical misuse, while rotating actives reduces resistance risk. Treating the whole apiary avoids the classic ‘mite merry-go-round’ where one untreated colony reinfests the rest. A quick follow-up count confirms you’ve genuinely shifted the dial, not just felt busy. The payoff is tangible: steadier winters, livelier spring build-up, fewer emergency feeds, and a calmer beekeeper. In short, good measurement buys you options; good timing preserves them.",
+  
+  "Step-by-Step": [
+    "Choose a method: sugar roll or alcohol wash on ≥300 bees.",
+    "Record % infestation, brood state, date, weather; repeat every 2–3 weeks.",
+    "Compare to regional thresholds; select the next treatment window.",
+    "Pick a product matched to temperature and brood; rotate actives.",
+    "Treat the whole apiary; re-check efficacy 2–3 weeks later."
+  ],
+
+  "Context & Narrative": "If beekeeping had a dashboard, Varroa would be the warning light you can’t ignore. The mites themselves are obvious villains, but the real drama is what they enable: viruses that nibble away at a strong-looking colony until it’s suddenly not. The fix isn’t complicated; it’s rhythmic. You sample, you write things down, you compare numbers to sensible thresholds, and you act at the right time for your climate. In the UK, that often means a firm late-summer knock-back followed by an oxalic ‘mop-up’ when brood is minimal. In milder spots, brood never quite stops, so you lean on tools that work with brood present and adjust timing accordingly. \n\nThe secret is consistency. Use the same jar, the same scoop, the same spot in the brood nest, and you make your readings comparable month to month. Treating one or two hives in isolation rarely ends well; mites commute. An apiary-wide approach prevents the ‘free-rider’ colony from putting everyone back to square one. The follow-up count is your truth serum—if numbers barely budged, you can fix the plan while there’s still season left. \n\n‘Good’ looks boring in the best way: tidy records, predictable checks, clean decisions. You won’t always get perfect weather or textbook brood breaks, but you can be the beekeeper who knows what the numbers mean and acts before trouble becomes obvious. That steadiness shows up later as heavier boxes, kinder spring build-ups, and fewer heart-sink moments when you crack the crownboard and see what the winter really cost.",
+  
+  "Evidence Highlights": [
+    "Sampling ≈300 bees from the brood nest gives stable, comparable mite percentages.",
+    "Late-summer reductions protect the cohort that overwinters.",
+    "Product choice must fit temperature and brood state to work as labelled.",
+    "Apiary-wide treatment reduces reinfestation risk.",
+    "Follow-up counts confirm real-world efficacy and guide next steps."
+  ],
+
+  "Data Tables": {
+    "log_headers": [
+      "Date", "Colony ID", "Sample size (≈300)", "Mites per 300 bees (%)", "Brood present (Y/N)", "Treatment & dose", "Follow-up result"
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Undersampling fewer than 300 bees (underestimates mites).",
+    "Relying only on natural mite drop for decisions.",
+    "Treating outside product temperature windows.",
+    "Skipping apiary-wide treatments and enabling reinfestation."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Standardise your jar and scoop so ‘300 bees’ becomes muscle memory."},
+    {"type": "Checklist", "text": "Sample · Record · Compare · Treat apiary-wide · Verify"}
+  ],
+
+  "FAQs": [
+    {"q": "Sugar or alcohol?", "a": "Pick one and stick with it. Consistency beats ideology for comparable trends."},
+    {"q": "How often should I test?", "a": "Every 2–3 weeks in season, and post-treatment for efficacy."},
+    {"q": "Do I really need to treat all colonies?", "a": "Yes—mites move. Partial treatment invites reinfestation."}
+  ],
+
+  "Seasonality & Climate": "Plan a late-summer knock-back ahead of winter bee rearing; use brood-break windows for oxalic where climate allows. In milder areas, adapt products and timing to persistent brood.",
+  
+  "Suggested Figures": [
+    {"alt": "Varroa sampling and decision flow", "caption": "From sample to threshold to treatment window—at a glance."}
+  ],
+  
+  "Glossary": [
+    {"term": "Brood break", "def": "A period with little/no brood, improving efficacy of certain treatments."},
+    {"term": "Follow-up count", "def": "A post-treatment sample to confirm efficacy."}
+  ],
+  
+  "Cross-links": [
+    "oxalic_acid_application",
+    "thymol_treatment_guide",
+    "virus_load_basics",
+    "overwintering_preparation_uk",
+    "apiary_biosecurity_basics"
+  ],
+
+  "Sources": [
+    {"name": "UK National Bee Unit (BeeBase) – Varroa resources", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "USDA ARS – Honey Bee Research Laboratory", "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/"},
+    {"name": "COLOSS BEEBOOK – standard methods (mite counts)", "url": "https://www.tandfonline.com/toc/tjar20/current"}
+  ],
+
+  "Scrape-Guidance": "Extract threshold tables, seasonal timing notes, temperature constraints, and apiary-wide treatment guidance from the listed sources only. Prioritise official leaflets and standard methods."
+}

@@ -1,0 +1,82 @@
+{
+  "title": "Scale hives & sensors 101: what they tell you—and what they don't",
+  "slug": "scale_hives_sensors",
+  "category": "Research & diagnostics",
+  "categories": ["Operations"],
+  "taxonomy": {
+    "pillar": "Research & diagnostics",
+    "subpillars": ["Instrumentation"],
+    "topics": ["scale-hives", "weight-curves", "temp-humidity", "apiary-telemetry"],
+    "audience": ["intermediate", "club-officer", "beginner"],
+    "intent": ["reference", "how-to"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["setup", "growth", "overwintering"]
+  },
+  "tags": ["flow timing", "dearth detection", "swarm signatures", "data hygiene"],
+
+  "At-a-Glance": "Scales and sensors turn hives into graphs: weight shows flows, dearths and swarms; temperature/humidity hint at brood and ventilation; entrance counters show activity patterns. Used well, they sharpen timing for supering, feeding and treatments. Used blindly, they mislead: rain loads, bearding, wind and human nudges all masquerade as ‘signals’. Start simple—one scale hive per yard, clean power and shelter, a notebook of manual events—and learn your site’s curve language before you try to run an apiary by phone.",
+  
+  "Why it Matters": "Telemetry won’t replace inspections, but it will point them. Daily weight deltas reveal when a flow really starts (and ends), how much a storm robbed you, or when a swarm exited while you were at work. Temperature traces flag broodless windows for oxalic timing or ventilation issues that cause condensation. The trap is confirmation bias: seeing what you want in noisy lines. A disciplined setup—sensor placement, time sync, annotation of manual events, and sanity checks with real inspections—keeps you honest. Clubs with a shared dashboard can teach season rhythm powerfully: one graph, many yards, same weather. The reward: fewer missed windows, calmer logistics, and decisions grounded in both sight and numbers.",
+  
+  "Step-by-Step": [
+    "Pick one ‘index’ colony per yard for a scale; place on level, sheltered ground.",
+    "Add temp/humidity at brood height (shielded); time-sync devices.",
+    "Annotate manual events (super added, inspection, rain) in the app/log.",
+    "Learn typical signatures (flow ramps, swarms, nightly loss, rain).",
+    "Use trends to time supering, feeding and treatments—then verify in person."
+  ],
+
+  "Context & Narrative": "Weight curves have accents. In your yard, a true flow might show as steady +1–3 kg/day ramps; a short nectar spit as a jagged sawtooth; a swarm as a sudden drop followed by a flatline mood. Rain adds kilos that vanish in sun; a beekeeper adding a super produces a clear step. Knowing which is which comes from annotation and cross-checks, not magic. Temperature inside the brood nest is more stoic—stable around mid-30s °C when brood is strong, wobblier when brood eases or ventilation misbehaves. Entrance counters spike at first light and track weather more than ‘strength’ in isolation; treat them as texture, not gospel. \n\nStart with one good setup, not five cheap ones. Protect cables from mice, shield sensors from direct sun, and write down changes the moment you make them. Compare graphs with your inspection notes: did the weight ramp coincide with the bramble you saw blooming? Did the flatline follow your split? Over a season, you’ll learn your yard’s patterns and stop chasing phantoms. Sensors are there to reduce wasted trips and catch timing windows—not to replace your nose, eyes and hands at the hive.",
+  
+  "Evidence Highlights": [
+    "Weight telemetry correlates with forage availability and swarming events.",
+    "Internal temperature stability indicates brood presence and ventilation health.",
+    "Annotations/manual event logs are essential to interpret curves correctly.",
+    "Single well-instrumented hive can represent yard-level timing."
+  ],
+
+  "Data Tables": {
+    "annotation_log_headers": ["DateTime", "Event", "Delta (kg/°C)", "Note"]
+  },
+
+  "Common Pitfalls": [
+    "Interpreting rain load as nectar gain.",
+    "No event annotations—graphs become riddles.",
+    "Assuming one hive’s magnitude equals all hives’ performance."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Write ‘S+2kg’ when you add a super; you’ll spot the step instantly later."}
+  ],
+
+  "FAQs": [
+    {"q": "How many scale hives?", "a": "One good index hive per yard beats many flaky ones."},
+    {"q": "Do sensors replace inspections?", "a": "No—use them to aim inspections and plan timing."}
+  ],
+
+  "Seasonality & Climate": "Storms, heatwaves and dearths imprint clearly on curves; winter thermals reveal brood lulls for treatment timing.",
+  
+  "Suggested Figures": [
+    {"alt": "Weight curve cheat sheet", "caption": "Ramps, steps, drops and what they usually mean."}
+  ],
+
+  "Glossary": [
+    {"term": "Index colony", "def": "A representative hive you monitor to infer yard timing."}
+  ],
+
+  "Cross-links": [
+    "forage_calendars_uk_regional",
+    "ipm_plan_template",
+    "oxalic_acid_application"
+  ],
+
+  "Sources": [
+    {"name": "Apidologie – telemetry & colony dynamics papers", "url": "https://link.springer.com/journal/13592"},
+    {"name": "COLOSS – colony assessment context", "url": "https://www.tandfonline.com/toc/tjar20/current"}
+  ],
+
+  "Scrape-Guidance": "Lift typical weight/temperature signatures and annotation best practice from peer-reviewed summaries and method guides; avoid vendor-specific claims."
+}

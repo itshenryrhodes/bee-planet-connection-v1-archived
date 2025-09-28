@@ -1,0 +1,87 @@
+{
+  "title": "Small hive beetle (awareness UK/EU): ID, quarantine & reporting",
+  "slug": "small_hive_beetle_awareness",
+  "category": "Biosecurity",
+  "categories": ["Bee health & pests", "Operations"],
+  "taxonomy": {
+    "pillar": "Biosecurity",
+    "subpillars": ["Invasive species"],
+    "topics": ["small-hive-beetle", "Aethina tumida", "reporting", "quarantine"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["diagnostics", "policy", "how-to"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["ID cues", "trap caution", "movement controls", "honey spoilage"],
+
+  "At-a-Glance": "Small hive beetle (SHB) adults are oval, dark, scuttling beetles; larvae cause the real trouble—sliming comb and fermenting honey. In the UK/EU it’s a notifiable invasive: ID, quarantine, and report—don’t DIY ‘eradicate’. Watch for adults running from light on frame surfaces, clustered in corners, or hiding under top bars; check for larvae trails and honey that looks frothy or smells off. Movement controls apply: don’t shift bees or kit off-site. Accurate photos and a calm, documented response help authorities act fast.",
+  
+  "Why it Matters": "SHB can turn comb into a foamy mess and ruin honey stores quickly, especially in warm conditions or weak colonies. The species spreads with moved bees and equipment, so one enthusiastic but misinformed beekeeper can seed a regional problem. Awareness isn’t panic—it’s a practiced flow: inspect, document, isolate, and report through official channels. Indiscriminate trapping or chemical improvisation risks non-target impacts and legal trouble. Good yard hygiene, strong colonies and sensible storage habits reduce attractiveness and resilience to infestation. Clubs benefit from drills and ID briefings so a first sighting gets handled by the book, not social media. The result is faster containment and less collateral damage if SHB ever appears in your area.",
+  
+  "Step-by-Step": [
+    "During inspections, check frame top bars and corners for adults.",
+    "If suspicious: photograph, note location, close hive calmly.",
+    "Isolate the apiary—no movement of bees/kit/honey.",
+    "Report through national channels; follow instructions precisely.",
+    "Review storage hygiene; keep supers bee/SHB-tight."
+  ],
+
+  "Context & Narrative": "SHB stories move faster than facts. Stay grounded: you are looking for a small, dark, scuttling beetle that avoids light and a larval stage that leaves greasy trails and foaming honey. If you think you’ve found it, you don’t need heroics; you need documentation and a phone call. National teams know the playbook and will bring traps, lures and procedures that are approved. Until then, lock down movements. In parallel, run your own prevention basics: strong colonies, tidy apiaries, supers stored bee-tight in clean rooms, and no unattended comb at the apiary edge. These habits pay off against other pests too. Practising the reporting flow once at a club night—photos with scale, location notes, calm comms—means you’ll do it right when it counts.",
+  
+  "Evidence Highlights": [
+    "Adults hide from light; larvae slime comb causing fermentation.",
+    "Early reporting and movement standstill are critical to containment.",
+    "Strong colonies and clean storage reduce vulnerability.",
+    "DIY chemical use risks legal and non-target consequences."
+  ],
+
+  "Data Tables": {
+    "id_markers": [
+      {"feature": "Adult shape/size", "marker": "Oval, ~5–7 mm, dark, scuttling"},
+      {"feature": "Larval signs", "marker": "Tunnels in comb, frothy/fermenting honey"},
+      {"feature": "Behaviour", "marker": "Hide under bars/corners; run from light"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Posting ‘maybe SHB’ widely before reporting.",
+    "Moving bees/kit to ‘protect them’—spreads risk.",
+    "Setting general traps that catch non-targets."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Include a ruler/coin in photos for scale and faster triage."}
+  ],
+
+  "FAQs": [
+    {"q": "Should I start trapping?", "a": "Follow official guidance; indiscriminate trapping harms non-targets."},
+    {"q": "Can I move colonies away?", "a": "No—movement controls apply until authorities advise."}
+  ],
+
+  "Seasonality & Climate": "Risk rises with warmth; storage areas must be bee/SHB-tight in summer.",
+  
+  "Suggested Figures": [
+    {"alt": "SHB adult & larva ID grid", "caption": "Key visual markers for fast checks."}
+  ],
+
+  "Glossary": [
+    {"term": "Slime-out", "def": "Comb/honey collapse caused by SHB larval feeding and fermentation."}
+  ],
+
+  "Cross-links": [
+    "apiary_biosecurity_basics",
+    "wax_moth_storage_management",
+    "movement_rules_uk"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – SHB awareness & policy", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Bee Aware Australia – SHB profiles & management context", "url": "https://beeaware.org.au/"},
+    {"name": "GOV.UK – notifiable pests & reporting routes", "url": "https://www.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Lift official ID markers, reporting instructions, and movement/quarantine rules; include storage hygiene guidance from authoritative programmes."
+}

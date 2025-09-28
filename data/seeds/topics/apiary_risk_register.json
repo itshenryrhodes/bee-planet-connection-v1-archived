@@ -1,0 +1,82 @@
+{
+  "title": "Apiary risk register & SOPs: make hazards boring",
+  "slug": "apiary_risk_register",
+  "category": "Operations",
+  "categories": ["Risk & compliance"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Safety"],
+    "topics": ["risk-register", "SOPs", "hazards", "mitigations", "review-cadence"],
+    "audience": ["club-officer", "intermediate", "beginner", "landowner"],
+    "intent": ["policy", "how-to"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["setup", "growth", "overwintering"]
+  },
+  "tags": ["templates", "landowner comms", "insurance", "signage"],
+
+  "At-a-Glance": "A risk register lists hazards, who they affect, and what you do about them. Pair each with an SOP (standard operating procedure) that anyone can follow—lighting smokers, moving hives, lifting, public days, stings, pesticides, weather events. Review quarterly and after incidents. Keep it one page per topic, plain English, with named owners and emergency contacts. Share the register with landowners and insurers; put key SOPs in the apiary box. Boring paperwork = fewer surprises and faster, calmer responses.",
+  
+  "Why it Matters": "Apiaries sit at the crossroads of livestock, tools, weather and the public. Without a written register, risks live in one person’s head and training drifts. A short, living document aligns helpers and reassures landowners: you’ve identified hazards (stings, slips, vehicles, smoke, chemicals), set mitigations (PPE, signage, training, timing), and named who checks what and when. SOPs reduce variance—every smoker lights the same way, every transport run uses the same straps, every public open day looks professional. Incidents still happen; the register turns them into updates, not blame—root cause, action, owner, review date. Over time, you’ll see patterns and fix root issues. It’s not bureaucracy; it’s operational kindness.",
+  
+  "Step-by-Step": [
+    "List hazards → who’s at risk → controls → residual risk.",
+    "Write 1-page SOPs for high-risk tasks; add photos/diagrams.",
+    "Assign owners and review dates; put contacts on page 1.",
+    "Brief team/club; store copies in apiary box and cloud.",
+    "After incidents/near-misses: update register and SOPs."
+  ],
+
+  "Context & Narrative": "Start with a walk-through. Where could someone slip, get stung badly, lift badly, or light something they shouldn’t? Capture each hazard in a table with practical mitigations you’ll actually do: non-slip mats by the stand, PPE checks before opening, a smoker tray and water, traffic cones for vehicle zones, and a stop-work rule in lightning. Now tie the list to SOPs. A smoker SOP includes fuel types, lighting steps, safe placement, and how to extinguish; a lifting SOP covers team lifts and when to split loads; a chemical SOP covers labels, PPE and storage. \n\nKeep it human. Photos of ‘how we set up a safe yard’ help new volunteers more than paragraphs. Put laminated quick cards in the apiary box and keep the living versions online for edits. Review dates and owners stop documents becoming fossils. After a near-miss (hot smoker on dry grass, angry colony near path), add a line to the register and tweak the SOP—visible learning builds trust with landowners and members. Over a season the register becomes the quiet backbone of your operation: everyone knows the plan, and visitors see a tidy, thoughtful yard.",
+  
+  "Evidence Highlights": [
+    "Written controls + ownership reduce incident rates and response time.",
+    "Standardised SOPs cut variability in high-risk tasks.",
+    "Post-incident updates improve systems and insurer confidence."
+  ],
+
+  "Data Tables": {
+    "risk_register_headers": ["Hazard", "Who at risk", "Controls", "Owner", "Residual risk", "Review date"],
+    "sop_list_examples": ["Smoker use", "Transport & strapping", "Public open day", "Stings/anaphylaxis", "Chemical handling"]
+  },
+
+  "Common Pitfalls": [
+    "Overlong documents no one reads.",
+    "No owners/reviews → stale controls.",
+    "SOPs without on-site quick cards."
+  ],
+
+  "Callouts": [
+    {"type": "Checklist", "text": "Identify · Control · Assign · Brief · Review"}
+  ],
+
+  "FAQs": [
+    {"q": "Do we need formal risk scoring?", "a": "Use simple Low/Med/High if it keeps you moving; consistency beats complexity."},
+    {"q": "Share with landowners?", "a": "Yes—build trust and meet insurance expectations."}
+  ],
+
+  "Seasonality & Climate": "Rain → slips; heat → sting/heat stress; winter → access hazards. Tune SOPs seasonally.",
+  
+  "Suggested Figures": [
+    {"alt": "Risk register example", "caption": "One filled row with hazard, controls and owner."}
+  ],
+
+  "Glossary": [
+    {"term": "Residual risk", "def": "Risk remaining after controls are in place."}
+  ],
+
+  "Cross-links": [
+    "beekeeper_safety_basics",
+    "transport_strapping_best_practice",
+    "incident_reporting_template"
+  ],
+
+  "Sources": [
+    {"name": "H&S executive guidance (small orgs)", "url": "https://www.hse.gov.uk/"},
+    {"name": "NBU/association templates", "url": "https://www.nationalbeeunit.com/resources/"}
+  ],
+
+  "Scrape-Guidance": "Pull risk register patterns and SOP elements from official H&S guidance and association templates; keep to one-page, action-first formats."
+}

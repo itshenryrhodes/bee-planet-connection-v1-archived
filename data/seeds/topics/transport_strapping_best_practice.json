@@ -1,0 +1,87 @@
+{
+  "title": "Transport & strapping: secure moves & calm arrivals",
+  "slug": "transport_strapping_best_practice",
+  "category": "Operations",
+  "categories": ["Risk & compliance"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Logistics"],
+    "topics": ["transport", "strapping", "ventilation", "move-timing", "PPE"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["setup", "growth"]
+  },
+  "tags": ["ratchet straps", "mesh screens", "move at dusk/dawn", "load plan"],
+
+  "At-a-Glance": "Moves are easy when boring. Close up with breathable screens, strap boxes into single units (floor–brood–supers–roof) with two ratchets, and load onto a level, non-slip deck. Move at dusk/dawn in cool weather, park nose-to-wind, and avoid stops in hot sun. On arrival, set stands level, unstrap in reverse order, open entrances gradually, and stand clear. A printed checklist, spare straps and mesh, and calm comms turn a potential circus into a tidy, safe routine for bees and humans.",
+  
+  "Why it Matters": "A loose strap or blocked ventilation can undo months of work in one mile. Overheating, comb collapse, or a box sliding on a corner turn a simple job into a painful story. Best practice is cheap: quality ratchets, proper mesh screens, a defined load plan and a timing window that favours cool air. Document roles if you have helpers; nothing saves time like everyone knowing who lifts, who straps and who spots. Insurers and landowners like professionalism; neighbours like quiet. The payoff is predictable: boxes arrive square, bees stay calm, and you sleep instead of replaying a strap failure at 3 a.m.",
+  
+  "Step-by-Step": [
+    "Set move time (dusk/dawn); brief roles and route.",
+    "Fit entrance/roof mesh; secure floors; tape gaps.",
+    "Strap each stack (two ratchets: around & over) into a single block.",
+    "Load level; chock and re-check tension after 5–10 minutes of driving.",
+    "At site: stands level → unload → place → unstrap → open entrances slowly."
+  ],
+
+  "Context & Narrative": "Treat transport like aviation: checklists and redundancy. Before sunset you lay out mesh screens, straps, tape and a torch. Entrances close to breathable mesh, roofs get a strap or mesh to keep bees inside without baking. Two straps per stack are the norm—one banding the footprint, one over the top tying roof to floor. The stack becomes a single inert block that can’t slide, even on an emergency brake. On the truck or trailer, the deck is clear, grippy and level; stacks sit square to direction of travel, and you chock the first row so it can’t walk. Five minutes into the drive you pull over, feel straps, and retension; textile stretches when it warms. \n\nAt the destination, you reverse the procedure quietly. Stands go out first and are checked for level—leaning hives are wavy comb tomorrow. Unload, place, then unstrap only when the stack is on its spot. Open entrances a crack, watch the first fliers, and widen when the mood is calm. Log the move—time, temp, helpers, route—so next time you adjust with more than memory. Moves stop being a white-knuckle event and become part of the craft: quiet, methodical, and almost disappointingly uneventful.",
+  
+  "Evidence Highlights": [
+    "Ventilation prevents overheating and comb slump during transit.",
+    "Redundant strapping (band + over-the-top) resists sliding/peeling forces.",
+    "Cool timings reduce stress and beard/overheat risk."
+  ],
+
+  "Data Tables": {
+    "move_checklist": [
+      {"item": "Mesh screens fitted", "status": ""},
+      {"item": "Two ratchets per stack", "status": ""},
+      {"item": "Deck level & grippy", "status": ""},
+      {"item": "Chocks/blocks ready", "status": ""},
+      {"item": "Route/ETA briefed", "status": ""}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "One strap only; boxes peel in a sudden stop.",
+    "Closed solid entrances in heat; colonies overheat.",
+    "No retension stop; straps slacken en route."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Wrap strap tails and tape them—flapping tails unravel ratchets over miles."}
+  ],
+
+  "FAQs": [
+    {"q": "Net vs individual straps?", "a": "Strap each stack into a block, then use nets as a secondary restraint."},
+    {"q": "Move in rain?", "a": "Fine; avoid standing water in the deck and ensure mesh still breathes."}
+  ],
+
+  "Seasonality & Climate": "Summer moves need extra ventilation and quicker unload; winter moves focus on draft control.",
+  
+  "Suggested Figures": [
+    {"alt": "Strapping patterns", "caption": "Banding + over-the-top tie-down methods shown on a stack."}
+  ],
+
+  "Glossary": [
+    {"term": "Chock", "def": "A wedge/block to stop loads rolling or sliding during transport."}
+  ],
+
+  "Cross-links": [
+    "apiary_setup_site_selection",
+    "pollination_service_playbook",
+    "ventilation_insulation_tuning"
+  ],
+
+  "Sources": [
+    {"name": "National/State apiculture transport guidance", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Agricultural transport safety notes", "url": "https://www.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Compile ventilation, restraint and timing best-practice from authoritative beekeeping and agricultural transport guidance—avoid brand-specific hardware endorsements."
+}

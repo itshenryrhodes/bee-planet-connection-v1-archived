@@ -1,60 +1,52 @@
 #!/usr/bin/env python3
-import json, sys, os, textwrap
+import os, sys, pathlib, re, json
 
-if len(sys.argv) < 3:
-    print("usage: make_seed_outline.py <domain> <slug> [target_words]")
-    sys.exit(1)
+def slugify(t):
+    s = t.lower()
+    s = re.sub(r"[^a-z0-9\- ]+","",s)
+    s = re.sub(r"\s+","-",s).strip("-")
+    return s + ".html"
 
-domain = sys.argv[1]
-slug = sys.argv[2]
-target_words = int(sys.argv[3]) if len(sys.argv) > 3 else 3000
+def outline_for(title):
+    o = []
+    o.append('<section class="enriched-content" markdown="1">')
+    o.append(f"# {title}")
+    o.append("")
+    o.append("## Overview")
+    o.append("")
+    o.append("## Key Concepts")
+    o.append("")
+    o.append("## Practical Steps")
+    o.append("")
+    o.append("## Risks and Early Warning Signs")
+    o.append("")
+    o.append("## Tools and Materials")
+    o.append("")
+    o.append("## Case Studies")
+    o.append("")
+    o.append("## Further Reading & Sources")
+    o.append("")
+    o.append("</section>")
+    return "\n".join(o)
 
-with open(os.path.join("data","research_sources.json"), encoding="utf-8") as f:
-    reg = json.load(f)
+def main():
+    if len(sys.argv) < 2:
+        print("usage: make_seed_outline.py <title> [more titles...]")
+        sys.exit(1)
+    root = pathlib.Path(__file__).resolve().parents[2]
+    outdir = root/"content/enriched"
+    outdir.mkdir(parents=True, exist_ok=True)
+    created = 0
+    for title in sys.argv[1:]:
+        slug = slugify(title)
+        path = outdir/slug
+        if path.exists():
+            print("[SKIP] exists:", slug); continue
+        html = outline_for(title)
+        path.write_text(html, encoding="utf-8")
+        print("[OK] created:", slug)
+        created += 1
+    print(f"[OK] created {created} seed files in content/enriched")
 
-sources = []
-for d in reg["domains"]:
-    if d["domain"] == domain:
-        sources = d["sources"]
-        break
-
-lines = []
-lines.append('---')
-lines.append('title: ""')
-lines.append('description: ""')
-lines.append('category: ""')
-lines.append('canonical: "/wiki/{}.html"'.format(slug))
-lines.append('seed_domain: "{}"'.format(domain))
-lines.append('target_words: {}'.format(target_words))
-lines.append('---')
-lines.append('')
-lines.append('<section class="enriched-content" markdown="1">')
-lines.append('# Outline')
-lines.append('')
-lines.append('## Overview')
-lines.append('')
-lines.append('## Key Questions')
-lines.append('')
-lines.append('## Practical Steps')
-lines.append('')
-lines.append('## Risks and Trade-offs')
-lines.append('')
-lines.append('## Tools and Data')
-lines.append('')
-lines.append('## Regional Notes')
-lines.append('')
-lines.append('## Further Reading & Sources')
-for s in sources[:20]:
-    t = s.get("title","")
-    a = s.get("author","")
-    y = s.get("year","")
-    u = s.get("url","")
-    lines.append('- {} ({}) — {} {}'.format(t,y,a,('[{}]'.format(u)) if u else ''))
-lines.append('</section>')
-out = "\n".join(lines)
-
-os.makedirs("content/enriched", exist_ok=True)
-out_path = os.path.join("content","enriched","{}.html".format(slug))
-with open(out_path, "w", encoding="utf-8") as f:
-    f.write(out)
-print(out_path)
+if __name__ == "__main__":
+    main()

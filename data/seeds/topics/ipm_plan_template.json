@@ -1,0 +1,84 @@
+{
+  "title": "Integrated pest management (IPM) plan template (year-round)",
+  "slug": "ipm_plan_template",
+  "category": "Bee health & pests",
+  "categories": ["Operations", "Research & diagnostics"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["IPM"],
+    "topics": ["ipm", "templates", "monitoring", "rotation"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth", "overwintering"]
+  },
+  "tags": ["cadence", "thresholds", "apiary-wide", "records"],
+
+  "At-a-Glance": "An IPM plan is a calendar plus a checklist. You measure mites regularly, act only when thresholds say so, stack non-chemical tactics first (drone trapping, brood breaks, hygiene), and keep chemical tools rotated and label-correct. Everything is written down: cadence, thresholds, chosen products, and follow-up counts. Treat apiary-wide, not hive-by-hive, and review outcomes at season’s end. The point isn’t perfection; it’s predictability—fewer surprises, fewer chemicals, steadier winters.",
+  
+  "Why it Matters": "Apiaries without a plan drift into cycles of over- or under-treating. Over-treating burns time, money and bee goodwill; under-treating inflates virus load and winter losses. A written IPM turns ‘we’ll see’ into ‘we’ll do’. By committing to a sampling cadence (every 2–3 weeks in season), you catch trends early. By stacking tactics—spring drone trapping, planned brood break + oxalic, timely summer product as weather permits—you lower mite load while preserving options. Rotating modes of action and pulling strips on time slows resistance and residue problems. Clubs that adopt a shared template help beginners succeed faster and make data comparable across yards. The result is calmer bees, calmer beekeepers and—crucially—a habit of verifying outcomes so the plan improves each year rather than ossifying.",
+  
+  "Step-by-Step": [
+    "Set your sampling cadence and thresholds (~2–3 weeks in season).",
+    "Plan spring tactics (drone trapping; hygiene) and record dates.",
+    "Block a post-harvest window for thymol/formic (weather-dependent).",
+    "Schedule brood-break + oxalic when feasible.",
+    "Log treatments and follow-up counts; end-season review with actions."
+  ],
+
+  "Context & Narrative": "Good IPM feels like a metronome. You don’t debate whether to sample; the calendar tells you. You don’t argue with the weather; you pick the tool that fits it or delay and compensate with a brood break later. A template helps new beekeepers and clubs avoid analysis paralysis: one sheet with cadence boxes for the season, tick marks for sampling and treatments, and a place to paste numbers. Each winter, you sit down with those pages and ask simple questions: did the plan avoid August spikes? Did products actually work (what did the follow-ups say)? Where did we break our own rules? Then you adjust. \n\nThe difference in spring is visible. Colonies start with lower viral baggage and a beekeeper who knows what week the next check lands. That calm shows up in better timing for splits, steadier honey pulls and fewer emergency messages in club chats. IPM isn’t theory; it’s a rhythm you can teach, share and run at scale.",
+  
+  "Evidence Highlights": [
+    "Regular sampling produces earlier, better-timed interventions.",
+    "Stacking non-chemical tactics reduces chemical reliance.",
+    "Rotation and on-time strip removal slow resistance and residues.",
+    "Follow-up counts validate efficacy and inform next year."
+  ],
+
+  "Data Tables": {
+    "plan_template_headers": ["Week#", "Date", "Colony", "Mites/300 bees (%)", "Brood (Y/N)", "Action", "Follow-up %", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Skipping sampling when ‘busy’.",
+    "Treating by habit, not threshold.",
+    "No follow-up verification, so plans never improve."
+  ],
+
+  "Callouts": [
+    {"type": "Checklist", "text": "Sample · Decide · Act apiary-wide · Verify · Review"}
+  ],
+
+  "FAQs": [
+    {"q": "What threshold should I use?", "a": "Adopt regional guidance and stick to one system so data compares."},
+    {"q": "Hive-by-hive decisions?", "a": "Treat apiary-wide unless a clear exception exists; it reduces reinfestation."}
+  ],
+
+  "Seasonality & Climate": "Adapt timing to local flows and weather; keep cadence steady even in poor weeks to maintain trend data.",
+  
+  "Suggested Figures": [
+    {"alt": "IPM calendar", "caption": "A season on one page with sampling and action windows."}
+  ],
+
+  "Glossary": [
+    {"term": "Cadence", "def": "Planned frequency of sampling/actions through the season."}
+  ],
+
+  "Cross-links": [
+    "varroa_monitoring_thresholds",
+    "drone_brood_trapping",
+    "brood_break_methods",
+    "amitraz_and_synthetics_overview"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – IPM & seasonal advice", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "COLOSS BEEBOOK – monitoring & management methods", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "USDA ARS – integrated approaches research", "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/"}
+  ],
+
+  "Scrape-Guidance": "Lift sampling cadences, threshold framing, rotation guidance, and template fields from authoritative sources; avoid prescribing brand specifics."
+}

@@ -1,0 +1,104 @@
+{
+  "title": "AFB vs EFB: field identification & first response",
+  "slug": "afb_efb_field_identification",
+  "category": "Diagnostics",
+  "categories": ["Operations", "Bee health & pests"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Diagnostics", "Biosecurity"],
+    "topics": ["afb", "efb", "notifiable-disease", "field-id"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["diagnostics", "how-to", "policy"],
+    "regions": ["UK", "EU", "US"],
+    "jurisdictions": ["UK-England"],
+    "season": ["spring", "summer"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["rope test", "sunken cappings", "mosaic brood", "movement controls", "disinfection"],
+
+  "At-a-Glance": "AFB and EFB are the two brood diseases that make every beekeeper pause—and for good reason. AFB shows after capping (sunken, greasy cappings; ropey brown larval remains). EFB hits younger larvae before capping (twisted, melted look; patchy ‘mosaic’ brood). Your move is simple: stop movement, document clearly (photos labelled by hive/box/frame), and call your inspector. Don’t ferry suspect frames around or ‘just show a friend’. Follow instructions precisely, including possible destruction or disinfection. Calm, tidy process protects your bees, your club, and your reputation.",
+  
+  "Why it Matters": "With AFB/EFB, delay is expensive. Spores and bacteria hitchhike on comb, tools and bees, turning a single suspect colony into a yard-wide headache—and a legal one if you move material without permission. Clear, confident field ID isn’t about playing diagnostician; it’s about recognising credible red flags, pausing movement, and looping in the authority who can confirm the diagnosis and direct next steps. Good notes and labelled photos allow inspectors to triage fast and advise accurately. Proper disinfection (or destruction) saves future heartache by removing sources of reinfection that a cursory ‘wipe down’ would leave behind. And yes, false alarms happen—still valuable, because they refine your eye and strengthen your SOPs. The winners here are your bees, your neighbours’ bees, and the community that relies on beekeepers following the rules in the moments that matter.",
+  
+  "Step-by-Step": [
+    "Pause work; close calmly and isolate the apiary (no movement).",
+    "Check visual cues on suspect frames; photograph and label.",
+    "Do not remove samples unless advised; call the inspector.",
+    "Record hive ID, frame positions, symptoms, dates and actions.",
+    "Follow instructions (quarantine, destruction/disinfection, or treatment).",
+    "Log outcome and lessons; update yard biosecurity SOPs."
+  ],
+
+  "Context & Narrative": "You’re mid-inspection on a sunny Saturday when a frame stops you cold. The brood isn’t tidy biscuit brown; it’s patchy and wrong. Maybe there’s a whiff you don’t like. This is the crossroads. One path is panic—poking at cells, shuffling frames about, driving to a mentor’s place with the lot in a box. The other path is the professional one: pause movement, tidy your notes, take crisp, labelled photos, and call your inspector. European foulbrood (EFB) tends to take out larvae before capping, so you see twisted bodies and a melted or granular look, and the pattern goes ‘mosaic’ as different ages fail. American foulbrood (AFB) usually declares itself post-capping—sunken, greasy cappings, sometimes perforated, and that notorious ‘rope’ when you pull a matchstick through a cell (only if advised). \n\nOnline groups are useful for general learning but they are not your route for notifiable disease handling. Well-meant comments can nudge you into illegal or unwise moves—like transporting suspect comb or assuming a quick blowtorch pass equals disinfection. Authorities exist precisely for this scenario. They confirm the diagnosis and lay out next steps, up to and including destruction of colonies and sterilisation requirements for kit. That can feel harsh in the moment, but it’s how future you avoids a recurring problem and how your club avoids an outbreak that shuts yards across a city. \n\nTreat this like a drill you’ve rehearsed: see, record, report. Calm beats clever when the stakes are high. You’re not expected to be a lab; you’re expected to be methodical, legal, and swift. Do that and you’ll sleep better, your bees will be safer, and your local beekeepers will quietly appreciate that you handled a tough moment exactly right.",
+  
+  "Evidence Highlights": [
+    "AFB: sunken, greasy, sometimes perforated cappings; ropey brown larval mass on matchstick test.",
+    "EFB: twisted, melted, uneven larvae pre-capping; patchy ‘mosaic’ brood pattern.",
+    "Both: notifiable status; movement controls apply—no bees, honey or kit moved without permission.",
+    "Disinfection and comb destruction protocols vary by authority—follow inspector guidance.",
+    "Common look-alikes: sacbrood (watery), chalkbrood (mummies), chilled brood (uniform age band losses)."
+  ],
+
+  "Data Tables": {
+    "field_differentials": [
+      {"feature": "Cappings", "AFB": "Sunken, greasy, often perforated", "EFB": "Often uncapped/uneven as death occurs pre-capping"},
+      {"feature": "Larval appearance", "AFB": "Brown, gluey remains; rope >2 cm", "EFB": "Twisted/melted, yellowish; may smell sour"},
+      {"feature": "Age most affected", "AFB": "Post-capping (pupal stage)", "EFB": "Pre-capping (younger larvae)"},
+      {"feature": "Ropiness test", "AFB": "Characteristic positive ‘rope’", "EFB": "Usually negative or weak"},
+      {"feature": "Pattern", "AFB": "Scattered, sunken caps; pepperpot look", "EFB": "Patchy ‘mosaic’ pattern"},
+      {"feature": "Odour", "AFB": "Distinct foul smell (variable)", "EFB": "Sour smell (variable)"},
+      {"feature": "Legal status", "AFB": "Notifiable; strict controls, destruction common", "EFB": "Notifiable; controls; treatment/destruction per guidance"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Carrying suspect frames off-site to seek a second opinion.",
+    "Confusing sacbrood/chalkbrood for EFB and delaying the report.",
+    "Superficial tool cleaning—spores persist; use approved disinfection.",
+    "Posting photos online before notifying authorities."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Label photos with hive/box/frame before you shoot—inspectors can triage faster."},
+    {"type": "Watch out", "text": "One ‘clean’ hive can spread disease via shared tools—disinfect between colonies."},
+    {"type": "Checklist", "text": "Pause movement · Photograph · Label · Note cues · Call inspector · Follow instructions"}
+  ],
+
+  "FAQs": [
+    {"q": "Should I rope-test every suspect cell?", "a": "Only if advised; document signs and call your inspector."},
+    {"q": "Can freezing save comb?", "a": "Follow official guidance—AFB spores are hardy; destruction is often required."},
+    {"q": "False alarm?", "a": "Great—your notes still improve SOPs and sharpen your eye."},
+    {"q": "Move the colony to monitor elsewhere?", "a": "No. Movement risks spread and may be illegal without permission."}
+  ],
+
+  "Seasonality & Climate": "EFB often spikes in spring/early summer with rapid brood rearing and nutritional wobbles. AFB can appear anytime but is usually noticed during routine seasonal inspections. Combine cues—don’t rely on one tell.",
+  
+  "Suggested Figures": [
+    {"alt": "AFB vs EFB quick ID grid", "caption": "Side-by-side: cappings, larval appearance and ropiness at a glance."},
+    {"alt": "First-response flow", "caption": "See-record-report: the six-step response from discovery to inspector hand-off."}
+  ],
+
+  "Glossary": [
+    {"term": "Ropiness test", "def": "Matchstick drawn from suspect cell; ropey thread suggests AFB."},
+    {"term": "Pepperpot brood", "def": "Patchy capped brood with empty cells; a classic red flag."},
+    {"term": "Notifiable disease", "def": "A disease you must report to competent authorities by law."},
+    {"term": "Disinfection", "def": "Approved methods/agents to render kit safe; follow official specs."}
+  ],
+
+  "Cross-links": [
+    "apiary_biosecurity_basics",
+    "disease_control_logbook",
+    "varroa_monitoring_thresholds",
+    "overwintering_preparation_uk",
+    "honey_processing_basics"
+  ],
+
+  "Sources": [
+    {"name": "National authority guidance (AFB/EFB leaflets & legal duties)", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Diagnostic manuals & standard methods (field/lab)", "url": "https://agresearch.montana.edu/knox/Downloads/HoneyBeeDiseasesUSDABook.pdf"}
+  ],
+
+  "Scrape-Guidance": "Prioritise official AFB/EFB leaflets and diagnostic manuals. Extract: visual cue definitions, first-response flow, disinfection specs and movement restrictions. Include a side-by-side comparison table and a six-step flow list."
+}

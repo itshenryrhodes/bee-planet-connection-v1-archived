@@ -1,0 +1,88 @@
+{
+  "title": "Diagnostic field notes that matter: labels, photos & minimum data",
+  "slug": "diagnostic_field_notes",
+  "category": "Research & diagnostics",
+  "categories": ["Operations"],
+  "taxonomy": {
+    "pillar": "Research & diagnostics",
+    "subpillars": ["Field practice"],
+    "topics": ["field-notes", "labelling", "photos", "case-definition"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth", "overwintering"]
+  },
+  "tags": ["hive-box-frame labelling", "timestamped photos", "minimum dataset"],
+
+  "At-a-Glance": "Good notes turn ‘I think’ into ‘I know’. Use a simple, repeatable scheme: Hive–Box–Frame–Side–Position (e.g., H3-B1-F4-A-pos2), date/time, weather, and what you saw (cue words not essays). Photograph frames with a label in-shot so images stand alone. For samples, write the same code on pots/slides. Keep a one-page ‘minimum dataset’—items you always collect—so every inspection produces comparable, useful records. When you later call an inspector or compare hives, you’ll have a clean, shared language.",
+  
+  "Why it Matters": "Beekeeping memories are optimistic; data is not. When disease scares happen (EFB/AFB suspects, odd brood, pesticide incidents), messy notes waste time and create risk. A minimal, standard set—ID, location on the frame, photo with scale/label, brood state, weather, action taken—lets others help fast and lets you review your own decisions calmly. It also unlocks teaching: clubs can show beginners exactly what ‘good recordkeeping’ looks like and why. Over a season, those tiny habits compound: faster diagnosis, fewer repeated mistakes, cleaner handovers, and articles you can write with confidence because the details are already there.",
+  
+  "Step-by-Step": [
+    "Adopt a fixed code: Hive–Box–Frame–Side–Position.",
+    "Carry weatherproof labels; put them in-frame for photos.",
+    "Write the minimum dataset every visit; avoid prose.",
+    "Name photos with the code + date; sync to a shared folder.",
+    "Review monthly; convert notes into actions for the next visit."
+  ],
+
+  "Context & Narrative": "Picture two inspections. In one, you scribble ‘weird brood H3’ and hurry on. In the other, you write ‘H3-B1-F4-A-pos2, brood pre-capping uneven, smell neutral, temp 18 °C, light wind; action: photo + recheck in 7 days’. The first note will haunt you; the second will help you. Field notes are about reducing ambiguity for future-you (and anyone helping), so design them like a checklist. Keep pencil/marker and small waterproof tags in your pocket; label before you shoot the photo so the image makes sense months later. For sampling, use the same code on the pot and in the log, then snap a photo of the jar with the frame in the background—it prevents mix-ups. \n\nThe biggest win is in trend spotting. By logging the same minimum dataset each time—weight/heft, brood state, temperament, mite %—you’ll see drift before it becomes drama. When you do need official help, those labelled photos mean an inspector or mentor can triage from their desk. This isn’t bureaucracy; it’s kindness to your future self, wrapped in a habit that takes 60 seconds and pays you back for years.",
+  
+  "Evidence Highlights": [
+    "Consistent identifiers make photos and samples actionable without you present.",
+    "Minimum datasets increase comparability and reduce recall bias.",
+    "Clear labelling accelerates third-party triage/inspection."
+  ],
+
+  "Data Tables": {
+    "minimum_dataset": [
+      {"field": "ID code", "example": "H3-B1-F4-A-pos2"},
+      {"field": "Date/time & weather", "example": "2026-05-14 14:20, 18 °C, light wind"},
+      {"field": "Brood state", "example": "pre/post-capping; pattern good/peppery"},
+      {"field": "Mite % (if sampled)", "example": "2.1"},
+      {"field": "Action/next step", "example": "Photo; recheck 7 days"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Unnamed photos with no scale or context.",
+    "Prose diaries that hide the signal.",
+    "Different codes each visit (nothing compares)."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Keep a fine-tip paint pen to mark frames where you took samples."}
+  ],
+
+  "FAQs": [
+    {"q": "Apps or paper?", "a": "Whatever you’ll use every time. Consistency beats features."},
+    {"q": "How detailed?", "a": "Short, structured notes—let photos carry the detail."}
+  ],
+
+  "Seasonality & Climate": "No season off; in winter switch emphasis to weight, ventilation, dead-outs analysis.",
+  
+  "Suggested Figures": [
+    {"alt": "In-frame label example", "caption": "How to place a code card in photos for instant context."}
+  ],
+
+  "Glossary": [
+    {"term": "Minimum dataset", "def": "The smallest set of fields you always capture to keep records comparable."}
+  ],
+
+  "Cross-links": [
+    "sampling_methods_playbook",
+    "ipm_plan_template",
+    "disease_control_logbook"
+  ],
+
+  "Sources": [
+    {"name": "COLOSS BEEBOOK – colony assessment standards", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "National Bee Unit – inspection/record advice", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "USDA ARS – field/lab sampling guidance", "url": "https://www.ars.usda.gov/"}
+  ],
+
+  "Scrape-Guidance": "Capture best-practice identifiers, example datasets, and photo-labelling patterns from standards/guidance; show a one-page template."
+}

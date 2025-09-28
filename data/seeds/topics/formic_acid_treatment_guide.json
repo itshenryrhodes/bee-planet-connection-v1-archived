@@ -1,0 +1,90 @@
+{
+  "title": "Formic acid treatment guide: when/when not, temperature & brood",
+  "slug": "formic_acid_treatment_guide",
+  "category": "Bee health & pests",
+  "categories": ["Operations"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Treatment"],
+    "topics": ["formic-acid", "temperature-window", "brood", "queen-safety"],
+    "audience": ["intermediate", "club-officer"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["summer", "early-autumn"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["label adherence", "ventilation", "queen effects", "follow-up counts"],
+
+  "At-a-Glance": "Formic acid can penetrate capped brood—a unique plus—but only inside tight temperature and ventilation windows. Used correctly, it reduces mites where other products struggle; used carelessly, it risks queen loss and colony stress. Read the label for your formulation, stage colonies (space, airflow), pull honey supers if required, and monitor behaviour during the first 24–48 hours. Treat apiary-wide, then verify reduction with a post-course count. Choose another tool if weather or colony condition doesn’t fit; forcing it is costly.",
+  
+  "Why it Matters": "Late-summer mite curves sometimes outrun thymol temperatures or logistics. Formic acid offers a route into capped brood and can be fast, but the margin for error is smaller. Temperature spikes, poor ventilation or weak colonies magnify queen loss risk and brood damage. The pragmatic frame is ‘conditions first’: if ambient fits and colonies are robust, formic can drive strong reductions before winter bees are raised; if not, pick a different lever and keep faith with the IPM plan. Clubs should teach label literacy—exact placement, spacer needs, and monitoring—so beekeepers don’t learn hard lessons at peak season. Done right, it’s a precision tool; done wrong, it writes you a requeening to-do list and a disappointed winter.",
+  
+  "Step-by-Step": [
+    "Confirm ambient fits product temperature window; check colony strength.",
+    "Prepare ventilation/spacing exactly as label states; supers off if required.",
+    "Apply dose/format precisely; note start time and conditions.",
+    "Observe first 24–48 h; correct ventilation if distress seen.",
+    "Post-course, sample mites to verify and log results."
+  ],
+
+  "Context & Narrative": "Formic divides beekeepers because it’s powerful and unforgiving. The trick is to make it boring: standardise kit, read the label each season, and don’t ever ‘eyeball’ spacer gaps or dose. Colonies with good ventilation and strong bees tolerate courses far better; borderline units or heatwaves do not. Work with weather, not against it—watch a forecast, and if you can’t keep the hive in the safe zone, reschedule or choose another route this year. \n\nWhen it clicks, formic gives you reduction through capped brood and buys a cleaner slate for winter bees. Pair that win with an oxalic mop-up at a brood lull and you’ll carry low mite pressure into spring. Keep a habit of follow-up counts so confidence rests on data, not hope. And write down what you did: later, those notes will steer timing and setup choices better than memory.",
+  
+  "Evidence Highlights": [
+    "Formic acid can affect mites in capped brood—distinct vs thymol/oxalic use cases.",
+    "Temperature and ventilation are dominant success factors.",
+    "Queen loss risk rises outside label conditions or in weak colonies.",
+    "Follow-up sampling confirms real efficacy."
+  ],
+
+  "Data Tables": {
+    "prep_checklist": [
+      {"item": "Ambient within label °C range", "status": ""},
+      {"item": "Ventilation/spacing set per label", "status": ""},
+      {"item": "Supers removed if required", "status": ""},
+      {"item": "Colony strength adequate", "status": ""},
+      {"item": "Follow-up sample scheduled", "status": ""}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Treating during heat spikes; queens lost, brood damaged.",
+    "Ignoring spacer/ventilation requirements.",
+    "Skipping verification counts and assuming success."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Stage a spare box/rim for label-specified headspace—never improvise with random shims."}
+  ],
+
+  "FAQs": [
+    {"q": "Formic or thymol?", "a": "Use conditions to decide: formic if label temps/ventilation fit and you need brood penetration."},
+    {"q": "Supers on?", "a": "Follow your formulation label—many require supers off."}
+  ],
+
+  "Seasonality & Climate": "Best immediately post-harvest when temps align. In cool summers, windows may be brief; in heatwaves, defer.",
+  
+  "Suggested Figures": [
+    {"alt": "Formic ventilation schematic", "caption": "Placement and spacer/ventilation per label—at a glance."}
+  ],
+
+  "Glossary": [
+    {"term": "Headspace", "def": "Space above frames used to manage vapour release and bee access."}
+  ],
+
+  "Cross-links": [
+    "varroa_monitoring_thresholds",
+    "thymol_treatment_guide",
+    "oxalic_acid_application",
+    "ipm_plan_template"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – treatment advisories", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "COLOSS / JAR – treatment comparisons & methods", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "USDA ARS – Varroa & treatment research", "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/"}
+  ],
+
+  "Scrape-Guidance": "Extract label-aligned temperature/ventilation requirements, queen-safety cautions, and verification practices from official guidance and method papers."
+}

@@ -1,0 +1,91 @@
+{
+  "title": "Apiary setup & site selection (urban & rural)",
+  "slug": "apiary_setup_site_selection",
+  "category": "Operations",
+  "categories": ["Urban beekeeping", "Seasonal management"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Setup"],
+    "topics": ["site-selection", "access", "water", "flight-paths", "neighbour-relations"],
+    "audience": ["beginner", "intermediate", "club-officer"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "jurisdictions": ["UK-England"],
+    "season": ["spring", "summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup"]
+  },
+  "tags": ["shade", "windbreaks", "security", "signage", "permissions"],
+
+  "At-a-Glance": "Good yards are quiet, tidy and predictable. Start with permission in writing, safe access, and a water source you control. Face entrances away from paths and neighbours, add windbreaks and dappled shade, and elevate hives off damp ground. Keep the kit minimal but organised: stand, floor, brood box, frames and spare equipment within reach. Plan bee flight so it rises over head height quickly, use screens where needed, and make inspections during office hours in urban settings. Clear signage, a contact number, and a simple neighbour note avoid drama later. Think ‘low-impact’: bees, people, and landowner all win.",
+  
+  "Why it Matters": "Most problems blamed on bees are really site problems: poor access, awkward flight paths, no water, or inspections at the wrong time. A thoughtful setup prevents complaints, accidents and animal interference, and it makes your own work safer and faster. In towns, social licence matters: tidy yards, predictable routines and clear comms maintain goodwill and simplify insurance conversations. In rural sites, vehicle access, stock fencing and machinery movement dominate planning; a bad placement can cost you hives in a single storm or stock encounter. Getting it right pays every week of the season—fewer stings, fewer breakages, calmer inspections, and far better relations with neighbours and landlords. A small checklist up front saves the headaches that close yards and sour partnerships.",
+  
+  "Step-by-Step": [
+    "Secure written permission and agree access times and storage.",
+    "Pick dry, level ground with windbreak and partial shade.",
+    "Set flight paths to rise over head height; screen if needed.",
+    "Provide constant water on-site; refresh and position well.",
+    "Add signage, tidy storage and incident/contact details."
+  ],
+
+  "Context & Narrative": "Imagine two yards: one squeezed behind a car park, no water, entrances facing the walkway; the other tucked behind a hedge with a windbreak, water trough and a short, marked access route. The first generates weekly friction; the second becomes invisible. Success starts with a conversation—agree what you can and can’t do, who has keys, where vehicles can go, and when noisy work happens. In cities, you’ll also manage perception: inspections in office hours, discreet kit, no open feeding, and a neat stack of spares. Screens or fencing that lift flight paths make an outsized difference to comfort levels. \n\nOn the practical side, your back will thank you for level stands, good footing and short carries. Water is not optional: a shallow, bee-friendly source on site prevents rooftop AC units or neighbours’ ponds becoming your bees’ favourite. A cheap windbreak equals calmer inspections, fewer rolled bees and less grumpy colonies. Finally, the paper trail—contacts, a welcome note, and a simple incident log—makes you look like what you are: a responsible, organised beekeeper. Little choices compound into a stress-free yard.",
+  
+  "Evidence Highlights": [
+    "Entrances facing away from paths reduce human–bee conflict.",
+    "On-site water dramatically lowers nuisance at neighbouring sources.",
+    "Windbreaks and shade reduce defensive behaviour during inspections.",
+    "Written permissions and logs simplify insurance and disputes."
+  ],
+
+  "Data Tables": {
+    "pre_site_checklist": [
+      {"item": "Permission/terms", "status": "Agreed", "notes": "Access times, storage"},
+      {"item": "Ground & drainage", "status": "OK", "notes": "Level, dry, elevated"},
+      {"item": "Flight path", "status": "OK", "notes": "Screens/fences in place"},
+      {"item": "Water source", "status": "OK", "notes": "Shallow, refreshed"},
+      {"item": "Signage/contacts", "status": "OK", "notes": "Visible, up to date"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Facing entrances at footpaths or doors.",
+    "No water on site, leading to nuisance elsewhere.",
+    "Untidy kit attracting attention and complaints."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Use paving slabs under stands to keep everything level and clean."},
+    {"type": "Checklist", "text": "Permission · Access · Flight paths · Water · Signage"}
+  ],
+
+  "FAQs": [
+    {"q": "How close to people?", "a": "As far as practical; lift flight paths when closer than ~5–10 m."},
+    {"q": "Full sun or shade?", "a": "Dappled or morning sun with wind protection is forgiving."}
+  ],
+
+  "Seasonality & Climate": "Wet winters demand drainage; hot spells need water and shade. Plan windbreaks where prevailing winds hit entrances.",
+  
+  "Suggested Figures": [
+    {"alt": "Entrance screening diagram", "caption": "Raising flight paths above head height in urban settings."}
+  ],
+
+  "Glossary": [
+    {"term": "Flight path", "def": "The typical outbound/return route bees take from the entrance."}
+  ],
+
+  "Cross-links": [
+    "urban_stakeholder_neighbour_relations",
+    "apiary_biosecurity_basics",
+    "swarm_prevention_control"
+  ],
+
+  "Sources": [
+    {"name": "GOV.UK – Bees’ Needs & public guidance", "url": "https://www.gov.uk/"},
+    {"name": "BBKA – Good practice & insurance context", "url": "https://www.bbka.org.uk/"},
+    {"name": "National Bee Unit – Advisory leaflets", "url": "https://www.nationalbeeunit.com/resources/"}
+  ],
+
+  "Scrape-Guidance": "Lift neighbour-friendly placement, water provision, access/permission norms, and inspection best practice from official leaflets and national guidance pages only."
+}

@@ -1,0 +1,87 @@
+{
+  "title": "Wax moth & comb storage management",
+  "slug": "wax_moth_storage_management",
+  "category": "Operations",
+  "categories": ["Bee health & pests"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Biosecurity & storage"],
+    "topics": ["wax-moth", "comb-storage", "freezing", "heat-treatment"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "AUS", "US"],
+    "season": ["summer", "autumn", "winter"],
+    "climate": ["temperate", "mediterranean"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["post-harvest", "overwintering"]
+  },
+  "tags": ["freezing", "bright storage", "ventilation", "Bacillus", "PDB caution"],
+
+  "At-a-Glance": "Wax moths love dark, warm, neglected comb—so we give them the opposite. Keep colonies strong, remove scrap comb, and store spares in bright, airy places. In temperate climates, a simple freeze (≤ –7 °C for a couple of days) kills eggs and larvae; in hot zones, controlled heat (~46 °C) works too. After treatment, stack frames so light and airflow reach every surface, and check periodically. Chemical options exist, but many hobbyists do fine with freezing, heat and ventilation. The goal is cheap, boring prevention so your drawn comb survives for next season’s easy starts.",
+  
+  "Why it Matters": "Drawn comb is pure gold—it saves bees energy and time, speeds spring build-up, and boosts yields. Losing comb to wax moth feels like a small disaster and usually signals weak colonies or sloppy storage. Prevention is simple and low-cost compared to rebuilding. Hygiene in live colonies (unite weak ones, scrape burr comb, seal cracks) and smart off-season storage (freeze or heat-treat, then keep bright and ventilated) shut down the wax moth life cycle. Chemicals such as PDB or biologicals like Bacillus have roles but bring residue rules and precision requirements—worth knowing, rarely essential for small operators. If you treat comb like a perishable asset, you’ll start each season with tidy frames ready to go, spending spring managing bees instead of scraping webbing and cursing tunnels.",
+  
+  "Step-by-Step": [
+    "Strengthen/unite weak colonies before moths exploit them.",
+    "Cull old/damaged comb; scrape crevices and burr.",
+    "Freeze (≤ –7 °C, 48h) or heat (~46 °C, controlled) to kill stages.",
+    "Store in light, ventilated stacks; elevate off damp floors.",
+    "Inspect monthly; re-treat or discard if damage appears."
+  ],
+
+  "Context & Narrative": "The quickest way to ‘beat’ wax moth is to give them nowhere to hide. Strong colonies patrol; dark corners don’t exist. In storage, darkness and stale air are the culprits, so design your shed like a hostile environment: slatted racks, gaps between frames, maybe even a fan on low. In the UK, a chest freezer turns into a moth-killer; bag frames, freeze for a couple of days, then store in bright stacks. No freezer? Sunshine and controlled heat solve the same problem if you monitor temperature and time. Chemical tools have their place—Certan (Bacillus) or PDB crystals—but they demand care: labels, ventilation, and residue awareness. Most hobbyists never need them. \n\nThe most satisfying part is opening spring stores to find comb exactly as you left it—light, dry, and moth-free. It means your season starts on the front foot: faster brood expansion, earlier supers on, less energy spent on wax. A handful of simple habits (clean as you go, stack in the light, schedule a monthly peek) is all it takes to keep your comb bank intact.",
+  
+  "Evidence Highlights": [
+    "Light and airflow deter adult moths and reduce egg laying.",
+    "Freezing at ≤ –7 °C for ~48h kills eggs and larvae.",
+    "Controlled heat (~46 °C) is an alternative where freezing is impractical.",
+    "Strong colonies and clean kit are the first line of defence."
+  ],
+
+  "Data Tables": {
+    "storage_methods": [
+      {"method": "Freezing", "temp": "≤ –7 °C", "duration": "48h", "notes": "Bag to avoid condensation; thaw before stacking"},
+      {"method": "Heat", "temp": "~46 °C", "duration": "2–3h", "notes": "Even heat; avoid wax slump"},
+      {"method": "Light/air", "temp": "Ambient", "duration": "Season", "notes": "Bright shed, slatted racks, low fan optional"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Storing in sealed, dark boxes (perfect moth nurseries).",
+    "Leaving weak colonies and spare brood comb unattended.",
+    "Assuming traps fix infestations—they’re monitoring, not cure."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Alternate frame orientation in stacks to keep bee space open to light."},
+    {"type": "Watch out", "text": "Check legality and residue rules before any chemical protectant."}
+  ],
+
+  "FAQs": [
+    {"q": "Do I need chemicals?", "a": "Usually not—freeze/heat plus light and airflow work for most hobbyists."},
+    {"q": "Can I salvage infested comb?", "a": "Freeze and inspect; badly tunneled comb is best rendered to wax."}
+  ],
+
+  "Seasonality & Climate": "Risk peaks post-harvest and in warm autumns. In hot climates, rely more on heat and airflow; in cool ones, freezing is easy and effective.",
+  
+  "Suggested Figures": [
+    {"alt": "Comb storage stack", "caption": "Bright, ventilated racks that moths hate."}
+  ],
+
+  "Glossary": [
+    {"term": "PDB", "def": "Para-dichlorobenzene; a comb protectant with strict residue rules."}
+  ],
+
+  "Cross-links": [
+    "apiary_biosecurity_basics",
+    "honey_processing_basics",
+    "overwintering_preparation_uk"
+  ],
+
+  "Sources": [
+    {"name": "Bee Aware Australia – Biosecurity & storage", "url": "https://beeaware.org.au/"},
+    {"name": "Community practice notes (comb storage)", "url": "https://honeyflow.com/"}
+  ],
+
+  "Scrape-Guidance": "Extract freeze/heat thresholds, bright-storage principles, hygiene steps, and cautions on chemical options from the listed sources."
+}

@@ -1,0 +1,85 @@
+{
+  "title": "Ventilation & insulation tuning: dry hives without chilling",
+  "slug": "ventilation_insulation_tuning",
+  "category": "Operations",
+  "categories": ["Seasonal management"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Husbandry"],
+    "topics": ["ventilation", "insulation", "condensation", "wintering"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["winter", "summer"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["overwintering", "growth"]
+  },
+  "tags": ["quilt box", "crownboard", "upper vents", "mouseguards"],
+
+  "At-a-Glance": "Bees tolerate cold; they hate damp. Aim for warm, dry air over the cluster and a controlled escape for moisture. In winter, ensure a sound roof, consider insulation above the crownboard, and provide a modest top vent or absorptive ‘quilt’ to prevent drips. In summer, prevent heat stress with shade, spacing and entrance management. Ventilation is not ‘open everything’: too much flow chills brood; too little invites condensation and mould. Tune for your box material and climate; then observe and adjust.",
+  
+  "Why it Matters": "Condensation on the crownboard that rains on bees is a silent killer—chilled brood, stressed clusters, mouldy frames. Over-venting to ‘dry’ things then chills the very brood you are trying to protect. The middle path is simple: stop water ingress, insulate sensibly above the cluster, and give moist air a controlled route out. In winter, a quilt or insulated crownboard smooths temperature swings; in summer, entrances and shade do more than random holes. Mark setups in your log so you can link outcomes to configurations. Clubs can standardise a wintering stack so beginners aren’t left guessing. The result is calmer winters, cleaner spring starts and fewer damp-related nosema spikes or chalkbrood grumbles.",
+  
+  "Step-by-Step": [
+    "Fix roofs; check joints; stop rain ingress first.",
+    "Add insulation above crownboard; consider a breathable quilt.",
+    "Provide a small upper vent or wick; keep entrances mouse-guarded.",
+    "In heat, add shade/space; avoid creating wind tunnels.",
+    "Inspect for condensation/mould; adjust and record outcomes."
+  ],
+
+  "Context & Narrative": "Think like steam. Warm, moist air rises from the cluster, hits a cold lid, condenses and, if you let it, drips back onto bees. Insulation lifts the temperature of that surface so water forms elsewhere or is absorbed by a quilt. A tiny vent—more a pressure relief than a chimney—lets the worst escape without turning the brood box into a draught. Poly boxes need less help; timber may need more, especially with thin roofs. \n\nIn summer, we swap problems: hot boxes during nectar flows. A little shade, earlier inspections, and avoiding mid-day lid-off marathons keep colonies composed. Splayed supers add space but watch bee space and robbing. Record what you try—config, weather and behaviour. Next year you won’t be reinventing the wheel. When the system is tuned, you open the hive and smell ‘dry wood and wax’, not damp cardboard. That smell is health—and it starts with a lid that manages water and heat with intent.",
+  
+  "Evidence Highlights": [
+    "Moisture management is more critical than absolute temperature for winter survival.",
+    "Top insulation reduces condensation on cold crownboards.",
+    "Over-venting increases heat loss; balance prevents chilled brood."
+  ],
+
+  "Data Tables": {
+    "winter_stack_options": [
+      {"config": "Insulated crownboard + small top vent", "notes": "Dry, stable; watch for drafts"},
+      {"config": "Quilt box (wood shavings)", "notes": "Absorbs moisture; replace if damp"},
+      {"config": "No top vent; insulated roof", "notes": "Works in poly; monitor moisture"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Big top holes creating drafts.",
+    "No insulation on timber boxes → heavy condensation.",
+    "Forgetting mouseguards while propping entrances."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Use a cheap hygrometer under the lid in winter; adjust until readings stabilise without visible condensation."}
+  ],
+
+  "FAQs": [
+    {"q": "Open-mesh floors in winter?", "a": "Fine with top insulation; close inserts in extreme wind if needed."},
+    {"q": "Poly needs vents?", "a": "Often less; still monitor for moisture and adjust minimally."}
+  ],
+
+  "Seasonality & Climate": "Damp, maritime winters need more moisture management; hot summers need shade and timing.",
+  
+  "Suggested Figures": [
+    {"alt": "Winter stack cutaway", "caption": "Insulation, quilt and vent placement shown schematically."}
+  ],
+
+  "Glossary": [
+    {"term": "Quilt box", "def": "A shallow box with breathable, absorbent fill above the crownboard to buffer moisture."}
+  ],
+
+  "Cross-links": [
+    "overwintering_inspection_emergency_feeding_uk",
+    "poly_vs_timber_hives",
+    "apiary_setup_site_selection"
+  ],
+
+  "Sources": [
+    {"name": "NBU – overwintering & equipment notes", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Apidologie – thermoregulation studies", "url": "https://link.springer.com/journal/13592"}
+  ],
+
+  "Scrape-Guidance": "Capture moisture-first wintering guidance, insulation/vent options and common mistakes from authority sources."
+}

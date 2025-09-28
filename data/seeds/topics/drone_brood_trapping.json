@@ -1,0 +1,88 @@
+{
+  "title": "Drone brood trapping for Varroa: design, timing & follow-through",
+  "slug": "drone_brood_trapping",
+  "category": "Bee health & pests",
+  "categories": ["Operations", "Research & diagnostics"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["IPM", "Management"],
+    "topics": ["drone-brood-trapping", "varroa", "IPM", "brood-cycle"],
+    "audience": ["intermediate", "club-officer", "beginner"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "early-summer"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["foundationless drone frame", "timers", "culling & disposal", "follow-up treatments"],
+
+  "At-a-Glance": "Varroa prefer drone brood. Give them a trap: a dedicated drone frame or foundation that invites drone lay, then remove and destroy at the right point in the capping cycle. Done on schedule, this knocks mite populations down without chemicals and pairs well with late-summer treatments. Success hinges on timing and consistency—insert, mark the date, and revisit before emergence. It’s an IPM tool, not a silver bullet: use alongside regular mite monitoring, apiary-wide decisions and proper follow-up counts.",
+  
+  "Why it Matters": "IPM isn’t about one clever trick; it’s about stacking small advantages. Drone brood trapping exploits Varroa’s preference for drone cells to divert and remove a significant fraction of mites during spring growth, delaying the curve that would otherwise peak before harvest. It’s cheap, teachable and residue-free, but it’s also a commitment: forget to pull frames on time and you’ll breed mites, not trap them. When folded into a measured plan—monitoring every 2–3 weeks, thymol after harvest where suitable, oxalic at a brood lull—you lower viral pressure without leaning on one chemistry. That keeps options open, colonies steadier and resistance risks lower.",
+  
+  "Step-by-Step": [
+    "Insert one dedicated drone frame (marked) per colony in spring.",
+    "Record the date; set a reminder based on local capping times.",
+    "Remove when most drone cells are capped; freeze or destroy comb.",
+    "Replace the trap frame to repeat the cycle as needed.",
+    "Continue mite monitoring; plan summer + winter reductions."
+  ],
+
+  "Context & Narrative": "Spring is optimism season—bees stretch into new space, queens speed up, and Varroa quietly rides that wave. Drone brood trapping is a way to skim the rising mite tide without reaching for a bottle. Place a marked drone frame where the bees will use it (often near the brood nest edge), then be the beekeeper who actually comes back on time. Local timing is everything: learn how many days your drones take from egg to capping in your conditions and set reminders accordingly. When you pull the frame, don’t admire it—dispose of it cleanly (freezing is simple) and replace it so the cycle continues while drones are in fashion. \n\nThis isn’t a replacement for late-summer controls; it’s how you arrive at August with lower starting pressure. Keep counting mites through the process so you can see the benefit on paper, not just in hope. Pair the spring trapping with a treatment window after harvest and a winter ‘mop-up’, and your virus stories will become less dramatic with each passing year.",
+  
+  "Evidence Highlights": [
+    "Varroa show higher reproduction in drone brood than worker brood.",
+    "Scheduled removal of capped drone brood reduces mite population growth.",
+    "Effectiveness depends on timing; missed pulls can backfire.",
+    "Best used as part of IPM alongside summer/winter treatments."
+  ],
+
+  "Data Tables": {
+    "timing_guide": [
+      {"stage": "Egg → capping (drone)", "days": "≈9–10"},
+      {"stage": "Capping → emergence (drone)", "days": "≈14–15"},
+      {"stage": "Pull window", "days": "When majority capped; before emergence"}
+    ]
+  },
+
+  "Common Pitfalls": [
+    "Forgetting pull dates; mites emerge with drones.",
+    "Using too many trap frames; colony balance suffers.",
+    "Not tracking impact with mite counts."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Paint the top bar of trap frames a bright colour and write the insert date."}
+  ],
+
+  "FAQs": [
+    {"q": "Will I weaken colonies by removing drones?", "a": "One trap frame is a small fraction; replace promptly and monitor strength."},
+    {"q": "Do I still treat later?", "a": "Yes—trapping reduces growth but doesn’t replace summer/winter reductions."}
+  ],
+
+  "Seasonality & Climate": "Best during spring build-up when colonies naturally raise drones. Adjust intervals for cooler springs or fast build-ups.",
+  
+  "Suggested Figures": [
+    {"alt": "Trap cycle timeline", "caption": "Insert → majority capped → remove/freeze → replace."}
+  ],
+
+  "Glossary": [
+    {"term": "IPM", "def": "Integrated Pest Management: multiple, complementary tactics to manage pests."}
+  ],
+
+  "Cross-links": [
+    "varroa_monitoring_thresholds",
+    "thymol_treatment_guide",
+    "oxalic_acid_application",
+    "brood_break_methods"
+  ],
+
+  "Sources": [
+    {"name": "COLOSS BEEBOOK – brood & Varroa biology/methods", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "National Bee Unit – advisory leaflets (IPM/Varroa)", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Thorne practical notes – drone frames timing", "url": "https://www.thorne.co.uk/"}
+  ],
+
+  "Scrape-Guidance": "Lift timing data for drone development, stepwise trapping workflow, and cautions about missed pulls; emphasise pairing with summer/winter reductions."
+}

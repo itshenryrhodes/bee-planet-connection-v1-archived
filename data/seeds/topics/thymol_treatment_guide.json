@@ -1,0 +1,87 @@
+{
+  "title": "Thymol treatment guide: late-summer Varroa management",
+  "slug": "thymol_treatment_guide",
+  "category": "Bee health & pests",
+  "categories": ["Operations"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Treatment"],
+    "topics": ["thymol", "temperature-window", "late-summer"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth", "overwintering"]
+  },
+  "tags": ["Apiguard", "temperature window", "supers off", "follow-up count"],
+
+  "At-a-Glance": "Thymol is a plant-derived miticide many UK beekeepers use right after harvest. It demands respect for temperature windows and timing, but it’s approachable and effective when done by the book. Pull honey supers, check ambient temperatures are within the product range, lay on trays or gel as directed, and let the full course run before replacing supers. Treat all colonies, keep entrances appropriate for ventilation, and follow up with a mite count. Paired with a winter oxalic ‘mop-up’, thymol helps protect the winter-bee cohort that decides your spring.",
+  
+  "Why it Matters": "Late summer is when decisions stick: mites rising into August quickly translate into virus-laden winter bees and a spring that never quite takes off. Thymol provides a practical, widely available option once honey is off and temperatures are still in its operational range. Its strengths are ease and accessibility; its weaknesses appear when we ignore physics—too cold or too hot and efficacy plummets or stress rises. Done right, thymol brings mite loads down ahead of autumn, making room for healthy winter bees and reducing reliance on heavy chemistries. The apiary-wide approach matters here too—one untreated colony reinfests neighbours and turns your tidy plan into a treadmill. Finish with a verification count so you know if timing, ventilation and course length delivered the reduction you needed. A calm, standardised thymol round sets up a cleaner oxalic finish and a steadier winter.",
+  
+  "Step-by-Step": [
+    "Remove honey supers; confirm label temperature window.",
+    "Place product as directed; ensure ventilation per guidance.",
+    "Run the full course (often two applications over several weeks).",
+    "Treat all colonies in the yard.",
+    "Verify reduction with a post-treatment count."
+  ],
+
+  "Context & Narrative": "Thymol season starts the day you lift your last honey—supers off, temperatures still cooperative, and brood rearing tapering. That’s the sweet spot: knock mites back before winter bees are raised. The recipe is surprisingly simple: follow the label. Ambient temperature matters because thymol efficacy rides on vapour; too cool and you underdose the mites, too hot and the colony complains. Ventilation is the other knob. Trays need enough air to carry vapours through the brood nest, but not a gale that strips the hive’s warmth. \n\nThe smoothest runs look boring. You standardise placement, make a quick round to check uptake, and note dates so the second application lands on time. The supers wait until the full course is done—no shortcuts. Then, just as important, you measure. A follow-up count tells you if you’ve earned your oxalic ‘mop-up’ or if you need to adjust. The reward isn’t a heroic story; it’s quiet confidence in February when your colonies sit heavy and calm. Thymol isn’t magic, but as part of a measured plan it turns August anxiety into autumn assurance.",
+  
+  "Evidence Highlights": [
+    "Temperature windows are critical to thymol efficacy and bee comfort.",
+    "Supers must be off during treatment to protect honey quality.",
+    "Apiary-wide treatment reduces reinfestation risk.",
+    "Verification counts after the course confirm real reduction."
+  ],
+
+  "Data Tables": {
+    "run_log_headers": ["Start date", "Ambient °C", "Placement notes", "2nd dose date", "Follow-up % mites/300", "Outcome"]
+  },
+
+  "Common Pitfalls": [
+    "Treating outside the temperature window.",
+    "Replacing supers before the course is complete.",
+    "Skipping the second application.",
+    "Partial yard treatment and reinfestation."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Set calendar reminders for dose #2 the day you start dose #1."},
+    {"type": "Watch out", "text": "Do not ‘just try one’ colony—reinfestation will erase gains."}
+  ],
+
+  "FAQs": [
+    {"q": "Can I leave supers on?", "a": "No—remove food-grade honey supers during treatment."},
+    {"q": "What if the weather turns cold?", "a": "Pause/start when within label temperatures, or choose another tool."},
+    {"q": "Do I still need oxalic later?", "a": "Yes—use oxalic during broodless periods for a clean finish."}
+  ],
+
+  "Seasonality & Climate": "Best immediately post-harvest while ambient temps sit in the label range. In cooler regions, start promptly to avoid missing the weather window.",
+  
+  "Suggested Figures": [
+    {"alt": "Thymol timing diagram", "caption": "Harvest → Thymol course → Brood break oxalic."}
+  ],
+
+  "Glossary": [
+    {"term": "Temperature window", "def": "Ambient range where vapour release and efficacy are optimal."}
+  ],
+
+  "Cross-links": [
+    "varroa_monitoring_thresholds",
+    "oxalic_acid_application",
+    "apiary_biosecurity_basics",
+    "overwintering_preparation_uk"
+  ],
+
+  "Sources": [
+    {"name": "National Bee Unit – Varroa/seasonal guidance", "url": "https://www.nationalbeeunit.com/resources/"},
+    {"name": "Thorne practical timing notes", "url": "https://www.thorne.co.uk/"},
+    {"name": "Applied practice timelines (UK beekeeping)", "url": "https://theapiarist.org/"}
+  ],
+
+  "Scrape-Guidance": "Lift label-aligned temperature ranges, course length, ventilation notes, and post-treatment verification practices from official guidance and reputable trade leaflets."
+}

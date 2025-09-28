@@ -1,8 +1,83 @@
 {
-  "Overview": "Nosema is a gut disease of adult bees that reduces longevity, weakens foraging force, and can trigger spring setbacks. The two main species are Nosema apis and Nosema ceranae; both impair colony performance when stress is high.",
-  "Biology & Transmission": "Spores are ingested with contaminated food or water and germinate in the bee’s midgut. Ceranae can persist year-round in milder climates; Apis shows stronger seasonality. Stress, poor forage, and high mite loads raise susceptibility.",
-  "Symptoms & Field Diagnosis": "Non-specific signs include dysentery on frames in late winter/early spring, poor build-up, dwindling adult population, and failing queens. Definitive diagnosis uses microscopy or lab tests of midgut homogenates.",
-  "Impact on Colony": "Reduced worker lifespan and nursing capacity lead to patchy brood, poor honey yields, and winter losses if compounded by Varroa and nutrition gaps.",
-  "Control & Treatment": "Focus on prevention: strong colonies, good ventilation, clean water, comb rotation, and replacement of failing queens. Manage Varroa and ensure steady spring forage. Where legal frameworks allow, treatments are vet-directed; many regions emphasise husbandry first.",
-  "Prevention & Good Practice": "Keep colonies well fed, reduce stressors, replace old comb, sanitise equipment, and avoid robbing and drifting by sensible apiary layout."
+  "title": "Nosema: diagnosis & management",
+  "slug": "nosema_management",
+  "category": "Bee health & pests",
+  "categories": ["Research & diagnostics", "Operations"],
+  "taxonomy": {
+    "pillar": "Bee health & pests",
+    "subpillars": ["Pathogens", "Diagnostics"],
+    "topics": ["nosema", "sampling", "microscopy", "management"],
+    "audience": ["intermediate", "club-officer", "beginner"],
+    "intent": ["diagnostics", "how-to", "reference"],
+    "regions": ["UK", "EU", "US"],
+    "season": ["spring", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["overwintering", "growth"]
+  },
+  "tags": ["spore counts", "sample handling", "hygiene", "stressors"],
+
+  "At-a-Glance": "Nosema is a gut parasite that flares when bees are stressed—think damp hives, poor forage and Varroa pressure. Field signs are vague, so decisions hinge on sampling and spore counts. Collect a standard number of adult bees, macerate, and check under a microscope using recognised methods. Management is mostly husbandry: dry, draft-free hives, fresh comb policy, nutrition, and removing compounding stressors. Antibiotics aren’t a DIY fix and are regulated. Treat Nosema like a dashboard warning—improve conditions, retest, and watch the trend, not a single number.",
+  
+  "Why it Matters": "Because Nosema’s outward signs mimic other problems (weakness, dysentery, queen issues), it’s easy to chase shadows or throw treatments around. A simple, repeatable sampling protocol converts guesswork into numbers that guide action. High spore counts often reflect wider stress—leaky roofs, damp floors, poor forage, Varroa load—not just a pathogen that needs a pill. Improve the environment and the bees often rebound. Clubs benefit from shared microscopes and consistent training so results compare across apiaries. The aim isn’t to ‘eradicate’ Nosema; it’s to keep colonies resilient enough that it never decides your season. Good sampling, calm husbandry and careful records deliver exactly that.",
+  
+  "Step-by-Step": [
+    "Collect a standard sample (e.g., 30 adult bees) from entrance/foragers.",
+    "Macerate in measured water; prepare slides per method.",
+    "Count spores in view; compute per-bee averages.",
+    "Address husbandry: dryness, ventilation, nutrition, comb policy.",
+    "Re-sample after 2–4 weeks; log trend and adjust."
+  ],
+
+  "Context & Narrative": "Nosema conversations often start with ‘they look run down’. The temptation is to treat the symptom—feed more, requeen—without checking whether a gut parasite is part of the picture. Microscopy sounds fancy but the routine is simple: a counted sample, a known dilution, a slide, and a logbook. Consistency is the magic; it lets you compare this month to last month and this hive to its neighbour. \n\nOnce you have a number, fix what you can control. Damp kills morale and bees; fix roofs and floors, check ventilation, and avoid drafts on the cluster. Old, tired comb is another pressure—rotate it out. Nutrition helps too: ensure steady forage or sensible supplementation when the calendar lets you down. Retest to watch the trend. Often, as the environment improves, spore counts slide back without drama. And if they don’t, you have the data to escalate methodically rather than guessing. The theme, as ever, is boring excellence: tidy kit, clean records, and a plan you can teach a new beekeeper in ten minutes.",
+  
+  "Evidence Highlights": [
+    "Field signs are non-specific; microscopy provides actionable confirmation.",
+    "Husbandry improvements (dryness, nutrition, comb rotation) reduce impact.",
+    "Trends over time beat single counts for decision-making.",
+    "Co-stressors (Varroa, poor forage) correlate with worse outcomes."
+  ],
+
+  "Data Tables": {
+    "sampling_log_headers": ["Date", "Colony", "Bees in sample", "Dilution (mL)", "Spores/bee (avg)", "Actions", "Follow-up"]
+  },
+
+  "Common Pitfalls": [
+    "Pooling random bees (inconsistent sampling sites).",
+    "Changing dilution/sample sizes (numbers stop comparing).",
+    "Treating symptoms without addressing damp and diet."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Label slides and photos with colony ID and dilution—future you will thank you."}
+  ],
+
+  "FAQs": [
+    {"q": "Entrance or brood bees?", "a": "Be consistent; entrance/forager samples are common for comparability."},
+    {"q": "How often to sample?", "a": "When signs suggest; otherwise spring/autumn spot checks are useful."}
+  ],
+
+  "Seasonality & Climate": "Counts can spike after long damp spells or poor forage. Improve dryness and nutrition, then recheck.",
+  
+  "Suggested Figures": [
+    {"alt": "Microscopy workflow", "caption": "Sample → Dilute → Slide → Count → Log."}
+  ],
+
+  "Glossary": [
+    {"term": "Spores/bee", "def": "Calculated spore load per sampled adult bee from a standard dilution."}
+  ],
+
+  "Cross-links": [
+    "apiary_biosecurity_basics",
+    "nutrition_pollen_substitutes_evidence",
+    "varroa_monitoring_thresholds"
+  ],
+
+  "Sources": [
+    {"name": "COLOSS BEEBOOK – Nosema sampling & microscopy methods", "url": "https://www.tandfonline.com/toc/tjar20/current"},
+    {"name": "USDA ARS – disease & nutrition research", "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/honey-bee-laboratory/"},
+    {"name": "USDA Handbook 690 – Diagnosis of Honey Bee Diseases", "url": "https://agresearch.montana.edu/knox/Downloads/HoneyBeeDiseasesUSDABook.pdf"}
+  ],
+
+  "Scrape-Guidance": "Lift standard sampling sizes, dilution methods, counting guidance, and husbandry interventions from the listed authorities."
 }
