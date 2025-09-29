@@ -1,0 +1,9 @@
+# Hugo build output
+/public/
+
+# Local Hugo binary + temp
+/tools/hugo/*
+!.gitkeep
+
+# Local dev pid
+.hugo.pid
