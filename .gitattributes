@@ -1,13 +1,13 @@
+# Enforce LF for text files, avoid CRLF warnings
 * text=auto eol=lf
-* text=auto eol=lf
-wiki/*.html text eol=lf
-*.json text eol=lf
-*.md text eol=lf
-*.md  text eol=lf
-*.json text eol=lf
-# Ensure text files use LF
-*.md text eol=lf
-*.html text eol=lf
-*.js text eol=lf
-*.json text eol=lf
-public/** text eol=lf
+
+# Treat specific file types as binary (no line-ending changes)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.gif binary
+*.woff binary
+*.woff2 binary
