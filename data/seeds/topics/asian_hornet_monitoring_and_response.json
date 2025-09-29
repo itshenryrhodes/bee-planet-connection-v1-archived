@@ -58,8 +58,18 @@
     "Short hyphens only.",
     "Calm, factual updates prevent panic and support accurate responses."
   ],
-  "Cross-Links": ["colony_defense_and_behaviour", "hive_hygiene_and_biosecurity", "pesticide_awareness_and_incident_reporting"],
-  "Keywords": ["Vespa velutina", "hawking", "monitoring", "reporting", "predation"],
+  "Cross-Links": [
+    "colony_defense_and_behaviour",
+    "hive_hygiene_and_biosecurity",
+    "pesticide_awareness_and_incident_reporting"
+  ],
+  "Keywords": [
+    "Vespa velutina",
+    "hawking",
+    "monitoring",
+    "reporting",
+    "predation"
+  ],
   "Further Reading": [
     "Official national Asian hornet ID and reporting pages.",
     "Beekeeping association guidance on monitoring and protection."

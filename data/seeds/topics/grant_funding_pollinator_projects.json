@@ -1,82 +1,75 @@
 {
-  "title": "Grant funding basics for pollinator projects (apply, budget, report)",
-  "slug": "grant_funding_pollinator_projects",
-  "category": "Community & inclusion",
-  "categories": ["Operations"],
-  "taxonomy": {
-    "pillar": "Community & inclusion",
-    "subpillars": ["Projects"],
-    "topics": ["grants", "budgets", "outcomes", "reports", "match-funding"],
-    "audience": ["club-officer", "intermediate"],
-    "intent": ["how-to", "policy"],
-    "regions": ["UK", "EU"],
-    "season": ["winter", "spring"],
-    "climate": ["temperate"],
-    "difficulty": "intermediate",
-    "lifecycle_stage": ["growth"]
-  },
-  "tags": ["outputs-outcomes", "quotes", "timeline", "evidence"],
-
-  "At-a-Glance": "Funding follows clarity. Pick one focused project—trees for gap weeks, school bee garden, or community training—and write a short case: the need, what you will do, who benefits, the budget, and how you will measure success. Get two quotes for large items, list volunteer match hours, and set a tidy timeline. Use plain language and a one page budget. Report back with photos, a short note on outcomes vs plan, and a spend summary. Repeatable, small wins beat giant, vague proposals.",
-  
-  "Why it Matters": "Grants can accelerate planting or education, but they can also sap time if unfocused. Funders look for achievable scope, community benefit, and credible delivery. A simple structure helps: a one sentence need, a bullet list of activities, a short budget with quotes, and outcomes that can be checked (trees planted, pupils trained, nectar gap reduced). Match funding in the form of volunteer hours shows buy-in. Reporting is as important as applying—clear before and after photos, a map, and a line on lessons learned build a track record that makes the next bid easier. Keeping paperwork consistent across bids reduces friction and lets you get outside to plant rather than chase attachments.",
-  
+  "At-a-Glance": "Good grants match funder goals with clear outcomes, simple budgets, and tidy reporting—small wins compound.",
+  "Why it Matters": [
+    "Funds forage planting, education, and community kit.",
+    "Builds partnerships and visibility for your project."
+  ],
+  "Objectives": [
+    "Map suitable funders and their priorities.",
+    "Write outcome-focused proposals with simple budgets.",
+    "Deliver on time and report cleanly."
+  ],
+  "What Good Looks Like": [
+    "Short proposal: problem → plan → outputs → outcomes → budget.",
+    "Partners and permissions confirmed up front.",
+    "Gantt, risk register, and monitoring plan in an appendix."
+  ],
   "Step-by-Step": [
-    "Define the need and beneficiaries; pick a focused project scope.",
-    "Draft outcomes and a simple method; gather 2 quotes if needed.",
-    "Build a one page budget with any match and a realistic timeline.",
-    "Submit with plain language and one photo or diagram.",
-    "Deliver and report with photos, counts, and a short lessons section."
+    "1) Funder fit: read guidance; list eligibility and deadlines.",
+    "2) Design: measurable outputs (trees planted, sessions, m² of forage).",
+    "3) Budget: realistic costs, match/in-kind, quotes attached.",
+    "4) Delivery plan: roles, milestones, risks and mitigations.",
+    "5) Submit tidy pack; set calendar for reporting dates."
   ],
-
-  "Context & Narrative": "Your club spots a late summer nectar gap. You propose 10 small trees for a school and a park verge, plus a workshop for families. The bid states the need in one line, then lists actions: site permissions, plant purchase, planting days, and a follow up watering rota. The budget fits on one page with tree costs, guards, mulch, signage, and volunteer time logged as match. Outcomes are concrete: 10 trees planted, 2 workshops, 40 attendees, and a photo map of locations. You include a simple timeline from February permissions to April planting and a September review. Once funded, you run planting days, take tidy photos, and share a brief, honest report: what worked, what changed, and who helped. Next winter you apply again with confidence because you have a model and evidence that you deliver.",
-  
-  "Evidence Highlights": [
-    "Specific, measurable outcomes increase funding success.",
-    "Match funding via volunteer hours signals commitment.",
-    "Clear reporting improves chances for future bids."
+  "Seasonality & Climate": [
+    "Planting windows and flowering times must match schedule.",
+    "Heat/drought risk needs watering and species choice."
   ],
-
-  "Data Tables": {
-    "budget_headers": ["Item", "Qty", "Unit cost", "Total", "Supplier/quote"],
-    "outcomes_headers": ["Outcome", "Target", "Achieved", "Evidence", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Define KPIs (m² planted, pollinator counts, attendees).",
+    "Photo points and before/after surveys set at start."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: Budget squeeze -> Reduce scope; phase project; seek in-kind.",
+    "Issue: Land permissions slow -> Switch to container plantings; adjust outputs.",
+    "Issue: Monitoring weak -> Add simple transects and photo stations."
+  ],
   "Common Pitfalls": [
-    "Vague outcomes that cannot be evidenced.",
-    "No permissions for planting on public land.",
-    "Budgets without quotes or volunteer match."
+    "Vague outcomes and no baseline.",
+    "Over-ambitious planting with no maintenance plan."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Attach a simple map with pins and captions—funders love clear visuals."}
+  "Tools & Techniques": [
+    "Template proposal, budget sheet, Gantt, risk log.",
+    "Simple monitoring pack and photo map."
   ],
-
-  "FAQs": [
-    {"q": "Do we need a bank account?", "a": "Yes—funds rarely go to individuals; use the club account with dual control."},
-    {"q": "Overheads allowed?", "a": "Check guidance; some allow a small admin line."}
+  "Safety & Compliance": [
+    "Safeguarding/insurance for public events.",
+    "Landowner permissions and pesticide-free pledges where relevant."
   ],
-
-  "Seasonality & Climate": "Apply in winter for spring planting; schedule watering support through dry spells.",
-  
-  "Suggested Figures": [
-    {"alt": "Mini project timeline", "caption": "Permissions → purchase → planting → review and report."}
+  "Field Checklist": [
+    "Eligibility confirmed.",
+    "Letters of support attached.",
+    "KPIs and reporting dates in calendar."
   ],
-
-  "Glossary": [
-    {"term": "Match funding", "def": "Cash or in-kind contributions such as volunteer hours that complement a grant."}
+  "Communications": [
+    "Short hyphens only.",
+    "Share wins with funders and community; credit partners."
   ],
-
-  "Cross-links": [
-    "forage_calendars_uk_regional",
-    "customer_newsletter_community",
+  "Cross-Links": [
+    "pollinator_friendly_planting",
+    "urban_forage_gap_planning",
     "event_risk_assessment_pack"
   ],
-
-  "Sources": [
-    {"name": "Community grants and reporting basics", "url": "https://www.gov.uk/"},
-    {"name": "Volunteer hours valuation guidance", "url": "https://www.ncvo.org.uk/"}
+  "Keywords": [
+    "grant",
+    "funding",
+    "forage",
+    "monitoring",
+    "outcomes"
   ],
-
-  "Scrape-Guidance": "Pull small community grant norms, budgeting expectations, and simple reporting examples from official guidance."
+  "Further Reading": [
+    "Small environmental grants directories.",
+    "Basics of monitoring and evaluation."
+  ],
+  "Notes": "Keep a one-pager of reusable boilerplate to speed future bids."
 }

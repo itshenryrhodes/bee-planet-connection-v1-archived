@@ -1,82 +1,74 @@
 {
-  "title": "Market stall setup & food hygiene (UK small producers)",
-  "slug": "market_stall_setup_food_hygiene_uk",
-  "category": "Products & processing",
-  "categories": ["Risk & compliance", "Community & inclusion"],
-  "taxonomy": {
-    "pillar": "Products & processing",
-    "subpillars": ["Compliance"],
-    "topics": ["market-stall", "food-hygiene", "allergen-comms", "trading-setup"],
-    "audience": ["market-seller", "beginner", "intermediate"],
-    "intent": ["how-to", "policy"],
-    "regions": ["UK"],
-    "season": ["spring", "summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["post-harvest"]
-  },
-  "tags": ["registration", "handwashing", "sampling-policy", "price boards"],
-
-  "At-a-Glance": "A tidy stall sells. Register as a food business with your local authority, carry public liability insurance, and keep labels compliant. On the day, run a clean table with a washable cloth, covered products, a handwashing setup or sanitiser, and a simple allergen statement. Use clear price boards and batch coded jars. Keep float, receipts, and a short spiel about origin. Sampling is optional - if you do it, use clean spoons and a waste pot. A quick pack list and a 10 minute setup routine make early mornings calm and consistent.",
-
-  "Why it Matters": "Markets are quick trust tests. Shoppers glance, judge hygiene, read a label, and decide in 5 seconds. Compliance underpins confidence: registration shows you are on the map, insurance protects you and the market, and clean practice protects your brand. A clear stall avoids crowd friction and speeds choices: readable prices, visible weights, and simple origin claims. Sampling is where things slip - unmanaged, it creates mess and risk. A written micro SOP keeps it safe and swift. Finally, markets are noisy: a one sentence story about forage and place will do more than a banner of buzzwords. When the stall is disciplined, you sell more with fewer questions and leave the site with fewer sticky surprises and no compliance headaches.",
-
+  "At-a-Glance": "Make stalls clean, inviting, and compliant: cold chain (if needed), allergen info, hand hygiene, and tidy money handling.",
+  "Why it Matters": [
+    "Protects customers and meets council/market rules.",
+    "Boosts sales with confident, pro presentation."
+  ],
+  "Objectives": [
+    "Standardise stall layout and hygiene SOP.",
+    "Meet UK food safety requirements for micro-producers.",
+    "Reduce setup/tear-down time with a kit list."
+  ],
+  "What Good Looks Like": [
+    "Zoned table: sampling, sales, storage; tablecloth clipped tight.",
+    "Allergen/weights & measures visible; batch codes accessible.",
+    "Hand gel, wipes, bin with lid; tasting kit separated from cash."
+  ],
   "Step-by-Step": [
-    "Register as a food business and confirm market requirements.",
-    "Prepare compliant labels and batch log for the jars you bring.",
-    "Pack kit: cloth, covers, price boards, sanitizer, bin, float, receipts.",
-    "Set up early: clean table, stock staged, prices visible, bags ready.",
-    "Operate cleanly: handle jars by necks, manage samples, wipe often, log sales."
+    "1) Pre-pack: stock list, batch sheet, float, signage, gazebo weights.",
+    "2) On-site: food area first, cash point second; keep boxes off ground.",
+    "3) Sampling: clean spoons, covered tasters, bin for sticks/lids.",
+    "4) Close: reconcile stock, wipe surfaces, waste out, photos of layout."
   ],
-
-  "Context & Narrative": "The best stalls look boring in the best way. You arrive early, lay a washable cloth, and stage stock by size so hands move left to right. A small hand gel and a roll of paper towels sit under the table next to a waste bin. Price boards are legible from 2 meters - no chalk scrawl that needs decoding. Jars face forward with labels aligned and batch coded so any customer query routes back to a date and apiary. If you sample, you place a small tray, single use spoons, a waste pot, and you narrate: a pea sized taste on a spoon, bin it, no double dips. The stall tells a clean story - simple origin line, your name and contact, and a smile. Receipts and float live in a hard case, not a pocket. When the rush ends you note jar counts and reorder points. At pack down, lids go on boxes, the area is swept, and a quick photo of the stall helps the next setup. Next time is easier because the list and layout live in your bag. Markets reward rhythm - do the same tidy dance each week and customers will spot you and return because buying from you is easy.",
-
-  "Evidence Highlights": [
-    "Visible cleanliness and clear prices increase approach and conversion.",
-    "Batch logs and compliant labels reduce post sale risk.",
-    "Simple sampling SOPs reduce mess and food safety issues."
+  "Seasonality & Climate": [
+    "Wind = guy ropes/weights; sun = shade for honey/wax.",
+    "Winter = warm layers, anti-condensation lids."
   ],
-
-  "Data Tables": {
-    "pack_list": ["Table", "Cloth", "Covers", "Price boards", "Float", "Card reader", "Sanitizer", "Bin bags", "Spoons", "Towels", "Spare labels", "Pens"],
-    "sales_log_headers": ["Date", "Market", "SKUs", "Units sold", "Cash", "Card", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Target setup ≤30 min; stock variance <2%.",
+    "Sampling waste kept separate; bin never over ¾ full."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: Wasp pressure -> Lidded tasters; move sticky waste away; no open jars.",
+    "Issue: Crowding -> Add side table; queue line; simplify pricing board.",
+    "Issue: Spills -> Paper + wet wipes; swap tablecloths; keep spare."
+  ],
   "Common Pitfalls": [
-    "Illegible prices and cluttered tables.",
-    "Unmanaged sampling creating waste and risk.",
-    "No change float or dead card reader."
+    "No price labels; customers don’t ask.",
+    "Allergen signs missing or tiny.",
+    "Cash and tasters crossing over."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Stage a small mirror tile - clean jars and aligned labels pop under good light."}
+  "Tools & Techniques": [
+    "Clip-on signage, belly-band price list, QR to website.",
+    "Weigh-down kit: sandbags/weights per corner."
   ],
-
-  "FAQs": [
-    {"q": "Do I need a sink?", "a": "Markets vary - many allow sanitizer and wipes for low risk products like honey. Check terms."},
-    {"q": "Can I refill jars on site?", "a": "Avoid - keep filling at your processing space for hygiene and traceability."}
+  "Safety & Compliance": [
+    "UK allergen/label rules; weights & measures.",
+    "Market risk assessment and public liability docs on hand."
   ],
-
-  "Seasonality & Climate": "Wind demands weight on banners and covers. Heat softens labels - shade helps presentation.",
-
-  "Suggested Figures": [
-    {"alt": "Stall layout plan", "caption": "Front row by sizes, price board left, sampling tray right, storage under table."}
+  "Field Checklist": [
+    "Signage up; prices visible.",
+    "Hand gel/towels out; bin ready.",
+    "Batch/float/receipts in place."
   ],
-
-  "Glossary": [
-    {"term": "Low risk food", "def": "Foods with low water activity like honey that are less prone to bacterial growth."}
+  "Communications": [
+    "Short hyphens only.",
+    "Say hello; offer a tiny sample; one clear CTA."
   ],
-
-  "Cross-links": [
-    "honey_labelling_legal_basics_uk_eu",
-    "honey_processing_basics",
-    "disease_control_logbook"
+  "Cross-Links": [
+    "press_media_handling_basics",
+    "pricing_margins_small_scale_honey",
+    "wholesale_to_shops_basics"
   ],
-
-  "Sources": [
-    {"name": "UK local authority food business basics", "url": "https://www.gov.uk/"},
-    {"name": "Market operator guidance", "url": "https://www.nafm.org.uk/"}
+  "Keywords": [
+    "market stall",
+    "food hygiene",
+    "UK",
+    "sampling"
   ],
-
-  "Scrape-Guidance": "Lift registration and hygiene minimums from official sources and market operator terms. Focus on low risk food handling and stall layout that supports compliance."
+  "Further Reading": [
+    "Local authority market trader guidance.",
+    "Micro-producer food safety checklists."
+  ],
+  "Notes": "Photograph the ideal stall: new volunteers can copy it exactly."
 }

@@ -59,8 +59,17 @@
     "Short hyphens only.",
     "Set expectations that not all cases are recoverable fast."
   ],
-  "Cross-Links": ["queen_introduction_methods_and_acceptance", "making_and_managing_nucleus_colonies", "swarm_management"],
-  "Keywords": ["laying workers", "push-in cage", "brood reset", "newspaper combine"],
+  "Cross-Links": [
+    "queen_introduction_methods_and_acceptance",
+    "making_and_managing_nucleus_colonies",
+    "swarm_management"
+  ],
+  "Keywords": [
+    "laying workers",
+    "push-in cage",
+    "brood reset",
+    "newspaper combine"
+  ],
   "Further Reading": [
     "Queen introduction best practices from associations.",
     "Research on pheromone dynamics in queenless colonies."

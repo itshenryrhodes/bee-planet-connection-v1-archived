@@ -60,8 +60,19 @@
     "Short hyphens only.",
     "Explain to helpers the difference between new-queen ramp-up and failure."
   ],
-  "Cross-Links": ["queen_rearing_and_supersedure", "varroa_monitoring_methods", "colony_nutrition", "efb_afb_disease_recognition_and_response"],
-  "Keywords": ["brood pattern", "shotgun brood", "backfilling", "DWV", "requeen"],
+  "Cross-Links": [
+    "queen_rearing_and_supersedure",
+    "varroa_monitoring_methods",
+    "colony_nutrition",
+    "efb_afb_disease_recognition_and_response"
+  ],
+  "Keywords": [
+    "brood pattern",
+    "shotgun brood",
+    "backfilling",
+    "DWV",
+    "requeen"
+  ],
   "Further Reading": [
     "Inspectorate photo guides to brood diseases.",
     "Association modules on brood diagnostics."

@@ -1,72 +1,75 @@
 {
-  "At-a-Glance": "An integrated pest management (IPM) plan cycles organic acids, essential oils, biotechnical methods, and brood interruption to keep varroa below damage thresholds.",
+  "At-a-Glance": "Match treatment to brood status, temperature, and residue risk. Rotate actives to reduce resistance.",
   "Why it Matters": [
-    "Rotating modes of action slows resistance.",
-    "Treating at the right time protects winter bees and reduces virus loads.",
-    "Biotechnical options reduce chemical inputs and residue risks."
+    "Effective control with minimal taint and resistance pressure.",
+    "Protects winter bees and harvest reputation."
   ],
   "Objectives": [
-    "Adopt a written IPM calendar aligned to local flows.",
-    "Match treatment to brood status and ambient temperatures.",
-    "Verify efficacy post-treatment with a quantitative test."
+    "Keep a rotation plan across seasons.",
+    "Tie each product to a clear SOP and timing window.",
+    "Verify efficacy and record all batches."
   ],
   "What Good Looks Like": [
-    "Pre-winter oxalic acid when broodless or near-broodless.",
-    "Formic options when temperatures permit and quick knock-down is needed.",
-    "Thymol formulations post-harvest during warm stable periods.",
-    "Drone brood removal during build-up as part of biotechnical control."
+    "Decision matrix: season × brood × temperature → option list.",
+    "Pre- and post-treatment counts logged.",
+    "Boxes and honey flows scheduled to avoid conflicts."
   ],
   "Step-by-Step": [
-    "1) Assess infestation via alcohol/sugar wash.",
-    "2) Choose option: oxalic acid (dribble/vapor), formic (pads), thymol (gels/strips), or synthetic where permitted and necessary.",
-    "3) Confirm temperature window and colony strength.",
-    "4) Apply per label and manufacturer guidance exactly.",
-    "5) Mark calendar for removal or follow-up.",
-    "6) Re-test 10–14 days after treatment to confirm efficacy."
+    "1) Identify window: pre/post harvest, broodless vs brood-on.",
+    "2) Select active: oxalic, formic, thymol, amitraz—per label and plan.",
+    "3) Prepare kit and safety gear; apply per SOP.",
+    "4) Recount mites; document efficacy; rotate actives next time."
   ],
   "Seasonality & Climate": [
-    "Winter: oxalic acid ideal when broodless.",
-    "Late summer/early autumn: thymol or formic depending on weather.",
-    "Spring build-up: biotechnical methods and careful timing to avoid queen loss."
+    "Cold broodless midwinter suits oxalic dribbles/vapor where legal.",
+    "Warm late summer suits thymol/formic—respect temp limits."
   ],
   "Data & Thresholds": [
-    "Target post-treatment reduction >80 percent from baseline count.",
-    "Autumn targets are stricter to protect winter bees (often <1–2 percent infestation)."
+    "Target defined efficacy (e.g., >80% reduction—method dependent).",
+    "Temperature bands from labels guide go/no-go."
   ],
   "Diagnostics & Decision Tree": [
-    "Symptom: High mites during hot spell -> Avoid formic in heat spikes -> Use thymol if within range, or plan brood break + oxalic.",
-    "Symptom: Ineffective outcome -> Confirm dosage and exposure time -> Switch mode of action and retest."
+    "Symptom: Low efficacy -> Reassess application; reinvasion; change active.",
+    "Symptom: Bee stress -> Check temperature and ventilation; stop if unsafe.",
+    "Symptom: Residue worry -> Use non-taint options outside supers; observe withdrawal."
   ],
   "Common Pitfalls": [
-    "Applying outside temperature range causing queen loss or poor efficacy.",
-    "Failure to remove strips on time.",
-    "Skipping the verification test post-treatment."
+    "Treating during nectar flow with tainting actives.",
+    "Repeating same active each year.",
+    "Poor ventilation on formic leading to queen loss."
   ],
   "Tools & Techniques": [
-    "OA vaporiser or dribble kit, PPE, timers.",
-    "Formic pads, spacers, screen bottoms.",
-    "Thymol gel/strips, brood trapping frames."
+    "Timers, PPE, applicators/vaporizers, spacers for ventilation.",
+    "Yard checklist and treatment log."
   ],
   "Safety & Compliance": [
-    "Follow local approvals and labels exactly.",
-    "Use PPE for acids and ventilate well.",
-    "Maintain residue and treatment logs."
+    "Follow labels and local approvals strictly.",
+    "PPE and ventilation especially for acids and vapours."
   ],
   "Field Checklist": [
-    "Baseline mite count recorded.",
-    "Product, lot, and expiry noted.",
-    "Application start/end times logged.",
-    "Post-treatment count scheduled."
+    "Counts before/after scheduled.",
+    "Correct active and dose staged.",
+    "Ventilation/temperature checked."
   ],
   "Communications": [
     "Short hyphens only.",
-    "Explain to customers why treatment timing protects honey quality and bee health."
+    "Explain rotation to club mates to reduce resistance pressure."
   ],
-  "Cross-Links": ["varroa_monitoring_methods", "overwintering_colonies", "colony_nutrition", "hive_hygiene"],
-  "Keywords": ["IPM", "oxalic acid", "formic acid", "thymol", "brood break", "resistance"],
+  "Cross-Links": [
+    "oxalic_acid_varroa_treatment",
+    "formic_acid_varroa_treatment",
+    "thymol_varroa_treatment",
+    "amitraz_stewardship_varroa"
+  ],
+  "Keywords": [
+    "varroa",
+    "rotation",
+    "resistance",
+    "residues"
+  ],
   "Further Reading": [
-    "NBU treatment temperature ranges and labels.",
-    "Peer-reviewed comparisons of OA vapor vs dribble efficacy."
+    "Official product labels and datasheets.",
+    "Extension guides on integrated control."
   ],
-  "Notes": "Keep spare equipment to avoid delaying weather-sensitive windows."
+  "Notes": "Schedule treatments on the calendar the day you add supers to avoid clashes later."
 }

@@ -1,82 +1,74 @@
 {
-  "title": "Forage calendars (UK regional) & gap-filling plant lists",
-  "slug": "forage_calendars_uk_regional",
-  "category": "Community & inclusion",
-  "categories": ["Operations", "Products & processing"],
-  "taxonomy": {
-    "pillar": "Community & inclusion",
-    "subpillars": ["Forage & planting"],
-    "topics": ["forage-calendar", "region", "gap-analysis", "planting"],
-    "audience": ["beginner", "intermediate", "club-officer", "community-gardener"],
-    "intent": ["reference", "how-to"],
-    "regions": ["UK"],
-    "season": ["spring", "summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["setup", "growth", "overwintering"]
-  },
-  "tags": ["gap-weeks", "spring-build", "late-summer dearth", "urban-trees"],
-
-  "At-a-Glance": "A regional forage calendar answers two questions: ‘when do bees feast?’ and ‘when do they fast?’ Map bloom windows for trees, hedges and herbaceous plants in your area, then mark the gaps. Fill those with resilient, non-invasive picks—often trees and shrubs that carry nectar in poor weather (lime/tilia, ivy, cotoneaster, hebe, rosemary, winter mahonia). Pair the calendar with scale-hive weight curves and simple planting lists for members and neighbours. Aim for layered plantings (trees + shrubs + ground cover) near flight paths—not just pretty borders but season-long bee income.",
-
-  "Why it Matters": "Strong springs and calm winters come from calories, not optimism. Many yards ride a big spring wave then hit a late-summer sag; colonies shrink just before winter bees are raised. Regional calendars make this visible. Once you see the dip, you can act: plant gap-fillers, move supers timing, or plan a brood break plus oxalic when natural flows pause. Community projects love this framing: it translates bee needs into street trees and pocket-parks that help people too (shade, stormwater, birds). Clubs can publish localised lists and partner with councils or schools—‘plant one tree that feeds bees in August’. Over seasons, these choices change the silhouette of weight curves and reduce emergency feeding. Honey character improves too when late nectar sources are diverse and reliable, not just ivy sprint finishes.",
-
+  "At-a-Glance": "UK bloom timing varies by region and altitude. Track local shifts to time supering and feeding accurately.",
+  "Why it Matters": [
+    "Improves yield prediction and staffing.",
+    "Supports market stories about place and season."
+  ],
+  "Objectives": [
+    "Build regional variants (SE, SW, Midlands, Wales, N England, Scotland, NI).",
+    "Capture altitude and coastal effects.",
+    "Tie to weight data from sentinel hives."
+  ],
+  "What Good Looks Like": [
+    "Regional tables with ± windows vs baseline.",
+    "Photos and local cues (e.g., hawthorn before blackberry).",
+    "Annual update with ‘earliest/latest’ notes."
+  ],
   "Step-by-Step": [
-    "Collect regional bloom data (club memory + botanic sources).",
-    "Overlay with scale-hive weight curves to spot gaps.",
-    "Publish a simple calendar by month with ‘hero plants’.",
-    "Create plant lists: trees, shrubs, ground cover (by soil/aspect).",
-    "Review annually; add community planting wins and lessons."
+    "1) Start with a national template; add regional offsets.",
+    "2) Collect local beekeeper inputs and scale logs.",
+    "3) Publish regional sheets; review post-season.",
+    "4) Adjust offsets and add new indicator species."
   ],
-
-  "Context & Narrative": "Calendars become powerful when they are local and lived. Start with the trees—you’ll move more nectar with a lime avenue than with a dozen pots. In spring, willows and maples set brood arcs; in early summer, bramble is the quiet backbone in many regions; late summer can sag unless parks carry dependable shrubs; autumn ivy often saves the day but isn’t guaranteed in drought. A good club calendar highlights these beats, then names plants anyone can actually obtain from local nurseries. Present the list for different spaces: balcony (thyme, lavender), tiny garden (hebe, rosemary), street verge (cotoneaster), school edge (lime or field maple). Add icons for pollen vs nectar weight to teach what feeds brood versus jars. \n\nThen bring telemetry in. If your scale hive shows a July flatline, link it to the calendar and plant towards that week. Over a couple of seasons, you’ll see the dip soften as community trees mature. Share the wins: a before/after curve and a photo of the new planting inspire members to copy. For farmers, a hedgerow plan with staggered bloom adds pollinator support without losing field function. Calendars are not wallpaper—they are plans with dates and spades. Keep them short, pretty and updated so people carry them in their pockets and actually plant.",
-
-  "Evidence Highlights": [
-    "Tree/shrub layers deliver more reliable nectar than herbaceous alone.",
-    "Late-summer gap-filling improves winter bee production.",
-    "Local calibration with weight data beats generic calendars."
+  "Seasonality & Climate": [
+    "Warm springs bring earlier flows; late frosts reset timing.",
+    "Ivy highly regional—note coastal vs inland differences."
   ],
-
-  "Data Tables": {
-    "calendar_headers": ["Month", "Key sources", "Nectar/Pollen", "Notes"],
-    "plant_list_headers": ["Plant", "Type", "Bloom window", "Soil/aspect", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Offset days vs baseline for each key species.",
+    "Regional daily delta thresholds for supering."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: Calendar mismatch -> Increase local contributors; use sentinel hives.",
+    "Issue: Dearth misjudged -> Add drought-tolerant gap species per region.",
+    "Issue: Conflicting reports -> Weight data wins; document anomalies."
+  ],
   "Common Pitfalls": [
-    "Lists heavy on exotics that fail in local soils.",
-    "Ignoring trees—the biggest lever.",
-    "Calendars that aren’t updated yearly."
+    "Treating the UK as one zone.",
+    "No altitude notes for uplands.",
+    "Over-relying on single-club anecdotes."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "One good street tree outperforms ten pots—aim big when you can."}
+  "Tools & Techniques": [
+    "Shared map with regional layers; photo pins by date.",
+    "Small survey form for bloom reports."
   ],
-
-  "FAQs": [
-    {"q": "Do I need Latin names?", "a": "Provide both—helps nurseries and avoids confusion."},
-    {"q": "What about invasives?", "a": "Prefer native or non-invasive choices vetted by local lists."}
+  "Safety & Compliance": [
+    "Respect land access rules when scouting.",
+    "Avoid publishing exact hive locations."
   ],
-
-  "Seasonality & Climate": "Weather shifts bloom timing; record real dates each year and nudge the calendar accordingly.",
-
-  "Suggested Figures": [
-    {"alt": "Forage calendar heatmap", "caption": "Month vs plant intensity with gap weeks highlighted."}
+  "Field Checklist": [
+    "Regional sheets printed/linked.",
+    "Sentinel data flowing.",
+    "Offsets updated after review."
   ],
-
-  "Glossary": [
-    {"term": "Gap week", "def": "A period with little nectar/pollen; often late summer before ivy."}
+  "Communications": [
+    "Short hyphens only.",
+    "Label jars with region stories and bloom windows."
   ],
-
-  "Cross-links": [
-    "scale_hives_sensors",
-    "apiary_setup_site_selection",
-    "apiary_water_systems"
+  "Cross-Links": [
+    "forage_calendars",
+    "gis_forage_mapping_apiary_planning",
+    "urban_forage_gap_planning"
   ],
-
-  "Sources": [
-    {"name": "Royal Botanic Gardens (seasonal bloom refs)", "url": "https://www.kew.org/"},
-    {"name": "Local wildlife trusts / council tree lists", "url": "https://www.wildlifetrusts.org/"}
+  "Keywords": [
+    "UK forage",
+    "regional timing",
+    "offsets",
+    "sentinel hives"
   ],
-
-  "Scrape-Guidance": "Extract bloom windows and recommended species from botanic and local authority sources; pair with telemetry patterns for a localised calendar."
+  "Further Reading": [
+    "Regional beekeeping association notes.",
+    "Long-term phenology observations."
+  ],
+  "Notes": "Keep a ‘weird year’ log—extremes teach more than averages."
 }

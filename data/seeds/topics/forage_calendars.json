@@ -1,6 +1,74 @@
 {
-  "Overview": "Planning around nectar and pollen flows lets beekeepers time space, splits, and feeding with confidence.",
-  "Drivers & Mechanisms": "UK flows: spring OSR and orchard bloom; main summer clover/lime/bramble; late summer heather in some regions; ivy into autumn. Mediterranean flows start earlier, with spring herbs and citrus, summer sunflowers/lavenders, and mid-summer dearths in hot/dry areas.",
-  "Impacts & Case Studies": "Mismatches between hive strength and flows cost honey and stress colonies. Align supering and swarm control with local calendars.",
-  "Mitigation & Best Practice": "Use local bloom diaries, plant staggered forage, and avoid harvesting suspect nectars (e.g., toxic rhododendron). Feed only to bridge genuine gaps, not during good flows."
+  "At-a-Glance": "A simple bloom calendar informs supering, splits, feeding, and marketing stories.",
+  "Why it Matters": [
+    "Better timing yields better honey and calmer bees.",
+    "Creates content for labels and education."
+  ],
+  "Objectives": [
+    "List key nectar/pollen sources by month.",
+    "Note timing shifts due to weather and microclimate.",
+    "Link to scale data and actions."
+  ],
+  "What Good Looks Like": [
+    "Month-by-month table with local notes and photos.",
+    "Actions column: super, split, feed, move, market story.",
+    "Annual revision after season review."
+  ],
+  "Step-by-Step": [
+    "1) Draft calendar from experience and local guides.",
+    "2) Validate with weight logs and field notes.",
+    "3) Add photos and stories; publish to team.",
+    "4) Update post-season with real dates and outcomes."
+  ],
+  "Seasonality & Climate": [
+    "Early springs advance trees; drought shortens herb blooms.",
+    "Ivy dominates late—plan accordingly."
+  ],
+  "Data & Thresholds": [
+    "Daily weight delta triggers in calendar.",
+    "Moisture targets and extraction windows noted."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: Missed flow -> Check calendar lag; adjust next year; add alerts.",
+    "Issue: Dearth unknown -> Add gap species; shift splits earlier.",
+    "Issue: Marketing mismatch -> Align labels to bloom stories."
+  ],
+  "Common Pitfalls": [
+    "Copying national calendars without local tweaks.",
+    "No photos or dates from own yards.",
+    "Forgetting pollen sources vs nectar."
+  ],
+  "Tools & Techniques": [
+    "Shared sheet, photos, QR codes to plant IDs.",
+    "Scale dashboards tied to months."
+  ],
+  "Safety & Compliance": [
+    "Avoid trespass for photos/foraging checks.",
+    "Do not publish precise hive locations without consent."
+  ],
+  "Field Checklist": [
+    "Calendar printed in truck.",
+    "Weight and bloom notes captured.",
+    "Post-season review scheduled."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share monthly ‘what’s blooming’ posts."
+  ],
+  "Cross-Links": [
+    "forage_calendars_uk_regional",
+    "gis_forage_mapping_apiary_planning",
+    "hive_scale_analytics_patterns"
+  ],
+  "Keywords": [
+    "forage calendar",
+    "bloom",
+    "timing",
+    "flows"
+  ],
+  "Further Reading": [
+    "Regional flora guides.",
+    "Citizen-science bloom tracking."
+  ],
+  "Notes": "Keep separate columns for nectar vs pollen to plan nutrition."
 }

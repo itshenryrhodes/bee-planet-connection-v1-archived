@@ -58,8 +58,18 @@
     "Short hyphens only.",
     "Brief site owners on visible bearding to avoid concern."
   ],
-  "Cross-Links": ["hive_ventilation_and_moisture_control", "water_sources_and_hydration", "spring_build_up_and_supering_strategy"],
-  "Keywords": ["bearding", "heat wave", "shade", "ventilation", "overheating"],
+  "Cross-Links": [
+    "hive_ventilation_and_moisture_control",
+    "water_sources_and_hydration",
+    "spring_build_up_and_supering_strategy"
+  ],
+  "Keywords": [
+    "bearding",
+    "heat wave",
+    "shade",
+    "ventilation",
+    "overheating"
+  ],
   "Further Reading": [
     "Studies on hive microclimate and thermoregulation.",
     "Urban rooftop beekeeping case studies on heat mitigation."

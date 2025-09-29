@@ -1,81 +1,74 @@
 {
-  "title": "Honey tasting & sensory notes (describe, don’t hype)",
-  "slug": "honey_tasting_sensory_notes",
-  "category": "Products & processing",
-  "categories": ["Community & inclusion"],
-  "taxonomy": {
-    "pillar": "Products & processing",
-    "subpillars": ["Presentation"],
-    "topics": ["sensory", "tasting", "descriptors", "pairing", "batch-notes"],
-    "audience": ["market-seller", "beginner", "intermediate"],
-    "intent": ["how-to", "reference"],
-    "regions": ["UK", "EU"],
-    "season": ["summer", "autumn"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["post-harvest"]
-  },
-  "tags": ["aroma-wheel", "texture", "pairing-cards", "batch-variability"],
-
-  "At-a-Glance": "Good tasting notes are clear and modest. Describe colour, aroma, texture, and finish with everyday words—‘light amber, soft citrus, herbal finish’—and avoid hype or health claims. Use clean, disposable sticks if sampling; keep water and plain crackers for palate reset. Link notes to batch codes so buyers can find a favourite again. Offer a tiny pairing card—yoghurt, toast, cheese, dressings—so jars go home with a plan. Consistent, honest descriptions build trust and repeat sales without shouting.",
-  
-  "Why it Matters": "Shoppers decide fast and remember stories. When your notes are descriptive rather than boastful, people feel informed, not sold to. Linking notes to batch codes admits natural variation and turns it into a feature—this summer’s bramble vs last spring’s willow. A simple aroma wheel helps staff and club volunteers use the same language at stalls and talks. Clean sampling keeps the table tidy and compliant, and tiny portions reduce waste. Pairing suggestions move jars from ‘nice idea’ to breakfast table habit. Over time, your stall develops a house style: calm language, neat cards, and jars that come with context. That tone matches the craft of beekeeping—careful, seasonal, real—and it’s surprisingly effective for sales.",
-  
+  "At-a-Glance": "Teach simple sensory: colour, aroma, flavour, texture, aftertaste. Use shared vocabulary and short, honest notes.",
+  "Why it Matters": [
+    "Improves product selection and storytelling.",
+    "Engages customers and retailers."
+  ],
+  "Objectives": [
+    "Adopt a house tasting card and descriptors.",
+    "Run short team tastings each season.",
+    "Use notes on labels, web, and pitches."
+  ],
+  "What Good Looks Like": [
+    "5-minute tastings: dry cracker, water, 2–3 samples max.",
+    "Common lexicon with examples (floral, malty, resinous, citrus).",
+    "Photos and notes archived by batch."
+  ],
   "Step-by-Step": [
-    "Taste quietly and write descriptors for colour, aroma, texture, finish.",
-    "Create a small card with batch code and 1–2 pairings.",
-    "If sampling, set up clean spoons/stirrers and a waste pot.",
-    "Train helpers with an aroma wheel and a script.",
-    "Log buyer feedback to refine next season’s cards."
+    "1) Prepare neutral palate kit; set light and table.",
+    "2) Evaluate colour (scale), aroma (orthonasal), texture, flavour, finish.",
+    "3) Write 2–3 descriptors; avoid medical claims; note pairing ideas.",
+    "4) Save to batch folder; update product pages."
   ],
-
-  "Context & Narrative": "Behind the stall you open a retention jar, dip a clean stick and pause. Notes go onto a small form—‘gold, medium body, hedgerow, hint of citrus, quick clean finish’. You print that onto a tiny batch card that clips to the shelf. When someone asks ‘what’s it like?’, you hand them the card and offer a single, hygienic taste. The stall stays quiet and competent, not chaotic. A simple wheel of words sits taped inside the cash box so anyone helping can say ‘light floral’ instead of ‘um, nice’. Pairings are practical: yoghurt swirl, toast, soft goat cheese, or a lemon dressing. No health claims, no hyperbole—just useful guidance. After the market you jot which batch sold fastest and what words people repeated back. Next time the card reads a little better. Over the season your notes become a tiny archive that teaches you your own terroir: which hedges made June sing, and what August tasted like in a dry year.",
-  
-  "Evidence Highlights": [
-    "Consistent descriptors improve customer understanding and satisfaction.",
-    "Hygienic sampling practices reduce complaints and waste.",
-    "Linking notes to batch codes supports traceability and repeat purchase."
+  "Seasonality & Climate": [
+    "Spring lighter/floral; late season darker/resinous common.",
+    "Heat affects viscosity—standardise temp for tastings."
   ],
-
-  "Data Tables": {
-    "tasting_card_headers": ["Batch", "Colour", "Aroma", "Texture", "Finish", "Pairings"]
-  },
-
+  "Data & Thresholds": [
+    "Two tasters minimum; break ties with reference jar.",
+    "Do not exceed 3 samples/session to avoid palate fatigue."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Disagreement -> Re-taste blind; pick shared descriptors only.",
+    "Customer confusion -> Add pairing card or comparison photo.",
+    "Off-notes -> Check storage/heating history; re-test moisture."
+  ],
   "Common Pitfalls": [
-    "Medical or exaggerated claims.",
-    "Messy sampling without waste control.",
-    "No link between notes and batch codes."
+    "Flowery marketing with zero substance.",
+    "Too many descriptors; inconsistent across SKUs.",
+    "Tasting after spicy food/coffee."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Use the same neutral tasting sticks and a small bin—cleanliness reads as quality."}
+  "Tools & Techniques": [
+    "Colour chart, tasting spoons, crackers, water, note cards.",
+    "Light tent for colour-standard photos."
   ],
-
-  "FAQs": [
-    {"q": "Do I need formal training?", "a": "No—shared language and practice beat jargon."},
-    {"q": "How many pairings?", "a": "One or two practical ideas—don’t overwhelm."}
+  "Safety & Compliance": [
+    "No health/medicinal claims.",
+    "Allergen/ingredient info accurate on cards/labels."
   ],
-
-  "Seasonality & Climate": "Flora and weather shift flavour; update cards each batch.",
-  
-  "Suggested Figures": [
-    {"alt": "Mini aroma wheel", "caption": "Simple descriptors to align helpers at the stall."}
+  "Field Checklist": [
+    "Reference jars present.",
+    "Cards printed; pens ready.",
+    "Photos taken; notes filed."
   ],
-
-  "Glossary": [
-    {"term": "Finish", "def": "The aftertaste and feel that linger after tasting."}
+  "Communications": [
+    "Short hyphens only.",
+    "Keep it human: two honest descriptors beat ten fancy ones."
   ],
-
-  "Cross-links": [
-    "honey_labelling_legal_basics_uk_eu",
-    "market_stall_setup_food_hygiene_uk",
+  "Cross-Links": [
+    "monofloral_identification_sensory",
+    "product_photography_basics",
     "pricing_margins_small_scale_honey"
   ],
-
-  "Sources": [
-    {"name": "Sensory evaluation basics", "url": "https://www.fao.org/"},
-    {"name": "Food sampling hygiene guidance", "url": "https://www.gov.uk/"} 
+  "Keywords": [
+    "sensory",
+    "tasting",
+    "descriptors",
+    "colour scale"
   ],
-
-  "Scrape-Guidance": "Lift sensory descriptor frameworks and sampling hygiene best practice; avoid medical claims."
+  "Further Reading": [
+    "Honey sensory wheels and training guides.",
+    "Photography tips for colour-true images."
+  ],
+  "Notes": "A small daylight lamp standardises colour when skies change."
 }

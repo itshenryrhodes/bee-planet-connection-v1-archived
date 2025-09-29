@@ -61,8 +61,18 @@
     "Short hyphens only.",
     "Alert landowners to ETA and post-move checks."
   ],
-  "Cross-Links": ["apiary_setup", "bee_navigation_and_orientation", "hive_hygiene_and_biosecurity"],
-  "Keywords": ["migratory beekeeping", "travel screens", "reorientation", "pollination", "load securement"],
+  "Cross-Links": [
+    "apiary_setup",
+    "bee_navigation_and_orientation",
+    "hive_hygiene_and_biosecurity"
+  ],
+  "Keywords": [
+    "migratory beekeeping",
+    "travel screens",
+    "reorientation",
+    "pollination",
+    "load securement"
+  ],
   "Further Reading": [
     "Transport guidelines from beekeeping associations.",
     "Case studies on pollination logistics."

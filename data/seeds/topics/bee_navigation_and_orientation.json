@@ -69,8 +69,19 @@
     "House style uses short hyphens only.",
     "If urban, keep a neighbour note template ready for planned moves."
   ],
-  "Cross-Links": ["apiary-setup", "urban_stakeholder_neighbour_relations", "colony_defense_and_behaviour"],
-  "Keywords": ["orientation flights", "sun compass", "polarized light", "landmarks", "drifting", "reorientation"],
+  "Cross-Links": [
+    "apiary-setup",
+    "urban_stakeholder_neighbour_relations",
+    "colony_defense_and_behaviour"
+  ],
+  "Keywords": [
+    "orientation flights",
+    "sun compass",
+    "polarized light",
+    "landmarks",
+    "drifting",
+    "reorientation"
+  ],
   "Further Reading": [
     "NBU advisory leaflets on apiary siting and management.",
     "J Seeley - Honeybee Ecology, practical insights on foraging and navigation."

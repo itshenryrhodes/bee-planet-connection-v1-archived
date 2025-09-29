@@ -58,8 +58,18 @@
     "Short hyphens only.",
     "Explain to neighbours the difference between bees and wasps and your prevention steps."
   ],
-  "Cross-Links": ["robbing_prevention_and_response", "hive_hygiene_and_biosecurity", "water_sources_and_hydration"],
-  "Keywords": ["wasps", "yellowjackets", "robbing screens", "dearth pressure", "entrance reducers"],
+  "Cross-Links": [
+    "robbing_prevention_and_response",
+    "hive_hygiene_and_biosecurity",
+    "water_sources_and_hydration"
+  ],
+  "Keywords": [
+    "wasps",
+    "yellowjackets",
+    "robbing screens",
+    "dearth pressure",
+    "entrance reducers"
+  ],
   "Further Reading": [
     "Regional ID guides for wasps and hornets.",
     "Association notes on late season robbing and wasp control."

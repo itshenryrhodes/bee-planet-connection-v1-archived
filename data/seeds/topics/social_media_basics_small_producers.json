@@ -1,81 +1,74 @@
 {
-  "title": "Social media basics for small producers (calm, useful, on-brand)",
-  "slug": "social_media_basics_small_producers",
-  "category": "Community & inclusion",
-  "categories": ["Comms", "Operations"],
-  "taxonomy": {
-    "pillar": "Community & inclusion",
-    "subpillars": ["Comms"],
-    "topics": ["social-media", "content-calendar", "photos", "comments", "moderation"],
-    "audience": ["market-seller", "beginner", "intermediate", "club-officer"],
-    "intent": ["how-to", "reference"],
-    "regions": ["UK", "EU"],
-    "season": ["spring", "summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["growth"]
-  },
-  "tags": ["cadence", "tone-of-voice", "photo-consent", "FAQ-pins"],
-
-  "At-a-Glance": "Keep socials light and useful. Post on a steady cadence (weekly works), share clean photos, and write short captions that teach or update: forage notes, market dates, care tips for set honey, a tidy shot of your stall. Pin an FAQ with pricing, returns, and how to contact you. Moderate kindly, ignore bait, and move long answers to DMs or email. Use alt text on images, get consent for people in photos, and save your best posts for reuse. Socials should feel like your stall: friendly, bright and breezy, never frantic.",
-  
-  "Why it Matters": "Socials can drain time or quietly support sales depending on how you frame them. A small, predictable plan protects your focus: one post a week, one story on market day, and an occasional seasonal reel. Helpful content brings followers back—a short crystallisation tip beats a dozen hashtags. Consistent voice and neat visuals carry your brand across posts, newsletters and stalls. Pinning common answers reduces repetitive replies; alt text and clear type widen access. Consent and moderation safeguard reputation, especially for clubs with volunteers and children in photos. Treat social platforms as rented shop windows: tidy, welcoming, and updated just enough to stay fresh without stealing time from beekeeping.",
-  
+  "At-a-Glance": "Pick one or two platforms, post consistently, and tell short, useful stories. Don’t chase every trend.",
+  "Why it Matters": [
+    "Drives discovery and teaches customers how to buy.",
+    "Supports press and wholesale with visible activity."
+  ],
+  "Objectives": [
+    "Define platform + cadence (e.g., Instagram 3×/wk).",
+    "Create repeatable content pillars (apiary, product, events).",
+    "Measure saves/clicks; iterate."
+  ],
+  "What Good Looks Like": [
+    "Shot list per week; captions in plain language; alt text added.",
+    "Link-in-bio updated; pinned post: where to buy.",
+    "Comments answered within 24 h."
+  ],
   "Step-by-Step": [
-    "Pick 1–2 platforms; set a weekly slot to post.",
-    "Create a simple content calendar (forage, market dates, tips).",
-    "Shoot clean, consistent photos; write short, plain captions.",
-    "Add alt text, get photo consent, pin FAQ and contact.",
-    "Moderate kindly; move complex chats to DM or email; archive best posts."
+    "1) Choose platforms; set cadence and pillars.",
+    "2) Batch-shoot weekly; write captions; schedule.",
+    "3) Engage 10–15 min after posting; answer questions.",
+    "4) Monthly review: best/worst posts; refine."
   ],
-
-  "Context & Narrative": "Your Friday routine includes a quick photo of the apiary or a clean jar shot by a window. Caption: three plain lines—what’s flowering, where you’ll be, and a tiny tip. A pinned post answers ‘Do you deliver?’ and ‘What to do if honey sets?’. On market mornings you post a single story of the tidy stall; later you reshare a customer photo with thanks (permission first). When comments veer into debates about bee counts, you thank, link to official guidance, and step away. Once a quarter you save your strongest photos and captions into a folder so your website and sell sheets borrow the same calm tone. Socials stay in their place—useful, kind and quick.",
-  
-  "Evidence Highlights": [
-    "Predictable cadence beats bursts for small brands.",
-    "Pinned FAQs reduce repetitive replies and confusion.",
-    "Alt text and consent practices widen reach and reduce risk."
+  "Seasonality & Climate": [
+    "Swarm/harvest seasons = behind-the-scenes stories.",
+    "Winter = education and gifting."
   ],
-
-  "Data Tables": {
-    "content_calendar_headers": ["Week", "Theme", "Photo", "Caption", "Alt text", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Track saves/clicks over likes; watch DM conversion.",
+    "Aim for 3–5 pillars; 80/20 helpful vs selling."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Low reach -> Improve hooks; post at audience times.",
+    "Few clicks -> Clearer CTA; update link hub.",
+    "Trolls -> Hide/block; avoid arguments."
+  ],
   "Common Pitfalls": [
-    "Posting only sales pitches.",
-    "Inconsistent image style and messy text.",
-    "Sharing photos without consent."
+    "Posting only sales asks.",
+    "Overlong text on image.",
+    "Inconsistent branding."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Write captions in Notes first—check tone and trim to one screen."}
+  "Tools & Techniques": [
+    "Scheduler, caption bank, hashtag notes, alt-text checklist.",
+    "UGC re-share policy and permissions."
   ],
-
-  "FAQs": [
-    {"q": "How many hashtags?", "a": "A few relevant ones are enough—quality over spam."},
-    {"q": "DM orders?", "a": "Point to your shop or email so orders don’t vanish in inboxes."}
+  "Safety & Compliance": [
+    "Ad disclosures for gifted items.",
+    "Privacy: avoid exact hive locations."
   ],
-
-  "Seasonality & Climate": "Flow heavy seasons need fewer posts; winter suits longer tips and behind-the-scenes.",
-  
-  "Suggested Figures": [
-    {"alt": "Post template mockup", "caption": "Photo on neutral background with 3-line caption and clear alt text."}
+  "Field Checklist": [
+    "This week’s plan set.",
+    "Link hub checked.",
+    "Replies done."
   ],
-
-  "Glossary": [
-    {"term": "Alt text", "def": "Text description of an image for accessibility and clarity."}
+  "Communications": [
+    "Short hyphens only.",
+    "Use real voices; avoid corporate sheen."
   ],
-
-  "Cross-links": [
-    "product_photography_basics",
+  "Cross-Links": [
     "customer_newsletter_community",
-    "honey_tasting_sensory_notes"
+    "product_photography_basics",
+    "press_media_handling_basics"
   ],
-
-  "Sources": [
-    {"name": "Accessible social media basics", "url": "https://www.gov.uk/"},
-    {"name": "Community comms guidance", "url": "https://www.ncvo.org.uk/"}
+  "Keywords": [
+    "social media",
+    "content pillars",
+    "cadence",
+    "CTA"
   ],
-
-  "Scrape-Guidance": "Capture accessibility and consent norms plus light-touch content planning tips from authoritative community comms sources."
+  "Further Reading": [
+    "Small brand social playbooks.",
+    "Alt text and accessibility guides."
+  ],
+  "Notes": "No bee selfies in shorts—PPE in-frame models good behaviour."
 }

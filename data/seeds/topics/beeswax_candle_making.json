@@ -1,81 +1,75 @@
 {
-  "title": "Beeswax candle making (wicking, moulds, safe melts)",
-  "slug": "beeswax_candle_making",
-  "category": "Products & processing",
-  "categories": ["Operations"],
-  "taxonomy": {
-    "pillar": "Products & processing",
-    "subpillars": ["Byproducts"],
-    "topics": ["candles", "wick-sizing", "moulds", "double-boiler", "safety"],
-    "audience": ["beginner", "intermediate", "market-seller"],
-    "intent": ["how-to", "reference"],
-    "regions": ["UK", "EU"],
-    "season": ["autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["post-harvest"]
-  },
-  "tags": ["wick-charts", "pour-temp", "bloom", "labelling"],
-
-  "At-a-Glance": "Beeswax candles shine when wick and wax match. Render clean wax, melt in a double boiler, and pour at the right temperature to minimise sinkholes and frosting. Choose wick size by diameter and mould type; test-burn and trim to avoid smoke and tunnelling. Prime wicks, warm moulds, and cool slowly. Label with burn guidance and CLP if you add fragrance. Store cool and dust-free to keep a soft bloom rather than grime. A small, repeatable SOP gives you neat pillars, tea-lights and tapers that light first time and burn evenly at the stall and at home.",
-  
-  "Why it Matters": "Candles are the friendliest way to turn wax into value, yet most frustration comes from mismatched wicks or overheated pours. Beeswax is dense and needs the right wick surface area to draw fuel without smoking; under-wicked pillars tunnel, over-wicked ones mushroom and soot. Temperature management protects aroma and appearance: a gentle melt avoids scorching, warmed moulds reduce shock lines, and patient cooling prevents hollows. Safety drives the setup: no naked-flame heating, clear labelling, and a tidy pour space. A simple test-burn log saves money—the first few samples tell you which wick sizes and pour temps your mould range needs. Add clear instructions on labels (first burn time, trimming, holder/surface notes) for customer safety and satisfaction. When your method is calm and consistent, you reduce rework, present a tidy range, and keep a clean reputation with repeat buyers and venues.",
-  
+  "At-a-Glance": "Beeswax candles need clean wax, correct wick sizing, and steady pour temperatures for a clean burn and minimal frosting.",
+  "Why it Matters": [
+    "Turns wax into a profitable, low-waste product.",
+    "Quality candles reinforce brand perception."
+  ],
+  "Objectives": [
+    "Match wick to wax type, diameter, and mold.",
+    "Control melt/pour temps and cooling to reduce defects.",
+    "Label and test-burn every new size/format."
+  ],
+  "What Good Looks Like": [
+    "Filtered cappings wax for pale pillars and tapers; brood-wax blends for rustic tones.",
+    "Consistent wicks and molds labelled by size.",
+    "Even burn pool without tunnelling or excessive drip."
+  ],
   "Step-by-Step": [
-    "Melt filtered wax in a double boiler; avoid direct heat.",
-    "Pre-warm moulds; fit and anchor wicks; prime if using raw wick.",
-    "Pour at target temperature; tap to release bubbles.",
-    "Cool slowly; re-pour tops if needed; de-mould and trim.",
-    "Label with burn guidance; test-burn and log outcomes."
+    "1) Prepare wax: render and filter; keep water out; record batch.",
+    "2) Wick selection: start from supplier charts; test and adjust.",
+    "3) Heat: melt in double boiler; typical pour ~62–70 °C; pre-warm molds.",
+    "4) Pour: steady stream; avoid bubbles; top up sinkholes after initial set.",
+    "5) Cure and test-burn; label with burn guidance and batch."
   ],
-
-  "Context & Narrative": "Set the bench like a tiny factory: bain-marie on low heat, jug thermometer, moulds lined on a tray, and a box of pre-cut wicks by size. You pick a pillar mould, thread the wick, and seal the base with a dab of putty. Wax melts gently—no smoke, no smell of hot sugar—then rests to your pour temperature so the crystal structure sets clean. The first pour leaves a small contraction well; you top it off later for a flat base. Tapers pull straight from a dip-can rhythm—count, lift, cool, repeat—while tea-lights fill on a silicone tray in a calm, steady hand. \n\nA test-burn sheet sits by a fireproof plate. You record diameter, wick code, and behaviour every 30 minutes: flame size, edge melt, any mushrooming. Two burns teach you more than ten guess-pours. The best-performing combination becomes your default, and the label tells buyers what you learned: trim to 5–7 mm, burn 2–3 hours first time to set memory, keep on a heatproof surface. If you add fragrance to blends, you follow CLP rules and list hazards as required. Finished stock cures under covers to avoid dust; a soft natural bloom is a selling point, not a flaw. With this cadence, your winter table looks deliberate: uniform heights, even tops, and a little card that says ‘Made from our own beeswax, hand-poured in small batches’.",
-  
-  "Evidence Highlights": [
-    "Correct wick sizing prevents tunnelling and sooting.",
-    "Double-boiler melting protects wax quality and colour.",
-    "Controlled cooling reduces sinkholes and surface defects."
+  "Seasonality & Climate": [
+    "Cold rooms cause frosting and sinkholes; warm gently to reduce.",
+    "Hot rooms soften tapers—store cool and upright."
   ],
-
-  "Data Tables": {
-    "test_burn_log_headers": ["Date", "Mould", "Diameter", "Wick code", "Pour temp (°C)", "Burn notes", "Outcome"]
-  },
-
+  "Data & Thresholds": [
+    "Record wick codes, diameters, temps, and results.",
+    "Aim for full melt pool by 2–3 h on pillars; adjust wick if tunnelling."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Tunnelling -> Up-size wick; increase burn time on first burn.",
+    "Symptom: Sooting -> Down-size wick; lower draft; trim wicks.",
+    "Symptom: Frosting -> Warmer pour or slower cooling; polish surface lightly."
+  ],
   "Common Pitfalls": [
-    "Direct flame heating → scorching risk.",
-    "Guessing wick sizes without test burns.",
-    "Cold moulds causing shock lines and bubbles."
+    "Pouring too cool/warm leading to surface defects.",
+    "Wrong wick for diameter or wax type.",
+    "No test-burn before selling."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Keep a ‘wick library’ box labelled by diameter—future you will thank you."}
+  "Tools & Techniques": [
+    "Double boiler, thermometer, molds, wick tabs/pins, heat gun for finishing.",
+    "Wick sizing charts; logbook for tests."
   ],
-
-  "FAQs": [
-    {"q": "What pour temperature?", "a": "Depends on mould and room—often 62–70 °C for pillars; test for your setup."},
-    {"q": "Why white bloom?", "a": "Natural beeswax crystallisation—polish gently or celebrate it in your story."}
+  "Safety & Compliance": [
+    "Fire safety when melting; never leave wax heating unattended.",
+    "CLP/label guidance where required; burn warnings and base protection."
   ],
-
-  "Seasonality & Climate": "Cool rooms slow curing; avoid drafts to reduce surface defects.",
-  
-  "Suggested Figures": [
-    {"alt": "Wick chart by diameter", "caption": "Quick reference for common pillar sizes and wick codes."}
+  "Field Checklist": [
+    "Wax batch filtered; molds clean.",
+    "Correct wicks staged and labelled.",
+    "Test-burn samples logged."
   ],
-
-  "Glossary": [
-    {"term": "Memory ring", "def": "The initial melt pool width that influences future burns."}
+  "Communications": [
+    "Short hyphens only.",
+    "Provide clear burn-care cards with each candle."
   ],
-
-  "Cross-links": [
-    "beeswax_rendering_storage",
-    "honey_labelling_legal_basics_uk_eu",
-    "market_stall_setup_food_hygiene_uk"
+  "Cross-Links": [
+    "beeswax_rendering_quality",
+    "pricing_margins_small_scale_honey",
+    "wholesale_to_shops_basics"
   ],
-
-  "Sources": [
-    {"name": "Fire safety and product guidance (UK)", "url": "https://www.gov.uk/"},
-    {"name": "Craft/standards bodies on candle safety labelling", "url": "https://www.bsi.group/"}
+  "Keywords": [
+    "beeswax candles",
+    "wick sizing",
+    "pour temperature",
+    "frosting"
   ],
-
-  "Scrape-Guidance": "Pull wick sizing principles, safe melting practice, and labelling basics from standards and fire-safety guidance; avoid brand-specific claims."
+  "Further Reading": [
+    "Candle-making wick guides.",
+    "Safety standards and labelling for candles."
+  ],
+  "Notes": "Keep separate pots for dark vs pale wax to control colour."
 }

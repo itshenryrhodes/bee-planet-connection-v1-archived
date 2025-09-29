@@ -1,7 +1,74 @@
 {
-  "Overview": "Simple GIS layers (land cover, hedgerows, crop maps) combined with bloom calendars reveal forage gaps and guide optimal apiary placements and flight-line planning.",
-  "Drivers & Mechanisms": "Landscape configuration—field size, edge density, and habitat patches—drives nectar continuity. Proximity to water and shelter influences flight efficiency and brood thermoregulation.",
-  "Impacts & Case Studies": "Farms adding wildflower margins at field edges saw improved pollinator abundance and fruit set; urban projects used tree inventories to plan staggered bloom in street corridors.",
-  "Mitigation & Best Practice": "Map within a 2–3 km radius; prioritise mixed habitats; avoid pesticide drift lines; coordinate with landowners to establish stepping-stone plantings. Reassess annually with crop rotations.",
-  "Further Reading & Sources": "Use open land-cover datasets, local crop maps, and pollinator plant lists; store shapefiles with your apiary records for repeatable planning."
+  "At-a-Glance": "Simple maps reveal forage, water, and access. Use open GIS to plan yards, flight paths, and planting projects.",
+  "Why it Matters": [
+    "Aligns hive counts to carrying capacity.",
+    "Targets planting where it matters most."
+  ],
+  "Objectives": [
+    "Collect base layers: land use, water, canopy, paths.",
+    "Add bloom notes and hive scale data.",
+    "Publish easy-to-read yard maps for teams."
+  ],
+  "What Good Looks Like": [
+    "2–3 km buffers around yards with forage hot/cold spots.",
+    "Layers for risks (schools, play areas) and access routes.",
+    "Printable ‘field map’ and a simple web view."
+  ],
+  "Step-by-Step": [
+    "1) Import open layers (OSM, canopy, water).",
+    "2) Add yard points and buffers; mark hazards and neighbours.",
+    "3) Annotate bloom sites and dearth gaps; link scale logs.",
+    "4) Use maps in siting and planting decisions; review annually."
+  ],
+  "Seasonality & Climate": [
+    "Update after droughts/floods/land-use changes.",
+    "Winter is good for desk mapping; spring ground-truthing."
+  ],
+  "Data & Thresholds": [
+    "Max hive density per km² per forage class (rule-of-thumb).",
+    "Distance to water and shade availability."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Low yields -> Add planting near cold spots or reduce hives.",
+    "Complaints cluster -> Reroute flight paths; add screens.",
+    "Robbing hotspots -> Adjust yard density; change harvest timing."
+  ],
+  "Common Pitfalls": [
+    "Overly fancy maps no one reads.",
+    "Out-of-date layers when land changes.",
+    "No link to actions (planting, hive moves)."
+  ],
+  "Tools & Techniques": [
+    "QGIS or web tools, GPS/phone, simple symbology.",
+    "Shared drive with PDFs for offline phones."
+  ],
+  "Safety & Compliance": [
+    "Respect private data (neighbours).",
+    "Do not publish exact hive coordinates publicly."
+  ],
+  "Field Checklist": [
+    "Layers current; printouts packed.",
+    "Notes from ground truth fed back into map.",
+    "Decisions logged against map snapshots."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain buffers (forage radius) visually."
+  ],
+  "Cross-Links": [
+    "apiary_site_selection",
+    "urban_forage_gap_planning",
+    "uk_forage_trees_shrubs"
+  ],
+  "Keywords": [
+    "GIS",
+    "forage map",
+    "yard planning",
+    "buffers"
+  ],
+  "Further Reading": [
+    "QGIS quick start guides.",
+    "Pollinator habitat mapping case studies."
+  ],
+  "Notes": "Print a ‘glovebox’ A4 map for each yard—beats phone glare on sunny days."
 }

@@ -1,8 +1,73 @@
 {
-  "At-a-Glance": "Oxalic acid (OA) is a core varroa control used during brood-light or broodless windows. Correct timing and delivery (dribble or vapour) make it highly effective when label-compliant.",
-  "Why it Matters": "Treating when mites are mainly phoretic maximises contact. Lowering autumn loads protects winter bees and improves overwintering.",
-  "Step-by-Step": "Confirm brood status; choose method per local approval. Trickle: mix approved syrup concentration; apply measured dose per seam. Vapour: seal appropriately; apply dose with a certified device; observe re-entry interval. Record batch, dose, and date.",
-  "Seasonality & Climate": "Best post-harvest when brood is low or during induced/natural brood breaks. In warm regions with continuous brood, plan a biotechnical break to raise efficacy.",
-  "Common Pitfalls": "Over-dosing, treating heavy open brood (poor efficacy), inadequate PPE, and ignoring legal use patterns.",
-  "Tools & Materials": "Calibrated syringe/measurer, approved OA product, vaporiser where legal, PPE, entrance seals, timer, logbook."
+  "At-a-Glance": "Oxalic acid works best on broodless colonies. Choose trickle or vaporisation per kit, timing, and legal rules.",
+  "Why it Matters": [
+    "High efficacy during brood breaks or winter.",
+    "Low residue risk when used correctly."
+  ],
+  "Objectives": [
+    "Standardise dose, PPE, and delivery method.",
+    "Schedule for broodless windows where possible.",
+    "Record lots, doses, and outcomes."
+  ],
+  "What Good Looks Like": [
+    "Broodless timing targeted; correct dose per seam/colony.",
+    "Vapour kit checked; masks and eye protection used.",
+    "Post-treatment counts confirm reduction."
+  ],
+  "Step-by-Step": [
+    "1) Confirm brood status; pick trickle or vapour method.",
+    "2) Prepare dose; seal entrances for vapour if required.",
+    "3) Apply per label; ventilate; note times and weather.",
+    "4) Verify after 3–7 days with sampling or drop."
+  ],
+  "Seasonality & Climate": [
+    "Winter/induced brood breaks are ideal windows.",
+    "Avoid rain/wind for vapour work."
+  ],
+  "Data & Thresholds": [
+    "Dose per seam or per colony as labelled.",
+    "Expected post-treatment reduction range."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Low effect -> Brood present or poor contact; retime or change method.",
+    "Irritation -> Check dose and temperature; improve ventilation."
+  ],
+  "Common Pitfalls": [
+    "Treating with heavy brood present.",
+    "Skipping PPE for vapour.",
+    "Confusing grams with millilitres."
+  ],
+  "Tools & Techniques": [
+    "OA crystals/solution, calibrated syringe/spoon, vapouriser, seal cloths.",
+    "Timer, mask, goggles, gloves."
+  ],
+  "Safety & Compliance": [
+    "Follow label, PPE, and site safety rules.",
+    "Record treatments for inspections."
+  ],
+  "Field Checklist": [
+    "Broodless window confirmed.",
+    "Dose prepared; PPE on.",
+    "Follow-up sampling scheduled."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain why broodless timing matters for efficacy."
+  ],
+  "Cross-Links": [
+    "formic_acid_varroa_treatment",
+    "thymol_varroa_treatment",
+    "varroa_treatment_options"
+  ],
+  "Keywords": [
+    "oxalic acid",
+    "vapour",
+    "trickle",
+    "broodless"
+  ],
+  "Further Reading": [
+    "Oxalic application guides.",
+    "Efficacy vs timing references."
+  ],
+  "Notes": "Warm batteries and dry connections improve vapouriser reliability."
 }

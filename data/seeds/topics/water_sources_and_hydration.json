@@ -57,8 +57,18 @@
     "Short hyphens only.",
     "Share a neighbour card explaining your on-site water plan."
   ],
-  "Cross-Links": ["urban_stakeholder_neighbour_relations", "apiary_setup", "hive_ventilation_and_moisture_control"],
-  "Keywords": ["water source", "hydration", "evaporative cooling", "minerals", "neighbour relations"],
+  "Cross-Links": [
+    "urban_stakeholder_neighbour_relations",
+    "apiary_setup",
+    "hive_ventilation_and_moisture_control"
+  ],
+  "Keywords": [
+    "water source",
+    "hydration",
+    "evaporative cooling",
+    "minerals",
+    "neighbour relations"
+  ],
   "Further Reading": [
     "Extension notes on bee water requirements.",
     "Case studies on reducing bee–pool conflicts."

@@ -1,81 +1,74 @@
 {
-  "title": "Stock control & batch tracking (from apiary to jar)",
-  "slug": "stock_control_batch_tracking",
-  "category": "Products & processing",
-  "categories": ["Operations"],
-  "taxonomy": {
-    "pillar": "Products & processing",
-    "subpillars": ["Compliance"],
-    "topics": ["inventory", "batch-codes", "first-in-first-out", "traceability"],
-    "audience": ["market-seller", "beginner", "intermediate", "club-officer"],
-    "intent": ["how-to", "reference"],
-    "regions": ["UK", "EU"],
-    "season": ["summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["post-harvest"]
-  },
-  "tags": ["FIFO", "stocktake", "barcode-lite", "retention-samples"],
-
-  "At-a-Glance": "Know what you have and where it came from. Use simple lot codes that encode date and apiary, label every case, and keep a small retention jar per lot. Store boxes cool and dark, front-facing oldest first (FIFO). Run a quick monthly stocktake with a clipboard or simple sheet. Record what leaves for markets, shops, and online orders. Tie returns or questions to lot codes fast. The goal is boringly predictable stock and a two-minute answer to ‘which batch was this jar from?’.",
-  
-  "Why it Matters": "Small producers lose money in the margins—mystery boxes, mixed cases, and guesswork at markets. Light discipline turns chaos into cash: FIFO protects quality; batch codes connect jars to days and supers; and a monthly count stops surprises before the busy season. Clear case labels help when friends help pack or when you load the car in the dark. Retention jars let you check texture and flavour months later and back up claims. If a shop calls about a leaker, you read the lot, check the retention sample, and decide calmly whether to swap a few jars or investigate a whole day’s run. Stock control isn’t warehouse cosplay; it’s kindness to future you.",
-  
+  "At-a-Glance": "Track jars and batches from tank to customer. Simple codes and par levels prevent stockouts and chaos.",
+  "Why it Matters": [
+    "Enables recalls and wholesale confidence.",
+    "Saves time at markets and online packing."
+  ],
+  "Objectives": [
+    "Adopt a single batch code format across all SKUs.",
+    "Set par levels per channel and plan replenishment.",
+    "Record moves between stores, vans, and stockists."
+  ],
+  "What Good Looks Like": [
+    "Master sheet: batch → SKU → quantity → location.",
+    "Reorder triggers by week and event calendar.",
+    "Pick/pack sheet with FEFO (first-expiry-first-out)."
+  ],
   "Step-by-Step": [
-    "Create a lot code pattern (e.g., YYMMDD-apiary).",
-    "Label jars and cases; store FIFO on cool, dark shelves.",
-    "Keep a retention jar and a batch sheet per lot.",
-    "Log outs by channel (market/shop/online) and date.",
-    "Stocktake monthly; reconcile differences and note actions."
+    "1) Define batch code and label position.",
+    "2) Record jarring counts to master; split to channels.",
+    "3) At pick: scan/mark; at return: reconcile and adjust.",
+    "4) Review weekly; book next jarring run."
   ],
-
-  "Context & Narrative": "Shelves wear big, clear case labels: ‘230815-A3 runny’ with a batch code and jar count. Boxes live in rows with oldest at the front. On a Friday you pull for the market using FIFO, note case counts on a simple sheet, and throw a pen in the crate. A shop order lands midweek; you pick full cases, add a delivery note that lists lots, and you’re out the door without second-guessing. \n\nA month later, a customer emails about a lid that came loose. You ask for the tiny code on the back label, check the retention jar, and confirm the batch looks and tastes right; you replace the jar and make a note. If you spot a pattern, you look back at the bottling sheet—was that the day the cap torque felt light? Action flows from records: tighten the torque check, add a new tickbox. None of this needs software—paper, tidy shelves, and habits keep jars flowing and stories straight.",
-  
-  "Evidence Highlights": [
-    "FIFO and cool, dark storage extend perceived quality.",
-    "Lot coding and retention samples enable targeted fixes.",
-    "Regular stocktakes reduce write-offs and panic before events."
+  "Seasonality & Climate": [
+    "Pre-Christmas par levels higher; heat affects wax/candles storage.",
+    "Heather/varietal limited runs tracked separately."
   ],
-
-  "Data Tables": {
-    "stocktake_headers": ["Date", "Lot", "Jar size", "Cases in", "Cases out", "Balance", "Notes"],
-    "dispatch_log_headers": ["Date", "Channel", "Lots sent", "Qty", "Recipient", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Par levels by SKU/channel; reorder lead time noted.",
+    "Breakage/spoilage rate tracked and minimised."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: Stockouts -> Raise par; shorten lead times; batch more frequently.",
+    "Issue: Lost batch trace -> Fix label position and scanning habit.",
+    "Issue: Overstock -> Bundle or sample near end of season."
+  ],
   "Common Pitfalls": [
-    "Mixing lots within cases.",
-    "No retention jars for reference.",
-    "Skipping stocktakes until the week before Christmas."
+    "Multiple code styles over years.",
+    "Counting in vans but not reconciling.",
+    "No separation of wholesale cases vs singles."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Print big spine labels for case sides—easy to read in dim sheds."}
+  "Tools & Techniques": [
+    "Shared spreadsheet or light inventory app; QR/barcodes optional.",
+    "Pick tickets for markets and wholesale orders."
   ],
-
-  "FAQs": [
-    {"q": "Do I need barcodes?", "a": "Optional—paper logs work. If you sell to shops, unit barcodes help scanning."},
-    {"q": "How long to keep records?", "a": "Keep through the BBE window plus a year."}
+  "Safety & Compliance": [
+    "Weights/measures verified; batch codes legible.",
+    "Secure food storage away from chemicals and pets."
   ],
-
-  "Seasonality & Climate": "Heat waves accelerate crystallisation—rotate stock more frequently in summer.",
-  
-  "Suggested Figures": [
-    {"alt": "FIFO shelf diagram", "caption": "Oldest cases staged to the front with big lot labels."}
+  "Field Checklist": [
+    "Par levels set; calendar synced.",
+    "Batch master updated after jarring.",
+    "Pick/pack sheets printed."
   ],
-
-  "Glossary": [
-    {"term": "FIFO", "def": "First in, first out—sell the oldest lots first to keep stock fresh."}
+  "Communications": [
+    "Short hyphens only.",
+    "Teach volunteers where to find batch codes fast."
   ],
-
-  "Cross-links": [
-    "honey_labelling_legal_basics_uk_eu",
-    "haccp_lite_honey_bottling",
-    "returnable_jar_scheme"
+  "Cross-Links": [
+    "uk_compliance_records",
+    "pricing_margins_small_scale_honey",
+    "wholesale_to_shops_basics"
   ],
-
-  "Sources": [
-    {"name": "Small food business record-keeping basics", "url": "https://www.gov.uk/"}
+  "Keywords": [
+    "inventory",
+    "batch codes",
+    "par levels",
+    "traceability"
   ],
-
-  "Scrape-Guidance": "Extract minimal traceability expectations and adapt to a paper-first workflow."
+  "Further Reading": [
+    "Inventory basics for micro-brands.",
+    "Batch and FEFO best practices."
+  ],
+  "Notes": "Use the same batch on matching gift packs to simplify traceability."
 }

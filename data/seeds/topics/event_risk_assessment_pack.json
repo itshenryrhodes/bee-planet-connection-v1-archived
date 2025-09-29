@@ -1,82 +1,74 @@
 {
-  "title": "Event risk assessment pack (markets, talks, open days)",
-  "slug": "event_risk_assessment_pack",
-  "category": "Community & inclusion",
-  "categories": ["Operations", "Risk & compliance"],
-  "taxonomy": {
-    "pillar": "Community & inclusion",
-    "subpillars": ["Comms"],
-    "topics": ["risk-assessment", "public-events", "insurance", "method-statement"],
-    "audience": ["club-officer", "market-seller", "beginner", "intermediate"],
-    "intent": ["policy", "how-to"],
-    "regions": ["UK", "EU"],
-    "season": ["spring", "summer", "autumn"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["growth"]
-  },
-  "tags": ["RAMS", "public-liability", "signage", "weather-plan"],
-
-  "At-a-Glance": "Events are smoother with a ready pack. Keep a one-page risk assessment and method statement (RAMS) template that covers setup, weather, slips, crowds, sampling hygiene, and exit plan. Add copies of insurance, stall layout, and emergency contacts. Bring minimal kit for safety: tape, cones, wipes, hand gel, signage. Walk the site, note hazards, and brief helpers in two minutes before doors open. After the event, log incidents and updates so the pack improves each time. Boring paperwork equals calm days.",
-  
-  "Why it Matters": "Markets and talks feel familiar until something shifts—wet floors, wind, a power cable, or a crowd at the sample tray. A short RAMS is your pre-flight check that catches the obvious before it bites: sandbags on banners, cable covers, hand gel by samples, and a clear exit path. Venues and councils often ask for paperwork; handing over a tidy PDF speeds approvals and makes you look like a pro. Insurance expects reasonable steps; notes and a quick debrief prove you took them. The pack keeps volunteers aligned and gives new helpers confidence that there’s a plan. Over time, your template becomes a local standard others copy—quiet leadership that raises the bar for everyone.",
-  
+  "At-a-Glance": "A small, reusable RA pack covers stall, tastings, school demos, and press visits—venues love prepared vendors.",
+  "Why it Matters": [
+    "Speeds approvals and protects volunteers.",
+    "Reduces last-minute event drama."
+  ],
+  "Objectives": [
+    "Create modular RA templates for common events.",
+    "Add insurance, allergen, and equipment lists.",
+    "Version and store in a shared folder."
+  ],
+  "What Good Looks Like": [
+    "Folder: RA templates + venue-specific annex.",
+    "Sign-off sheet for helpers; event day checklist.",
+    "Incident/near-miss form with CAPA."
+  ],
   "Step-by-Step": [
-    "Duplicate the RAMS template; add date, venue, weather outlook.",
-    "Walk the site; mark hazards; set controls and signage.",
-    "Brief helpers: roles, hygiene, crowd flow, emergency contacts.",
-    "Operate; record any incidents or near misses.",
-    "Debrief and update the template with new controls."
+    "1) Write generic hazards/controls (weather, slips, sharps, tastings).",
+    "2) Add annex: site map, contacts, access, power, water.",
+    "3) Pack event kit per list; brief team; sign attendance.",
+    "4) Post-event: debrief, log incidents, update RA."
   ],
-
-  "Context & Narrative": "You arrive at a windy market. The RAMS template is already filled with basics; you add ‘high gusts’ to hazards and put sandbags on banner legs. A cable crosses behind the stall—out comes a cover and a taped edge. Your helper gets the two-minute brief: sampling SOP, prices, where the spill kit lives, and who calls whom if a child is stung nearby. The stall runs without drama because roles are clear: one serves, one handles cash and samples, both keep an eye on floor damp. A drizzle starts; you move the table back 30 cm so drips don’t hit jars. At close, you note one near miss (wet tile) and add ‘small absorbent mat’ to next time’s kit. \n\nFor a school talk, the same pack travels: no live bees unless agreed, glass display secured, exits noted, and a quick email to staff with your phone number and timings. After the week, you roll updates into the template. Next month’s event feels easier because the plan wasn’t in your head—it lived on one sheet that anyone could follow.",
-  
-  "Evidence Highlights": [
-    "RAMS improves venue approvals and reduces on-the-day issues.",
-    "Brief, repeatable controls handle 80% of event risks.",
-    "Incident logs feed back into better setups each time."
+  "Seasonality & Climate": [
+    "Storm season = gazebo weights/rope; shade for heat.",
+    "Winter = lighting/heaters; cable covers."
   ],
-
-  "Data Tables": {
-    "rams_headers": ["Hazard", "Who at risk", "Control", "Owner", "Review date"],
-    "event_log_headers": ["Date", "Venue", "Weather", "Incidents", "Controls updated", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Setup teardown times; manning levels.",
+    "Incident response timing and escalation tree."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Sudden weather change -> Secure/strike; protect stock; message organiser.",
+    "Crowd control -> Queue line; extra staff; pause sampling.",
+    "Allergen incident -> Stop sampling; follow venue procedure; document."
+  ],
   "Common Pitfalls": [
-    "Paperwork too long to read.",
-    "No weather plan for wind and rain.",
-    "Cables and banners not secured."
+    "One-off RAs no one reuses.",
+    "No phone numbers or meeting point.",
+    "Forgetting incident forms."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Laminate the one-page RAMS and use a dry-wipe pen—update on site in seconds."}
+  "Tools & Techniques": [
+    "RA template, laminated checklists, weather app alerts.",
+    "Shared drive with offline copies."
   ],
-
-  "FAQs": [
-    {"q": "Do I need public liability insurance?", "a": "Most venues require it—carry a copy in the pack."},
-    {"q": "Live bees?", "a": "Avoid unless controlled and approved; consider a sealed demo frame or photos instead."}
+  "Safety & Compliance": [
+    "Insurance proofs ready; allergen and hygiene rules.",
+    "Venue method statements where required."
   ],
-
-  "Seasonality & Climate": "Wind, rain and heat drive most on-site changes—pack sandbags, mats and shade.",
-  
-  "Suggested Figures": [
-    {"alt": "RAMS one-pager example", "caption": "Template with common hazards and controls filled for a market stall."}
+  "Field Checklist": [
+    "RA printed; kit packed.",
+    "Contacts list on phones.",
+    "Post-event debrief booked."
   ],
-
-  "Glossary": [
-    {"term": "RAMS", "def": "Risk Assessment and Method Statement—a simple document pairing risks with how you work safely."}
+  "Communications": [
+    "Short hyphens only.",
+    "Confirm arrival/load-in times with organiser by email."
   ],
-
-  "Cross-links": [
+  "Cross-Links": [
     "market_stall_setup_food_hygiene_uk",
-    "incident_reporting_template",
-    "urban_stakeholder_neighbour_relations"
+    "volunteer_onboarding_pack",
+    "press_media_handling_basics"
   ],
-
-  "Sources": [
-    {"name": "Local authority event guidance", "url": "https://www.gov.uk/"},
-    {"name": "Health and safety basics for small events", "url": "https://www.hse.gov.uk/"}
+  "Keywords": [
+    "risk assessment",
+    "events",
+    "sampling",
+    "incident log"
   ],
-
-  "Scrape-Guidance": "Lift common event hazards and simple controls from council and H&S sources; keep the pack to one page plus attachments."
+  "Further Reading": [
+    "Small event RA templates.",
+    "Venue contractor handbooks."
+  ],
+  "Notes": "Keep a photo of the ideal stall layout in the pack—fast setup, fewer risks."
 }

@@ -59,8 +59,18 @@
     "Short hyphens only.",
     "Keep the story concise: where, when, what it tastes like."
   ],
-  "Cross-Links": ["honey_extraction_best_practice", "hive_products_and_byproducts", "hive_hygiene_and_biosecurity"],
-  "Keywords": ["labelling", "batch code", "origin", "soft-set", "branding"],
+  "Cross-Links": [
+    "honey_extraction_best_practice",
+    "hive_products_and_byproducts",
+    "hive_hygiene_and_biosecurity"
+  ],
+  "Keywords": [
+    "labelling",
+    "batch code",
+    "origin",
+    "soft-set",
+    "branding"
+  ],
   "Further Reading": [
     "National food labelling regulations for honey.",
     "Best-practice guides for small-scale food producers."

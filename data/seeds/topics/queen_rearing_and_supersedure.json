@@ -60,8 +60,19 @@
     "Short hyphens only.",
     "Maintain a simple queen ledger - year, line, temperament, acceptance."
   ],
-  "Cross-Links": ["swarm_management", "hive_temperament", "overwintering_colonies"],
-  "Keywords": ["supersedure", "queen rearing", "grafting", "mating nuc", "acceptance", "drone saturation"],
+  "Cross-Links": [
+    "swarm_management",
+    "hive_temperament",
+    "overwintering_colonies"
+  ],
+  "Keywords": [
+    "supersedure",
+    "queen rearing",
+    "grafting",
+    "mating nuc",
+    "acceptance",
+    "drone saturation"
+  ],
   "Further Reading": [
     "Laidlaw and Page - Queen Rearing and Bee Breeding.",
     "NBU queen management leaflets."

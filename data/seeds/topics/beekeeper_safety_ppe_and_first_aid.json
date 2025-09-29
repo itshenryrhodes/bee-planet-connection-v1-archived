@@ -61,8 +61,18 @@
     "Short hyphens only.",
     "Share a one-page safety brief with helpers before starting."
   ],
-  "Cross-Links": ["colony_defense_and_behaviour", "apiary_setup", "migratory_beekeeping_and_transport"],
-  "Keywords": ["PPE", "first aid", "lifting", "anaphylaxis", "hydration"],
+  "Cross-Links": [
+    "colony_defense_and_behaviour",
+    "apiary_setup",
+    "migratory_beekeeping_and_transport"
+  ],
+  "Keywords": [
+    "PPE",
+    "first aid",
+    "lifting",
+    "anaphylaxis",
+    "hydration"
+  ],
   "Further Reading": [
     "Workplace safety guidelines adapted for field beekeeping.",
     "Association safety checklists."

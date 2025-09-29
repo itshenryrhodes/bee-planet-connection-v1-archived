@@ -1,81 +1,74 @@
 {
-  "title": "Equipment cleaning & biosecurity: disinfection, scorch & storage",
-  "slug": "equipment_cleaning_biosecurity",
-  "category": "Operations",
-  "categories": ["Bee health & pests", "Risk & compliance"],
-  "taxonomy": {
-    "pillar": "Operations",
-    "subpillars": ["Husbandry"],
-    "topics": ["biosecurity", "cleaning", "AFB/EFB", "bleach/caustic", "storage"],
-    "audience": ["beginner", "intermediate", "club-officer"],
-    "intent": ["how-to", "policy"],
-    "regions": ["UK", "EU"],
-    "season": ["spring", "summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "intermediate",
-    "lifecycle_stage": ["setup", "growth", "overwintering"]
-  },
-  "tags": ["dirty/clean zones", "quarantine", "frame-triage", "disposal"],
-
-  "At-a-Glance": "Biosecurity is layout plus habits. Separate ‘dirty’ and ‘clean’ zones, quarantine unknown kit, and choose the right method for the job: scorching timber for general sanitation, approved solutions (sodium hypochlorite/caustic) for tools and boxes, and strict controls for notifiable diseases (follow inspector direction). Cull suspect frames rather than ‘rescuing’ them; label batches and store dry, bee-tight. Keep a tiny field kit: scraper, wipes, gloves, bags, and a marker. Process once, properly, and future you avoids mystery infections and sticky sheds.",
-
-  "Why it Matters": "Disease spreads with us—on gloves, tools and borrowed boxes. A tidy biosecurity routine is cheaper than a spring of sick colonies. The basics are straightforward: never mix unknown kit into brood boxes without cleaning; scorch or disinfect between yards; and keep a quarantine corner for swarms or rescued kit. When you do clean, match method to material: timber loves flame; plastics don’t. Caustic baths strip propolis and wax; hypochlorite sanitises tools; both need PPE and correct disposal. For AFB/EFB suspicion, stop and call the inspector—burn policies and legal controls exist for a reason. Storage is the last mile: dry, ventilated, bee-tight rooms stop wax moth and robbing. Record what you cleaned, how and when. Clubs can host a ‘clean day’ so beginners see pace, PPE and disposal done right. The reward: fewer cross-yard infections, faster spring setup, and equipment you trust.",
-
+  "At-a-Glance": "Clean, dry, labelled equipment lasts longer and spreads fewer problems. Write the wash/decon routine on the wall.",
+  "Why it Matters": [
+    "Reduces disease transfer and sticky pests.",
+    "Extends life of expensive woodware and suits."
+  ],
+  "Objectives": [
+    "Standardise cleaning levels: routine vs suspect-yard deep clean.",
+    "Dry and store to prevent mould and mice.",
+    "Track kit to yards with basic labelling."
+  ],
+  "What Good Looks Like": [
+    "Three bins: wash, disinfect, rinse; drying racks.",
+    "Heat/chemical options documented; PPE available.",
+    "Labels by yard; log of deep cleans after suspect visits."
+  ],
   "Step-by-Step": [
-    "Set ‘dirty’/‘clean’ zones; bin liners for transport.",
-    "Scrape gross debris; choose scorch vs chemical method.",
-    "Apply method with PPE; rinse/dry; label date/method.",
-    "Quarantine swarms/unknown kit; inspect before reuse.",
-    "Store dry and bee-tight; log batch and location."
+    "1) Scrape propolis/wax; pre-soak where needed.",
+    "2) Clean with detergent; disinfect per product guidance (soda ash/bleach).",
+    "3) Rinse; air-dry fully; inspect for damage.",
+    "4) Store sealed; log date/yard; repair or retire damaged kit."
   ],
-
-  "Context & Narrative": "Picture your shed as a small lab with arrows. Boxes enter the ‘dirty’ door, get scraped, then either meet flame (timber) or a bath (plastic-safe solution). Tools cycle through a dip pot you refresh routinely. Frames get triaged: good wax stays, bad leaves, and anything suspicious is bagged and held for an inspector or destroyed. A whiteboard notes what was cleaned and where it now lives. \n\nThe same thinking travels to yards. A roll of bin liners separates wet supers in a car; disposable gloves and a marker keep cross-contamination down; and a simple rule—new swarms live apart until inspected—prevents surprises. On notifiable disease, you don’t freelance: call, secure the site, and do what the officer directs. That professionalism protects you and the local beekeeping community. Store kit like it’s food equipment: dry, rodent-proof, and labelled. When you reach for a box in spring, knowing it was scorched or disinfected on a date removes doubt—and doubt is what slows good decisions on the first warm day.",
-  
-  "Evidence Highlights": [
-    "Cross-contamination via gloves/tools is a common vector.",
-    "Timber scorching and approved disinfectants reduce pathogen load.",
-    "Quarantine reduces introduction risk from unknown sources."
+  "Seasonality & Climate": [
+    "Winter drying slower—use heated space or dehumidifier.",
+    "Summer mould risk lower but pests higher—seal boxes."
   ],
-
-  "Data Tables": {
-    "clean_log_headers": ["Date", "Item", "Method (scorch/caustic/NaOCl)", "PPE used", "Notes", "Stored at"]
-  },
-
+  "Data & Thresholds": [
+    "Contact time for disinfectants; batch records.",
+    "Retirement criteria for frames/boxes (cracks, disease exposure)."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Persistent odours -> Repeat decon; check storage humidity.",
+    "Warped boxes -> Dry too fast/hot; adjust method.",
+    "Recurring wax moth in stored kit -> Freeze cycle; improve sealing."
+  ],
   "Common Pitfalls": [
-    "‘Almost clean’ kit stored damp → mould/wax moth.",
-    "Using flame on plastics/foam → damage/fumes.",
-    "Handling suspect brood frames without isolation."
+    "Skipping rinse after disinfectant.",
+    "Stacking damp equipment.",
+    "Unlabelled boxes moving between yards."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Keep a dedicated scraper and gloves per apiary; colour-code to avoid mix-ups."}
+  "Tools & Techniques": [
+    "Scrapers, pressure washer (careful), soda ash/bleach tubs.",
+    "Drying racks, mouse guards, freezer for frames."
   ],
-
-  "FAQs": [
-    {"q": "Bleach or caustic?", "a": "Caustic cleans heavy residues; bleach sanitises surfaces/tools. Use materials-safe methods."},
-    {"q": "AFB/EFB suspected?", "a": "Stop work, secure hive, contact the bee inspector; follow legal protocols."}
+  "Safety & Compliance": [
+    "COSHH for chemicals; eye/hand protection.",
+    "Waste effluent disposed per local rules."
   ],
-
-  "Seasonality & Climate": "Winter is prime for deep cleans; in season do ‘little-and-often’ between yards.",
-  
-  "Suggested Figures": [
-    {"alt": "Dirty → Clean workflow", "caption": "One-way flow through scraping, scorch/bath, dry and label."}
+  "Field Checklist": [
+    "Bins filled and labelled.",
+    "Drying area ventilated.",
+    "Repair bin stocked (nails, glue, staples)."
   ],
-
-  "Glossary": [
-    {"term": "NaOCl", "def": "Sodium hypochlorite (household bleach), used for sanitation at correct dilutions."}
+  "Communications": [
+    "Short hyphens only.",
+    "Train on chemical concentrations with laminated chart."
   ],
-
-  "Cross-links": [
-    "chalkbrood_identification_actions",
-    "afb_efb_field_identification",
-    "wax_moth_storage_management"
+  "Cross-Links": [
+    "apiary_biosecurity_sop",
+    "hive_hygiene_and_biosecurity",
+    "wax_effluent_compliance"
   ],
-
-  "Sources": [
-    {"name": "National Bee Unit – biosecurity & disease control", "url": "https://www.nationalbeeunit.com/resources/"},
-    {"name": "Government H&S chemical handling guidance", "url": "https://www.hse.gov.uk/"}
+  "Keywords": [
+    "cleaning",
+    "disinfection",
+    "drying",
+    "labelling"
   ],
-
-  "Scrape-Guidance": "Extract approved methods/dilutions and legal steps for notifiable disease; emphasise layout, PPE and storage best practice."
+  "Further Reading": [
+    "Decon concentrations and timings.",
+    "Frame/box refurbishment guides."
+  ],
+  "Notes": "Colour-code deep-cleaned kit for 72 h to avoid accidental reuse."
 }

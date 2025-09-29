@@ -57,8 +57,18 @@
     "Short hyphens only.",
     "Explain benefits of propolis to site owners concerned about hive ‘glue’."
   ],
-  "Cross-Links": ["hive_products_and_byproducts", "hive_hygiene_and_biosecurity", "hive_ventilation_and_moisture_control"],
-  "Keywords": ["propolis", "resins", "tincture", "microbiome", "hive sealing"],
+  "Cross-Links": [
+    "hive_products_and_byproducts",
+    "hive_hygiene_and_biosecurity",
+    "hive_ventilation_and_moisture_control"
+  ],
+  "Keywords": [
+    "propolis",
+    "resins",
+    "tincture",
+    "microbiome",
+    "hive sealing"
+  ],
   "Further Reading": [
     "Reviews on propolis antimicrobial properties.",
     "Practical guides to propolis collection and processing."

@@ -58,8 +58,18 @@
     "Short hyphens only.",
     "Explain to site owners why grass trimming and waste control matter."
   ],
-  "Cross-Links": ["overwintering_colonies", "hive_ventilation_and_moisture_control", "apiary_setup"],
-  "Keywords": ["mouseguard", "rodent exclusion", "winter prep", "stand height", "comb damage"],
+  "Cross-Links": [
+    "overwintering_colonies",
+    "hive_ventilation_and_moisture_control",
+    "apiary_setup"
+  ],
+  "Keywords": [
+    "mouseguard",
+    "rodent exclusion",
+    "winter prep",
+    "stand height",
+    "comb damage"
+  ],
   "Further Reading": [
     "Association winter prep checklists.",
     "Guidance on safe cleaning after rodent intrusion."

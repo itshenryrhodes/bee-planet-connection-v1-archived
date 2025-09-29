@@ -58,8 +58,18 @@
     "Short hyphens only.",
     "Explain to helpers why ‘light and air’ storage works against moth lifecycle."
   ],
-  "Cross-Links": ["comb_management_and_replacement", "hive_hygiene_and_biosecurity", "honey_extraction_best_practice"],
-  "Keywords": ["Galleria mellonella", "Achroia grisella", "comb storage", "freezing", "webbing"],
+  "Cross-Links": [
+    "comb_management_and_replacement",
+    "hive_hygiene_and_biosecurity",
+    "honey_extraction_best_practice"
+  ],
+  "Keywords": [
+    "Galleria mellonella",
+    "Achroia grisella",
+    "comb storage",
+    "freezing",
+    "webbing"
+  ],
   "Further Reading": [
     "Research summaries on wax moth lifecycle and controls.",
     "Association notes on comb storage best practice."

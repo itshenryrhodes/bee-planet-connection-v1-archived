@@ -1,7 +1,74 @@
 {
-  "Overview": "Different feeder designs suit different goals: rapid bulk feeding, stimulative trickle, or emergency winter placement. Choose for speed, robbing risk, temperature, and handling.",
-  "Types & Variants": "Contact feeders (jar/tub with perforated lid), frame feeders inside the brood box, top feeders above the crownboard, and entrance/boardman feeders (higher robbing risk). Fondant/candy boards for cold periods.",
-  "Using It Well": "Reduce robbing by feeding internally and at dusk; seal gaps; avoid spillage. In winter, fondant directly above the cluster saves lives. Clean and store feeders dry between seasons.",
-  "Costs & Practicalities": "Frame and top feeders cost more but reduce robbing; contact feeders are cheap and flexible; entrance feeders are convenient but risky in dearth.",
-  "Recent Innovations": "Insulated tops with integrated feeders, slow-release valve lids, and clearer sight-windows to judge fill levels without disturbance."
+  "At-a-Glance": "Choose feeders that match the job: rapid, contact, frame, or top. Prevent drownings and robbing; label volumes and clean often.",
+  "Why it Matters": [
+    "Efficient feeding builds nucs and saves weak colonies.",
+    "Poor feeders cause drownings and fights."
+  ],
+  "Objectives": [
+    "Standardise 1–2 feeder types per yard.",
+    "Write fill/clean/close SOP with timings.",
+    "Track volumes and outcomes."
+  ],
+  "What Good Looks Like": [
+    "Float systems that prevent drowning; lids tight; no leaks.",
+    "Fill at dusk or early; zero syrup drips.",
+    "Volumes matched to goal (stim vs bulk)."
+  ],
+  "Step-by-Step": [
+    "1) Pick types per use: frame (nucs), top (bulk), contact jars (gentle).",
+    "2) Fit reducers/robber screens before feeding.",
+    "3) Mix and label syrup; fill cleanly; wipe spills.",
+    "4) Monitor take-up; remove when done; clean/dry."
+  ],
+  "Seasonality & Climate": [
+    "Cool weather favours internal contact feeders.",
+    "Heat expands syrup—allow headspace to avoid overflow."
+  ],
+  "Data & Thresholds": [
+    "Stim feed volumes vs brood response.",
+    "Target zero drownings; log exceptions."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Bees drowning -> Add floats/mesh; check tilt.",
+    "Robbing at lids -> Switch times; improve seals; reduce entrances.",
+    "Mould -> Shorter fill cycles; sanitise more often."
+  ],
+  "Common Pitfalls": [
+    "Overfilling top feeders that then leak.",
+    "Open buckets near hives.",
+    "No records linking feed to outcomes."
+  ],
+  "Tools & Techniques": [
+    "Mesh floats, tight lids, marked jugs, funnels.",
+    "Disinfectant safe for food gear."
+  ],
+  "Safety & Compliance": [
+    "Food-safe containers; label sugar sources.",
+    "Do not contaminate honey supers."
+  ],
+  "Field Checklist": [
+    "Reducers on; screens ready.",
+    "Syrup mixed and labelled.",
+    "Towels/bucket for spills in truck."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain ‘stim vs bulk’ to new helpers."
+  ],
+  "Cross-Links": [
+    "nutrition_feeding",
+    "nectar_dearth_management",
+    "robbing_prevention_and_response"
+  ],
+  "Keywords": [
+    "feeder",
+    "syrup",
+    "drowning",
+    "contact"
+  ],
+  "Further Reading": [
+    "Feeder comparisons.",
+    "Sanitation for food-contact gear."
+  ],
+  "Notes": "Keep a ‘no-spill’ routine: lids on, funnels ready, wipe immediately."
 }

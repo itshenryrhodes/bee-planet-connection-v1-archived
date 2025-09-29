@@ -1,7 +1,77 @@
 {
-  "What It Is": "Mead is a fermented beverage made from honey, water, and yeast; styles range from dry to sweet, still to sparkling, and can include fruits/spices (melomel, metheglin).",
-  "Harvesting & Processing": "Choose clean, characterful honey. Sanitise equipment thoroughly. Rehydrate wine yeast with nutrients; manage temperature to avoid off-flavours; rack off lees to clarify. Stabilise before sweetening or bottling to prevent refermentation.",
-  "Properties & Uses": "Honey choice shapes aroma and body. Acid balance and tannin structure define finish; longer ageing refines harsh notes. Sparkling meads require careful priming and bottle conditioning or force carbonating.",
-  "Market & Value": "Local provenance and small-batch storytelling resonate with consumers. Comply with alcoholic beverage regulations, labelling, and duty where applicable.",
-  "Further Reading & Sources": "Use reputable enology resources for nutrient regimes, pH targets, and sanitation protocols."
+  "At-a-Glance": "Small-batch mead is a natural extension for honey producers. Clean fermentation, nutrient management, and temperature control drive quality.",
+  "Why it Matters": [
+    "Turns surplus or crystallised honey into a high-value product.",
+    "Builds deeper batch stories and tasting events."
+  ],
+  "Objectives": [
+    "Run sanitary, temperature-controlled ferments with proper yeast nutrition.",
+    "Document recipes and lots for repeatability and compliance.",
+    "Package safely with stable final gravity."
+  ],
+  "What Good Looks Like": [
+    "Sanitised equipment; oxygenated must; suitable yeast and staggered nutrients.",
+    "Stable gravity over several days before cold crash and rack.",
+    "Clear labelling with ABV estimate and batch codes (where legal)."
+  ],
+  "Step-by-Step": [
+    "1) Build a base: 2.5–3.5 lb honey per US gallon (300–420 g/L) for standard strength; warm gently to dissolve (no overheating).",
+    "2) Sanitation: clean and sanitise fermenters, airlocks, siphons.",
+    "3) Yeast & nutrients: pitch a suited wine yeast; add nutrients (TOSNA/SNA) in stages days 0–6.",
+    "4) Temp control: ferment in recommended range; avoid swings.",
+    "5) Stabilise & clear: rack off lees; cold crash; optional finings.",
+    "6) Finish: backsweeten only after stabilisation (if allowed) and ensure no refermentation before bottling."
+  ],
+  "Seasonality & Climate": [
+    "Warm rooms speed ferments but increase fusel risk; cool, steady spaces produce cleaner profiles.",
+    "Local varietals (e.g., heather, lime) give signature flavours."
+  ],
+  "Data & Thresholds": [
+    "Record OG and FG; ensure FG is stable ≥3 days before packaging.",
+    "Keep dissolved O2 high at pitch, low thereafter; avoid oxidation post-ferment."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Sulphur smell -> Add nutrients/yeast energiser; check temperature; aerate early rather than late.",
+    "Symptom: Stalled ferment -> Warm gently; add rehydrated yeast; verify gravity rather than bubbles.",
+    "Symptom: Bottle gushers -> Fermentation not finished or poor stabilisation; cold crash and recheck FG."
+  ],
+  "Common Pitfalls": [
+    "Overheating honey, increasing HMF and dulling aromatics.",
+    "No nutrient plan, causing stressed ferments.",
+    "Bottling before gravity stability."
+  ],
+  "Tools & Techniques": [
+    "Hydrometer or refractometer with correction, fermentation fridge, sanitizer, auto-siphon.",
+    "Yeast rehydration with Go-Ferm; TOSNA schedule."
+  ],
+  "Safety & Compliance": [
+    "Alcohol production/sale may require licensing—check local laws.",
+    "Accurate ABV and allergen labelling as required."
+  ],
+  "Field Checklist": [
+    "Recipe and batch sheet prepared.",
+    "Sanitation complete; yeast and nutrients staged.",
+    "Temp control and gravity logs active."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Describe varietal aroma and terroir; avoid health claims."
+  ],
+  "Cross-Links": [
+    "honey_tasting_sensory_notes",
+    "pricing_margins_small_scale_honey",
+    "wholesale_to_shops_basics"
+  ],
+  "Keywords": [
+    "mead",
+    "fermentation",
+    "TOSNA",
+    "ABV",
+    "backsweeten"
+  ],
+  "Further Reading": [
+    "Beginner meadmaking guides and nutrient protocols.",
+    "Food safety resources for small alcohol producers."
+  ],
+  "Notes": "Keep a pilot batch journal; repeat only what logs can reproduce."
 }

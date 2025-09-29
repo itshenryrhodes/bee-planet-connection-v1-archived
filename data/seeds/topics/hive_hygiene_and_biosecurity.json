@@ -58,8 +58,17 @@
     "Short hyphens only.",
     "Explain to stakeholders why hygiene lowers chemical reliance."
   ],
-  "Cross-Links": ["honey_extraction_best_practice", "varroa_monitoring_methods", "overwintering_colonies"],
-  "Keywords": ["biosecurity", "hive hygiene", "comb cycle", "sanitation"],
+  "Cross-Links": [
+    "honey_extraction_best_practice",
+    "varroa_monitoring_methods",
+    "overwintering_colonies"
+  ],
+  "Keywords": [
+    "biosecurity",
+    "hive hygiene",
+    "comb cycle",
+    "sanitation"
+  ],
   "Further Reading": [
     "NBU disease recognition and hygiene leaflets.",
     "Food safety guidance for small producers."

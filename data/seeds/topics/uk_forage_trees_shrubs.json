@@ -1,7 +1,74 @@
 {
-  "Overview": "Well-chosen trees and shrubs provide high-impact nectar and pollen across seasons with minimal upkeep—ideal for farms, estates, and urban corridors.",
-  "Drivers & Mechanisms": "Stagger bloom for continuity: early (willow, hazel, mahonia), mid (hawthorn, apple/pear/plum, lime), late (ivy, heather on suitable soils, sweet chestnut). Mix natives with proven ornamentals where appropriate.",
-  "Impacts & Case Studies": "Hedgerow restoration and street-tree schemes boost forage diversity, reduce dearths, and support wild pollinators alongside honey bees.",
-  "Mitigation & Best Practice": "Match species to soil and exposure; avoid invasive taxa; plan for drought tolerance; coordinate with councils or landowners for long-term maintenance. Plant in blocks/lines to aid bee orientation.",
-  "Further Reading & Sources": "Consult reputable UK pollinator plant lists and forestry guidance for species selection and establishment."
+  "At-a-Glance": "Trees and shrubs feed colonies at scale. Champion staggered species from willow to ivy with local provenance where possible.",
+  "Why it Matters": [
+    "High-nectar canopies beat small beds for yield.",
+    "Supports wild pollinators alongside honey bees."
+  ],
+  "Objectives": [
+    "Create a seasonal tree/shrub plan per yard radius.",
+    "Favour natives or well-behaved non-natives with long bloom.",
+    "Work with councils, farms, and schools."
+  ],
+  "What Good Looks Like": [
+    "Willow, maple, fruit trees, chestnut/lime, and ivy staggered.",
+    "Hedgerows with hawthorn/blackthorn/field maple/rose.",
+    "Mix of nectar and pollen sources; signage and care plan."
+  ],
+  "Step-by-Step": [
+    "1) Map current canopy and gaps; talk to landowners.",
+    "2) Choose species for soil/aspect; order bare-root in winter.",
+    "3) Plant with guards/mulch; water 2 summers; record survival.",
+    "4) Replace failures; update outreach boards."
+  ],
+  "Seasonality & Climate": [
+    "Winter planting best; drought summers need watering.",
+    "Storms require stakes/guards checks."
+  ],
+  "Data & Thresholds": [
+    "Tree survival % year 1/2; bloom onset notes.",
+    "Hedgerow length added and species diversity."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Poor survival -> Wrong species/soil; improve mulch/water.",
+    "Vandalism -> Involve local groups; add cages/signs.",
+    "No bloom -> Age/time; pick some faster bloomers nearby."
+  ],
+  "Common Pitfalls": [
+    "Plant-and-forget.",
+    "Copying lists without local soils/PH consideration.",
+    "Monoculture hedges."
+  ],
+  "Tools & Techniques": [
+    "Bare-root whips, mulch, guards/stakes, watering rota.",
+    "Simple GIS map of plantings."
+  ],
+  "Safety & Compliance": [
+    "Utility checks before digging.",
+    "Native/invasive species rules."
+  ],
+  "Field Checklist": [
+    "Planting plan and permissions.",
+    "Guards/labels ready.",
+    "Watering rota active."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Show before/after photos; thank partners annually."
+  ],
+  "Cross-Links": [
+    "urban_forage_gap_planning",
+    "gis_forage_mapping_apiary_planning",
+    "pollinator_friendly_planting"
+  ],
+  "Keywords": [
+    "trees",
+    "shrubs",
+    "hedgerow",
+    "UK forage"
+  ],
+  "Further Reading": [
+    "UK tree/hedge planting guides.",
+    "Pollinator-friendly canopy species lists."
+  ],
+  "Notes": "A single mature lime can out-feed dozens of planters—prioritise canopy where you can."
 }

@@ -1,80 +1,74 @@
 {
-  "title": "Customer newsletter & community (cadence, content, consent)",
-  "slug": "customer_newsletter_community",
-  "category": "Community & inclusion",
-  "categories": ["Products & processing"],
-  "taxonomy": {
-    "pillar": "Community & inclusion",
-    "subpillars": ["Comms"],
-    "topics": ["newsletter", "email-consent", "content-calendar", "community"],
-    "audience": ["market-seller", "beginner", "intermediate", "club-officer"],
-    "intent": ["how-to", "reference"],
-    "regions": ["UK", "EU"],
-    "season": ["spring", "summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["growth", "post-harvest"]
-  },
-  "tags": ["double-opt-in", "plain-text-style", "cadence-plan", "analytics-light"],
-
-  "At-a-Glance": "Emails keep you present between markets. Collect consent cleanly (double opt-in), send on a steady cadence (monthly works), and keep it short: one hive note, one product or tip, one date to remember. Use plain language and a friendly sign-off. Link to a simple calendar or shop page. Avoid heavy images and hype. Make unsubscribing obvious and kind. Treat emails like small postcards from your season—useful, polite, and consistent—so people look forward to them instead of dodging them.",
-
-  "Why it Matters": "Community buys from people they remember. A light, honest newsletter warms the gap between stalls and turns buyers into regulars. Consent matters legally and socially—when people choose to hear from you, open rates rise and complaints fall. Predictable cadence builds a habit; plain, readable notes feel human and are easier to write. Content should help: a forage update, a recipe, a photo of clean extraction day, or a heads-up on swarm season with who to call. Analytics can stay light—opens and a sense of replies is plenty at small scale. Over time, your list becomes a map of friends who turn up at the right weekends and share your updates without you shouting. That’s durable, low-pressure marketing that fits a beekeeper’s life.",
-
+  "At-a-Glance": "A short, regular email with harvest news, new jars, and market dates keeps customers engaged and buying.",
+  "Why it Matters": [
+    "Owned audience beats social algorithm shifts.",
+    "Predictable send builds habit and trust."
+  ],
+  "Objectives": [
+    "Collect consent properly and segment basic groups.",
+    "Send a consistent monthly or seasonal email.",
+    "Measure opens/clicks and sales impact."
+  ],
+  "What Good Looks Like": [
+    "Template with story, product feature, dates, and one clear CTA.",
+    "Segmented lists (local, wholesale, events) to avoid spammy blasts.",
+    "Clean unsubscribe process; list hygiene routine."
+  ],
   "Step-by-Step": [
-    "Set up a simple list with double opt-in and a welcome note.",
-    "Pick a cadence and day (e.g., first Friday monthly).",
-    "Draft a three-block format: hive note, tip/recipe, dates/offer.",
-    "Write plain, short emails; add one clean photo max.",
-    "Review replies; adjust cadence or topics; keep unsub easy."
+    "1) Offer opt-in at markets and online; confirm consent.",
+    "2) Plan a simple calendar (harvest, gifts, new stockists).",
+    "3) Write in plain, warm language; add alt text for images.",
+    "4) Send and review metrics; improve subject lines and offers."
   ],
-
-  "Context & Narrative": "Imagine a friendly note on the first Friday each month. Subject line: ‘From the hives: bramble bloom & a lemon dressing’. The first paragraph is a 3–4 line update from the yard—what’s in flower, a smile about the weather, a line on bee health. The second shares something useful: a 20-second dressing recipe with your summer honey or a candle care tip before winter. The last gives dates: next market, a workshop slot, or a preorder window. The email is short enough to read on a bus and plain enough to feel like you wrote it between hive checks—because you did. People reply with questions and photos; you answer briefly and make a note of common themes to use next time. When subscribers drift, you let them go with a warm goodbye line. The list stays clean, engaged and human. You keep your weekends for bees, not for marketing marathons, and your community grows one kind note at a time.",
-  
-  "Evidence Highlights": [
-    "Double opt-in reduces spam complaints and improves engagement.",
-    "Predictable cadence builds reader habit and recall.",
-    "Short, useful content outperforms heavy, image-laden blasts at small scale."
+  "Seasonality & Climate": [
+    "Christmas gifting, spring markets, summer dearth tips.",
+    "Weather stories make timely content—keep it upbeat."
   ],
-
-  "Data Tables": {
-    "content_calendar_headers": ["Send date", "Theme", "Hive note", "Tip/recipe", "Dates/offer", "Photo", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Aim for concise 200–400 words; one CTA.",
+    "Prune inactive subscribers quarterly."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: Low opens -> Better subject lines; prune list.",
+    "Issue: Few clicks -> Sharper CTA and placement; reduce clutter.",
+    "Issue: Complaints -> Re-check consent and frequency."
+  ],
   "Common Pitfalls": [
-    "Adding people without consent.",
-    "Infrequent, irregular sends that feel random.",
-    "Overlong emails that look like brochures."
+    "Irregular sends then sudden sales asks.",
+    "Heavy images without alt text.",
+    "No clear ‘where to buy’ info."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Write next month’s subject line the day you send this month’s—momentum beats perfection."}
+  "Tools & Techniques": [
+    "Email platform templates, UTM links, unique discount codes.",
+    "Signup QR at stall with privacy link."
   ],
-
-  "FAQs": [
-    {"q": "Plain text or HTML?", "a": "Plain or very light HTML keeps deliverability high and writing easy."},
-    {"q": "What about social?", "a": "Use email as home base; repost highlights to social if you enjoy it."}
+  "Safety & Compliance": [
+    "Consent logs; easy unsubscribe.",
+    "Accurate business details in footer."
   ],
-
-  "Seasonality & Climate": "Spring excitement, summer markets, autumn harvest, winter candles—cadence follows the year.",
-  
-  "Suggested Figures": [
-    {"alt": "Three-block email layout", "caption": "Hive note, tip/recipe, dates—simple and repeatable."}
+  "Field Checklist": [
+    "List cleaned; segments set.",
+    "Next send drafted and proofed.",
+    "CTA links tested."
   ],
-
-  "Glossary": [
-    {"term": "Double opt-in", "def": "Subscriber confirms email via a follow-up link, proving consent."}
+  "Communications": [
+    "Short hyphens only.",
+    "Write like you talk at the stall; avoid jargon."
   ],
-
-  "Cross-links": [
-    "market_stall_setup_food_hygiene_uk",
+  "Cross-Links": [
+    "social_media_basics_small_producers",
     "online_sales_setup_basics",
-    "honey_tasting_sensory_notes"
+    "press_media_handling_basics"
   ],
-
-  "Sources": [
-    {"name": "Email consent and small business comms basics", "url": "https://www.gov.uk/"}
+  "Keywords": [
+    "newsletter",
+    "email list",
+    "CTA",
+    "segmentation"
   ],
-
-  "Scrape-Guidance": "Lift consent and sender duty norms from official guidance; focus content on helpful, seasonal notes over promotions."
+  "Further Reading": [
+    "Email marketing basics for small brands.",
+    "Plain-language writing guides."
+  ],
+  "Notes": "Always include your next market dates and stockist list link."
 }

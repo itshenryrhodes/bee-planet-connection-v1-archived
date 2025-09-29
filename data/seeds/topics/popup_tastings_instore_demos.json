@@ -1,80 +1,74 @@
 {
-  "title": "Pop-up tastings & in-store demos (safe, tidy, effective)",
-  "slug": "popup_tastings_instore_demos",
-  "category": "Products & processing",
-  "categories": ["Community & inclusion", "Operations"],
-  "taxonomy": {
-    "pillar": "Products & processing",
-    "subpillars": ["Presentation"],
-    "topics": ["tastings", "sampling", "hygiene", "in-store-demos"],
-    "audience": ["market-seller", "intermediate", "beginner"],
-    "intent": ["how-to", "policy"],
-    "regions": ["UK", "EU"],
-    "season": ["spring", "summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["post-harvest"]
-  },
-  "tags": ["risk-assessment", "disposable-spoons", "allergen-note", "spill-kit"],
-
-  "At-a-Glance": "Demos work when they’re calm and clean. Agree space and timings with the host, bring a washable table cover, a tidy display, and a sampling kit: disposable spoons, waste pot, wipes, hand gel, and a mini spill kit. Label clearly, show prices, and keep a small card with allergen and crystallisation notes. Offer tiny tastes, smile, and move people on with a friendly script. Log batch and jar counts before and after. Leave the space cleaner than you found it and follow up with a thank you and reorder link.",
-  
-  "Why it Matters": "Sampling converts but can create mess and risk if improvised. Stores judge partners on hygiene, clarity, and how little fuss you cause. A lightweight SOP protects everyone: single-use utensils avoid cross-contamination, a waste pot keeps the table tidy, and allergen notes stop awkward moments. Timings matter—set up early, finish on time, and avoid aisle blockages by standing side-on and keeping the queue moving. Clear pricing and a short benefit line (‘local summer honey, light floral’) reduce chatter. Batch tracking and a quick sell-through note make reordering easy for the host. Run this rhythm and you’ll be invited back, not managed out.",
-  
+  "At-a-Glance": "Short, tidy tastings sell jars fast. Keep samples safe, scripts simple, and data captured.",
+  "Why it Matters": [
+    "Drives trial and repeat sales at stockists.",
+    "Strengthens retailer relationships."
+  ],
+  "Objectives": [
+    "Standardise tasting kit and hygiene.",
+    "Draft 30-second script and FAQs.",
+    "Capture sign-ups or retailer reorder signals."
+  ],
+  "What Good Looks Like": [
+    "Two varietals + one special; small spoons/lids; bin with lid.",
+    "Placard: allergen info, price, ‘where to find me in store’.",
+    "QR for newsletter; stockist order pad."
+  ],
   "Step-by-Step": [
-    "Confirm space, power, timings, and invoice terms with host.",
-    "Pack demo kit: cloth, stand, spoons, waste pot, wipes, hand gel, price board.",
-    "Set up early, label clearly, display batch codes discreetly.",
-    "Offer small tastes, keep a simple script, log questions.",
-    "Tidy, thank staff, share reorder link, and note results."
+    "1) Book slot; confirm power/table; send insurance/RA.",
+    "2) Pack kit: jars, tasters, cloths, bin, signage, QR.",
+    "3) Deliver script; handle objections; note feedback.",
+    "4) Record sales uplift; send thanks; schedule next."
   ],
-
-  "Context & Narrative": "Picture a small station near the till: clean cloth, three neat jars (runny, set, creamed), prices on a clear board, and a little card reading ‘Granulation is natural—warm water softens’. You place a stack of wooden stirrers in a small cup, a waste pot to the right, and hand gel within reach. Your script is friendly and brief: ‘Would you like a taste? This is our spring runny—light and floral. Fresh batch in today.’ You place a pea-sized taste on a stirrer and point to the price line. People nod and either buy or move on—no cluttered chat, no sticky chaos. Between waves you wipe the table edge and top up spoons. \n\nA kid reaches for the spoon cup—you smile and offer one. A question about pollen? You answer honestly, without health claims, and point to a tiny FAQ card. When the hour ends, you tally jars sold vs brought, pack swiftly, and thank the manager with a short note and your reorder QR. Back home, you add a line to your demo log: location, footfall feel, flavours that sold, common questions. Next time’s kit is even tighter because you capture the tiny lessons—where the waste pot should sit, which line made eyes light up, and how many spoons an hour really uses.",
-  
-  "Evidence Highlights": [
-    "Single-use utensils and clear allergen notes reduce complaints.",
-    "Short scripts and visible pricing increase conversion and throughput.",
-    "Post-event logs improve future demos and reorders."
+  "Seasonality & Climate": [
+    "Christmas Q4; spring launch windows strong.",
+    "Heat—keep jars cool; swap spoons frequently."
   ],
-
-  "Data Tables": {
-    "demo_log_headers": ["Date", "Venue", "Hours", "Jars brought", "Jars sold", "Best seller", "Common Qs", "Reorder lead"]
-  },
-
+  "Data & Thresholds": [
+    "Target conversion rate per hour.",
+    "Reorder trigger with buyer post-demo."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Low uptake -> Move position; bigger sign; sweeter varietal first.",
+    "Mess -> Reduce portion size; change spoons; wipe every 5 min.",
+    "No reorder -> Offer bundle; date next promo."
+  ],
   "Common Pitfalls": [
-    "Oversized portions that burn stock.",
-    "No waste control leading to mess.",
-    "Blocking aisles or overlong chats causing friction."
+    "No prices visible.",
+    "Too many SKUs on table.",
+    "No follow-up with buyer."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Pre-sticker jars with tiny price dots—faster decisions, fewer questions."}
+  "Tools & Techniques": [
+    "Clipboards, QR codes, sample jars with restrictors.",
+    "Branded table runner and photo props."
   ],
-
-  "FAQs": [
-    {"q": "Do I need a handwash sink?", "a": "Hand gel and wipes are often accepted for low-risk foods; check host policy."},
-    {"q": "Music or props?", "a": "Keep it simple—clean table, clear words, friendly smile."}
+  "Safety & Compliance": [
+    "Allergen placard; sampling hygiene.",
+    "Venue rules and insurance."
   ],
-
-  "Seasonality & Climate": "Cold days need warmer honey for easier spoons; hot days need shade and faster wipe-downs.",
-  
-  "Suggested Figures": [
-    {"alt": "Demo table layout", "caption": "Left-to-right flow: spoons → taste → waste → wipes."}
+  "Field Checklist": [
+    "Kit packed; placards printed.",
+    "Samples prepped; bin ready.",
+    "Thanks email scheduled."
   ],
-
-  "Glossary": [
-    {"term": "Throughput", "def": "How many customers you can serve per hour without crowding."}
+  "Communications": [
+    "Short hyphens only.",
+    "Invite customers to share tasting notes."
   ],
-
-  "Cross-links": [
-    "honey_tasting_sensory_notes",
+  "Cross-Links": [
     "market_stall_setup_food_hygiene_uk",
-    "honey_labelling_legal_basics_uk_eu"
+    "wholesale_to_shops_basics",
+    "customer_newsletter_community"
   ],
-
-  "Sources": [
-    {"name": "Food sampling hygiene basics", "url": "https://www.gov.uk/"}
+  "Keywords": [
+    "sampling",
+    "demo",
+    "retail",
+    "conversion"
   ],
-
-  "Scrape-Guidance": "Pull public sampling hygiene norms and practical store etiquette; avoid brand marketing tips."
+  "Further Reading": [
+    "Retail demo best practices.",
+    "Sampling hygiene guides."
+  ],
+  "Notes": "Time demos to store footfall peaks; ask staff when those are."
 }

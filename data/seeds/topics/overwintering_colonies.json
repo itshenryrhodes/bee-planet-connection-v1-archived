@@ -64,8 +64,19 @@
     "Short hyphens only.",
     "Explain to stakeholders why heavy autumn work means light winter touches."
   ],
-  "Cross-Links": ["varroa_treatment_options", "colony_nutrition", "hive_hygiene", "apiary_setup"],
-  "Keywords": ["winter bees", "hefting", "fondant", "ventilation", "mouseguard"],
+  "Cross-Links": [
+    "varroa_treatment_options",
+    "colony_nutrition",
+    "hive_hygiene",
+    "apiary_setup"
+  ],
+  "Keywords": [
+    "winter bees",
+    "hefting",
+    "fondant",
+    "ventilation",
+    "mouseguard"
+  ],
   "Further Reading": [
     "NBU overwintering guidance.",
     "Regional beekeeping associations’ winter prep checklists."

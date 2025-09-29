@@ -60,8 +60,19 @@
     "Short hyphens only.",
     "Inform landowners discreetly that a health check is underway; avoid speculation."
   ],
-  "Cross-Links": ["hive_hygiene_and_biosecurity", "hive_inspection_protocols_and_recordkeeping", "colony_nutrition"],
-  "Keywords": ["EFB", "AFB", "notifiable disease", "rope test", "sunken cappings", "brood disease"],
+  "Cross-Links": [
+    "hive_hygiene_and_biosecurity",
+    "hive_inspection_protocols_and_recordkeeping",
+    "colony_nutrition"
+  ],
+  "Keywords": [
+    "EFB",
+    "AFB",
+    "notifiable disease",
+    "rope test",
+    "sunken cappings",
+    "brood disease"
+  ],
   "Further Reading": [
     "Official national EFB/AFB recognition leaflets and reporting pages.",
     "Association training modules on brood disease diagnosis."

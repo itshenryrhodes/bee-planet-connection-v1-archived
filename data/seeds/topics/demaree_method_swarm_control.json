@@ -1,8 +1,74 @@
 {
-  "At-a-Glance": "The Demaree method reduces swarming by separating the queen from most brood while maintaining a strong foraging force in one stack.",
-  "Why it Matters": "Unlike simple splits, Demaree retains nectar-gathering strength for the main flow while removing the triggers that drive swarm impulse.",
-  "Step-by-Step": "Place the queen with one frame of emerging brood and eggs in the bottom box with foundation/space; put remaining brood in an upper box separated by a queen excluder (and often a super). Ensure ample space above for brood to emerge and for nectar processing. Break down any queen cells in the upper box after 7–10 days; repeat checks as needed.",
-  "Seasonality & Climate": "Apply ahead of or at first signs of congestion/swarm cells in spring build-up; adapt timings to local flows.",
-  "Common Pitfalls": "Leaving viable queen cells in the upper box; failing to provide space; not confirming queen location before rearrangement.",
-  "Tools & Materials": "Queen excluder, extra brood boxes/supers, spare frames/foundation, clear marking of queen box, and a calendar for follow-up checks."
+  "At-a-Glance": "Demaree relieves swarm pressure by separating brood from queen within one stack—maintains foragers and harvest while resetting urge.",
+  "Why it Matters": [
+    "Controls swarming without major splits.",
+    "Keeps foraging force and supers working."
+  ],
+  "Objectives": [
+    "Execute a clear Demaree layout with queen below.",
+    "Provide space and young brood management to suppress cells.",
+    "Monitor and reset as needed over 7–10 days."
+  ],
+  "What Good Looks Like": [
+    "Queen, one brood frame and foundation below with excluder; majority brood above.",
+    "Plenty of drawn comb and space above excluder; supers on top.",
+    "Follow-up: remove emergency cells; adjust frames."
+  ],
+  "Step-by-Step": [
+    "1) Find and cage the queen. Prepare spare brood box and excluder.",
+    "2) Bottom box: queen + one open-brood frame + empty/drawn comb; no queen cells.",
+    "3) Excluder, then empty super as a spacer (optional), then top brood box with remaining brood/food.",
+    "4) Return supers on top. Recheck in 7 days: remove emergency cells above; ensure queenright below."
+  ],
+  "Seasonality & Climate": [
+    "Best just before or at first swarm signs in spring.",
+    "Cold snaps: ensure adequate bees/heat in upper brood area."
+  ],
+  "Data & Thresholds": [
+    "Trigger: cups with eggs/royal jelly or congestion signs.",
+    "Follow-up checks at day 7 and day 10."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Cells persist above -> Remove; add more open brood below; give space.",
+    "Queenless below -> Reunite with queen-right half or introduce caged queen.",
+    "Honey bound below -> Add drawn frames; move food up."
+  ],
+  "Common Pitfalls": [
+    "Leaving charged cells above to emerge.",
+    "Too few bees below leading to brood chill.",
+    "No space added, so pressure returns."
+  ],
+  "Tools & Techniques": [
+    "Queen clip/cage, extra brood box, excluder, spare drawn comb.",
+    "Marker pen and frame map."
+  ],
+  "Safety & Compliance": [
+    "Lift safely—two people for tall stacks.",
+    "Keep records for inspections."
+  ],
+  "Field Checklist": [
+    "Queen located and marked.",
+    "Layout correct: Q below, brood above.",
+    "Day-7 cell cull booked."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to helpers: ‘brood up, queen down, cells off at day 7’."
+  ],
+  "Cross-Links": [
+    "pagden_method_swarm_control",
+    "snelgrove_board_swarm_control",
+    "supering_strategy_frame_management"
+  ],
+  "Keywords": [
+    "Demaree",
+    "swarm control",
+    "excluder",
+    "brood management"
+  ],
+  "Further Reading": [
+    "Classic Demaree method notes.",
+    "Comparisons with Pagden and Snelgrove."
+  ],
+  "Notes": "Adding a spacer super between brood boxes eases congestion and improves heat flow management."
 }

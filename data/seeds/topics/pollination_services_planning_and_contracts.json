@@ -60,8 +60,18 @@
     "Short hyphens only.",
     "Share a one-pager with growers: spray times, water, and contact protocol."
   ],
-  "Cross-Links": ["migratory_beekeeping_and_transport", "hive_hygiene_and_biosecurity", "water_sources_and_hydration"],
-  "Keywords": ["pollination contract", "colony strength", "stocking rate", "bloom window", "grower communications"],
+  "Cross-Links": [
+    "migratory_beekeeping_and_transport",
+    "hive_hygiene_and_biosecurity",
+    "water_sources_and_hydration"
+  ],
+  "Keywords": [
+    "pollination contract",
+    "colony strength",
+    "stocking rate",
+    "bloom window",
+    "grower communications"
+  ],
   "Further Reading": [
     "Crop-specific pollination guides from extension services.",
     "Templates for pollination agreements."

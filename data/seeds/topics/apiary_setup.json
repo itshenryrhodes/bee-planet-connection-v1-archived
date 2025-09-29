@@ -66,8 +66,18 @@
     "Short hyphens only.",
     "Hold a neighbour briefing template for urban/residential sites."
   ],
-  "Cross-Links": ["urban_stakeholder_neighbour_relations", "colony_defense_and_behaviour", "hive_hygiene_and_biosecurity"],
-  "Keywords": ["apiary siting", "flight path", "windbreak", "drainage", "stands"],
+  "Cross-Links": [
+    "urban_stakeholder_neighbour_relations",
+    "colony_defense_and_behaviour",
+    "hive_hygiene_and_biosecurity"
+  ],
+  "Keywords": [
+    "apiary siting",
+    "flight path",
+    "windbreak",
+    "drainage",
+    "stands"
+  ],
   "Further Reading": [
     "National Bee Unit siting guidance.",
     "Local beekeeping association best practices for urban placements."

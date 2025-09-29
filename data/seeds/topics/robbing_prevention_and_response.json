@@ -58,8 +58,18 @@
     "Short hyphens only.",
     "Share preventive tips with helpers (tidy yards, internal feeding)."
   ],
-  "Cross-Links": ["colony_nutrition", "hive_hygiene_and_biosecurity", "hive_ventilation_and_moisture_control"],
-  "Keywords": ["robbing", "entrance reducer", "wet sheet", "internal feeding", "dearth"],
+  "Cross-Links": [
+    "colony_nutrition",
+    "hive_hygiene_and_biosecurity",
+    "hive_ventilation_and_moisture_control"
+  ],
+  "Keywords": [
+    "robbing",
+    "entrance reducer",
+    "wet sheet",
+    "internal feeding",
+    "dearth"
+  ],
   "Further Reading": [
     "Association notes on robbing prevention.",
     "Field guides on identifying robbing vs orientation flights."

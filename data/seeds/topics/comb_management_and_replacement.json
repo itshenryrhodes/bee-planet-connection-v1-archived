@@ -59,8 +59,18 @@
     "Short hyphens only.",
     "Explain to stakeholders why dark comb goes out despite apparent utility."
   ],
-  "Cross-Links": ["hive_hygiene_and_biosecurity", "varroa_monitoring_methods", "honey_extraction_best_practice"],
-  "Keywords": ["comb cycle", "foundation", "drone comb", "brood nest", "wax rendering"],
+  "Cross-Links": [
+    "hive_hygiene_and_biosecurity",
+    "varroa_monitoring_methods",
+    "honey_extraction_best_practice"
+  ],
+  "Keywords": [
+    "comb cycle",
+    "foundation",
+    "drone comb",
+    "brood nest",
+    "wax rendering"
+  ],
   "Further Reading": [
     "NBU comb management notes.",
     "Extension guides on frame rotation strategies."

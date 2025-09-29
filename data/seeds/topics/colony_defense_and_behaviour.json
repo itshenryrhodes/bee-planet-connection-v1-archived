@@ -61,8 +61,18 @@
     "Short hyphens only.",
     "Keep a calm-colony breeding message in outreach materials."
   ],
-  "Cross-Links": ["apiary-setup", "neighbour_relations", "swarm_management"],
-  "Keywords": ["guard bees", "alarm pheromone", "balling", "robbing", "temperament"],
+  "Cross-Links": [
+    "apiary-setup",
+    "neighbour_relations",
+    "swarm_management"
+  ],
+  "Keywords": [
+    "guard bees",
+    "alarm pheromone",
+    "balling",
+    "robbing",
+    "temperament"
+  ],
   "Further Reading": [
     "NBU temperament guidance.",
     "Seeley - Honeybee Democracy chapters on collective behaviour."

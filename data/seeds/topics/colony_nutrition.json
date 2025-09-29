@@ -61,8 +61,20 @@
     "Short hyphens only.",
     "Share a one-pager with neighbours on bee water sources and planting ideas."
   ],
-  "Cross-Links": ["forage_and_flora", "overwintering_colonies", "varroa_monitoring_methods", "hive_hygiene"],
-  "Keywords": ["pollen", "nectar", "syrup", "fondant", "dearth", "robbing"],
+  "Cross-Links": [
+    "forage_and_flora",
+    "overwintering_colonies",
+    "varroa_monitoring_methods",
+    "hive_hygiene"
+  ],
+  "Keywords": [
+    "pollen",
+    "nectar",
+    "syrup",
+    "fondant",
+    "dearth",
+    "robbing"
+  ],
   "Further Reading": [
     "Regional association nutrition guides.",
     "Peer-reviewed work on protein and immune function in Apis mellifera."

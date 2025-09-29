@@ -1,81 +1,74 @@
 {
-  "title": "Pollen trap use & handling (drying, storage, ethics)",
-  "slug": "pollen_trap_handling",
-  "category": "Products & processing",
-  "categories": ["Bee health & pests", "Operations"],
-  "taxonomy": {
-    "pillar": "Products & processing",
-    "subpillars": ["Byproducts"],
-    "topics": ["pollen-traps", "drying", "screening", "storage", "colony-impact"],
-    "audience": ["intermediate", "club-officer"],
-    "intent": ["how-to", "policy"],
-    "regions": ["UK", "EU"],
-    "season": ["spring", "summer"],
-    "climate": ["temperate"],
-    "difficulty": "intermediate",
-    "lifecycle_stage": ["growth"]
-  },
-  "tags": ["trap-duty-cycle", "food-safety", "desiccation", "moth-risk"],
-
-  "At-a-Glance": "Pollen harvest must be gentle and clean. Use quality traps with bee-friendly screens, run short duty cycles to limit colony impact, and harvest daily in warm spells. Dry promptly at low temperatures to food-safe moisture, sieve out debris, and store airtight and cool to deter pests. Label by date and source. If selling, follow food hygiene norms and avoid health claims. A simple policy—when, how long, and how you dry—keeps bees thriving and product safe and tasty.",
-  
-  "Why it Matters": "Pollen is brood food first. Over-harvesting weakens colonies and sours neighbours if foragers are slowed at the entrance. Duty cycles—on for a few days, off for recovery—balance curiosity with care. Clean handling matters, too: pellets carry field dust and insect parts that must be screened; slow, low drying preserves colour and aroma; and airtight storage prevents moisture uptake and moth damage. A logbook and a scale tell you what the colony can spare across the season. If you share or sell, treat pollen like a delicate food: clean trays, gloves, allergen awareness, and honest labels. Clubs should demonstrate traps sparingly and document settings so new keepers don’t copy worst practices from the internet. Done well, pollen becomes a modest, seasonal treat that does not cost winter strength.",
-  
+  "At-a-Glance": "Trap sparingly, dry quickly, and store cold and dark. Colony nutrition comes first.",
+  "Why it Matters": [
+    "Prevents brood setbacks and hygienic stress.",
+    "Product spoils fast if mishandled."
+  ],
+  "Objectives": [
+    "Use traps only during strong pollen flows.",
+    "Cleanly collect and rapidly chill or dry.",
+    "Maintain hygiene and traceability."
+  ],
+  "What Good Looks Like": [
+    "Traps fitted level and cleaned daily; doors open on off-days.",
+    "Pellets collected into clean containers; chilled within hours.",
+    "Batch codes with apiary/date; moisture validated."
+  ],
   "Step-by-Step": [
-    "Fit trap; confirm bees pass smoothly; set a conservative duty cycle.",
-    "Collect pellets daily; chill or dry promptly.",
-    "Dry at low temperature to target moisture; sieve and check visually.",
-    "Package in airtight containers; label date/source; store cool.",
-    "Log weights and colony condition; adjust or stop as needed."
+    "1) Confirm strong pollen flow and colony strength; fit trap.",
+    "2) Collect daily; remove debris; avoid crushing.",
+    "3) Dry ≤40 °C to target moisture or freeze; store opaque/airtight.",
+    "4) Rest colonies; remove trap during dearth."
   ],
-
-  "Context & Narrative": "Your entrance board swaps for a trap on a bright morning. Foragers hesitate for ten minutes, then flow; you watch for jams and adjust. A timer on your phone ends the day’s duty; you remove the drawer, spread pellets on mesh trays, and set a dehydrator at a careful low temperature. Colour holds, aroma remains nutty, and moisture falls to the safe window you calibrated with a simple meter. Pellets pass across a sieve to shed dust and stray legs; anything doubtful is discarded. You pack by date into jars with tight lids and a silica sachet in the outer box. A clean label lists ‘dried bee-collected pollen’, origin, and a batch code that ties back to the log. \n\nThe bees get the priority call. If brood is thin, weather turns, or flight drops, the trap goes away. Your log shows you how little you actually need to collect to satisfy curious friends and loyal customers. When you speak about pollen, you talk about flavour notes, colours, and seasonality—not cures. That tone, plus careful handling, keeps the practice ethical and the product delicious without hurting the colonies that made it.",
-  
-  "Evidence Highlights": [
-    "Short duty cycles reduce colony impact.",
-    "Low temperature drying preserves flavour/colour and safety.",
-    "Airtight, cool storage reduces moisture uptake and pest damage."
+  "Seasonality & Climate": [
+    "Spring flows best; avoid late-season stress.",
+    "Humidity demands faster drying and sealed storage."
   ],
-
-  "Data Tables": {
-    "trap_log_headers": ["Date", "Apiary/hive", "Hours on", "Weight collected", "Colony condition", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Moisture target ≤6–8% for shelf-stable pollen.",
+    "Rest ratio (e.g., 2 on / 5 off days) to protect brood."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Brood thinning -> Reduce trapping; feed substitute if needed.",
+    "Symptom: Off odour -> Discard; improve speed and drying.",
+    "Symptom: Mites in trays -> Improve cleaning and freeze pre-pack."
+  ],
   "Common Pitfalls": [
-    "Leaving traps on continuously.",
-    "High heat drying that dulls colour and flavour.",
-    "Loose storage leading to moisture and moths."
+    "Continuous trapping through dearth.",
+    "Dirty trays and mixed debris.",
+    "Slow drying causing mould."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Run traps only on strong flows and strong colonies—skip during build-up or dearth."}
+  "Tools & Techniques": [
+    "Underfloor/entrance traps, sieves, dehydrator, moisture meter.",
+    "Opaque containers and oxygen absorbers."
   ],
-
-  "FAQs": [
-    {"q": "What moisture is safe?", "a": "Dry until pellets are firm/brittle and pass your target using a small moisture meter."},
-    {"q": "Can I freeze pellets?", "a": "Yes—freezing helps hold quality before drying or long storage."}
+  "Safety & Compliance": [
+    "Food hygiene and allergen labelling for pollen.",
+    "Avoid medical claims."
   ],
-
-  "Seasonality & Climate": "Short windows in spring/summer; humidity management is key in damp regions.",
-  
-  "Suggested Figures": [
-    {"alt": "Trap duty cycle chart", "caption": "On/off schedule that protects brood and foragers."}
+  "Field Checklist": [
+    "Trap clean and level.",
+    "Drying/freezing plan ready.",
+    "Batches labelled and logged."
   ],
-
-  "Glossary": [
-    {"term": "Duty cycle", "def": "The proportion of time a device is in use; here, trap-on vs trap-off time."}
+  "Communications": [
+    "Short hyphens only.",
+    "Explain seasonality and ethical limits to customers."
   ],
-
-  "Cross-links": [
-    "beeswax_rendering_storage",
-    "honey_processing_basics",
-    "market_stall_setup_food_hygiene_uk"
+  "Cross-Links": [
+    "pollen_drying_storage",
+    "bee_bread_perga_handling",
+    "colony_nutrition"
   ],
-
-  "Sources": [
-    {"name": "Food hygiene basics for small producers", "url": "https://www.gov.uk/"},
-    {"name": "Beekeeping association notes on pollen traps", "url": "https://www.bbka.org.uk/"}
+  "Keywords": [
+    "pollen trap",
+    "drying",
+    "moisture",
+    "hygiene"
   ],
-
-  "Scrape-Guidance": "Lift ethical duty-cycle guidance, drying/storage parameters, and food handling norms from authoritative sources."
+  "Further Reading": [
+    "Trapping guides and ethical recommendations.",
+    "Quality standards for bee-collected pollen."
+  ],
+  "Notes": "Sieve out hive debris before drying to improve quality and appearance."
 }

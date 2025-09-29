@@ -60,8 +60,17 @@
     "Short hyphens only.",
     "Use calm, factual tone; share pollinator planting tips."
   ],
-  "Cross-Links": ["apiary_setup", "colony_defense_and_behaviour", "pesticide_awareness_and_incident_reporting"],
-  "Keywords": ["urban beekeeping", "neighbour relations", "stakeholder management", "swarm protocol"],
+  "Cross-Links": [
+    "apiary_setup",
+    "colony_defense_and_behaviour",
+    "pesticide_awareness_and_incident_reporting"
+  ],
+  "Keywords": [
+    "urban beekeeping",
+    "neighbour relations",
+    "stakeholder management",
+    "swarm protocol"
+  ],
   "Further Reading": [
     "City beekeeping association urban guidelines.",
     "Case studies on rooftop apiaries and community engagement."

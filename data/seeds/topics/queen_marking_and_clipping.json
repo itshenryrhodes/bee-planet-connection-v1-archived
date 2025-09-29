@@ -60,8 +60,18 @@
     "Short hyphens only.",
     "Explain colour code to helpers so notes are consistent."
   ],
-  "Cross-Links": ["hive_inspection_protocols_and_recordkeeping", "queen_rearing_and_supersedure", "swarm_management"],
-  "Keywords": ["queen marking", "colour code", "clipping", "thorax dot", "balling"],
+  "Cross-Links": [
+    "hive_inspection_protocols_and_recordkeeping",
+    "queen_rearing_and_supersedure",
+    "swarm_management"
+  ],
+  "Keywords": [
+    "queen marking",
+    "colour code",
+    "clipping",
+    "thorax dot",
+    "balling"
+  ],
   "Further Reading": [
     "Association guides on queen handling and marking.",
     "Best practice videos from inspectorates and associations."

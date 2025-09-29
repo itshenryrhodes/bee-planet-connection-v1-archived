@@ -63,8 +63,18 @@
     "Short hyphens only.",
     "Explain varietal character, pollen presence, and natural set to customers."
   ],
-  "Cross-Links": ["hive_products_and_byproducts", "hive_hygiene_and_biosecurity", "marketing_and_labelling"],
-  "Keywords": ["extraction", "refractometer", "settling tank", "cappings", "crystallisation"],
+  "Cross-Links": [
+    "hive_products_and_byproducts",
+    "hive_hygiene_and_biosecurity",
+    "marketing_and_labelling"
+  ],
+  "Keywords": [
+    "extraction",
+    "refractometer",
+    "settling tank",
+    "cappings",
+    "crystallisation"
+  ],
   "Further Reading": [
     "Food safety authority guidance for small honey producers.",
     "Association best practice on extraction hygiene."

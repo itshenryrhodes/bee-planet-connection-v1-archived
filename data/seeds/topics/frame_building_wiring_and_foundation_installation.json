@@ -59,8 +59,18 @@
     "Short hyphens only.",
     "Document your frame spec so helpers match parts and spacing."
   ],
-  "Cross-Links": ["comb_management_and_replacement", "honey_extraction_best_practice", "hive_types_and_configuration_choices"],
-  "Keywords": ["frame wiring", "foundation embedding", "assembly jig", "radial extractor", "cross-comb"],
+  "Cross-Links": [
+    "comb_management_and_replacement",
+    "honey_extraction_best_practice",
+    "hive_types_and_configuration_choices"
+  ],
+  "Keywords": [
+    "frame wiring",
+    "foundation embedding",
+    "assembly jig",
+    "radial extractor",
+    "cross-comb"
+  ],
   "Further Reading": [
     "Workshop guides for frame building.",
     "Extractor manufacturer notes on comb support."

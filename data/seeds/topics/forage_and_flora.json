@@ -60,8 +60,18 @@
     "Short hyphens only.",
     "Provide a one-page planting guide with 3 tiers - balcony, garden, verge."
   ],
-  "Cross-Links": ["urban_beekeeping_basics", "pesticide_awareness", "colony_nutrition"],
-  "Keywords": ["nectar flow", "pollen diversity", "phenology", "dearth", "hedgerow"],
+  "Cross-Links": [
+    "urban_beekeeping_basics",
+    "pesticide_awareness",
+    "colony_nutrition"
+  ],
+  "Keywords": [
+    "nectar flow",
+    "pollen diversity",
+    "phenology",
+    "dearth",
+    "hedgerow"
+  ],
   "Further Reading": [
     "RHS Plants for Pollinators.",
     "Xerces Society regional planting guides."

@@ -60,8 +60,18 @@
     "Short hyphens only.",
     "Share weekly weight snapshots with helpers to align actions."
   ],
-  "Cross-Links": ["spring_build_up_and_supering_strategy", "colony_nutrition", "robbing_prevention_and_response"],
-  "Keywords": ["hive scale", "nectar flow", "telemetry", "sentinel colony", "weight curve"],
+  "Cross-Links": [
+    "spring_build_up_and_supering_strategy",
+    "colony_nutrition",
+    "robbing_prevention_and_response"
+  ],
+  "Keywords": [
+    "hive scale",
+    "nectar flow",
+    "telemetry",
+    "sentinel colony",
+    "weight curve"
+  ],
   "Further Reading": [
     "Case studies on weight-based flow tracking.",
     "DIY load cell guides for hive scales."

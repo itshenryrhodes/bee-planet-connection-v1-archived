@@ -59,8 +59,18 @@
     "Short hyphens only.",
     "Document breeder lines and share goals with helpers."
   ],
-  "Cross-Links": ["queen_rearing_and_supersedure", "colony_nutrition", "varroa_monitoring_methods"],
-  "Keywords": ["drones", "mating success", "drone congregation area", "breeder colony", "queen mating"],
+  "Cross-Links": [
+    "queen_rearing_and_supersedure",
+    "colony_nutrition",
+    "varroa_monitoring_methods"
+  ],
+  "Keywords": [
+    "drones",
+    "mating success",
+    "drone congregation area",
+    "breeder colony",
+    "queen mating"
+  ],
   "Further Reading": [
     "Queen rearing texts on drones and DCAs.",
     "Studies on weather impacts on mating flights."

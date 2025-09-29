@@ -58,8 +58,18 @@
     "Short hyphens only.",
     "Share a simple ‘why hives tilt forward’ explainer with site owners."
   ],
-  "Cross-Links": ["overwintering_colonies", "apiary_setup", "colony_nutrition"],
-  "Keywords": ["ventilation", "condensation", "insulation", "bearding", "moisture quilt"],
+  "Cross-Links": [
+    "overwintering_colonies",
+    "apiary_setup",
+    "colony_nutrition"
+  ],
+  "Keywords": [
+    "ventilation",
+    "condensation",
+    "insulation",
+    "bearding",
+    "moisture quilt"
+  ],
   "Further Reading": [
     "Regional wintering guides for your hive type.",
     "Studies on hive microclimate and moisture dynamics."

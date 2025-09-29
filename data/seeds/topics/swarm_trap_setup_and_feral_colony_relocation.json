@@ -60,8 +60,18 @@
     "Short hyphens only.",
     "Provide a neighbour leaflet on what to do if they see a swarm."
   ],
-  "Cross-Links": ["swarm_management", "queen_rearing_and_supersedure", "migratory_beekeeping_and_transport"],
-  "Keywords": ["swarm trap", "cutout", "bee vac", "lemon grass oil", "feral colony"],
+  "Cross-Links": [
+    "swarm_management",
+    "queen_rearing_and_supersedure",
+    "migratory_beekeeping_and_transport"
+  ],
+  "Keywords": [
+    "swarm trap",
+    "cutout",
+    "bee vac",
+    "lemon grass oil",
+    "feral colony"
+  ],
   "Further Reading": [
     "Research on preferred swarm cavity volume and entrance size.",
     "Best practice guides for safe removals and public liaison."

@@ -1,82 +1,74 @@
 {
-  "title": "Data protection and privacy for small producers (GDPR-lite)",
-  "slug": "data_protection_privacy_small_producers",
-  "category": "Community & inclusion",
-  "categories": ["Risk & compliance", "Operations"],
-  "taxonomy": {
-    "pillar": "Community & inclusion",
-    "subpillars": ["Compliance"],
-    "topics": ["GDPR", "consent", "data-minimisation", "retention", "SAR"],
-    "audience": ["market-seller", "club-officer", "beginner", "intermediate"],
-    "intent": ["policy", "how-to"],
-    "regions": ["UK", "EU"],
-    "season": ["spring", "summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "intermediate",
-    "lifecycle_stage": ["growth"]
-  },
-  "tags": ["privacy-notice", "mailing-list", "access-requests", "data-breach"],
-
-  "At-a-Glance": "Keep it small and lawful. Collect only what you need, get clear consent for newsletters, and store data in as few places as possible. Publish a tiny privacy notice that says what you collect, why, and how to contact you. Set a retention rule (e.g., delete stale signups after 24 months). Honour unsubscribe clicks and handle access requests politely and on time. If you lose a device or list, act fast and follow guidance. Calm, clean habits protect trust and keep you on the right side of the law.",
-  
-  "Why it Matters": "Names and emails are easy to scatter across phones, spreadsheets and socials. That increases breach risk and makes basic rights hard to honour. A GDPR-lite approach suits micro producers and clubs: pick one system for mailing lists with double opt-in, keep sales records separate and minimal, and never add people without consent. A short privacy notice on your site and a contact for data questions show maturity. Retention rules reduce junk and risk. If someone asks to see or delete their data, you can respond quickly because your system is simple. Breaches are rare but stressful; a one page plan with who to tell and when turns panic into steps. Data care is customer care.",
-  
+  "At-a-Glance": "Collect only what you need, store it safely, and honour consent. Keep a one-page privacy note and a tidy mailing list.",
+  "Why it Matters": [
+    "Meets legal requirements and preserves trust.",
+    "Prevents messy spreadsheets and spam complaints."
+  ],
+  "Objectives": [
+    "Map data you hold (orders, newsletter, events).",
+    "Create a simple retention and access policy.",
+    "Make opt-in/opt-out frictionless and documented."
+  ],
+  "What Good Looks Like": [
+    "One system of record for mailing list with double opt-in.",
+    "Minimal data on paper; encrypted devices; limited access.",
+    "Clear privacy note on site and at stalls (QR)."
+  ],
   "Step-by-Step": [
-    "Map your data: where emails and orders live; reduce copies.",
-    "Adopt double opt-in for newsletters; separate sales data from marketing.",
-    "Publish a short privacy notice and a contact email.",
-    "Set retention rules and a monthly tidy reminder.",
-    "Write a one page breach and subject access response plan."
+    "1) Audit data sources; delete duplicates and old exports.",
+    "2) Draft privacy note: what/why/how long/rights/contact.",
+    "3) Set up consent logs; migrate mailing list to single tool.",
+    "4) Define breach response and subject access process."
   ],
-
-  "Context & Narrative": "Your list lives in one tool with double opt-in. Signups from the stall go via a QR to that tool, not a paper sheet that goes missing. Order emails sit in your shop platform or simple spreadsheet with only what is needed for delivery and records. A small privacy page explains that you collect emails for updates, that unsubscribing is one click, and that you do not share data beyond essential services for payments and delivery. Once a month you archive bounced addresses and delete stale test contacts. If someone emails ‘what data do you hold about me?’, you can answer in a day because there are only two places to check. When a phone is lost, you have a password manager and can revoke access. You note the incident, follow official guidance on whether to notify, and write down what you changed. The system feels like your stall: tidy, simple, and respectful of people’s time and trust.",
-  
-  "Evidence Highlights": [
-    "Data minimisation and single-source lists reduce breach risk.",
-    "Double opt-in and clear privacy notices improve trust and compliance.",
-    "Simple retention rules reduce clutter and speed access responses."
+  "Seasonality & Climate": [
+    "Q4 customer spikes—prepare signup forms and consent text.",
+    "Event season—bring printed privacy notice/QR."
   ],
-
-  "Data Tables": {
-    "data_map_headers": ["System", "Data type", "Purpose", "Retention", "Owner"],
-    "request_log_headers": ["Date", "Requester", "Type (access/delete)", "Due date", "Status", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Retention periods (orders, mailing, enquiries).",
+    "Response times for access/erasure requests."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Spreadsheet leaks -> Move to list tool; revoke access; notify if required.",
+    "Unsub requests missed -> Automate; check spam folder; manual log.",
+    "Photo consent unclear -> Use signs and opt-out stickers at events."
+  ],
   "Common Pitfalls": [
-    "Paper signup sheets and scattered spreadsheets.",
-    "Adding contacts without consent.",
-    "No plan for device loss or mailbox compromise."
+    "Collecting birthdays and addresses ‘just in case’.",
+    "Multiple unsynchronised lists.",
+    "Shared logins with no revocation plan."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Use a password manager and 2FA on the one system that holds your list."}
+  "Tools & Techniques": [
+    "List platform with double opt-in, encrypted drives, password manager.",
+    "QR codes to signup and privacy note."
   ],
-
-  "FAQs": [
-    {"q": "Do we need to register anywhere?", "a": "Check if you need to pay the ICO fee as a small organisation processing data."},
-    {"q": "How long to keep order data?", "a": "Keep as long as needed for tax and legal obligations, then minimise."}
+  "Safety & Compliance": [
+    "Local data protection law basics (GDPR principles).",
+    "Breach logging and notification where required."
   ],
-
-  "Seasonality & Climate": "Do a data tidy in winter before market season; review privacy notice annually.",
-  
-  "Suggested Figures": [
-    {"alt": "Data map sketch", "caption": "Single marketing list, separate sales records, clear retention arrows."}
+  "Field Checklist": [
+    "One clean list; consent records intact.",
+    "Privacy note published and printable.",
+    "Revocation/offboarding steps documented."
   ],
-
-  "Glossary": [
-    {"term": "Subject Access Request (SAR)", "def": "A request by an individual to see the personal data you hold about them."}
+  "Communications": [
+    "Short hyphens only.",
+    "Explain why you collect the minimum and how to opt out."
   ],
-
-  "Cross-links": [
-    "customer_newsletter_community",
+  "Cross-Links": [
+    "uk_compliance_records",
     "online_sales_setup_basics",
-    "complaints_returns_sop"
+    "customer_newsletter_community"
   ],
-
-  "Sources": [
-    {"name": "ICO - UK data protection basics", "url": "https://ico.org.uk/"},
-    {"name": "Consumer rights and records", "url": "https://www.gov.uk/"}
+  "Keywords": [
+    "privacy",
+    "GDPR principles",
+    "consent",
+    "mailing list"
   ],
-
-  "Scrape-Guidance": "Pull small-organisation GDPR norms from the ICO and translate into a micro-operator checklist with plain language."
+  "Further Reading": [
+    "Micro-business privacy templates.",
+    "Email marketing consent guidance."
+  ],
+  "Notes": "Write a plain-language version of your privacy note—customers actually read it."
 }

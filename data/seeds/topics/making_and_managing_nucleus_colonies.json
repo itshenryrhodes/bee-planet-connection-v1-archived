@@ -59,8 +59,18 @@
     "Short hyphens only.",
     "Label nucs clearly with source colony and date."
   ],
-  "Cross-Links": ["swarm_management", "queen_rearing_and_supersedure", "overwintering_colonies"],
-  "Keywords": ["nucleus colony", "nuc", "queenright", "promotion", "robber prevention"],
+  "Cross-Links": [
+    "swarm_management",
+    "queen_rearing_and_supersedure",
+    "overwintering_colonies"
+  ],
+  "Keywords": [
+    "nucleus colony",
+    "nuc",
+    "queenright",
+    "promotion",
+    "robber prevention"
+  ],
   "Further Reading": [
     "Association guides to nuc making and overwintering.",
     "Queen rearing texts on mating success factors."

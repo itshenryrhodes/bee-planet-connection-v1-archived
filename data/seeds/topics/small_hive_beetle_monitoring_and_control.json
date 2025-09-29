@@ -58,8 +58,18 @@
     "Short hyphens only.",
     "Brief site owners on hygiene rules during SHB alerts."
   ],
-  "Cross-Links": ["hive_hygiene_and_biosecurity", "overwintering_colonies", "honey_extraction_best_practice"],
-  "Keywords": ["small hive beetle", "SHB", "slime", "traps", "biosecurity"],
+  "Cross-Links": [
+    "hive_hygiene_and_biosecurity",
+    "overwintering_colonies",
+    "honey_extraction_best_practice"
+  ],
+  "Keywords": [
+    "small hive beetle",
+    "SHB",
+    "slime",
+    "traps",
+    "biosecurity"
+  ],
   "Further Reading": [
     "Official SHB surveillance and control pages.",
     "Extension fact sheets on SHB lifecycle and management."

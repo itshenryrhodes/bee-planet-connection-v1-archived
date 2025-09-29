@@ -62,8 +62,19 @@
     "Short hyphens only.",
     "Share seasonal summaries with landowners if helpful."
   ],
-  "Cross-Links": ["apiary_setup", "overwintering_colonies", "varroa_monitoring_methods", "colony_nutrition"],
-  "Keywords": ["inspection flow", "record keeping", "dashboard", "queen status", "brood pattern"],
+  "Cross-Links": [
+    "apiary_setup",
+    "overwintering_colonies",
+    "varroa_monitoring_methods",
+    "colony_nutrition"
+  ],
+  "Keywords": [
+    "inspection flow",
+    "record keeping",
+    "dashboard",
+    "queen status",
+    "brood pattern"
+  ],
   "Further Reading": [
     "Association templates for hive records.",
     "Extension guides on efficient inspections."

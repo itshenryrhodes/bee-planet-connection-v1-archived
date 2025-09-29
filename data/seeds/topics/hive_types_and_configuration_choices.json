@@ -57,8 +57,19 @@
     "Short hyphens only.",
     "Explain system choice to helpers to avoid mix-ups."
   ],
-  "Cross-Links": ["apiary_setup", "comb_management_and_replacement", "honey_extraction_best_practice"],
-  "Keywords": ["Langstroth", "National", "Dadant", "Warre", "single brood", "double brood"],
+  "Cross-Links": [
+    "apiary_setup",
+    "comb_management_and_replacement",
+    "honey_extraction_best_practice"
+  ],
+  "Keywords": [
+    "Langstroth",
+    "National",
+    "Dadant",
+    "Warre",
+    "single brood",
+    "double brood"
+  ],
   "Further Reading": [
     "Comparative guides from associations on hive formats.",
     "Ergonomics research related to manual handling in beekeeping."

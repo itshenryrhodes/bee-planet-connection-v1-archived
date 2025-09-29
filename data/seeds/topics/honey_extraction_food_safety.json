@@ -1,7 +1,74 @@
 {
-  "What It Is": "Extraction separates honey from comb while preserving aroma, enzymes, and identity. Food-grade handling and documentation underpin quality and customer trust.",
-  "Harvesting & Processing": "Pull capped supers, clear bees humanely, and move to a clean, low-humidity room. Uncap cleanly, extract with balanced frames, coarse-filter, allow air/foam to rise, and settle before jarring. Keep equipment sanitised and segregate batches with clear lot codes.",
-  "Properties & Uses": "Viscosity and flavour vary by floral source and temperature. Gentle warming for bottling is acceptable; avoid prolonged high heat that elevates HMF or dulls aroma.",
-  "Market & Value": "Retail buyers expect clear labels (origin, weight, lot/date) and clean presentation; trade buyers may require moisture/HMF specs. Traceability enables recalls and repeatability.",
-  "Further Reading & Sources": "Check food hygiene regulations, recognised honey composition/labelling standards, and local registration requirements for food businesses."
+  "At-a-Glance": "Keep extraction rooms clean, flows simple, and records tight. Control water, temperature, pests, and cross-contamination.",
+  "Why it Matters": [
+    "Protects customers and brand with safe, legal honey.",
+    "Prevents ferment, taints, and recalls."
+  ],
+  "Objectives": [
+    "Maintain a clean, segregated, food-safe extraction area.",
+    "Control moisture, temperature, and contact surfaces.",
+    "Log sanitation, batch IDs, and corrective actions."
+  ],
+  "What Good Looks Like": [
+    "Smooth, cleanable surfaces; clear in→out product flow.",
+    "Sanitisers and detergent available; tools colour-coded.",
+    "Batch sheet ties frames → tank → jars with operator initials."
+  ],
+  "Step-by-Step": [
+    "1) Pre-op clean: benches, floors, utensils; pest check.",
+    "2) Stage supers: keep dry, covered; warm gently if cold comb.",
+    "3) Uncap and spin; strain/settle; minimal heating only if necessary.",
+    "4) Post-op clean and chemical log; waste wax/honey handled correctly."
+  ],
+  "Seasonality & Climate": [
+    "Humid spells raise moisture—dry room or use dehumidifier.",
+    "Cold rooms raise viscosity—pre-warm comb and tanks carefully."
+  ],
+  "Data & Thresholds": [
+    "Target honey moisture ≤18% (varietal dependent).",
+    "Room cleaning checklist completed each session."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Foaming/ferment -> Check moisture and cleanliness; segregate; reprocess where allowed.",
+    "Symptom: Off-odours -> Inspect room, chemicals, smoke; trace to batch.",
+    "Symptom: Particulates -> Improve filtering/settling; inspect strainers."
+  ],
+  "Common Pitfalls": [
+    "Wet floors and condensate dripping on open honey.",
+    "Dirty cappings tubs and reused, tainted buckets.",
+    "Overheating to speed flow."
+  ],
+  "Tools & Techniques": [
+    "Food-safe buckets/lids, strainers, sump/settling tanks.",
+    "Hygiene station with handwash, hair/beard covers."
+  ],
+  "Safety & Compliance": [
+    "Separation from pets/chemicals; no smoking.",
+    "COSHH for sanitisers; accurate allergen/label compliance."
+  ],
+  "Field Checklist": [
+    "Room cleaned and signed off.",
+    "Moisture checks logged.",
+    "Batch IDs and operator initials recorded."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain minimal handling and batch traceability to customers."
+  ],
+  "Cross-Links": [
+    "honey_room_layout_hygiene",
+    "haccp_lite_honey_bottling",
+    "honey_moisture_control_ripeners"
+  ],
+  "Keywords": [
+    "extraction",
+    "food safety",
+    "moisture",
+    "tracing"
+  ],
+  "Further Reading": [
+    "Micro-producer hygiene guides.",
+    "Extractor and tank cleaning SOPs."
+  ],
+  "Notes": "Keep a ‘no entry during open honey’ rule—reduces dust and pests."
 }

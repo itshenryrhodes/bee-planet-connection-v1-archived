@@ -59,8 +59,18 @@
     "Short hyphens only.",
     "Explain to helpers why timing is everything for OA efficacy."
   ],
-  "Cross-Links": ["varroa_monitoring_methods", "varroa_treatment_options", "overwintering_colonies"],
-  "Keywords": ["brood break", "queen caging", "shook swarm", "oxalic acid", "varroa reduction"],
+  "Cross-Links": [
+    "varroa_monitoring_methods",
+    "varroa_treatment_options",
+    "overwintering_colonies"
+  ],
+  "Keywords": [
+    "brood break",
+    "queen caging",
+    "shook swarm",
+    "oxalic acid",
+    "varroa reduction"
+  ],
   "Further Reading": [
     "Comparative studies on brood break plus OA efficacy.",
     "Inspectorate guidance on shook swarm procedure."

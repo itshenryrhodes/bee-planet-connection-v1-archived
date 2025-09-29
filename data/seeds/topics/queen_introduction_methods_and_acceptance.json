@@ -60,8 +60,18 @@
     "Short hyphens only.",
     "Set expectations with helpers: ‘no peeking’ for several days."
   ],
-  "Cross-Links": ["queen_rearing_and_supersedure", "making_and_managing_nucleus_colonies", "hive_inspection_protocols_and_recordkeeping"],
-  "Keywords": ["queen introduction", "acceptance", "push-in cage", "candy plug", "laying workers"],
+  "Cross-Links": [
+    "queen_rearing_and_supersedure",
+    "making_and_managing_nucleus_colonies",
+    "hive_inspection_protocols_and_recordkeeping"
+  ],
+  "Keywords": [
+    "queen introduction",
+    "acceptance",
+    "push-in cage",
+    "candy plug",
+    "laying workers"
+  ],
   "Further Reading": [
     "Association acceptance studies and best practices.",
     "Texts on pheromone biology and colony queenlessness."

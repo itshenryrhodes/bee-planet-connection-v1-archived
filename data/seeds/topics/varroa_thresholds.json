@@ -1,8 +1,73 @@
 {
-  "Overview": "Varroa destructor remains the single most damaging parasite in modern beekeeping. By feeding on developing and adult bees and vectoring viruses (notably DWV), Varroa suppresses immunity, shortens lifespans, and can push colonies to winter failure. Routine monitoring and well-timed intervention are essential to keep populations below harm thresholds.",
-  "Biology & Transmission": "Varroa reproduces in capped brood cells, especially drone brood, completing much of its life cycle under the capping. Phoretic mites ride adult bees, moving between colonies through drifting and robbing. Extended brood rearing (e.g., in warm regions) accelerates mite growth, while brood breaks slow it.",
-  "Symptoms & Field Diagnosis": "Tell-tales include deformed wings, spotty brood, and dwindling strength out of line with forage. Use objective counts: sticky boards (daily natural drop), sugar/alcohol washes (% infestation). Many practitioners act at ~2% in mid-season and ~3% by late summer; local guidance should prevail.",
-  "Impact on Colony": "Unchecked loads depress worker numbers, spread viruses, and erode winter bee quality. Colonies often collapse late autumn to early spring even with apparent summer vigor.",
-  "Control & Treatment": "Adopt an integrated plan: thymol gels post-harvest, oxalic acid during brood-light/broodless windows, formic where permitted and temperature allows, plus biotechnical steps (drone brood removal, splits to create brood breaks). Treat the whole apiary to avoid ‘mite bombs’.",
-  "Prevention & Good Practice": "Standardise records, monitor on a schedule (e.g., spring, post-spring flow, post-harvest, autumn), and rotate actives to reduce resistance. Align timing with local nectar flows and climate so winter bees are raised with low mite pressure."
+  "At-a-Glance": "Set clear, seasonal thresholds so actions are timely and consistent across the team.",
+  "Why it Matters": [
+    "Prevents late, ineffective treatments.",
+    "Aligns decisions across multiple beekeepers."
+  ],
+  "Objectives": [
+    "Define trigger bands for growth, harvest, and winter prep.",
+    "Tie thresholds to specific products and methods.",
+    "Review annually against outcomes."
+  ],
+  "What Good Looks Like": [
+    "One sheet with per-100 and drop thresholds by month.",
+    "Green-amber-red action bands posted in the truck.",
+    "Post-treatment checks scheduled."
+  ],
+  "Step-by-Step": [
+    "1) Choose default sampling method and units.",
+    "2) Agree seasonal triggers for each yard profile.",
+    "3) Map actions to triggers with products and constraints.",
+    "4) Review outcomes and tweak bands annually."
+  ],
+  "Seasonality & Climate": [
+    "Brood cycles shift thresholds; heat limits some products.",
+    "Late flows change timing—plan alternatives."
+  ],
+  "Data & Thresholds": [
+    "Per-100 adult bee targets and daily drop ranges.",
+    "Post-treatment reduction targets."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Trigger hit during heat wave -> Switch to permitted option or delay safely.",
+    "Counts rebound fast -> Re-infestation; re-check neighbours and drift."
+  ],
+  "Common Pitfalls": [
+    "One-size thresholds for all yards.",
+    "Skipping verification sampling.",
+    "Forgetting product withdrawal periods."
+  ],
+  "Tools & Techniques": [
+    "Laminate threshold cards per yard.",
+    "Simple dashboard from scale and sampling logs."
+  ],
+  "Safety & Compliance": [
+    "Follow label, withdrawal, and local rules.",
+    "Record treatments for audits."
+  ],
+  "Field Checklist": [
+    "Latest thresholds on hand.",
+    "Products available for each band.",
+    "Verification sampling booked."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain why bands differ pre- vs post-harvest."
+  ],
+  "Cross-Links": [
+    "mite_sampling_methods",
+    "varroa_treatment_options",
+    "hive_scale_analytics_patterns"
+  ],
+  "Keywords": [
+    "varroa",
+    "thresholds",
+    "decision bands",
+    "verification"
+  ],
+  "Further Reading": [
+    "Regional threshold guidance.",
+    "Treatment efficacy summaries."
+  ],
+  "Notes": "Date every threshold sheet and archive versions so changes are traceable."
 }

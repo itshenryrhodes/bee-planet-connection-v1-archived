@@ -63,8 +63,18 @@
     "Short hyphens only.",
     "Explain natural crystallisation and floral notes to customers."
   ],
-  "Cross-Links": ["honey_extraction_best_practice", "hive_hygiene", "marketing_and_labelling"],
-  "Keywords": ["honey moisture", "wax rendering", "pollen drying", "propolis mats", "royal jelly"],
+  "Cross-Links": [
+    "honey_extraction_best_practice",
+    "hive_hygiene",
+    "marketing_and_labelling"
+  ],
+  "Keywords": [
+    "honey moisture",
+    "wax rendering",
+    "pollen drying",
+    "propolis mats",
+    "royal jelly"
+  ],
   "Further Reading": [
     "FAO guides on hive products handling.",
     "Local food hygiene authority guidance."

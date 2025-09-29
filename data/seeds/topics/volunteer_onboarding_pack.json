@@ -1,81 +1,74 @@
 {
-  "title": "Volunteer onboarding pack (roles, safety, short training)",
-  "slug": "volunteer_onboarding_pack",
-  "category": "Community & inclusion",
-  "categories": ["Operations", "Risk & compliance"],
-  "taxonomy": {
-    "pillar": "Community & inclusion",
-    "subpillars": ["People"],
-    "topics": ["onboarding", "training", "roles", "safeguarding", "code-of-conduct"],
-    "audience": ["club-officer", "beginner", "intermediate"],
-    "intent": ["policy", "how-to"],
-    "regions": ["UK"],
-    "season": ["spring", "summer", "autumn"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["growth"]
-  },
-  "tags": ["buddy-system", "briefing", "PPE", "contact-tree"],
-
-  "At-a-Glance": "New helpers thrive with clear roles and a warm briefing. Share a one-page pack: who you are, what volunteers do, where to meet, what to wear, who to call, and a short code of conduct. Add a 10 minute safety talk (lifting, stings, tools) and pair rookies with a buddy. Keep contact cards and a simple rota. Thank people often and rotate tasks so skills grow. Onboarding is hospitality plus safety—done well, volunteers stick around and events run smoothly.",
-  
-  "Why it Matters": "Clubs depend on goodwill. Without structure, volunteers feel lost or get hurt; with a light plan, they feel trusted and useful. A short pack prevents avoidable friction: what to bring, how we speak to the public, when to step back if unwell, and who handles money or media. A buddy system reduces accidents and builds confidence; a contact tree speeds decisions when plans change. Safeguarding and conduct notes protect everyone at family events. Rotas spread load and prevent burnout. Celebrating contributions—names in a newsletter, a jar now and then—keeps the circle strong. The tone stays bright and breezy: simple rules, kind leadership, and small wins.",
-  
+  "At-a-Glance": "A short pack with safety, hygiene, and simple SOPs turns willing hands into helpful hands.",
+  "Why it Matters": [
+    "Reduces accidents and speeds training.",
+    "Improves consistency at markets and apiaries."
+  ],
+  "Objectives": [
+    "Provide role descriptions, safety rules, and comms codes.",
+    "Issue checklists for common tasks (inspections, stall setup).",
+    "Capture emergency contacts and availability."
+  ],
+  "What Good Looks Like": [
+    "PDF or print pack: contacts, site rules, PPE, photo policy.",
+    "Buddy system for first 3 shifts; sign-off checklist.",
+    "Calendar with events and expected call-out windows."
+  ],
   "Step-by-Step": [
-    "Write a one-page pack: roles, safety, contacts, timings, dress.",
-    "Run a quick briefing at the start of each session; assign buddies.",
-    "Use a simple rota and contact tree; share via email or chat.",
-    "Capture feedback; rotate roles; thank publicly and privately.",
-    "Review the pack each season; update lessons learned."
+    "1) Draft roles (apiary helper, market assistant, photography).",
+    "2) Assemble safety pages (stings, ladders, food hygiene).",
+    "3) Create checklists and quick-reference cards.",
+    "4) Onboard: briefing + shadow + first solo with feedback."
   ],
-
-  "Context & Narrative": "Saturday at the club apiary: volunteers gather, you tick names on a laminated sheet, and run a 10 minute chat—today’s jobs, PPE, lifting and smoker safety, public liaison. Each new helper pairs with a steady hand. A contact card lists the lead’s mobile and urgent numbers. Tasks rotate—one on tools, one greeting visitors, one on records. At the end you debrief: what was tricky, what to change, who’s free next week. A photo (with consent) and a thank you hits the newsletter. People come back because the work feels safe, clear and appreciated.",
-  
-  "Evidence Highlights": [
-    "Buddy systems reduce accidents and improve retention.",
-    "Short, repeated safety briefings outperform long manuals.",
-    "Clear roles lower stress and increase event quality."
+  "Seasonality & Climate": [
+    "Heat/cold PPE guidance; water and breaks built into plans.",
+    "Storm protocols for rooftop and gazebo sites."
   ],
-
-  "Data Tables": {
-    "rota_headers": ["Date", "Role", "Volunteer", "Buddy", "Contact", "Notes"]
-  },
-
+  "Data & Thresholds": [
+    "Record attendance and tasks; review after 3 shifts.",
+    "Maintain contact and consent for photos/data."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: No-shows -> Clear expectations; backup list; gentle offboarding.",
+    "Issue: Safety lapses -> Re-brief; pair with mentor; restrict tasks.",
+    "Issue: Confusion at stalls -> Add table photo and pricing crib sheet."
+  ],
   "Common Pitfalls": [
-    "Vague asks (‘just turn up’) and no plan.",
-    "No PPE or lifting guidance.",
-    "No feedback loop or thanks."
+    "Overlong manuals nobody reads.",
+    "No clear point of contact.",
+    "No kit list for helpers."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Print wallet-size contact cards—fewer lost numbers, faster coordination."}
+  "Tools & Techniques": [
+    "Laminated cards, shared calendar, group chat with rules.",
+    "Short videos for each task."
   ],
-
-  "FAQs": [
-    {"q": "Do we need DBS checks?", "a": "If working with children/vulnerable adults—follow safeguarding guidance."},
-    {"q": "Insurance?", "a": "Ensure volunteers are covered under your public liability at events."}
+  "Safety & Compliance": [
+    "Insurance coverage confirmed; incident reporting path.",
+    "Food hygiene tips for tastings and handling."
   ],
-
-  "Seasonality & Climate": "Spring requires more hands and clearer rotas; winter suits training and policy refresh.",
-  
-  "Suggested Figures": [
-    {"alt": "Onboarding one-pager layout", "caption": "Roles, safety, contacts and timings on a single sheet."}
+  "Field Checklist": [
+    "Pack sent and acknowledged.",
+    "Buddy assigned and briefed.",
+    "First shift scheduled and noted."
   ],
-
-  "Glossary": [
-    {"term": "Code of conduct", "def": "Short rules for respectful, safe behaviour at club activities."}
+  "Communications": [
+    "Short hyphens only.",
+    "Thank volunteers; share wins and stories."
   ],
-
-  "Cross-links": [
+  "Cross-Links": [
     "event_risk_assessment_pack",
-    "club_governance_roles",
-    "customer_newsletter_community"
+    "market_stall_setup_food_hygiene_uk",
+    "honey_extraction_food_safety"
   ],
-
-  "Sources": [
-    {"name": "Volunteer management basics", "url": "https://www.ncvo.org.uk/"},
-    {"name": "Safeguarding starter guidance", "url": "https://www.gov.uk/"}
+  "Keywords": [
+    "onboarding",
+    "volunteers",
+    "checklists",
+    "safety"
   ],
-
-  "Scrape-Guidance": "Lift volunteer good practice, safeguarding signposts, and simple rota/contact templates from authoritative community sources."
+  "Further Reading": [
+    "Volunteer management tips for small organisations.",
+    "Health and safety basic inductions."
+  ],
+  "Notes": "Keep packs to 6–8 pages—add links for deep dives."
 }

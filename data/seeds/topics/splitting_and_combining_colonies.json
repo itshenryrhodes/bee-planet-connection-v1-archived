@@ -61,8 +61,18 @@
     "Short hyphens only.",
     "Explain to helpers why dusk combines reduce drift and fighting."
   ],
-  "Cross-Links": ["making_and_managing_nucleus_colonies", "swarm_management", "queen_rearing_and_supersedure"],
-  "Keywords": ["split", "combine", "newspaper method", "queenright", "brood balance"],
+  "Cross-Links": [
+    "making_and_managing_nucleus_colonies",
+    "swarm_management",
+    "queen_rearing_and_supersedure"
+  ],
+  "Keywords": [
+    "split",
+    "combine",
+    "newspaper method",
+    "queenright",
+    "brood balance"
+  ],
   "Further Reading": [
     "Association manuals on splits and combines.",
     "Research notes on colony demographics post-split."

@@ -1,80 +1,74 @@
 {
-  "title": "Complaints & returns SOP (fix fast, learn once)",
-  "slug": "complaints_returns_sop",
-  "category": "Products & processing",
-  "categories": ["Community & inclusion", "Operations"],
-  "taxonomy": {
-    "pillar": "Products & processing",
-    "subpillars": ["Service"],
-    "topics": ["customer-service", "returns", "refunds", "root-cause"],
-    "audience": ["market-seller", "beginner", "intermediate"],
-    "intent": ["policy", "how-to"],
-    "regions": ["UK", "EU"],
-    "season": ["spring", "summer", "autumn", "winter"],
-    "climate": ["temperate"],
-    "difficulty": "beginner",
-    "lifecycle_stage": ["post-harvest"]
-  },
-  "tags": ["policy-card", "lot-codes", "resolution-window", "feedback-loop"],
-
-  "At-a-Glance": "Have a tiny policy and stick to it. Say thank you, ask for the lot code and a photo, then choose a resolution within 24–48 hours: replace, refund, or explain with care (e.g., natural granulation). Log the case, check the retention jar, and note root cause if any. Close the loop with a friendly note and, if appropriate, a small extra. Share patterns at month end and fix the upstream issue (cap torque, label glue, packing). Calm, prompt handling turns a wobble into trust and repeat custom.",
-  
-  "Why it Matters": "Complaints feel personal when you are small, but they are also free audits. A short, written SOP keeps emotion out and speed in: you don’t debate policy mid-email, you follow it. Photos and lot codes save time and help you decide whether it’s a one-off or a batch quirk. Clear, kind language keeps your tone consistent across markets, email and shops. Logging outcomes creates a dataset you can act on—if three returns cite loose lids from the same day, you check torque or swap caps. This habit protects your brand and your weekends; it also teaches you what your jars go through in the wild.",
-  
+  "At-a-Glance": "A calm, generous returns policy wins loyalty. Capture data, fix root causes, and follow the law.",
+  "Why it Matters": [
+    "Rescues unhappy customers and protects reviews.",
+    "Improves product and packing by learning from issues."
+  ],
+  "Objectives": [
+    "Publish a clear returns/refund policy.",
+    "Create a simple intake form for issues and photos.",
+    "Analyse trends and close the loop."
+  ],
+  "What Good Looks Like": [
+    "First reply within 1 business day; apologise and propose fix.",
+    "Refund/replace fast; log batch/sku/retailer and cause.",
+    "Monthly review of complaint types and corrective actions."
+  ],
   "Step-by-Step": [
-    "Acknowledge kindly; request lot code, photo, and where bought.",
-    "Decide resolution quickly; replace or refund without friction.",
-    "Log details; check retention jar and batch sheet.",
-    "Identify root cause and add an action to fix upstream.",
-    "Close with a friendly note and optional small extra; review monthly."
+    "1) Provide email/template for returns; ask for batch photo and receipt.",
+    "2) Offer options: refund, replacement, or shop credit.",
+    "3) Log case; quarantine suspect stock; notify retailer if relevant.",
+    "4) Root-cause and record corrective/preventive actions."
   ],
-
-  "Context & Narrative": "An email lands: ‘My jar leaked in the post’. You reply the same day: thanks, sorry, could they share a photo and the tiny code on the back label? The picture shows honey on the lid and a dented corner on the box; the lot code matches a Friday run. You check the retention jar—clean and tight—and the batch sheet notes a mid-run lid change. You send a replacement with a warm card and tighten your packing inserts by one notch for mail orders. \n\nAt month end you skim the log: two returns for crystallisation ‘faults’—you add a clearer care line online and a tiny card in winter orders. One complaint about label residue—you switch to a glue that releases in warm water. The SOP turns random stings into actionable tweaks. Next season, the log is short and boring, which is exactly what you want. Customers remember how fast and kind you were, not just the honey.",
-  
-  "Evidence Highlights": [
-    "Fast, clear resolutions increase satisfaction and repeat purchase.",
-    "Lot codes and retention jars support targeted fixes.",
-    "Monthly reviews convert noise into upstream improvements."
+  "Seasonality & Climate": [
+    "Heat increases leaks and crystallisation queries—prep scripts.",
+    "Winter shipping breakages rise—upgrade packing."
   ],
-
-  "Data Tables": {
-    "complaints_log_headers": ["Date", "Channel", "Customer", "Lot", "Issue", "Resolution", "Root cause", "Action", "Closed"]
-  },
-
+  "Data & Thresholds": [
+    "Target first-response time and resolution time.",
+    "Track complaint rate per 1,000 units."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: Fermentation -> Pull batch; check moisture records; contact buyers.",
+    "Issue: Leaks -> Review lid torque and seals; courier handling.",
+    "Issue: Label errors -> Correct website, recall if necessary, retrain jarring crew."
+  ],
   "Common Pitfalls": [
-    "Arguing about policy instead of resolving.",
-    "No lot code capture → cannot investigate.",
-    "Fixing symptoms without logging root causes."
+    "Arguing with customers online.",
+    "Slow responses and missing empathy.",
+    "No linkage between complaints and production data."
   ],
-
-  "Callouts": [
-    {"type": "Pro tip", "text": "Keep a tiny ‘how we fix things’ card in the stall case—same tone everywhere."}
+  "Tools & Techniques": [
+    "Canned responses with empathy, shared logbook, return labels.",
+    "CAPA (corrective and preventive action) mini-form."
   ],
-
-  "FAQs": [
-    {"q": "Refunds or replacements?", "a": "Default to the path that’s fastest for the customer and fairest to you."},
-    {"q": "What if it’s a taste complaint?", "a": "Offer a swap—taste is subjective and goodwill is cheap compared to churn."}
+  "Safety & Compliance": [
+    "Follow consumer law on refunds/returns.",
+    "Keep allergen/label corrections public and prompt."
   ],
-
-  "Seasonality & Climate": "Crystallisation queries rise in winter; shipping leaks spike in heat—tune messaging and packing seasonally.",
-  
-  "Suggested Figures": [
-    {"alt": "Complaint flow", "caption": "Acknowledge → request info → resolve → log → improve."}
+  "Field Checklist": [
+    "Policy page live and clear.",
+    "Templates ready; staff trained.",
+    "Monthly review on calendar."
   ],
-
-  "Glossary": [
-    {"term": "Root cause", "def": "Underlying reason for a problem beyond the immediate symptom."}
+  "Communications": [
+    "Short hyphens only.",
+    "Thank the customer; explain fix; invite back."
   ],
-
-  "Cross-links": [
-    "stock_control_batch_tracking",
-    "online_sales_setup_basics",
-    "honey_labelling_legal_basics_uk_eu"
+  "Cross-Links": [
+    "haccp_lite_honey_bottling",
+    "uk_compliance_records",
+    "online_sales_setup_basics"
   ],
-
-  "Sources": [
-    {"name": "Consumer rights basics", "url": "https://www.gov.uk/"} 
+  "Keywords": [
+    "returns",
+    "complaints",
+    "refunds",
+    "CAPA"
   ],
-
-  "Scrape-Guidance": "Lift response time expectations and refund basics; frame a small, human SOP that fits micro-producers."
+  "Further Reading": [
+    "Consumer rights summaries for small traders.",
+    "Email etiquette for customer service."
+  ],
+  "Notes": "Offer a replacement plus a sample—cheap way to turn critics into fans."
 }
