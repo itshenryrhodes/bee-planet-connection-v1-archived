@@ -1,0 +1,88 @@
+---
+title: "Small Hive Beetle Monitoring And Control"
+slug: small-hive-beetle-monitoring-and-control
+draft: false
+updated: 2025-09-29
+keywords: ["small hive beetle", "SHB", "slime", "traps", "biosecurity"]
+cross_links: ["hive_hygiene_and_biosecurity", "overwintering_colonies", "honey_extraction_best_practice"]
+source: "seed-json"
+---
+
+> **At a Glance:** Aethina tumida (small hive beetle) can slime comb and collapse colonies in affected regions. Vigilance, strong colonies, and traps reduce impact; movement controls limit spread.
+
+## Why it Matters
+- SHB larvae destroy comb and contaminate honey with fermentation slime.
+- Adults hide in crevices; weak colonies are most at risk.
+- Early detection and swift action prevent apiary-wide losses.
+
+## Objectives
+- Know local SHB status and reporting rules.
+- Maintain strong colonies with minimal excess space.
+- Deploy traps and hygienic practices in risk zones.
+
+## What Good Looks Like
+- Regular bottom board checks and trap monitoring.
+- Tight box space matching population; prompt removal of dead-outs.
+- Clean extraction spaces with no honey spills.
+
+## Step-by-Step
+1) Monitoring: inspect under frames, in corners, and on bottom boards; use corrugated insert traps or oil traps.
+2) If found: reduce space to cluster size; add traps; remove honey supers if slimed; freeze affected frames if salvageable.
+3) Apiary hygiene: remove cappings and waste daily; seal bins.
+4) Movement control: avoid moving equipment from infected yards; follow official guidance.
+5) Follow-up: recheck weekly until populations drop; strengthen colonies with brood if appropriate.
+
+## Seasonality & Climate
+- Warm, humid conditions favour SHB reproduction.
+- Cooler seasons slow breeding but do not eliminate risk.
+
+## Data & Thresholds
+- Any confirmed SHB in a new area may be reportable; check local rules.
+- Trap counts trending up week-on-week trigger intensified control.
+
+## Diagnostics & Decision Tree
+- Symptom: Slime and sour odour -> Isolate and chill or freeze frames -> Remove honey from bees’ access -> Clean boxes.
+- Symptom: Adults persist despite traps -> Reduce space and shade; increase trap density; reassess colony strength.
+- Symptom: Recurrent SHB after moves -> Review transport sanitation and receiving yard hygiene.
+
+## Common Pitfalls
+- Leaving extracted supers exposed, drawing adults to yards.
+- Over-supering weak colonies creating beetle refuges.
+- Moving suspect equipment between apiaries.
+
+## Tools & Techniques
+- Oil traps, beetle blasters, corrugated inserts, diatomaceous earth under stands where appropriate.
+- Freezers for salvage; sealed waste bins; bleach for floors in extraction rooms.
+
+## Safety & Compliance
+- Follow local reporting protocols and approved control options.
+- Dispose of slimed honey and waste responsibly.
+
+## Field Checklist
+- Traps in place and dated.
+- Boxes sized to population.
+- Waste sealed; floor clean.
+- Movement logs updated.
+
+## Communications
+- Short hyphens only.
+- Brief site owners on hygiene rules during SHB alerts.
+
+## Further Reading
+- Official SHB surveillance and control pages.
+- Extension fact sheets on SHB lifecycle and management.
+
+## Cross-Links
+- [hive_hygiene_and_biosecurity](/topics/hive-hygiene-and-biosecurity/)
+- [overwintering_colonies](/topics/overwintering-colonies/)
+- [honey_extraction_best_practice](/topics/honey-extraction-best-practice/)
+
+## Keywords
+- small hive beetle
+- SHB
+- slime
+- traps
+- biosecurity
+
+## Notes
+Add a yard SHB response card to your incident kit with trap placement diagrams.

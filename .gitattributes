@@ -2,3 +2,4 @@
 * text=auto eol=lf
 wiki/*.html text eol=lf
 *.json text eol=lf
+*.md text eol=lf

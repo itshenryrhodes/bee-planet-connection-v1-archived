@@ -1,0 +1,84 @@
+---
+title: "Requeening Timing Strategies"
+slug: requeening-timing-strategies
+draft: false
+updated: 2025-09-29
+keywords: ["requeening", "timing", "acceptance", "nuc combine"]
+cross_links: ["queen_introduction_methods_and_acceptance", "queen_banking_transport", "queen_failure"]
+source: "seed-json"
+---
+
+> **At a Glance:** Time requeens to mating windows and flow calendar; match method (caged, nuc combine, brood break) to conditions.
+
+## Why it Matters
+- Raises acceptance and winter survival.
+- Aligns temperament and productivity goals.
+
+## Objectives
+- Choose seasonal windows for best acceptance.
+- Select method per colony state and resources.
+- Track acceptance and performance post-requeen.
+
+## What Good Looks Like
+- Spring: boost weak colonies with mated queens.
+- Late summer: requeen before winter bee rearing.
+- Hot colonies: nuc combine and split method for safer swaps.
+
+## Step-by-Step
+1) Diagnose colony and set goal (temperament, productivity, disease recovery).
+2) Choose method: direct cage, push-in cage, nuc combine, or brood break then intro.
+3) Prepare colony: make room, feed lightly, reduce pressure.
+4) Introduce; check in 3–7 days; verify new eggs at ~7–10 days.
+
+## Seasonality & Climate
+- Avoid heat/dearth peaks unless using nuc-combine method.
+- Spring cold snaps reduce acceptance—use push-in cages.
+
+## Data & Thresholds
+- Acceptance rate targets by method.
+- Age policy (e.g., replace >2-year queens proactively).
+
+## Diagnostics & Decision Tree
+- Balling risk -> Use push-in cage; add young bees; reduce pheromone competition.
+- No eggs after 10 days -> Check for virgin; reattempt with nuc-combine.
+- Chalkbrood after requeen -> Nutrition/ventilation; not queen-only issue.
+
+## Common Pitfalls
+- Introducing into congested/hot colonies.
+- Not removing emergency cells.
+- Skipping follow-up checks.
+
+## Tools & Techniques
+- Push-in cages, smoke/water mist, nucs, queen excluder for confinement.
+- Acceptance checklist and timer reminders.
+
+## Safety & Compliance
+- Mark and clip per policy; handle imports with paperwork.
+- Transport queens temperature-safe.
+
+## Field Checklist
+- Space created; feed ready.
+- Cells removed; intro method chosen.
+- Post-check scheduled.
+
+## Communications
+- Short hyphens only.
+- Explain why late-summer requeens aid winter readiness.
+
+## Further Reading
+- Acceptance studies by season.
+- Push-in cage best practices.
+
+## Cross-Links
+- [queen_introduction_methods_and_acceptance](/topics/queen-introduction-methods-and-acceptance/)
+- [queen_banking_transport](/topics/queen-banking-transport/)
+- [queen_failure](/topics/queen-failure/)
+
+## Keywords
+- requeening
+- timing
+- acceptance
+- nuc combine
+
+## Notes
+Keep a ‘requeen kit’ in the truck: cages, marshmallows/candy, spare nuc frames.
