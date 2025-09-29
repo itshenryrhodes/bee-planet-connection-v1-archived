@@ -59,3 +59,10 @@ enableGitInfo = true
 
 [outputs]
 home = ["HTML", "RSS", "RobotsTXT"]
+
+[outputFormats.RobotsTXT]
+mediaType    = "text/plain"
+baseName     = "robots"
+isPlainText  = true
+notAlternative = true
+rel          = "robots"
