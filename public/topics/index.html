@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Topics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css">
+  <style>
+    .grid{display:grid;grid-template-columns:1fr 2fr;gap:1.5rem}
+    .list{max-height:80vh;overflow:auto}
+    .item{margin:.25rem 0}
+    .item a{display:block;text-decoration:none}
+    pre{white-space:pre-wrap}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .muted{opacity:.6;font-size:.9em}
+  </style>
+</head>
+<body>
+  <h1>Topics</h1>
+  <p class="muted">Click a topic to view. You can also use <code>?slug=...</code> to deep-link.</p>
+  <div class="grid">
+    <div class="list" id="list">Loading…</div>
+    <article id="article"><em>Select a topic from the list.</em></article>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="./viewer.js"></script>
+</body>
+</html>
