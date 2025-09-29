@@ -1,0 +1,25 @@
+baseURL = "https://www.beeplanetconnection.org/"
+title = "Bee Planet Connection"
+languageCode = "en-gb"
+enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  brandPrimary = "#0b3d91"
+  brandAccent  = "#f3b400"
+  heroDefaultID = "01"
+
+[permalinks]
+  wiki = "/wiki/:slug/"
+
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

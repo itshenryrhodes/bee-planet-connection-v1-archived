@@ -1,0 +1,19 @@
+{{ $hid := or .Params.hero_id .Site.Params.heroDefaultID }}
+<section class="hero">
+  <picture>
+    <!-- WebP -->
+    <source srcset="/img/hero/hero-{{ $hid }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
+    <source srcset="/img/hero/hero-{{ $hid }}-sm.webp" media="(max-width: 768px)" type="image/webp">
+    <source srcset="/img/hero/hero-{{ $hid }}-md.webp" media="(max-width: 1200px)" type="image/webp">
+    <source srcset="/img/hero/hero-{{ $hid }}-lg.webp" media="(min-width: 1201px)" type="image/webp">
+    <!-- JPG fallback -->
+    <img src="/img/hero/hero-{{ $hid }}-md.jpg" alt="{{ .Params.hero_title | default .Title }}">
+  </picture>
+  <div class="copy">
+    <h2>{{ .Params.hero_title | default .Title }}</h2>
+    {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
+    {{ with .Params.hero_cta_href }}
+      <p><a class="button" href="{{ . }}">{{ $.Params.hero_cta_text | default "Read more" }}</a></p>
+    {{ end }}
+  </div>
+</section>
