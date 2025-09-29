@@ -1,7 +1,31 @@
 {
-  "At-a-Glance": "Good records support inspections, traceability, and claims. Log hive ID, location, queen status, brood pattern, varroa counts, feed, and treatments.",
-  "Why it Matters": "Clear paperwork helps demonstrate due diligence in disease incidents or pesticide complaints.",
-  "Step-by-Step": "Maintain an apiary register; record movements and splits; document treatment dates and actives; keep batch logs for honey and wax.",
-  "Common Pitfalls": "Missing treatment logs, no batch codes on jars, and poor location records.",
-  "Tools & Materials": "Paper logbooks or apps, waterproof labels, and a simple batch coding scheme."
+  "At-a-Glance": "UK law requires accurate records for treatments, feed, and honey sales.",
+  "Why it Matters": [
+    "Legal compliance avoids penalties.",
+    "Supports traceability for consumers and auditors."
+  ],
+  "Step-by-Step": [
+    "1) Maintain medicine log with dates, products, doses.",
+    "2) Record feed types and quantities per colony.",
+    "3) Track honey extraction volumes and batch codes."
+  ],
+  "Safety & Compliance": "Required under UK Veterinary Medicines Regulations.",
+  "Common Pitfalls": [
+    "Incomplete logs",
+    "Not keeping records for 5 years"
+  ],
+  "Cross-Links": [
+    "stock_control_batch_tracking",
+    "honey_labelling_legal_basics"
+  ],
+  "Keywords": [
+    "UK compliance",
+    "record keeping",
+    "veterinary medicines"
+  ],
+  "Further Reading": [
+    "VMD guidance",
+    "BeeBase compliance notes"
+  ],
+  "Notes": ""
 }

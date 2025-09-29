@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Treat hive data like food data: clean inputs, clear ownership, and minimal personal info. Build small, reliable pipelines.",
+  "Why it Matters": [
+    "Messy telemetry wastes time and misleads decisions.",
+    "Privacy and trust matter for sites and partners."
+  ],
+  "Objectives": [
+    "Document data sources, owners, and retention.",
+    "Validate and de-duplicate before charts.",
+    "Automate tiny—alert only what you act on."
+  ],
+  "What Good Looks Like": [
+    "One CSV/app of record; backups; versioned dashboards.",
+    "Simple alert rules with on/off times.",
+    "Access limited; keys rotated; sites anonymised."
+  ],
+  "Step-by-Step": [
+    "1) Map sensors and data paths; assign owners.",
+    "2) Validate ranges; drop junk; fill gaps visibly.",
+    "3) Build small alerts; test; log actions.",
+    "4) Review quarterly; prune dead streams."
+  ],
+  "Seasonality & Climate": [
+    "Battery and temp cause gaps—design tolerance.",
+    "Storms = outages—catch-up logic needed."
+  ],
+  "Data & Thresholds": [
+    "Validation rules (min/max, rate of change).",
+    "Retention policy and backup cadence."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Alert fatigue -> Raise thresholds; silence when on site.",
+    "Data drift -> Recalibrate sensors; note firmware changes.",
+    "Privacy risk -> Remove precise coords; aggregate."
+  ],
+  "Common Pitfalls": [
+    "Charts without decisions.",
+    "Public dashboards with exact hive locations.",
+    "Secret keys in repos."
+  ],
+  "Tools & Techniques": [
+    "CSV + cron, lightweight DB, or sheets; secrets manager.",
+    "Unit tests for transforms; health pings."
+  ],
+  "Safety & Compliance": [
+    "Data protection basics; minimal personal/site data.",
+    "Incident logs for outages and breaches."
+  ],
+  "Field Checklist": [
+    "Owners and contacts listed.",
+    "Backups tested.",
+    "Alerts actionable."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to partners what you collect and why."
+  ],
+  "Cross-Links": [
+    "hive_sensors_weight_temp_sound",
+    "hive_scale_analytics_patterns",
+    "data_protection_privacy_small_producers"
+  ],
+  "Keywords": [
+    "telemetry",
+    "ETL",
+    "alerts",
+    "privacy"
+  ],
+  "Further Reading": [
+    "Small-data ETL patterns.",
+    "Device security checklists."
+  ],
+  "Notes": "Delete more than you hoard—signal beats storage."
+}

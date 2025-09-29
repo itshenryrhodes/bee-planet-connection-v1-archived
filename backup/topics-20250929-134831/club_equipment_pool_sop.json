@@ -1,0 +1,131 @@
+{
+  "title": "Club equipment pool SOP (extractors, suits, bookings, cleaning)",
+  "slug": "club_equipment_pool_sop",
+  "category": "Community & inclusion",
+  "categories": [
+    "Operations",
+    "Bee health & pests"
+  ],
+  "taxonomy": {
+    "pillar": "Community & inclusion",
+    "subpillars": [
+      "Governance"
+    ],
+    "topics": [
+      "equipment-pool",
+      "booking",
+      "deposits",
+      "cleaning",
+      "biosecurity"
+    ],
+    "audience": [
+      "club-officer",
+      "beginner",
+      "intermediate"
+    ],
+    "intent": [
+      "policy",
+      "how-to"
+    ],
+    "regions": [
+      "UK"
+    ],
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "climate": [
+      "temperate"
+    ],
+    "difficulty": "intermediate",
+    "lifecycle_stage": [
+      "setup",
+      "growth"
+    ]
+  },
+  "tags": [
+    "booking-form",
+    "deposit",
+    "clean-down-checklist",
+    "damage-log"
+  ],
+  "At-a-Glance": "Shared kit saves money if rules are clear. Keep a booking calendar, a small deposit, and a pick-up/return checklist. Biosecurity first: clean before and after, record condition, and quarantine if disease is suspected. Provide simple guides in the box (setup, use, clean). Charge for repairs only when fair and transparent. A tidy SOP means extractors and suits come back on time, clean, and ready for the next member—less drama, more honey.",
+  "Why it Matters": "Equipment pools fail on fuzziness—lost parts, late returns, sticky gear and hurt feelings. A light SOP prevents that: one booking channel, clear collection times, a deposit that nudges accountability, and visual condition checks. Cleaning and biosecurity protect members from cross-contamination and reduce repair bills. Short guides prevent misuse; a damage log keeps talk factual. Clubs that run calm pools lower barriers for new keepers and spread good practice. The pool becomes a point of pride, not a pile of ‘who had it last?’ messages.",
+  "Step-by-Step": [
+    "Set up a shared calendar and a simple booking form.",
+    "Agree deposits, loan periods and late fees; publish the rules.",
+    "Include setup and clean-down guides with each item.",
+    "Inspect on return; log condition; quarantine if concerns.",
+    "Review usage each season; refresh consumables and guides."
+  ],
+  "Context & Narrative": "June rush: the club extractor is in demand. Members book online for 48-hour slots; pick-up windows are posted. The extractor arrives in a clean tub with a laminated one-page guide and a clean-down checklist. On return, a volunteer checks bearings and legs, looks for dents, and signs the form; the deposit is returned. One day, a member reports a brood disease at their yard—they flag it and the pool quarantines gear for inspection and deep clean. The SOP handles worry without blame. End of season, the committee reviews usage, replaces a tired valve, and updates the guide with two lessons members shared. Next year runs smoother because you wrote things down.",
+  "Evidence Highlights": [
+    "Deposits and checklists increase on-time, clean returns.",
+    "Biosecurity steps reduce cross-yard contamination risk.",
+    "Seasonal reviews keep equipment safe and functional."
+  ],
+  "Data Tables": {
+    "booking_log_headers": [
+      "Date out",
+      "Due back",
+      "Member",
+      "Item",
+      "Deposit",
+      "Condition out",
+      "Condition in",
+      "Notes"
+    ]
+  },
+  "Common Pitfalls": [
+    "Multiple booking channels causing clashes.",
+    "No cleaning guidance → sticky, damaged returns.",
+    "No biosecurity response plan after a disease report."
+  ],
+  "Callouts": [
+    {
+      "type": "Pro tip",
+      "text": "Put a QR on the extractor tub linking to the booking page and the latest guide."
+    }
+  ],
+  "FAQs": [
+    {
+      "q": "What deposit amount?",
+      "a": "Small but meaningful—enough to focus care without blocking access."
+    },
+    {
+      "q": "Insurance for loans?",
+      "a": "Check your club policy; add guidance on transport and storage."
+    }
+  ],
+  "Seasonality & Climate": "Peak demand in late spring and summer—add a second extractor if queues persist.",
+  "Suggested Figures": [
+    {
+      "alt": "Loan kit checklist",
+      "caption": "Visual checks for legs, valve, drum, and clean-down steps."
+    }
+  ],
+  "Glossary": [
+    {
+      "term": "Quarantine",
+      "def": "Temporary isolation and deep clean after a disease risk is reported."
+    }
+  ],
+  "Cross-links": [
+    "equipment_cleaning_biosecurity",
+    "honey_processing_basics",
+    "club_governance_roles"
+  ],
+  "Sources": [
+    {
+      "name": "NBU biosecurity basics",
+      "url": "https://www.nationalbeeunit.com/resources/"
+    },
+    {
+      "name": "Community asset loan best practice",
+      "url": "https://www.ncvo.org.uk/"
+    }
+  ],
+  "Scrape-Guidance": "Lift biosecurity and shared asset norms from authoritative sources; include booking/checklist templates.",
+  "Notes": ""
+}

@@ -1,0 +1,80 @@
+{
+  "At-a-Glance": "Pollination work demands strong colonies, clear contracts, biosecurity, and logistics. Align expectations with growers and protect bee welfare throughout.",
+  "Why it Matters": [
+    "Poorly specified jobs lead to disputes over strength, timing, or pesticide exposure.",
+    "Strong colonies at the right bloom stage drive yield and reputation.",
+    "Movement and site hygiene reduce disease transfer between farms."
+  ],
+  "Objectives": [
+    "Define colony strength metrics, placement density, and timing in writing.",
+    "Agree pesticide communication protocols and water/forage support.",
+    "Plan routes, stands, and security before bloom."
+  ],
+  "What Good Looks Like": [
+    "Colony strength documented (e.g., frames of bees/brood) at delivery.",
+    "Even distribution across blocks with GPS pins and maps.",
+    "Grower provides safe access, water, and spray notices."
+  ],
+  "Step-by-Step": [
+    "1) Pre-season: discuss crop bloom windows, stocking rates, and site maps.",
+    "2) Contract: include strength criteria, delivery dates, payment terms, loss/damage clauses, spray notification, and incident reporting.",
+    "3) Pre-move: health checks, varroa status, transport screens, permits.",
+    "4) On-site: place hives evening/dawn; orient entrances away from paths; provide water.",
+    "5) Monitoring: mid-bloom checks for strength and queenright; log issues.",
+    "6) Post-bloom: remove promptly; clean kit; update ledger and invoice."
+  ],
+  "Seasonality & Climate": [
+    "Bloom timing varies year to year; maintain flexible windows.",
+    "Heat waves and wind affect foraging; adjust placement and shading."
+  ],
+  "Data & Thresholds": [
+    "Stocking rates vary by crop (e.g., apples vs berries) – agree numbers per hectare.",
+    "Frames-of-bees metric at delivery; minimum acceptance level defined in contract."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Weak block set -> Verify colony strength and distribution -> Increase density or relocate hives within field.",
+    "Symptom: Spray conflict -> Trigger contract protocol; document; move if necessary.",
+    "Symptom: Theft/vandalism -> Use discreet placement, locks, trail cameras where appropriate; notify insurer."
+  ],
+  "Common Pitfalls": [
+    "Vague verbal agreements without strength or timing clauses.",
+    "Delivering overheated or drifting colonies due to poor layout.",
+    "No water source leading to neighbour complaints."
+  ],
+  "Tools & Techniques": [
+    "Strength grading cards, GPS pins, pallet stands, travel screens.",
+    "Simple contract template with editable clauses.",
+    "Trail cameras and locks where risk warrants."
+  ],
+  "Safety & Compliance": [
+    "Movement paperwork and biosecurity protocols per jurisdiction.",
+    "Road safety for night moves; site inductions for farm hazards."
+  ],
+  "Field Checklist": [
+    "Signed contract on file.",
+    "Route and timing confirmed.",
+    "Water and access provided.",
+    "Mid-bloom check scheduled."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share a one-pager with growers: spray times, water, and contact protocol."
+  ],
+  "Cross-Links": [
+    "migratory_beekeeping_and_transport",
+    "hive_hygiene_and_biosecurity",
+    "water_sources_and_hydration"
+  ],
+  "Keywords": [
+    "pollination contract",
+    "colony strength",
+    "stocking rate",
+    "bloom window",
+    "grower communications"
+  ],
+  "Further Reading": [
+    "Crop-specific pollination guides from extension services.",
+    "Templates for pollination agreements."
+  ],
+  "Notes": "Keep a post-season review with the grower to improve next year’s plan."
+}

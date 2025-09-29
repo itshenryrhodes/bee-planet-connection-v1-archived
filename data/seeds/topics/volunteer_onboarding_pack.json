@@ -1,0 +1,32 @@
+{
+  "At-a-Glance": "A simple onboarding pack turns eager volunteers into safe, effective helpers.",
+  "Why it Matters": [
+    "Improves safety and consistency.",
+    "Reduces supervision load."
+  ],
+  "Step-by-Step": [
+    "1) Provide welcome note, role outline, and risk basics.",
+    "2) Issue PPE checklist and apiary rules (biosecurity, gates, neighbours).",
+    "3) Assign a buddy for first 3 sessions.",
+    "4) Capture emergency contact and allergy info."
+  ],
+  "Safety & Compliance": "Keep GDPR-compliant records; brief on first-aid and sting response.",
+  "Common Pitfalls": [
+    "No clear tasks",
+    "Missing PPE sizing",
+    "Untracked attendance"
+  ],
+  "Cross-Links": [
+    "beekeeper_safety_ppe_and_first_aid",
+    "apiary_biosecurity_sop"
+  ],
+  "Keywords": [
+    "volunteers",
+    "onboarding",
+    "SOPs"
+  ],
+  "Further Reading": [
+    "Volunteer management best practices"
+  ],
+  "Notes": ""
+}

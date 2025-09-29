@@ -1,0 +1,127 @@
+{
+  "title": "Creamed honey (Dyce method - smooth, repeatable, food safe)",
+  "slug": "creamed_honey_dyce_method",
+  "category": "Products & processing",
+  "categories": [
+    "Operations"
+  ],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": [
+      "Extraction & bottling"
+    ],
+    "topics": [
+      "creamed-honey",
+      "dyce-method",
+      "seeding",
+      "temperature-control"
+    ],
+    "audience": [
+      "beginner",
+      "intermediate",
+      "market-seller"
+    ],
+    "intent": [
+      "how-to",
+      "reference"
+    ],
+    "regions": [
+      "UK",
+      "EU"
+    ],
+    "season": [
+      "autumn",
+      "winter"
+    ],
+    "climate": [
+      "temperate"
+    ],
+    "difficulty": "intermediate",
+    "lifecycle_stage": [
+      "post-harvest"
+    ]
+  },
+  "tags": [
+    "fine-seed",
+    "cool-set",
+    "batch-logs",
+    "consistency"
+  ],
+  "At-a-Glance": "Creamed honey is controlled crystallisation. Start with clean, low moisture honey, remove coarse crystals by gentle warming if needed, then seed with a known fine starter at a fixed ratio. Hold at a steady cool temperature until set, avoiding vibration. Jar at the right point for a smooth, spoonable finish. Repeatability lives in logs - temperatures, times, seed ratio, and batch IDs. Done well, you deliver a consistent texture buyers love without harsh heat or mystery outcomes.",
+  "Why it Matters": "Spreads are a reliable seller, but only if texture is dependable. The Dyce method offers a safe, reproducible path: homogenise, seed, hold, and set. Weak control produces chalky or coarse jars that dent trust. A simple kit - jacketed tank or insulated tub, a thermometer, and a cool room or cabinet - is enough at small scale. Write the method as an SOP, label creamed jars clearly, and keep them out of direct sun on the table. Over time your seed improves as you recycle a small portion of your best batch into the next. This builds a house texture and reduces waste from batches that set awkwardly. Consistency is the quiet brand builder.",
+  "Step-by-Step": [
+    "If coarse, gently warm to dissolve crystals without cooking.",
+    "Prepare fine seed from a previous ideal batch or trusted source.",
+    "Blend seed at a fixed ratio and stir cleanly to distribute.",
+    "Hold at steady cool temperature until set, then jar.",
+    "Label and store cool and dark. Keep a small seed jar back."
+  ],
+  "Context & Narrative": "Imagine a small insulated tub that becomes your winter ally. You load clean honey, tested for moisture, and gently bring any rogue crystals back into solution. You then fold in a measured seed, stir in a slow figure eight to avoid aeration, and slide the tub into a cool, stable corner. No vibration, no rush. You check daily, logging temperature and firmness. When the mass reaches that soft set that spoons like butter, you jar with warm, sterile jars to keep rims clean. Each jar gets a small batch code. On market day you place a test jar under shade and a small wooden spreader for a clean, one use taste. Buyers who like set honey now have a predictable favorite. Your log tells you when it is time to make more and what tweaks kept the texture perfect. The craft here is patience and notes, not gadgets.",
+  "Evidence Highlights": [
+    "Stable cool temperatures and fine seed deliver smooth textures.",
+    "Gentle warming protects flavor and quality.",
+    "Batch logs enable repeatable outcomes across seasons."
+  ],
+  "Data Tables": {
+    "batch_log_headers": [
+      "Date",
+      "Seed ratio",
+      "Pre treatment",
+      "Hold temp",
+      "Hold time",
+      "Jar date",
+      "Outcome notes"
+    ]
+  },
+  "Common Pitfalls": [
+    "Aeration from over stirring.",
+    "Setting at fluctuating temperatures.",
+    "No seed library - texture drifts batch to batch."
+  ],
+  "Callouts": [
+    {
+      "type": "Pro tip",
+      "text": "Keep a tiny jar of your best creamed batch in the freezer as emergency seed."
+    }
+  ],
+  "FAQs": [
+    {
+      "q": "Do I need a special tank?",
+      "a": "No - an insulated tub and a thermometer can work at small scale."
+    },
+    {
+      "q": "How long does it take?",
+      "a": "Depends on temperature and floral profile - logs will teach your rhythm."
+    }
+  ],
+  "Seasonality & Climate": "Cool months favor steady setting. In heat, use a controlled cabinet.",
+  "Suggested Figures": [
+    {
+      "alt": "Creaming flow",
+      "caption": "Warm to dissolve - seed - hold - jar - label - store."
+    }
+  ],
+  "Glossary": [
+    {
+      "term": "Seed",
+      "def": "A portion of very fine crystal honey added to guide crystallisation."
+    }
+  ],
+  "Cross-links": [
+    "crystallisation_management",
+    "honey_processing_basics",
+    "honey_labelling_legal_basics_uk_eu"
+  ],
+  "Sources": [
+    {
+      "name": "Honey processing guides - creaming methods",
+      "url": "https://www.fao.org/"
+    },
+    {
+      "name": "Apiculture texts on Dyce method",
+      "url": "https://link.springer.com/"
+    }
+  ],
+  "Scrape-Guidance": "Capture safe temperatures, seed ratios, and handling that avoids aeration. Provide a simple batch log pattern.",
+  "Notes": ""
+}

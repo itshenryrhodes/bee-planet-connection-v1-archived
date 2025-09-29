@@ -1,8 +1,29 @@
 {
-  "Overview": "Handheld thermal cameras and smartphone IR add non-invasive insight into winter clustering, heat loss points, and post-treatment activity patterns.",
-  "Types & Variants": "Clip-on phone modules, handheld imagers with adjustable palettes, and fixed sensors on research hives. Resolution and refresh rate drive usefulness.",
-  "Using It Well": "Scan in calm conditions; avoid direct sun glare. Compare colonies rather than fixating on absolute temperatures. Confirm anomalies with a quick, minimal-disturbance inspection.",
-  "Costs & Practicalities": "Entry-level modules are affordable and adequate for trend spotting. Protect lenses from propolis/wax; store dry. Data images are lightweight for records.",
-  "Recent Innovations": "Automated alerts for cluster movement and brood re-start; paired weight–thermal dashboards flag queen loss sooner than manual checks.",
-  "Further Reading & Sources": "Manufacturer guides and extension notes on interpreting IR for bee applications."
+  "At-a-Glance": "Thermal imaging detects brood patterns and colony health without opening hives.",
+  "Why it Matters": [
+    "Minimises hive disturbance.",
+    "Quick screening for queenrightness and cluster size."
+  ],
+  "Step-by-Step": [
+    "1) Use handheld or drone-mounted thermal camera.",
+    "2) Capture images in early morning or evening for contrast.",
+    "3) Compare thermal patterns with known healthy baselines."
+  ],
+  "Common Pitfalls": [
+    "Direct sun interference",
+    "Misinterpreting heat signatures"
+  ],
+  "Cross-Links": [
+    "hive_sensors_weight_temp_sound",
+    "brood_pattern_diagnostics_and_remediation"
+  ],
+  "Keywords": [
+    "thermal imaging",
+    "non-invasive inspection",
+    "colony health"
+  ],
+  "Further Reading": [
+    "Research on thermal detection of bee colonies"
+  ],
+  "Notes": ""
 }

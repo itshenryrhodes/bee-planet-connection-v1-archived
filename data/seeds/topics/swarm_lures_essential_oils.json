@@ -1,8 +1,30 @@
 {
-  "At-a-Glance": "Synthetic Nasonov mimics and lemongrass-based lures boost bait hive success when matched with the right box volume and siting.",
-  "Why it Matters": "Well-designed traps intercept local swarms, reduce nuisance calls, and provide low-cost increase from local genetics.",
-  "Step-by-Step": "Use ~40L dark interior boxes with a small entrance. Add one old brood frame for scent. Apply a minimal lure dose to avoid overpowering odours. Mount 3–5m high, level, shaded morning sun, entrance facing SE. Inspect weekly; relocate caught swarms at dusk.",
-  "Seasonality & Climate": "Pre-position traps a few weeks before your regional swarm peak. Refresh lures per manufacturer guidance; heat volatilises quickly.",
-  "Common Pitfalls": "Over-luring (repellent), huge entrances, and unstable mounts. Replace old, mouse-scented equipment.",
-  "Tools & Materials": "Bait boxes, old comb, lemongrass/Nasonov lures, straps, ladder/safe access, transport box."
+  "At-a-Glance": "Essential oils can enhance swarm trap attractiveness.",
+  "Why it Matters": [
+    "Boosts capture success rates.",
+    "Reduces feral colony establishment in unwanted places."
+  ],
+  "Step-by-Step": [
+    "1) Apply lemongrass oil or proprietary lure to trap entrance.",
+    "2) Refresh regularly during swarm season.",
+    "3) Position traps at optimal height and aspect."
+  ],
+  "Seasonality & Climate": "Best deployed during peak swarm months (spring to early summer).",
+  "Common Pitfalls": [
+    "Over-applying oil",
+    "Placing traps in poor locations"
+  ],
+  "Cross-Links": [
+    "swarm_trap_setup_and_feral_colony_relocation",
+    "swarm_management"
+  ],
+  "Keywords": [
+    "swarm lures",
+    "essential oils",
+    "lemongrass"
+  ],
+  "Further Reading": [
+    "Research on pheromone mimicry in swarm traps"
+  ],
+  "Notes": ""
 }

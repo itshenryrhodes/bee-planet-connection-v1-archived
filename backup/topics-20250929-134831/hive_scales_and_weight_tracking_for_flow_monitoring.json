@@ -1,0 +1,80 @@
+{
+  "At-a-Glance": "Continuous or periodic hive weight data reveals nectar flows, dearths, swarming, and robbing. A single sentinel scale per yard informs decisions for all colonies.",
+  "Why it Matters": [
+    "Objective weight curves outperform guesswork on supering and feeding.",
+    "Early detection of swarms or robbing saves colonies.",
+    "Data helps plan labour and logistics around real flows."
+  ],
+  "Objectives": [
+    "Install at least one reliable scale per yard.",
+    "Log weights at consistent times if manual; automate if possible.",
+    "Correlate weight with weather and bloom notes."
+  ],
+  "What Good Looks Like": [
+    "Stable, level platform with protected electronics.",
+    "Daily curve shows morning loss (foraging) and evening gain (nectar return) in flow.",
+    "Alerts or checklists trigger when weight drops sharply out of pattern."
+  ],
+  "Step-by-Step": [
+    "1) Select a representative colony as a sentinel (neither the strongest nor the weakest).",
+    "2) Install scale on level base; protect from rain and ants; verify calibration.",
+    "3) Start log: manual same-time daily entries or automated uploads.",
+    "4) Annotate events: supering, splits, treatments, storms.",
+    "5) Use trends: add supers when evening gains accelerate; feed when flat/declining in dearth; investigate sudden drops for swarm/robbing."
+  ],
+  "Seasonality & Climate": [
+    "Spring ramps show rapid gains; summer dearth flattens or declines.",
+    "Heat waves can distort curves via heavy bearding at dusk."
+  ],
+  "Data & Thresholds": [
+    "Sudden drop of 1–3 kg during the day may indicate swarm.",
+    "Sustained nightly losses without day gains suggest dearth or robbing.",
+    "Super trigger often seen as multi-day positive slope >1–2 kg total."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Sharp midday drop -> Inspect for swarm cues and new queen cells.",
+    "Symptom: Flat line during bloom -> Check scale battery, calibration, or sentinel representativeness.",
+    "Symptom: Erratic spikes -> Verify wind shelter and platform stability."
+  ],
+  "Common Pitfalls": [
+    "Placing the strongest or weakest colony on the scale, skewing yard decisions.",
+    "Forgetting to annotate manipulations, making curves hard to interpret.",
+    "Poor weatherproofing leading to data gaps."
+  ],
+  "Tools & Techniques": [
+    "Commercial hive scales or load cells with microcontrollers.",
+    "Notebook or app with weather/bloom integration.",
+    "Solar or long-life battery packs; simple rain shields."
+  ],
+  "Safety & Compliance": [
+    "Secure cables and boxes to avoid trip hazards.",
+    "Respect data privacy if using cellular telemetry."
+  ],
+  "Field Checklist": [
+    "Scale level and calibrated.",
+    "Log running and annotated.",
+    "Super/feed decisions aligned to trend.",
+    "Alerts configured if supported."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share weekly weight snapshots with helpers to align actions."
+  ],
+  "Cross-Links": [
+    "spring_build_up_and_supering_strategy",
+    "colony_nutrition",
+    "robbing_prevention_and_response"
+  ],
+  "Keywords": [
+    "hive scale",
+    "nectar flow",
+    "telemetry",
+    "sentinel colony",
+    "weight curve"
+  ],
+  "Further Reading": [
+    "Case studies on weight-based flow tracking.",
+    "DIY load cell guides for hive scales."
+  ],
+  "Notes": "A cheap luggage scale and consistent heft log is still valuable if electronics are not feasible."
+}

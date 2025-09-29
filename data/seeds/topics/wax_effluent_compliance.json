@@ -1,5 +1,31 @@
 {
-  "Snapshot": "Rendering and cleaning create wax solids and sugary effluent—manage responsibly.",
-  "Risks & Compliance": "Avoid drains; capture and dispose per local rules; store waste sealed; maintain pest control.",
-  "Practical Actions": "Settle tanks, strainers, absorbents, spill kit, and documented disposal receipts."
+  "At-a-Glance": "Wax effluent and wash water must be handled to protect drains and comply with local rules.",
+  "Why it Matters": [
+    "Prevents blockages and fines.",
+    "Improves processing hygiene."
+  ],
+  "Step-by-Step": [
+    "1) Filter solids before disposal.",
+    "2) Cool and skim fats; never pour hot wax to drains.",
+    "3) Store waste in labelled containers for proper disposal.",
+    "4) Keep logs for inspections."
+  ],
+  "Safety & Compliance": "Follow local trade waste/by-law requirements.",
+  "Common Pitfalls": [
+    "Pouring wax down sinks",
+    "No records of disposal"
+  ],
+  "Cross-Links": [
+    "beeswax_rendering_storage",
+    "honey_room_layout_hygiene"
+  ],
+  "Keywords": [
+    "wax effluent",
+    "waste compliance",
+    "trade waste"
+  ],
+  "Further Reading": [
+    "Local council waste guidance"
+  ],
+  "Notes": ""
 }

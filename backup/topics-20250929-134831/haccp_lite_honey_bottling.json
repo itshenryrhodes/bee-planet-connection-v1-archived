@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "A lightweight HACCP focuses on a few real hazards: moisture, foreign bodies, cleaning residues, and mislabelling.",
+  "Why it Matters": [
+    "Proves due diligence and keeps bottling consistent.",
+    "Cuts risk without bureaucracy."
+  ],
+  "Objectives": [
+    "Identify hazards and critical control points (CCPs).",
+    "Define monitoring and corrective actions.",
+    "Keep simple records tied to batches."
+  ],
+  "What Good Looks Like": [
+    "One-page plan with CCPs: moisture, filter integrity, label accuracy.",
+    "Log sheets for jarring sessions with signatures.",
+    "CAPA notes for any deviation."
+  ],
+  "Step-by-Step": [
+    "1) Map process: settling → jarring → capping → labelling → boxing.",
+    "2) Set CCPs: moisture check, sieve check, label proofing.",
+    "3) Train helpers; run through a mock deviation scenario.",
+    "4) Review plan annually and after incidents."
+  ],
+  "Seasonality & Climate": [
+    "Cold bottling rooms increase viscosity and capping errors.",
+    "Humid spells raise condensation risk in open jars."
+  ],
+  "Data & Thresholds": [
+    "Moisture ≤18% unless varietal exceptions; sieve intact; torque check on lids.",
+    "Label fields: name, weight, lot, BBE, country, contact."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Issue: Moisture high -> Blend/dry if permitted; downgrade; hold stock.",
+    "Issue: Label error -> Stop run; relabel or recall; update proof process.",
+    "Issue: Foreign body -> Quarantine, filter verify, rework/recall as per risk."
+  ],
+  "Common Pitfalls": [
+    "Over-complicated paperwork nobody uses.",
+    "No clear corrective actions.",
+    "Labels proofed only on screen, not on jar."
+  ],
+  "Tools & Techniques": [
+    "Torque checker, moisture meter, sieve integrity checks.",
+    "Pre-flight label checklist and sign-off."
+  ],
+  "Safety & Compliance": [
+    "Weights/measures accuracy; allergen and legal naming.",
+    "Traceability for all inputs (jars, lids, labels)."
+  ],
+  "Field Checklist": [
+    "CCPs monitored and signed.",
+    "Deviations documented.",
+    "Retains kept from each batch."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain CCPs to helpers—what and why."
+  ],
+  "Cross-Links": [
+    "honey_extraction_food_safety",
+    "honey_labelling_legal_basics_uk_eu",
+    "stock_control_batch_tracking"
+  ],
+  "Keywords": [
+    "HACCP",
+    "bottling",
+    "CCP",
+    "records"
+  ],
+  "Further Reading": [
+    "HACCP primers for micro producers.",
+    "Label compliance checklists."
+  ],
+  "Notes": "Photograph the whiteboard and logs at end of day—belt and braces."
+}

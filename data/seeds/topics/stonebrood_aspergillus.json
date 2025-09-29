@@ -1,8 +1,30 @@
 {
-  "Overview": "Stonebrood is a fungal infection (Aspergillus spp.) of honey bee brood that can harden larvae into rock-like mummies. Though uncommon, it warrants careful hygiene due to potential human health concerns.",
-  "Biology & Transmission": "Spores are ubiquitous in soil and organic debris; infection is favoured by damp conditions and stressed colonies. Some species can produce mycotoxins.",
-  "Symptoms & Field Diagnosis": "Mummies are firm and often greenish or black with powdery surfaces; distinguish from chalkbrood (white/grey, friable). Handle samples cautiously and seek lab confirmation.",
-  "Impact on Colony": "Usually localised but can reduce brood viability; serious cases indicate broader moisture or hygiene problems needing correction.",
-  "Control & Treatment": "Improve ventilation and dryness; remove and destroy affected comb; replace with clean foundation. Use PPE when handling suspect material; follow local guidance if lab-confirmed.",
-  "Prevention & Good Practice": "Keep interiors dry, avoid mouldy stores, rotate old comb, and maintain clean extraction/storage areas nearby to limit spore loads."
+  "At-a-Glance": "Stonebrood is a fungal disease caused by Aspergillus that mummifies brood.",
+  "Why it Matters": [
+    "Rare but zoonotic risk to beekeepers.",
+    "Can weaken colonies and contaminate combs."
+  ],
+  "Step-by-Step": [
+    "1) Confirm diagnosis via lab if suspected.",
+    "2) Remove and destroy infected combs.",
+    "3) Disinfect equipment and maintain hive hygiene."
+  ],
+  "Safety & Compliance": "Wear PPE when handling suspected cases to avoid spore inhalation.",
+  "Common Pitfalls": [
+    "Confusing with chalkbrood",
+    "Leaving contaminated combs in circulation"
+  ],
+  "Cross-Links": [
+    "chalkbrood_management",
+    "hive_hygiene_and_biosecurity"
+  ],
+  "Keywords": [
+    "stonebrood",
+    "aspergillus",
+    "fungal disease"
+  ],
+  "Further Reading": [
+    "BeeBase factsheet on brood diseases"
+  ],
+  "Notes": ""
 }

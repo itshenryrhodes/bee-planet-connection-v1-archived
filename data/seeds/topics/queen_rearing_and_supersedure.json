@@ -1,0 +1,81 @@
+{
+  "At-a-Glance": "Colonies supersede failing queens or raise emergency queens after loss. Intentional requeening and structured rearing improve temperament, productivity, and survival.",
+  "Why it Matters": [
+    "Queen quality sets brood pattern, population curve, honey yield, and temperament.",
+    "Predictable requeening avoids emergency failures during main flow or autumn build-up."
+  ],
+  "Objectives": [
+    "Adopt an annual or biennial requeening policy for production colonies.",
+    "Keep a spare mated queen or strong nuc per yard as insurance.",
+    "Select for calm temperament, solid brood patterns, disease resilience."
+  ],
+  "What Good Looks Like": [
+    "Crisp brood pattern, minimal drone lay, gentle handling response.",
+    "Dated, marked, and recorded queens with origin and traits.",
+    "Requeening planned before poor weather windows."
+  ],
+  "Step-by-Step": [
+    "1) Assess monthly in season - brood solidity, egg density, temperament, laying rate.",
+    "2) Choose breeder colonies with desired traits, no disease history.",
+    "3) Grafting or cell-start methods - day-old larvae to cups, strong queenless starters.",
+    "4) Mating phase - ensure drone saturation and stable weather, deploy mating nucs.",
+    "5) Introduction - queenless the recipient 12-24 h, use slow-release cage, check acceptance after 5-7 days.",
+    "6) Record keeping - log queen year colour, source, acceptance, temperament notes."
+  ],
+  "Seasonality & Climate": [
+    "Best from late spring to mid-summer when drones are abundant.",
+    "Poor weather suppresses mating - consider purchased mated queens if windows close."
+  ],
+  "Data & Thresholds": [
+    "Spotty brood or drone-laying workers -> urgent action.",
+    "Well-run introductions often see 80-95 percent acceptance.",
+    "Temperament score - target calm colonies that can be worked with minimal smoke."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Scattered brood, small pattern -> Check queen age -> Plan requeening now.",
+    "Symptom: Drone-laying -> Confirm queen status -> Combine with nuc or introduce mated queen.",
+    "Symptom: Balling new queen -> Extend queenless period -> Re-introduce with candy plug."
+  ],
+  "Common Pitfalls": [
+    "Introducing into queenright colonies.",
+    "Late season attempts without drones.",
+    "Unrecorded queen ages leading to surprise failures."
+  ],
+  "Tools & Techniques": [
+    "Grafting kits and cups, mini mating nucs.",
+    "Marking pens and clipping scissors where appropriate.",
+    "Introduction cages and fondant candy plugs."
+  ],
+  "Safety & Compliance": [
+    "Biosecurity when swapping frames or nucs between yards.",
+    "Marking and clipping in line with local guidance."
+  ],
+  "Field Checklist": [
+    "Recipient queenless confirmed.",
+    "Candy plug intact and vented.",
+    "Follow-up inspection day 5-7.",
+    "Temperament note recorded."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Maintain a simple queen ledger - year, line, temperament, acceptance."
+  ],
+  "Cross-Links": [
+    "swarm_management",
+    "hive_temperament",
+    "overwintering_colonies"
+  ],
+  "Keywords": [
+    "supersedure",
+    "queen rearing",
+    "grafting",
+    "mating nuc",
+    "acceptance",
+    "drone saturation"
+  ],
+  "Further Reading": [
+    "Laidlaw and Page - Queen Rearing and Bee Breeding.",
+    "NBU queen management leaflets."
+  ],
+  "Notes": "Keep at least one nuc as a living queen bank per apiary."
+}

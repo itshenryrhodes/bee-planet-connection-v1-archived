@@ -1,0 +1,81 @@
+{
+  "At-a-Glance": "A tight, contiguous brood pattern signals a healthy queen and good conditions. Diagnosing gaps early prevents cascades into swarm pressure, disease, or poor overwintering.",
+  "Why it Matters": [
+    "Patchy brood can indicate queen failure, varroa pressure, nutrition gaps, or chilling.",
+    "Fast diagnosis avoids wasted weeks in peak season.",
+    "Clear remediation plans stabilise productivity and temperament."
+  ],
+  "Objectives": [
+    "Differentiate normal brood patch boundaries from pathological spotty patterns.",
+    "Link each defect to likely causes and a standard fix.",
+    "Record brood quality every inspection to spot trends."
+  ],
+  "What Good Looks Like": [
+    "Solid ‘football-shaped’ brood area with eggs, larvae, and capped brood in concentric rings.",
+    "Minimal drone scatter in worker cells, good pollen rim and open cells for eggs.",
+    "Calm bees with minimal pinging under light smoke."
+  ],
+  "Step-by-Step": [
+    "1) Observe pattern: centre to edges, note any scattered empty cells or perforations.",
+    "2) Check eggs/larvae density and age gradient; confirm queenright.",
+    "3) Review environment: nectar/pollen intake, temperature, wet frames, space.",
+    "4) Health screen: spot signs of varroa (DWV), chalkbrood, foulbrood cues.",
+    "5) Decide action: nutrition (feed/pollen), space (add comb), varroa treatment, or requeen.",
+    "6) Recheck in 7–10 days; compare photos and notes."
+  ],
+  "Seasonality & Climate": [
+    "Cold snaps and damp springs create chilled brood and patchiness.",
+    "Late summer dearth backfills brood nest and disrupts pattern."
+  ],
+  "Data & Thresholds": [
+    "Spotty brood with >10–15 percent empties across the patch suggests intervention.",
+    "Drone-laying in worker cells or shotgun pattern often indicates queen failure or varroa stress."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Scattered capped brood with chewed cappings -> Varroa/virus suspected -> Quantify mites -> Treat per plan.",
+    "Symptom: Eggs absent but queen seen -> Age or pheromone decline -> Consider requeening.",
+    "Symptom: Backfilled nest -> Add space and drawn comb; super; consider split.",
+    "Symptom: Twisted larvae/melted look -> Suspect EFB -> Isolate and report per rules."
+  ],
+  "Common Pitfalls": [
+    "Confusing young queen ramp-up with chronic spotty brood.",
+    "Treating varroa without verifying with a quantitative test.",
+    "Ignoring nutrition while chasing queen issues."
+  ],
+  "Tools & Techniques": [
+    "Frame photo log, magnifier or head torch, brood thermometer if desired.",
+    "Tick-box inspection sheet to score brood quality."
+  ],
+  "Safety & Compliance": [
+    "Report notifiable disease suspicions promptly.",
+    "Biosecurity when moving frames between colonies."
+  ],
+  "Field Checklist": [
+    "Queen status confirmed.",
+    "Brood area photographed.",
+    "Decision noted (feed/space/treat/requeen).",
+    "Follow-up scheduled."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to helpers the difference between new-queen ramp-up and failure."
+  ],
+  "Cross-Links": [
+    "queen_rearing_and_supersedure",
+    "varroa_monitoring_methods",
+    "colony_nutrition",
+    "efb_afb_disease_recognition_and_response"
+  ],
+  "Keywords": [
+    "brood pattern",
+    "shotgun brood",
+    "backfilling",
+    "DWV",
+    "requeen"
+  ],
+  "Further Reading": [
+    "Inspectorate photo guides to brood diseases.",
+    "Association modules on brood diagnostics."
+  ],
+  "Notes": "Keep a small laminated brood score card in your kit to standardise notes."
+}

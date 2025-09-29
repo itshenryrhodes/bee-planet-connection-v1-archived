@@ -1,7 +1,26 @@
 {
-  "Overview": "Well-chosen trees and shrubs provide high-impact nectar and pollen across seasons with minimal upkeep—ideal for farms, estates, and urban corridors.",
-  "Drivers & Mechanisms": "Stagger bloom for continuity: early (willow, hazel, mahonia), mid (hawthorn, apple/pear/plum, lime), late (ivy, heather on suitable soils, sweet chestnut). Mix natives with proven ornamentals where appropriate.",
-  "Impacts & Case Studies": "Hedgerow restoration and street-tree schemes boost forage diversity, reduce dearths, and support wild pollinators alongside honey bees.",
-  "Mitigation & Best Practice": "Match species to soil and exposure; avoid invasive taxa; plan for drought tolerance; coordinate with councils or landowners for long-term maintenance. Plant in blocks/lines to aid bee orientation.",
-  "Further Reading & Sources": "Consult reputable UK pollinator plant lists and forestry guidance for species selection and establishment."
+  "At-a-Glance": "UK trees and shrubs provide key forage across the season.",
+  "Why it Matters": [
+    "Supports nectar and pollen continuity.",
+    "Guides planting for pollinator projects."
+  ],
+  "Step-by-Step": [
+    "1) Identify local flowering calendars.",
+    "2) Plant species suited to soil and climate.",
+    "3) Prioritise diversity for resilience."
+  ],
+  "Cross-Links": [
+    "forage_calendars_uk_regional",
+    "pollinator_friendly_planting"
+  ],
+  "Keywords": [
+    "forage trees",
+    "UK shrubs",
+    "bee plants"
+  ],
+  "Further Reading": [
+    "RHS pollinator plant guides",
+    "Woodland Trust resources"
+  ],
+  "Notes": ""
 }

@@ -1,9 +1,33 @@
 {
   "At-a-Glance": "Urban yards succeed on soft skills: proactive neighbour comms, clear signage, tidy kit, and swift complaint handling.",
-  "Why it Matters": "Perception drives permissions. One sting incident or messy yard can shutter multiple sites.",
-  "Step-by-Step": "Pre-site checklist (access, water, shade, flight paths). Written agreement with landlord. Welcome sheet to neighbours with hornet/reporting info and beekeeper contact. Office-hours inspections. Incident log and escalation pathway.",
-  "Seasonality & Climate": "Heat islands intensify summer dearth and overheating—plan shade and water early.",
-  "Common Pitfalls": "Open feeding, wide entrances near walkways, and unannounced swarm management visits.",
-  "Tools & Materials": "Site risk assessment template, laminated signage, waterers, robbing screens.",
-  "Further Reading & Sources": "Urban beekeeping codes of practice; local council guidance."
+  "Why it Matters": [
+    "Perception drives permissions.",
+    "One sting incident or messy yard can shutter multiple sites."
+  ],
+  "Step-by-Step": [
+    "1) Pre-site checklist (access, water, shade, flight paths).",
+    "2) Written agreement with landlord.",
+    "3) Welcome sheet to neighbours with hornet/reporting info and beekeeper contact.",
+    "4) Office-hours inspections.",
+    "5) Incident log and escalation pathway."
+  ],
+  "Seasonality & Climate": "Heat islands intensify summer dearth and overheating — plan shade and water early.",
+  "Common Pitfalls": [
+    "Open feeding",
+    "Wide entrances near walkways",
+    "Unannounced swarm visits"
+  ],
+  "Cross-Links": [
+    "apiary_site_selection",
+    "bee_navigation_and_orientation"
+  ],
+  "Keywords": [
+    "urban beekeeping",
+    "neighbour relations",
+    "community"
+  ],
+  "Further Reading": [
+    "Case studies on urban apiary management"
+  ],
+  "Notes": ""
 }

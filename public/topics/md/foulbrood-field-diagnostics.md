@@ -1,0 +1,84 @@
+---
+title: "Foulbrood Field Diagnostics"
+slug: foulbrood-field-diagnostics
+draft: false
+updated: 2025-09-29
+keywords: ["AFB", "EFB", "rope test", "notifiable disease"]
+cross_links: ["brood_disease_lab_sampling", "efb_afb_disease_recognition_and_response", "equipment_cleaning_biosecurity"]
+source: "seed-json"
+---
+
+> **At a Glance:** Recognise and escalate American/European foulbrood rapidly. Field checks guide immediate isolation and legal reporting.
+
+## Why it Matters
+- Early recognition limits spread and legal consequences.
+- Protects brand reputation and neighbouring beekeepers.
+
+## Objectives
+- Differentiate AFB vs EFB field signs confidently.
+- Apply isolation and notification steps without delay.
+- Capture photo/record evidence for inspectors.
+
+## What Good Looks Like
+- Pocket kit ready: matchsticks, disposable gloves, bags, camera.
+- Isolation protocol enacted: close, strap, mark, do not move.
+- Timely notification to competent authority per jurisdiction.
+
+## Step-by-Step
+1) Observe brood pattern, cappings, odour. Note ropey test and cell contents.
+2) If suspect: stop manipulation; close colony; take GPS/photo notes.
+3) Rope test (AFB): insert/withdraw match for thread; record result.
+4) Call/report per local law; follow inspector guidance; quarantine yard gear.
+
+## Seasonality & Climate
+- EFB peaks often in spring/early summer with nutrition stress.
+- AFB can present any season; stressed colonies show earlier.
+
+## Data & Thresholds
+- Do not move bees/comb once AFB is suspected—legal threshold is suspicion.
+- Maintain a ‘suspect incident’ log with dates, photos, actions.
+
+## Diagnostics & Decision Tree
+- Sunken perforated cappings + ropey test + dark larval scale → AFB: isolate + notify.
+- Twisted yellowish larvae, non-ropey, often patchy brood → EFB: notify; follow sampling/treatment policy.
+- Chilled brood/CBR lookalikes → Verify temp/ventilation; recheck next visit.
+
+## Common Pitfalls
+- Continuing inspections across hives after suspicion.
+- Using shared tools/gloves without sterilising.
+- Posting photos publicly before notifying authorities.
+
+## Tools & Techniques
+- Rope test sticks, disposable gloves, sealable bags, bleach/soda ash for decon.
+- Quick-reference photo card laminated in truck.
+
+## Safety & Compliance
+- Local notifiable disease rules; movement restrictions.
+- Incineration or treatment orders compliance.
+
+## Field Checklist
+- Photos taken and labelled.
+- Hive closed/marked; kit quarantined.
+- Authority notified; incident log updated.
+
+## Communications
+- Short hyphens only.
+- Calm, factual updates to stakeholders; no speculation.
+
+## Further Reading
+- Inspectorate pictorial guides.
+- Sampling and legal response flowcharts.
+
+## Cross-Links
+- [brood_disease_lab_sampling](/topics/brood-disease-lab-sampling/)
+- [efb_afb_disease_recognition_and_response](/topics/efb-afb-disease-recognition-and-response/)
+- [equipment_cleaning_biosecurity](/topics/equipment-cleaning-biosecurity/)
+
+## Keywords
+- AFB
+- EFB
+- rope test
+- notifiable disease
+
+## Notes
+Carry spare gloves and disinfectant; designate a ‘dirty box’ for suspect-yard tools.

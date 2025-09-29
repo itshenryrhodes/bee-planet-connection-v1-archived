@@ -1,7 +1,30 @@
 {
-  "What It Is": "Beeswax accumulates environmental residues over time. Proactive comb rotation and careful sourcing of foundation manage risk for both bee health and product quality.",
-  "Harvesting & Processing": "Segregate cappings (cleaner) from brood wax. Render gently; filter progressively. Keep batch records linking wax to yards and seasons. When purchasing foundation, request residue testing statements if available.",
-  "Properties & Uses": "Old brood wax darkens and carries higher residue loads; cappings wax fetches higher cosmetic grades. Transparency on source and handling builds trust.",
-  "Market & Value": "Brands that evidence clean wax and traceability command premiums. Recycling your own cappings into foundation closes loops if quality controls are strong.",
-  "Further Reading & Sources": "Consult recognised residue monitoring programs and quality standards for cosmetic/food-contact beeswax."
+  "At-a-Glance": "Residue-aware comb management protects product quality and bee health.",
+  "Why it Matters": [
+    "Reduces contamination risk in honey and wax products.",
+    "Supports certification and market access."
+  ],
+  "Step-by-Step": [
+    "1) Track treatments by batch and date per hive.",
+    "2) Rotate out old brood comb regularly (e.g., 3-year cycle).",
+    "3) Use dedicated 'food-grade' supers with no recent treatments.",
+    "4) Render old comb separately and label outputs."
+  ],
+  "Common Pitfalls": [
+    "No comb rotation plan",
+    "Mixing treated brood comb with honey supers"
+  ],
+  "Cross-Links": [
+    "comb_rotation_renewal",
+    "stock_control_batch_tracking"
+  ],
+  "Keywords": [
+    "residues",
+    "comb rotation",
+    "product quality"
+  ],
+  "Further Reading": [
+    "Residue minimisation guidance for small producers"
+  ],
+  "Notes": ""
 }

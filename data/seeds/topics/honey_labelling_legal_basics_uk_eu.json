@@ -1,0 +1,144 @@
+{
+  "title": "Honey labelling & legal basics (UK/EU): weights, lot codes, allergens",
+  "slug": "honey_labelling_legal_basics_uk_eu",
+  "category": "Products & processing",
+  "categories": [
+    "Risk & compliance",
+    "Operations"
+  ],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": [
+      "Compliance"
+    ],
+    "topics": [
+      "labelling",
+      "weights-measures",
+      "lot-codes",
+      "composition",
+      "origin"
+    ],
+    "audience": [
+      "beginner",
+      "intermediate",
+      "club-officer",
+      "market-seller"
+    ],
+    "intent": [
+      "how-to",
+      "policy"
+    ],
+    "regions": [
+      "UK",
+      "EU"
+    ],
+    "season": [
+      "summer",
+      "autumn"
+    ],
+    "climate": [
+      "temperate"
+    ],
+    "difficulty": "beginner",
+    "lifecycle_stage": [
+      "post-harvest"
+    ]
+  },
+  "tags": [
+    "PPDS",
+    "address/traceability",
+    "best-before",
+    "nutrition-exemption"
+  ],
+  "At-a-Glance": "Selling honey is simple when labels are right. Put the name of the food (‘Honey’), net weight in metric (e.g., 227 g / 340 g), durability date (‘Best before’), lot/batch code, your business name/address, country of origin, and any special storage advice. If it’s a specific floral/region claim, be able to substantiate it. Small producers are usually nutrition-panel exempt; allergens aren’t typical for pure honey but cross-contamination statements must be honest. Labels must be legible, indelible and visible. Keep a sample and a batch log so you can answer questions later with confidence.",
+  "Why it Matters": "Compliance builds trust and keeps market days stress-free. Trading Standards care about weights, identity and traceability; customers care about clarity and provenance. A clean label and a tidy batch log protect you if a jar leaves the table with a smudge or if a customer calls with a question months later. If you add nuts, spices or infusions, you enter different territory (PPDS/prepacked for direct sale and allergens)—write a separate SOP for that range. Country-of-origin wording and floral claims need integrity: if your jars say ‘English Honey’, your records should show apiaries and dates that back it up. Finally, lot codes connect jars to days and supers; if you ever need to withdraw a batch, you’ll do it calmly in minutes, not in a panic. Good labels aren’t just legal—they’re your quiet promise of care from hive to shelf.",
+  "Step-by-Step": [
+    "Decide pack sizes; calibrate scales; check tare.",
+    "Design labels with required fields (name, net weight, BBE, lot, address, origin).",
+    "Print/apply consistently; keep labels neat and legible.",
+    "Maintain a batch log (date/apiary/boxes/jar count/lot).",
+    "Keep retention samples; review yearly against regs/Trading Standards advice."
+  ],
+  "Context & Narrative": "Set up your bottling table like a mini production line. Jars and lids warmed, scales checked with a test weight, a clean labeller loaded, and a batch sheet on a clipboard. As you fill, place jars onto a staging tray in rows; when a row finishes, label, cap, wipe and stamp the lot code. A best-before 2 years from bottling keeps you tidy; store jars cool and dark. On labels, keep type readable and claims modest—‘Spring honey from [county]’ beats baroque stories you can’t evidence. If you run multiple apiaries or blends, use lot codes that encode date and apiary ID; your log translates codes back to humans later. \n\nMarkets and shops vary; bring a copy of your insurance, a one-page HACCP-lite (what you do to keep things clean), and a few spare labels for swaps. If you experiment with infused products, isolate processes and labels; treat them as food with ingredients and allergens, not as ‘honey with stuff’. When in doubt, call Trading Standards—officers are usually helpful when you’re proactive. Compliance is not a hurdle; it’s a handshake with the public that your jars are as honest as your bees.",
+  "Evidence Highlights": [
+    "Legal minima: name, net quantity (metric), durability date, lot/batch, address, origin.",
+    "Nutrition panel exemptions apply to small direct producers of pure honey.",
+    "Traceability and lot coding enable targeted withdrawals and build trust."
+  ],
+  "Data Tables": {
+    "batch_log_headers": [
+      "Date",
+      "Apiary/box IDs",
+      "Lot code",
+      "Jar size",
+      "Jar count",
+      "BBE",
+      "Notes"
+    ],
+    "label_fields": [
+      "Name of food",
+      "Net quantity (g)",
+      "Best before",
+      "Lot/batch",
+      "Business name/address",
+      "Country of origin",
+      "Storage advice",
+      "Optional claim/evidence"
+    ]
+  },
+  "Common Pitfalls": [
+    "Imperial-only weights; missing origin; illegible type.",
+    "Floral/region claims with no evidence trail.",
+    "Mixing infused/PPDS rules into pure honey range."
+  ],
+  "Callouts": [
+    {
+      "type": "Pro tip",
+      "text": "Rubber-stamp lot codes onto label backs—fast, legible, and consistent."
+    }
+  ],
+  "FAQs": [
+    {
+      "q": "Do I need nutrition panels?",
+      "a": "Not for pure honey in small direct sales; check local exemptions for your scale."
+    },
+    {
+      "q": "How long for ‘Best before’?",
+      "a": "Commonly 24 months from bottling if stored cool and dark."
+    }
+  ],
+  "Seasonality & Climate": "Busy after extraction; plan label stock ahead of flows to avoid last-minute reprints.",
+  "Suggested Figures": [
+    {
+      "alt": "Compliant label layout",
+      "caption": "Where each required field sits on a clean, readable label."
+    }
+  ],
+  "Glossary": [
+    {
+      "term": "PPDS",
+      "def": "Prepacked for direct sale—different labelling rules when adding ingredients on site."
+    }
+  ],
+  "Cross-links": [
+    "honey_processing_basics",
+    "disease_control_logbook",
+    "pollination_service_playbook"
+  ],
+  "Sources": [
+    {
+      "name": "UK Gov / FSA – honey composition & labelling",
+      "url": "https://www.food.gov.uk/"
+    },
+    {
+      "name": "Weights & Measures (Trading Standards)",
+      "url": "https://www.gov.uk/"
+    },
+    {
+      "name": "EU honey marketing standards (if exporting)",
+      "url": "https://ec.europa.eu/"
+    }
+  ],
+  "Scrape-Guidance": "Pull required fields and exemptions from FSA/Trading Standards sources; avoid brand advice; include batch logging practices aligned to traceability norms.",
+  "Notes": ""
+}

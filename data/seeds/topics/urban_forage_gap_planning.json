@@ -1,5 +1,25 @@
 {
-  "Overview": "City bloom is patchy. Map micro-flows (street trees, parks, balconies) to bridge dearths with planting and feeding plans.",
-  "Drivers & Mechanisms": "Early: willow/ornamentals; mid: lime/parks; late: ivy/rooftop planters. Drought and mowing policy shift timing.",
-  "Mitigation & Best Practice": "Coordinate with building managers for planter choices; stagger blooms; avoid pesticide-treated ornamentals."
+  "At-a-Glance": "Urban forage gaps can be bridged with targeted planting and partnerships.",
+  "Why it Matters": [
+    "Cities often have dearths in midsummer.",
+    "Planning improves colony survival and pollination services."
+  ],
+  "Step-by-Step": [
+    "1) Map local forage availability.",
+    "2) Identify gaps in flowering periods.",
+    "3) Engage councils and community groups to fill gaps."
+  ],
+  "Cross-Links": [
+    "forage_and_flora",
+    "bee_friendly_landscaping_landlords"
+  ],
+  "Keywords": [
+    "urban forage",
+    "gap analysis",
+    "pollinator planning"
+  ],
+  "Further Reading": [
+    "Urban pollinator project reports"
+  ],
+  "Notes": ""
 }

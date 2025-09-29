@@ -1,0 +1,83 @@
+{
+  "At-a-Glance": "Spring build-up sets the curve for the whole season. Timely space, nutrition, and swarm control create strong, productive colonies that hit the main flows with maximum foragers.",
+  "Why it Matters": [
+    "Missed spring windows compound into lost honey yield and increased swarm risk.",
+    "Right-timed supering prevents backfilling of the brood nest and keeps queens laying.",
+    "Planned build-up aligns colony population peaks with local nectar flows."
+  ],
+  "Objectives": [
+    "Grow population smoothly without triggering swarms.",
+    "Add space ahead of need to keep brood nest open.",
+    "Track weight and brood area weekly to time supering precisely."
+  ],
+  "What Good Looks Like": [
+    "Solid brood pattern expanding week-on-week.",
+    "Supers on before first big flow; queen excluder used where desired and appropriate.",
+    "Minimal backfilling, plenty of open comb for eggs and nectar."
+  ],
+  "Step-by-Step": [
+    "1) Early checks: queenright, disease clear, varroa low.",
+    "2) Feed if needed to prevent starvation dips; stop as natural flow starts.",
+    "3) Brood nest management: add drawn comb or foundation at brood edges to relieve congestion.",
+    "4) First super: add when 7–8 frames are covered with bees in a single brood setup (adjust to hive type).",
+    "5) Continue supering: add another when the top super is 60–70 percent covered with bees or half filled.",
+    "6) Swarm control cadence: inspect every 7–9 days; apply preferred method if cells appear.",
+    "7) Balance yards: equalise frames or bees from booming colonies to laggards early, not late."
+  ],
+  "Seasonality & Climate": [
+    "Cold snaps stall build-up; avoid heavy manipulations in poor weather.",
+    "Early springs shift calendars forward; update timing annually.",
+    "Drought springs may need water provision and careful feeding."
+  ],
+  "Data & Thresholds": [
+    "Heft/scale: steady weight gain after first flow indicates timing was right.",
+    "Super trigger: bees fully covering brood box frames and starting to backfill.",
+    "Swarm pressure: presence of charged queen cells requires immediate action."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Backfilled brood nest -> Add super now; insert drawn comb near brood; consider split.",
+    "Symptom: Frames of nectar but no expansion -> Colony needs more space; check queen age; verify weather and forage.",
+    "Symptom: Repeated cell building -> Space adequate? If yes, genetics or queen age may be the driver -> Requeen or split."
+  ],
+  "Common Pitfalls": [
+    "Late supering that forces nectar into brood area.",
+    "Stopping inspections during rapid build-up.",
+    "Over-feeding during flow contaminating crop."
+  ],
+  "Tools & Techniques": [
+    "Hive scales or regular heft logs, extra supers ready, frame feeder for early support.",
+    "Drawn comb inventory to accelerate expansion."
+  ],
+  "Safety & Compliance": [
+    "Lift safely when supers fill; use helpers or lifters.",
+    "Label any feed given to ensure supers are not added while feeding syrup."
+  ],
+  "Field Checklist": [
+    "Queenright and healthy.",
+    "Open comb near brood.",
+    "First super on ahead of flow.",
+    "Swarm control plan in place."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share expected flow windows with helpers so supering is not missed."
+  ],
+  "Cross-Links": [
+    "swarm_management",
+    "colony_nutrition",
+    "comb_management_and_replacement",
+    "hive_ventilation_and_moisture_control"
+  ],
+  "Keywords": [
+    "spring build-up",
+    "supering",
+    "backfilling",
+    "brood nest",
+    "nectar flow"
+  ],
+  "Further Reading": [
+    "Regional association calendars of main flows.",
+    "Research on population dynamics vs nectar timing."
+  ],
+  "Notes": "Keep a ‘spring card’ per yard listing supering thresholds and local bloom cues."
+}

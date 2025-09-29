@@ -1,8 +1,31 @@
 {
-  "At-a-Glance": "Thymol formulations provide post-harvest varroa knock-down at moderate temperatures and fit well into rotation plans to slow resistance.",
-  "Why it Matters": "Using a non-synthetic mode of action outside the main nectar flow reduces contamination risk and diversifies the treatment toolbox.",
-  "Step-by-Step": "Remove honey supers. Place gels or strips per label, ensuring bee space and airflow. Monitor behaviour and ambient temperature. Replace or rotate pads as directed. Verify reduction with a post-treatment mite count.",
-  "Seasonality & Climate": "Most labels specify efficacy windows (often around 15–30°C). In cooler or very hot periods, efficacy or tolerance may drop—schedule accordingly.",
-  "Common Pitfalls": "Leaving supers on, poor ventilation causing stress, and failing to verify results. Avoid stacking strong odour treatments back-to-back.",
-  "Tools & Materials": "Approved thymol product, spacers, thermometer, mite monitoring kit, records."
+  "At-a-Glance": "Thymol is an organic compound used in slow-release strips against varroa.",
+  "Why it Matters": [
+    "Alternative to synthetic acaricides.",
+    "Useful in rotation to manage resistance."
+  ],
+  "Step-by-Step": [
+    "1) Apply strips according to manufacturer dosage.",
+    "2) Maintain ventilation and monitor colony stress.",
+    "3) Remove after recommended duration."
+  ],
+  "Safety & Compliance": "Follow product labels; honey contamination risk if misused.",
+  "Common Pitfalls": [
+    "Using during nectar flow",
+    "Overdosing in small colonies"
+  ],
+  "Cross-Links": [
+    "varroa_treatment_options",
+    "amitraz_stewardship_varroa"
+  ],
+  "Keywords": [
+    "thymol",
+    "organic varroa treatment",
+    "acaricide rotation"
+  ],
+  "Further Reading": [
+    "Manufacturer datasheets",
+    "BeeBase thymol notes"
+  ],
+  "Notes": ""
 }

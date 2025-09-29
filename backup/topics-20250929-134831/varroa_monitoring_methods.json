@@ -1,0 +1,87 @@
+{
+  "At-a-Glance": "Varroa destructor is the pivotal health pressure on managed honey bees. Reliable, repeatable monitoring guides timely treatment decisions and prevents virus cascades.",
+  "Why it Matters": [
+    "Untreated or undetected varroa loads drive DWV and other virus issues leading to winter losses.",
+    "Monitoring replaces guesswork with thresholds that trigger action at the right time.",
+    "Good data lets you compare apiaries, genetics, and interventions over seasons."
+  ],
+  "Objectives": [
+    "Adopt one primary quantitative method and stick to it for comparability.",
+    "Sample at consistent times: pre-season, mid-season, post-harvest, and pre-winter.",
+    "Record results per colony and aggregate at yard level."
+  ],
+  "What Good Looks Like": [
+    "Consistent sampling method and volume (e.g., 300 bees) with clean equipment.",
+    "Thresholds agreed in advance, linked to specific actions.",
+    "Results logged immediately with date, colony ID, brood status, and weather notes."
+  ],
+  "Step-by-Step": [
+    "1) Choose method: alcohol wash (gold standard), sugar roll (non-lethal), or natural mite drop via sticky board.",
+    "2) Sampling: shake nurse bees from brood frames into a tub, scoop ~300 bees (half cup).",
+    "3) Alcohol wash: submerge bees in isopropyl alcohol, agitate 60 seconds, count dislodged mites.",
+    "4) Sugar roll: coat bees with powdered sugar, shake through a mesh, count mites in tray, then return bees.",
+    "5) Sticky boards: place under screened bottom for 24–72 hours, count daily drops, interpret with caution.",
+    "6) Calculate infestation: mites per 300 bees -> percentage infestation.",
+    "7) Decide: compare against seasonal thresholds and act per plan."
+  ],
+  "Seasonality & Climate": [
+    "Spring: baseline checks before major brood expansion.",
+    "Summer: monitor during flows and immediately post-harvest.",
+    "Autumn: crucial check before winter bees are raised.",
+    "Winter: natural drop can inform but is less precise."
+  ],
+  "Data & Thresholds": [
+    "Alcohol/sugar: ≥3 percent mid-season typically triggers treatment in many regions.",
+    "Autumn thresholds are lower because winter bee health is at stake (often 1–2 percent).",
+    "Natural drop: interpretation varies with brood status; use alongside direct sampling."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Deformed wings present -> Immediate quantitative test -> If over threshold, treat now.",
+    "Symptom: Spotty brood and dwindling -> Test 2 methods to confirm -> Treat and reassess in 14 days.",
+    "Symptom: High natural drop but low wash -> Check brood levels and sampling quality -> Repeat with fresh sample."
+  ],
+  "Common Pitfalls": [
+    "Inconsistent sample size leading to misleading percentages.",
+    "Sampling foragers instead of nurses from brood frames.",
+    "Relying only on sticky boards during heavy brood periods."
+  ],
+  "Tools & Techniques": [
+    "Labeled sampling jars, mesh lids, isopropyl alcohol, sieves, white trays.",
+    "Powdered sugar, measuring scoop, timer, notebook or digital log.",
+    "Screened bottoms and sticky boards with food-grade oil."
+  ],
+  "Safety & Compliance": [
+    "Handle alcohol away from flames; dispose responsibly.",
+    "Minimise bee losses by competent technique and swift handling."
+  ],
+  "Field Checklist": [
+    "Colony ID noted.",
+    "300 bees measured accurately.",
+    "Method and time recorded.",
+    "Mite count and percentage calculated.",
+    "Next action decided and logged."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to stakeholders why monitoring frequency increases before winter."
+  ],
+  "Cross-Links": [
+    "varroa_treatment_options",
+    "colony_nutrition",
+    "overwintering_colonies",
+    "hive_hygiene"
+  ],
+  "Keywords": [
+    "varroa",
+    "alcohol wash",
+    "sugar roll",
+    "natural mite drop",
+    "thresholds",
+    "DWV"
+  ],
+  "Further Reading": [
+    "National Bee Unit monitoring guidance.",
+    "USDA and provincial apiculture notes comparing methods."
+  ],
+  "Notes": "Use the same jar and scoop each time for repeatability. Calibrate your bee volume once with a count sample."
+}

@@ -1,0 +1,84 @@
+---
+title: "Brood Box Configurations"
+slug: brood-box-configurations
+draft: false
+updated: 2025-09-29
+keywords: ["brood box", "double brood", "14x12", "configuration"]
+cross_links: ["supering_strategy_frame_management", "comb_management_and_replacement", "making_and_managing_nucleus_colonies"]
+source: "seed-json"
+---
+
+> **At a Glance:** Choose single vs double brood (or 14x12) based on forage, climate, and management style—then commit to a clear frame plan.
+
+## Why it Matters
+- Right volume reduces swarming and improves overwintering.
+- Consistent configs simplify training and inventory.
+
+## Objectives
+- Match brood volume to colony genetics and flows.
+- Define frame cycle and queen excluder practices.
+- Document when/how to switch configurations.
+
+## What Good Looks Like
+- Single brood with aggressive supering in strong flows.
+- Double brood for prolific lines or late heather prep.
+- 14x12 for fewer boxes in cool regions; frame plan posted.
+
+## Step-by-Step
+1) Map local flows/overwinter needs; choose default configuration.
+2) Train on frame patterns and where to place stores/brood.
+3) Review in mid-season; switch only with a plan and spares.
+4) Standardise boxes/frames across yards to reduce chaos.
+
+## Seasonality & Climate
+- Cold regions benefit from larger brood or deeper frames.
+- Long dearths reward compact nests to reduce consumption.
+
+## Data & Thresholds
+- Frames of brood target by month.
+- Swarm indicator thresholds (capped brood area + congestion).
+
+## Diagnostics & Decision Tree
+- Chronic backfilling -> More brood volume or earlier supering.
+- Underperforming doubles -> Consolidate to single; cull poor queen.
+- Comb mangement mess -> Re-train; adopt frame map cards.
+
+## Common Pitfalls
+- Mixing configs within the same yard without labels.
+- Switching mid-flow causing chaos.
+- No drawn comb inventory to support chosen config.
+
+## Tools & Techniques
+- Frame maps, coloured pins, standardised excluders and spacers.
+- Inventory sheet for drawn comb.
+
+## Safety & Compliance
+- Manual handling—doubles get heavy; plan two-person lifts.
+- Consistent labelling to prevent cross-yard swaps.
+
+## Field Checklist
+- Default config chosen per yard.
+- Frame maps printed.
+- Drawn comb stock checked.
+
+## Communications
+- Short hyphens only.
+- Explain ‘why this config here’ so helpers stay consistent.
+
+## Further Reading
+- Regional brood configuration debates.
+- Overwintering comparisons by box type.
+
+## Cross-Links
+- [supering_strategy_frame_management](/topics/supering-strategy-frame-management/)
+- [comb_management_and_replacement](/topics/comb-management-and-replacement/)
+- [making_and_managing_nucleus_colonies](/topics/making-and-managing-nucleus-colonies/)
+
+## Keywords
+- brood box
+- double brood
+- 14x12
+- configuration
+
+## Notes
+Pick one default per yard to avoid a zoo of incompatible kit.

@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Accessible stalls welcome more people: clear pricing, good reach/height, readable signs, and inclusive language.",
+  "Why it Matters": [
+    "Increases sales and community goodwill.",
+    "Meets many venue policies and grant expectations."
+  ],
+  "Objectives": [
+    "Design stall height and reach for wheelchair users.",
+    "Use readable fonts and alt-text on digital promos.",
+    "Offer quiet times or bookings for demos/tastings."
+  ],
+  "What Good Looks Like": [
+    "Prices high-contrast, ≥16–18 pt; QR for larger text.",
+    "Free space in front; table edge clear of clutter.",
+    "Staff briefed on respectful assistance and allergies."
+  ],
+  "Step-by-Step": [
+    "1) Audit stall: height, reach, glare; adjust layout.",
+    "2) Redo signs with high contrast; test at 2 m distance.",
+    "3) Add alt-text to posts; include audio captions on reels.",
+    "4) Offer quiet slot; mark it on board and socials."
+  ],
+  "Seasonality & Climate": [
+    "Glare in summer; bring matte sleeves.",
+    "Wet/cold = non-slip mats and hand warmers for staff."
+  ],
+  "Data & Thresholds": [
+    "Sign readability at 2–3 m.",
+    "Aisle width target ≥1.2 m where possible."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Crowded front -> Add side table; rope a queue; pre-order QR.",
+    "Can’t read prices -> Larger font; better contrast; fewer words.",
+    "Allergen confusion -> Bigger placard; simple icons."
+  ],
+  "Common Pitfalls": [
+    "Tiny chalkboard pricing.",
+    "Cluttered fronts blocking reach.",
+    "No alt-text on social posts."
+  ],
+  "Tools & Techniques": [
+    "Contrast checker, matte sleeves, QR to price list.",
+    "Foldable risers to adjust height."
+  ],
+  "Safety & Compliance": [
+    "Food allergen signage mandatory.",
+    "Keep cables/weights clear of walking routes."
+  ],
+  "Field Checklist": [
+    "Prices visible and readable.",
+    "Front clear; aisle wide.",
+    "Alt-text and captions on promos."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Use welcoming language; avoid gatekeeping jargon."
+  ],
+  "Cross-Links": [
+    "market_stall_setup_food_hygiene_uk",
+    "popup_tastings_instore_demos",
+    "press_media_handling_basics"
+  ],
+  "Keywords": [
+    "accessibility",
+    "stall",
+    "contrast",
+    "alt-text"
+  ],
+  "Further Reading": [
+    "Accessible event stall tips.",
+    "Plain-language writing guides."
+  ],
+  "Notes": "Invite feedback: ‘How can we make our stall easier to use?’"
+}

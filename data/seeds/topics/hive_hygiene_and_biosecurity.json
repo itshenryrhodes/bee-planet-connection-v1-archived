@@ -1,0 +1,77 @@
+{
+  "At-a-Glance": "Simple hygiene habits reduce disease transmission: clean tools, frame discipline, sensible movement of bees and equipment, and tidy extraction practices.",
+  "Why it Matters": [
+    "Low hygiene increases risk of spreading brood disease and pests between colonies and apiaries.",
+    "Clean kit speeds inspections and improves product quality."
+  ],
+  "Objectives": [
+    "Standardise tool cleaning between yards; avoid sharing suspect frames.",
+    "Quarantine new colonies and used equipment before integration.",
+    "Keep extraction rooms food-safe with clear flows for clean/dirty kit."
+  ],
+  "What Good Looks Like": [
+    "Dedicated toolbox per yard or stringent clean-down between sites.",
+    "Frames labelled by colony/year; no casual frame swapping.",
+    "Wax, propolis, and cappings stored in sealed containers."
+  ],
+  "Step-by-Step": [
+    "1) Pre-visit - pack clean tools, spare gloves, disinfectant wipes/spray.",
+    "2) During inspection - keep brace/burr comb in a lidded tub; avoid dropping comb.",
+    "3) Suspect disease - isolate kit, mark colony, stop frame transfers, contact inspector as required.",
+    "4) Post-visit - flame hive tool/scraper where appropriate; wash suits regularly.",
+    "5) Extraction - one-way flow from uncapping to bottling; cover tanks; manage spills immediately."
+  ],
+  "Seasonality & Climate": [
+    "Warm months increase pathogen growth; intensify cleaning cadence.",
+    "Rainy spells increase mud/contamination risk around stands and entrances."
+  ],
+  "Data & Thresholds": [
+    "Cleaning log per yard (date, method).",
+    "Zero tolerance for sharing frames from suspect colonies."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Recurrent chalkbrood or foul odours -> Review ventilation and hygiene -> Replace old comb cycle.",
+    "Symptom: Sticky robbing events -> Tighten entrances, remove exposed honey, clean area.",
+    "Symptom: Visible mould on equipment -> Dry and disinfect; improve storage ventilation."
+  ],
+  "Common Pitfalls": [
+    "Mixing frames across colonies routinely.",
+    "Leaving cappings/honey exposed to robbers.",
+    "Reusing second-hand equipment without thorough inspection/cleaning."
+  ],
+  "Tools & Techniques": [
+    "Flame gun where safe, washing station, disinfectant approved for food areas.",
+    "Comb cycle plan (replace oldest 1/3 each season).",
+    "Seal-able tubs and bags for waste and wax."
+  ],
+  "Safety & Compliance": [
+    "Follow national disease reporting rules.",
+    "Use food-safe cleaners in extraction spaces; document sanitation."
+  ],
+  "Field Checklist": [
+    "Clean tools packed.",
+    "Waste/wax tubs with lids.",
+    "Spare nitrile gloves and wipes.",
+    "Comb cycle notes updated."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to stakeholders why hygiene lowers chemical reliance."
+  ],
+  "Cross-Links": [
+    "honey_extraction_best_practice",
+    "varroa_monitoring_methods",
+    "overwintering_colonies"
+  ],
+  "Keywords": [
+    "biosecurity",
+    "hive hygiene",
+    "comb cycle",
+    "sanitation"
+  ],
+  "Further Reading": [
+    "NBU disease recognition and hygiene leaflets.",
+    "Food safety guidance for small producers."
+  ],
+  "Notes": "Photograph suspect frames before sealing; images help inspectors and records."
+}
