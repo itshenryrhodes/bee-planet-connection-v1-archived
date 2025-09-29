@@ -79,3 +79,33 @@ a:hover{text-decoration:underline}
   .intro-split .intro-media{order:-1; max-width:none}
   .intro-split .intro-media img{height:160px}
 }
+
+/* Section menu */
+.section-menu{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 16px;
+  padding:10px 0 14px;
+  margin:8px 0 20px;
+  border-bottom:1px solid #eee;
+}
+.section-menu a{
+  padding:6px 8px;
+  border-radius:8px;
+  text-decoration:none;
+}
+.section-menu a:hover{
+  background:rgba(11,61,145,.08);
+  text-decoration:none;
+}
+@media (max-width:640px){
+  .section-menu{gap:8px 12px}
+  .section-menu a{padding:6px 6px}
+}
+
+/* Active nav state */
+.main-nav a.active,
+.main-nav a[aria-current="page"]{
+  background:rgba(11,61,145,.12);
+  text-decoration:none;
+}
