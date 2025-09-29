@@ -1,0 +1,82 @@
+{
+  "title": "Bee-friendly landscaping for landlords and estates (simple wins)",
+  "slug": "bee_friendly_landscaping_landlords",
+  "category": "Community & inclusion",
+  "categories": ["Operations", "Projects"],
+  "taxonomy": {
+    "pillar": "Community & inclusion",
+    "subpillars": ["Forage & planting"],
+    "topics": ["landscaping", "hedges", "trees", "mowing", "water"],
+    "audience": ["landowner", "club-officer", "council", "intermediate"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["setup", "growth"]
+  },
+  "tags": ["gap-weeks", "hedgerow", "mow-less", "plant-lists"],
+
+  "At-a-Glance": "Estates can help bees without drama. Plant nectar-heavy trees and shrubs that hit local gap weeks, mow less and higher on selected verges, and leave some hedges to flower before trimming. Add shallow water bowls with stones in hot spots. Publish a short planting list by soil type and a mowing schedule that balances neatness and bloom. Track changes with a simple photo log. These tweaks bring pollinators, colour and good PR with minimal cost or maintenance upheaval.",
+  
+  "Why it Matters": "Most landlord grounds are managed for tidy lines, not nectar. A few evidence-backed choices shift outcomes fast: one line of lime or field maple trees feeds more bees than dozens of pots; mowing schedules that allow clover to flower create summer forage; flowering hedges support birds and bees; water stations keep bees out of HVAC trays. Publishing a small plan builds tenant support and keeps contractors aligned. Clubs can partner to supply plant lists and seasonal advice. The result is a greener site that feels cared for and biodiverse, without turning lawns into wilderness or budgets upside down.",
+  
+  "Step-by-Step": [
+    "Map current planting and sun aspects; identify gap weeks from local calendars.",
+    "Choose trees, shrubs and ground covers that fit soil and space.",
+    "Adjust mowing: higher cut, selective no-mow patches, clover-friendly schedules.",
+    "Install discreet water sources; maintain fortnightly in heat.",
+    "Review seasonally; add photos and notes to a short report."
+  ],
+
+  "Context & Narrative": "You meet the site manager with a one-page plan: three street trees for August nectar, clover-friendly mowing on two sunny edges, and a hedge trim shifted to after bloom. A contractor gets clear instructions with a small map. Two months later, clover hums and tenants comment on butterflies by the path. A shallow bowl by the bike rack keeps bees out of AC units. The manager uses your photo log in a quarterly update—simple, visible wins without battles over lawns. Next budget round, adding two shrubs per year becomes standard. Bee-friendly becomes estate-friendly because it looks tidy and works.",
+  
+  "Evidence Highlights": [
+    "Trees and shrubs deliver reliable nectar vs pots alone.",
+    "Mow-less schedules increase clover and pollinator visits.",
+    "Water sources reduce nuisance drinking at HVAC and pools."
+  ],
+
+  "Data Tables": {
+    "plant_list_headers": ["Plant", "Type", "Month", "Soil/aspect", "Notes"],
+    "mowing_schedule_headers": ["Area", "Height", "Frequency", "Seasonal note"]
+  },
+
+  "Common Pitfalls": [
+    "Plant lists heavy on exotics that fail locally.",
+    "All-or-nothing mowing changes that alienate stakeholders.",
+    "No maintenance plan for water sources."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Start with one verge and one hedge—prove it works, then scale."}
+  ],
+
+  "FAQs": [
+    {"q": "Will it look messy?", "a": "No—selective patches and tidy edges keep a cared-for look."},
+    {"q": "Allergies and stings?", "a": "Site plants away from benches and entries; communicate bloom periods."}
+  ],
+
+  "Seasonality & Climate": "Drought shifts bloom—favor drought-tolerant species and mulch in summer.",
+  
+  "Suggested Figures": [
+    {"alt": "Estate plan with pollinator zones", "caption": "Trees, hedge, and clover patches marked for a tidy, bee-friendly layout."}
+  ],
+
+  "Glossary": [
+    {"term": "Gap week", "def": "Period with little nectar/pollen; target for planting support."}
+  ],
+
+  "Cross-links": [
+    "forage_calendars_uk_regional",
+    "urban_stakeholder_neighbour_relations",
+    "apiary_setup_site_selection"
+  ],
+
+  "Sources": [
+    {"name": "Local authority pollinator action plans", "url": "https://www.gov.uk/"},
+    {"name": "Wildlife trusts planting guidance", "url": "https://www.wildlifetrusts.org/"}
+  ],
+
+  "Scrape-Guidance": "Lift hedge, mowing and planting practices from council and wildlife guidance; keep lists region-appropriate and non-invasive."
+}

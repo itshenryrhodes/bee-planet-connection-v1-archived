@@ -1,9 +1,70 @@
 {
-  "At-a-Glance": "Urban yards succeed on soft skills: proactive neighbour comms, clear signage, tidy kit, and swift complaint handling.",
-  "Why it Matters": "Perception drives permissions. One sting incident or messy yard can shutter multiple sites.",
-  "Step-by-Step": "Pre-site checklist (access, water, shade, flight paths). Written agreement with landlord. Welcome sheet to neighbours with hornet/reporting info and beekeeper contact. Office-hours inspections. Incident log and escalation pathway.",
-  "Seasonality & Climate": "Heat islands intensify summer dearth and overheating—plan shade and water early.",
-  "Common Pitfalls": "Open feeding, wide entrances near walkways, and unannounced swarm management visits.",
-  "Tools & Materials": "Site risk assessment template, laminated signage, waterers, robbing screens.",
-  "Further Reading & Sources": "Urban beekeeping codes of practice; local council guidance."
+  "At-a-Glance": "Urban yards succeed on soft skills: proactive neighbour comms, tidy kit, swift complaint handling, and predictable inspection hours.",
+  "Why it Matters": [
+    "Perception drives permissions; a single sting incident can shutter multiple sites.",
+    "Goodwill opens doors to rooftops, community gardens, and corporate ESG sites."
+  ],
+  "Objectives": [
+    "Minimise nuisance (beelines, bearding, water-seeking) with siting and water.",
+    "Create a simple comms pack: welcome note, emergency contact, swarm guidance.",
+    "Keep inspections during office hours except for emergencies."
+  ],
+  "What Good Looks Like": [
+    "Discreet hives screened from sightlines; entrances away from walkways.",
+    "Clean, compact kit storage; no burr comb left out.",
+    "Water source closer than neighbours’ pools and birdbaths.",
+    "Incident log with dates, actions, and follow-ups."
+  ],
+  "Step-by-Step": [
+    "1) Pre-placement walkaround with site owner; agree locations and access.",
+    "2) Welcome sheet to immediate neighbours with contact and swarm instructions.",
+    "3) Water and forage plan; plant bee-friendly species on site where possible.",
+    "4) Inspection cadence posted (e.g., Tue mornings) to manage expectations.",
+    "5) Complaints protocol: acknowledge same day, investigate, act, close the loop.",
+    "6) Annual review: share positive metrics (pollinator planting, honey donations)."
+  ],
+  "Seasonality & Climate": [
+    "Summer dearth increases water-seeking and defensiveness; top up water daily.",
+    "Storm heatwaves can cause bearding; add shade and ventilation to reduce street-level concern."
+  ],
+  "Data & Thresholds": [
+    "Keep follow-bee reports to near zero via screens and siting.",
+    "Respond to complaints within 24 hours with a documented action."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Bees at neighbour pool -> Improve on-site water (float surfaces, mineral pinch) -> Re-aim entrances.",
+    "Symptom: Frequent follow-bees -> Raise screen/fence, adjust inspection time and smoke usage.",
+    "Symptom: Swarm sighted -> Deploy swarm plan; communicate outcome to neighbours."
+  ],
+  "Common Pitfalls": [
+    "Open feeding and sticky cappings attracting robbing.",
+    "Evening/dusk inspections increasing follow-bees.",
+    "Unannounced swarm control visits with visible disruption."
+  ],
+  "Tools & Techniques": [
+    "Printed neighbour cards, QR to swarm guidance page.",
+    "Water tubs with corks/pebbles; drip irrigation timer.",
+    "Privacy screens or trellis planters."
+  ],
+  "Safety & Compliance": [
+    "Follow local ordinances/landlord rules; rooftop fall protection.",
+    "Log incidents; keep liability insurance where applicable."
+  ],
+  "Field Checklist": [
+    "Water refreshed.",
+    "Screens intact; entrances safe.",
+    "Next inspection time posted.",
+    "Comms kit in bag (cards, tape, signage)."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Use calm, factual tone; share pollinator planting tips."
+  ],
+  "Cross-Links": ["apiary_setup", "colony_defense_and_behaviour", "pesticide_awareness_and_incident_reporting"],
+  "Keywords": ["urban beekeeping", "neighbour relations", "stakeholder management", "swarm protocol"],
+  "Further Reading": [
+    "City beekeeping association urban guidelines.",
+    "Case studies on rooftop apiaries and community engagement."
+  ],
+  "Notes": "Keep a lightweight incident-response template on your phone for speed."
 }

@@ -1,0 +1,79 @@
+{
+  "At-a-Glance": "Honey bees orient using a sun compass, polarized light, landmarks, odour plumes, and magnetoreception. Young workers run looping orientation flights to build a cognitive map before graduating to foraging.",
+  "Why it Matters": [
+    "Orientation efficiency drives forager return rates, brood provisioning, and honey yields.",
+    "Disorientation after moves or yard changes increases drifting, queen loss, and neighbour impact.",
+    "Good orientation design reduces management time and public risk."
+  ],
+  "Objectives": [
+    "Site apiaries so flight lines are clear of footpaths and neighbour windows.",
+    "Standardise hive alignment and visual cues to reduce drifting.",
+    "Reorient methodically after any move or major yard rearrangement."
+  ],
+  "What Good Looks Like": [
+    "Consistent stand spacing and entrance direction across the yard.",
+    "Distinct visual identifiers per hive - colour blocks, symbols, numbers.",
+    "Entrances facing natural corridors, not walkways or doors.",
+    "A written reorientation plan for short and long moves."
+  ],
+  "Step-by-Step": [
+    "1) Site assessment - map wind, sun path, landmarks, access, and human traffic.",
+    "2) Stand layout - set a grid, keep consistent pitch and spacing 0.8-1.2 m.",
+    "3) Visual differentiation - add large symbols or colours on brood boxes or stands.",
+    "4) First week - avoid moving boxes and big changes while bees map the yard.",
+    "5) Short moves - apply the 3 foot or 3 mile rule. For 1-10 m moves, block entrances with foliage for 48 hours to force reorientation.",
+    "6) Long moves - move at night, strap loads, level stands at destination, reduce entrances for 2-3 days, observe traffic.",
+    "7) Yard edits - when rotating boxes or adding pallets, change one parameter at a time and re-check drift.",
+    "8) Monitoring - watch for clusters at wrong hives, elevated bearding, and lost-bee clouds mid-afternoon."
+  ],
+  "Seasonality & Climate": [
+    "Spring - orientation flights spike as new cohorts graduate.",
+    "Overcast or gusty days - bees rely more on landmarks and odour plumes.",
+    "Urban heat islands - thermals and street canyons can bend flight lines."
+  ],
+  "Data & Thresholds": [
+    "Return-to-traffic stabilises within 24-72 hours after a managed short move.",
+    "Marked-bee drift rates should be low single digits in well-differentiated yards.",
+    "Entrance confusion visible for >3 days suggests inadequate cues or layout."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Many bees clustering on adjacent hives -> Check visual distinctiveness -> Add bold symbols -> Narrow entrances for 48 h.",
+    "Symptom: Afternoon lost-bee clouds -> Review recent yard changes -> Add foliage screens -> Force reorientation.",
+    "Symptom: Rising stings near footpath -> Turn entrances away -> Add fence/screen to raise flight path >2 m."
+  ],
+  "Common Pitfalls": [
+    "Moving hives a few metres without reorientation steps.",
+    "Uniform white equipment in tight rows causing heavy drift.",
+    "Entrances aimed at walkways or neighbour gardens.",
+    "Large same-day yard rearrangements."
+  ],
+  "Tools & Techniques": [
+    "Foliage screens or entrance grass plugs to prompt reorientation.",
+    "Windbreaks and shade sails to stabilise air near entrances.",
+    "Apiary map and stand labels for consistent layouts.",
+    "Distinct hive markings - colour panels, shapes, numbers."
+  ],
+  "Safety & Compliance": [
+    "Keep flight lines away from public access and livestock.",
+    "Use discrete signage where recommended by local authority.",
+    "Log moves and note reorientation steps for due diligence."
+  ],
+  "Field Checklist": [
+    "Entrances face safe corridors.",
+    "Distinct visual ID per hive.",
+    "Stands level, consistent pitch.",
+    "Reorientation plan in notebook.",
+    "Observe traffic 24-72 h post-move."
+  ],
+  "Communications": [
+    "House style uses short hyphens only.",
+    "If urban, keep a neighbour note template ready for planned moves."
+  ],
+  "Cross-Links": ["apiary-setup", "urban_stakeholder_neighbour_relations", "colony_defense_and_behaviour"],
+  "Keywords": ["orientation flights", "sun compass", "polarized light", "landmarks", "drifting", "reorientation"],
+  "Further Reading": [
+    "NBU advisory leaflets on apiary siting and management.",
+    "J Seeley - Honeybee Ecology, practical insights on foraging and navigation."
+  ],
+  "Notes": "Augment with photos of your actual stand markers and yard map."
+}

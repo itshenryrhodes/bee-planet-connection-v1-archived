@@ -1,0 +1,69 @@
+{
+  "At-a-Glance": "Planned brood breaks cut varroa reproduction by interrupting mite access to capped brood. Combine with oxalic acid for powerful reductions.",
+  "Why it Matters": [
+    "Varroa reproduce in capped brood; breaks reset the mite population.",
+    "Useful when treatment windows are constrained by weather or supers.",
+    "Can be done with minimal chemical input when managed well."
+  ],
+  "Objectives": [
+    "Choose a brood break method that fits season and resources.",
+    "Time oxalic acid application when broodless or near-broodless.",
+    "Track mite counts pre and post to confirm efficacy."
+  ],
+  "What Good Looks Like": [
+    "Queen caging, nuc splits, or shook swarm planned with calendar and equipment ready.",
+    "OA applied precisely during the broodless window.",
+    "Post-break mite counts show >80 percent reduction."
+  ],
+  "Step-by-Step": [
+    "1) Baseline: alcohol or sugar wash to set infestation starting point.",
+    "2) Method options: queen cage for 14–21 days, nucleus split removing brood, or shook swarm onto foundation.",
+    "3) Manage nutrition and space during the break to avoid stress.",
+    "4) Apply OA near end of break when brood is minimal or absent.",
+    "5) Release queen or recombine as planned; restore normal volume.",
+    "6) Re-test in 10–14 days and record outcome."
+  ],
+  "Seasonality & Climate": [
+    "Late summer and early autumn are prime for protecting winter bees.",
+    "Spring breaks can also work but must not compromise flow build-up."
+  ],
+  "Data & Thresholds": [
+    "Target post-intervention reduction >80 percent vs baseline.",
+    "Autumn goal is <1–2 percent infestation entering winter bee phase."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Poor reduction -> Check timing vs brood status -> Repeat OA when broodless or switch method.",
+    "Symptom: Queen slow to lay after cage -> Check nutrition and space -> Verify acceptance.",
+    "Symptom: Colony setback -> Evaluate break length and seasonality; avoid late heavy interventions."
+  ],
+  "Common Pitfalls": [
+    "Applying OA too early while capped brood remains.",
+    "Overlong queen caging causing population dip before flow.",
+    "Skipping baseline or follow-up counts."
+  ],
+  "Tools & Techniques": [
+    "Queen cages and calendars, OA dribble or vapor kit, timers.",
+    "Shook swarm gear, foundation frames, feed as needed."
+  ],
+  "Safety & Compliance": [
+    "Follow local approvals and PPE for acids.",
+    "Record treatments and brood break dates for audits."
+  ],
+  "Field Checklist": [
+    "Baseline count recorded.",
+    "Method chosen and scheduled.",
+    "OA timing set near broodless point.",
+    "Follow-up count booked."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to helpers why timing is everything for OA efficacy."
+  ],
+  "Cross-Links": ["varroa_monitoring_methods", "varroa_treatment_options", "overwintering_colonies"],
+  "Keywords": ["brood break", "queen caging", "shook swarm", "oxalic acid", "varroa reduction"],
+  "Further Reading": [
+    "Comparative studies on brood break plus OA efficacy.",
+    "Inspectorate guidance on shook swarm procedure."
+  ],
+  "Notes": "Mark frames and dates clearly when running multiple breaks across a yard."
+}

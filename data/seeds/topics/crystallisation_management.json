@@ -1,0 +1,81 @@
+{
+  "title": "Crystallisation management (prevention, warming, honesty)",
+  "slug": "crystallisation_management",
+  "category": "Products & processing",
+  "categories": ["Operations"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Extraction & bottling"],
+    "topics": ["crystallisation", "granulation", "warming", "storage"],
+    "audience": ["beginner", "intermediate", "market-seller"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["seed-fine", "storage-temp", "water-content", "customer-education"],
+
+  "At-a-Glance": "Most honeys crystallise. Manage it, do not fear it. Prevention starts with clean extraction, low moisture, and prompt bottling into warm jars. For smooth textures, seed with fine crystals or run a controlled warming step to reset coarse crystals. Use gentle warming - water jacket or cabinet - and keep below typical quality thresholds. Store cool and steady, not on a windowsill. Educate buyers with a small note on the label or a card: granulation is natural and reversible with a warm water bath. Honesty and simple care keep quality and trust high.",
+
+  "Why it Matters": "Granulation is chemistry plus handling. Rapid, coarse crystals are often a mix of nectar profile and post harvest practice. Good staging, filtering that avoids lots of fines, and steady storage reduce surprises. When jars set, buyers need guidance and you need a plan that protects aroma and enzymes. Overheating for fast fixes harms quality and reputation; a measured approach keeps character. Seeding and creaming are positive uses of crystallisation - you steer texture instead of chasing it after the fact. Clear care instructions reduce returns and build confidence that your honey is real and cared for, not industrially processed. Your choices here echo on stall days, in reviews, and in repeat custom.",
+
+  "Step-by-Step": [
+    "Extract cleanly, bottle promptly into warm jars.",
+    "Store tanked honey at steady cool temperatures to slow coarse growth.",
+    "For set jars, warm gently in a water jacket or cabinet until crystals melt.",
+    "Add label notes on granulation and home warming guidance.",
+    "Consider seeding or creaming for stable fine texture."
+  ],
+
+  "Context & Narrative": "Texture is a promise. If you sell runny honey in August you want it to stay pleasant into autumn. That starts on extraction day: dry supers, warm combs, and coarse filtering that removes wax but does not shred crystals smaller. Bottling warm reduces micro nucleation in necks. In storage, you avoid temperature swings and bright light. If a batch goes grainy, you have options: a gentle cabinet at controlled temperature, no hotspots, and patient rotations. You do not cook honey - you coax it. Add a short care line to your labels and a card on the table that reads like a friend - granulation is natural, to soften stand the jar in warm water and stir. For future seasons, explore creamed honey so buyers who like smooth spreads are delighted on purpose. You can also split floral types - some will always set faster - and label them transparently. Quality is not perfection, it is the sum of small caring choices that protect flavour and trust.",
+
+  "Evidence Highlights": [
+    "Temperature stability slows coarse crystal growth.",
+    "Gentle warming protects quality while restoring runny texture.",
+    "Customer guidance reduces returns and increases trust."
+  ],
+
+  "Data Tables": {
+    "care_card_points": ["Granulation is natural", "Warm water bath to soften", "Do not microwave", "Store cool and dark"]
+  },
+
+  "Common Pitfalls": [
+    "Microwave fixes that damage quality.",
+    "Hot spots from direct element heaters.",
+    "No buyer guidance causing avoidable complaints."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Bottle into pre warmed jars - fewer neck crystals and slower set."}
+  ],
+
+  "FAQs": [
+    {"q": "What temp is safe?", "a": "Use the lowest temperature that achieves melting - protect aroma and enzymes."},
+    {"q": "Which flora set fast?", "a": "Oilseed rape and some spring mixes set quickly - plan for creaming or fast sales."}
+  ],
+
+  "Seasonality & Climate": "Cool autumn homes accelerate set - prepare care notes before the first cold snap.",
+
+  "Suggested Figures": [
+    {"alt": "Crystallisation pathways", "caption": "How temperature and seeding affect texture outcomes."}
+  ],
+
+  "Glossary": [
+    {"term": "Seeding", "def": "Adding fine crystals to steer crystallisation toward a smooth texture."}
+  ],
+
+  "Cross-links": [
+    "honey_processing_basics",
+    "creamed_honey_dyce_method",
+    "honey_labelling_legal_basics_uk_eu"
+  ],
+
+  "Sources": [
+    {"name": "Food quality guidance - honey handling", "url": "https://www.fao.org/"},
+    {"name": "Apiculture texts on crystallisation", "url": "https://link.springer.com/"}
+  ],
+
+  "Scrape-Guidance": "Lift safe warming ranges and storage best practice. Frame buyer education lines and a care card."
+}

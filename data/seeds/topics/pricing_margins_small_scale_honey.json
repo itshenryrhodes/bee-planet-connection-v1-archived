@@ -1,0 +1,81 @@
+{
+  "title": "Pricing & margins for small scale honey (costing template)",
+  "slug": "pricing_margins_small_scale_honey",
+  "category": "Products & processing",
+  "categories": ["Community & inclusion"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Commercial basics"],
+    "topics": ["pricing", "margins", "costing", "pack-sizes"],
+    "audience": ["market-seller", "beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["COGS", "overheads", "VAT-threshold", "wholesale-vs-retail"],
+
+  "At-a-Glance": "Price from the numbers, not the nerves. Build a simple COGS model that includes jars, lids, labels, fuel, stall fees, and realistic labor. Add overheads like insurance and equipment depreciation. Set a target margin for retail and a different one for wholesale, then test price points against local markets. Use round prices that read cleanly on boards. Keep a small, high trust range: two jar sizes and one gift option. Review after each season and move prices with your inputs, not with guilt or gossip.",
+
+  "Why it Matters": "Small producers underprice because they skip some costs or copy the lowest stall on the street. That traps you in busy days with thin margins. A transparent costing sheet protects your time and funds next season's kit. Retail and wholesale are different games: wholesale buys volume but needs tight costs and fast fulfillment, while retail pays for your story time and stall day. A price that reflects true cost plus fair margin keeps you steady when jars and fuel jump in price. It also lets you say yes to donations and discounts because you know what each jar contributes. Pricing is not a one time decision - it is a tidy spreadsheet and a monthly habit that keeps the lights on and your beekeeping joyful.",
+
+  "Step-by-Step": [
+    "List inputs per jar size - jars, lids, labels, shrink, boxes.",
+    "Add variable costs - fuel per market, fees, card charges.",
+    "Spread overheads - insurance, depreciation, storage.",
+    "Choose margins and compute retail and wholesale prices.",
+    "Review quarterly and adjust with input changes."
+  ],
+
+  "Context & Narrative": "Build your sheet like a recipe. One column per jar size, rows for inputs, and a notes column for suppliers. Add a line for your time per jar or per market day so the numbers respect your life. You then add overheads as a monthly number spread over expected sales - this keeps under the radar costs honest. Card fees and stall fees belong in the model too. When you compare to local prices, do it with your feet: walk the market, note weights, origin claims, and packaging. You are not forced to be the cheapest - you can be the clearest. On the board, keep prices simple and round so change is easy and buyers decide quickly. For wholesale, package in case sizes, agree delivery days, and write terms that keep both sides happy. A small club can share a template so new sellers avoid learning by loss. The cash you keep funds better jars and calmer extraction days next year. That is what good pricing buys: continuity and calm.",
+
+  "Evidence Highlights": [
+    "COGS plus overhead allocation yields stable pricing decisions.",
+    "Round prices and small ranges increase conversion at the stall.",
+    "Separate retail and wholesale margins reduce confusion and conflict."
+  ],
+
+  "Data Tables": {
+    "costing_headers": ["Jar size", "Jar", "Lid", "Label", "Packaging", "Fuel/fees", "Card fees", "Overhead alloc", "COGS total", "Margin %", "Retail", "Wholesale"]
+  },
+
+  "Common Pitfalls": [
+    "Copy pricing without matching costs.",
+    "Ignore card and stall fees.",
+    "Too many SKUs that slow decisions and waste labels."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Print your costing sheet and keep it in the stall case - change prices when suppliers change."}
+  ],
+
+  "FAQs": [
+    {"q": "Discounts?", "a": "Offer case or multi jar bundles that preserve margin without odd price points."},
+    {"q": "Gift packs?", "a": "Cost the packaging and time - price as a premium SKU, not a free extra."}
+  ],
+
+  "Seasonality & Climate": "Late season inputs often rise - review after harvest before Christmas markets.",
+
+  "Suggested Figures": [
+    {"alt": "Pricing template screenshot", "caption": "Columns for COGS, overhead, and margin leading to retail and wholesale."}
+  ],
+
+  "Glossary": [
+    {"term": "COGS", "def": "Cost of goods sold - direct costs to produce each unit."}
+  ],
+
+  "Cross-links": [
+    "honey_labelling_legal_basics_uk_eu",
+    "market_stall_setup_food_hygiene_uk",
+    "honey_processing_basics"
+  ],
+
+  "Sources": [
+    {"name": "Small business pricing basics", "url": "https://www.gov.uk/"},
+    {"name": "Market trader associations", "url": "https://www.nafm.org.uk/"}
+  ],
+
+  "Scrape-Guidance": "Extract simple pricing principles and common charges. Provide a CSV friendly header set for a costing sheet."
+}

@@ -1,0 +1,82 @@
+{
+  "title": "Simple HACCP-lite for honey bottling (hazards, controls, records)",
+  "slug": "haccp_lite_honey_bottling",
+  "category": "Products & processing",
+  "categories": ["Risk & compliance", "Operations"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Compliance"],
+    "topics": ["HACCP", "hazards", "controls", "records", "traceability"],
+    "audience": ["beginner", "intermediate", "market-seller", "club-officer"],
+    "intent": ["policy", "how-to"],
+    "regions": ["UK", "EU"],
+    "season": ["summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["clean-down", "allergen-control", "glass-checks", "lot-coding"],
+
+  "At-a-Glance": "HACCP sounds heavy; at small scale it’s just ‘what might go wrong and what do we do about it’. List simple hazards (glass, water ingress, cross-contact), add controls (jar checks, dry room, separate infused lines), and keep short records (batch sheet, clean-down tickbox). Label with lot codes and keep a sample jar. If you add ingredients, treat that as a separate flow with an allergen note. Review your sheet yearly. This light discipline makes market days calmer and answers questions without panic.",
+  
+  "Why it Matters": "Honey is low risk but not no risk. Bottling days juggle warm jars, sticky floors, labels, and lids; misses here show up later as leakers, cloudy jars, or compliance questions. A pared-down HACCP gives you confidence: you check jars for chips, keep a dry workspace to avoid moisture creep, and separate pure honey from any infused or PPDS products. Cleaning has a start and finish, not a vague intention. Records are tiny—date, batch, jar count, any incidents—but they anchor lot codes and best-before dates to reality. If Trading Standards or a shop asks, you have a tidy packet that shows you’re careful and consistent. Most of all, your own stress drops because you know where the risks live and how you tame them.",
+  
+  "Step-by-Step": [
+    "Map the flow: warm jars → fill → lid → wipe → label → code → box.",
+    "List hazards at each step and your control (visual checks, dryness, separation).",
+    "Make one A4 checklist for clean-down and start-up.",
+    "Record batch details and keep one sample jar per lot.",
+    "Review annually; tweak controls after any incident."
+  ],
+
+  "Context & Narrative": "Your bottling corner reads like a recipe card. Before you start, you tick clean-down: surfaces wiped, hair tied, pets out, bins lined, floor dry. Jars sit warming in a cabinet; you inspect rims as they come out and reject any chips. Honey flows from a settling tank through a coarse strainer if needed; you keep lids upside down on a clean tray. Each filled jar gets a firm lid, a wipe, and a label. You stamp a lot code that encodes date and apiary; a line on the batch sheet notes jar size, count, and any hiccups. A jug spills? It goes in the incidents box and you add ‘wiped, re-sanitised’ to the sheet. \n\nIf you make an infused line, it happens on a different day or at least after a full clean-down, with separate utensils. That batch sheet carries an allergen line if relevant. At the end, you stage boxes cool and dark, write a best-before two years out, and drop one jar into the retention shelf. The whole packet lives in a slim folder—boring, short, and exactly what you need when a shop asks for a spec or a customer emails six months later about a question on a code. This is HACCP-lite: clear thought, tiny records, big calm.",
+  
+  "Evidence Highlights": [
+    "Visual glass checks reduce contamination and leaks.",
+    "Dry bottling spaces reduce fermentation risk from moisture creep.",
+    "Lot coding and retention jars enable quick, targeted recalls if needed."
+  ],
+
+  "Data Tables": {
+    "haccp_hazards_headers": ["Step", "Hazard", "Control", "Record", "Owner"],
+    "batch_log_headers": ["Date", "Apiary/boxes", "Lot", "Jar size", "Count", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Mixing infused and pure lines without separation.",
+    "No jar rim checks leading to leaks.",
+    "Skipping records because ‘it’s just honey’."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Stamp lot codes after lidding but before boxing—fast and consistent."}
+  ],
+
+  "FAQs": [
+    {"q": "Do I need full HACCP certification?", "a": "Follow local requirements; at small scale, a simple documented plan usually suffices."},
+    {"q": "How long to keep records?", "a": "Keep at least as long as your best-before window plus a cushion."}
+  ],
+
+  "Seasonality & Climate": "Humid spells need dehumidifiers; winter rooms need warmth for flow and clean fills.",
+  
+  "Suggested Figures": [
+    {"alt": "HACCP-lite flow map", "caption": "Bottling steps with hazards and controls at a glance."}
+  ],
+
+  "Glossary": [
+    {"term": "HACCP", "def": "Hazard Analysis and Critical Control Points—a structured food safety approach."}
+  ],
+
+  "Cross-links": [
+    "honey_processing_basics",
+    "honey_labelling_legal_basics_uk_eu",
+    "disease_control_logbook"
+  ],
+
+  "Sources": [
+    {"name": "Food safety management (small food businesses)", "url": "https://www.food.gov.uk/"},
+    {"name": "Trading Standards basics", "url": "https://www.gov.uk/"} 
+  ],
+
+  "Scrape-Guidance": "Extract small-producer food safety expectations and translate into a one-page hazards/controls/records sheet."
+}

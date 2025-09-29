@@ -1,0 +1,81 @@
+{
+  "title": "Propolis collection & processing (traps, clean up, tinctures)",
+  "slug": "propolis_collection_processing",
+  "category": "Products & processing",
+  "categories": ["Operations"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Byproducts"],
+    "topics": ["propolis-traps", "scraping", "freezing", "tincture-basics", "filtration"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["trap-screens", "cold-brittle", "alcohol-extraction", "labelling-compliance"],
+
+  "At-a-Glance": "Propolis harvest is tidy when planned. Use trap screens under roofs or scrape from frames when legal and ethical. Freeze to make brittle, then crumble and sieve out debris. For tinctures, use food-grade alcohol at typical strengths, label honestly, and avoid medical claims. Filter fine, bottle dark, and store cool. Keep separate logs for raw and processed batches, recording hive sources and dates. Clean handling protects aroma and colour, and good labels protect your reputation and keep you on the right side of rules for extracts.",
+  
+  "Why it Matters": "Sticky enthusiasm without process yields mucky propolis full of wood and wax. Traps and freezing turn it into a clean byproduct stream with minimal colony disruption. Extraction is chemistry plus compliance: use approved food-grade solvents, document batch ratios, and avoid implying cures or medical outcomes in copy. Clear filtration and dark glass extend shelf life; tight caps and proper storage limit aroma bleed. If you sell raw granules, sieving and foreign-body checks are your friends. Clubs can share trap screens and a simple SOP that keeps everything repeatable. Done right, propolis becomes a neat revenue or barter stream that rides alongside honey and wax instead of making your kit gummy and your copywriter nervous.",
+  
+  "Step-by-Step": [
+    "Install trap screens; harvest when filled and weather cools.",
+    "Freeze and flex to fracture; sieve to remove debris.",
+    "For tincture: weigh propolis, add measured food-grade alcohol.",
+    "Steep with occasional agitation; filter fine; bottle dark.",
+    "Label with ingredients, strength, batch code; store cool and dark."
+  ],
+
+  "Context & Narrative": "On a cool evening you lift a roof and slide out a propolis trap, now patterned with the hive’s repairs. The sheet goes straight into a bag and into the freezer. Tomorrow it flexes and rains gold-brown shards onto a sieve; splinters and wax stay back. You weigh the clean granules into a jar, cover with the chosen alcohol strength, and note the ratio and date on a label. Over the next week or two you swirl the jar gently and watch colour deepen. Filtration day is calm—paper filters, patience, and a lined tray for drips. The tincture slips into dark bottles with dropper caps; labels stick clean with a plain ingredients line and no medical claims. \n\nRaw granules get a separate path: a foreign-body check, then kraft pouches with batch codes. Everything lands in a log with hive IDs and dates. You wipe the bench and smile—no mystery stickiness, no vague claims, just tidy, traceable products. Your customers get a straight story and clean goods; your bees scarcely noticed the traps under their roof. This is byproduct craft at its best: low drama, high fidelity to what the hive offers.",
+  
+  "Evidence Highlights": [
+    "Freezing improves propolis fragmentation and cleaning.",
+    "Dark storage reduces oxidation and aroma loss.",
+    "Clear labelling without medical claims reduces compliance risk."
+  ],
+
+  "Data Tables": {
+    "batch_log_headers": ["Date", "Apiary/hive", "Raw weight", "Solvent & %", "Ratio", "Filter grade", "Bottles out", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Scraping structural propolis excessively and stressing colonies.",
+    "Using non food-grade solvents.",
+    "Implying health claims on labels or stalls."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Line a tray with silicone when breaking frozen sheets—easy clean and full capture."}
+  ],
+
+  "FAQs": [
+    {"q": "Can I use vodka?", "a": "Use food-grade alcohol at a suitable strength and declare ingredients clearly."},
+    {"q": "How long to steep?", "a": "Commonly 1–3 weeks with agitation; filter when extraction plateaus."}
+  ],
+
+  "Seasonality & Climate": "Cooler weather firms propolis in traps; freezing aids processing any time.",
+  
+  "Suggested Figures": [
+    {"alt": "Trap and crumble workflow", "caption": "Trap install → freeze → flex → sieve → extract/filter → bottle."}
+  ],
+
+  "Glossary": [
+    {"term": "Trap screen", "def": "A flexible sheet with slots that encourages propolis deposition under the roof."}
+  ],
+
+  "Cross-links": [
+    "beeswax_rendering_storage",
+    "honey_labelling_legal_basics_uk_eu",
+    "market_stall_setup_food_hygiene_uk"
+  ],
+
+  "Sources": [
+    {"name": "Food handling & labelling basics", "url": "https://www.gov.uk/"},
+    {"name": "Beekeeping practice notes on propolis harvest", "url": "https://www.bbka.org.uk/"}
+  ],
+
+  "Scrape-Guidance": "Extract trap use, freezing/cleaning steps, filtration, and honest labelling norms from authoritative food and association guidance."
+}

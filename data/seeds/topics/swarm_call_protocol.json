@@ -1,0 +1,81 @@
+{
+  "title": "Swarm call protocol: triage, safety, recovery & reporting",
+  "slug": "swarm_call_protocol",
+  "category": "Operations",
+  "categories": ["Risk & compliance", "Community & inclusion"],
+  "taxonomy": {
+    "pillar": "Operations",
+    "subpillars": ["Field response"],
+    "topics": ["swarm-calls", "public-safety", "ID", "collection", "referral"],
+    "audience": ["beginner", "intermediate", "club-officer", "public-services"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "summer"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["triage-questions", "location-risk", "photos-first", "referral-paths"],
+
+  "At-a-Glance": "A good swarm line saves time and face. Triage by phone first: photos, exact location, height/access, behaviour (cluster or flying), time present, nearby risks (schools, roads), and who owns the site. Decide: collect, refer, or decline. Work with buddy/spotter; carry PPE, sheets, box, spray bottle, secateurs, ladder safety. Record jobs; follow a script; and text an arrival ETA. If it’s wasps or unsafe access, refer politely. Close with a short handover: what you did, what to expect, and a thank-you—your reputation rides on that last minute.",
+
+  "Why it Matters": "Swarm lines are public-facing. One messy call can sour relationships with councils or neighbours; one safe, slick recovery can win a site for years. Triage avoids wasted trips and risky improvisation: photos prevent mis-ID; location and height determine equipment; time present hints at whether a queen is still home. Safety is non-negotiable—no ladders beyond competence, no collections on live roads without controls, and no trespass. A referral network (pest control, wasp IDs, high-access teams) turns ‘no’ into ‘here’s who can help’. Logging calls lets the club tune staffing and scripts each season. After collection, a clear thank-you note and a leaflet on preventing future issues (chimney caps, soffit checks) closes the loop professionally. The result is fewer wild chases, safer work, and a quiet sense in the community that ‘the bee people’ know what they’re doing.",
+
+  "Step-by-Step": [
+    "Phone triage: ID via photos; collect risk/location details; decide go/no-go.",
+    "Prep kit and buddy; notify landowner; agree access/ETA.",
+    "On site: brief, secure area, collect calmly; minimise cuts & disturbance.",
+    "Contain & transport; log queen status; secure at apiary.",
+    "Report back (photos + note); update swarm log; share lessons."
+  ],
+
+  "Context & Narrative": "Write the script before the phone rings. Start with the first sentence: ‘Could you text two photos from a safe distance?’ Then the checks: cluster size, height, access, time on site, any allergies or vulnerable people nearby, and property permission. Most ‘urgent’ calls relax when people feel heard and know what will happen next. On arrival, look like a plan: PPE on, sheet under the cluster, box ready, spotter watching your back. Move slowly—secure footing beats heroics. A water mist can settle flyers; gentle shakes or a cut of the hosting branch works if safe; ladders are used within your competence only. If the queen is in the box, the tone shifts: bees stream in, everyone calms. Tidy up, thank the caller, and leave a short note with your contact. \n\nIf the job isn’t yours—wasps in a roof, bees behind masonry with no safe access—say so, kindly, with a referral. Log the call anyway; patterns teach you where to place leaflets or talk to councils about chimney caps. At the apiary, quarantine the swarm, feed lightly if appropriate, and inspect for disease before integration. Share a photo with the caller if possible; it turns a worry into a story they’ll tell well about you.",
+  
+  "Evidence Highlights": [
+    "Phone photo triage prevents misidentification and wasted trips.",
+    "Buddy systems reduce accidents; public reassurance reduces escalation.",
+    "Quarantine and inspection reduce disease import risk from feral swarms."
+  ],
+
+  "Data Tables": {
+    "swarm_log_headers": ["Date", "Caller", "Location", "ID (bee/wasp/other)", "Action", "Outcome", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Collecting without permission or safe access.",
+    "No photos first → wasp/queenless chases.",
+    "No follow-up communication after removal."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Prepare a text template requesting photos + exact location (what3words) to speed triage."}
+  ],
+
+  "FAQs": [
+    {"q": "Charge or free?", "a": "Set a clear policy; at least cover travel/consumables; waive for public sites if agreed."},
+    {"q": "Keep or rehome?", "a": "Quarantine, inspect, then decide; avoid spreading disease."}
+  ],
+
+  "Seasonality & Climate": "Peak in late spring/early summer; adjust staffing and comms accordingly.",
+
+  "Suggested Figures": [
+    {"alt": "Swarm kit layout", "caption": "PPE, box, sheet, spray, secateurs, straps—ready in the car."}
+  ],
+
+  "Glossary": [
+    {"term": "Triage", "def": "Rapid assessment to prioritise and decide action safely."}
+  ],
+
+  "Cross-links": [
+    "urban_stakeholder_neighbour_relations",
+    "incident_reporting_template",
+    "transport_strapping_best_practice"
+  ],
+
+  "Sources": [
+    {"name": "BBKA swarm guidance & finder", "url": "https://www.bbka.org.uk/"},
+    {"name": "NBU – biosecurity & disease prevention", "url": "https://www.nationalbeeunit.com/resources/"}
+  ],
+
+  "Scrape-Guidance": "Use national association guidance for triage/comms; add local safety and access norms; include sample scripts and logs."
+}

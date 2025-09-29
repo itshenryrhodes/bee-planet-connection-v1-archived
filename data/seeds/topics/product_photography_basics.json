@@ -1,0 +1,80 @@
+{
+  "title": "Product photography basics (DIY lightbox, angles, consistency)",
+  "slug": "product_photography_basics",
+  "category": "Products & processing",
+  "categories": ["Community & inclusion"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Presentation"],
+    "topics": ["photography", "lightbox", "angles", "editing", "consistency"],
+    "audience": ["market-seller", "beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["neutral-background", "reflector", "exposure", "batch-consistency"],
+
+  "At-a-Glance": "Good photos are clean, bright and repeatable. Build a cheap lightbox (white card, LED lamps or window light), shoot on a neutral background, and lock in the same angle for every product. Use a reflector to lift labels and reduce shadows. Keep horizons level and crop consistently. Edit lightly—exposure, white balance, straightening—so jars look true. Shoot one hero, one angle-on, and one detail per product. Save a template so next season’s batches match without a reshoot marathon.",
+
+  "Why it Matters": "Photos carry your brand online and on flyers. Inconsistent lighting, skewed angles and busy backgrounds make small producers look messy. A tiny, repeatable setup—lightbox, tripod, fixed camera settings—creates a pro feel without big spend. Neutral backgrounds focus the eye; reflectors make labels readable; consistent crops make your catalogue calm. Light editing preserves honesty and avoids the ‘this looks different in person’ gap. Once you lock a template, new products drop in smoothly and old shots refresh fast. The payoff is higher trust, fewer questions, and images that work across website, social and wholesale sell sheets without redesigns each time.",
+
+  "Step-by-Step": [
+    "Build a lightbox and choose two steady light sources or bright window light.",
+    "Fix camera/phone at one height/angle; use a tripod or stand.",
+    "Set white balance and exposure lock; shoot hero, angle, detail.",
+    "Edit lightly: straighten, crop, exposure/white balance.",
+    "Save a preset/template; file with consistent names and alt text."
+  ],
+
+  "Context & Narrative": "Set a table by a north-facing window, tape a curved white card as a seamless background, and place two LED lamps at 45° if the day is dull. Your phone sits on a stand at chest height; you tap to lock focus and exposure on the label. First frame is the hero: straight on, label square, horizon level. Second is a soft 30–45° angle that shows jar depth and lid. Third is a crop on the label for online zooms. You slide a cheap silver reflector opposite the key light to lift shadows. Shots look clean immediately, so edits are small—straighten, a tick of exposure, and a nudge of white balance. Files save as sku_hero.jpg, sku_angle.jpg, sku_detail.jpg with alt text that says what they are. Next time, you just swap the jar and repeat. The grid on your site now looks like a brand, not a scrapbook, and wholesale buyers can drop images into their systems without pinging you for re-shoots.",
+  
+  "Evidence Highlights": [
+    "Consistent angles/crops increase perceived quality and reduce reshoot needs.",
+    "Reflectors improve label readability without heavy editing.",
+    "Neutral backgrounds convert better on simple storefronts."
+  ],
+
+  "Data Tables": {
+    "shot_list_headers": ["SKU", "Shot type", "File name", "Alt text", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Busy backgrounds distracting from labels.",
+    "Mixed colour temperatures causing weird jar tones.",
+    "No tripod → inconsistent angles between products."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Use a strip of tape on the table for jar placement so every shot aligns perfectly."}
+  ],
+
+  "FAQs": [
+    {"q": "Phone or camera?", "a": "Modern phones are fine—consistency beats gear."},
+    {"q": "RAW or JPEG?", "a": "JPEG with a light touch is enough for most small shops."}
+  ],
+
+  "Seasonality & Climate": "Winter light is cool and short—use steady LEDs or shoot mid-morning by a window.",
+  
+  "Suggested Figures": [
+    {"alt": "DIY lightbox sketch", "caption": "Curved card, two lamps at 45°, reflector opposite, camera fixed."}
+  ],
+
+  "Glossary": [
+    {"term": "Seamless", "def": "Background that curves from vertical to horizontal, removing horizon lines."}
+  ],
+
+  "Cross-links": [
+    "gift_packaging_brand_basics",
+    "online_sales_setup_basics",
+    "wholesale_to_shops_basics"
+  ],
+
+  "Sources": [
+    {"name": "Product photography basics for small businesses", "url": "https://www.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Pull neutral best practices for small product shoots; avoid software-specific instructions."
+}

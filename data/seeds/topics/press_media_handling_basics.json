@@ -1,0 +1,81 @@
+{
+  "title": "Press and media handling basics (press kit, interviews, images)",
+  "slug": "press_media_handling_basics",
+  "category": "Community & inclusion",
+  "categories": ["Operations", "Comms"],
+  "taxonomy": {
+    "pillar": "Community & inclusion",
+    "subpillars": ["Comms"],
+    "topics": ["press-kit", "interviews", "media-requests", "photos", "quotes"],
+    "audience": ["club-officer", "market-seller", "beginner", "intermediate"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["boilerplate", "contact-policy", "photo-consent", "key-messages"],
+
+  "At-a-Glance": "Media goes well when you look ready. Keep a tiny press kit on your site or drive: 1 paragraph boilerplate about who you are, 3 key messages, a contact email, and 6 clean photos with credits. Log requests, reply quickly, and offer clear interview windows. Confirm facts by email after the call. Never guess on regulation; point to official sources. Get consent before sharing photos of people. A calm, consistent tone and a tidy kit turn one enquiry into positive coverage you can reuse in stalls, funding bids and club newsletters.",
+
+  "Why it Matters": "A friendly article or radio spot can fill a market day or recruit volunteers, but unprepared interviews create errors that live online forever. A press kit saves time and prevents drift: approved wording, correct spellings, and images that actually represent your bees and people. Key messages keep you on track under quick questions. A simple response policy protects volunteers’ time and avoids mixed statements. Photo consent and correct credits reduce reputational and legal risk. After publication, you will want to reuse quotes and logos in your materials; having permissions and files in one folder means you can act in minutes, not weeks. Press is not drama; it is an admin habit with a public smile.",
+  
+  "Step-by-Step": [
+    "Create a one page press kit with boilerplate, contacts, and image links.",
+    "List 3 key messages and a 30 second spoken intro.",
+    "Log request details; set an interview time window; prep 3 likely questions.",
+    "After interview, email corrections and links to authoritative sources.",
+    "Archive coverage and permissions; reuse quotes and images with credit."
+  ],
+
+  "Context & Narrative": "The phone rings on a Thursday about ‘bees in the city’. You reply with a warm email that includes your press kit link, 2 suggested interview slots, and a line about your focus on responsible beekeeping. Your kit opens with who you are in 4 lines, the locations you serve, and a contact. Under that are three key messages: urban sites need water and screening; swarms are natural and help is polite and fast; planting trees and shrubs beats rooftop box hype. Photos show tidy yards, screened entrances, and a smiling volunteer placing a water station. Each file name holds the credit and permission. \n\nOn the call you start with your 30 second intro, then bridge back to key messages when questions wander. When asked about hive numbers, you avoid speculation and share a council link and your club’s planting project. After the call you send a short note with names and titles spelled correctly, relevant official links, and a thank you. The piece lands on Sunday; you file the link, ask for permission to quote, and drop a single line and photo into your newsletter and stall board. Next time a different reporter emails, you are already ready, so the cycle is calm, consistent, and flattering to your bees.",
+  
+  "Evidence Highlights": [
+    "Prepared boilerplate reduces factual errors.",
+    "Image consent and clear credits reduce takedown risk.",
+    "Key messages improve clarity under time pressure."
+  ],
+
+  "Data Tables": {
+    "press_log_headers": ["Date", "Outlet", "Contact", "Topic", "Status", "Link", "Permissions", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Speaking off the cuff on regulation or health claims.",
+    "Sharing photos without permission or credits.",
+    "Missing names and titles in proofs."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Write and practice a 30 second ‘who we are’ that any volunteer can deliver."}
+  ],
+
+  "FAQs": [
+    {"q": "Do we need a formal spokesperson?", "a": "Nominate 1–2 leads and a backup; route requests through a shared inbox."},
+    {"q": "Can we say no?", "a": "Yes—offer a statement by email or refer to an official source instead."}
+  ],
+
+  "Seasonality & Climate": "Swarm season drives calls; prep in spring and refresh images yearly.",
+  
+  "Suggested Figures": [
+    {"alt": "Press kit layout", "caption": "Boilerplate, 3 messages, contact details, and a small image set."}
+  ],
+
+  "Glossary": [
+    {"term": "Boilerplate", "def": "Approved short description used repeatedly in press and proposals."}
+  ],
+
+  "Cross-links": [
+    "swarm_call_protocol",
+    "urban_stakeholder_neighbour_relations",
+    "customer_newsletter_community"
+  ],
+
+  "Sources": [
+    {"name": "UK media law basics and consent guidance", "url": "https://www.gov.uk/"},
+    {"name": "Safeguarding and photo consent in community groups", "url": "https://www.ncvo.org.uk/"}
+  ],
+
+  "Scrape-Guidance": "Lift consent and credit norms, interview etiquette tips, and sample boilerplates from reputable community comms guidance."
+}

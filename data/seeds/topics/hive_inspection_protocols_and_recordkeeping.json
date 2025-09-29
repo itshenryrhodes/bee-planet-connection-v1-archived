@@ -1,0 +1,72 @@
+{
+  "At-a-Glance": "Consistent inspections with crisp notes power better decisions. Records reveal patterns in swarming, nutrition, disease, and queen performance.",
+  "Why it Matters": [
+    "Small issues caught early prevent costly losses.",
+    "Comparable records across years improve timing of splits, treatments, and feeding."
+  ],
+  "Objectives": [
+    "Adopt a standard inspection flow and a simple record template.",
+    "Capture key metrics in under 5 minutes per colony.",
+    "Use records to trigger actions via thresholds."
+  ],
+  "What Good Looks Like": [
+    "Inspections scheduled to season (e.g., every 7–9 days in swarm season).",
+    "Notes include queen status, brood area, stores, temperament, varroa, actions.",
+    "Yard dashboard summarises weights, treatments, and next tasks."
+  ],
+  "Step-by-Step": [
+    "1) Pre-visit - weather check, objective list, gear check.",
+    "2) Opening - 2–3 cool smoke puffs; work methodically from outer frames.",
+    "3) Assess - queen/right, eggs/larvae/capped brood, space, queen cells, stores/pollen.",
+    "4) Hygiene - manage burr/brace comb into lidded tub; avoid crushing.",
+    "5) Decide - actions today (space, split, feed, treat, mark), and schedule follow-up.",
+    "6) Record - tick-box template with free-text for anomalies; photo frames if useful."
+  ],
+  "Seasonality & Climate": [
+    "Spring: rapid changes require tight cadence.",
+    "Summer: focus on space, supering, and swarm control.",
+    "Autumn: assess stores and mites; consolidate.",
+    "Winter: non-invasive checks (heft, entrance observations)."
+  ],
+  "Data & Thresholds": [
+    "Swarm control window 7–9 days between checks in peak season.",
+    "Varroa and nutrition thresholds link directly to action plans.",
+    "Temperament score target 1–2; repeated 4–5 triggers requeening."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Backfilled brood nest -> Add space/super -> Consider split if cells present.",
+    "Symptom: Spotty brood -> Check queen age/health and varroa -> Plan requeening or treatment.",
+    "Symptom: Light stores -> Feed matched to season (syrup vs fondant)."
+  ],
+  "Common Pitfalls": [
+    "Overlong inspections chilling brood.",
+    "No clear objective per visit leading to cluttered records.",
+    "Recording on scraps that never reach a central log."
+  ],
+  "Tools & Techniques": [
+    "Pocket card or app template; colony ID stickers; date-coded queen marks.",
+    "Portable scale for quick hefts; voice notes that sync to log.",
+    "Colony dashboard (sheet or app) summarising key metrics."
+  ],
+  "Safety & Compliance": [
+    "Lift with legs, not back; use helpers for heavy supers.",
+    "Respect site rules and PPE; log incidents."
+  ],
+  "Field Checklist": [
+    "Objective list set.",
+    "Smoker fuel and spares packed.",
+    "Record template ready (paper/app).",
+    "Next actions scheduled before leaving site."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share seasonal summaries with landowners if helpful."
+  ],
+  "Cross-Links": ["apiary_setup", "overwintering_colonies", "varroa_monitoring_methods", "colony_nutrition"],
+  "Keywords": ["inspection flow", "record keeping", "dashboard", "queen status", "brood pattern"],
+  "Further Reading": [
+    "Association templates for hive records.",
+    "Extension guides on efficient inspections."
+  ],
+  "Notes": "Standardise abbreviations (Q=queen seen, QE=excluder, BC=brood comb, SS=supering status, etc.) for faster notes."
+}

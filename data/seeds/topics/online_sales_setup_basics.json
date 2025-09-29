@@ -1,0 +1,80 @@
+{
+  "title": "Online sales setup (storefront, shipping, packaging, policy)",
+  "slug": "online_sales_setup_basics",
+  "category": "Products & processing",
+  "categories": ["Community & inclusion", "Operations"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Commercial basics"],
+    "topics": ["ecommerce", "shipping", "returns", "packaging", "customer-service"],
+    "audience": ["market-seller", "intermediate", "beginner"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["small-catalogue", "parcel-rates", "breakage-policy", "FAQ"],
+
+  "At-a-Glance": "Keep online simple: a small catalogue, clean photos, plain words, and clear delivery zones. Price shipping realistically—flat rates or weight bands—and choose packaging that survives couriers (double wall boxes, jar dividers). Publish a short, human returns/breakage policy and an FAQ that covers crystallisation and storage. Offer one or two dispatch days per week so packing is organised. Email customers with tracking and a care note. Start tidy, learn your true costs, and only add complexity when the basics hum.",
+
+  "Why it Matters": "Selling online adds friction where markets are easy—shipping, breakage, returns and admin. A small, disciplined setup avoids the common traps: underpriced postage that eats margin, flimsy boxes that multiply refunds, and vague policies that scare buyers. Fewer SKUs keep picking accurate; scheduled dispatch days reduce constant context switching. Clear photos and copy reduce customer service churn. A visible care note and an honest crystallisation line set expectations and cut ‘faulty product’ claims. Over time, you’ll learn real parcel rates, best couriers for your area, and the box/insert combos that just never break. The aim isn’t to become a warehouse—it’s to extend your stall online without losing your weekend to tape and spreadsheets.",
+
+  "Step-by-Step": [
+    "Choose a simple storefront platform and payments.",
+    "Limit SKUs; photograph cleanly; write clear copy and FAQs.",
+    "Set shipping zones and flat or banded rates that cover real cost.",
+    "Pick robust packaging; test mail to yourself; refine.",
+    "Publish returns/breakage policy; schedule dispatch days; automate emails."
+  ],
+
+  "Context & Narrative": "Imagine your site like your best stall: two pages, tidy photos, and prices that make sense. Product pages show jar size, batch style (runny/set), a one sentence flavour line, and storage advice. The basket calculates shipping with a flat rate that actually covers your cheapest reliable courier. Packing happens on Tuesdays and Fridays only; labels print in a batch, boxes are pre-built, and inserts match your jar sizes exactly. Each order prints with a short checklist: jars counted, lids checked, story card included, tape seams pressed. When the first box breaks in the wild, you update the insert once, not ten times. A ‘crystallisation is natural’ note lives on every product and in the order email, alongside a warm thanks and tracking link. Returns are rare because you set expectations and used sturdy boxes. As orders grow, you tweak: a second box size, a better rate you negotiated, and a macro that prints labels and emails in one go. You stayed small on purpose, and the online shop now feels like a calm extension of your table, not a chaos machine.",
+  
+  "Evidence Highlights": [
+    "Flat-rate or banded shipping reduces checkout friction and admin.",
+    "Robust inserts cut breakage and refund costs.",
+    "Clear FAQs reduce ‘where is my order?’ and ‘is this set?’ emails."
+  ],
+
+  "Data Tables": {
+    "shipping_bands_headers": ["Band", "Weight range", "Price", "Courier", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Underpricing postage.",
+    "Too many SKUs causing picking/packing errors.",
+    "Vague or hidden returns policy."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Test your packaging by mailing one to yourself—adjust until it’s boringly reliable."}
+  ],
+
+  "FAQs": [
+    {"q": "International shipping?", "a": "Start domestic; add zones only when you understand customs, duty and returns."},
+    {"q": "Gift messages?", "a": "Offer a simple note field and a plain card—keep it easy to fulfil."}
+  ],
+
+  "Seasonality & Climate": "Plan capacity for Christmas spikes; heat waves need faster dispatch and extra padding.",
+  
+  "Suggested Figures": [
+    {"alt": "Packing bench layout", "caption": "Box, insert, jars, tape, checklist—left to right flow."}
+  ],
+
+  "Glossary": [
+    {"term": "SKU", "def": "Stock keeping unit—each unique product/variant you sell."}
+  ],
+
+  "Cross-links": [
+    "gift_packaging_brand_basics",
+    "honey_labelling_legal_basics_uk_eu",
+    "returnable_jar_scheme"
+  ],
+
+  "Sources": [
+    {"name": "Small parcel guidance and consumer rights basics", "url": "https://www.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Lift consumer rights and delivery expectation norms; avoid platform-specific instructions."
+}

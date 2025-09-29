@@ -1,0 +1,68 @@
+{
+  "At-a-Glance": "Robbing is a high-stress event that spreads disease and can trigger yard-wide chaos. Prevention through tidy feeding and entrance management is best.",
+  "Why it Matters": [
+    "Robbing spreads spores and viruses via frantic bee contact.",
+    "Colonies can be stripped of stores quickly, leading to collapse.",
+    "Neighbours notice aggressive clouds; reputational risk rises."
+  ],
+  "Objectives": [
+    "Feed internally and cleanly; never open-feed during dearth.",
+    "Control entrance sizes on weak colonies.",
+    "React fast with covers and screens at the first signs."
+  ],
+  "What Good Looks Like": [
+    "Minimal external spills; no exposed cappings or honey.",
+    "Entrance reducers and robbing screens ready for quick deployment.",
+    "Yard layout that avoids concentrated flight lines over weak colonies."
+  ],
+  "Step-by-Step": [
+    "1) Prevention: feed inside the hive; wipe drips; keep yards tidy.",
+    "2) Early signals: frenetic zig-zag flights at entrances, fights on the landing board, wax flakes on ground.",
+    "3) Immediate response: close down entrances to single-bee width; add robbing screens; wet sheet over hive for 24 h if severe.",
+    "4) Remove attractants: seal exposed honey, take off spilled frames; stop external feeding.",
+    "5) Stabilise: after 24–48 h, slowly reopen; reassess colony strength and nutrition."
+  ],
+  "Seasonality & Climate": [
+    "Most common in late summer dearths or during drought.",
+    "Windless hot days amplify odour plumes from spills."
+  ],
+  "Data & Thresholds": [
+    "Any fighting at the entrance with wax debris = act now.",
+    "Weak nucs and recent splits are highest risk; pre-empt with reducers."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Bees swirling with sudden spikes in traffic -> Fit screens/reducers -> Remove attractants.",
+    "Symptom: Only one colony targeted -> Check queen status and stores; consider combining or feeding discreetly.",
+    "Symptom: Multiple colonies involved -> Yard-wide tidy-up; suspend manipulations until flow returns."
+  ],
+  "Common Pitfalls": [
+    "Open feeding sugar/honey during dearth.",
+    "Leaving wet cappings or extracted supers outside.",
+    "Too-wide entrances on small populations."
+  ],
+  "Tools & Techniques": [
+    "Entrance reducers, robbing screens, wet sheets, internal feeders.",
+    "Bee-safe water sources to reduce risky foraging patterns."
+  ],
+  "Safety & Compliance": [
+    "Expect elevated defensiveness; use full PPE.",
+    "Communicate with neighbours if visible clouds form; reassure with steps taken."
+  ],
+  "Field Checklist": [
+    "Reducers/screens to hand.",
+    "No sticky kit exposed.",
+    "Weak colonies flagged and protected.",
+    "Follow-up check scheduled."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share preventive tips with helpers (tidy yards, internal feeding)."
+  ],
+  "Cross-Links": ["colony_nutrition", "hive_hygiene_and_biosecurity", "hive_ventilation_and_moisture_control"],
+  "Keywords": ["robbing", "entrance reducer", "wet sheet", "internal feeding", "dearth"],
+  "Further Reading": [
+    "Association notes on robbing prevention.",
+    "Field guides on identifying robbing vs orientation flights."
+  ],
+  "Notes": "Keep a ‘robbing kit’ bag in the car: screens, reducers, sheets, tape, wipes."
+}

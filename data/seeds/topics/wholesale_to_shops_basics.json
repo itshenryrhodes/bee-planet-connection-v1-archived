@@ -1,0 +1,80 @@
+{
+  "title": "Wholesale to shops (case packs, terms, barcodes, delivery)",
+  "slug": "wholesale_to_shops_basics",
+  "category": "Products & processing",
+  "categories": ["Community & inclusion", "Operations"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Commercial basics"],
+    "topics": ["wholesale", "case-packs", "pricing-terms", "barcodes", "delivery"],
+    "audience": ["market-seller", "intermediate"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK", "EU"],
+    "season": ["summer", "autumn"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["RRP", "MOQ", "lead-times", "shelf-ready"],
+
+  "At-a-Glance": "Shops buy reliability. Offer a neat price list with RRP and wholesale per case, clear MOQs, lead-times and delivery days. Case packs are sturdy, barcode the unit and, if required, the case. Labels must be compliant and legible. Provide a short sell sheet: product notes, awards if any, allergen status, and contact details. Deliver on schedule with tidy invoices. Keep flavours and sizes simple; avoid custom one-offs that destroy margin. Make reordering easy—email template, QR, or portal.",
+
+  "Why it Matters": "Wholesale trades lower margin for volume and predictability. Stores need products that arrive on time, scan smoothly, and don’t create shelf mess. A clear, consistent offer wins buyers quickly: standard case sizes, reliable lead-times, and paperwork that matches what’s in the box. Barcodes and batch codes reduce staff friction and make recalls, if ever needed, clean. Simplicity protects your time: one or two sizes, steady RRPs, and a single delivery day for a patch of customers. Your aim isn’t to undercut yourself online; it’s to set a fair structure where everyone wins and you can actually keep up. With a calm wholesale rhythm, the extra volume funds better kit and a less stressful season.",
+
+  "Step-by-Step": [
+    "Build a price list with RRP, wholesale, MOQs, lead-time and terms.",
+    "Choose case sizes and shelf-ready packaging; test barcode scans.",
+    "Create a one-page sell sheet with product details and compliance notes.",
+    "Schedule delivery days; standardise invoicing and batch coding.",
+    "Make reorders easy; review terms annually."
+  ],
+
+  "Context & Narrative": "You email a buyer a single PDF: your logo, two SKUs, RRPs and wholesale per case, minimums, and a clear lead-time. Photos show tidy jars with legible labels and barcodes. The case opens into a mini display with a small card that carries batch and best-before for staff. When the order lands, you print an invoice, pack the case with dividers, and add a delivery note that mirrors the invoice. The drop is quick because everything matches: labels scan, jars are clean, and you arrive on the day you promised. A QR code on the case links to reorders and product specs. At season’s end you review: which shops reorder, any returns, and whether your terms held up. You might nudge MOQs or delivery windows, but the structure stands—predictable, tidy, sustainable for both sides.",
+  
+  "Evidence Highlights": [
+    "Standard case packs and barcodes lower retailer workload.",
+    "Clear terms and lead-times increase acceptance and repeat orders.",
+    "Limited SKUs protect margin and simplify forecasting."
+  ],
+
+  "Data Tables": {
+    "price_list_headers": ["SKU", "RRP", "Wholesale/case", "Units/case", "MOQ (cases)", "Lead-time", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Too many flavours and sizes.",
+    "Unreliable delivery windows.",
+    "Missing or unreadable barcodes."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Print batch and BBE on case flaps for staff—fast checks, fewer questions."}
+  ],
+
+  "FAQs": [
+    {"q": "Do I need GS1 barcodes?", "a": "Many shops expect them; discuss with buyers—some accept internal codes."},
+    {"q": "Sale or return?", "a": "Avoid unless strategic; it shifts risk back to you."}
+  ],
+
+  "Seasonality & Climate": "Pre-Christmas orders peak; align production so shops get stock before their rush.",
+  
+  "Suggested Figures": [
+    {"alt": "Shelf-ready case mockup", "caption": "Case that opens into a tidy display with clear batch info."}
+  ],
+
+  "Glossary": [
+    {"term": "MOQ", "def": "Minimum order quantity—smallest amount a shop can buy under your terms."}
+  ],
+
+  "Cross-links": [
+    "honey_labelling_legal_basics_uk_eu",
+    "market_stall_setup_food_hygiene_uk",
+    "gift_packaging_brand_basics"
+  ],
+
+  "Sources": [
+    {"name": "Retail readiness basics and barcode standards", "url": "https://www.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Gather barcode/packaging expectations and basic trading terms from retail guidance; avoid retailer-specific rules."
+}

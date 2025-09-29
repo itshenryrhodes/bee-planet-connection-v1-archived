@@ -1,0 +1,69 @@
+{
+  "At-a-Glance": "Clear, compliant labels plus an authentic story move jars. Honest descriptors, batch codes, and clean design build trust and repeat sales.",
+  "Why it Matters": [
+    "Regulatory compliance avoids fines and product withdrawals.",
+    "Transparent batch coding supports recalls and quality assurance.",
+    "Good branding differentiates small producers without spin."
+  ],
+  "Objectives": [
+    "Meet legal labelling: product name, net weight, country of origin, address, best-before, batch code, allergens if applicable.",
+    "Adopt a simple batch ledger linking jar codes to apiary/date/moisture.",
+    "Tell a concise provenance story: floral sources, neighbourhoods, season."
+  ],
+  "What Good Looks Like": [
+    "Readable typography, high-contrast labels, durable adhesive.",
+    "Front: product name and net weight; Back: ingredients (‘honey’), origin, best-before, storage, batch, producer contact.",
+    "Optional QR linking to batch page with photos and notes."
+  ],
+  "Step-by-Step": [
+    "1) Define brand system: logo, colours, label sizes for jars/squeezes/miniatures.",
+    "2) Create label templates with mandatory fields and variable batch/date fields.",
+    "3) Establish batch code format (e.g., BPC-YYYYMMDD-APIARY-##).",
+    "4) Print small runs; test adhesion in fridge/wet conditions.",
+    "5) Build a simple web page per season or batch with provenance and tasting notes."
+  ],
+  "Seasonality & Climate": [
+    "Produce soft-set lines for quick-set varietals; explain texture seasonality.",
+    "Showcase seasonal limited runs (spring blossom, summer lime) with date stamps."
+  ],
+  "Data & Thresholds": [
+    "Moisture reading recorded for each batch (≤18 percent typical).",
+    "Weights verified against calibrated scale; spot-check 1 in 20 jars."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Label lift/peeling -> Switch adhesive or jar surface prep -> Reprint affected batch.",
+    "Symptom: Customer queries on cloudiness -> Provide crystallisation explainer; offer soft-set.",
+    "Symptom: Origin doubts -> Publish batch traceability page; include apiary map."
+  ],
+  "Common Pitfalls": [
+    "Using ‘raw’ or health claims that may be restricted.",
+    "Missing address/origin or tiny unreadable text.",
+    "No batch code on the jar itself."
+  ],
+  "Tools & Techniques": [
+    "Calibrated scale, label printer/cutter, batch ledger (sheet/app).",
+    "QR code generator to batch pages; moisture refractometer.",
+    "Food-safe tamper-evident seals where desired."
+  ],
+  "Safety & Compliance": [
+    "Follow local food labelling regulations exactly.",
+    "Maintain traceability and recall plan; document batch records."
+  ],
+  "Field Checklist": [
+    "Label template current and compliant.",
+    "Batch code applied and logged.",
+    "Best-before and storage guidance present.",
+    "Moisture value recorded on batch sheet."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Keep the story concise: where, when, what it tastes like."
+  ],
+  "Cross-Links": ["honey_extraction_best_practice", "hive_products_and_byproducts", "hive_hygiene_and_biosecurity"],
+  "Keywords": ["labelling", "batch code", "origin", "soft-set", "branding"],
+  "Further Reading": [
+    "National food labelling regulations for honey.",
+    "Best-practice guides for small-scale food producers."
+  ],
+  "Notes": "Add a reusable batch label SVG/AI template to the repo and version it with each regulatory change."
+}

@@ -1,0 +1,82 @@
+{
+  "title": "Club governance and roles (chair, treasurer, safeguarding, comms)",
+  "slug": "club_governance_roles",
+  "category": "Community & inclusion",
+  "categories": ["Operations", "Risk & compliance"],
+  "taxonomy": {
+    "pillar": "Community & inclusion",
+    "subpillars": ["Governance"],
+    "topics": ["constitution", "AGM", "roles", "finance", "safeguarding"],
+    "audience": ["club-officer"],
+    "intent": ["policy", "reference"],
+    "regions": ["UK"],
+    "season": ["autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["constitution-lite", "bank-mandate", "risk-register", "conflicts"],
+
+  "At-a-Glance": "A small beekeeping club runs on clear roles and short documents. Keep a one page constitution-lite, name officers (chair, secretary, treasurer, safeguarding lead), and publish meeting and AGM dates. Use dual authorisation on bank accounts and keep simple monthly finance notes. Maintain a risk register for events and apiary activities. Handle conflicts of interest in writing. Share minutes and policies openly so members can see how decisions happen. Good governance is invisible on good days and essential on bad ones.",
+  
+  "Why it Matters": "Clubs thrive when admin is boring and transparent. Without clear roles, decisions bottleneck or drift; without financial controls, trust erodes; without safeguarding and simple risk notes, events feel risky and volunteers burn out. A lightweight constitution clarifies purpose and how officers are chosen. Dual approval on spending protects officers and funds. Publishing minutes and a calendar invites participation and diffuses rumours. Having a named safeguarding contact allows families and schools to engage with confidence. This is not bureaucracy for its own sake—these are the rails that let the fun parts happen safely and repeatably.",
+  
+  "Step-by-Step": [
+    "Adopt a short constitution and register officers and contact emails.",
+    "Open or refresh a bank mandate with dual control and online access.",
+    "Publish a year calendar with meetings, AGM and training days.",
+    "Maintain a risk register and safeguarding contact details.",
+    "Share minutes and annual accounts; rotate roles with handover notes."
+  ],
+
+  "Context & Narrative": "Picture a tidy club page with four links: ‘Who we are’, ‘How we decide’, ‘Money and meetings’, and ‘Contact’. The constitution fits on one page and covers purpose, officer roles, elections at the AGM, and how money is handled. The bank account has two signatories for payments and access for the treasurer to produce monthly notes. The secretary posts concise minutes within a week of meetings and keeps a shared folder with agendas, sign-in sheets and policies. A named safeguarding lead is listed with a simple policy for events with children or vulnerable adults. The risk register lists common activities—apiary days, markets, talks—and links to the templates members use. At year end the treasurer’s report and a one page budget plan go to members. Officers keep handover notes so roles can rotate without panic. The feel is open, calm and friendly; members trust that decisions are made fairly and that anyone can help without inheriting chaos.",
+  
+  "Evidence Highlights": [
+    "Dual authorisation reduces financial risk and officer stress.",
+    "Published minutes and policies increase participation and trust.",
+    "Named safeguarding contacts enable youth and school engagement."
+  ],
+
+  "Data Tables": {
+    "risk_register_headers": ["Activity", "Hazard", "Control", "Owner", "Review"],
+    "finance_note_headers": ["Month", "Income", "Spend", "Balance", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Long constitutions no one reads.",
+    "Single person control of bank accounts.",
+    "Unpublished minutes leading to rumours."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Create a shared officer drive with a ‘handover’ folder for each role."}
+  ],
+
+  "FAQs": [
+    {"q": "Do we need to be a charity?", "a": "Only if scale and aims fit; many clubs operate as small associations."},
+    {"q": "Insurance?", "a": "Maintain public liability for events and check any national body cover."}
+  ],
+
+  "Seasonality & Climate": "Governance refresh fits winter downtime; publish calendars before spring rush.",
+  
+  "Suggested Figures": [
+    {"alt": "Club roles map", "caption": "Chair, secretary, treasurer, safeguarding and comms with simple flows."}
+  ],
+
+  "Glossary": [
+    {"term": "Constitution", "def": "A short document that sets purpose and decision-making rules for a club."}
+  ],
+
+  "Cross-links": [
+    "event_risk_assessment_pack",
+    "customer_newsletter_community",
+    "urban_stakeholder_neighbour_relations"
+  ],
+
+  "Sources": [
+    {"name": "Small club governance templates", "url": "https://www.ncvo.org.uk/"},
+    {"name": "Bank account guidance for clubs", "url": "https://www.gov.uk/"}
+  ],
+
+  "Scrape-Guidance": "Extract lightweight association governance norms, role outlines and simple financial controls from authoritative community sources."
+}

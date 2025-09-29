@@ -1,0 +1,70 @@
+{
+  "At-a-Glance": "European Foulbrood (EFB) and American Foulbrood (AFB) are notifiable brood diseases. Early recognition, strict biosecurity, and immediate reporting prevent spread and heavy losses.",
+  "Why it Matters": [
+    "AFB spores persist for decades and can devastate apiaries if moved on contaminated kit.",
+    "EFB can smoulder, reducing colony performance and drifting across a yard.",
+    "Legal obligations apply: rapid, correct reporting protects the wider beekeeping community."
+  ],
+  "Objectives": [
+    "Train the eye for classic signs; confirm suspicions without spreading material.",
+    "Quarantine suspect colonies and equipment immediately.",
+    "Follow official inspector guidance step-by-step, documenting actions."
+  ],
+  "What Good Looks Like": [
+    "Regular brood inspections that include slow, careful frame scanning in good light.",
+    "Isolating tools/boxes used on suspect hives; no frame swapping.",
+    "Clear photos (where permitted) and prompt contact with the competent authority."
+  ],
+  "Step-by-Step": [
+    "1) Recognise signs: EFB often shows twisted larvae, melted appearance, and irregular brood patterns; AFB shows sunken perforated cappings, ropy larval remains, black scale.",
+    "2) Do not leak material: keep frames over the hive; avoid shaking or dropping comb.",
+    "3) Isolate: close up the colony; mark hive; do not visit other colonies with the same tools.",
+    "4) Report: contact the official inspector line per your country; provide location, photos, and notes.",
+    "5) Follow instructions: sampling, standstill orders, shook swarm or destruction protocols vary by jurisdiction.",
+    "6) Decontaminate: flame-clean metal tools; dispose of contaminated materials per instruction; update biosecurity plan.",
+    "7) Traceback: review movement of frames, nucs, and used kit; inform any contacts."
+  ],
+  "Seasonality & Climate": [
+    "EFB often detected in spring/early summer during build-up.",
+    "Stress (nutrition, weather) can exacerbate disease expression."
+  ],
+  "Data & Thresholds": [
+    "These are notifiable diseases — threshold for action is suspicion, not certainty.",
+    "Maintain a log with dates, colony IDs, photos, inspector references and outcomes."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Patchy brood with twisted larvae -> Suspect EFB -> Stop frame transfers -> Report.",
+    "Symptom: Sunken perforated cappings and ropey test -> Suspect AFB -> Seal hive -> Report immediately.",
+    "Symptom: Recurrent brood issues post-treatment -> Reassess nutrition, varroa, and hygiene -> Seek inspector advice."
+  ],
+  "Common Pitfalls": [
+    "Moving suspect frames to ‘test’ in another colony.",
+    "Cleaning with ineffective methods; spores survive casual washing.",
+    "Delaying notification while crowdsourcing opinions."
+  ],
+  "Tools & Techniques": [
+    "Bright LED headlamp, clean disposable gloves, sealable bags for samples (as instructed).",
+    "Flame gun for metal tools where safe; dedicated quarantine box.",
+    "Disinfectants approved for apiary use (follow label)."
+  ],
+  "Safety & Compliance": [
+    "Comply with legal reporting and movement restrictions.",
+    "Respect inspector directions; document chain of custody for samples."
+  ],
+  "Field Checklist": [
+    "Suspect frames photographed (if allowed) without shaking.",
+    "Hive marked and isolated; tools quarantined.",
+    "Inspector contact made; reference noted."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Inform landowners discreetly that a health check is underway; avoid speculation."
+  ],
+  "Cross-Links": ["hive_hygiene_and_biosecurity", "hive_inspection_protocols_and_recordkeeping", "colony_nutrition"],
+  "Keywords": ["EFB", "AFB", "notifiable disease", "rope test", "sunken cappings", "brood disease"],
+  "Further Reading": [
+    "Official national EFB/AFB recognition leaflets and reporting pages.",
+    "Association training modules on brood disease diagnosis."
+  ],
+  "Notes": "Add a simple 1-page ‘what to do if you suspect EFB/AFB’ SOP to your field folder."
+}

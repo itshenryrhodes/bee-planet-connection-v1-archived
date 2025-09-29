@@ -1,0 +1,81 @@
+{
+  "title": "Beeswax rendering & storage (clean blocks, moth safe)",
+  "slug": "beeswax_rendering_storage",
+  "category": "Products & processing",
+  "categories": ["Operations"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Byproducts"],
+    "topics": ["wax-rendering", "double-boiler", "filtering", "storage", "moth-control"],
+    "audience": ["beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["cappings", "old-comb", "filter-grade", "labelling-blocks"],
+
+  "At-a-Glance": "Wax is money and pride. Sort cappings and old comb separately, render with a water bath or double boiler, and filter in stages - coarse then fine - into clean moulds. Avoid direct flame on wax and never leave it unattended. Label blocks by source and date. Store cool, dark, and sealed to resist moths and dust. Keep food use wax separate from mixed sources. Regular small rendering days beat one big sticky marathon and keep your shed tidy and safe.",
+
+  "Why it Matters": "Clean, consistent wax turns waste into value - candles, swaps for foundation, or sales. Poor handling wastes aroma, scorches wax, and risks fires. Simple discipline makes it pleasant: water baths and double boilers protect from hot spots, filtering removes debris that ruins candle wicks, and labeled blocks keep traceability if you swap with clubs or suppliers. Separating cappings from brood comb yields higher grade product for food uses. Storage is the last step - moths love wax with residues, so cool, sealed boxes protect your effort. Over a season, steady rendering clears your stack of odds and ends and returns clean blocks you can be proud to show and sell.",
+
+  "Step-by-Step": [
+    "Sort inputs: cappings vs brood comb. Freeze suspect comb first if needed.",
+    "Render in a water bath or double boiler - no direct flame.",
+    "Filter in two stages into moulds. Let cool slowly for clean tops.",
+    "Label blocks with source and date. Note grade and intended use.",
+    "Store sealed, cool, and dark. Inspect for moths quarterly."
+  ],
+
+  "Context & Narrative": "On a quiet winter afternoon you pull out a small stockpot and a heat safe jug. Old comb sits in a mesh bag while cappings get their own pot. Heat comes up gently with water buffering the melt. The shed smells like honey but nothing smokes because there is no naked flame under wax. You pour through a coarse mesh into a settling bucket, then through a fine cloth into silicone moulds. Blocks cool under a towel to avoid sink holes. Each block gets a pencil label that says cappings, the apiary, and the month. A separate crate holds brood comb wax that will become firelighters or garden candles, clearly marked so it never sees food use. The whole batch goes into sealed tubs in a cool corner with a bay leaf or two to discourage visitors. You write a short note in a log so you know what to trade at the club next month. It is tidy, safe, and satisfying - and your shed just got lighter.",
+
+  "Evidence Highlights": [
+    "Water bath or double boiler reduces scorching risk.",
+    "Stage filtering improves candle performance.",
+    "Cool, sealed storage reduces wax moth damage."
+  ],
+
+  "Data Tables": {
+    "render_log_headers": ["Date", "Input type", "Weight in", "Weight out", "Filter grade", "Intended use", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Direct heat causing scorched wax and fire risk.",
+    "Mixing cappings with brood comb and losing food grade quality.",
+    "Unlabeled blocks creating traceability gaps."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Use silicone loaf moulds - easy release and tidy bar size for trading or selling."}
+  ],
+
+  "FAQs": [
+    {"q": "Freeze first?", "a": "If moth risk is high, freeze comb before storage or rendering."},
+    {"q": "Food grade?", "a": "Cappings are your best bet - keep them separate from brood comb and store clean."}
+  ],
+
+  "Seasonality & Climate": "Winter is ideal for rendering. Summer heat increases fire risk - work early and never leave wax heating unattended.",
+
+  "Suggested Figures": [
+    {"alt": "Double boiler setup", "caption": "Safe rendering layout with water bath, filters, and moulds."}
+  ],
+
+  "Glossary": [
+    {"term": "Filter grade", "def": "How fine your final filter is - affects clarity and candle performance."}
+  ],
+
+  "Cross-links": [
+    "honey_processing_basics",
+    "comb_replacement_policy",
+    "wax_moth_storage_management"
+  ],
+
+  "Sources": [
+    {"name": "Food handling and fire safety basics", "url": "https://www.gov.uk/"},
+    {"name": "Beekeeping practice guides on wax handling", "url": "https://www.bbka.org.uk/"}
+  ],
+
+  "Scrape-Guidance": "Extract safe melt methods, separation by grade, and storage practices. Provide a simple render log template."
+}

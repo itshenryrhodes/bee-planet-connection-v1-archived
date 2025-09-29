@@ -1,0 +1,81 @@
+{
+  "title": "Returnable jar scheme (deposits, cleaning, logistics)",
+  "slug": "returnable_jar_scheme",
+  "category": "Products & processing",
+  "categories": ["Community & inclusion", "Operations"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Packaging"],
+    "topics": ["return-scheme", "deposits", "cleaning-SOP", "traceability", "sustainability"],
+    "audience": ["market-seller", "club-officer", "intermediate"],
+    "intent": ["policy", "how-to"],
+    "regions": ["UK", "EU"],
+    "season": ["summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "intermediate",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["deposit-card", "sanitation", "label-removal", "batch-segregation"],
+
+  "At-a-Glance": "A jar return scheme saves cost and wins hearts when it’s simple. Charge a small deposit, accept only your own jars, and replace lids rather than reusing them. Run a clear cleaning SOP: pre-sort, soak to remove labels, wash and rinse, then heat or chemical sanitise as appropriate. Keep returned jars separate by size and inspect for chips. Track deposits with a punch card or simple log. Communicate rules on a small card at the stall so returns are tidy and quick.",
+  
+  "Why it Matters": "Packaging is expensive and visible in the bin. A returnable scheme reduces waste and spend, but only if hygiene and logistics stay tight. Mixed jars and reused lids invite leaks and compliance headaches; a simple rule—our jars in, new lids out—keeps quality. Label removal is the slow step: warm soaks and a scraper beat harsh solvents; stubborn glue needs patience. Sanitation depends on your setup: domestic dishwashers clean but don’t always sanitise, so a heat cabinet or approved sanitiser finalises the job. Clear signs, a punch-card deposit, and a labelled ‘returns’ crate make market days smooth. Record returns by lot so you can retire jars with repeated scuffs. Done well, the scheme becomes part of your brand story—careful, circular, professional—and customers enjoy bringing jars back rather than feeling they have to hoard them.",
+  
+  "Step-by-Step": [
+    "Publish rules: only your jars, clean if possible, deposit value, new lids.",
+    "Collect in a labelled crate; issue/mark a deposit card or log.",
+    "Pre-sort by size; check for chips; discard damaged glass.",
+    "De-label, wash, rinse; sanitise by heat or approved method; air-dry.",
+    "Re-box by size; record usable counts; restock bottling shelves."
+  ],
+
+  "Context & Narrative": "Your stall sign reads: ‘Bring back our jars - get £x off or stamp your card.’ Returns drop into a crate and you hand over a stamp without fuss. Back at base, jars soak in warm water; paper slides off and glue yields to a scraper and a drop of oil-based adhesive remover if needed. Lids go to metal recycling—fresh only on food jars. Clean glass heads through a wash and rinse, then a sanitising step matched to your equipment: a hot cabinet cycle or a calibrated sanitiser with correct contact time. Jars dry upside down on racks until spotless. A log tracks quantities by size; anything chipped is binned, not debated. When you bottle, you draw from the ‘ready’ stack and batch-code as usual. The scheme feels grown-up because it is routine, not a special project: signs are clear, the crate is where it always is, and the punch card lives in your money tin. Over the year you buy fewer jars, you bin less, and customers smile as they return something tangible to the cycle.",
+  
+  "Evidence Highlights": [
+    "New lids maintain seal integrity and reduce leak complaints.",
+    "Heat or approved chemical sanitation improves safety vs wash-only.",
+    "Clear rules reduce contamination and sorting time."
+  ],
+
+  "Data Tables": {
+    "returns_log_headers": ["Date", "Customer/card", "Qty by size", "Accepted", "Rejected", "Credit/deposit", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Accepting off-brand jars that don’t fit lids.",
+    "Reusing dented or rusty lids.",
+    "Skipping sanitation after washing."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Print a tiny ‘return me’ icon on your back label so customers keep the loop in mind."}
+  ],
+
+  "FAQs": [
+    {"q": "Dishwasher enough?", "a": "Great for cleaning; add a sanitising step for confidence and consistency."},
+    {"q": "How much deposit?", "a": "Enough to motivate returns without pain—test locally and keep it simple."}
+  ],
+
+  "Seasonality & Climate": "Winter is a good time to process accumulated returns; summer needs faster turnaround.",
+  
+  "Suggested Figures": [
+    {"alt": "Jar return flow", "caption": "Return → inspect → de-label → wash/rinse → sanitise → dry → re-box."}
+  ],
+
+  "Glossary": [
+    {"term": "Sanitise", "def": "Reduce microbial load to safe levels after visible cleaning."}
+  ],
+
+  "Cross-links": [
+    "honey_processing_basics",
+    "honey_labelling_legal_basics_uk_eu",
+    "market_stall_setup_food_hygiene_uk"
+  ],
+
+  "Sources": [
+    {"name": "Food safety and sanitation basics", "url": "https://www.food.gov.uk/"},
+    {"name": "Local authority guidance on re-use", "url": "https://www.gov.uk/"} 
+  ],
+
+  "Scrape-Guidance": "Lift sanitation options, deposit handling ideas, and communication templates from official food safety guidance and local schemes."
+}

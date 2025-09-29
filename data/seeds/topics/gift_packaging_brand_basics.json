@@ -1,0 +1,81 @@
+{
+  "title": "Gift packaging & brand basics (story cards, eco choices)",
+  "slug": "gift_packaging_brand_basics",
+  "category": "Products & processing",
+  "categories": ["Community & inclusion", "Operations"],
+  "taxonomy": {
+    "pillar": "Products & processing",
+    "subpillars": ["Packaging"],
+    "topics": ["gift-packs", "brand-story", "eco-packaging", "unboxing"],
+    "audience": ["market-seller", "beginner", "intermediate"],
+    "intent": ["how-to", "reference"],
+    "regions": ["UK", "EU"],
+    "season": ["autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["post-harvest"]
+  },
+  "tags": ["kraft-boxes", "paper-tape", "story-cards", "barcode-ready"],
+
+  "At-a-Glance": "Gifts sell when they look ready to hand over. Keep packaging simple, sturdy and recyclable: kraft boxes, ribbed paper, card inserts and paper tape. Add a short story card (who, where, when) plus a care note for honey or wax. Design one modular insert that holds your common jar sizes so packing is quick and breakage rare. Use a neat belly band or small sticker, not acres of plastic. Photograph each configuration once and reuse the pictures. A tiny menu of bundles—two-jar, trio, candle pair—covers most occasions without drowning you in SKUs.",
+
+  "Why it Matters": "Shoppers love gifts but hate fuss. If your stall or shop page shows clean, eco-forward bundles with clear prices, buyers decide faster and feel good about the choice. Simple, recyclable materials save money, space and conscience; modular inserts speed repeat packing and reduce breakage in transit. A story card does quiet, effective brand work—place, season, and care in 60–80 words beats heavy marketing. Keeping the range small avoids dead stock, label confusion, and the ‘what fits this box?’ scramble on busy days. When your packaging is tidy and repeatable, quality reads at a glance, your team can pack in minutes, and your brand earns trust without shouting.",
+
+  "Step-by-Step": [
+    "Pick 2–3 box sizes that fit your jars/candles; test drops and fit.",
+    "Design one card insert that adapts (cut/flip) for multiple layouts.",
+    "Write a 60–80 word story/care card; print on recycled stock.",
+    "Standardise closures (paper tape or belly band) and stickers.",
+    "Photograph and price each bundle; add to stall board or online."
+  ],
+
+  "Context & Narrative": "Picture a calm packing table before a winter market. Boxes are flat-packed, inserts pre-cut, stickers on a sheet, and the story card sits on top of each build. You make trios first: two honey jars and a candle, nestling in a single insert that flips to swap positions. Paper tape closes the box with a satisfying rip and press; a small sticker shows the batch or flavour. The card says who you are and how to store honey (cool, dark, no fridge) or burn a candle safely. The look is consistent: natural tones, crisp edges, and no glittery noise. \n\nThis simplicity scales. A customer orders five corporate gifts online; you pull five boxes, five insert sets, twenty minutes later they’re stacked, labelled and ready. Costs are predictable because you buy one set of sizes, not a dozen. Eco choices are visible without being preachy—buyers clock the absence of plastic and the neat reuse of kraft and paper shred. If a jar breaks in transit, the modular insert and tight fit meant it took real punishment; you can replace with confidence that the system is sound. Over time you’ll tweak little things—sticker placement, card copy—but the system stays the same: approachable, recyclable, brand-right. Your gifts become something people request by name because they look good, feel honest, and arrive intact.",
+  
+  "Evidence Highlights": [
+    "Limited SKUs reduce packing errors and dead stock.",
+    "Recyclable materials improve perceived quality and reduce costs.",
+    "Short, specific story cards increase buyer confidence."
+  ],
+
+  "Data Tables": {
+    "bundle_menu_headers": ["Bundle", "Contents", "Box size", "Insert type", "Price", "Notes"]
+  },
+
+  "Common Pitfalls": [
+    "Too many bundle variants to manage.",
+    "Plastic-heavy packing that fights your brand tone.",
+    "Loose fit leading to breakages in transit."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Print one universal insert die-line and adapt with simple folds/cuts for different bundles."}
+  ],
+
+  "FAQs": [
+    {"q": "Do I need barcodes?", "a": "Shops likely do. Add a barcode sticker to the outer box for retail."},
+    {"q": "How much filler?", "a": "As little as needed for a snug fit—good inserts beat loose shred."}
+  ],
+
+  "Seasonality & Climate": "Winter gifting peaks—prep stock and photos early; summer wedding favours are the second wave.",
+  
+  "Suggested Figures": [
+    {"alt": "Modular insert layout", "caption": "One insert, multiple jar/candle layouts to reduce SKUs."}
+  ],
+
+  "Glossary": [
+    {"term": "Belly band", "def": "A printed sleeve that wraps a box, replacing tape and adding branding."}
+  ],
+
+  "Cross-links": [
+    "market_stall_setup_food_hygiene_uk",
+    "honey_labelling_legal_basics_uk_eu",
+    "beeswax_rendering_storage"
+  ],
+
+  "Sources": [
+    {"name": "Packaging waste reduction basics", "url": "https://www.gov.uk/"},
+    {"name": "Retail readiness checklists", "url": "https://www.nafm.org.uk/"}
+  ],
+
+  "Scrape-Guidance": "Lift recyclable packaging norms and retail readiness tips from official and trade sources; avoid brand-specific suppliers."
+}

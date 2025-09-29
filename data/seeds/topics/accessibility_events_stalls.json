@@ -1,0 +1,150 @@
+{
+  "title": "Accessibility at stalls and events (inclusive, practical, low-cost)",
+  "slug": "accessibility_events_stalls",
+  "category": "Community & inclusion",
+  "categories": ["Operations", "Comms"],
+  "taxonomy": {
+    "pillar": "Community & inclusion",
+    "subpillars": ["Inclusion"],
+    "topics": ["access", "signage", "sensory", "wayfinding", "plain-language"],
+    "audience": ["club-officer", "market-seller", "beginner", "intermediate"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["step-free", "large-type", "quiet-zone", "allergy-notes"],
+
+  "At-a-Glance": "Inclusion is a series of small choices. Keep aisles clear and step-free, use large type on price boards, and offer a chair for those who need it. Provide a quiet explanation card for those who prefer reading to chat. Mark allergens clearly on any samples and keep hand gel visible. If hosting a talk or open day, publish access info in advance: step-free routes, toilets, seating, and contact for adjustments. Train helpers to offer help rather than assume. These simple norms widen your welcome and reduce stress for visitors and volunteers alike.",
+
+  "Why it Matters": "Community work should be for everyone, but markets and talks often exclude by accident: tiny print, cluttered layouts, or noisy demos with no alternative. A few low-cost tweaks change outcomes. Clear paths make stalls approachable for wheelchair users and parents with buggies; large type helps many people, not just those with low vision; a written explainer respects those who find busy chat hard; and pre-published access notes reduce awkward on-the-day surprises. Volunteers benefit too—clear layouts and roles reduce overload and make helping feel safe. Inclusion is not a bolt-on; it is a calm way of working that fits the bright and breezy tone we aim for in all comms.",
+  
+  "Step-by-Step": [
+    "Publish simple access info for events; invite adjustment requests.",
+    "Design stalls with clear fronts, no clutter, and large type prices.",
+    "Prepare a one page ‘about the honey’ card and a visual sampling SOP.",
+    "Brief volunteers to offer help and to keep aisles clear.",
+    "Review after events; note barriers and quick fixes for next time."
+  ],
+
+  "Context & Narrative": "You lay your stall like a small room: tables back by 10–15 cm so wheels can pass, banner clipped high, and a single price board with large numerals. A folding chair sits behind the table for those who need rest. Sampling happens on a tray with clear signage and a small visual showing one spoon per taste. You keep a printed card that explains who you are, what granulation is, and how to contact you later—anyone can read quietly then nod. For an open day you post a short access note on the invite: parking, step-free route, loos, seating, sensory triggers (smoker smell, buzzing videos), and a person to email for adjustments. Volunteers are briefed to offer help—‘Would you like a seat?’—and to keep pathways tidy. After each event you ask for feedback and add small fixes: a mat over a cable, a higher contrast sign, a quieter demo corner. Over time, your stall feels calm and welcoming, and more people linger and buy because they feel seen.",
+  
+  "Evidence Highlights": [
+    "Large, high-contrast signage improves comprehension and dwell time.",
+    "Published access info reduces last minute queries and drop-offs.",
+    "Clear aisles and seating reduce fatigue and crowd friction."
+  ],
+
+  "Data Tables": {
+    "access_checklist_headers": ["Item", "Done", "Notes"],
+    "feedback_log_headers": ["Event", "Barrier seen", "Fix proposed", "Owner", "Status"]
+  },
+
+  "Common Pitfalls": [
+    "Tiny chalk prices that no one can read.",
+    "Cluttered fronts blocking wheels and buggies.",
+    "No published access info for open days."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Print prices at 120 pt or larger and test readability at 2 meters."}
+  ],
+
+  "FAQs": [
+    {"q": "Do we need a full policy?", "a": "A short checklist and an access note go a long way—start there."},
+    {"q": "Sign language or interpreters?", "a": "Offer a contact for adjustments; partner with hosts for specific needs."}
+  ],
+
+  "Seasonality & Climate": "Wet days need mats and towel wipes; hot days need shade and water for visitors.",
+  
+  "Suggested Figures": [
+    {"alt": "Accessible stall layout", "caption": "Step-f
+
+# Seed 52 - Accessibility at stalls and events (inclusive, practical, low-cost)
+mkdir -p data/seeds/topics
+
+cat > data/seeds/topics/accessibility_events_stalls.json <<'JSON'
+{
+  "title": "Accessibility at stalls and events (inclusive, practical, low-cost)",
+  "slug": "accessibility_events_stalls",
+  "category": "Community & inclusion",
+  "categories": ["Operations", "Comms"],
+  "taxonomy": {
+    "pillar": "Community & inclusion",
+    "subpillars": ["Inclusion"],
+    "topics": ["access", "signage", "sensory", "wayfinding", "plain-language"],
+    "audience": ["club-officer", "market-seller", "beginner", "intermediate"],
+    "intent": ["how-to", "policy"],
+    "regions": ["UK", "EU"],
+    "season": ["spring", "summer", "autumn", "winter"],
+    "climate": ["temperate"],
+    "difficulty": "beginner",
+    "lifecycle_stage": ["growth"]
+  },
+  "tags": ["step-free", "large-type", "quiet-zone", "allergy-notes"],
+
+  "At-a-Glance": "Inclusion is a series of small choices. Keep aisles clear and step-free, use large type on price boards, and offer a chair for those who need it. Provide a quiet explanation card for those who prefer reading to chat. Mark allergens clearly on any samples and keep hand gel visible. If hosting a talk or open day, publish access info in advance: step-free routes, toilets, seating, and contact for adjustments. Train helpers to offer help rather than assume. These simple norms widen your welcome and reduce stress for visitors and volunteers alike.",
+
+  "Why it Matters": "Community work should be for everyone, but markets and talks often exclude by accident: tiny print, cluttered layouts, or noisy demos with no alternative. A few low-cost tweaks change outcomes. Clear paths make stalls approachable for wheelchair users and parents with buggies; large type helps many people, not just those with low vision; a written explainer respects those who find busy chat hard; and pre-published access notes reduce awkward on-the-day surprises. Volunteers benefit too—clear layouts and roles reduce overload and make helping feel safe. Inclusion is not a bolt-on; it is a calm way of working that fits the bright and breezy tone we aim for in all comms.",
+  
+  "Step-by-Step": [
+    "Publish simple access info for events; invite adjustment requests.",
+    "Design stalls with clear fronts, no clutter, and large type prices.",
+    "Prepare a one page ‘about the honey’ card and a visual sampling SOP.",
+    "Brief volunteers to offer help and to keep aisles clear.",
+    "Review after events; note barriers and quick fixes for next time."
+  ],
+
+  "Context & Narrative": "You lay your stall like a small room: tables back by 10–15 cm so wheels can pass, banner clipped high, and a single price board with large numerals. A folding chair sits behind the table for those who need rest. Sampling happens on a tray with clear signage and a small visual showing one spoon per taste. You keep a printed card that explains who you are, what granulation is, and how to contact you later—anyone can read quietly then nod. For an open day you post a short access note on the invite: parking, step-free route, loos, seating, sensory triggers (smoker smell, buzzing videos), and a person to email for adjustments. Volunteers are briefed to offer help—‘Would you like a seat?’—and to keep pathways tidy. After each event you ask for feedback and add small fixes: a mat over a cable, a higher contrast sign, a quieter demo corner. Over time, your stall feels calm and welcoming, and more people linger and buy because they feel seen.",
+  
+  "Evidence Highlights": [
+    "Large, high-contrast signage improves comprehension and dwell time.",
+    "Published access info reduces last minute queries and drop-offs.",
+    "Clear aisles and seating reduce fatigue and crowd friction."
+  ],
+
+  "Data Tables": {
+    "access_checklist_headers": ["Item", "Done", "Notes"],
+    "feedback_log_headers": ["Event", "Barrier seen", "Fix proposed", "Owner", "Status"]
+  },
+
+  "Common Pitfalls": [
+    "Tiny chalk prices that no one can read.",
+    "Cluttered fronts blocking wheels and buggies.",
+    "No published access info for open days."
+  ],
+
+  "Callouts": [
+    {"type": "Pro tip", "text": "Print prices at 120 pt or larger and test readability at 2 meters."}
+  ],
+
+  "FAQs": [
+    {"q": "Do we need a full policy?", "a": "A short checklist and an access note go a long way—start there."},
+    {"q": "Sign language or interpreters?", "a": "Offer a contact for adjustments; partner with hosts for specific needs."}
+  ],
+
+  "Seasonality & Climate": "Wet days need mats and towel wipes; hot days need shade and water for visitors.",
+  
+  "Suggested Figures": [
+    {"alt": "Accessible stall layout", "caption": "Step-free front, clear price board, chair, and tidy sampling tray."}
+  ],
+
+  "Glossary": [
+    {"term": "Access note", "def": "A short, practical description of routes, facilities and contacts for adjustments."}
+  ],
+
+  "Cross-links": [
+    "market_stall_setup_food_hygiene_uk",
+    "popup_tastings_instore_demos",
+    "customer_newsletter_community"
+  ],
+
+  "Sources": [
+    {"name": "Accessible events basics", "url": "https://www.gov.uk/"},
+    {"name": "Volunteer management and inclusion", "url": "https://www.ncvo.org.uk/"}
+  ],
+
+  "Scrape-Guidance": "Capture practical, low-cost inclusion steps for stalls and open days and how to publish simple access info."
+}

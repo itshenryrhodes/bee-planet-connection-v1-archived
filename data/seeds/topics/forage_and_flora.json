@@ -1,0 +1,70 @@
+{
+  "At-a-Glance": "Colony health depends on diverse nectar and pollen across the season. Planting and protecting forage creates continuity through dearths.",
+  "Why it Matters": [
+    "Diverse flora improves nutrition, immunity, and overwintering success.",
+    "Bridging gaps reduces stress, aggression, and robbing."
+  ],
+  "Objectives": [
+    "Map local flows and dearths at 2-4 week resolution.",
+    "Plant staggered bloom species and protect hedgerows.",
+    "Engage neighbours and landowners with simple planting guides."
+  ],
+  "What Good Looks Like": [
+    "Spring kickstart from willows, fruit blossom, and dandelion.",
+    "Summer continuity from clovers, lime, borage, and bramble.",
+    "Autumn sustenance from ivy, sedum, and late herbs.",
+    "Zero pesticide drift near apiaries."
+  ],
+  "Step-by-Step": [
+    "1) Survey 2 km radius for key trees, hedges, meadows, and crops.",
+    "2) Record bloom timing for 1-2 seasons to build a local flow calendar.",
+    "3) Choose seed mixes that fill gaps - ensure native or well-adapted species.",
+    "4) Coordinate with councils or site owners to protect verge and hedge cutting schedules.",
+    "5) Water and mulch new plantings in year one, then monitor bee use."
+  ],
+  "Seasonality & Climate": [
+    "Earlier springs shift bloom windows - update calendars yearly.",
+    "Drought stresses nectar production - consider water points and drought-tolerant species.",
+    "Urban microclimates can extend season length."
+  ],
+  "Data & Thresholds": [
+    "Track colony weight trends to validate flow timing.",
+    "Note pollen basket colours by week to infer sources.",
+    "Aim for continuous bloom from early spring to late autumn."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Colony light in mid-summer -> Check local flow -> Add forage lists to partners -> Consider supplemental feed.",
+    "Symptom: Aggression or robbing -> Likely dearth -> Tighten entrances, improve forage access."
+  ],
+  "Common Pitfalls": [
+    "Relying on monocultures that collapse after short flows.",
+    "Overmowing nectar corridors.",
+    "Ignoring pesticide drift risks."
+  ],
+  "Tools & Techniques": [
+    "Local flora maps, smartphone bloom logs, simple phenology sheet.",
+    "Weight scales on sentinel hives.",
+    "Community seed kits and planter templates."
+  ],
+  "Safety & Compliance": [
+    "Avoid invasive species.",
+    "Follow municipal guidance on verge planting and signage."
+  ],
+  "Field Checklist": [
+    "Bloom calendar up to date.",
+    "Gap weeks identified.",
+    "Seed or shrub plan prepared.",
+    "Neighbour engagement notes logged."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Provide a one-page planting guide with 3 tiers - balcony, garden, verge."
+  ],
+  "Cross-Links": ["urban_beekeeping_basics", "pesticide_awareness", "colony_nutrition"],
+  "Keywords": ["nectar flow", "pollen diversity", "phenology", "dearth", "hedgerow"],
+  "Further Reading": [
+    "RHS Plants for Pollinators.",
+    "Xerces Society regional planting guides."
+  ],
+  "Notes": "Attach your local 12 month forage calendar once compiled."
+}

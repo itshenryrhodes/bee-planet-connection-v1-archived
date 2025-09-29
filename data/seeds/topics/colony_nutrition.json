@@ -1,0 +1,71 @@
+{
+  "At-a-Glance": "Balanced nectar and pollen intake underpins immunity, brood rearing, and overwintering. Strategic feeding and forage planning bridge dearths without creating dependency.",
+  "Why it Matters": [
+    "Protein shortages stunt brood and weaken winter bees.",
+    "Sugar scarcity during rain or drought triggers stress and robbing.",
+    "Right nutrition reduces risk from pests and pathogens."
+  ],
+  "Objectives": [
+    "Map seasonal forage and identify gap weeks.",
+    "Use supplemental feed only when needed and matched to purpose.",
+    "Store and handle feeds hygienically to avoid disease spread."
+  ],
+  "What Good Looks Like": [
+    "Weight and brood tracking detect shortages early.",
+    "Autumn stores adequate without heavy spring feeding reliance.",
+    "Pollen substitutes reserved for genuine dearth or specific objectives (e.g., queen rearing)."
+  ],
+  "Step-by-Step": [
+    "1) Build a local flow calendar and track hive weights.",
+    "2) During dearth: offer light 1:1 syrup to stimulate drawing or maintain brood if appropriate.",
+    "3) For stores building in autumn: feed heavier 2:1 syrup until target weights reached.",
+    "4) In winter/early spring: use fondant or dry sugar where needed without breaking cluster.",
+    "5) Pollen: provide quality patties only when natural pollen is lacking and disease risk is controlled.",
+    "6) Stop feeding well before honey supers to prevent contamination."
+  ],
+  "Seasonality & Climate": [
+    "Drought and cold snaps create surprise gaps even in lush areas.",
+    "Urban microclimates can extend forage but also create mid-summer dearths."
+  ],
+  "Data & Thresholds": [
+    "Target autumn hive weights per local guidance; log heft differentials.",
+    "Brood pattern and pollen basket colour changes signal protein shortages.",
+    "Monitor robbing risk when feeding during dearth."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Spotty brood in flow -> Check pollen influx -> Add patties cautiously if natural sources absent.",
+    "Symptom: Sudden weight loss in rain week -> Add emergency syrup internally -> Re-assess after 3–5 days.",
+    "Symptom: Robbing at feeders -> Reduce entrances -> Switch to internal feeding and tidy spills."
+  ],
+  "Common Pitfalls": [
+    "Feeding syrup with supers on leading to honey contamination.",
+    "Creating chronic dependence by feeding when not needed.",
+    "Messy external feeding triggering robbing and disease spread."
+  ],
+  "Tools & Techniques": [
+    "Hive scales or regular heft logs, internal frame or top feeders.",
+    "Fondant blocks, pollen patty recipes, airtight storage.",
+    "Bee-safe water sources with landing surfaces."
+  ],
+  "Safety & Compliance": [
+    "Use food-grade containers and clean mixing tools.",
+    "Label feed batches and avoid cross-contamination."
+  ],
+  "Field Checklist": [
+    "Weights/hefts recorded.",
+    "Feed type matched to goal.",
+    "No open spills, entrances reduced if needed.",
+    "Supers removed before syrup feeding."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share a one-pager with neighbours on bee water sources and planting ideas."
+  ],
+  "Cross-Links": ["forage_and_flora", "overwintering_colonies", "varroa_monitoring_methods", "hive_hygiene"],
+  "Keywords": ["pollen", "nectar", "syrup", "fondant", "dearth", "robbing"],
+  "Further Reading": [
+    "Regional association nutrition guides.",
+    "Peer-reviewed work on protein and immune function in Apis mellifera."
+  ],
+  "Notes": "Align feeding with your IPM calendar so high nutrition coincides with winter bee rearing and varroa control."
+}

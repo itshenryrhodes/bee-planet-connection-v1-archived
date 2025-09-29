@@ -1,0 +1,68 @@
+{
+  "At-a-Glance": "Late summer and autumn wasps target weak colonies, nucs, and exposed honey. Proactive yard hygiene, entrance control, and rapid responses keep pressure low.",
+  "Why it Matters": [
+    "Wasp raids trigger defensive frenzies and can strip small colonies.",
+    "They amplify robbing by broadcasting honey scent around the yard.",
+    "Public perception suffers when visible wasp activity spikes near sites."
+  ],
+  "Objectives": [
+    "Reduce attractants and close weak entrances before pressure builds.",
+    "Use physical barriers and yard layout to disadvantage raiders.",
+    "Intervene immediately at first signs to prevent escalation."
+  ],
+  "What Good Looks Like": [
+    "Clean yards with no wet cappings or sticky tools outdoors.",
+    "Entrance reducers fitted on nucs and small colonies in dearth.",
+    "Robbing screens ready to deploy and used at first probing flights."
+  ],
+  "Step-by-Step": [
+    "1) Prevention: keep extraction and feeding tidy; no open honey or syrup.",
+    "2) Early season scouting: watch for wasp traffic at weak entrances.",
+    "3) At first probing: reduce entrances to 1–2 bee widths; add robbing screens.",
+    "4) Strengthen targets: combine or bolster very weak units; feed internally only.",
+    "5) Perimeter control: site bins sealed and away from hives; remove known nests only where legal and safe.",
+    "6) Monitor daily until weather or flows reduce pressure."
+  ],
+  "Seasonality & Climate": [
+    "Pressure peaks late summer to early autumn as natural forage declines.",
+    "Warm, still days increase scent carry and attack success."
+  ],
+  "Data & Thresholds": [
+    "Any sustained head-to-head fighting at the entrance triggers reducers and screens.",
+    "Multiple failed probing attempts per minute at several hives indicates yard-wide action."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Zig-zag probing at a nuc -> Fit reducer and screen now -> Feed internally.",
+    "Symptom: Paper wasps or hornets present -> ID species accurately -> Follow local rules for nest control or reporting.",
+    "Symptom: Persistent attacks despite reducers -> Move vulnerable unit or combine."
+  ],
+  "Common Pitfalls": [
+    "Leaving wet cappings outside after extraction.",
+    "Overwide entrances on nucs during dearth.",
+    "Open feeding during wasp peak season."
+  ],
+  "Tools & Techniques": [
+    "Entrance reducers, robbing screens, internal feeders, sealed waste tubs.",
+    "Species ID cards to avoid harming non-target insects."
+  ],
+  "Safety & Compliance": [
+    "Follow local regulations on nest removal and pesticide use.",
+    "Avoid placing toxic baits that risk non-target species."
+  ],
+  "Field Checklist": [
+    "Reducers and screens in vehicle.",
+    "Waste sealed and removed from site.",
+    "Weak units identified and protected."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to neighbours the difference between bees and wasps and your prevention steps."
+  ],
+  "Cross-Links": ["robbing_prevention_and_response", "hive_hygiene_and_biosecurity", "water_sources_and_hydration"],
+  "Keywords": ["wasps", "yellowjackets", "robbing screens", "dearth pressure", "entrance reducers"],
+  "Further Reading": [
+    "Regional ID guides for wasps and hornets.",
+    "Association notes on late season robbing and wasp control."
+  ],
+  "Notes": "Keep a small ‘pressure kit’ bag: screens, reducers, tape, wipes, ID card."
+}

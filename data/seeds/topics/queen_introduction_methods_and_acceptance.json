@@ -1,0 +1,70 @@
+{
+  "At-a-Glance": "Successful queen introduction depends on colony status, timing, pheromone acclimation, and patient handling. A standardised protocol lifts acceptance rates and cuts rework.",
+  "Why it Matters": [
+    "Failed introductions waste money and weeks of build-up.",
+    "High acceptance stabilises temperament and productivity quickly.",
+    "Consistent methods produce predictable outcomes across yards."
+  ],
+  "Objectives": [
+    "Match introduction method to colony condition and season.",
+    "Ensure colonies are truly queenless before introduction.",
+    "Record acceptance outcomes to refine practice."
+  ],
+  "What Good Looks Like": [
+    "Recipient queenless for 12–24 hours, good bee population, gentle smoke.",
+    "Slow-release candy cages; attendants used appropriately.",
+    "Follow-up checks at day 5–7 without tearing the nest apart."
+  ],
+  "Step-by-Step": [
+    "1) Confirm queenless: no eggs and no queen seen; avoid laying workers if possible.",
+    "2) Equalise resources: ensure adequate young bees and food.",
+    "3) Cage placement: between brood frames with candy plug up; avoid crushing workers.",
+    "4) Leave undisturbed: resist poking at the cage; allow bees to chew candy.",
+    "5) First check day 5–7: verify release and eggs; do not over-smoke.",
+    "6) If not released: partially poke the candy or manually release only if workers are calm.",
+    "7) Record: date, source, acceptance, temperament score."
+  ],
+  "Seasonality & Climate": [
+    "Warm, stable weather improves acceptance.",
+    "Late-season introductions work best into strong, well-fed colonies."
+  ],
+  "Data & Thresholds": [
+    "Aim for 80–95 percent acceptance in standard conditions.",
+    "Laying workers reduce acceptance markedly; use brood frames to reset before retry."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Workers balling cage -> Re-cage; wait longer queenless; reduce disturbance; try newspaper combine then re-introduce.",
+    "Symptom: No eggs day 7 -> Verify queen presence; if missing, repeat with fresh queen; review colony stressors.",
+    "Symptom: Laying workers -> Add open brood for several days before attempt; use nuc for introduction."
+  ],
+  "Common Pitfalls": [
+    "Introducing into queenright or recently queenright colonies.",
+    "Checking too early and disrupting pheromone acclimation.",
+    "Placing cages at edges away from brood heat and nurse bees."
+  ],
+  "Tools & Techniques": [
+    "Introduction cages with candy, push-in cages for tricky colonies.",
+    "Queenright nucs to ‘proof’ a queen before introduction to valuable colonies."
+  ],
+  "Safety & Compliance": [
+    "Transport queens carefully at moderate temperatures.",
+    "Log sources for traceability."
+  ],
+  "Field Checklist": [
+    "Queenless state confirmed.",
+    "Cage placed at brood with candy up.",
+    "Follow-up scheduled for day 5–7.",
+    "Temperament scored after acceptance."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Set expectations with helpers: ‘no peeking’ for several days."
+  ],
+  "Cross-Links": ["queen_rearing_and_supersedure", "making_and_managing_nucleus_colonies", "hive_inspection_protocols_and_recordkeeping"],
+  "Keywords": ["queen introduction", "acceptance", "push-in cage", "candy plug", "laying workers"],
+  "Further Reading": [
+    "Association acceptance studies and best practices.",
+    "Texts on pheromone biology and colony queenlessness."
+  ],
+  "Notes": "Push-in cage over emerging brood is a powerful rescue method for difficult colonies."
+}

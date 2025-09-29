@@ -1,0 +1,68 @@
+{
+  "At-a-Glance": "Dry, draft-free hives help bees regulate temperature and ripen nectar. Good ventilation prevents condensation dripping on clusters and mould.",
+  "Why it Matters": [
+    "Moisture kills more winter colonies than cold alone.",
+    "Stable internal climate reduces stress and disease pressure.",
+    "Efficient nectar ripening improves honey quality."
+  ],
+  "Objectives": [
+    "Provide controllable airflow without chilling brood.",
+    "Use insulation and top-vent options suited to climate and hive type.",
+    "Detect moisture problems early via visual and heft checks."
+  ],
+  "What Good Looks Like": [
+    "Slight forward tilt; dry crown board; insulation above cluster.",
+    "Small upper vent or breathable quilt boxes in damp climates.",
+    "Screened bottoms used judiciously; entrances sized to conditions."
+  ],
+  "Step-by-Step": [
+    "1) Level and tilt hives slightly forward to shed condensation.",
+    "2) Add insulation above the crown board in winter; maintain bee space.",
+    "3) Provide a small controllable top vent or moisture quilt where appropriate.",
+    "4) Manage entrances seasonally: reduce in winter/dearth; open in strong flows/heat.",
+    "5) Monitor signs: wet inner cover, mould on top bars, or dripping walls -> adjust immediately."
+  ],
+  "Seasonality & Climate": [
+    "Wet maritime climates need extra moisture management.",
+    "Heat waves require ventilation/shade to prevent overheating and bearding."
+  ],
+  "Data & Thresholds": [
+    "Condensation on inner cover = intervention trigger.",
+    "Sustained bearding at mild temps suggests ventilation or crowding issues."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Drips on cluster -> Increase top insulation; add small upper vent; confirm tilt.",
+    "Symptom: Chronic bearding -> Add space/supers; provide shade; evaluate airflow.",
+    "Symptom: Mouldy comb edges -> Improve ventilation; replace worst frames; check entrance sizing."
+  ],
+  "Common Pitfalls": [
+    "Over-ventilating and chilling brood.",
+    "Leaving hives dead-level or tilted back, pooling moisture.",
+    "Removing insulation too early in late winter."
+  ],
+  "Tools & Techniques": [
+    "Insulation boards, moisture quilts, vented crown boards.",
+    "Shade sails, windbreaks, screened bottoms, entrance reducers."
+  ],
+  "Safety & Compliance": [
+    "Secure roofs and sails against storms.",
+    "Avoid blocking emergency ventilation pathways with feed or insulation."
+  ],
+  "Field Checklist": [
+    "Forward tilt confirmed.",
+    "Top insulation in place (winter).",
+    "Vent aperture appropriate to weather.",
+    "No visible condensation/mould."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share a simple ‘why hives tilt forward’ explainer with site owners."
+  ],
+  "Cross-Links": ["overwintering_colonies", "apiary_setup", "colony_nutrition"],
+  "Keywords": ["ventilation", "condensation", "insulation", "bearding", "moisture quilt"],
+  "Further Reading": [
+    "Regional wintering guides for your hive type.",
+    "Studies on hive microclimate and moisture dynamics."
+  ],
+  "Notes": "Add photos of acceptable condensation (light film) vs problem pooling to your wiki."
+}

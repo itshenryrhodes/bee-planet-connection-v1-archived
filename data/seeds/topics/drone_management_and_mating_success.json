@@ -1,0 +1,69 @@
+{
+  "At-a-Glance": "Drones are essential for high-quality queen mating. Managing drone availability, age, and health near mating windows raises success rates and improves colony traits.",
+  "Why it Matters": [
+    "Poor mating yields failing queens, supersedure, and low productivity.",
+    "Adequate drone populations from desirable lines improve genetics.",
+    "Nutrition and varroa control directly affect drone viability."
+  ],
+  "Objectives": [
+    "Ensure abundant, healthy drones during queen mating windows.",
+    "Place mating nucs within range of strong drone-producing colonies.",
+    "Monitor mating success and adjust timelines to weather."
+  ],
+  "What Good Looks Like": [
+    "Selected drone mother colonies with excellent traits allowed to raise drones.",
+    "Staggered queen cell emergence aligned with drone sexual maturity (~24 days from egg to sexually mature adult).",
+    "Mating nucs placed away from heavy drift with good landmarks."
+  ],
+  "Step-by-Step": [
+    "1) Identify breeder colonies; avoid poor temperament or disease history.",
+    "2) Encourage drone comb in selected colonies several weeks before queen rearing.",
+    "3) Verify nutrition and varroa control to support drone health.",
+    "4) Time queen emergence so drones are mature during mating flights.",
+    "5) Site mating nucs within range of drone congregation areas; ensure windbreaks and sun.",
+    "6) Check for eggs/larvae 7–14 days after emergence; recycle failures promptly."
+  ],
+  "Seasonality & Climate": [
+    "Stable warm weather with light winds favours mating flights.",
+    "Cold or wet spells delay mating; hold spare cells or mated queens as contingency."
+  ],
+  "Data & Thresholds": [
+    "Target mating success rates aligned to local norms (often 70–90 percent).",
+    "Drone comb presence and flight observations confirm availability."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: High queen failure -> Check drone availability and weather -> Delay next batch; add drone frames to breeders.",
+    "Symptom: Spotty early brood -> Possible poorly mated queen -> Re-evaluate and replace.",
+    "Symptom: Nucs drifting -> Improve orientation cues; increase spacing."
+  ],
+  "Common Pitfalls": [
+    "Culling drone comb universally, starving the mating environment.",
+    "Launching queen rearing before drones are mature.",
+    "Ignoring varroa on drone brood in non-breeder colonies."
+  ],
+  "Tools & Techniques": [
+    "Drone foundation frames in breeder colonies.",
+    "Weather logs, mating nuc stands with distinct landmarks.",
+    "Varroa monitoring with attention to drone brood."
+  ],
+  "Safety & Compliance": [
+    "Biosecurity when moving frames between colonies.",
+    "Respect local restrictions on drone brood removal disposal."
+  ],
+  "Field Checklist": [
+    "Breeder drones present and mature.",
+    "Mating nucs stocked and oriented.",
+    "Follow-up check scheduled day 10–14."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Document breeder lines and share goals with helpers."
+  ],
+  "Cross-Links": ["queen_rearing_and_supersedure", "colony_nutrition", "varroa_monitoring_methods"],
+  "Keywords": ["drones", "mating success", "drone congregation area", "breeder colony", "queen mating"],
+  "Further Reading": [
+    "Queen rearing texts on drones and DCAs.",
+    "Studies on weather impacts on mating flights."
+  ],
+  "Notes": "Keep a small reserve of mated queens in nucs to backstop poor weather batches."
+}
