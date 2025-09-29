@@ -19,14 +19,23 @@
         <span class="wordmark">Bee Planet Connection</span>
       </a>
     </div>
-    <nav class="main-nav">
-      <a href="{{ "blog/"   | relURL }}">Blog</a>
-      <a href="{{ "wiki/"   | relURL }}">Wiki</a>
-      <a href="{{ "sops/"   | relURL }}">SOPs &amp; Templates</a>
-      <a href="{{ "alerts/" | relURL }}">Alerts</a>
-      <a href="{{ "tools/"  | relURL }}">Tools</a>
-      <a href="{{ "about/"  | relURL }}">About</a>
-      <a href="{{ "contact/"| relURL }}">Contact</a>
+
+    <nav class="main-nav" aria-label="Main">
+      {{ with .Site.Menus.main }}
+        {{ range . }}
+          {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+          <a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page" class="active"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      {{ else }}
+        <!-- Fallback if no menu configured -->
+        <a href="{{ "wiki/"   | relURL }}">Wiki</a>
+        <a href="{{ "sops/"   | relURL }}">SOPs &amp; Templates</a>
+        <a href="{{ "alerts/" | relURL }}">Alerts</a>
+        <a href="{{ "tools/"  | relURL }}">Tools</a>
+        <a href="{{ "about/"  | relURL }}">About</a>
+        <a href="{{ "contact/"| relURL }}">Contact</a>
+        <a href="{{ "blog/"   | relURL }}">Blog</a>
+      {{ end }}
     </nav>
   </header>
 
