@@ -10,6 +10,7 @@
   {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
   {{ if .IsHome }}<link rel="canonical" href="{{ .Site.BaseURL }}">{{ end }}
   <link rel="icon" href="{{ "img/logo.svg" | relURL }}" type="image/svg+xml">
+  {{ partial "seo.html" . }}
 </head>
 <body>
   <header class="container header">
