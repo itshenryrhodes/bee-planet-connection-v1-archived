@@ -11,6 +11,7 @@
   {{ if .IsHome }}<link rel="canonical" href="{{ .Site.BaseURL }}">{{ end }}
   <link rel="icon" href="{{ "img/logo.svg" | relURL }}" type="image/svg+xml">
   {{ partial "seo.html" . }}
+  <link rel="stylesheet" href="/css/brand.css">
 </head>
 <body>
   <header class="container header">
