@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: {{ .Site.BaseURL }}sitemap.xml
+Sitemap: {{ "sitemap.xml" | absURL }}
+Host: {{ .Site.BaseURL | replaceRE "/$" "" }}
