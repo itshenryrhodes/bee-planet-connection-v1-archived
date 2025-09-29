@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{ partial "intro-split.html" . }}
+  {{ partial "section-menu.html" . }}
+
+  <section class="grid cols-3">
+    <div class="card">
+      <h3>Sample Card A</h3>
+      <p>Concise description for a featured wiki article or tool.</p>
+      <p><a class="button" href="#">Read more</a></p>
+    </div>
+    <div class="card">
+      <h3>Sample Card B</h3>
+      <p>Another highlight block to check spacing and rhythm.</p>
+      <p><a class="button" href="#">Open</a></p>
+    </div>
+    <div class="card">
+      <h3>Sample Card C</h3>
+      <p>Use this to validate mobile stacking and card shadows.</p>
+      <p><a class="button" href="#">Details</a></p>
+    </div>
+  </section>
+{{ end }}
