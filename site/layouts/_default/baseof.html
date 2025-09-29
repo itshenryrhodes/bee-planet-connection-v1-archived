@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}Bee Planet Connection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $css := resources.Get "css/styles.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+  {{ if .IsHome }}<link rel="canonical" href="{{ .Site.BaseURL }}">{{ end }}
+</head>
+<body>
+  <header class="container header">
+    <div class="brand"><a href="{{ "/" | relURL }}">Bee Planet Connection</a></div>
+    <nav style="margin-left:auto;display:flex;gap:12px">
+      <a href="{{ "wiki/" | relURL }}">Wiki</a>
+      <a href="{{ "contact/" | relURL }}">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="container footer">
+    <small>&copy; {{ now.Format "2006" }} Bee Planet Connection</small>
+  </footer>
+</body>
+</html>
