@@ -14,3 +14,7 @@ enableGitInfo = true
 
 [params]
   heroDefaultID = "03"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
