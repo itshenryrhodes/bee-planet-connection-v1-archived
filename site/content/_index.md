@@ -6,8 +6,9 @@ hero_title: "Bee Planet Connection"
 hero_text: "Practical knowledge, tools, and alerts to keep bees healthy and communities informed."
 hero_cta_text: "Browse the Wiki"
 hero_cta_href: "/wiki/"
-hero_variant: "compact"
 ---
+
+{{< intro-split >}}
 
 ## Our Mission
 Bee Planet Connection makes beekeeping knowledge more accessible — from SOPs and printable checklists to real-time alerts on pests and diseases.
