@@ -1,12 +1,11 @@
-{{ $hid := or .Params.hero_id .Site.Params.heroDefaultID }}
-<section class="hero">
+{{- $hid := or .Params.hero_id .Site.Params.heroDefaultID -}}
+{{- $variant := or .Params.hero_variant "compact" -}}
+<section class="hero {{ if eq $variant "compact" }}compact{{ end }}">
   <picture>
-    <!-- WebP -->
     <source srcset="/img/hero/hero-{{ $hid }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
     <source srcset="/img/hero/hero-{{ $hid }}-sm.webp" media="(max-width: 768px)" type="image/webp">
     <source srcset="/img/hero/hero-{{ $hid }}-md.webp" media="(max-width: 1200px)" type="image/webp">
     <source srcset="/img/hero/hero-{{ $hid }}-lg.webp" media="(min-width: 1201px)" type="image/webp">
-    <!-- JPG fallback -->
     <img src="/img/hero/hero-{{ $hid }}-md.jpg" alt="{{ .Params.hero_title | default .Title }}">
   </picture>
   <div class="copy">
