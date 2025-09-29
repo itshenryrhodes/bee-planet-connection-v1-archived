@@ -109,3 +109,6 @@ a:hover{text-decoration:underline}
   background:rgba(11,61,145,.12);
   text-decoration:none;
 }
+
+/* --- brand logo --- */
+.site-header .brand img{height:32px;width:auto;display:block}
