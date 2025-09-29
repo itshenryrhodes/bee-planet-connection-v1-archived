@@ -33,3 +33,9 @@ a:hover{text-decoration:underline}
 
 /* Footer */
 .footer{margin-top:40px;padding:24px 0;border-top:1px solid #eee;color:var(--muted)}
+
+/* Hero compact variant */
+.hero.compact picture img{max-height:240px;width:100%;object-fit:cover}
+.hero.compact .copy{padding:12px}
+.hero.compact h2{margin:0;font-size:1.6rem}
+.hero.compact p{margin:0.4rem 0}
