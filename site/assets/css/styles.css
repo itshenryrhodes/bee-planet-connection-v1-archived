@@ -39,3 +39,15 @@ a:hover{text-decoration:underline}
 .hero.compact .copy{padding:12px}
 .hero.compact h2{margin:0;font-size:1.6rem}
 .hero.compact p{margin:0.4rem 0}
+
+/* Intro split layout */
+.intro-split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;margin:24px 0}
+.intro-split .intro-copy{display:flex;flex-direction:column;justify-content:center}
+.intro-split .intro-copy h1{margin:0 0 12px;font-size:2rem;color:var(--brand)}
+.intro-split .intro-copy .lede{font-size:1.1rem;color:var(--muted)}
+.intro-split .intro-media img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+@media(max-width:768px){
+  .intro-split{grid-template-columns:1fr}
+  .intro-split .intro-media{order:-1;margin-bottom:16px}
+}
