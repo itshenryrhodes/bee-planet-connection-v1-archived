@@ -8,8 +8,6 @@ hero_cta_text: "Browse the Wiki"
 hero_cta_href: "/wiki/"
 ---
 
-{{< intro-split >}}
-
 ## Our Mission
 Bee Planet Connection makes beekeeping knowledge more accessible — from SOPs and printable checklists to real-time alerts on pests and diseases.
 
