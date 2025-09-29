@@ -1,0 +1,13 @@
+/* brand logo override */
+.site-header .brand{
+  display:inline-block;
+  width:140px;
+  height:32px;
+  background-image:url('/img/logo/logo-dark.png');
+  background-repeat:no-repeat;
+  background-position:left center;
+  background-size:contain;
+  text-indent:-9999px; /* keep text for screen readers */
+  overflow:hidden;
+  white-space:nowrap;
+}

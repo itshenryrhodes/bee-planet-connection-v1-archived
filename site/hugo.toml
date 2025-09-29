@@ -66,3 +66,4 @@ baseName     = "robots"
 isPlainText  = true
 notAlternative = true
 rel          = "robots"
+enableRobotsTXT = true
