@@ -1,19 +1,4 @@
 {{ define "main" }}
-  {{ partial "hero.html" . }}
-  <div class="grid cols-3">
-    <div class="card">
-      <h3>Start with the Wiki</h3>
-      <p>Deep dives on bees, biosecurity, and urban apiaries.</p>
-      <p><a class="button" href="{{ "wiki/" | relURL }}">Browse Wiki</a></p>
-    </div>
-    <div class="card">
-      <h3>Get in Touch</h3>
-      <p>Questions, contributions, or partnerships.</p>
-      <p><a class="button" href="{{ "contact/" | relURL }}">Contact</a></p>
-    </div>
-    <div class="card">
-      <h3>About</h3>
-      <p>Bee Planet Connection is a practical resource for beekeepers and neighbours.</p>
-    </div>
-  </div>
+  {{ partial "intro-split.html" . }}
+  {{ .Content }}
 {{ end }}
