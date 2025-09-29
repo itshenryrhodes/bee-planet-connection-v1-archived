@@ -3,188 +3,92 @@
     "description": "Anatomy, physiology, genetics, life cycle and social behaviour of honey bees and other bees.",
     "keywords": ["bee anatomy", "honey bee life cycle", "bee communication", "bee species"],
     "subcategories": [
-      {
-        "name": "Anatomy & Physiology",
-        "articles": ["Anatomy of the honey bee", "Bee physiology and aging", "Digestive system of bees"]
-      },
-      {
-        "name": "Genetics & Taxonomy",
-        "articles": ["Honey bee genetics", "Apis mellifera subspecies", "Evolution of bees", "Bee taxonomy"]
-      },
-      {
-        "name": "Life Cycle & Behavior",
-        "articles": ["Honey bee life cycle", "Bee social structure", "Foraging behavior", "Waggle dance communication", "Pheromones in bees"]
-      },
-      {
-        "name": "Species & Diversity",
-        "articles": ["Apis genus overview", "Meliponini (stingless bees)", "Bumblebees", "Solitary bees"]
-      }
+      { "name": "Anatomy & Physiology", "articles": ["Anatomy of the honey bee", "Bee physiology and aging", "Digestive system of bees"] },
+      { "name": "Genetics & Taxonomy", "articles": ["Honey bee genetics", "Apis mellifera subspecies", "Evolution of bees", "Bee taxonomy"] },
+      { "name": "Life Cycle & Behavior", "articles": ["Honey bee life cycle", "Bee social structure", "Foraging behavior", "Waggle dance communication", "Pheromones in bees"] },
+      { "name": "Species & Diversity", "articles": ["Apis genus overview", "Meliponini (stingless bees)", "Bumblebees", "Solitary bees"] }
     ]
   },
   "Bee Health & Disease": {
-    "description": "Diseases, parasites and health management: Varroa and other mites, foulbroods, nosema, viruses, nutrition and treatments.",
+    "description": "Diseases, parasites and health management: Varroa and other mites, foulbroods, nosema, viruses, nutrition and treatments (UK/EU priority).",
     "keywords": ["Varroa mite treatment", "bee disease symptoms", "American foulbrood", "colony health"],
     "subcategories": [
-      {
-        "name": "Pests & Parasites",
-        "articles": ["Varroa destructor", "Small hive beetle", "Tropilaelaps mite", "Wax moth", "Asian giant hornet"]
-      },
-      {
-        "name": "Diseases & Pathogens",
-        "articles": ["American foulbrood", "European foulbrood", "Nosema apis", "Deformed wing virus", "Chalkbrood", "Colony collapse disorder"]
-      },
-      {
-        "name": "Nutrition & Immunology",
-        "articles": ["Bee nutrition and pollen", "Immunology of honey bees", "Probiotics for bees", "Bee stressors (pesticides, climate)"]
-      },
-      {
-        "name": "Health Management",
-        "articles": ["Beekeeping hygiene", "Pest control methods", "Varroa monitoring and control", "Organic disease management"]
-      }
+      { "name": "Pests & Parasites", "articles": ["Varroa destructor", "Varroa monitoring", "Alcohol wash method", "Sugar roll method", "Sticky board counts", "Natural mite drop", "Varroa treatments", "Oxalic acid vaporisation", "Oxalic acid trickle", "Formic acid pads", "Thymol gels", "Amitraz", "Flumethrin", "Resistance management for Varroa", "Brood break methods", "Small hive beetle", "Wax moth control", "Asian hornet (UK)"] },
+      { "name": "Diseases & Pathogens", "articles": ["American foulbrood (UK)", "European foulbrood (UK)", "Nosema (apis & ceranae)", "Deformed wing virus (DWV)", "Chronic bee paralysis virus (CBPV)", "Chalkbrood", "Stonebrood", "Notifiable diseases (UK): overview", "Contact the National Bee Unit (UK)"] },
+      { "name": "Nutrition & Immunology", "articles": ["Bee nutrition (pollen diversity & nectar)", "Feeding syrup (ratios & hygiene)", "Protein patties (when & how)", "Water for bees (provision & placement)"] },
+      { "name": "Health Management", "articles": ["Integrated pest management (IPM) for bees", "Apiary hygiene & biosecurity", "Comb storage", "Incident logs & record-keeping", "Seasonal health management (UK)", "Spring management (UK)", "Summer management (UK)", "Autumn management (UK)", "Wintering colonies (UK)"] }
     ]
   },
   "Bee Products & Uses": {
     "description": "Products from the hive—honey, beeswax, pollen, propolis, royal jelly, venom—and their culinary, industrial and medical uses.",
     "keywords": ["benefits of raw honey", "beeswax crafts", "royal jelly benefits", "bee pollen uses"],
     "subcategories": [
-      {
-        "name": "Honey & Honey Products",
-        "articles": ["Honey (food)", "Honey extraction", "Monofloral honey", "Honey crystallisation", "Honey adulteration"]
-      },
-      {
-        "name": "Other Hive Products",
-        "articles": ["Beeswax production", "Propolis and its uses", "Bee pollen collection", "Royal jelly", "Bee venom therapy"]
-      },
-      {
-        "name": "Product Applications",
-        "articles": ["Apitherapy (bee products in medicine)", "Cosmetics and beeswax", "Propolis in dentistry"]
-      }
+      { "name": "Honey & Honey Products", "articles": ["Honey (food)", "Honey extraction", "Monofloral honey", "Honey crystallisation", "Honey adulteration"] },
+      { "name": "Other Hive Products", "articles": ["Beeswax production", "Propolis and its uses", "Bee pollen collection", "Royal jelly", "Bee venom therapy"] },
+      { "name": "Product Applications", "articles": ["Apitherapy (bee products in medicine)", "Cosmetics and beeswax", "Propolis in dentistry"] }
     ]
   },
   "Pollination & Ecosystem Services": {
-    "description": "The role of bees and other pollinators in ecosystems and agriculture, crop dependence, pollinator decline and habitat conservation.",
+    "description": "Role of bees and other pollinators in ecosystems and agriculture, crop dependence, pollinator decline and habitat conservation.",
     "keywords": ["bee pollination benefits", "pollinator decline", "crops pollinated by bees", "ecosystem services bees"],
     "subcategories": [
-      {
-        "name": "Crop Pollination",
-        "articles": ["List of crop plants pollinated by bees", "Managed pollination services", "Almond pollination", "Saturation pollination"]
-      },
-      {
-        "name": "Wild Pollinators & Habitats",
-        "articles": ["Wild bee species", "Habitat conservation for pollinators", "Pollinator-friendly gardening", "Urban beekeeping"]
-      },
-      {
-        "name": "Pollination Biology",
-        "articles": ["Pollination mechanisms (buzz pollination)", "Flower–bee coevolution", "Pollination networks", "Pollination contracts"]
-      }
+      { "name": "Crop Pollination", "articles": ["List of crop plants pollinated by bees", "Managed pollination services", "Almond pollination", "Saturation pollination"] },
+      { "name": "Wild Pollinators & Habitats", "articles": ["Wild bee species", "Habitat conservation for pollinators", "Pollinator-friendly gardening", "Urban beekeeping"] },
+      { "name": "Pollination Biology", "articles": ["Pollination mechanisms (buzz pollination)", "Flower–bee coevolution", "Pollination networks", "Pollination contracts"] }
     ]
   },
   "Beekeeping Practices & Equipment": {
-    "description": "Practical apiculture: hive management, tools, queen rearing, seasonal care. Hive types include Langstroth, top-bar and Warré.",
+    "description": "Practical apiculture: apiary setup, hive management, tools, queen rearing, and seasonal care (Langstroth, top-bar, Warré).",
     "keywords": ["how to start beekeeping", "types of beehives", "beekeeping tools", "queen rearing methods"],
     "subcategories": [
-      {
-        "name": "Apiary Management",
-        "articles": ["Setting up an apiary", "Hive inspection techniques", "Winterizing hives", "Swarm management", "Migratory beekeeping"]
-      },
-      {
-        "name": "Hive Types & Equipment",
-        "articles": ["Langstroth hive", "Top-bar hive", "Warré hive", "Hive tools and protective gear", "Honey extractor"]
-      },
-      {
-        "name": "Bee Breeding & Reproduction",
-        "articles": ["Queen bee rearing", "Drones and mating flights", "Grafting and queen cells", "Artificial insemination of queens"]
-      },
-      {
-        "name": "Beekeeping Calendars & Practices",
-        "articles": ["Seasonal beekeeping tasks", "Integrated pest management for bees", "Organic beekeeping practices", "Beekeeper training courses"]
-      }
+      { "name": "Apiary Management", "articles": ["Setting up an apiary", "Hive inspection techniques", "Winterizing hives", "Swarm management", "Migratory beekeeping"] },
+      { "name": "Hive Types & Equipment", "articles": ["Langstroth hive", "Top-bar hive", "Warré hive", "Hive tools and protective gear", "Honey extractor"] },
+      { "name": "Bee Breeding & Reproduction", "articles": ["Queen bee rearing", "Drones and mating flights", "Grafting and queen cells", "Artificial insemination of queens"] },
+      { "name": "Beekeeping Calendars & Practices", "articles": ["Seasonal beekeeping tasks", "Integrated pest management for bees", "Organic beekeeping practices", "Beekeeper training courses"] }
     ]
   },
   "Bee Genetics & Breeding": {
-    "description": "Genetic diversity, breeding programmes for traits like hygienic behaviour and mite resistance, and honey bee lineage studies.",
+    "description": "Genetic diversity, breeding programmes (hygienic behaviour, mite resistance), and honey bee lineage studies.",
     "keywords": ["honey bee genome", "breeding disease-resistant bees", "Africanized honey bee genetics", "Apis mellifera lineages"],
     "subcategories": [
-      {
-        "name": "Genetic Diversity",
-        "articles": ["Honey bee genomics", "Africanized bee genetics", "European vs Asian honey bees", "Conservation genetics of bees"]
-      },
-      {
-        "name": "Breeding Programs",
-        "articles": ["Selective breeding methods", "Varroa-resistant breeding", "Breeding objectives and trade-offs", "Queen rearing techniques"]
-      }
+      { "name": "Genetic Diversity", "articles": ["Honey bee genomics", "Africanized bee genetics", "European vs Asian honey bees", "Conservation genetics of bees"] },
+      { "name": "Breeding Programs", "articles": ["Selective breeding methods", "Varroa-resistant breeding", "Breeding objectives and trade-offs", "Queen rearing techniques"] }
     ]
   },
   "Conservation & Environment": {
-    "description": "Conservation of bees and environmental issues: habitat, climate change, pesticides, and conservation strategies and campaigns.",
+    "description": "Conservation of bees and environmental issues: habitat, climate change, pesticides, and conservation strategies.",
     "keywords": ["save the bees", "pollinator conservation programs", "pesticide effects on bees", "world bee day"],
     "subcategories": [
-      {
-        "name": "Pollinator Decline",
-        "articles": ["Causes of pollinator decline", "Pesticides and bee health", "Habitat loss for bees", "Colony collapse disorder (history)"]
-      },
-      {
-        "name": "Conservation Efforts",
-        "articles": ["Wildflower planting", "Pollinator habitat restoration", "Legal protection for bees", "Urban greening for pollinators"]
-      },
-      {
-        "name": "Sustainability",
-        "articles": ["Sustainable beekeeping", "Organic farming and bees", "Climate change and bees"]
-      }
+      { "name": "Pollinator Decline", "articles": ["Causes of pollinator decline", "Pesticides and bee health", "Habitat loss for bees", "Colony collapse disorder (history)"] },
+      { "name": "Conservation Efforts", "articles": ["Wildflower planting", "Pollinator habitat restoration", "Legal protection for bees", "Urban greening for pollinators"] },
+      { "name": "Sustainability", "articles": ["Sustainable beekeeping", "Organic farming and bees", "Climate change and bees"] }
     ]
   },
   "Economics & Industry": {
     "description": "Economic aspects of apiculture: honey markets, trade, pricing, and the value of pollination services to agriculture.",
     "keywords": ["honey market trends", "value of pollination", "bee product pricing", "apiculture economics"],
     "subcategories": [
-      {
-        "name": "Honey & Bee Product Markets",
-        "articles": ["Global honey trade", "Honey standards and grading", "Beeswax industry", "Propolis and pollen markets"]
-      },
-      {
-        "name": "Pollination Services Economy",
-        "articles": ["Commercial pollination contracts", "Cost of pollination services", "Agricultural reliance on bees", "Colony rental practices"]
-      },
-      {
-        "name": "Beekeeping Business",
-        "articles": ["Running a commercial apiary", "Beekeeping cooperatives", "Grants and subsidies", "Honey production statistics"]
-      }
+      { "name": "Honey & Bee Product Markets", "articles": ["Global honey trade", "Honey standards and grading", "Beeswax industry", "Propolis and pollen markets"] },
+      { "name": "Pollination Services Economy", "articles": ["Commercial pollination contracts", "Cost of pollination services", "Agricultural reliance on bees", "Colony rental practices"] },
+      { "name": "Beekeeping Business", "articles": ["Running a commercial apiary", "Beekeeping cooperatives", "Grants and subsidies", "Honey production statistics"] }
     ]
   },
   "History & Culture": {
-    "description": "History of beekeeping and the cultural significance of bees: ancient hives, honey in mythology, traditions and literature.",
+    "description": "History of beekeeping and cultural significance of bees: ancient hives, honey in mythology, traditions and literature.",
     "keywords": ["history of beekeeping", "honey in mythology", "beekeeping traditions", "ancient apiculture"],
     "subcategories": [
-      {
-        "name": "Historical Beekeeping",
-        "articles": ["Ancient beekeeping methods", "Skeps and traditional hives", "Beekeeping in medieval times", "History of apicultural science"]
-      },
-      {
-        "name": "Cultural Significance",
-        "articles": ["Bees in religion and mythology", "Honey festivals", "Literature about bees", "Proverbs and symbolism of bees"]
-      },
-      {
-        "name": "Folklore & Traditions",
-        "articles": ["Telling the Bees (folk custom)", "Bees as lucky symbols", "Bee dances and tales", "Modern bee art and literature"]
-      }
+      { "name": "Historical Beekeeping", "articles": ["Ancient beekeeping methods", "Skeps and traditional hives", "Beekeeping in medieval times", "History of apicultural science"] },
+      { "name": "Cultural Significance", "articles": ["Bees in religion and mythology", "Honey festivals", "Literature about bees", "Proverbs and symbolism of bees"] },
+      { "name": "Folklore & Traditions", "articles": ["Telling the Bees (folk custom)", "Bees as lucky symbols", "Bee dances and tales", "Modern bee art and literature"] }
     ]
   },
   "Laws, Policy & Organizations": {
     "description": "Regulations, reporting requirements, and organisations: notifiable diseases, apiary registration, government agencies and associations.",
     "keywords": ["bee import regulations", "apiary registration", "apiculture policy", "beekeeping associations"],
     "subcategories": [
-      {
-        "name": "Regulations & Law",
-        "articles": ["Bee import/export regulations", "Notifiable bee diseases", "Apiary registration requirements", "Pesticide laws affecting bees"]
-      },
-      {
-        "name": "Government & Agencies",
-        "articles": ["USDA and APHIS programmes", "DEFRA National Bee Unit", "EPA pollinator protection", "FAO pollination initiatives"]
-      },
-      {
-        "name": "Organizations & Societies",
-        "articles": ["Apimondia", "IBRA", "Local beekeeping associations", "Bee research journals"]
-      }
+      { "name": "Regulations & Law", "articles": ["Bee import/export regulations", "Notifiable bee diseases", "Apiary registration requirements", "Pesticide laws affecting bees"] },
+      { "name": "Government & Agencies", "articles": ["USDA and APHIS programmes", "DEFRA National Bee Unit", "EPA pollinator protection", "FAO pollination initiatives"] },
+      { "name": "Organizations & Societies", "articles": ["Apimondia", "IBRA", "Local beekeeping associations", "Bee research journals"] }
     ]
   }
 }

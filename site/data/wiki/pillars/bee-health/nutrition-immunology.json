@@ -1,0 +1,46 @@
+{
+  "pillar": "bee-health",
+  "subcategory": "nutrition-immunology",
+  "articles": [
+    {
+      "title": "Bee nutrition (pollen diversity & nectar)",
+      "slug": "bee-nutrition",
+      "intent": "informational",
+      "primary_query": "bee nutrition pollen diversity",
+      "long_tail": ["best forage bees uk", "protein patties bees", "micronutrients bees"],
+      "links_up": ["bee-health", "nutrition-immunology"],
+      "links_across": ["feeding-syrup-recipes", "protein-patties", "water-for-bees"],
+      "links_forward": ["uk-forage-calendar"]
+    },
+    {
+      "title": "Feeding syrup (ratios & hygiene)",
+      "slug": "feeding-syrup-recipes",
+      "intent": "informational",
+      "primary_query": "sugar syrup ratio bees uk",
+      "long_tail": ["1 to 1 syrup spring", "2 to 1 syrup autumn", "hivetop feeders hygiene"],
+      "links_up": ["bee-health", "nutrition-immunology"],
+      "links_across": ["protein-patties", "autumn-management-uk"],
+      "links_forward": ["wintering-colonies-uk"]
+    },
+    {
+      "title": "Protein patties (when & how)",
+      "slug": "protein-patties",
+      "intent": "informational",
+      "primary_query": "protein patties bees uk",
+      "long_tail": ["when to feed protein bees", "pollen substitute bees", "spring build up bees"],
+      "links_up": ["bee-health", "nutrition-immunology"],
+      "links_across": ["bee-nutrition"],
+      "links_forward": ["spring-management-uk"]
+    },
+    {
+      "title": "Water for bees (provision & placement)",
+      "slug": "water-for-bees",
+      "intent": "informational",
+      "primary_query": "do bees need water",
+      "long_tail": ["how to provide water for bees", "stop bees in neighbours pool", "watering station design"],
+      "links_up": ["bee-health", "nutrition-immunology"],
+      "links_across": ["urban-beekeeping", "apiary-siting"],
+      "links_forward": ["apiary-hygiene"]
+    }
+  ]
+}

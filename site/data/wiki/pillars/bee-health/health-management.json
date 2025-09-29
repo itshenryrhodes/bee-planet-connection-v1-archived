@@ -1,0 +1,96 @@
+{
+  "pillar": "bee-health",
+  "subcategory": "health-management",
+  "articles": [
+    {
+      "title": "Integrated pest management (IPM) for bees",
+      "slug": "integrated-pest-management-ipm",
+      "intent": "informational",
+      "primary_query": "ipm bees varroa uk",
+      "long_tail": ["integrated pest management beekeeping", "varroa cultural controls", "treatment thresholds bees"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["varroa-monitoring", "resistance-management-varroa", "apiary-hygiene"],
+      "links_forward": ["seasonal-management-uk"]
+    },
+    {
+      "title": "Apiary hygiene & biosecurity",
+      "slug": "apiary-hygiene",
+      "intent": "informational",
+      "primary_query": "apiary hygiene best practice",
+      "long_tail": ["clean hive tools between hives", "quarantine new colonies", "disposal infected equipment uk"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["comb-storage", "american-foulbrood-uk", "european-foulbrood-uk"],
+      "links_forward": ["incident-response-logs"]
+    },
+    {
+      "title": "Comb storage (moth & contamination prevention)",
+      "slug": "comb-storage",
+      "intent": "informational",
+      "primary_query": "how to store comb bees",
+      "long_tail": ["freezing frames bees", "sulphur strips alternative", "stacking supers storage"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["wax-moth-control", "apiary-hygiene"],
+      "links_forward": []
+    },
+    {
+      "title": "Incident logs & record-keeping",
+      "slug": "incident-response-logs",
+      "intent": "informational",
+      "primary_query": "beekeeping health records uk",
+      "long_tail": ["disease incident log template", "treatment records bee medicine", "audit trail apiary uk"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["notifiable-diseases-uk", "contact-national-bee-unit"],
+      "links_forward": []
+    },
+    {
+      "title": "Seasonal health management (UK)",
+      "slug": "seasonal-management-uk",
+      "intent": "informational",
+      "primary_query": "seasonal bee health management uk",
+      "long_tail": ["spring varroa check uk", "autumn thymol uk", "winter oxalic acid uk"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["spring-management-uk", "summer-management-uk", "autumn-management-uk", "wintering-colonies-uk"],
+      "links_forward": ["varroa-treatments"]
+    },
+    {
+      "title": "Spring management (UK)",
+      "slug": "spring-management-uk",
+      "intent": "informational",
+      "primary_query": "spring beekeeping checklist uk",
+      "long_tail": ["spring varroa monitoring uk", "spring feeding bees uk", "spring brood expansion uk"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["bee-nutrition", "varroa-monitoring"],
+      "links_forward": ["swarm-control-methods"]
+    },
+    {
+      "title": "Summer management (UK)",
+      "slug": "summer-management-uk",
+      "intent": "informational",
+      "primary_query": "summer beekeeping tasks uk",
+      "long_tail": ["supering honey flow uk", "heat stress bees uk", "formic acid summer uk"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["formic-acid-pads", "thymol-gels"],
+      "links_forward": ["honey-harvest-uk"]
+    },
+    {
+      "title": "Autumn management (UK)",
+      "slug": "autumn-management-uk",
+      "intent": "informational",
+      "primary_query": "autumn beekeeping checklist uk",
+      "long_tail": ["feed 2 to 1 syrup uk", "thymol application autumn", "mite knockdown schedule uk"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["feeding-syrup-recipes", "thymol-gels"],
+      "links_forward": ["wintering-colonies-uk"]
+    },
+    {
+      "title": "Wintering colonies (UK)",
+      "slug": "wintering-colonies-uk",
+      "intent": "informational",
+      "primary_query": "how to overwinter bees uk",
+      "long_tail": ["insulation moisture control bees", "oxalic acid winter uk", "fondant feeding winter uk"],
+      "links_up": ["bee-health", "health-management"],
+      "links_across": ["oxalic-acid-vaporisation", "feeding-syrup-recipes"],
+      "links_forward": []
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "pillar": "bee-health",
+  "subcategory": "pests-parasites",
+  "articles": [
+    {
+      "title": "Varroa destructor (overview)",
+      "slug": "varroa-destructor",
+      "intent": "informational",
+      "primary_query": "varroa destructor treatment uk",
+      "long_tail": ["what is varroa mite", "varroa lifecycle", "varroa thresholds uk", "when to treat varroa europe"],
+      "links_up": ["bee-health", "pests-parasites"],
+      "links_across": ["varroa-monitoring", "varroa-treatments", "deformed-wing-virus-dwv", "integrated-pest-management-ipm"],
+      "links_forward": ["oxalic-acid-vaporisation", "formic-acid-pads"]
+    },
+    {
+      "title": "Varroa monitoring (methods & thresholds)",
+      "slug": "varroa-monitoring",
+      "intent": "informational",
+      "primary_query": "varroa monitoring methods uk",
+      "long_tail": ["varroa alcohol wash uk", "sugar roll varroa test", "natural mite drop threshold", "drone brood uncapping varroa"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-destructor"],
+      "links_across": ["alcohol-wash-method", "sugar-roll-method", "sticky-board-counts", "drone-brood-uncapping", "natural-mite-drop"],
+      "links_forward": ["varroa-treatments", "integrated-pest-management-ipm"]
+    },
+    {
+      "title": "Alcohol wash method",
+      "slug": "alcohol-wash-method",
+      "intent": "informational",
+      "primary_query": "alcohol wash varroa uk",
+      "long_tail": ["how to do alcohol wash bees", "varroa alcohol wash threshold uk", "best practice alcohol wash"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-monitoring"],
+      "links_across": ["sugar-roll-method", "sticky-board-counts", "natural-mite-drop"],
+      "links_forward": ["varroa-treatments"]
+    },
+    {
+      "title": "Sugar roll method",
+      "slug": "sugar-roll-method",
+      "intent": "informational",
+      "primary_query": "sugar roll varroa test",
+      "long_tail": ["powdered sugar varroa test", "sugar shake method bees", "non-lethal varroa testing"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-monitoring"],
+      "links_across": ["alcohol-wash-method", "sticky-board-counts"],
+      "links_forward": ["varroa-treatments"]
+    },
+    {
+      "title": "Sticky board counts",
+      "slug": "sticky-board-counts",
+      "intent": "informational",
+      "primary_query": "varroa sticky board threshold",
+      "long_tail": ["mite drop per day threshold uk", "sticky board setup hive", "interpreting varroa drop"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-monitoring"],
+      "links_across": ["alcohol-wash-method", "sugar-roll-method", "natural-mite-drop"],
+      "links_forward": ["varroa-treatments"]
+    },
+    {
+      "title": "Natural mite drop",
+      "slug": "natural-mite-drop",
+      "intent": "informational",
+      "primary_query": "natural mite drop varroa threshold uk",
+      "long_tail": ["mite fall count how to", "daily mite drop levels uk", "when to treat based on mite drop"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-monitoring"],
+      "links_across": ["sticky-board-counts"],
+      "links_forward": ["varroa-treatments"]
+    },
+    {
+      "title": "Varroa treatments (overview & timing)",
+      "slug": "varroa-treatments",
+      "intent": "informational",
+      "primary_query": "best varroa treatment uk",
+      "long_tail": ["when to treat varroa uk", "varroa treatment schedule", "varroa resistance management"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-destructor"],
+      "links_across": ["oxalic-acid-vaporisation", "oxalic-acid-dribble", "formic-acid-pads", "thymol-gels", "amitraz", "flumethrin"],
+      "links_forward": ["integrated-pest-management-ipm"]
+    },
+    {
+      "title": "Oxalic acid vaporisation (sublimation)",
+      "slug": "oxalic-acid-vaporisation",
+      "intent": "informational",
+      "primary_query": "oxalic acid vaporization bees uk",
+      "long_tail": ["oxalic acid sublimation dose", "oa vape broodless period", "winter varroa treatment uk"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-treatments"],
+      "links_across": ["oxalic-acid-dribble", "formic-acid-pads", "thymol-gels"],
+      "links_forward": ["wintering-colonies-uk"]
+    },
+    {
+      "title": "Oxalic acid trickle (dribble)",
+      "slug": "oxalic-acid-dribble",
+      "intent": "informational",
+      "primary_query": "oxalic acid trickle dosage uk",
+      "long_tail": ["oxalic acid 1 to 1 syrup recipe", "how to trickle bees oxalic", "safety oxalic acid beekeeping"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-treatments"],
+      "links_across": ["oxalic-acid-vaporisation"],
+      "links_forward": ["integrated-pest-management-ipm"]
+    },
+    {
+      "title": "Formic acid pads (MAQS/other)",
+      "slug": "formic-acid-pads",
+      "intent": "informational",
+      "primary_query": "formic acid varroa uk",
+      "long_tail": ["maqs temperature limits", "formic acid brood present", "formic safety bees"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-treatments"],
+      "links_across": ["thymol-gels", "oxalic-acid-vaporisation"],
+      "links_forward": ["summer-management-uk"]
+    },
+    {
+      "title": "Thymol gels",
+      "slug": "thymol-gels",
+      "intent": "informational",
+      "primary_query": "thymol varroa treatment uk",
+      "long_tail": ["apiguard use instructions uk", "thymol temperature range", "thymol vs formic effectiveness"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-treatments"],
+      "links_across": ["formic-acid-pads", "oxalic-acid-vaporisation"],
+      "links_forward": ["autumn-management-uk"]
+    },
+    {
+      "title": "Amitraz (registered products)",
+      "slug": "amitraz",
+      "intent": "informational",
+      "primary_query": "amitraz varroa uk",
+      "long_tail": ["amitraz resistance varroa", "amitraz safety bees", "amitraz withdrawal periods"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-treatments"],
+      "links_across": ["flumethrin", "integrated-pest-management-ipm"],
+      "links_forward": ["resistance-management-varroa"]
+    },
+    {
+      "title": "Flumethrin (registered products)",
+      "slug": "flumethrin",
+      "intent": "informational",
+      "primary_query": "flumethrin varroa uk",
+      "long_tail": ["flumethrin resistance varroa", "synthetic pyrethroid strips bees", "treatment rotation varroa"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-treatments"],
+      "links_across": ["amitraz", "integrated-pest-management-ipm"],
+      "links_forward": ["resistance-management-varroa"]
+    },
+    {
+      "title": "Resistance management for Varroa",
+      "slug": "resistance-management-varroa",
+      "intent": "informational",
+      "primary_query": "varroa resistance management",
+      "long_tail": ["rotate varroa treatments uk", "avoid resistance varroa", "best practice treatment timing"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-treatments"],
+      "links_across": ["integrated-pest-management-ipm", "varroa-monitoring"],
+      "links_forward": ["seasonal-management-uk"]
+    },
+    {
+      "title": "Brood break methods (caging/splits)",
+      "slug": "brood-break-methods",
+      "intent": "informational",
+      "primary_query": "brood break varroa control",
+      "long_tail": ["queen caging varroa", "split for varroa reduction", "artificial brood interruption"],
+      "links_up": ["bee-health", "pests-parasites", "varroa-treatments"],
+      "links_across": ["oxalic-acid-vaporisation"],
+      "links_forward": ["swarm-control-methods"]
+    },
+    {
+      "title": "Small hive beetle (Aethina tumida)",
+      "slug": "small-hive-beetle",
+      "intent": "informational",
+      "primary_query": "small hive beetle uk",
+      "long_tail": ["shb identification uk", "small hive beetle traps", "soil drenches for shb"],
+      "links_up": ["bee-health", "pests-parasites"],
+      "links_across": ["wax-moth-control", "apiary-hygiene"],
+      "links_forward": ["notifiable-pests-uk"]
+    },
+    {
+      "title": "Wax moth (Galleria & Achroia) control",
+      "slug": "wax-moth-control",
+      "intent": "informational",
+      "primary_query": "wax moth control stored comb",
+      "long_tail": ["paradichlorobenzene alternative bees", "freezing comb wax moth", "bt aizawai bees"],
+      "links_up": ["bee-health", "pests-parasites"],
+      "links_across": ["comb-storage", "apiary-hygiene"],
+      "links_forward": ["comb-storage"]
+    },
+    {
+      "title": "Asian hornet (Vespa velutina) — UK identification & reporting",
+      "slug": "asian-hornet-uk",
+      "intent": "informational",
+      "primary_query": "asian hornet uk reporting",
+      "long_tail": ["identify asian hornet uk", "report asian hornet app uk", "asian hornet traps guidance uk"],
+      "links_up": ["bee-health", "pests-parasites"],
+      "links_across": ["notifiable-diseases-uk", "urban-beekeeping"],
+      "links_forward": ["apiary-hygiene"]
+    }
+  ]
+}

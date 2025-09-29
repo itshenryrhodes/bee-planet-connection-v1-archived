@@ -1,0 +1,96 @@
+{
+  "pillar": "bee-health",
+  "subcategory": "diseases-pathogens",
+  "articles": [
+    {
+      "title": "American foulbrood (AFB) — UK identification & reporting",
+      "slug": "american-foulbrood-uk",
+      "intent": "informational",
+      "primary_query": "american foulbrood uk reporting",
+      "long_tail": ["afb symptoms rope test", "burning infected hives uk", "notifiable bee diseases uk"],
+      "links_up": ["bee-health", "diseases-pathogens"],
+      "links_across": ["european-foulbrood-uk", "apiary-hygiene", "notifiable-diseases-uk"],
+      "links_forward": ["contact-national-bee-unit"]
+    },
+    {
+      "title": "European foulbrood (EFB) — UK workflows",
+      "slug": "european-foulbrood-uk",
+      "intent": "informational",
+      "primary_query": "european foulbrood uk",
+      "long_tail": ["efb symptoms bees", "efb shook swarm method", "efb reporting process uk"],
+      "links_up": ["bee-health", "diseases-pathogens"],
+      "links_across": ["american-foulbrood-uk", "apiary-hygiene", "notifiable-diseases-uk"],
+      "links_forward": ["contact-national-bee-unit"]
+    },
+    {
+      "title": "Nosema (apis & ceranae)",
+      "slug": "nosema",
+      "intent": "informational",
+      "primary_query": "nosema bees symptoms uk",
+      "long_tail": ["nosema microscopy bees", "nosema treatment options", "nosema prevention nutrition"],
+      "links_up": ["bee-health", "diseases-pathogens"],
+      "links_across": ["bee-nutrition", "spring-management-uk"],
+      "links_forward": ["apiary-hygiene"]
+    },
+    {
+      "title": "Deformed wing virus (DWV)",
+      "slug": "deformed-wing-virus-dwv",
+      "intent": "informational",
+      "primary_query": "deformed wing virus bees",
+      "long_tail": ["dwv varroa link", "dropped wings bees pictures", "virus management bees"],
+      "links_up": ["bee-health", "diseases-pathogens"],
+      "links_across": ["varroa-destructor", "integrated-pest-management-ipm"],
+      "links_forward": ["varroa-treatments"]
+    },
+    {
+      "title": "Chronic bee paralysis virus (CBPV)",
+      "slug": "chronic-bee-paralysis-virus",
+      "intent": "informational",
+      "primary_query": "cbpv symptoms bees",
+      "long_tail": ["shiny black bees trembling", "cbpv management uk", "separating symptomatic frames"],
+      "links_up": ["bee-health", "diseases-pathogens"],
+      "links_across": ["bee-nutrition", "apiary-hygiene"],
+      "links_forward": ["integrated-pest-management-ipm"]
+    },
+    {
+      "title": "Chalkbrood",
+      "slug": "chalkbrood",
+      "intent": "informational",
+      "primary_query": "chalkbrood treatment bees",
+      "long_tail": ["chalkbrood mummies", "chalkbrood prevention ventilation", "requeening for chalkbrood"],
+      "links_up": ["bee-health", "diseases-pathogens"],
+      "links_across": ["apiary-hygiene", "bee-nutrition"],
+      "links_forward": ["requeening"]
+    },
+    {
+      "title": "Stonebrood",
+      "slug": "stonebrood",
+      "intent": "informational",
+      "primary_query": "stonebrood bees",
+      "long_tail": ["aspergillus bees stonebrood", "differential diagnosis chalkbrood", "hygiene measures stonebrood"],
+      "links_up": ["bee-health", "diseases-pathogens"],
+      "links_across": ["chalkbrood", "apiary-hygiene"],
+      "links_forward": ["integrated-pest-management-ipm"]
+    },
+    {
+      "title": "Notifiable diseases (UK): overview",
+      "slug": "notifiable-diseases-uk",
+      "intent": "informational",
+      "primary_query": "notifiable bee diseases uk",
+      "long_tail": ["report afb efb uk", "legal duties beekeeper uk", "national bee unit contact"],
+      "links_up": ["bee-health", "diseases-pathogens"],
+      "links_across": ["american-foulbrood-uk", "european-foulbrood-uk"],
+      "links_forward": ["contact-national-bee-unit"]
+    },
+    {
+      "title": "Contact the National Bee Unit (UK)",
+      "slug": "contact-national-bee-unit",
+      "intent": "navigational",
+      "primary_query": "national bee unit contact",
+      "long_tail": ["how to report afb uk", "efb inspector uk", "beebase registration"],
+      "links_up": ["bee-health"],
+      "links_across": ["notifiable-diseases-uk", "asian-hornet-uk"],
+      "links_forward": []
+    }
+  ]
+}
