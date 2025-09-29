@@ -1,0 +1,25 @@
+---
+title: "Heatwave Bee Management"
+slug: heatwave-bee-management
+draft: false
+updated: 2025-09-29
+keywords: []
+cross_links: []
+source: "seed-json"
+---
+
+> **At a Glance:** Extreme heat stresses bees and can melt comb. Shade, ventilation, and water access prevent losses during heat waves.
+
+## Why it Matters
+Overheated hives divert foragers to fanning and water hauling, reducing nectar intake and risking brood collapse and queen failure.
+
+## Step-by-Step
+Provide afternoon shade or temporary covers; increase ventilation with top shims or extra entrances; ensure constant clean water close to hives; avoid heavy inspections midday; consider moving dark roofs to reflective lids; prevent comb sag by maintaining frame spacing and avoiding tilted hives.
+
+## Seasonality & Climate
+Prolonged hot spells and warm nights compound stress; urban heat islands can be several degrees hotter than rural yards.
+
+## Common Pitfalls
+Sealing hives too tightly, removing too much space (overcrowding), or failing to provide water within easy flight distance.
+
+## Notes

@@ -1,0 +1,84 @@
+---
+title: "Snelgrove Board Swarm Control"
+slug: snelgrove-board-swarm-control
+draft: false
+updated: 2025-09-29
+keywords: ["Snelgrove", "board", "entrances", "swarm control"]
+cross_links: ["demaree_method_swarm_control", "pagden_method_swarm_control", "queen_cell_timing_calendar"]
+source: "seed-json"
+---
+
+> **At a Glance:** A Snelgrove board splits flyers and nurses with controllable entrances—powerful, flexible swarm control and queen rearing tool.
+
+## Why it Matters
+- Controls swarming while maintaining honey production.
+- Allows timed recombination or parallel queen rearing.
+
+## Objectives
+- Install board correctly and manage entrance schedule.
+- Direct flyers where needed to reduce pressure.
+- Complete follow-ups to prevent casts.
+
+## What Good Looks Like
+- Lower: queenright with main entrance; Upper: queen cell(s) with phased entrances.
+- Entrance change schedule posted on hive.
+- Final unite or dual production planned.
+
+## Step-by-Step
+1) Prepare: identify queen and swarm cells; place Snelgrove board with shutters closed.
+2) Queenright brood below; QC(s) above with feed if needed.
+3) Open designated upper entrance opposite lower; switch per schedule to bleed flyers down.
+4) Inspect at day 7/14; reduce to one QC; later unite or run as two units.
+
+## Seasonality & Climate
+- Spring build-up and early flow.
+- Windy sites: secure tall stacks and boards.
+
+## Data & Thresholds
+- Entrance switch schedule (e.g., days 1, 4, 7).
+- Cell emergence/mating windows noted.
+
+## Diagnostics & Decision Tree
+- Upper gets weak -> Feed and adjust entrances.
+- Cast risk -> Reduce to one QC; ensure flyers are bleeding to lower.
+- Queenless outcomes -> Recombine or introduce queen.
+
+## Common Pitfalls
+- Wrong entrance opened—confuses flight paths.
+- Leaving multiple cells above.
+- Forgetting to post switch schedule.
+
+## Tools & Techniques
+- Snelgrove board, entrance markers, schedule card.
+- Straps/anchors for tall stacks.
+
+## Safety & Compliance
+- Ladder/stack safety; team lifts.
+- Neighbour awareness for changed flight paths.
+
+## Field Checklist
+- Board fitted, shutters identified.
+- Schedule posted.
+- Day-7 check booked.
+
+## Communications
+- Short hyphens only.
+- Teach the ‘bleed flyers down’ concept with drawings.
+
+## Further Reading
+- Snelgrove’s original method schedules.
+- Modern adaptations and flow timing.
+
+## Cross-Links
+- [demaree_method_swarm_control](/topics/demaree-method-swarm-control/)
+- [pagden_method_swarm_control](/topics/pagden-method-swarm-control/)
+- [queen_cell_timing_calendar](/topics/queen-cell-timing-calendar/)
+
+## Keywords
+- Snelgrove
+- board
+- entrances
+- swarm control
+
+## Notes
+Paint shutters different colours to avoid mistakes on busy days.

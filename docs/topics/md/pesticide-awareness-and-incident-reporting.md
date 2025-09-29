@@ -1,0 +1,87 @@
+---
+title: "Pesticide Awareness And Incident Reporting"
+slug: pesticide-awareness-and-incident-reporting
+draft: false
+updated: 2025-09-29
+keywords: ["pesticide drift", "incident reporting", "bee poisoning", "spray calendar"]
+cross_links: ["forage_and_flora", "urban_stakeholder_neighbour_relations", "hive_hygiene_and_biosecurity"]
+source: "seed-json"
+---
+
+> **At a Glance:** Understanding local spray practices, drift risks, and reporting paths helps prevent bee poisonings and drives better dialogue with land managers.
+
+## Why it Matters
+- Acute and sub-lethal exposures harm foraging, navigation, and brood.
+- Documented reports improve enforcement and future protections.
+
+## Objectives
+- Build relationships with farmers/contractors to share spray calendars.
+- Identify drift corridors and water contamination risks near apiaries.
+- Know the exact local incident reporting route and evidence needed.
+
+## What Good Looks Like
+- Pre-season contact with land managers; exchange phone numbers.
+- Bee-friendly buffer strips and spray nozzles that reduce drift.
+- A ready-to-go incident checklist with photos, samples, and timings.
+
+## Step-by-Step
+1) Map crops/orchards within 3 km; list likely actives and spray windows.
+2) Share apiary location; request notification before sprays where possible.
+3) Provide water sources and forage to reduce risky foraging patterns.
+4) If incident occurs: photograph affected bees/frames, note weather/time, collect samples per guidance, secure them, file report immediately.
+5) Follow through: keep all reference numbers and outcomes on record.
+
+## Seasonality & Climate
+- Spring bloom sprays and late-summer herbicides are common risk windows.
+- Windy, hot days increase drift and volatilisation.
+
+## Data & Thresholds
+- Wind speed thresholds for safe spraying (per label) should not be exceeded.
+- Incident reporting typically requires date/time, location, photos, and chain of custody for samples.
+
+## Diagnostics & Decision Tree
+- Symptom: Sudden piles of dead foragers -> Check spray activity upwind -> Secure samples -> Report.
+- Symptom: Disoriented bees at entrance -> Review recent sprays -> Document and consult inspector.
+- Symptom: Recurrent low brood -> Consider sub-lethal exposure plus nutrition/varroa interactions; gather evidence.
+
+## Common Pitfalls
+- Late or incomplete reports without photos or samples.
+- Adversarial tone with neighbours/farmers instead of collaborative prevention.
+- No local map of cropping and spray contractors.
+
+## Tools & Techniques
+- Wind meter, spray calendar shared with land managers.
+- Sample vials and cool storage for incident kits.
+- Hedgerow/flower strip plans to diversify forage.
+
+## Safety & Compliance
+- Do not enter spray zones; follow official sampling guidance.
+- Keep your contact details on hive signage for quick coordination.
+
+## Field Checklist
+- Current landowner/contractor contacts.
+- Incident kit stocked (vials, labels, gloves, bags).
+- Map of crops and likely spray windows.
+- Reporting links and phone numbers handy.
+
+## Communications
+- Short hyphens only.
+- Use neutral language; focus on evidence and solutions.
+
+## Further Reading
+- National incident reporting portals/guidance.
+- Extension notes on drift reduction technologies.
+
+## Cross-Links
+- [forage_and_flora](/topics/forage-and-flora/)
+- [urban_stakeholder_neighbour_relations](/topics/urban-stakeholder-neighbour-relations/)
+- [hive_hygiene_and_biosecurity](/topics/hive-hygiene-and-biosecurity/)
+
+## Keywords
+- pesticide drift
+- incident reporting
+- bee poisoning
+- spray calendar
+
+## Notes
+Keep a laminated 1-page incident SOP in your field bag for rapid response.
