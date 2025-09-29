@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Site-Update on Bee Planet Connection</title>
+    <link>http://localhost:1313/tags/site-update/</link>
+    <description>Recent content in Site-Update on Bee Planet Connection</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/site-update/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, Bee Planet</title>
+      <link>http://localhost:1313/blog/hello-bee-planet/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/hello-bee-planet/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt; — The wiki is for structured, evergreen guidance. The blog is for timely updates, experiments, and behind-the-scenes notes.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-a-blog&#34;&gt;Why a blog?&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The wiki has a stable house style and taxonomy.&lt;/li&gt;&#xA;&lt;li&gt;The blog lets us move quickly – new findings, hornet alerts, or field tips.&lt;/li&gt;&#xA;&lt;li&gt;We can decide later which posts “graduate” into full wiki articles.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-to-expect&#34;&gt;What to expect&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Brief posts – a couple of minutes to read.&lt;/li&gt;&#xA;&lt;li&gt;Plain language – bright, breezy, practical.&lt;/li&gt;&#xA;&lt;li&gt;Cross-linking into relevant wiki pages.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;If you’d like to suggest a topic, head to the contact page and say hello.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
