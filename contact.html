@@ -1,48 +1,17 @@
----
-layout: default
-title: Contact
-description: Get in touch with Bee Planet Connection.
----
-
-<section class="container" style="max-width:900px;margin:0 auto;padding:2rem 1rem;">
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact · Bee Planet Connection</title>
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+<header class="site-header"><div class="container">
+  <a class="brand" href="index.html">Bee Planet Connection</a>
+  <nav class="nav"><a href="wiki/">Wiki</a><a href="about.html">About</a><a class="btn" href="contact.html">Contact</a></nav>
+</div></header>
+<main class="container" style="margin:40px 0">
   <h1>Contact</h1>
-  <p>Questions, suggestions, or collaboration ideas? Send us a message below.</p>
-
-  <!-- ✅ Live Formspree integration -->
-  <form action="https://formspree.io/f/myznywvv" method="POST" accept-charset="UTF-8" style="margin-top:1rem;">
-    <!-- Redirect after success -->
-    <input type="hidden" name="_redirect" value="https://www.beeplanetconnection.org/thanks.html">
-    <!-- Optional subject -->
-    <input type="hidden" name="_subject" value="New message from Bee Planet Connection">
-
-    <!-- Honeypot (anti-spam) -->
-    <div style="position:absolute;left:-5000px;" aria-hidden="true">
-      <label>Leave this field empty: <input type="text" name="hp_field" tabindex="-1" autocomplete="off"></label>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
-      <div>
-        <label for="name">Name</label>
-        <input id="name" name="name" required
-               style="width:100%;padding:0.6rem;border:1px solid #ccc;border-radius:8px;">
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required
-               style="width:100%;padding:0.6rem;border:1px solid #ccc;border-radius:8px;">
-      </div>
-    </div>
-
-    <div style="margin-top:0.75rem;">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required
-                style="width:100%;padding:0.6rem;border:1px solid #ccc;border-radius:8px;"></textarea>
-    </div>
-
-    <button type="submit" class="btn primary" style="margin-top:0.9rem;">Send</button>
-
-    <p style="margin-top:0.75rem;font-size:0.95rem;color:#666;">
-      Prefer email? Write to <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a>.
-    </p>
-  </form>
-</section>
+  <p>Email: <a href="mailto:henry@beeplanetconnection.org">henry@beeplanetconnection.org</a></p>
+  <!-- If you want a form later, we’ll wire Formspree here -->
+</main>
+<footer class="site-footer"><div class="container"><p>© <span id="y"></span> Bee Planet Connection</p></div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body></html>
