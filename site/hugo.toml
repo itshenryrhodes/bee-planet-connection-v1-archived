@@ -56,3 +56,6 @@ enableGitInfo = true
     name  = "Blog"
     url   = "/blog/"
     weight = 70
+
+[outputs]
+home = ["HTML", "RSS", "RobotsTXT"]
