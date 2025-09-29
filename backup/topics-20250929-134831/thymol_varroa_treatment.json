@@ -1,0 +1,73 @@
+{
+  "At-a-Glance": "Thymol products need warmth and good brood nest airflow. Dose steadily; avoid honey taint period on market supers.",
+  "Why it Matters": [
+    "Useful shoulder-season option.",
+    "Lower risk when used within temperature band."
+  ],
+  "Objectives": [
+    "Apply within labelled temperature range.",
+    "Keep supers for sale off during treatment.",
+    "Schedule two-phase courses where required."
+  ],
+  "What Good Looks Like": [
+    "Steady release over full course duration.",
+    "Bees can ventilate; entrances not overly reduced.",
+    "Post-course sampling shows reduction."
+  ],
+  "Step-by-Step": [
+    "1) Check forecast; confirm band (often warm, not hot).",
+    "2) Place trays/gel per instructions; avoid spill.",
+    "3) Re-dose mid-course if product requires.",
+    "4) Verify reduction; wait taint interval before supering."
+  ],
+  "Seasonality & Climate": [
+    "Shoulder seasons ideal; too cool reduces release.",
+    "Hot spells can agitate colonies."
+  ],
+  "Data & Thresholds": [
+    "Course duration and re-dose timing.",
+    "Verification sampling targets."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Low effect -> Too cool or short course; adjust next round.",
+    "Agitation -> Increase airflow; check placement."
+  ],
+  "Common Pitfalls": [
+    "Supering too soon after course.",
+    "Under-dosing or cutting course short.",
+    "Blocking airflow excessively."
+  ],
+  "Tools & Techniques": [
+    "Thymol trays/gels, timer reminders, sampling kit.",
+    "Spacers for airflow if crowded."
+  ],
+  "Safety & Compliance": [
+    "Follow label and food taint guidance.",
+    "Record batch and dates."
+  ],
+  "Field Checklist": [
+    "Temp band OK; supers off for market honey.",
+    "Dose placed; mid-course plan set.",
+    "Post-course sampling scheduled."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain taint intervals to the team clearly."
+  ],
+  "Cross-Links": [
+    "formic_acid_varroa_treatment",
+    "oxalic_acid_varroa_treatment",
+    "varroa_treatment_options"
+  ],
+  "Keywords": [
+    "thymol",
+    "release rate",
+    "taint interval",
+    "course"
+  ],
+  "Further Reading": [
+    "Product application notes.",
+    "Independent efficacy summaries."
+  ],
+  "Notes": "Write the re-dose date on the crownboard with a wipeable pen."
+}

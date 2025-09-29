@@ -1,74 +1,29 @@
 {
-  "At-a-Glance": "Heat-based treatments target mites/eggs with varying efficacy—equipment-intensive and timing-sensitive.",
+  "At-a-Glance": "Thermal varroa treatments use heat to kill mites without chemicals.",
   "Why it Matters": [
-    "Non-chemical option within IPM.",
-    "Mixed field results require cautious expectations."
-  ],
-  "Objectives": [
-    "Understand devices, protocols, and realistic outcomes.",
-    "Identify safe timing relative to brood stage and flows.",
-    "Decide when thermal fits vs OA/formic/thymol."
-  ],
-  "What Good Looks Like": [
-    "Documented protocol; calibrated device; safe handling.",
-    "Brood-stage-aware timing; follow-up sampling.",
-    "Clear go/no-go criteria to avoid thermal stress."
+    "Potential non-chemical control method.",
+    "Supports resistance management."
   ],
   "Step-by-Step": [
-    "1) Review device requirements and independent trials.",
-    "2) Calibrate temperature sensors; pre-brief team.",
-    "3) Treat per protocol; monitor bee behaviour closely.",
-    "4) Re-sample; compare to chemical alternatives."
-  ],
-  "Seasonality & Climate": [
-    "Cool ambient simplifies temperature control; heat waves risky.",
-    "Consider brood cycle—egg/larval targets vary."
-  ],
-  "Data & Thresholds": [
-    "Temperature/time targets per device; tolerance bands.",
-    "Efficacy benchmark vs recent OA/formic outcomes."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Overheating signs -> Abort; ventilate; provide water; re-evaluate.",
-    "Low efficacy -> Device calibration; brood stage mismatch; method change.",
-    "Excess stress -> Switch to chemical option with better risk profile."
+    "1) Place brood frames or whole hive in controlled heating chamber.",
+    "2) Apply recommended temperature and duration.",
+    "3) Monitor mite fall and colony recovery."
   ],
   "Common Pitfalls": [
-    "Assuming lab efficacy equals field results.",
-    "Poor calibration and uneven heat.",
-    "Trying during peak flows without resources."
-  ],
-  "Tools & Techniques": [
-    "Thermal device, reference thermometer, data logger.",
-    "Checklists and timers; shade and water ready."
-  ],
-  "Safety & Compliance": [
-    "Electrical safety; fire precautions.",
-    "Do not exceed manufacturer limits."
-  ],
-  "Field Checklist": [
-    "Device calibrated.",
-    "Ambient conditions acceptable.",
-    "Post-check sampling booked."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Set expectations: ‘tool in the box, not a silver bullet’."
+    "Overheating brood",
+    "Inconsistent treatment application"
   ],
   "Cross-Links": [
     "varroa_treatment_options",
-    "hive_ventilation_and_moisture_control",
-    "mite_sampling_methods"
+    "oxalic_acid_varroa_treatment"
   ],
   "Keywords": [
     "thermal treatment",
-    "heat",
-    "efficacy",
-    "calibration"
+    "varroa control",
+    "non-chemical"
   ],
   "Further Reading": [
-    "Independent field trials.",
-    "Manufacturer manuals and cautions."
+    "Review articles on thermal mite control efficacy"
   ],
-  "Notes": "Use A/B yards: thermal vs chemical to decide future investment."
+  "Notes": ""
 }

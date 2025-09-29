@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Provide reliable, safe water near hives to keep bees off neighbours’ pools and to support cooling and brood food.",
+  "Why it Matters": [
+    "Reduces complaints and forager stress.",
+    "Supports colony thermoregulation in heat waves."
+  ],
+  "Objectives": [
+    "Install shallow, grippy waterers with refresh schedule.",
+    "Site water upwind/sunny to attract early.",
+    "Add minerals lightly where appropriate."
+  ],
+  "What Good Looks Like": [
+    "Trays with pebbles/corrugated float; slow-drip barrels for refill.",
+    "First water source discovered is yours; placed before heat spikes.",
+    "Algae managed with scrub/refresh; no drowning slicks."
+  ],
+  "Step-by-Step": [
+    "1) Set waterers 3–10 m from hives, sunny spot to attract.",
+    "2) Add texture: pebbles, cork, mesh; keep depth <2 cm in trays.",
+    "3) Prime with light salt/mineral hint; refresh 2–3×/week in heat.",
+    "4) Move gradually if needed; keep path tidy and non-slip."
+  ],
+  "Seasonality & Climate": [
+    "Heat waves need larger capacity and shade.",
+    "Freezing winters require shallow black tubs or de-icers (where safe)."
+  ],
+  "Data & Thresholds": [
+    "Refresh frequency by temp/humidity; algae growth watch.",
+    "Neighbour complaint count pre/post installation."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Bees still at pools -> Increase sun/odor cue; move earlier in season.",
+    "Drowning -> Add more floats; reduce depth; clean slime.",
+    "Wasps dominate -> Relocate slightly; add decoy away from entrances."
+  ],
+  "Common Pitfalls": [
+    "Deep slick surfaces; no grip.",
+    "Setting water after bad habits formed.",
+    "Letting algae mats build—bees slip."
+  ],
+  "Tools & Techniques": [
+    "Float materials (cork, mesh), slow-drip barrels, scrub brushes.",
+    "Simple mineral mix (tiny pinch of sea salt) if local water is very soft."
+  ],
+  "Safety & Compliance": [
+    "Avoid chemical algicides near food production.",
+    "Safe carrying routes; slip-resistant mats."
+  ],
+  "Field Checklist": [
+    "Waterers placed and labelled.",
+    "Refresh schedule in calendar.",
+    "Floats/pebbles cleaned and reset."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Tell neighbours you’ve provided water—invite feedback."
+  ],
+  "Cross-Links": [
+    "apiary_site_selection",
+    "heatwaves_bearding_and_overheating_response",
+    "urban_stakeholder_neighbour_relations"
+  ],
+  "Keywords": [
+    "water",
+    "cooling",
+    "neighbours",
+    "thermoregulation"
+  ],
+  "Further Reading": [
+    "Apiary water provisioning tips.",
+    "Urban beekeeping neighbour relations."
+  ],
+  "Notes": "A sunny birdbath with corks beats a fancy fountain—simple, grippy, and quiet."
+}

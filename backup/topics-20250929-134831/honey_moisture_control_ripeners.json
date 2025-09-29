@@ -1,0 +1,73 @@
+{
+  "At-a-Glance": "Use warm, dry air across large surface area to bring borderline moisture down before jarring—without cooking aroma.",
+  "Why it Matters": [
+    "Prevents fermentation and returns.",
+    "Protects delicate varietal notes."
+  ],
+  "Objectives": [
+    "Measure moisture per batch; decide blend, dry, or hold.",
+    "Use ripeners/settling tanks responsibly (gentle warmth, dry air).",
+    "Document pre/post moisture and actions."
+  ],
+  "What Good Looks Like": [
+    "Dehumidified room ~25–30 °C with gentle airflow; tanks with large surface area.",
+    "Short cycles; aroma intact; moisture verified before jar.",
+    "No open buckets in humid rooms."
+  ],
+  "Step-by-Step": [
+    "1) Test lots; segregate by moisture.",
+    "2) Warm room/tank gently; run dehumidifier; stir minimally.",
+    "3) Retest; record; decide jar, blend, or re-run.",
+    "4) Keep lids on when moving; avoid condensation."
+  ],
+  "Seasonality & Climate": [
+    "Humid harvests need more drying capacity.",
+    "Winter air is dry—use it with mild warmth."
+  ],
+  "Data & Thresholds": [
+    "Target ≤18%; never exceed temperatures that alter aroma (~<40 °C honey temp).",
+    "Record start/finish moisture and time."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Aroma loss -> Lower temps; shorten cycle; improve room RH.",
+    "Symptom: Uneven readings -> Stir gently and retest.",
+    "Symptom: Foam -> Skim; reduce agitation."
+  ],
+  "Common Pitfalls": [
+    "Blasting heat; creating HMF and aroma loss.",
+    "Trying to dry in a humid, unconditioned room."
+  ],
+  "Tools & Techniques": [
+    "Refractometer, dehumidifier, warm room, ripener/settling tank with taps.",
+    "Data loggers for RH/temp."
+  ],
+  "Safety & Compliance": [
+    "Electrical safety around warm rooms/dehumidifiers.",
+    "Accurate records to justify process."
+  ],
+  "Field Checklist": [
+    "Room RH/temp in range.",
+    "Start/finish readings logged.",
+    "Aroma check passed."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to staff: ‘dry air, not hot honey’."
+  ],
+  "Cross-Links": [
+    "honey_extraction_food_safety",
+    "honey_room_layout_hygiene",
+    "creamed_honey_crystallisation"
+  ],
+  "Keywords": [
+    "moisture",
+    "ripener",
+    "dehumidifier",
+    "settling tank"
+  ],
+  "Further Reading": [
+    "Moisture control notes for honey rooms.",
+    "Aroma and HMF research summaries."
+  ],
+  "Notes": "Keep a logbook of room RH vs drying time for your gear."
+}

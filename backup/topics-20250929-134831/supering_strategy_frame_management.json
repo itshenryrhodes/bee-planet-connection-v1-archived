@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Add the right space at the right time. Manage frame count, drawn comb, and queen excluders to hit flow peaks without swarming.",
+  "Why it Matters": [
+    "Maximises yield and reduces swarming.",
+    "Improves honey moisture and capping quality."
+  ],
+  "Objectives": [
+    "Define supering triggers from weight/forage cues.",
+    "Stage drawn comb ahead of flows; manage excluders wisely.",
+    "Align extraction windows with moisture targets."
+  ],
+  "What Good Looks Like": [
+    "Decision card: add super at weight delta or bloom cue.",
+    "Drawn comb topmost; wet supers returned post-extraction to clean up.",
+    "Excluder used when needed; not hindering early build."
+  ],
+  "Step-by-Step": [
+    "1) Watch scales and bloom; trigger supering at agreed thresholds.",
+    "2) Place drawn comb above; foundation framed between drawn when needed.",
+    "3) Manage excluder: on for harvest purity; remove if impeding build.",
+    "4) Pull when mostly capped or moisture OK; return wet supers to clean."
+  ],
+  "Seasonality & Climate": [
+    "Cold springs slow draw—delay heavy foundation-only supers.",
+    "Heat waves raise moisture risk—improve ventilation."
+  ],
+  "Data & Thresholds": [
+    "Daily weight gain trigger (e.g., +1–2 kg/day sustained).",
+    "Pull target: ≥80–90% capping or ≤18% moisture."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Backfilling brood -> Add space now; relieve with drawn comb.",
+    "Symptom: Bridge comb mess -> Re-space; ensure frames tight; level hives.",
+    "Symptom: High moisture -> Delay pull; dry room; improve ventilation."
+  ],
+  "Common Pitfalls": [
+    "Adding too late or with only foundation during flow.",
+    "Excluder blocking in cool snaps.",
+    "No post-extraction clean-up plan."
+  ],
+  "Tools & Techniques": [
+    "Hive scales, refractometer, bee escapes, triangle boards.",
+    "Spare drawn comb inventory."
+  ],
+  "Safety & Compliance": [
+    "Safe lifting and carrying; team lifts for heavy supers.",
+    "Food-contact handling for wet supers."
+  ],
+  "Field Checklist": [
+    "Triggers met; supers staged.",
+    "Drawn comb allocated.",
+    "Moisture and capping recorded."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain timing logic so helpers act consistently."
+  ],
+  "Cross-Links": [
+    "hive_scale_analytics_patterns",
+    "honey_moisture_control_ripeners",
+    "honey_extraction_best_practice"
+  ],
+  "Keywords": [
+    "supering",
+    "drawn comb",
+    "excluder",
+    "moisture"
+  ],
+  "Further Reading": [
+    "Flow timing case studies.",
+    "Excluder pros/cons discussions."
+  ],
+  "Notes": "Keep 1–2 spare supers per hive in peak season—prevents panic."
+}

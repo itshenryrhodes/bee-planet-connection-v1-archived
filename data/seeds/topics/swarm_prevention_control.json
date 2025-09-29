@@ -1,9 +1,29 @@
 {
-  "At-a-Glance": "Swarming is natural but avoidable with timely space management and queen control. Prevention saves honey and neighbours’ goodwill.",
-  "Why it Matters": "Unmanaged swarms reduce crop potential and can cause complaints. Preventing swarms keeps colonies productive and safe.",
-  "Step-by-Step": "Provide space ahead of flows; equalise brood and stores; remove queen cells or use controlled splits; requeen from young stock. Classic methods include Demaree, Pagden, or nucleus splits to bleed swarm pressure.",
-  "Seasonality & Climate": "Peak swarming coincides with spring build-up and early flows; move early before swarm cells proliferate.",
-  "Common Pitfalls": "Adding supers too late, skipping inspections during peak, and leaving multiple charged queen cells.",
-  "Tools & Materials": "Spare boxes, frames, marked queens, and nuc equipment for splits.",
+  "At-a-Glance": "Swarm prevention reduces impulse; control manages it once started.",
+  "Why it Matters": [
+    "Essential for apiary stability.",
+    "Supports honey yields."
+  ],
+  "Step-by-Step": [
+    "1) Add supers early and balance brood nest.",
+    "2) Remove swarm cells on inspection.",
+    "3) Apply Pagden or Snelgrove methods if cells persist."
+  ],
+  "Common Pitfalls": [
+    "Too few inspections",
+    "Confusing queen cups with swarm cells"
+  ],
+  "Cross-Links": [
+    "swarm_management",
+    "swarm_capture_aftercare"
+  ],
+  "Keywords": [
+    "swarm prevention",
+    "control",
+    "apiary stability"
+  ],
+  "Further Reading": [
+    "Classic swarm control texts"
+  ],
   "Notes": ""
 }

@@ -1,0 +1,73 @@
+{
+  "At-a-Glance": "Set clear, seasonal thresholds so actions are timely and consistent across the team.",
+  "Why it Matters": [
+    "Prevents late, ineffective treatments.",
+    "Aligns decisions across multiple beekeepers."
+  ],
+  "Objectives": [
+    "Define trigger bands for growth, harvest, and winter prep.",
+    "Tie thresholds to specific products and methods.",
+    "Review annually against outcomes."
+  ],
+  "What Good Looks Like": [
+    "One sheet with per-100 and drop thresholds by month.",
+    "Green-amber-red action bands posted in the truck.",
+    "Post-treatment checks scheduled."
+  ],
+  "Step-by-Step": [
+    "1) Choose default sampling method and units.",
+    "2) Agree seasonal triggers for each yard profile.",
+    "3) Map actions to triggers with products and constraints.",
+    "4) Review outcomes and tweak bands annually."
+  ],
+  "Seasonality & Climate": [
+    "Brood cycles shift thresholds; heat limits some products.",
+    "Late flows change timing—plan alternatives."
+  ],
+  "Data & Thresholds": [
+    "Per-100 adult bee targets and daily drop ranges.",
+    "Post-treatment reduction targets."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Trigger hit during heat wave -> Switch to permitted option or delay safely.",
+    "Counts rebound fast -> Re-infestation; re-check neighbours and drift."
+  ],
+  "Common Pitfalls": [
+    "One-size thresholds for all yards.",
+    "Skipping verification sampling.",
+    "Forgetting product withdrawal periods."
+  ],
+  "Tools & Techniques": [
+    "Laminate threshold cards per yard.",
+    "Simple dashboard from scale and sampling logs."
+  ],
+  "Safety & Compliance": [
+    "Follow label, withdrawal, and local rules.",
+    "Record treatments for audits."
+  ],
+  "Field Checklist": [
+    "Latest thresholds on hand.",
+    "Products available for each band.",
+    "Verification sampling booked."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain why bands differ pre- vs post-harvest."
+  ],
+  "Cross-Links": [
+    "mite_sampling_methods",
+    "varroa_treatment_options",
+    "hive_scale_analytics_patterns"
+  ],
+  "Keywords": [
+    "varroa",
+    "thresholds",
+    "decision bands",
+    "verification"
+  ],
+  "Further Reading": [
+    "Regional threshold guidance.",
+    "Treatment efficacy summaries."
+  ],
+  "Notes": "Date every threshold sheet and archive versions so changes are traceable."
+}

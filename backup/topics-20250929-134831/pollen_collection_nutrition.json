@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Pollen drives brood. Track incoming pollen colour/volume and support during gaps without overusing substitutes.",
+  "Why it Matters": [
+    "Protein availability governs brood and immunity.",
+    "Gaps increase disease and DWV risk."
+  ],
+  "Objectives": [
+    "Observe/record pollen inflow and colours.",
+    "Stage frames of stored pollen where ethical/legal.",
+    "Use substitutes sparingly and effectively."
+  ],
+  "What Good Looks Like": [
+    "Pollen ring around brood; steady nurse bee behaviour.",
+    "Nucs receive frames with bands of bee bread.",
+    "Sub use tied to clear deficit and then stopped."
+  ],
+  "Step-by-Step": [
+    "1) Note daily pollen inflow at entrance and frame bands.",
+    "2) During gaps: move frames with pollen; consider sub.",
+    "3) Reassess brood/pollen balance weekly; stop supports when flow resumes.",
+    "4) Track results alongside mite management."
+  ],
+  "Seasonality & Climate": [
+    "Spring cold snaps interrupt pollen; support nucs.",
+    "Late summer droughts reduce diversity—watch brood stress."
+  ],
+  "Data & Thresholds": [
+    "Frames with pollen bands per brood box.",
+    "Sub usage and brood response."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Brood stall + low pollen -> Support; check for dearth causes.",
+    "Plenty of pollen but brood weak -> Queen/mites/disease issue.",
+    "Chalkbrood after rain -> Improve ventilation and warmth."
+  ],
+  "Common Pitfalls": [
+    "Treating every slowdown as nutrition-only.",
+    "Leaving sub on too long—mould/robbers.",
+    "Ignoring diversity—mono pollen isn’t enough."
+  ],
+  "Tools & Techniques": [
+    "Entrance observation sheet, frame photos, small sub patties.",
+    "Freezer retains of pollen frames where allowed."
+  ],
+  "Safety & Compliance": [
+    "Local regulations on subs/ingredients.",
+    "Avoid contamination with treatment chemicals."
+  ],
+  "Field Checklist": [
+    "Inflow observed; frames checked.",
+    "Support chosen and logged.",
+    "Stop date planned."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Teach ‘pollen drives brood’ with real frames."
+  ],
+  "Cross-Links": [
+    "pollen_drying_storage",
+    "bee_bread_perga_handling",
+    "nutrition_feeding"
+  ],
+  "Keywords": [
+    "pollen",
+    "protein",
+    "bee bread",
+    "substitute"
+  ],
+  "Further Reading": [
+    "Protein requirements of colonies.",
+    "Sub efficacy comparisons."
+  ],
+  "Notes": "A simple colour chart helps track plant sources through the season."
+}

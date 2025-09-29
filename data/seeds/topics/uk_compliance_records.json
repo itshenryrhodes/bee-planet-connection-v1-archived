@@ -1,74 +1,31 @@
 {
-  "At-a-Glance": "Keep simple, organised records: treatments, feed, batch codes, and sales. You will thank yourself during audits and recalls.",
+  "At-a-Glance": "UK law requires accurate records for treatments, feed, and honey sales.",
   "Why it Matters": [
-    "Traceability protects customers and brand.",
-    "Saves time with inspectors and buyers."
-  ],
-  "Objectives": [
-    "Maintain treatment, feed, extraction, and batch logs.",
-    "Retain invoices and supplier approvals where needed.",
-    "Implement a recall checklist and contact list."
-  ],
-  "What Good Looks Like": [
-    "Cloud folder: seasons → apiaries → logs; paper back-ups for field.",
-    "Batch codes link jars to apiary/date/tank.",
-    "Recall drill done annually."
+    "Legal compliance avoids penalties.",
+    "Supports traceability for consumers and auditors."
   ],
   "Step-by-Step": [
-    "1) Print/prepare log templates; store in truck and honey room.",
-    "2) Record actions same day; photo pages to cloud weekly.",
-    "3) Batch and label on jarring; keep retains.",
-    "4) Run an annual ‘mock recall’ to test data."
+    "1) Maintain medicine log with dates, products, doses.",
+    "2) Record feed types and quantities per colony.",
+    "3) Track honey extraction volumes and batch codes."
   ],
-  "Seasonality & Climate": [
-    "Pre-season: refresh forms and numbering.",
-    "Harvest: daily updates; winter: archive and review."
-  ],
-  "Data & Thresholds": [
-    "Retain samples per batch for defined period.",
-    "Record treatment lot numbers and dates."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Issue: Missing records -> Reconstruct from photos/messages; implement daily habit.",
-    "Issue: Batch confusion -> Standardise code format and placement.",
-    "Issue: Audit nerves -> Prepare one-page index to folders."
-  ],
+  "Safety & Compliance": "Required under UK Veterinary Medicines Regulations.",
   "Common Pitfalls": [
-    "Multiple code formats over years.",
-    "Photos left on phones, not filed.",
-    "No supplier specs for food-contact items."
-  ],
-  "Tools & Techniques": [
-    "Shared drive, numbered forms, QR codes, retain jar shelf.",
-    "Simple recall phone tree and email template."
-  ],
-  "Safety & Compliance": [
-    "Follow trading standards on labelling and weights.",
-    "Data protection for customer orders."
-  ],
-  "Field Checklist": [
-    "Forms in place; pens working.",
-    "Batch labeler ready.",
-    "Retain jars stored and logged."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Explain to helpers the why: ‘trace every jar’."
+    "Incomplete logs",
+    "Not keeping records for 5 years"
   ],
   "Cross-Links": [
-    "honey_labelling_legal_basics_uk_eu",
     "stock_control_batch_tracking",
-    "haccp_lite_honey_bottling"
+    "honey_labelling_legal_basics"
   ],
   "Keywords": [
-    "compliance",
-    "records",
-    "batch codes",
-    "recall"
+    "UK compliance",
+    "record keeping",
+    "veterinary medicines"
   ],
   "Further Reading": [
-    "UK trading standards micro-producer guides.",
-    "Industry recall best practices."
+    "VMD guidance",
+    "BeeBase compliance notes"
   ],
-  "Notes": "Keep a printed index of folders—auditors love a map."
+  "Notes": ""
 }

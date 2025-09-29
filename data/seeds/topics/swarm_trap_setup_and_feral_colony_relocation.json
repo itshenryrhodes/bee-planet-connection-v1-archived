@@ -1,80 +1,31 @@
 {
-  "At-a-Glance": "Well-sited swarm traps catch primary swarms ethically and safely. Feral colony removals require planning, permits, and public safety considerations.",
+  "At-a-Glance": "Swarm traps can intercept feral colonies and provide new stock.",
   "Why it Matters": [
-    "Trapped swarms provide local genetics and relieve neighbourhood concerns.",
-    "Unsafe removals damage property and reputation.",
-    "Clear protocols protect bees, people, and legal standing."
-  ],
-  "Objectives": [
-    "Deploy traps before peak season in optimal locations.",
-    "Use humane, legal methods to collect and rehome swarms.",
-    "Assess feral removals realistically with risk and permissions."
-  ],
-  "What Good Looks Like": [
-    "40 litre box volume, small entrance, old comb lure, lemon grass oil sparingly.",
-    "Traps mounted 3–5 m high with safe access and labelled contact details.",
-    "Removals done with written permission, containment plan, and insurance."
+    "Prevents unmanaged colonies spreading disease.",
+    "Supports controlled colony expansion."
   ],
   "Step-by-Step": [
-    "1) Trap build: weatherproof box, small south or east entrance, secure hanger.",
-    "2) Bait: one old dark comb plus a drop or two of lemon grass oil on a cotton swab.",
-    "3) Placement: near previous swarm flight paths, tree lines, and edges; avoid public paths.",
-    "4) Checks: inspect weekly; once occupied, wait until evening to move.",
-    "5) Transfer: install into a prepared hive with frames; feed lightly if dearth.",
-    "6) Feral removals: scope access, structure type, and colony size; plan bee vac and cutout with dust control; agree property repair responsibilities in writing."
+    "1) Build or buy suitable trap boxes.",
+    "2) Bait with wax and swarm lure.",
+    "3) Place 3–5m above ground in shaded, visible locations.",
+    "4) Check weekly during swarm season."
   ],
-  "Seasonality & Climate": [
-    "Deploy traps 2–4 weeks before local swarm season.",
-    "In cool springs, extend deployment as flights may delay."
-  ],
-  "Data & Thresholds": [
-    "Box volume near 40 litres wins more catches in many regions.",
-    "One old comb is enough; too many attract pests."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Symptom: Repeated scout visits but no occupancy -> Adjust height or entrance orientation; try nearby alternative site.",
-    "Symptom: Ant invasion -> Relocate trap and refresh lure; use grease on hanger if safe.",
-    "Symptom: Feral removal beyond safe scope -> Refer to specialist with access gear and insurance."
-  ],
+  "Safety & Compliance": "Secure traps to prevent accidents in public spaces.",
   "Common Pitfalls": [
-    "Over-scenting with oils that repel rather than attract.",
-    "Mounting traps where retrieval is unsafe.",
-    "Taking on structural cutouts without permission or repair plan."
-  ],
-  "Tools & Techniques": [
-    "Swarm boxes, straps, ladders with stabilisers, bee vac with gentle suction.",
-    "Sheeting, tape, debris control, spare nucs and frames."
-  ],
-  "Safety & Compliance": [
-    "Use fall protection where required; avoid power lines.",
-    "Written permissions and insurance for property work.",
-    "Follow local wildlife and pest control regulations."
-  ],
-  "Field Checklist": [
-    "Traps labelled and mapped.",
-    "Evening transfer plan ready.",
-    "Removals have written consent and risk assessment.",
-    "Nucs and feed prepared."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Provide a neighbour leaflet on what to do if they see a swarm."
+    "Poorly secured traps",
+    "Forgetting regular checks"
   ],
   "Cross-Links": [
-    "swarm_management",
-    "queen_rearing_and_supersedure",
-    "migratory_beekeeping_and_transport"
+    "swarm_lures_essential_oils",
+    "swarm_capture_aftercare"
   ],
   "Keywords": [
-    "swarm trap",
-    "cutout",
-    "bee vac",
-    "lemon grass oil",
-    "feral colony"
+    "swarm traps",
+    "feral colonies",
+    "relocation"
   ],
   "Further Reading": [
-    "Research on preferred swarm cavity volume and entrance size.",
-    "Best practice guides for safe removals and public liaison."
+    "Studies on feral colony capture success"
   ],
-  "Notes": "Keep a simple catch log with GPS, date, weather, and subsequent queen status."
+  "Notes": ""
 }

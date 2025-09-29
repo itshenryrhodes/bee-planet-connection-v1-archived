@@ -1,59 +1,26 @@
 {
-  "At-a-Glance": "Match treatment to brood status, temperature, and residue risk. Rotate actives to reduce resistance.",
+  "At-a-Glance": "Rotate treatments and combine biotechnical methods to manage varroa sustainably.",
   "Why it Matters": [
-    "Effective control with minimal taint and resistance pressure.",
-    "Protects winter bees and harvest reputation."
-  ],
-  "Objectives": [
-    "Keep a rotation plan across seasons.",
-    "Tie each product to a clear SOP and timing window.",
-    "Verify efficacy and record all batches."
-  ],
-  "What Good Looks Like": [
-    "Decision matrix: season × brood × temperature → option list.",
-    "Pre- and post-treatment counts logged.",
-    "Boxes and honey flows scheduled to avoid conflicts."
+    "Delays resistance.",
+    "Matches interventions to brood/season conditions."
   ],
   "Step-by-Step": [
-    "1) Identify window: pre/post harvest, broodless vs brood-on.",
-    "2) Select active: oxalic, formic, thymol, amitraz—per label and plan.",
-    "3) Prepare kit and safety gear; apply per SOP.",
-    "4) Recount mites; document efficacy; rotate actives next time."
-  ],
-  "Seasonality & Climate": [
-    "Cold broodless midwinter suits oxalic dribbles/vapor where legal.",
-    "Warm late summer suits thymol/formic—respect temp limits."
-  ],
-  "Data & Thresholds": [
-    "Target defined efficacy (e.g., >80% reduction—method dependent).",
-    "Temperature bands from labels guide go/no-go."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Symptom: Low efficacy -> Reassess application; reinvasion; change active.",
-    "Symptom: Bee stress -> Check temperature and ventilation; stop if unsafe.",
-    "Symptom: Residue worry -> Use non-taint options outside supers; observe withdrawal."
-  ],
-  "Common Pitfalls": [
-    "Treating during nectar flow with tainting actives.",
-    "Repeating same active each year.",
-    "Poor ventilation on formic leading to queen loss."
+    "1) Confirm need via sampling against thresholds.",
+    "2) Select from organic acids, essential oils, synthetics, or biotechnical methods.",
+    "3) Consider brood status, temperature window, and honey flow.",
+    "4) Record batch/lot and re-check mites 7–14 days after."
   ],
   "Tools & Techniques": [
-    "Timers, PPE, applicators/vaporizers, spacers for ventilation.",
-    "Yard checklist and treatment log."
+    "Oxalic acid",
+    "Formic acid",
+    "Thymol",
+    "Amitraz",
+    "Drone brood removal",
+    "Brood breaks"
   ],
-  "Safety & Compliance": [
-    "Follow labels and local approvals strictly.",
-    "PPE and ventilation especially for acids and vapours."
-  ],
-  "Field Checklist": [
-    "Counts before/after scheduled.",
-    "Correct active and dose staged.",
-    "Ventilation/temperature checked."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Explain rotation to club mates to reduce resistance pressure."
+  "Common Pitfalls": [
+    "Treating during nectar flow against labels",
+    "Repeating same product back-to-back"
   ],
   "Cross-Links": [
     "oxalic_acid_varroa_treatment",
@@ -62,14 +29,12 @@
     "amitraz_stewardship_varroa"
   ],
   "Keywords": [
-    "varroa",
-    "rotation",
-    "resistance",
-    "residues"
+    "IPM",
+    "treatment rotation",
+    "resistance management"
   ],
   "Further Reading": [
-    "Official product labels and datasheets.",
-    "Extension guides on integrated control."
+    "BeeBase treatment options overview"
   ],
-  "Notes": "Schedule treatments on the calendar the day you add supers to avoid clashes later."
+  "Notes": ""
 }

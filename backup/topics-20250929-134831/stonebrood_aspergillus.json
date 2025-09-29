@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Stonebrood is a fungal brood disease (Aspergillus spp.) presenting as hard mummified larvae with spore-bearing fuzz. Rare but important for biosecurity and keeper safety.",
+  "Why it Matters": [
+    "Zoonotic potential and spore exposure risks for keepers.",
+    "Can be confused with chalkbrood without close inspection."
+  ],
+  "Objectives": [
+    "Differentiate stonebrood from chalkbrood accurately.",
+    "Handle suspect material safely and escalate per guidance.",
+    "Improve hive environment and hygiene to reduce risk."
+  ],
+  "What Good Looks Like": [
+    "Prompt isolation of suspect frames; PPE and dust control during removal.",
+    "Inspector or lab confirmation before disposal actions.",
+    "Improved ventilation and dryness post-incident."
+  ],
+  "Step-by-Step": [
+    "1) Identify: hard, rock-like brood mummies; coloured sporing fuzz possible.",
+    "2) Isolate: avoid shaking frames; bag suspect comb; mark hive.",
+    "3) Report/confirm: follow regional guidance; obtain lab confirmation.",
+    "4) Remediate: remove and safely dispose per instruction; decontaminate tools; improve microclimate.",
+    "5) Follow-up: monitor adjacent colonies; maintain hygiene."
+  ],
+  "Seasonality & Climate": [
+    "Warm, humid periods favour fungal development.",
+    "Poor ventilation and damp gear elevate risk."
+  ],
+  "Data & Thresholds": [
+    "Any strong suspicion warrants lab confirmation and heightened hygiene.",
+    "Track incidents with photos, dates, and weather context."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Hard mummies vs chalky brittle -> Suspect stonebrood -> Bag and confirm.",
+    "Symptom: Yard hygiene issues -> Clean extraction/storage; dry equipment.",
+    "Symptom: Repeated events -> Review siting and ventilation across yard."
+  ],
+  "Common Pitfalls": [
+    "Scraping mummies in the yard, spreading spores.",
+    "Confusing with chalkbrood and missing PPE."
+  ],
+  "Tools & Techniques": [
+    "Seal-able bags, gloves/respirator as warranted, flame/approved disinfectants for tools.",
+    "Moisture control tools: insulation, quilts, vents."
+  ],
+  "Safety & Compliance": [
+    "Use respiratory protection when handling dusty/dead comb.",
+    "Follow disposal guidance; protect bystanders."
+  ],
+  "Field Checklist": [
+    "Frames bagged and labelled.",
+    "Tools decontaminated.",
+    "Ventilation/moisture plan updated."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Brief helpers on PPE and handling rules for fungal suspects."
+  ],
+  "Cross-Links": [
+    "hive_hygiene_and_biosecurity",
+    "chalkbrood_management",
+    "hive_ventilation_and_moisture_control"
+  ],
+  "Keywords": [
+    "stonebrood",
+    "Aspergillus",
+    "fungal brood disease",
+    "biosecurity"
+  ],
+  "Further Reading": [
+    "Fungal disease notes for apiculture.",
+    "Inspectorate guidance on brood disease differentials."
+  ],
+  "Notes": "Err on the side of caution with dust masks when handling unknown mummies."
+}

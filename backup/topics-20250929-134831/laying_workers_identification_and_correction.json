@@ -1,0 +1,78 @@
+{
+  "At-a-Glance": "Worker-laid eggs occur after prolonged queenlessness. Early recognition and a calm, staged recovery plan prevent wasted resources and aggressive behaviour.",
+  "Why it Matters": [
+    "Laying workers are hard to reverse; repeated failed introductions waste queens.",
+    "Colonies decline quickly without timely intervention.",
+    "Clear protocols raise success rates and save season time."
+  ],
+  "Objectives": [
+    "Identify laying worker patterns accurately.",
+    "Reset colony pheromone state with open brood before introducing a queen.",
+    "Use nucs and push-in cages to lift acceptance."
+  ],
+  "What Good Looks Like": [
+    "Diagnosis confirmed by multiple eggs per cell, eggs on side walls, drone brood in worker cells.",
+    "Plan uses open brood frames for several days to suppress laying workers.",
+    "Successful re-queening or combine within two weeks."
+  ],
+  "Step-by-Step": [
+    "1) Confirm: look for multiple eggs, drone brood bullets, and absence of queen.",
+    "2) Stabilise: add a frame of open brood and eggs from a strong colony every 5–7 days (1–2 cycles).",
+    "3) Reduce entrances and tidy any robbing risks.",
+    "4) Introduction: after brood reset, introduce a caged queen or use a push-in cage over emerging brood.",
+    "5) Alternative: combine with a strong queenright colony via newspaper if resources are low.",
+    "6) Follow-up day 7–10: verify eggs in single pattern; remove cage if used."
+  ],
+  "Seasonality & Climate": [
+    "Problem surfaces in late season when inspections are sparse.",
+    "Cold snaps that interrupt mating flights can increase risk."
+  ],
+  "Data & Thresholds": [
+    "If two brood resets fail, combine rather than burn more time.",
+    "Acceptance improves when bees are crowded with young nurse bees and open brood present."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Continued multi-egg cells after reset -> Repeat brood addition; try push-in cage or combine.",
+    "Symptom: Balling new queen -> Extend queenless period; use push-in cage; add fresh open brood.",
+    "Symptom: Robbing -> Tighten entrances; feed internally only; clean spills."
+  ],
+  "Common Pitfalls": [
+    "Introducing a queen immediately into a long-queenless, laying worker colony.",
+    "Under-stocking the colony with nurse bees.",
+    "Neglecting varroa/nutrition while fixing queen status."
+  ],
+  "Tools & Techniques": [
+    "Push-in cages, introduction cages with candy, brood donor frames, nuc boxes.",
+    "Queenright nuc to ‘proof’ a queen before risking a large colony."
+  ],
+  "Safety & Compliance": [
+    "Maintain biosecurity moving brood between colonies.",
+    "Work calmly; laying worker colonies can be defensive."
+  ],
+  "Field Checklist": [
+    "Diagnosis confirmed with photos.",
+    "Brood donor identified.",
+    "Recheck scheduled day 7–10.",
+    "Fallback plan: combine if second reset fails."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Set expectations that not all cases are recoverable fast."
+  ],
+  "Cross-Links": [
+    "queen_introduction_methods_and_acceptance",
+    "making_and_managing_nucleus_colonies",
+    "swarm_management"
+  ],
+  "Keywords": [
+    "laying workers",
+    "push-in cage",
+    "brood reset",
+    "newspaper combine"
+  ],
+  "Further Reading": [
+    "Queen introduction best practices from associations.",
+    "Research on pheromone dynamics in queenless colonies."
+  ],
+  "Notes": "Keep one strong donor colony earmarked for emergency open brood provision."
+}

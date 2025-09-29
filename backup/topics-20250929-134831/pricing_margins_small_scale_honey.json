@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Price from costs + margin + market, not vibes. Offer a clear ladder: retail, case, and gift pack.",
+  "Why it Matters": [
+    "Sustainable pricing funds welfare and growth.",
+    "Consistency builds retailer trust."
+  ],
+  "Objectives": [
+    "Calculate unit cost (ingredients, packaging, labour slice).",
+    "Set retail and wholesale margins with floors.",
+    "Design a small/medium/premium ladder."
+  ],
+  "What Good Looks Like": [
+    "Spreadsheet with costs, RRP, trade, VAT.",
+    "Gift pack bundles with round-price RRPs.",
+    "Clear policy on discounts and promotions."
+  ],
+  "Step-by-Step": [
+    "1) Build cost model; include waste/breakage.",
+    "2) Pick margin floors; test RRPs in market.",
+    "3) Add bundles; check box and shipping costs.",
+    "4) Review quarterly; adjust for inputs/inflation."
+  ],
+  "Seasonality & Climate": [
+    "Q4 elasticity higher—gift packs can carry higher margins.",
+    "Poor flow years raise input costs—update RRPs early."
+  ],
+  "Data & Thresholds": [
+    "Target gross margin by channel.",
+    "Break-even volumes per SKU."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Pushback on price -> Emphasise provenance; offer smaller size.",
+    "Margin squeeze -> Re-spec packaging or case counts.",
+    "Slow mover -> Bundle or seasonal promo; avoid panic discounts."
+  ],
+  "Common Pitfalls": [
+    "Ignoring your own labour.",
+    "Not updating for packaging price hikes.",
+    "Wholesale math done backwards."
+  ],
+  "Tools & Techniques": [
+    "Costing sheet template, barcode scanning for stock counts.",
+    "Promo calendar with objectives and caps."
+  ],
+  "Safety & Compliance": [
+    "Display legal price/weight; VAT handled correctly.",
+    "Honest claims; no medicinal pricing hype."
+  ],
+  "Field Checklist": [
+    "Costs current.",
+    "Margins met by channel.",
+    "Promo rules documented."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain value: local forage, small batch, traceability."
+  ],
+  "Cross-Links": [
+    "wholesale_to_shops_basics",
+    "gift_packaging_brand_basics",
+    "stock_control_batch_tracking"
+  ],
+  "Keywords": [
+    "pricing",
+    "margins",
+    "RRP",
+    "wholesale"
+  ],
+  "Further Reading": [
+    "Indie food brand pricing primers.",
+    "RRP and promo playbooks."
+  ],
+  "Notes": "Price list as a PDF and a spreadsheet—buyers love both."
+}

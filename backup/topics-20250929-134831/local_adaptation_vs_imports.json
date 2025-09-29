@@ -1,0 +1,73 @@
+{
+  "At-a-Glance": "Balance local adaptation with genetic diversity. Prioritise locally adapted queens while avoiding closed gene pools.",
+  "Why it Matters": [
+    "Improves survival and reduces management input.",
+    "Mitigates disease and climate stress."
+  ],
+  "Objectives": [
+    "Assess yard goals: temperament, wintering, swarm tendency, honey profile.",
+    "Source queens from local breeders and occasional outside lines.",
+    "Track performance to guide requeening and breeding."
+  ],
+  "What Good Looks Like": [
+    "Mostly local stock with periodic diverse lines to refresh genes.",
+    "Records linking queen source to outcomes.",
+    "Clear cull/keep rules based on behaviour and productivity."
+  ],
+  "Step-by-Step": [
+    "1) Define traits and thresholds; share with suppliers.",
+    "2) Requeen poor performers; propagate from best.",
+    "3) Test small batches of imports; avoid yard-wide switches.",
+    "4) Review annually; update sources."
+  ],
+  "Seasonality & Climate": [
+    "Late summer requeening aligns with winter-bee raising.",
+    "Harsh winters favour conservative brood cycles."
+  ],
+  "Data & Thresholds": [
+    "Temper score, honey yield, mite levels, spring build metrics.",
+    "Cull thresholds for temperament and brood pattern."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Hot yard -> Cull queens; add local gentle lines.",
+    "Symptom: Poor winter survival -> Shift to proven local stock; adjust feed/comb plan.",
+    "Symptom: Inbreeding signs -> Introduce unrelated drones/queens."
+  ],
+  "Common Pitfalls": [
+    "Chasing trends without trials.",
+    "Keeping poor queens for sentimental reasons."
+  ],
+  "Tools & Techniques": [
+    "Queen source tags, mating nucs, trait scorecards.",
+    "Club breeder networks and testing apiaries."
+  ],
+  "Safety & Compliance": [
+    "Movement and import rules respected.",
+    "Health certificates for brought-in stock."
+  ],
+  "Field Checklist": [
+    "Trait goals posted.",
+    "Sources and test plan set.",
+    "Cull/keep decisions recorded."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to customers why local lines matter."
+  ],
+  "Cross-Links": [
+    "queen_rearing_basics",
+    "hygienic_behavior_stock_selection",
+    "migratory_beekeeping_and_transport"
+  ],
+  "Keywords": [
+    "local adaptation",
+    "imports",
+    "genetic diversity",
+    "queens"
+  ],
+  "Further Reading": [
+    "Breeding program case studies.",
+    "Regional bee improvement groups."
+  ],
+  "Notes": "Use small A/B trials before committing the whole yard."
+}

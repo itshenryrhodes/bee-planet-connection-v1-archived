@@ -1,0 +1,79 @@
+{
+  "At-a-Glance": "A disciplined comb cycle improves brood health, reduces residues, and keeps inspections smooth. Replace oldest, darkest brood comb regularly.",
+  "Why it Matters": [
+    "Old comb harbours pathogens and pesticide residues.",
+    "Well-managed comb yields straighter brood patterns and faster work.",
+    "Fresh comb supports queen laying and colony productivity."
+  ],
+  "Objectives": [
+    "Adopt a comb replacement plan (e.g., 1/3 of brood comb per season).",
+    "Standardise frame marking by year for easy rotation.",
+    "Prevent cross-colony frame mixing except where planned."
+  ],
+  "What Good Looks Like": [
+    "Frames dated/colour-coded on top bars.",
+    "Dark, heavy brood comb steadily removed to wax rendering.",
+    "Straight, fully drawn worker comb in brood nest; drone comb placed intentionally."
+  ],
+  "Step-by-Step": [
+    "1) Audit: mark frames by age; list target removals.",
+    "2) Insert foundation/comb: place near brood to guide straight draw.",
+    "3) Use drone foundation strategically for varroa trapping if needed.",
+    "4) Remove old comb after emergence; avoid removing all at once.",
+    "5) Render old wax; segregate brood wax from cappings for quality."
+  ],
+  "Seasonality & Climate": [
+    "Most replacement during spring build-up and early summer.",
+    "Avoid major comb swaps during dearth or cold snaps."
+  ],
+  "Data & Thresholds": [
+    "Target: replace 30–40 percent of brood comb annually.",
+    "Visible sagging, blackened cells, or patchy brood signal priority removal."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Patchy brood on dark comb -> Replace frames; check varroa and queen.",
+    "Symptom: Cross comb in supers -> Add guides; re-space; correct before filling.",
+    "Symptom: Drone-heavy brood -> Verify foundation; correct nest layout."
+  ],
+  "Common Pitfalls": [
+    "Bulk removal creating brood nest shock.",
+    "Unmarked frames leading to guesswork.",
+    "Mixing suspect frames between colonies."
+  ],
+  "Tools & Techniques": [
+    "Frame year markers, spacing tools, wiring kit if needed.",
+    "Foundation of correct cell size; jig for straight assembly.",
+    "Wax melter; filter cloth for rendering."
+  ],
+  "Safety & Compliance": [
+    "Biosecurity when discarding suspect comb; follow disease reporting rules.",
+    "Food-grade handling of cappings vs brood wax streams."
+  ],
+  "Field Checklist": [
+    "Frames dated and logged.",
+    "Oldest third identified.",
+    "Replacement frames built and ready.",
+    "Wax rendering plan set."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to stakeholders why dark comb goes out despite apparent utility."
+  ],
+  "Cross-Links": [
+    "hive_hygiene_and_biosecurity",
+    "varroa_monitoring_methods",
+    "honey_extraction_best_practice"
+  ],
+  "Keywords": [
+    "comb cycle",
+    "foundation",
+    "drone comb",
+    "brood nest",
+    "wax rendering"
+  ],
+  "Further Reading": [
+    "NBU comb management notes.",
+    "Extension guides on frame rotation strategies."
+  ],
+  "Notes": "Keep a simple ‘frame age’ legend on your dashboard: colours by year for fast decisions."
+}

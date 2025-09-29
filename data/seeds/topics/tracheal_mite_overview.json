@@ -1,73 +1,29 @@
 {
-  "At-a-Glance": "Tracheal mites (Acarapis woodi) infest adult bee airways, historically causing winter losses. Prevalence is lower in many regions but identification and management remain relevant.",
+  "At-a-Glance": "Tracheal mites infest bees' breathing tubes, weakening colonies.",
   "Why it Matters": [
-    "Can contribute to winter morbidity where present.",
-    "Differential diagnosis prevents misattributing losses."
-  ],
-  "Objectives": [
-    "Understand signs and confirm presence via lab/microscopy when suspected.",
-    "Support colonies through nutrition and ventilation; consider resistant stock.",
-    "Integrate with broader IPM rather than chasing rare causes."
-  ],
-  "What Good Looks Like": [
-    "Loss investigations consider tracheal mites alongside varroa, nutrition, and moisture.",
-    "Stock bred for mite resistance where regional risk exists.",
-    "Clear records of sampling and outcomes."
+    "Historically serious, though now less common.",
+    "Still a concern in poorly monitored apiaries."
   ],
   "Step-by-Step": [
-    "1) Suspect if: crawling bees in cold with disorientation, historical regional presence.",
-    "2) Confirm: submit samples or use trained microscopy; avoid assumptions.",
-    "3) Mitigate: improve winter ventilation and nutrition; consider resistant lines; follow any approved treatments regionally.",
-    "4) Review: align with varroa control and moisture management."
-  ],
-  "Seasonality & Climate": [
-    "Winter clusters show signs more clearly.",
-    "Cold, damp sites exacerbate stressors."
-  ],
-  "Data & Thresholds": [
-    "Rely on lab/official guidance for prevalence; track alongside other loss drivers.",
-    "Use trend data, not single anecdotes, to justify interventions."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Symptom: Crawlers mid-winter with adequate stores -> Check moisture/ventilation -> Consider tracheal mite sampling.",
-    "Symptom: Yard-wide losses -> Prioritise varroa/DWV, then niche causes.",
-    "Symptom: Long-term problem at site -> Reassess siting and genetics."
+    "1) Confirm via dissection or lab test.",
+    "2) Apply treatments if threshold exceeded.",
+    "3) Select resistant stock where available."
   ],
   "Common Pitfalls": [
-    "Over-attributing losses to tracheal mites without evidence.",
-    "Neglecting major drivers (varroa, moisture) while chasing rare ones."
-  ],
-  "Tools & Techniques": [
-    "Sampling kits, microscopy or lab submission.",
-    "Ventilation tuning; stock selection."
-  ],
-  "Safety & Compliance": [
-    "Follow local approvals for any treatments.",
-    "Record findings for seasonal reviews."
-  ],
-  "Field Checklist": [
-    "Samples taken if suspected.",
-    "Ventilation and moisture reviewed.",
-    "Genetics and site notes updated."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Set expectations: confirm first, then act."
+    "Confusing symptoms with other stressors",
+    "Not confirming by lab"
   ],
   "Cross-Links": [
-    "overwintering_colonies",
     "varroa_monitoring_methods",
-    "hive_ventilation_and_moisture_control"
+    "hygienic_behavior_stock_selection"
   ],
   "Keywords": [
-    "Acarapis woodi",
-    "tracheal mite",
-    "winter loss",
-    "microscopy"
+    "tracheal mites",
+    "acarapis woodi",
+    "bee parasites"
   ],
   "Further Reading": [
-    "Historical prevalence reports and modern reviews.",
-    "Association guidance on differential diagnosis in winter losses."
+    "NBU factsheet on tracheal mites"
   ],
-  "Notes": "Use loss investigations to improve site choices and genetics regardless of the cause."
+  "Notes": ""
 }

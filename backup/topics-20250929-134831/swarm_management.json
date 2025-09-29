@@ -1,0 +1,79 @@
+{
+  "At-a-Glance": "Swarming is a natural reproductive process. Proactive management channels this impulse into controlled splits, queen rearing, or timely interventions that retain bees and neighbours’ goodwill.",
+  "Why it Matters": [
+    "Uncontrolled swarms reduce honey crop, disrupt apiaries, and risk neighbour complaints.",
+    "Managed splits refresh queens and expand sustainably."
+  ],
+  "Objectives": [
+    "Detect pre-swarm cues early: charged queen cells, crowded brood nest, backfilled comb.",
+    "Apply a standard swarm control method consistently.",
+    "Have equipment ready for splits before peak season."
+  ],
+  "What Good Looks Like": [
+    "Regular spring inspections with room added ahead of need.",
+    "Clear decision tree: destroy cells vs artificial swarm vs split.",
+    "New queens mated in time for main flow."
+  ],
+  "Step-by-Step": [
+    "1) Early season: provide space, add supers as flows begin.",
+    "2) Pre-swarm signs: find charged queen cells; assess congestion.",
+    "3) Choose method: Pagden/artificial swarm, nucleus split, or Demaree to relieve pressure.",
+    "4) Execute carefully: move queen and flyers as per method; leave selected cells or introduce queen.",
+    "5) Follow-up: re-inspect 7 days later for rogue cells; ensure queenright status.",
+    "6) Record outcomes: timing, method, productivity impact."
+  ],
+  "Seasonality & Climate": [
+    "Swarm pressure peaks in spring to early summer.",
+    "Poor weather creates inspection backlogs and sudden surges of capped cells when warmth returns."
+  ],
+  "Data & Thresholds": [
+    "Inspection cadence every 7–9 days in peak season prevents surprises.",
+    "Crowding metrics: brood frames fully occupied and nectar backfilling trigger action."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Multiple capped queen cells -> Artificial swarm now -> Verify queen presence.",
+    "Symptom: No queen found, queen cells present -> Create nuc with a ripe cell -> Check emergence + mating.",
+    "Symptom: Repeated swarms -> Reassess genetics and yard space -> Consider requeening."
+  ],
+  "Common Pitfalls": [
+    "Delaying supers and space additions.",
+    "Leaving too many queen cells leading to casts.",
+    "Failing to check back after 7 days."
+  ],
+  "Tools & Techniques": [
+    "Spare brood boxes, floors, roofs, queen excluders.",
+    "Nuc boxes, frame feeders, marking pens.",
+    "Demaree boards or Snelgrove boards for advanced control."
+  ],
+  "Safety & Compliance": [
+    "Secure ladders and safe access if retrieving swarms.",
+    "Coordinate with neighbours and site owners during swarm season."
+  ],
+  "Field Checklist": [
+    "Equipment staged for splits.",
+    "Supers added ahead of need.",
+    "Diary set for 7-day follow-ups.",
+    "Queen status verified post-procedure."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Prepare a friendly neighbour note explaining what to do if they see a swarm."
+  ],
+  "Cross-Links": [
+    "queen_rearing_and_supersedure",
+    "apiary_setup",
+    "colony_defense_and_behaviour"
+  ],
+  "Keywords": [
+    "swarm control",
+    "artificial swarm",
+    "Demaree",
+    "nuc split",
+    "queen cells"
+  ],
+  "Further Reading": [
+    "National associations’ guides to Pagden/Demaree methods.",
+    "Seeley’s research on swarming dynamics."
+  ],
+  "Notes": "Keep a swarm box and a spare nuc in the car during peak season."
+}

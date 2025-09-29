@@ -1,74 +1,25 @@
 {
-  "At-a-Glance": "Map bloom calendars and fill gaps with planters, community beds, and tree advocacy. Pair with hive count discipline.",
+  "At-a-Glance": "Urban forage gaps can be bridged with targeted planting and partnerships.",
   "Why it Matters": [
-    "Reduces dearth stress and robbing.",
-    "Improves community perception and biodiversity."
-  ],
-  "Objectives": [
-    "Build a local bloom/dearth calendar.",
-    "Select gap-filling plants by season and scale.",
-    "Coordinate with neighbours and councils."
-  ],
-  "What Good Looks Like": [
-    "Street trees + planters + pocket meadows staggered by season.",
-    "Bee/wildlife-friendly species, not just honey-bee favourites.",
-    "Hives sized to carrying capacity."
+    "Cities often have dearths in midsummer.",
+    "Planning improves colony survival and pollination services."
   ],
   "Step-by-Step": [
-    "1) Record blooms for a year; add hive scale notes.",
-    "2) Identify gap months; shortlist species for pots/beds/trees.",
-    "3) Pitch small projects to sites; set watering/maintenance.",
-    "4) Review outcomes; adjust hive counts or plantings."
-  ],
-  "Seasonality & Climate": [
-    "Heat/drought favour tough perennials and mulch.",
-    "Late frosts reset early plans—diversify species."
-  ],
-  "Data & Thresholds": [
-    "Gap weeks per year; dearth weight loss rates.",
-    "Plant survival and flowering success rates."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Planter fails -> Wrong soil/water; switch species or steward.",
-    "Wasp spikes -> Move sugary plants away from entrances.",
-    "Poor public response -> Add signage and joint ownership."
-  ],
-  "Common Pitfalls": [
-    "Planting without maintenance plan.",
-    "Single-season fixes; no winter forage.",
-    "Overstocking hives vs available forage."
-  ],
-  "Tools & Techniques": [
-    "Bloom logs, community mapping, drought-proof planters.",
-    "Mulch, timers, and steward rota."
-  ],
-  "Safety & Compliance": [
-    "Permissions for planting; weight limits on roofs/balconies.",
-    "Avoid invasive species; check lists."
-  ],
-  "Field Checklist": [
-    "Gap calendar updated.",
-    "Species list agreed.",
-    "Watering and stewardship assigned."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Share ‘why these plants’ and ‘who waters’ clearly."
+    "1) Map local forage availability.",
+    "2) Identify gaps in flowering periods.",
+    "3) Engage councils and community groups to fill gaps."
   ],
   "Cross-Links": [
-    "uk_forage_trees_shrubs",
-    "bee_friendly_landscaping_landlords",
-    "forage_calendars_uk_regional"
+    "forage_and_flora",
+    "bee_friendly_landscaping_landlords"
   ],
   "Keywords": [
     "urban forage",
-    "gap planning",
-    "planting",
-    "stewardship"
+    "gap analysis",
+    "pollinator planning"
   ],
   "Further Reading": [
-    "Urban greening guides.",
-    "Drought-tolerant pollinator plant lists."
+    "Urban pollinator project reports"
   ],
-  "Notes": "Pick plants that please neighbours too—fragrance and tidiness matter in cities."
+  "Notes": ""
 }

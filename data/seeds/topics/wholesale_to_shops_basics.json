@@ -1,74 +1,35 @@
 {
-  "At-a-Glance": "Make buying easy: neat price list, MOQs, shelf-ready packs, and fast replenishment keep retailers happy.",
+  "At-a-Glance": "Selling wholesale to shops demands consistent supply, clear pricing, and food-safety compliance.",
   "Why it Matters": [
-    "Wholesale smooths volume and cash flow.",
-    "Retailers love reliable, low-friction suppliers."
-  ],
-  "Objectives": [
-    "Create a simple wholesale sheet with SKUs and MOQs.",
-    "Standardise cases, barcodes, and shelf footprints.",
-    "Set reorder lead times and delivery cadence."
-  ],
-  "What Good Looks Like": [
-    "One-page trade sheet: prices, margins, MOQs, case sizes.",
-    "Cases with outer barcode; BBE/batch visible.",
-    "Email order + EDI/portal optional; deliver on agreed day."
+    "Expands sales beyond farmers markets and direct channels.",
+    "Requires readiness for trade buyer expectations."
   ],
   "Step-by-Step": [
-    "1) Finalise SKUs and case counts; print trade sheet.",
-    "2) Gather barcodes; add to labels and cases.",
-    "3) Pitch: sample + sheet + story; confirm terms.",
-    "4) Deliver; follow up with sell-through tips; book replenishment."
+    "1) Prepare wholesale price list (case volumes, unit costs, margins).",
+    "2) Ensure labels and packaging meet retail legal standards.",
+    "3) Document HACCP-lite and batch traceability records.",
+    "4) Offer samples and a short producer story to buyers.",
+    "5) Plan reliable delivery or courier logistics."
   ],
-  "Seasonality & Climate": [
-    "Q4 lifts; pre-build cases; plan gift packs.",
-    "Heat-sensitive goods need shaded delivery van times."
-  ],
-  "Data & Thresholds": [
-    "Retail margin target (e.g., 40–50%) and your floor.",
-    "Lead time promise (e.g., 7 days) and on-time %."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Slow sell-through -> Demo day; bundle; recipe card.",
-    "Damages -> Better void fill; double-wall outers.",
-    "Price pushback -> Offer smaller case or alt SKU."
-  ],
+  "Safety & Compliance": "Retail-ready honey and wax products must meet UK/EU labelling and food hygiene law.",
   "Common Pitfalls": [
-    "No barcodes; retailers struggle.",
-    "Random case counts.",
-    "Inconsistent label placement."
-  ],
-  "Tools & Techniques": [
-    "Trade sheet template, case labels, reorder form.",
-    "Route planner and delivery window tracker."
-  ],
-  "Safety & Compliance": [
-    "Weights/measures; allergen labelling.",
-    "Insurance and delivery risk assessments."
-  ],
-  "Field Checklist": [
-    "Barcodes on jar + case.",
-    "Trade sheet current.",
-    "Next delivery booked."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Ask buyers what sells; adapt SKUs accordingly."
+    "Over-promising volumes.",
+    "No insurance or liability cover.",
+    "Weak shelf presentation compared to competitors."
   ],
   "Cross-Links": [
-    "pricing_margins_small_scale_honey",
+    "honey_labelling_legal_basics",
     "stock_control_batch_tracking",
-    "product_photography_basics"
+    "pricing_margins_small_scale_honey"
   ],
   "Keywords": [
     "wholesale",
-    "trade sheet",
-    "MOQs",
-    "barcodes"
+    "shops",
+    "pricing",
+    "distribution"
   ],
   "Further Reading": [
-    "Indie retail buyer tips.",
-    "Case packing standards."
+    "UK small food producer wholesale guides"
   ],
-  "Notes": "Keep a rolling ‘sell-through ideas’ doc you can tailor per shop."
+  "Notes": ""
 }

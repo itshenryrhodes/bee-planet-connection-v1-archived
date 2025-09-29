@@ -1,0 +1,73 @@
+{
+  "At-a-Glance": "Spot failing queens early—patchy brood, drone layers, hot behaviour—and have a plan: requeen, combine, or allow a controlled raise.",
+  "Why it Matters": [
+    "Prevents lost flows and winter failures.",
+    "Reduces swarming and temperament issues."
+  ],
+  "Objectives": [
+    "Diagnose queen issues vs disease or nutrition.",
+    "Choose the right remedy based on season and stock.",
+    "Record outcomes to inform breeding and suppliers."
+  ],
+  "What Good Looks Like": [
+    "Clear brood pattern criteria and photos.",
+    "Requeen schedule aligned to mating windows.",
+    "Nucs on standby for quick swaps."
+  ],
+  "Step-by-Step": [
+    "1) Confirm symptoms: pattern, eggs, temperament, age, mites.",
+    "2) Decide: introduce mated queen, allow cell, or unite with nuc.",
+    "3) Execute with slow release and smoke control; protect during dearth.",
+    "4) Verify laying pattern after 1–2 weeks; log supplier/line."
+  ],
+  "Seasonality & Climate": [
+    "Late summer requeens settle well before winter.",
+    "Poor mating weather increases risk—prefer mated queens."
+  ],
+  "Data & Thresholds": [
+    "Pattern floor (e.g., ≤70% coverage triggers action).",
+    "Age-based pre-emptive requeen policy."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Scattered drone brood -> Laying worker or failed mating; combine then requeen.",
+    "Good queen but scant stores -> Feed/support; reassess.",
+    "Aggressive yard -> Cull multiple queens; bring in gentle line."
+  ],
+  "Common Pitfalls": [
+    "Blaming queen for mite/virus issues.",
+    "Introducing into hot, crowded colonies without space.",
+    "No backup queens ready."
+  ],
+  "Tools & Techniques": [
+    "Queen cages/candy, push-in cages, nucs, newspaper combine.",
+    "Pattern photo cards for training."
+  ],
+  "Safety & Compliance": [
+    "Mark dates/IDs; supplier trace.",
+    "Local import/movement rules."
+  ],
+  "Field Checklist": [
+    "Diagnosis confirmed.",
+    "Replacement path chosen.",
+    "Post-intro check scheduled."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to learners the difference between queen fault and colony stress."
+  ],
+  "Cross-Links": [
+    "requeening_timing_strategies",
+    "queen_introduction_methods_and_acceptance",
+    "mite_sampling_methods"
+  ],
+  "Keywords": [
+    "queen failure",
+    "requeen",
+    "diagnosis"
+  ],
+  "Further Reading": [
+    "Queen assessment guides.",
+    "Acceptance success factors."
+  ],
+  "Notes": "Keep 1–2 nucs as ‘insurance queens’ per yard during season."
+}

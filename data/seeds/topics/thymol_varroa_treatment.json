@@ -1,73 +1,31 @@
 {
-  "At-a-Glance": "Thymol products need warmth and good brood nest airflow. Dose steadily; avoid honey taint period on market supers.",
+  "At-a-Glance": "Thymol is an organic compound used in slow-release strips against varroa.",
   "Why it Matters": [
-    "Useful shoulder-season option.",
-    "Lower risk when used within temperature band."
-  ],
-  "Objectives": [
-    "Apply within labelled temperature range.",
-    "Keep supers for sale off during treatment.",
-    "Schedule two-phase courses where required."
-  ],
-  "What Good Looks Like": [
-    "Steady release over full course duration.",
-    "Bees can ventilate; entrances not overly reduced.",
-    "Post-course sampling shows reduction."
+    "Alternative to synthetic acaricides.",
+    "Useful in rotation to manage resistance."
   ],
   "Step-by-Step": [
-    "1) Check forecast; confirm band (often warm, not hot).",
-    "2) Place trays/gel per instructions; avoid spill.",
-    "3) Re-dose mid-course if product requires.",
-    "4) Verify reduction; wait taint interval before supering."
+    "1) Apply strips according to manufacturer dosage.",
+    "2) Maintain ventilation and monitor colony stress.",
+    "3) Remove after recommended duration."
   ],
-  "Seasonality & Climate": [
-    "Shoulder seasons ideal; too cool reduces release.",
-    "Hot spells can agitate colonies."
-  ],
-  "Data & Thresholds": [
-    "Course duration and re-dose timing.",
-    "Verification sampling targets."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Low effect -> Too cool or short course; adjust next round.",
-    "Agitation -> Increase airflow; check placement."
-  ],
+  "Safety & Compliance": "Follow product labels; honey contamination risk if misused.",
   "Common Pitfalls": [
-    "Supering too soon after course.",
-    "Under-dosing or cutting course short.",
-    "Blocking airflow excessively."
-  ],
-  "Tools & Techniques": [
-    "Thymol trays/gels, timer reminders, sampling kit.",
-    "Spacers for airflow if crowded."
-  ],
-  "Safety & Compliance": [
-    "Follow label and food taint guidance.",
-    "Record batch and dates."
-  ],
-  "Field Checklist": [
-    "Temp band OK; supers off for market honey.",
-    "Dose placed; mid-course plan set.",
-    "Post-course sampling scheduled."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Explain taint intervals to the team clearly."
+    "Using during nectar flow",
+    "Overdosing in small colonies"
   ],
   "Cross-Links": [
-    "formic_acid_varroa_treatment",
-    "oxalic_acid_varroa_treatment",
-    "varroa_treatment_options"
+    "varroa_treatment_options",
+    "amitraz_stewardship_varroa"
   ],
   "Keywords": [
     "thymol",
-    "release rate",
-    "taint interval",
-    "course"
+    "organic varroa treatment",
+    "acaricide rotation"
   ],
   "Further Reading": [
-    "Product application notes.",
-    "Independent efficacy summaries."
+    "Manufacturer datasheets",
+    "BeeBase thymol notes"
   ],
-  "Notes": "Write the re-dose date on the crownboard with a wipeable pen."
+  "Notes": ""
 }

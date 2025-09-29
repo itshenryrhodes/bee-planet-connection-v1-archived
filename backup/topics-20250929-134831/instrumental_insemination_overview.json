@@ -1,0 +1,77 @@
+{
+  "At-a-Glance": "Instrumental insemination (II) enables precise breeding but demands specialist skills, equipment, and ethics. It complements, not replaces, field mating.",
+  "Why it Matters": [
+    "Controls drone lineage for research and advanced breeding goals.",
+    "Improves repeatability when weather or DCA quality is unreliable."
+  ],
+  "Objectives": [
+    "Understand II’s requirements, limitations, and welfare considerations.",
+    "Plan stock selection, drone prep, and queen handling workflows.",
+    "Integrate II queens with nuc management and evaluation protocols."
+  ],
+  "What Good Looks Like": [
+    "Clear breeding objectives; selected breeder/drone lines documented.",
+    "Sterile technique, calibrated equipment, and gentle queen handling.",
+    "Post-II recovery in warm, well-populated nucs with careful monitoring."
+  ],
+  "Step-by-Step": [
+    "1) Define goals and select breeder colonies; test temperament and health.",
+    "2) Prepare drones: ensure abundant mature drones from selected colonies.",
+    "3) Equipment: microscope, syringes, CO₂ setup, heating stage; sterilise and calibrate.",
+    "4) Procedure: anaesthesia, semen collection, insemination volume control, marking.",
+    "5) Recovery: place queens into strong nucs; minimal disturbance for 7–10 days; verify laying.",
+    "6) Evaluation: score brood pattern, temperament, productivity; record lineage."
+  ],
+  "Seasonality & Climate": [
+    "Warm, stable months with ample drones.",
+    "Cold/wet regions may benefit most due to poor mating windows."
+  ],
+  "Data & Thresholds": [
+    "Record insemination volumes, drone sources, and acceptance rates.",
+    "Cull underperformers swiftly; protect breeding resources."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Poor laying after II -> Check nuc strength and queen injury; allow more time; consider re-II or cull.",
+    "Symptom: Aggressive progeny -> Review breeder selection; do not propagate.",
+    "Symptom: Low acceptance -> Improve nuc density and queen introduction method."
+  ],
+  "Common Pitfalls": [
+    "Attempting II without training or supervision.",
+    "Underpowered nucs for recovery.",
+    "Inadequate sterilisation and temperature control."
+  ],
+  "Tools & Techniques": [
+    "II rig, CO₂, microscope, microtools, sterile consumables.",
+    "Record-keeping system linking queens to drone sources."
+  ],
+  "Safety & Compliance": [
+    "Animal welfare and ethical handling standards.",
+    "Biosecurity when moving genetic material."
+  ],
+  "Field Checklist": [
+    "Drones mature; nucs ready.",
+    "Equipment sterilised and calibrated.",
+    "Recovery plan and evaluation schedule set."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain II’s role alongside field mating to stakeholders."
+  ],
+  "Cross-Links": [
+    "drone_management_and_mating_success",
+    "queen_rearing_and_supersedure",
+    "making_and_managing_nucleus_colonies"
+  ],
+  "Keywords": [
+    "instrumental insemination",
+    "breeding",
+    "CO₂",
+    "lineage",
+    "nucs"
+  ],
+  "Further Reading": [
+    "II manuals and training course materials.",
+    "Breeding program case studies."
+  ],
+  "Notes": "Start with mentorship and practice on drones before queens."
+}

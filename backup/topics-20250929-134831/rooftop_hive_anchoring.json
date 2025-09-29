@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Wind and edges make rooftops risky—anchor stands, strap stacks, control access, and plan lifts and spills.",
+  "Why it Matters": [
+    "Prevents blow-offs and public hazards.",
+    "Keeps building managers confident and supportive."
+  ],
+  "Objectives": [
+    "Engineer anchors/ballast for local wind loads.",
+    "Design safe access routes and working zones.",
+    "Plan spill, swarm, and lift procedures."
+  ],
+  "What Good Looks Like": [
+    "Ballasted frames or anchor bolts per roof rules; double straps per hive.",
+    "Edge set-back and wind screens; signage and permit.",
+    "Lift plan with building/HO; spill kit and escape route."
+  ],
+  "Step-by-Step": [
+    "1) Survey roof: load limits, wind patterns, anchor points, drainage.",
+    "2) Choose stands/ballast; add anti-vibration pads; mark zones.",
+    "3) Strap stacks; add wind screens; secure lids and supers.",
+    "4) Drill or ballast per policy; document; review after first storm."
+  ],
+  "Seasonality & Climate": [
+    "Winter gales need extra straps/screens.",
+    "Summer heat islands need shade and water top-ups."
+  ],
+  "Data & Thresholds": [
+    "Minimum two independent straps; quarterly strap checks.",
+    "Set-back distance from edges per building policy."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Vibration complaints -> Add pads; reroute traffic; change hours.",
+    "Wind uplift -> Increase ballast; add cross-straps; improve screen.",
+    "Drain clog risk -> Keep stands above drains; spill SOP."
+  ],
+  "Common Pitfalls": [
+    "Relying on one strap only.",
+    "Ignoring roof load and waterproofing rules.",
+    "No access permits or induction."
+  ],
+  "Tools & Techniques": [
+    "Ratchet straps, anchor plates/ballast tubs, anti-vibration pads.",
+    "Wind screens, spill kit, radio/phone access."
+  ],
+  "Safety & Compliance": [
+    "Work-at-height rules, induction, edge protection.",
+    "Fire/egress routes kept clear."
+  ],
+  "Field Checklist": [
+    "Anchors/ballast installed and inspected.",
+    "Straps tight; lids clipped.",
+    "Access/permits up to date."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Brief building teams; share calm hours for inspections."
+  ],
+  "Cross-Links": [
+    "apiary_site_selection",
+    "noise_vibration_apiaries",
+    "urban_stakeholder_neighbour_relations"
+  ],
+  "Keywords": [
+    "rooftop",
+    "anchoring",
+    "wind load",
+    "ballast"
+  ],
+  "Further Reading": [
+    "Rooftop apiary best practices.",
+    "Wind loading basics for small structures."
+  ],
+  "Notes": "Use bright strap tails trimmed short—less flap, less wear, less noise."
+}

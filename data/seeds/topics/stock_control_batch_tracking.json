@@ -1,74 +1,30 @@
 {
-  "At-a-Glance": "Track jars and batches from tank to customer. Simple codes and par levels prevent stockouts and chaos.",
+  "At-a-Glance": "Stock control ensures traceability and compliance for honey and wax batches.",
   "Why it Matters": [
-    "Enables recalls and wholesale confidence.",
-    "Saves time at markets and online packing."
-  ],
-  "Objectives": [
-    "Adopt a single batch code format across all SKUs.",
-    "Set par levels per channel and plan replenishment.",
-    "Record moves between stores, vans, and stockists."
-  ],
-  "What Good Looks Like": [
-    "Master sheet: batch → SKU → quantity → location.",
-    "Reorder triggers by week and event calendar.",
-    "Pick/pack sheet with FEFO (first-expiry-first-out)."
+    "Supports food safety audits.",
+    "Improves recall readiness."
   ],
   "Step-by-Step": [
-    "1) Define batch code and label position.",
-    "2) Record jarring counts to master; split to channels.",
-    "3) At pick: scan/mark; at return: reconcile and adjust.",
-    "4) Review weekly; book next jarring run."
+    "1) Assign unique batch codes for each harvest/extraction.",
+    "2) Record weights, dates, and treatments linked to the batch.",
+    "3) Store records securely for required legal period."
   ],
-  "Seasonality & Climate": [
-    "Pre-Christmas par levels higher; heat affects wax/candles storage.",
-    "Heather/varietal limited runs tracked separately."
-  ],
-  "Data & Thresholds": [
-    "Par levels by SKU/channel; reorder lead time noted.",
-    "Breakage/spoilage rate tracked and minimised."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Issue: Stockouts -> Raise par; shorten lead times; batch more frequently.",
-    "Issue: Lost batch trace -> Fix label position and scanning habit.",
-    "Issue: Overstock -> Bundle or sample near end of season."
-  ],
+  "Safety & Compliance": "Traceability is mandatory under UK/EU food law.",
   "Common Pitfalls": [
-    "Multiple code styles over years.",
-    "Counting in vans but not reconciling.",
-    "No separation of wholesale cases vs singles."
-  ],
-  "Tools & Techniques": [
-    "Shared spreadsheet or light inventory app; QR/barcodes optional.",
-    "Pick tickets for markets and wholesale orders."
-  ],
-  "Safety & Compliance": [
-    "Weights/measures verified; batch codes legible.",
-    "Secure food storage away from chemicals and pets."
-  ],
-  "Field Checklist": [
-    "Par levels set; calendar synced.",
-    "Batch master updated after jarring.",
-    "Pick/pack sheets printed."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Teach volunteers where to find batch codes fast."
+    "Re-using batch codes",
+    "Incomplete treatment records"
   ],
   "Cross-Links": [
-    "uk_compliance_records",
-    "pricing_margins_small_scale_honey",
-    "wholesale_to_shops_basics"
+    "honey_extraction_food_safety",
+    "uk_compliance_records"
   ],
   "Keywords": [
-    "inventory",
-    "batch codes",
-    "par levels",
-    "traceability"
+    "batch tracking",
+    "traceability",
+    "food safety"
   ],
   "Further Reading": [
-    "Inventory basics for micro-brands.",
-    "Batch and FEFO best practices."
+    "HACCP for small-scale honey producers"
   ],
-  "Notes": "Use the same batch on matching gift packs to simplify traceability."
+  "Notes": ""
 }

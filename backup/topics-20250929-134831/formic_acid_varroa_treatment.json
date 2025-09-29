@@ -1,0 +1,73 @@
+{
+  "At-a-Glance": "Formic acid can reach mites under cappings. Use temperature windows and ventilation rules to protect queens and brood.",
+  "Why it Matters": [
+    "Potential to reduce mites in brood.",
+    "Useful when brood cannot be interrupted."
+  ],
+  "Objectives": [
+    "Choose product/format with clear temp limits.",
+    "Ventilate and space supers/boxes correctly.",
+    "Monitor queens and brood during use."
+  ],
+  "What Good Looks Like": [
+    "Applied within labelled temperature range.",
+    "Entrance open per instructions; extra space if required.",
+    "Queen present post-treatment; drop verified."
+  ],
+  "Step-by-Step": [
+    "1) Check forecast; confirm temp/humidity fit the label.",
+    "2) Place pads/strips as directed; ensure ventilation.",
+    "3) Monitor in first 24–48 hours; spot-check brood/queen.",
+    "4) Verify mite reduction; record batch and lot."
+  ],
+  "Seasonality & Climate": [
+    "Heat waves increase risk of queen loss; avoid.",
+    "Cool spells reduce efficacy."
+  ],
+  "Data & Thresholds": [
+    "Label temperature and duration limits.",
+    "Expected reduction range and verification plan."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Queen loss -> Stop; requeen; review timing/ventilation.",
+    "Low effect -> Outside temp band; consider alternate."
+  ],
+  "Common Pitfalls": [
+    "Using in hot weather.",
+    "Blocking entrances during treatment.",
+    "Stacking multiple products without plan."
+  ],
+  "Tools & Techniques": [
+    "Formic pads/strips, spacer rims, temp logs.",
+    "Sampling kit before/after."
+  ],
+  "Safety & Compliance": [
+    "Acid handling and storage safety.",
+    "Follow label restrictions and withhold periods."
+  ],
+  "Field Checklist": [
+    "Weather checked; temp band OK.",
+    "Ventilation set per label.",
+    "Verification sampling scheduled."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain to helpers why timing and airflow matter."
+  ],
+  "Cross-Links": [
+    "oxalic_acid_varroa_treatment",
+    "thymol_varroa_treatment",
+    "varroa_treatment_options"
+  ],
+  "Keywords": [
+    "formic acid",
+    "temperature window",
+    "ventilation",
+    "efficacy"
+  ],
+  "Further Reading": [
+    "Manufacturer guides.",
+    "Case studies of brood-including treatments."
+  ],
+  "Notes": "Have a spare queen plan if running near upper temp limits."
+}

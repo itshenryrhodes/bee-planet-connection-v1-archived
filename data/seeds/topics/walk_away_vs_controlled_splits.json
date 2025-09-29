@@ -1,74 +1,31 @@
 {
-  "At-a-Glance": "Walk-away splits are fast but variable; controlled splits manage queen cells, timing, and outcomes—choose based on goals.",
+  "At-a-Glance": "Controlled splits beat walk-away splits for predictable outcomes and timing.",
   "Why it Matters": [
-    "Expands apiary and relieves swarm pressure.",
-    "Matching method to season improves success."
-  ],
-  "Objectives": [
-    "Define goals (increase count vs selective improvement).",
-    "Use controlled splits when genetics/timing matter.",
-    "Track outcomes by method to refine SOP."
-  ],
-  "What Good Looks Like": [
-    "Walk-away: equalising bees/brood; both halves can raise queen.",
-    "Controlled: queenright half + queenless half with chosen QC or introduced queen.",
-    "Follow-ups scheduled for cell culling and mating checks."
+    "Shortens brood break and restores productivity faster.",
+    "Improves queen quality through planned cell/queen use."
   ],
   "Step-by-Step": [
-    "1) Choose method; prep boxes and stands.",
-    "2) Allocate brood, food, and bees fairly; avoid moving the queen by mistake.",
-    "3) For controlled: select best open QC or add caged queen.",
-    "4) Recheck at day 7/14; feed as needed; log outcomes."
-  ],
-  "Seasonality & Climate": [
-    "Best during strong nectar/queen mating windows.",
-    "Avoid long dearths or poor weather forecasts."
-  ],
-  "Data & Thresholds": [
-    "Minimum frames of bees/brood per split.",
-    "Success rate target per method by month."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Queenless signs -> Provide frame with eggs or introduce queen.",
-    "Multiple casts -> Reduce to one QC; adjust entrances.",
-    "Weak halves -> Combine or boost with emerging brood."
+    "1) Assess donor strength and resources.",
+    "2) Controlled: add ripe queen cell or mated queen; Walk-away: rely on emergency cells.",
+    "3) Feed if scant nectar; ensure adequate nurse bees.",
+    "4) Verify laying pattern after 2–3 weeks (controlled) or 3–4 weeks (walk-away)."
   ],
   "Common Pitfalls": [
-    "Accidentally moving queen to wrong half.",
-    "Leaving too many cells leading to casts.",
-    "Underfeeding during poor weather."
-  ],
-  "Tools & Techniques": [
-    "Queen clips, frame cages, feeders, entrance reducers.",
-    "Paint dot/marker for QC selection."
-  ],
-  "Safety & Compliance": [
-    "Site permissions for new stands.",
-    "Transport safely if moving splits."
-  ],
-  "Field Checklist": [
-    "Method chosen and recorded.",
-    "QC selection done (controlled only).",
-    "Follow-ups in calendar."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "State goal up front so helpers don’t mix methods."
+    "Under-resourcing the split",
+    "No follow-up confirmation of queenrightness"
   ],
   "Cross-Links": [
     "colony_splits_nucs",
-    "queen_cell_timing_calendar",
-    "requeening_timing_strategies"
+    "queen_rearing_basics"
   ],
   "Keywords": [
     "splits",
-    "walk-away",
-    "controlled",
-    "queen cell"
+    "nucs",
+    "walk-away split",
+    "controlled split"
   ],
   "Further Reading": [
-    "Split methods compared.",
-    "Seasonal mating window references."
+    "Comparative notes on split strategies"
   ],
-  "Notes": "Use a ‘split card’ taped to each box to prevent follow-up confusion."
+  "Notes": ""
 }

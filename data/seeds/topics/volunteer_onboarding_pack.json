@@ -1,74 +1,32 @@
 {
-  "At-a-Glance": "A short pack with safety, hygiene, and simple SOPs turns willing hands into helpful hands.",
+  "At-a-Glance": "A simple onboarding pack turns eager volunteers into safe, effective helpers.",
   "Why it Matters": [
-    "Reduces accidents and speeds training.",
-    "Improves consistency at markets and apiaries."
-  ],
-  "Objectives": [
-    "Provide role descriptions, safety rules, and comms codes.",
-    "Issue checklists for common tasks (inspections, stall setup).",
-    "Capture emergency contacts and availability."
-  ],
-  "What Good Looks Like": [
-    "PDF or print pack: contacts, site rules, PPE, photo policy.",
-    "Buddy system for first 3 shifts; sign-off checklist.",
-    "Calendar with events and expected call-out windows."
+    "Improves safety and consistency.",
+    "Reduces supervision load."
   ],
   "Step-by-Step": [
-    "1) Draft roles (apiary helper, market assistant, photography).",
-    "2) Assemble safety pages (stings, ladders, food hygiene).",
-    "3) Create checklists and quick-reference cards.",
-    "4) Onboard: briefing + shadow + first solo with feedback."
+    "1) Provide welcome note, role outline, and risk basics.",
+    "2) Issue PPE checklist and apiary rules (biosecurity, gates, neighbours).",
+    "3) Assign a buddy for first 3 sessions.",
+    "4) Capture emergency contact and allergy info."
   ],
-  "Seasonality & Climate": [
-    "Heat/cold PPE guidance; water and breaks built into plans.",
-    "Storm protocols for rooftop and gazebo sites."
-  ],
-  "Data & Thresholds": [
-    "Record attendance and tasks; review after 3 shifts.",
-    "Maintain contact and consent for photos/data."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Issue: No-shows -> Clear expectations; backup list; gentle offboarding.",
-    "Issue: Safety lapses -> Re-brief; pair with mentor; restrict tasks.",
-    "Issue: Confusion at stalls -> Add table photo and pricing crib sheet."
-  ],
+  "Safety & Compliance": "Keep GDPR-compliant records; brief on first-aid and sting response.",
   "Common Pitfalls": [
-    "Overlong manuals nobody reads.",
-    "No clear point of contact.",
-    "No kit list for helpers."
-  ],
-  "Tools & Techniques": [
-    "Laminated cards, shared calendar, group chat with rules.",
-    "Short videos for each task."
-  ],
-  "Safety & Compliance": [
-    "Insurance coverage confirmed; incident reporting path.",
-    "Food hygiene tips for tastings and handling."
-  ],
-  "Field Checklist": [
-    "Pack sent and acknowledged.",
-    "Buddy assigned and briefed.",
-    "First shift scheduled and noted."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Thank volunteers; share wins and stories."
+    "No clear tasks",
+    "Missing PPE sizing",
+    "Untracked attendance"
   ],
   "Cross-Links": [
-    "event_risk_assessment_pack",
-    "market_stall_setup_food_hygiene_uk",
-    "honey_extraction_food_safety"
+    "beekeeper_safety_ppe_and_first_aid",
+    "apiary_biosecurity_sop"
   ],
   "Keywords": [
-    "onboarding",
     "volunteers",
-    "checklists",
-    "safety"
+    "onboarding",
+    "SOPs"
   ],
   "Further Reading": [
-    "Volunteer management tips for small organisations.",
-    "Health and safety basic inductions."
+    "Volunteer management best practices"
   ],
-  "Notes": "Keep packs to 6–8 pages—add links for deep dives."
+  "Notes": ""
 }

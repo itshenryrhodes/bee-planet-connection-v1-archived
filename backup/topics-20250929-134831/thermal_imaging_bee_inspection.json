@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Thermal cameras reveal cluster position, heat leaks, and moisture risks—use for triage, not as a sole diagnostic.",
+  "Why it Matters": [
+    "Non-invasive winter checks reduce stress.",
+    "Finds heat/moisture problems you cannot see."
+  ],
+  "Objectives": [
+    "Standardise distance, angle, and time for shots.",
+    "Interpret patterns (cluster, heat leaks, empty boxes).",
+    "Link findings to actions (insulation, ventilation, feed)."
+  ],
+  "What Good Looks Like": [
+    "Consistent outside shots at dusk/dawn; reference panel used.",
+    "Photos named by yard-hive-date; notes with actions.",
+    "Follow-ups confirm changes on next scan."
+  ],
+  "Step-by-Step": [
+    "1) Calibrate and set emissivity; add a known reference (card).",
+    "2) Shoot front/sides at set distance; avoid sun/wind bias.",
+    "3) Interpret: cluster high/low; cold corners; condensation signs.",
+    "4) Act: adjust insulation/vent; verify food; note for spring."
+  ],
+  "Seasonality & Climate": [
+    "Best in cold, still conditions; poor in direct sun.",
+    "After storms, recheck straps/lids/heat loss."
+  ],
+  "Data & Thresholds": [
+    "Cluster height vs feed position guide.",
+    "Heat leak threshold for intervention (relative)."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Hot crownboard edge -> Lid gap; fix and re-scan.",
+    "Cold box, no cluster -> Dead-out or abscond; confirm gently.",
+    "Cluster low late winter -> Risk of starvation above; add fondant."
+  ],
+  "Common Pitfalls": [
+    "Over-interpreting noisy images.",
+    "Scanning in sun or wind.",
+    "No before/after photos to prove change."
+  ],
+  "Tools & Techniques": [
+    "Handheld thermal cam or phone module; reference card.",
+    "Simple photo naming scheme and folder."
+  ],
+  "Safety & Compliance": [
+    "Roof/ladder safety; avoid night hazards.",
+    "Respect site permissions and privacy."
+  ],
+  "Field Checklist": [
+    "Camera set; reference ready.",
+    "Angles/distance consistent.",
+    "Actions logged post-scan."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Set expectations: triage tool, not x-ray vision."
+  ],
+  "Cross-Links": [
+    "hive_ventilation_and_moisture_control",
+    "overwintering_colonies",
+    "hive_sensors_weight_temp_sound"
+  ],
+  "Keywords": [
+    "thermal imaging",
+    "cluster",
+    "insulation",
+    "triage"
+  ],
+  "Further Reading": [
+    "Field examples of winter scans.",
+    "Moisture control primers."
+  ],
+  "Notes": "Keep one ‘control’ hive to learn how true cluster moves look week to week."
+}

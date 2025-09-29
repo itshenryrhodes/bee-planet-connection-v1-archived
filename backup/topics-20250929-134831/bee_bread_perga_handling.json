@@ -1,0 +1,74 @@
+{
+  "At-a-Glance": "Bee bread is fermented pollen—treat frames carefully to preserve cells and prevent contamination when moving or extracting.",
+  "Why it Matters": [
+    "Supports nucs and brood; potential product line.",
+    "Rough handling ruins cells and spreads mess."
+  ],
+  "Objectives": [
+    "Identify, store, and use bee bread frames properly.",
+    "Decide when to feed back vs process.",
+    "Keep records of origin and treatment."
+  ],
+  "What Good Looks Like": [
+    "Frames frozen to control wax moth before storage.",
+    "Cutting/extraction done on clean, cool surface.",
+    "Nucs boosted with partial bee bread frames as needed."
+  ],
+  "Step-by-Step": [
+    "1) Mark frames with strong pollen bands; freeze if storing.",
+    "2) For feeding: thaw in sealed bag; install next to brood.",
+    "3) For processing: use clean tools; avoid crushing cappings into cells.",
+    "4) Record usage; replace frames to donor hive/stock as planned."
+  ],
+  "Seasonality & Climate": [
+    "Best collected during strong pollen flows.",
+    "Heat accelerates spoilage—work cool and quick."
+  ],
+  "Data & Thresholds": [
+    "Limit removal so donor colonies keep balance.",
+    "Track nuc outcomes after support."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Slimy cells -> Spoilage; discard; review freezing/handling.",
+    "Brood still stalled -> Nutrition not the root cause.",
+    "Moth damage -> Longer freeze; better sealing."
+  ],
+  "Common Pitfalls": [
+    "Harvesting from weak colonies.",
+    "Letting frames warm wet before use.",
+    "No origin labels."
+  ],
+  "Tools & Techniques": [
+    "Freezer, clean knives/scrapers, food-safe trays.",
+    "Label system for yard/frame origin."
+  ],
+  "Safety & Compliance": [
+    "Food hygiene if processing for humans.",
+    "Do not cross-contaminate with treatment residues."
+  ],
+  "Field Checklist": [
+    "Frames marked and frozen.",
+    "Use path chosen (feed vs process).",
+    "Records updated."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Explain why nucs get the best bee bread first."
+  ],
+  "Cross-Links": [
+    "pollen_drying_storage",
+    "pollen_collection_nutrition",
+    "nutrition_feeding"
+  ],
+  "Keywords": [
+    "bee bread",
+    "perga",
+    "pollen frames",
+    "nucs"
+  ],
+  "Further Reading": [
+    "Perga handling basics.",
+    "Wax moth control in stored comb."
+  ],
+  "Notes": "Keep a dedicated ‘pollen frame’ knife—sticky fats linger on gear."
+}

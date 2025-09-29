@@ -1,75 +1,31 @@
 {
-  "At-a-Glance": "After capture, a swarm needs quiet dark housing, feed if light, mite checks, and confirmation the queen is accepted and laying.",
+  "At-a-Glance": "After capturing a swarm, provide stabilisation and monitoring.",
   "Why it Matters": [
-    "Prevents absconding and starvation.",
-    "Sets the colony up for hygienic comb and varroa control."
-  ],
-  "Objectives": [
-    "Provide suitable volume and ventilation in a nuc or hive body.",
-    "Stabilise with feeders and a single entrance.",
-    "Verify queen-right status and apply mite management."
-  ],
-  "What Good Looks Like": [
-    "Swarm housed the same day; sheltered and strapped.",
-    "Internal feed available; frames with guides or foundation ready.",
-    "Mite monitoring scheduled; queen laying within 1–2 weeks."
+    "Ensures swarm survival.",
+    "Reduces disease transmission."
   ],
   "Step-by-Step": [
-    "1) Transfer swarm to nuc/hive with frames; keep dark/quiet 24–48 h.",
-    "2) Feed if there is no strong flow; avoid spills to deter robbing.",
-    "3) Add a queen excluder under brood box (temporary) if absconding risk is high; remove after comb is started.",
-    "4) Inspect at 7–10 days for comb start and eggs; avoid heavy smoke.",
-    "5) Monitor varroa and treat per label if indicated; log all actions."
+    "1) House swarm in a quarantine box or nucleus hive.",
+    "2) Feed light syrup until comb is drawn.",
+    "3) Inspect for queenrightness within a week.",
+    "4) Monitor for disease before combining with other stock."
   ],
-  "Seasonality & Climate": [
-    "Early swarms draw comb fast with flow; late swarms need more feed and insulation.",
-    "Wet/cool spells increase absconding and chill risks."
-  ],
-  "Data & Thresholds": [
-    "Confirm eggs by day 7–10; if absent by day 14, reassess for queen issues.",
-    "Swarm weight vs box size: avoid over-volume that drives absconding."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Symptom: Absconding signs -> Reduce entrance; add brood frame if available; ensure ventilation.",
-    "Symptom: No eggs at day 14 -> Introduce tested queen or brood; check for virgin timing.",
-    "Symptom: Heavy mites -> Treat promptly; plan comb renewal."
-  ],
+  "Safety & Compliance": "Isolate new swarms per biosecurity protocols.",
   "Common Pitfalls": [
-    "Leaving collected swarms in hot cars or sunny spots.",
-    "Open feeding leading to robbing.",
-    "No record of queen status or mite checks."
-  ],
-  "Tools & Techniques": [
-    "Nuc boxes, internal feeders, strap, temporary floor excluder use.",
-    "Gentle entrance reduction and shade screens."
-  ],
-  "Safety & Compliance": [
-    "Secure loads in vehicles; avoid public exposure during transfer.",
-    "Follow local treatment rules for new colonies."
-  ],
-  "Field Checklist": [
-    "Housing prepared; feed installed if needed.",
-    "Entrance reduced; shade secured.",
-    "Follow-up inspection scheduled."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Explain to helpers that quiet and darkness discourage absconding."
+    "Skipping disease checks",
+    "Underfeeding in poor flow"
   ],
   "Cross-Links": [
     "swarm_call_protocol",
-    "making_and_managing_nucleus_colonies",
-    "varroa_monitoring_methods"
+    "apiary_biosecurity_sop"
   ],
   "Keywords": [
-    "swarm aftercare",
-    "absconding",
-    "queen-right",
-    "feeding"
+    "swarm capture",
+    "aftercare",
+    "biosecurity"
   ],
   "Further Reading": [
-    "Association guides on swarm aftercare.",
-    "Field notes on abscond prevention."
+    "National Bee Unit advice on swarm management"
   ],
-  "Notes": "A frame of open brood (if disease-safe) anchors swarms effectively."
+  "Notes": ""
 }

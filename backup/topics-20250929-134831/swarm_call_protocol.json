@@ -1,0 +1,77 @@
+{
+  "At-a-Glance": "A calm, professional swarm call workflow protects people, bees, and your reputation. Screen, triage, and respond with clear comms and records.",
+  "Why it Matters": [
+    "Efficient triage avoids wasted trips and unsafe situations.",
+    "Good public interactions turn rescues into customers and allies."
+  ],
+  "Objectives": [
+    "Use a standard question set to confirm ‘honey bee swarm’ vs wasps/bumbles.",
+    "Assess safety, access, and ownership before dispatch.",
+    "Record details and follow a scripted on-site process."
+  ],
+  "What Good Looks Like": [
+    "Caller form completed with photos when possible.",
+    "Clear go/no-go criteria and estimated arrival window.",
+    "On-site: PPE, containment box, and written handover."
+  ],
+  "Step-by-Step": [
+    "1) Intake: name, phone, exact location, height/access, bee photos, time spotted, behaviour.",
+    "2) Confirm species and stability (cluster vs flying). If uncertain: request close photo or short video.",
+    "3) Risk screen: power lines, traffic, private property permissions.",
+    "4) Dispatch: agree window; send pre-visit guidance (stay back, close windows, keep pets in).",
+    "5) On-site: assess, contain, collect; tidy and advise; leave info sheet.",
+    "6) Log and follow-up: confirm relocation site and aftercare."
+  ],
+  "Seasonality & Climate": [
+    "Peak spring–early summer; hot weather increases hanging time risk.",
+    "Rain/wind shorten cluster persistence—prioritise accordingly."
+  ],
+  "Data & Thresholds": [
+    "Minimum kit for dispatch: veil/jacket, box, sheet, brush, sprayer, secateurs, straps.",
+    "No-go: unsafe height without proper access/permits; live electrics; aggressive colonies without plan."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: ‘Bees in roof for years’ -> Not a swarm; advise removal specialist or sealed entry check.",
+    "Symptom: Small ball under eaves in spring -> Likely scout cluster; confirm and monitor 24 h.",
+    "Symptom: Wasps/paper nest -> Decline swarm service; signpost pest control if necessary."
+  ],
+  "Common Pitfalls": [
+    "Driving without photos or adequate description.",
+    "No property permission or unclear ownership of swarm.",
+    "Underestimating ladder or access safety."
+  ],
+  "Tools & Techniques": [
+    "Collection box, sheets, pruners, water mist, bee brush, nuc box, queen clip/cage.",
+    "Phone map pins and photo exchange with caller."
+  ],
+  "Safety & Compliance": [
+    "Public liability cover; ladder and manual-handling safety.",
+    "Respect private property and obtain permission before entry."
+  ],
+  "Field Checklist": [
+    "Caller form complete with photos.",
+    "Access and safety confirmed; PPE packed.",
+    "Handover info left with contact."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Use a calm script: what you will do, how long, what they should do."
+  ],
+  "Cross-Links": [
+    "swarm_capture_aftercare",
+    "rooftop_hive_anchoring",
+    "urban_stakeholder_neighbour_relations",
+    "beekeeper_insurance_risk"
+  ],
+  "Keywords": [
+    "swarm call",
+    "triage",
+    "intake form",
+    "public safety"
+  ],
+  "Further Reading": [
+    "Association swarm call scripts and ID guides.",
+    "Local authority guidance on access and permits."
+  ],
+  "Notes": "Keep a printable ‘Is it a honey bee swarm?’ one-pager to text or email callers."
+}

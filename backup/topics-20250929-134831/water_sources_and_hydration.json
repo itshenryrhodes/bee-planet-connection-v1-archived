@@ -1,0 +1,77 @@
+{
+  "At-a-Glance": "Reliable, attractive water sources keep bees off neighbour pools and support brood food production and hive cooling.",
+  "Why it Matters": [
+    "Water is essential for brood food dilution and evaporative cooling.",
+    "Proactive provision reduces conflict with neighbours and businesses.",
+    "Mineral content can increase attractiveness vs chlorinated alternatives."
+  ],
+  "Objectives": [
+    "Provide clean, stable water within a few metres of hives.",
+    "Design landing surfaces that prevent drowning.",
+    "Maintain year-round, not just during heat waves."
+  ],
+  "What Good Looks Like": [
+    "Shallow tubs with stones/corks; slow drippers; shaded placement near apiaries.",
+    "Light mineral pinch (sea salt or aquarium salts) to increase attractiveness.",
+    "Routine top-ups and algae control without harmful chemicals."
+  ],
+  "Step-by-Step": [
+    "1) Choose container: shallow, broad surface with textured landings.",
+    "2) Place upwind of hives if possible to catch odour plumes; add shade.",
+    "3) Add floats (corks/pebbles) and a pinch of minerals; avoid strong scents.",
+    "4) Maintain: top up every 1–3 days in heat; scrub slime as needed; rotate containers to keep biofilm low.",
+    "5) Monitor: if bees still choose neighbour pools, adjust placement and mineral content."
+  ],
+  "Seasonality & Climate": [
+    "Heat waves drive heavy demand; winter access may still be used on mild days.",
+    "Urban microclimates evaporate tubs quickly — increase capacity or drip-feed."
+  ],
+  "Data & Thresholds": [
+    "Observe daily uptake; if dry by mid-day, add capacity.",
+    "Track neighbour feedback: zero pool visits is the target."
+  ],
+  "Diagnostics & Decision Tree": [
+    "Symptom: Bees on chlorinated pool -> Increase mineralisation slightly; move water source earlier in the flight path; add shade.",
+    "Symptom: Drowning -> Add more floats and rough surfaces; lower water depth.",
+    "Symptom: Algae/scum -> Increase cleaning rotation; consider moving to partial shade."
+  ],
+  "Common Pitfalls": [
+    "Providing water only after complaints start.",
+    "Deep buckets without landings causing drownings.",
+    "Scented additives that repel bees."
+  ],
+  "Tools & Techniques": [
+    "Corks/pebbles, drip irrigation timers, livestock troughs with floats.",
+    "Simple conductivity/total dissolved solids (TDS) meter to standardise mineral pinch."
+  ],
+  "Safety & Compliance": [
+    "Secure tubs to avoid trip hazards; avoid mosquito breeding by flow or frequent refresh.",
+    "Do not add chemicals that could harm bees or violate site rules."
+  ],
+  "Field Checklist": [
+    "Source filled and shaded.",
+    "Floats in place; mineral pinch logged.",
+    "Top-up schedule set during heat."
+  ],
+  "Communications": [
+    "Short hyphens only.",
+    "Share a neighbour card explaining your on-site water plan."
+  ],
+  "Cross-Links": [
+    "urban_stakeholder_neighbour_relations",
+    "apiary_setup",
+    "hive_ventilation_and_moisture_control"
+  ],
+  "Keywords": [
+    "water source",
+    "hydration",
+    "evaporative cooling",
+    "minerals",
+    "neighbour relations"
+  ],
+  "Further Reading": [
+    "Extension notes on bee water requirements.",
+    "Case studies on reducing bee–pool conflicts."
+  ],
+  "Notes": "Photograph preferred setups that worked in your climate for reuse."
+}

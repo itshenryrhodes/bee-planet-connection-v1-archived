@@ -1,78 +1,31 @@
 {
-  "At-a-Glance": "Wax moths exploit weak colonies and poorly stored comb. Prevention through strong colonies, tidy yards, and correct storage beats cure.",
+  "At-a-Glance": "Combine freezing, ventilation, and chemical fumigants (where legal) to protect stored comb.",
   "Why it Matters": [
-    "Severe infestations destroy drawn comb — a major capital loss.",
-    "Larval tunnelling spreads webbing and frass, contaminating stores and equipment.",
-    "Good storage extends comb life and reduces replacement costs."
-  ],
-  "Objectives": [
-    "Keep colonies strong and queenright; remove dead-outs promptly.",
-    "Store supers and brood comb in moth-resistant conditions.",
-    "Intervene early at the first sign of webbing or frass."
-  ],
-  "What Good Looks Like": [
-    "Comb storage: cool, dry, light or ventilated stack with spacing to disrupt moth behaviour.",
-    "Regular inspection of stored boxes; cull worst frames; freeze sensitive comb.",
-    "Prompt cleaning of extraction spaces; no sticky kit left out."
+    "Preserves valuable drawn comb.",
+    "Reduces replacement costs and time."
   ],
   "Step-by-Step": [
-    "1) In-season prevention: maintain strong colonies; reduce unused space; remove dead-outs quickly.",
-    "2) Post-harvest storage: stack supers with airflow (e.g., alternating orientation) or in bright, well-ventilated rooms; consider BT-based controls where permitted.",
-    "3) Freezing: -18 °C for 24–48 h kills eggs/larvae; bag and thaw sealed to avoid moisture.",
-    "4) Monitoring: check stacks every 2–4 weeks for webbing, pellets, and musty odour.",
-    "5) Remediation: cull heavily damaged comb; scrape and scorch woodenware where safe; review storage conditions."
+    "1) Freeze frames (-18°C, 24–48h) before storage.",
+    "2) Store in cool, ventilated stacks with light gaps if safe.",
+    "3) Consider acetic acid or approved products per label.",
+    "4) Inspect monthly and rotate stacks."
   ],
-  "Seasonality & Climate": [
-    "Warm, humid seasons accelerate moth life cycle.",
-    "Urban storage spaces (lofts/garages) can trap heat — ensure ventilation."
-  ],
-  "Data & Thresholds": [
-    "Any active larval webbing in stored comb triggers immediate action.",
-    "Dead-outs left >7–10 days in warm weather sharply increase risk."
-  ],
-  "Diagnostics & Decision Tree": [
-    "Symptom: Webbing in corners of stored frames -> Freeze batch -> Improve ventilation/stacking.",
-    "Symptom: Recurrent infestation -> Review colony strength and storage temperature/humidity.",
-    "Symptom: Moth in weak colony -> Consolidate boxes; treat underlying weakness (queen/varroa/nutrition)."
-  ],
+  "Safety & Compliance": "Follow COSHH and label requirements for any fumigants.",
   "Common Pitfalls": [
-    "Sealing supers airtight in warm rooms (creates a moth incubator).",
-    "Leaving sticky comb in open spaces attracting adults.",
-    "Keeping vast areas of empty comb on weak colonies."
-  ],
-  "Tools & Techniques": [
-    "Freezer access, breathable storage stacks, spacers for ventilation.",
-    "BT-based biocontrol products where legal, bright storage rooms.",
-    "Scrapers, heat/steam or scorching for woodenware."
-  ],
-  "Safety & Compliance": [
-    "Follow labels for any biocontrols; avoid contamination of food areas.",
-    "Heat/scorch safely; prevent fire risk."
-  ],
-  "Field Checklist": [
-    "Dead-outs cleared promptly.",
-    "Storage plan logged (location, temp, airflow).",
-    "Inspection cadence set with reminders."
-  ],
-  "Communications": [
-    "Short hyphens only.",
-    "Explain to helpers why ‘light and air’ storage works against moth lifecycle."
+    "Insufficient freezing time",
+    "Storing in warm sheds"
   ],
   "Cross-Links": [
-    "comb_management_and_replacement",
-    "hive_hygiene_and_biosecurity",
-    "honey_extraction_best_practice"
+    "wax_moth",
+    "beeswax_rendering_storage"
   ],
   "Keywords": [
-    "Galleria mellonella",
-    "Achroia grisella",
     "comb storage",
-    "freezing",
-    "webbing"
+    "wax moth prevention",
+    "acetic acid fumigation"
   ],
   "Further Reading": [
-    "Research summaries on wax moth lifecycle and controls.",
-    "Association notes on comb storage best practice."
+    "Guidance on acetic acid comb disinfection"
   ],
-  "Notes": "Photograph storage stacks that worked well to standardise your setup."
+  "Notes": ""
 }
