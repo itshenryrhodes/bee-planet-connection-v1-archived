@@ -35,29 +35,13 @@ jobs:
           hugo-version: '0.150.1'
           extended: true
 
-      - name: Show environment + tree
-        run: |
-          hugo version || true
-          echo "PWD=$(pwd)"
-          ls -la
-          echo "---- site/ ----"
-          ls -la site || true
-          echo "---- site root files ----"
-          ls -la site | sed -n '1,200p'
-          echo "---- check config ----"
-          ls -la site/config.* || true
-          echo "---- sample layouts ----"
-          ls -la site/layouts || true
-          echo "---- sample static ----"
-          ls -la site/static || true
-
-      - name: Build site (verbose)
+      - name: Build site
         working-directory: site
         run: |
           set -e
-          hugo --gc --minify --verbose --debug \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      # Guard rails
       - name: Verify CSS present and non-trivial
         run: |
           test -s site/public/css/brand.css || (echo "brand.css missing"; exit 1)
@@ -75,25 +59,7 @@ jobs:
             echo "Template syntax detected in built output"; exit 1
           fi
 
-      - name: Upload artifact (public)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: public-preview
-          path: site/public
-          if-no-files-found: warn
-
-      - name: Upload artifact (logs)
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: debug-logs
-          path: |
-            **/*.log
-          if-no-files-found: ignore
-
       - name: Upload Pages artifact
-        if: success()
         uses: actions/upload-pages-artifact@v3
         with:
           path: site/public
