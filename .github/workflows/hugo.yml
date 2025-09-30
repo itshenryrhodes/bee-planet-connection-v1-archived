@@ -18,37 +18,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.150.1
       TZ: Europe/London
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Install Hugo (extended)
-        run: |
-          curl -sLJO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
-          mkdir -p "$HOME/.local/hugo"
-          tar -C "$HOME/.local/hugo" -xf "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
-          echo "$HOME/.local/hugo" >> "$GITHUB_PATH"
-          hugo version
+      # ✅ Reliable Hugo installer
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.150.1'
+          extended: true
 
       - name: Build site (from ./site to ./site/public)
         working-directory: site
         run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --cacheDir "${{ runner.temp }}/hugo_cache"
+          hugo --gc --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      # Guard rails
+      # --- Guard rails on built output ---
       - name: Verify CSS present and non-trivial
         run: |
           test -s site/public/css/brand.css || (echo "brand.css missing"; exit 1)
