@@ -1,72 +1,58 @@
-{{- /* Home: Featured Wiki (latest) + Featured Blog (Bee Line pinned) */ -}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{{ with .Site.Title }}{{ . }} — {{ end }}Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{- partial "head.html" . | safeHTML -}}
-</head>
-<body>
+{{ define "main" }}
+<section class="home-hero">
   <div class="container">
-    <header class="site">
-      {{ with .Site.Params.logo }}
-        <img src="{{ . | safeURL }}" alt="{{ $.Site.Title }}">
-      {{ else }}
-        <strong>{{ .Site.Title }}</strong>
-      {{ end }}
-      <nav aria-label="Primary">
-        {{ with .Site.Menus.main }}
-          <ul>
-            {{ range . }}
-              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-            {{ end }}
-          </ul>
-        {{ end }}
-      </nav>
-    </header>
-
-    <section class="hero">
-      <h1 style="margin:0 0 4px">Bee Planet Connection</h1>
-      <p style="margin:0;color:var(--muted)">Practical knowledge, tools, and alerts to keep bees healthy and communities informed.</p>
-    </section>
-
-    {{/* Featured Wiki: latest non-draft page in /wiki */}}
-    {{ $pages := .Site.RegularPages }}
-    {{ $wikiAll  := where (where $pages ".Draft" false) "Section" "wiki" }}
-    {{ $wikiLatest := first 1 $wikiAll.ByDate.Reverse }}
-
-    <section class="grid" aria-label="Featured content">
-      <div class="card">
-        <p class="eyebrow">Featured Wiki</p>
-        {{ if gt (len $wikiAll) 0 }}
-          {{ range $wikiLatest }}
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
-            <a class="btn" href="{{ .RelPermalink }}">Read wiki</a>
-          {{ end }}
-        {{ else }}
-          <h3>Wiki coming soon</h3>
-          <p>Add a page under <code>content/wiki/</code> to feature it here.</p>
-          <a class="btn" href="/wiki/">Browse Wiki</a>
-        {{ end }}
-      </div>
-
-      <div class="card">
-        <p class="eyebrow">Featured Blog</p>
-        {{/* Pin to The Bee Line explicitly (section + slug, no extension) */}}
-        {{ $beeLine := site.GetPage "blog" "2025-09-18-the-bee-line" }}
-        {{ with $beeLine }}
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
-          <a class="btn" href="{{ .RelPermalink }}">Read blog</a>
-        {{ else }}
-          <h3>The Bee Line not found</h3>
-          <p>Check <code>content/blog/2025-09-18-the-bee-line.md</code> exists and has a <code>title</code>.</p>
-          <a class="btn" href="/blog/">Browse Blog</a>
-        {{ end }}
-      </div>
-    </section>
+    <div class="hero-copy">
+      <h1>Bee Planet Connection</h1>
+      <p class="lead">Practical knowledge, tools, and alerts to keep bees healthy and communities informed.</p>
+      <p class="cta-row">
+        <a class="btn" href="/wiki/">Browse the Wiki</a>
+        <a class="btn ghost" href="/blog/">Read the Blog</a>
+      </p>
+    </div>
   </div>
-</body>
-</html>
+</section>
+
+<section class="featured">
+  <div class="container">
+    <div class="featured-grid">
+      <!-- Featured Wiki (latest wiki article) -->
+      <article class="card">
+        <header>
+          <h2>Featured Wiki</h2>
+          {{ $wikiPages := (where .Site.RegularPages "Section" "wiki") | sort "Date" "desc" }}
+          {{ with index $wikiPages 0 }}
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ with .Params.description }}
+              <p class="muted">{{ . }}</p>
+            {{ else }}
+              {{ with .Summary }}<p class="muted">{{ . | plainify | truncate 160 }}</p>{{ end }}
+            {{ end }}
+            <p><a class="link" href="{{ .RelPermalink }}">Open article →</a></p>
+          {{ else }}
+            <p class="muted">No wiki articles yet. Add one under <code>site/content/wiki/</code>.</p>
+          {{ end }}
+        </header>
+      </article>
+
+      <!-- Featured Blog (latest blog post) -->
+      <article class="card">
+        <header>
+          <h2>Featured Blog</h2>
+          {{ $blogPages := (where .Site.RegularPages "Section" "blog") | sort "Date" "desc" }}
+          {{ with index $blogPages 0 }}
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ with .Params.description }}
+              <p class="muted">{{ . }}</p>
+            {{ else }}
+              {{ with .Summary }}<p class="muted">{{ . | plainify | truncate 160 }}</p>{{ end }}
+            {{ end }}
+            <p><a class="link" href="{{ .RelPermalink }}">Read post →</a></p>
+          {{ else }}
+            <p class="muted">No blog posts yet. Add one under <code>site/content/blog/</code>.</p>
+          {{ end }}
+        </header>
+      </article>
+    </div>
+  </div>
+</section>
+{{ end }}
