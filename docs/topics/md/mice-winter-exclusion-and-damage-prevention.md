@@ -1,0 +1,88 @@
+---
+title: "Mice Winter Exclusion And Damage Prevention"
+slug: mice-winter-exclusion-and-damage-prevention
+draft: false
+updated: 2025-09-29
+keywords: ["mouseguard", "rodent exclusion", "winter prep", "stand height", "comb damage"]
+cross_links: ["overwintering_colonies", "hive_ventilation_and_moisture_control", "apiary_setup"]
+source: "seed-json"
+---
+
+> **At a Glance:** Mice enter hives in autumn for warmth and food, damaging comb and contaminating stores. Simple exclusion and tidy yards prevent most incidents.
+
+## Why it Matters
+- Chewed comb and urine contamination delay spring build-up.
+- Disturbed clusters burn more stores and risk starvation.
+- Strong odours attract more vermin and predators.
+
+## Objectives
+- Fit mouseguards before first cold snaps.
+- Remove ground cover that shelters rodents near stands.
+- React quickly to signs to limit damage.
+
+## What Good Looks Like
+- Mouseguards secured across entrances with the right aperture.
+- Stands at 30–40 cm to reduce easy access and damp.
+- No spilled feed or wax on the ground around hives.
+
+## Step-by-Step
+1) Pre-autumn check: fit mouseguards, reduce entrances, verify fit on uneven boxes.
+2) Site hygiene: clear long grass, stacked junk, and food waste near stands.
+3) Monitoring: look for droppings, shredded wax, or nesting material at entrances.
+4) If ingress suspected: open on a warm day, remove nest, replace damaged frames, re-secure guard.
+5) For persistent pressure: consider traps outside the apiary perimeter per local law.
+
+## Seasonality & Climate
+- Risk rises with first cold spells and food scarcity.
+- Mild winters can still see intermittent intrusions.
+
+## Data & Thresholds
+- Any nest sign triggers immediate cleanup and guard verification.
+- Repeated chew marks indicate poor fit or oversized apertures.
+
+## Diagnostics & Decision Tree
+- Symptom: Chewed corner frames -> Replace worst, fit guards properly -> Raise stand height.
+- Symptom: Cluster disturbed and nervous -> Check for nesting and drafts -> Improve insulation and guard.
+- Symptom: Recurrence -> Move yard materials and use perimeter traps as permitted.
+
+## Common Pitfalls
+- Fitting guards after the first cold snap when mice already moved in.
+- Large apertures that admit small rodents.
+- Leaving spilled feed or wax cappings around.
+
+## Tools & Techniques
+- Mouseguards, entrance reducers, wire cutters, spare frames.
+- Stand risers, tidy ground cover, sealed waste tubs.
+
+## Safety & Compliance
+- Handle droppings with gloves and masks where appropriate.
+- Follow local rules on trapping and baiting.
+
+## Field Checklist
+- Guards fitted and checked.
+- Stands at correct height and stable.
+- No food waste on ground.
+- Spare frames available.
+
+## Communications
+- Short hyphens only.
+- Explain to site owners why grass trimming and waste control matter.
+
+## Further Reading
+- Association winter prep checklists.
+- Guidance on safe cleaning after rodent intrusion.
+
+## Cross-Links
+- [overwintering_colonies](/topics/overwintering-colonies/)
+- [hive_ventilation_and_moisture_control](/topics/hive-ventilation-and-moisture-control/)
+- [apiary_setup](/topics/apiary-setup/)
+
+## Keywords
+- mouseguard
+- rodent exclusion
+- winter prep
+- stand height
+- comb damage
+
+## Notes
+Check guard fit again after first frost and after any heavy wind that may shift boxes.

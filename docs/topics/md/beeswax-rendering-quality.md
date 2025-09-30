@@ -1,0 +1,84 @@
+---
+title: "Beeswax Rendering Quality"
+slug: beeswax-rendering-quality
+draft: false
+updated: 2025-09-29
+keywords: ["beeswax", "rendering", "filtering", "slumgum"]
+cross_links: ["beeswax_rendering_storage", "beeswax_candle_making_basics", "wax_effluent_compliance"]
+source: "seed-json"
+---
+
+> **At a Glance:** Gentle heat, clean water, and fine filtering make bright wax with low debris and odour.
+
+## Why it Matters
+- Quality wax sells better and performs in candles/cosmetics.
+- Dirty or overheated wax smells and darkens.
+
+## Objectives
+- Sort sources (cappings vs brood comb).
+- Render at low temperatures with water separation.
+- Filter progressively to final clarity.
+
+## What Good Looks Like
+- Cappings rendered separately; brood comb de-gunked first.
+- Thermostat-controlled melter; no boiling; slow cool for sludge drop.
+- Final pass through fine mesh/paper.
+
+## Step-by-Step
+1) Sort and roughly clean; remove wires/plastic.
+2) Melt gently in water bath; avoid agitation.
+3) Allow to set; scrape slumgum; repeat if needed.
+4) Filter hot through cloth/paper; pour into moulds.
+
+## Seasonality & Climate
+- Cold rooms speed setting—reduce cracks by controlled cooling.
+- Hot days need shade and careful handling.
+
+## Data & Thresholds
+- Wax temp kept well below boiling (aim <90 °C bath).
+- Yield and colour notes recorded per source.
+
+## Diagnostics & Decision Tree
+- Symptom: Dark/odour -> Lower temps; switch to cleaner feedstock.
+- Symptom: Debris in cakes -> Finer filter; re-render.
+- Symptom: Layered contamination -> Increase settle time; scrape better.
+
+## Common Pitfalls
+- Boiling wax/water mixes.
+- Mixing brood comb with cappings.
+- Pouring too cool causing ripples and voids.
+
+## Tools & Techniques
+- Steam/water jacket melter, filters, settling buckets, thermometers.
+- Silicone moulds and labelled cooling racks.
+
+## Safety & Compliance
+- Fire precautions; no water into hot wax.
+- Food/cosmetic grade separation as needed.
+
+## Field Checklist
+- Sources sorted.
+- Temps stable; filters ready.
+- Cakes labelled by batch.
+
+## Communications
+- Short hyphens only.
+- Explain grade differences to buyers.
+
+## Further Reading
+- Rendering methods comparison.
+- Colour/grade references for wax.
+
+## Cross-Links
+- [beeswax_rendering_storage](/topics/beeswax-rendering-storage/)
+- [beeswax_candle_making_basics](/topics/beeswax-candle-making-basics/)
+- [wax_effluent_compliance](/topics/wax-effluent-compliance/)
+
+## Keywords
+- beeswax
+- rendering
+- filtering
+- slumgum
+
+## Notes
+Keep cappings-only batches for best colour and scent.

@@ -1,0 +1,84 @@
+---
+title: "Event Risk Assessment Pack"
+slug: event-risk-assessment-pack
+draft: false
+updated: 2025-09-29
+keywords: ["risk assessment", "events", "sampling", "incident log"]
+cross_links: ["market_stall_setup_food_hygiene_uk", "volunteer_onboarding_pack", "press_media_handling_basics"]
+source: "seed-json"
+---
+
+> **At a Glance:** A small, reusable RA pack covers stall, tastings, school demos, and press visits—venues love prepared vendors.
+
+## Why it Matters
+- Speeds approvals and protects volunteers.
+- Reduces last-minute event drama.
+
+## Objectives
+- Create modular RA templates for common events.
+- Add insurance, allergen, and equipment lists.
+- Version and store in a shared folder.
+
+## What Good Looks Like
+- Folder: RA templates + venue-specific annex.
+- Sign-off sheet for helpers; event day checklist.
+- Incident/near-miss form with CAPA.
+
+## Step-by-Step
+1) Write generic hazards/controls (weather, slips, sharps, tastings).
+2) Add annex: site map, contacts, access, power, water.
+3) Pack event kit per list; brief team; sign attendance.
+4) Post-event: debrief, log incidents, update RA.
+
+## Seasonality & Climate
+- Storm season = gazebo weights/rope; shade for heat.
+- Winter = lighting/heaters; cable covers.
+
+## Data & Thresholds
+- Setup teardown times; manning levels.
+- Incident response timing and escalation tree.
+
+## Diagnostics & Decision Tree
+- Sudden weather change -> Secure/strike; protect stock; message organiser.
+- Crowd control -> Queue line; extra staff; pause sampling.
+- Allergen incident -> Stop sampling; follow venue procedure; document.
+
+## Common Pitfalls
+- One-off RAs no one reuses.
+- No phone numbers or meeting point.
+- Forgetting incident forms.
+
+## Tools & Techniques
+- RA template, laminated checklists, weather app alerts.
+- Shared drive with offline copies.
+
+## Safety & Compliance
+- Insurance proofs ready; allergen and hygiene rules.
+- Venue method statements where required.
+
+## Field Checklist
+- RA printed; kit packed.
+- Contacts list on phones.
+- Post-event debrief booked.
+
+## Communications
+- Short hyphens only.
+- Confirm arrival/load-in times with organiser by email.
+
+## Further Reading
+- Small event RA templates.
+- Venue contractor handbooks.
+
+## Cross-Links
+- [market_stall_setup_food_hygiene_uk](/topics/market-stall-setup-food-hygiene-uk/)
+- [volunteer_onboarding_pack](/topics/volunteer-onboarding-pack/)
+- [press_media_handling_basics](/topics/press-media-handling-basics/)
+
+## Keywords
+- risk assessment
+- events
+- sampling
+- incident log
+
+## Notes
+Keep a photo of the ideal stall layout in the pack—fast setup, fewer risks.
