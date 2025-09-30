@@ -1,18 +1,17 @@
-name: Deploy Hugo to GitHub Pages
+﻿name: Deploy Hugo to GitHub Pages
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
 
-# Required by Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -22,15 +21,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.134.3'
+          hugo-version: "0.134.3"
           extended: true
 
-      # Build the site from ./site into ./public (standard for Pages artifacts)
       - name: Build
-        run: hugo -s site -d public --minify
+        run: |
+          echo "beeplanetconnection.org" > site/static/CNAME
+          hugo -s site -d public --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
