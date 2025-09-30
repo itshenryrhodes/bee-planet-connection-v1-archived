@@ -1,1 +1,5 @@
+# robots.txt for Bee Planet Connection
 User-agent: *
+Allow: /
+
+Sitemap: http://localhost:1313/sitemap.xml# Host: http://localhost:1313/
