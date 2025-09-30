@@ -1,0 +1,84 @@
+---
+title: "Complaints Returns Sop"
+slug: complaints-returns-sop
+draft: false
+updated: 2025-09-29
+keywords: ["returns", "complaints", "refunds", "CAPA"]
+cross_links: ["haccp_lite_honey_bottling", "uk_compliance_records", "online_sales_setup_basics"]
+source: "seed-json"
+---
+
+> **At a Glance:** A calm, generous returns policy wins loyalty. Capture data, fix root causes, and follow the law.
+
+## Why it Matters
+- Rescues unhappy customers and protects reviews.
+- Improves product and packing by learning from issues.
+
+## Objectives
+- Publish a clear returns/refund policy.
+- Create a simple intake form for issues and photos.
+- Analyse trends and close the loop.
+
+## What Good Looks Like
+- First reply within 1 business day; apologise and propose fix.
+- Refund/replace fast; log batch/sku/retailer and cause.
+- Monthly review of complaint types and corrective actions.
+
+## Step-by-Step
+1) Provide email/template for returns; ask for batch photo and receipt.
+2) Offer options: refund, replacement, or shop credit.
+3) Log case; quarantine suspect stock; notify retailer if relevant.
+4) Root-cause and record corrective/preventive actions.
+
+## Seasonality & Climate
+- Heat increases leaks and crystallisation queries—prep scripts.
+- Winter shipping breakages rise—upgrade packing.
+
+## Data & Thresholds
+- Target first-response time and resolution time.
+- Track complaint rate per 1,000 units.
+
+## Diagnostics & Decision Tree
+- Issue: Fermentation -> Pull batch; check moisture records; contact buyers.
+- Issue: Leaks -> Review lid torque and seals; courier handling.
+- Issue: Label errors -> Correct website, recall if necessary, retrain jarring crew.
+
+## Common Pitfalls
+- Arguing with customers online.
+- Slow responses and missing empathy.
+- No linkage between complaints and production data.
+
+## Tools & Techniques
+- Canned responses with empathy, shared logbook, return labels.
+- CAPA (corrective and preventive action) mini-form.
+
+## Safety & Compliance
+- Follow consumer law on refunds/returns.
+- Keep allergen/label corrections public and prompt.
+
+## Field Checklist
+- Policy page live and clear.
+- Templates ready; staff trained.
+- Monthly review on calendar.
+
+## Communications
+- Short hyphens only.
+- Thank the customer; explain fix; invite back.
+
+## Further Reading
+- Consumer rights summaries for small traders.
+- Email etiquette for customer service.
+
+## Cross-Links
+- [haccp_lite_honey_bottling](/topics/haccp-lite-honey-bottling/)
+- [uk_compliance_records](/topics/uk-compliance-records/)
+- [online_sales_setup_basics](/topics/online-sales-setup-basics/)
+
+## Keywords
+- returns
+- complaints
+- refunds
+- CAPA
+
+## Notes
+Offer a replacement plus a sample—cheap way to turn critics into fans.

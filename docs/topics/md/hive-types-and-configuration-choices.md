@@ -1,0 +1,88 @@
+---
+title: "Hive Types And Configuration Choices"
+slug: hive-types-and-configuration-choices
+draft: false
+updated: 2025-09-29
+keywords: ["Langstroth", "National", "Dadant", "Warre", "single brood", "double brood"]
+cross_links: ["apiary_setup", "comb_management_and_replacement", "honey_extraction_best_practice"]
+source: "seed-json"
+---
+
+> **At a Glance:** Langstroth, National, Dadant, and Warre each trade off ergonomics, weight, and management style. Choose a system that fits your climate, goals, and back.
+
+## Why it Matters
+- Standardising equipment reduces costs and confusion.
+- Box weight and frame size impact safety and inspection speed.
+- Compatibility with local suppliers and mentors simplifies support.
+
+## Objectives
+- Pick one dominant system and stick with it for most yards.
+- Match configuration (single vs double brood) to forage and queen strength.
+- Use interchangeable parts within the chosen standard.
+
+## What Good Looks Like
+- Consistent frame size across apiaries whenever possible.
+- Brood volume matched to local nectar and queen lay rate.
+- Spare boxes, floors, and roofs compatible with the main standard.
+
+## Step-by-Step
+1) Assess climate, forage density, and your lifting capacity.
+2) Decide on frame size and brood volume (single, 1.5, or double brood).
+3) Standardise: buy or build to one spec; label parts.
+4) Trial on a small scale if switching; avoid mixed frames long term.
+5) Document workflow differences and update training notes.
+
+## Seasonality & Climate
+- Cold climates may prefer larger single-chamber brood for wintering.
+- Strong flows can demand larger brood volume to prevent swarms.
+
+## Data & Thresholds
+- Supers >20 kg may exceed safe solo lifts; plan half-depths if needed.
+- Brood frames fully occupied for multiple weeks suggest more volume required.
+
+## Diagnostics & Decision Tree
+- Symptom: Chronic crowding -> Increase brood volume or add drawn comb.
+- Symptom: Heavy supers causing strain -> Shift to medium/shallows or increase helpers/mechanical aids.
+- Symptom: Parts confusion in yard -> Standardise; colour code by system.
+
+## Common Pitfalls
+- Running multiple incompatible systems without inventory control.
+- Under-sizing brood nest in high-flow regions.
+- Ignoring ergonomics until injuries occur.
+
+## Tools & Techniques
+- Frame and box labels, colour coding, inventory sheet.
+- Half-depth supers to reduce lift weight.
+
+## Safety & Compliance
+- Respect manual handling limits; use lifters on tall stacks.
+- Secure stacks in wind-prone sites with anchors/straps.
+
+## Field Checklist
+- System chosen and documented.
+- Spare compatible components on site.
+- Brood volume reviewed mid-season.
+
+## Communications
+- Short hyphens only.
+- Explain system choice to helpers to avoid mix-ups.
+
+## Further Reading
+- Comparative guides from associations on hive formats.
+- Ergonomics research related to manual handling in beekeeping.
+
+## Cross-Links
+- [apiary_setup](/topics/apiary-setup/)
+- [comb_management_and_replacement](/topics/comb-management-and-replacement/)
+- [honey_extraction_best_practice](/topics/honey-extraction-best-practice/)
+
+## Keywords
+- Langstroth
+- National
+- Dadant
+- Warre
+- single brood
+- double brood
+
+## Notes
+If you must mix systems (legacy gear), keep yards segregated by standard.

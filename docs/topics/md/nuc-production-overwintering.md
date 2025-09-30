@@ -1,0 +1,90 @@
+---
+title: "Nuc Production Overwintering"
+slug: nuc-production-overwintering
+draft: false
+updated: 2025-09-29
+keywords: ["overwintered nuc", "nucleus colony", "queenright", "fondant", "insulation"]
+cross_links: ["making_and_managing_nucleus_colonies", "overwintering_colonies", "varroa_monitoring_methods", "varroa_treatment_options", "colony_nutrition"]
+source: "seed-json"
+---
+
+> **At a Glance:** Producing and overwintering nucleus colonies builds inventory for spring sales and contingencies. Success depends on timing, nutrition, mite control, and right-sized boxes.
+
+## Why it Matters
+- Overwintered nucs jumpstart spring splits and replace winter losses.
+- Selling strong spring nucs funds the operation and spreads local genetics.
+- Healthy nuc reserves de-risk queen failures in production colonies.
+
+## Objectives
+- Create nucs early enough to establish and treat before winter.
+- Match box volume to population and climate to avoid chill/condensation.
+- Track lineage, treatment, and feed history per nuc.
+
+## What Good Looks Like
+- Balanced nuc: 2–3 brood frames with bees, 1–2 food frames, a mated queen, and ample young bees.
+- Late-summer varroa managed to low levels before winter bee production.
+- Dense cluster in well-insulated, dry boxes with accessible stores.
+
+## Step-by-Step
+1) Build window: create nucs shortly after main flow so they can grow and be treated.
+2) Stocking: include emerging brood, food, and mostly young bees; add a proven queen.
+3) Feeding: light syrup early for drawing; switch to heavier syrup then fondant if needed as temps fall.
+4) Varroa: treat per label or use brood break + OA; confirm with counts.
+5) Wintering: reduce entrances; insulate lid; ensure dry ventilation and adequate weight.
+6) Spring release: feed if light; expand to full boxes or sell when 4–5 frames of bees.
+
+## Seasonality & Climate
+- Cooler regions need earlier cut-off for making nucs.
+- Small boxes chill easily—insulation and placement matter in maritime climates.
+
+## Data & Thresholds
+- Target entrance-to-lift weight sufficient for winter (local benchmarks).
+- Varroa: below local autumn thresholds before winter bee production.
+
+## Diagnostics & Decision Tree
+- Symptom: Fall dwindling -> Check queen quality, nutrition, and varroa -> Combine weak nucs early.
+- Symptom: Damp interior -> Increase top insulation, add moisture quilt, ensure forward tilt.
+- Symptom: Spring starvation -> Provide fondant; avoid breaking cluster during cold snaps.
+
+## Common Pitfalls
+- Making nucs too late to establish.
+- Underestimating varroa in late season.
+- Over-ventilating small boxes and chilling brood.
+
+## Tools & Techniques
+- 5-frame nuc boxes or poly minis, frame feeders, insulation boards.
+- Ledger for nuc IDs, queens, and treatments.
+
+## Safety & Compliance
+- Biosecurity when moving frames and selling stock.
+- Follow any local sale/transport regulations.
+
+## Field Checklist
+- Nucs dated and queen IDs logged.
+- Weight and mite counts recorded.
+- Winter configuration dry, insulated, and secure.
+
+## Communications
+- Short hyphens only.
+- Explain to buyers your lineage, treatment, and feeding records.
+
+## Further Reading
+- Regional timelines for nuc production.
+- Association notes on winter configurations for nucs.
+
+## Cross-Links
+- [making_and_managing_nucleus_colonies](/topics/making-and-managing-nucleus-colonies/)
+- [overwintering_colonies](/topics/overwintering-colonies/)
+- [varroa_monitoring_methods](/topics/varroa-monitoring-methods/)
+- [varroa_treatment_options](/topics/varroa-treatment-options/)
+- [colony_nutrition](/topics/colony-nutrition/)
+
+## Keywords
+- overwintered nuc
+- nucleus colony
+- queenright
+- fondant
+- insulation
+
+## Notes
+Keep a simple ‘nuc passport’ card attached to each box.

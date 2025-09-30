@@ -1,0 +1,84 @@
+---
+title: "Apiary Biosecurity Sop"
+slug: apiary-biosecurity-sop
+draft: false
+updated: 2025-09-29
+keywords: ["biosecurity", "hygiene", "workflow", "quarantine"]
+cross_links: ["equipment_cleaning_biosecurity", "foulbrood_field_diagnostics", "hive_hygiene_and_biosecurity"]
+source: "seed-json"
+---
+
+> **At a Glance:** Simple, repeatable hygiene reduces disease spread: clean tools, segregate yards, and deliberate traffic flows.
+
+## Why it Matters
+- Cuts risk of AFB/EFB spread and nuisance diseases.
+- Builds inspector and landowner confidence.
+
+## Objectives
+- Define clean → dirty workflow and decon steps.
+- Segregate tools by yard/role; record suspect visits.
+- Train volunteers on don’t-touch rules.
+
+## What Good Looks Like
+- Colour-coded boxes per yard; bleach/soda ash decon on return.
+- Disposable gloves changed between colonies; wipes in truck.
+- Suspect-yard log with 72 h quarantine of kit.
+
+## Step-by-Step
+1) Pack ‘clean’ kit separately; plan order of hives (healthiest first).
+2) Use gloves and smoker hygiene; swap hive tools if suspect signs.
+3) Bag suspect comb; decon kit; note in yard log.
+4) End-of-day: wash suits; soak tools; restock consumables.
+
+## Seasonality & Climate
+- Wet days increase mud/contamination—protect vehicle and boxes.
+- Heat accelerates odours—wash suits more often.
+
+## Data & Thresholds
+- Change gloves between colonies (always); swap tools after suspect contact.
+- Kit quarantine window after suspect disease visits.
+
+## Diagnostics & Decision Tree
+- Cross-contamination incident -> Report in log; deep-clean; monitor next visits.
+- Chronic mouldy kit -> Improve drying/ventilation; add racks.
+- Volunteer non-compliance -> Retrain; simplify steps; assign roles.
+
+## Common Pitfalls
+- Sharing uncapped drinks/food around open hives.
+- Mixing suspect comb with wax for rendering.
+- No handwash kit in vehicle.
+
+## Tools & Techniques
+- Colour bins, sealable bags, disinfectant, brushes, nitrile gloves.
+- Mobile handwash (water, soap, paper, bin).
+
+## Safety & Compliance
+- Chemical safety for disinfectants.
+- Disease notification when thresholds met.
+
+## Field Checklist
+- Clean/dirty boxes packed.
+- Spare gloves and wipes stocked.
+- Suspect log ready; camera charged.
+
+## Communications
+- Short hyphens only.
+- Explain ‘clean to dirty’ path before opening first hive.
+
+## Further Reading
+- Biosecurity SOP templates.
+- Inspectorate best-practice notes.
+
+## Cross-Links
+- [equipment_cleaning_biosecurity](/topics/equipment-cleaning-biosecurity/)
+- [foulbrood_field_diagnostics](/topics/foulbrood-field-diagnostics/)
+- [hive_hygiene_and_biosecurity](/topics/hive-hygiene-and-biosecurity/)
+
+## Keywords
+- biosecurity
+- hygiene
+- workflow
+- quarantine
+
+## Notes
+Tape a small ‘clean→dirty’ arrow on the lid of your toolbox—people follow arrows.
