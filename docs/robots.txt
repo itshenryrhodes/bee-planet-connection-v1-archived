@@ -1,5 +1,0 @@
-# robots.txt for Bee Planet Connection
-User-agent: *
-Allow: /
-
-Sitemap: https://www.beeplanetconnection.org/sitemap.xml# Host: https://www.beeplanetconnection.org/

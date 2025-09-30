@@ -1,8 +1,0 @@
-<nav class="section-menu" aria-label="Section menu">
-  {{ with .Site.Menus.main }}
-    {{ range . }}
-      {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
-      <a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page" class="active"{{ end }}>{{ .Name }}</a>
-    {{ end }}
-  {{ end }}
-</nav>
