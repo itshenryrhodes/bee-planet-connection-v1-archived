@@ -1,3 +1,38 @@
 {{ define "main" }}
-  {{ partial "home/featured-posts.html" . }}
+<section class="home-hero">
+  <div class="container">
+    <div class="hero-copy">
+      <h1>Bee Planet Connection</h1>
+      <p class="lead">Practical knowledge, tools, and alerts to keep bees healthy and communities informed.</p>
+      <p class="cta-row">
+        <a class="btn" href="/wiki/">Browse the Wiki</a>
+        <a class="btn ghost" href="/blog/">Read the Blog</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="featured">
+  <div class="container">
+    <div class="featured-grid">
+      {{ $posts := first 2 (where .Site.RegularPages "Section" "blog") }}
+      {{ range $posts }}
+      <article class="card featured-article">
+        <h2>From the blog</h2>
+        <h3><a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="muted">{{ .Summary | plainify | truncate 160 }}</p>
+      </article>
+      {{ end }}
+
+      {{ $wiki := first 2 (where .Site.RegularPages "Section" "wiki") }}
+      {{ range $wiki }}
+      <article class="card featured-article">
+        <h2>From the wiki</h2>
+        <h3><a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="muted">{{ .Summary | plainify | truncate 160 }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}
