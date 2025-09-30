@@ -1,4 +1,4 @@
-# Lychee configuration
+﻿# Lychee configuration
 
 # Treat these as OK (e.g., 429 on rate-limited CDNs).
 accept = [200, 206, 429]

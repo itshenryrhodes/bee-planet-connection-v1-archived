@@ -1,10 +1,9 @@
-﻿name: Build & Link Check
+﻿name: Build and Link Check
 
 on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
