@@ -1,60 +1,39 @@
-/* Bee Planet: header brand logo sizing */
-.header .brand img{
-  height:84px;
-  width:auto;
-  display:block;
+/* Bee Planet Connection — compact baseline theme (no dependencies) */
+:root{
+  --bg:#ffffff; --text:#1a1a1a; --muted:#666; --brand:#0c6dff; --brand-ink:#0a57c9;
+  --card:#f7f7f8; --line:#ececec; --radius:16px; --shadow:0 8px 24px rgba(0,0,0,.06);
+  --max:980px;
 }
-@media (max-width:600px){
-  .header .brand img{ height:64px; }
-}
-.brand img{height:36px; width:auto; display:block}
+*{box-sizing:border-box} html{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:inherit} a:focus{outline:2px solid var(--brand);outline-offset:2px}
+.container{max-width:var(--max);margin:0 auto;padding:1.25rem}
 
-/* === Home hero & featured === */
-.home-hero{background:var(--card);border-bottom:1px solid #ececec}
-.home-hero .container{padding:42px 0}
-.home-hero h1{margin:0 0 6px 0;font-size:2rem}
-.home-hero .lead{color:var(--muted);max-width:60ch}
-.cta-row{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;box-shadow:var(--shadow);background:var(--brand);color:#fff}
-.btn.ghost{background:transparent;border:1px solid var(--brand);color:var(--brand);box-shadow:none}
-.featured .container{padding:28px 0}
-.featured-grid{display:grid;grid-template-columns:1fr;gap:18px}
-@media (min-width:820px){.featured-grid{grid-template-columns:1fr 1fr}}
-.card{background:#fff;border:1px solid #ececec;border-radius:var(--radius);padding:18px}
-.card h2{margin:0 0 8px 0;font-size:1.1rem;color:var(--muted)}
-.card h3{margin:.2rem 0 .3rem 0}
-.muted{color:var(--muted)}
-.link{color:var(--brand);font-weight:600}
+/* Header */
+.site-header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+.brand{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-weight:700}
+.brand-text{letter-spacing:.2px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1rem}
+.nav a{text-decoration:none;opacity:.9;padding:.25rem .35rem;border-radius:.5rem}
+.nav a:hover{opacity:1;background:rgba(12,109,255,.08)}
+/* Footer */
+.site-footer{border-top:1px solid var(--line);background:#fff}
 
-/* BPC compat: map .header -> .site-header and .featured -> .featured-article */
-:root{--bg:#fff;--text:#111;--muted:#666;--card:#f7f7f8;--brand:#0c6dff;--shadow:0 8px 24px rgba(0,0,0,.06)}
-*{box-sizing:border-box}
-html{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
-body{margin:0;background:var(--bg);color:var(--text)}
-.container{max-width:980px;margin:0 auto;padding:1.25rem}
+/* Cards & buttons */
+.card{background:var(--card);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow)}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none}
+.btn:hover{background:var(--brand-ink)}
 
-/* Header/footer wrappers in Hugo output */
-.site-header,.site-footer{border-bottom:1px solid #eee}
-.site-footer{border-top:1px solid #eee;border-bottom:none}
+/* Featured article section on home */
+.featured-article{margin:2rem 0}
+.featured-article-title{margin:.25rem 0 0 0;line-height:1.2;font-size:1.4rem}
+.featured-article-meta{margin:.25rem 0 1rem 0;color:var(--muted);font-size:.95rem}
+.featured-article-excerpt{margin:0 0 1rem 0;max-width:70ch}
 
-/* Brand/logo sizing against .site-header (your CSS targeted .header) */
+/* Images (brand) */
 .site-header .brand img{height:84px;width:auto;display:block}
 @media (max-width:600px){ .site-header .brand img{height:64px} }
-.brand{display:inline-flex;gap:.5rem;text-decoration:none;color:inherit;font-weight:700}
 
-/* Primary nav */
-.nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1rem}
-.nav a{text-decoration:none;color:inherit;opacity:.9}
-.nav a:hover{opacity:1}
-
-/* Generic card + buttons */
-.card{background:var(--card);border-radius:16px;padding:1.25rem;box-shadow:var(--shadow)}
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;box-shadow:var(--shadow);background:var(--brand);color:#fff;text-decoration:none}
-.btn.ghost{background:transparent;border:1px solid var(--brand);color:var(--brand);box-shadow:none}
-
-/* Featured article section (your CSS used .featured) */
-.featured-article{margin:2rem 0}
-.featured-article-title{margin:.25rem 0 0 0;line-height:1.2}
-.featured-article-meta{margin:.25rem 0 1rem 0;color:var(--muted)}
-/* BPC compat: map .featured -> .featured-article for any legacy references */
-.featured .container{padding:28px 0}
+/* Utility */
+main{display:block}
+.hidden{display:none!important}
