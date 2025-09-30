@@ -1,5 +1,11 @@
+# robots.txt for {{ .Site.Title }}
 User-agent: *
 Allow: /
 
+# Primary sitemap
 Sitemap: {{ "sitemap.xml" | absURL }}
-Host: {{ .Site.BaseURL | replaceRE "/$" "" }}
+
+# Optional host hint
+{{- with .Site.BaseURL -}}
+# Host: {{ . }}
+{{- end -}}
