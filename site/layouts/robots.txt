@@ -1,11 +1,4 @@
-# robots.txt for {{ .Site.Title }}
 User-agent: *
 Allow: /
 
-# Primary sitemap
-Sitemap: {{ "sitemap.xml" | absURL }}
-
-# Optional host hint
-{{- with .Site.BaseURL -}}
-# Host: {{ . }}
-{{- end -}}
+Sitemap: {{ .Site.BaseURL }}sitemap.xml

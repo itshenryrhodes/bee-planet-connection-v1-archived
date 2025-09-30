@@ -1,3 +1,44 @@
 baseURL = "https://www.beeplanetconnection.org/"
-# Optional but nice: turn absolute URLs on
 canonifyURLs = true
+enableRobotsTXT = true
+
+# Menus (adds Blog to your top nav)
+[menu]
+  [[menu.main]]
+    name = "Wiki"
+    url  = "/wiki/"
+    weight = 10
+  [[menu.main]]
+    name = "SOPs & Templates"
+    url  = "/sops/"
+    weight = 20
+  [[menu.main]]
+    name = "Alerts"
+    url  = "/alerts/"
+    weight = 30
+  [[menu.main]]
+    name = "Tools"
+    url  = "/tools/"
+    weight = 40
+  [[menu.main]]
+    name = "About"
+    url  = "/about/"
+    weight = 50
+  [[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 60
+  [[menu.main]]
+    name = "Blog"
+    url  = "/blog/"
+    weight = 70
+
+# Tags/Categories for the blog
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[sitemap]
+  filename = "sitemap.xml"
+  changefreq = "daily"
+  priority = 0.5
