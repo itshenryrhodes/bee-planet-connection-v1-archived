@@ -1,9 +1,9 @@
 ---
-title: "The Bee Line: Why The World"s Future Still Hangs On A Hum"
+title: 'The Bee Line: Why The World"s Future Still Hangs On A Hum'
 date: 2025-09-18T09:00:00Z
-slug: "the-bee-line"
-description: "An opinionated benchmark essay from Bee Planet Connection on pollinators, honey adulation, and the global choices that decide our food future."
-tags: ["apiculture","pollinators","opinion","honey adulteration","climate","biodiversity","policy"]
+slug: 'the-bee-line'
+description: 'An opinionated benchmark essay from Bee Planet Connection on pollinators, honey adulation, and the global choices that decide our food future.'
+tags: ['apiculture','pollinators','opinion','honey adulteration','climate','biodiversity','policy']
 draft: false
 ---
 
