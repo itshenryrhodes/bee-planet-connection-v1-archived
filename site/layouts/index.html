@@ -1,4 +1,4 @@
-{{- /* Hugo home template: two-column hero + Featured Wiki (left) and Featured Blog (right) */ -}}
+{{- /* Home: two-column Featured Wiki (left) + Featured Blog (right) */ -}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,86 +6,66 @@
   <title>{{ with .Site.Title }}{{ . }} — {{ end }}Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{- partial "head.html" . | safeHTML -}}
-  <style>
-    /* Light, self-contained layout helpers to avoid theme breakage */
-    .container{max-width:1100px;margin:0 auto;padding:24px}
-    .hero{display:grid;gap:16px;margin:8px 0 24px}
-    .hero h1{font-size:1.75rem;margin:0}
-    .grid{display:grid;grid-template-columns:1fr;gap:24px}
-    @media(min-width:960px){.grid{grid-template-columns:2fr 1.2fr}}
-    .card{background:var(--card,#f7f7f8);border-radius:var(--radius,16px);padding:16px;box-shadow:var(--shadow,0 8px 24px rgba(0,0,0,.06))}
-    .card h2{margin:0 0 8px;font-size:1.25rem}
-    .list{display:grid;gap:12px}
-    .list a{display:block;padding:12px;border-radius:12px;background:#fff;text-decoration:none;color:inherit;border:1px solid #ececec}
-    .muted{color:var(--muted,#676767);font-size:.95rem}
-    .cta{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:12px;background:var(--brand,#0b3d91);color:#fff;text-decoration:none}
-  </style>
 </head>
 <body>
-  {{- partial "header.html" . | safeHTML -}}
+  <div class="container">
+    <header class="site">
+      {{ with .Site.Params.logo }}
+        <img src="{{ . | safeURL }}" alt="{{ $.Site.Title }}">
+      {{ else }}
+        <strong>{{ .Site.Title }}</strong>
+      {{ end }}
+      <nav aria-label="Primary">
+        {{ with .Site.Menus.main }}
+          <ul>
+            {{ range . }}
+              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </nav>
+    </header>
 
-  <main class="container">
-    <!-- Top hero -->
-    <section class="card hero">
-      <div>
-        <h1>Bee Planet Connection</h1>
-        <p class="muted">Practical knowledge, tools, and alerts to keep bees healthy and communities informed.</p>
-        <a class="cta" href="/wiki/wiki.html">Browse the Wiki</a>
-      </div>
+    <section class="hero">
+      <h1 style="margin:0 0 4px">Bee Planet Connection</h1>
+      <p style="margin:0;color:var(--muted)">Practical knowledge, tools, and alerts to keep bees healthy and communities informed.</p>
     </section>
 
-    <!-- Two-column: Featured Wiki (left) and Featured Blog (right) -->
-    <section class="grid">
-      <!-- Featured Wiki -->
+    {{/* Featured sources */}}
+    {{ $wikiLatest := first 1 ( where ( where .Site.RegularPages "Section" "wiki") "Params.draft" "ne" true | sort "Date" "desc" ) }}
+    {{ $blogLatest := first 1 ( where ( where .Site.RegularPages "Section" "blog") "Params.draft" "ne" true | sort "Date" "desc" ) }}
+
+    <section class="grid" aria-label="Featured content">
       <div class="card">
-        <h2>Featured Wiki Articles</h2>
-        <div class="list">
-          {{/* Prefer specific articles if they exist; fall back to latest in /wiki */}}
-          {{ $want := slice "bees-in-agriculture" "apiary-biosecurity-sop" "varroa-monitoring-methods" }}
-          {{ range $i, $slug := $want }}
-            {{ with .Site.GetPage (printf "wiki/%s" $slug) }}
-              <a href="{{ .RelPermalink }}">
-                <strong>{{ .Title }}</strong>
-                {{ with .Params.description }}<div class="muted">{{ . }}</div>{{ end }}
-              </a>
-            {{ end }}
+        <p class="eyebrow">Featured Wiki</p>
+        {{ if $wikiLatest }}
+          {{ range $wikiLatest }}
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
+            <a class="btn" href="{{ .RelPermalink }}">Read wiki</a>
           {{ end }}
-
-          {{/* If nothing matched above, list the three most recent wiki pages */}}
-          {{ $listed := 0 }}
-          {{ range where .Site.RegularPages "Section" "wiki" }}
-            {{ if lt $listed 3 }}
-              {{ $listed = add $listed 1 }}
-              <a href="{{ .RelPermalink }}">
-                <strong>{{ .Title }}</strong>
-                {{ with .Params.description }}<div class="muted">{{ . }}</div>{{ end }}
-              </a>
-            {{ end }}
-          {{ end }}
-        </div>
+        {{ else }}
+          <h3>Wiki coming soon</h3>
+          <p>Add a page under <code>content/wiki/</code> to feature it here.</p>
+          <a class="btn" href="/wiki/">Browse Wiki</a>
+        {{ end }}
       </div>
 
-      <!-- Featured Blog (links to the benchmark post we just created) -->
-      <aside class="card">
-        <h2>Featured Blog</h2>
-        {{ $post := .Site.GetPage "blog/the-bee-line" }}
-        {{ if not $post }}
-          {{/* Fallback: pick most recent blog post */}}
-          {{ $post = (where .Site.RegularPages "Section" "blog" | first 1 ) | first }}
-        {{ end }}
-        {{ if $post }}
-          <article>
-            <h3 style="margin:0 0 6px;"><a href="{{ $post.RelPermalink }}" style="text-decoration:none;color:inherit;">{{ $post.Title }}</a></h3>
-            {{ with $post.Params.description }}<p class="muted" style="margin:0 0 10px;">{{ . }}</p>{{ end }}
-            <a class="cta" href="{{ $post.RelPermalink }}">Read the blog</a>
-          </article>
+      <div class="card">
+        <p class="eyebrow">Featured Blog</p>
+        {{ if $blogLatest }}
+          {{ range $blogLatest }}
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
+            <a class="btn" href="{{ .RelPermalink }}">Read blog</a>
+          {{ end }}
         {{ else }}
-          <p class="muted">No blog posts found yet.</p>
+          <h3>Blog coming soon</h3>
+          <p>Add a post under <code>content/blog/</code> to feature it here.</p>
+          <a class="btn" href="/blog/">Browse Blog</a>
         {{ end }}
-      </aside>
+      </div>
     </section>
-  </main>
-
-  {{- partial "footer.html" . | safeHTML -}}
+  </div>
 </body>
 </html>
