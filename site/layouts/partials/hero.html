@@ -1,18 +1,26 @@
-{{- $hid := or .Params.hero_id .Site.Params.heroDefaultID -}}
-{{- $variant := or .Params.hero_variant "compact" -}}
-<section class="hero {{ if eq $variant "compact" }}compact{{ end }}">
-  <picture>
-    <source srcset="/img/hero/hero-{{ $hid }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
-    <source srcset="/img/hero/hero-{{ $hid }}-sm.webp" media="(max-width: 768px)" type="image/webp">
-    <source srcset="/img/hero/hero-{{ $hid }}-md.webp" media="(max-width: 1200px)" type="image/webp">
-    <source srcset="/img/hero/hero-{{ $hid }}-lg.webp" media="(min-width: 1201px)" type="image/webp">
-    <img src="/img/hero/hero-{{ $hid }}-md.jpg" alt="{{ .Params.hero_title | default .Title }}">
-  </picture>
-  <div class="copy">
-    <h2>{{ .Params.hero_title | default .Title }}</h2>
-    {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
-    {{ with .Params.hero_cta_href }}
-      <p><a class="button" href="{{ . }}">{{ $.Params.hero_cta_text | default "Read more" }}</a></p>
-    {{ end }}
+<section class="container mx-auto px-4 py-10 home-hero" style="max-width:1100px;">
+  <div class="grid" style="display:grid;grid-template-columns:1.3fr 0.7fr;gap:2rem;align-items:center;">
+    <div>
+      <h1 class="hero-title" style="margin:0 0 .5rem 0;font-size:clamp(28px,4vw,38px);line-height:1.15;">
+        Friendly, practical, and science-based resources for beekeepers and neighbours.
+      </h1>
+      <p class="hero-sub" style="margin:0 0 1rem 0;font-size:clamp(16px,2.1vw,18px);opacity:.9;">
+        Learn best practice, reduce conflict, and help pollinators thrive.
+      </p>
+      <div class="hero-cta" style="display:flex;gap:.75rem;flex-wrap:wrap;">
+        <a class="btn" href="/wiki/" style="padding:.6rem 1rem;border-radius:10px;border:1px solid #ddd;text-decoration:none;">Explore the Wiki</a>
+        <a class="btn" href="/blog/" style="padding:.6rem 1rem;border-radius:10px;background:#111;color:#fff;text-decoration:none;">Read the Blog</a>
+      </div>
+    </div>
+    <div class="hero-image" style="justify-self:end;max-width:380px;">
+      <img src="/img/logo.svg" alt="Bee Planet Connection" style="display:block;width:100%;height:auto;opacity:.95;">
+    </div>
   </div>
 </section>
+<style>
+  /* minimal styles; keep using your existing brand.css */
+  @media (max-width: 860px){
+    .home-hero .grid{ grid-template-columns:1fr; }
+    .home-hero .hero-image{ justify-self:start; max-width:240px; margin-top:.5rem; }
+  }
+</style>
