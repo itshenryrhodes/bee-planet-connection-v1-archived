@@ -1,8 +1,12 @@
 {{ define "main" }}
-  {{ partial "hero.html" . }}
-  <article class="card">
+<article class="content">
+  <header class="content-header">
     <h1>{{ .Title }}</h1>
-    {{ with .Params.last_updated }}<p class="meta">Last updated: {{ . }}</p>{{ end }}
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+    {{ with .Date }}<p class="meta"><time datetime="{{ . }}">{{ .Format "02 Jan 2006" }}</time></p>{{ end }}
+  </header>
+  <div class="prose">
     {{ .Content }}
-  </article>
+  </div>
+</article>
 {{ end }}
