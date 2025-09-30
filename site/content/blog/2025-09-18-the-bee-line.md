@@ -7,6 +7,6 @@ tags: ["apiculture","pollinators","opinion","honey adulteration","climate","biod
 draft: false
 ---
 
-Bees are more than honey-makers — they are the quiet workforce holding our food systems together.  
+Bees are more than honey-makers - they are the quiet workforce holding our food systems together.  
 The Bee Line is our reminder that pollinators sit at the heart of biodiversity, agriculture, and human survival.  
-As climate pressures mount and honey adulteration scandals grow, the choices we make now will decide whether the hum continues — or fades into silence.
+As climate pressures mount and honey adulteration scandals grow, the choices we make now will decide whether the hum continues - or fades into silence.
