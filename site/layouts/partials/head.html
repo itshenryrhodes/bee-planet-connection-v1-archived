@@ -1,8 +1,42 @@
-<!-- Minimal head partial -->
+<!-- Minimal head partial + SEO -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta name="color-scheme" content="light">
 <link rel="icon" href="/favicon.ico">
 <link rel="stylesheet" href="/css/brand.css"><!-- safe if present; ignored if 404 -->
+
+{{/* === Canonical & basic meta === */}}
+{{ $title := cond (ne .Title "") .Title .Site.Title }}
+{{ $desc  := (or .Description (.Params.description) (.Summary | plainify | truncate 160)) | default .Site.Params.description }}
+{{ $url   := .Permalink | default .Site.BaseURL }}
+<link rel="canonical" href="{{ $url }}">
+<meta name="description" content="{{ $desc }}">
+
+{{/* === Open Graph === */}}
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ $url }}">
+{{ with .Params.images }}
+  {{- range first 1 . -}}
+    <meta property="og:image" content="{{ . | absURL }}">
+  {{- end -}}
+{{ else if .Site.Params.og_image }}
+  <meta property="og:image" content="{{ .Site.Params.og_image | absURL }}">
+{{ end }}
+
+{{/* === Twitter Cards === */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{ with .Params.images }}
+  {{- range first 1 . -}}
+    <meta name="twitter:image" content="{{ . | absURL }}">
+  {{- end -}}
+{{ else if .Site.Params.og_image }}
+  <meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}">
+{{ end }}
+
 <style>
   :root{
     --bg:#ffffff;--text:#121212;--muted:#676767;--brand:#0b3d91;--brand-2:#f3b400;--card:#f7f7f8;--radius:16px
