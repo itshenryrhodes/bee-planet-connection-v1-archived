@@ -67,3 +67,7 @@ isPlainText  = true
 notAlternative = true
 rel          = "robots"
 enableRobotsTXT = true
+
+# --- robots final: ensure Home emits RobotsTXT ---
+[outputs]
+home = ["HTML", "RSS", "RobotsTXT"]
