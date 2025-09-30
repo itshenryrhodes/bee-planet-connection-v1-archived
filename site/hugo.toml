@@ -1,8 +1,4 @@
-
-# --- canonical outputs (clean) ---
-[outputs]
-home = ["HTML", "RSS", "RobotsTXT"]
-section = ["HTML", "RSS"]
-page = ["HTML"]
-taxonomy = ["HTML"]
-term = ["HTML"]
+baseURL = "https://www.beeplanetconnection.org/"
+languageCode = "en"
+title = "Bee Planet Connection"
+# No custom outputs; theme defaults take over.
