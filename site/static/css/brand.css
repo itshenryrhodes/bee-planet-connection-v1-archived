@@ -7,3 +7,4 @@
 @media (max-width:600px){
   .header .brand img{ height:64px; }
 }
+.brand img{height:36px; width:auto; display:block}
