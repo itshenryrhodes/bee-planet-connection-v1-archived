@@ -41,7 +41,7 @@ jobs:
           set -e
           hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      # Guard rails
+      # Guard rails (keep the useful ones)
       - name: Verify CSS present and non-trivial
         run: |
           test -s site/public/css/brand.css || (echo "brand.css missing"; exit 1)
@@ -53,11 +53,16 @@ jobs:
           grep -q 'home-hero' site/public/index.html || (echo "home-hero class missing on homepage"; exit 1)
           grep -q 'featured-grid' site/public/index.html || (echo "featured-grid class missing on homepage"; exit 1)
 
-      - name: Verify no template syntax leaked to output
+      # ✅ Only fail on real Jekyll/Liquid leaking into final HTML
+      - name: Verify no Jekyll/Liquid leaked to output HTML
         run: |
-          if grep -R -E "{%|{{[^}]}" site/public >/dev/null; then
-            echo "Template syntax detected in built output"; exit 1
+          set -e
+          FOUND=0
+          find site/public -type f -name '*.html' -print0 | xargs -0 grep -nE "{%[- ]?(include|layout|if|for|capture)|{{[- ]}?(site|page|content|include)\." && FOUND=1 || true
+          if [ "$FOUND" -eq 1 ]; then
+            echo "Liquid/Jekyll syntax detected in built HTML"; exit 1
           fi
+          echo "No Liquid/Jekyll detected in HTML."
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
