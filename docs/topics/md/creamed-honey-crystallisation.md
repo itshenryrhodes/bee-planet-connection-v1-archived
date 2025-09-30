@@ -1,0 +1,84 @@
+---
+title: "Creamed Honey Crystallisation"
+slug: creamed-honey-crystallisation
+draft: false
+updated: 2025-09-29
+keywords: ["soft-set", "seed", "temperature", "texture"]
+cross_links: ["crystallisation_management", "honey_moisture_control_ripeners", "pricing_margins_small_scale_honey"]
+source: "seed-json"
+---
+
+> **At a Glance:** Seed with fine crystals, hold at steady cool temps, and avoid moisture shocks to make smooth, spreadable honey.
+
+## Why it Matters
+- Adds premium SKU and extends shelf variety.
+- Rescues coarse-set honey into a desirable format.
+
+## Objectives
+- Prepare fine seed and mix precisely.
+- Control temperature curve for consistent texture.
+- Package without introducing condensation.
+
+## What Good Looks Like
+- Seed 5–10% w/w from micro-fine batch; gentle paddle mix.
+- Set at ~13–14 °C for a week (method dependent).
+- Jars filled cool; lids on; bloom minimal.
+
+## Step-by-Step
+1) Make/buy seed with ultra-fine crystals; store cool and dry.
+2) Warm base honey to pourable (not hot); add seed; mix evenly.
+3) Hold at target temp undisturbed; check set after 5–7 days.
+4) Jar when semi-firm or fully set (process dependent); store cool.
+
+## Seasonality & Climate
+- Summer rooms may need dedicated cool cabinet.
+- Winter condensation risks—temper jars and room.
+
+## Data & Thresholds
+- Seed ratio 5–10% typical; temperature accuracy ±1 °C.
+- Moisture ≤18% before seeding.
+
+## Diagnostics & Decision Tree
+- Symptom: Gritty texture -> Improve seed fineness or ratio; mix better.
+- Symptom: Separation -> Moisture too high or heat cycles; rework.
+- Symptom: Bloom/frosting -> Lower jar temp swings; avoid fridge.
+
+## Common Pitfalls
+- Using coarse-set as seed.
+- Warm/cold cycling during set.
+- Open jars in humid rooms.
+
+## Tools & Techniques
+- Paddle mixer, cool cabinet, seed stock, temp logger.
+- Jar warming/tempering rack.
+
+## Safety & Compliance
+- Food-safe mixers and seals; cleaning between batches.
+- Accurate label description (‘soft set’).
+
+## Field Checklist
+- Seed ready and logged.
+- Room at target temp.
+- Jars tempered; lids staged.
+
+## Communications
+- Short hyphens only.
+- Explain ‘soft-set’ to avoid ‘sugar added’ myths.
+
+## Further Reading
+- Dyce/modern soft-set methods.
+- Crystal size and mouthfeel studies.
+
+## Cross-Links
+- [crystallisation_management](/topics/crystallisation-management/)
+- [honey_moisture_control_ripeners](/topics/honey-moisture-control-ripeners/)
+- [pricing_margins_small_scale_honey](/topics/pricing-margins-small-scale-honey/)
+
+## Keywords
+- soft-set
+- seed
+- temperature
+- texture
+
+## Notes
+Keep a master seed jar and refresh it each season.
