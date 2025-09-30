@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36" role="img" aria-labelledby="title">
+  <title>Bee Planet Connection</title>
+  <rect fill="#ffffff" width="160" height="36" rx="6"/>
+  <g transform="translate(10,24)" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">
+    <text x="0" y="0" fill="#0b3d91">Bee</text>
+    <text x="40" y="0" fill="#121212">Planet</text>
+    <text x="100" y="0" fill="#f3b400">Connection</text>
+  </g>
+  <circle cx="142" cy="10" r="5" fill="#f3b400"/>
+  <path d="M142 15c0 6-5 9-5 9s-5-3-5-9" fill="none" stroke="#0b3d91" stroke-width="2" stroke-linecap="round"/>
+</svg>
