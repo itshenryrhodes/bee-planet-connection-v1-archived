@@ -1,0 +1,91 @@
+---
+title: "Splitting And Combining Colonies"
+slug: splitting-and-combining-colonies
+draft: false
+updated: 2025-09-29
+keywords: ["split", "combine", "newspaper method", "queenright", "brood balance"]
+cross_links: ["making_and_managing_nucleus_colonies", "swarm_management", "queen_rearing_and_supersedure"]
+source: "seed-json"
+---
+
+> **At a Glance:** Splits expand apiaries and relieve swarm pressure; combining saves resources by consolidating weak colonies. Clear methods and timing prevent queen loss and fighting.
+
+## Why it Matters
+- Controlled splits create new colonies and fresh queens on your schedule.
+- Combining turns two struggling units into a single viable colony for winter.
+- Right timing protects your main honey flow and winter survival.
+
+## Objectives
+- Use a standard split recipe matched to season and nectar flow.
+- Confirm queen status before any combine.
+- Record lineage, dates, and outcomes for both operations.
+
+## What Good Looks Like
+- Balanced split: brood, food, and ample nurse bees with queen or a ripe cell.
+- Newspaper combine done when at least one side is queenright and calm.
+- Follow-up checks at 7–10 days to confirm success.
+
+## Step-by-Step
+1) Splitting - Assessment: choose a strong donor colony with good temperament and low mites.
+2) Splitting - Build: 2–3 frames of brood with adhering bees, 1–2 frames of food; add foundation to edges.
+3) Splitting - Queen: introduce a mated queen or a protected ripe cell; reduce entrance; feed lightly if needed.
+4) Splitting - Placement: move split to a different stand or location to balance flyers.
+5) Combining - Pre-check: identify queenright side; cull failing queen if necessary.
+6) Combining - Newspaper method: place a single sheet between boxes; prick a few holes; join at dusk to reduce drift.
+7) Combining - Aftercare: leave 7 days; then inspect for unified brood pattern and remove paper remnants.
+
+## Seasonality & Climate
+- Spring to early summer is ideal for splits; late summer combines prepare for winter.
+- Avoid splitting too late when drones are scarce or flows are over.
+
+## Data & Thresholds
+- Split strength target: enough bees to cover all brood frames fully.
+- Combine when colony cannot defend stores or cover 5–6 frames by late summer.
+
+## Diagnostics & Decision Tree
+- Symptom: Queenless split -> Provide mated queen or another ripe cell; check varroa and nutrition.
+- Symptom: Fighting post-combine -> Ensure only one queen; re-try at dusk with newspaper and scent equalisation.
+- Symptom: Lagging split growth -> Add emerging brood from donor and improve nutrition.
+
+## Common Pitfalls
+- Accidentally moving the donor queen into the split when not intended.
+- Combining two queenright colonies without culling one queen.
+- Splitting weak or disease-affected donors.
+
+## Tools & Techniques
+- Queen cages, cell protectors, entrance reducers.
+- Newspaper sheets, pushpins, light sugar spray for scent blending.
+- Frame transfer box and clear labels.
+
+## Safety & Compliance
+- Maintain biosecurity when moving frames between colonies.
+- Avoid operations during robbing conditions; keep entrances small.
+
+## Field Checklist
+- Donor queen location confirmed.
+- Varroa status acceptable.
+- Follow-up visit scheduled day 7–10.
+- Logs updated with lineage and dates.
+
+## Communications
+- Short hyphens only.
+- Explain to helpers why dusk combines reduce drift and fighting.
+
+## Further Reading
+- Association manuals on splits and combines.
+- Research notes on colony demographics post-split.
+
+## Cross-Links
+- [making_and_managing_nucleus_colonies](/topics/making-and-managing-nucleus-colonies/)
+- [swarm_management](/topics/swarm-management/)
+- [queen_rearing_and_supersedure](/topics/queen-rearing-and-supersedure/)
+
+## Keywords
+- split
+- combine
+- newspaper method
+- queenright
+- brood balance
+
+## Notes
+A simple ‘split card’ on the hive tracks day 0 (cell), day 7 (emergence), day 14–21 (mating), day 28 (laying).
