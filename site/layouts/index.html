@@ -31,6 +31,7 @@
       <p style="margin:0;color:var(--muted)">Practical knowledge, tools, and alerts to keep bees healthy and communities informed.</p>
     </section>
 
+    {{/* Featured Wiki: latest non-draft page in /wiki */}}
     {{ $pages := .Site.RegularPages }}
     {{ $wikiAll  := where (where $pages ".Draft" false) "Section" "wiki" }}
     {{ $wikiLatest := first 1 $wikiAll.ByDate.Reverse }}
@@ -53,13 +54,15 @@
 
       <div class="card">
         <p class="eyebrow">Featured Blog</p>
-        {{ with site.GetPage "blog/2025-09-18-the-bee-line.md" }}
+        {{/* Pin to The Bee Line explicitly (section + slug, no extension) */}}
+        {{ $beeLine := site.GetPage "blog" "2025-09-18-the-bee-line" }}
+        {{ with $beeLine }}
           <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
           <a class="btn" href="{{ .RelPermalink }}">Read blog</a>
         {{ else }}
           <h3>The Bee Line not found</h3>
-          <p>Check <code>content/blog/2025-09-18-the-bee-line.md</code>.</p>
+          <p>Check <code>content/blog/2025-09-18-the-bee-line.md</code> exists and has a <code>title</code>.</p>
           <a class="btn" href="/blog/">Browse Blog</a>
         {{ end }}
       </div>
