@@ -1,6 +1,0 @@
-[outputFormats.RobotsTXT]
-mediaType    = "text/plain"
-baseName     = "robots"
-isPlainText  = true
-notAlternative = true
-permalinkable = false

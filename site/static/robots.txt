@@ -1,0 +1,5 @@
+# robots.txt for Bee Planet Connection (static)
+User-agent: *
+Allow: /
+
+Sitemap: https://www.beeplanetconnection.org/sitemap.xml
