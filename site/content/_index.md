@@ -15,3 +15,8 @@ Bee Planet Connection makes beekeeping knowledge more accessible — from SOPs a
 - [Bees in Agriculture](/wiki/bees-in-agriculture/)
 - [Apiary Biosecurity SOP](/wiki/apiary-biosecurity-sop/)
 - [Varroa Monitoring Methods](/wiki/varroa-monitoring-methods/)
+
+
+## Featured Blog
+
+{{< featured_blog >}}

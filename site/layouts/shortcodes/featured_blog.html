@@ -1,0 +1,28 @@
+{{/* Shortcode: featured_blog
+   Usage: {{< featured_blog >}}
+   Logic: Prefer the 'the-bee-line' post; else fall back to most-recent blog post. */}}
+{{ $post := .Site.GetPage "blog/the-bee-line" }}
+{{ if not $post }}
+  {{ $post = (where .Site.RegularPages "Section" "blog" | first 1 ) | first }}
+{{ end }}
+
+<section class="featured-blog-card" style="margin-top:24px;">
+  <div style="background:var(--card,#f7f7f8);border:1px solid #ececec;border-radius:16px;padding:16px;box-shadow:var(--shadow,0 8px 24px rgba(0,0,0,.06));">
+    <h2 style="margin:0 0 8px;">Featured Blog</h2>
+    {{ if $post }}
+      <h3 style="margin:0 0 6px;">
+        <a href="{{ $post.RelPermalink }}" style="text-decoration:none;color:inherit;">
+          {{ $post.Title }}
+        </a>
+      </h3>
+      {{ with $post.Params.description }}
+        <p style="margin:0 0 10px;color:var(--muted,#676767);">{{ . }}</p>
+      {{ end }}
+      <a href="{{ $post.RelPermalink }}" style="display:inline-block;padding:10px 14px;border-radius:12px;background:var(--brand,#0b3d91);color:#fff;text-decoration:none;">
+        Read the blog
+      </a>
+    {{ else }}
+      <p style="margin:0;color:var(--muted,#676767);">No blog posts found yet.</p>
+    {{ end }}
+  </div>
+</section>
