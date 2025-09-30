@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+  {{ partial "head.html" . | default "" }}
+  {{ with resources.Get "css/brand.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{ with resources.Get "css/styles.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+</head>
+<body>
+  <header>
+    <nav><a href="/">Home</a> · <a href="/wiki/">Wiki</a> · <a href="/blog/">Blog</a> · <a href="/about/">About</a></nav>
+  </header>
+  <main id="content">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
+  </footer>
+</body>
+</html>

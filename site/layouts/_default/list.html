@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <section>
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}{{ . }}{{ end }}
+    <ul>
+      {{ range .Paginator.Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .Params.description }}<br><small>{{ . }}</small>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ template "_internal/pagination.html" . }}
+  </section>
+{{ end }}
