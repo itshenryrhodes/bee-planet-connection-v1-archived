@@ -34,11 +34,7 @@ enableRobotsTXT = true
     weight = 70
 
 # Tags/Categories for the blog
-[taxonomies]
-  tag = "tags"
-  category = "categories"
 
-[sitemap]
-  filename = "sitemap.xml"
-  changefreq = "daily"
-  priority = 0.5
+[taxonomies]
+tag = "tags"
+category = "categories"

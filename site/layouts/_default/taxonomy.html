@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="/css/brand.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+</head>
+<body>
+  <main class="wrap">
+    <h1>{{ .Title }}</h1>
+    <ul class="cards">
+      {{ range .Pages }}
+        <li>
+          <a class="link" href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+          {{ with .Date }}<div class="meta">{{ .Format "2006-01-02" }}</div>{{ end }}
+          {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+    <p><a href="/categories/">All categories</a> · <a href="/blog/">Back to Blog</a></p>
+  </main>
+</body>
+</html>
