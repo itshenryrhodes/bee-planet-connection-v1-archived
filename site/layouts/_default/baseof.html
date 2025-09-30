@@ -1,47 +1,34 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="{{ or .Site.Language.Lang "en" }}" dir="{{ or .Site.Language.LanguageDirection "ltr" }}">
 <head>
   <meta charset="utf-8">
-  <title>{{ if .Title }}{{ .Title }} | {{ end }}Bee Planet Connection</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{ $css := resources.Get "css/styles.css" | resources.Minify | resources.Fingerprint }}
-  <link rel="preload" href="{{ $css.RelPermalink }}" as="style">
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-  {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-  {{ if .IsHome }}<link rel="canonical" href="{{ .Site.BaseURL }}">{{ end }}
-  <link rel="icon" href="{{ "img/logo.svg" | relURL }}" type="image/svg+xml">
-  {{ partial "seo.html" . }}
-  <link rel="stylesheet" href="/css/brand.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  {{/* Title (keep simple; SEO metas handled in head partial) */}}
+  {{ $title := cond (ne .Title "") .Title .Site.Title }}
+  <title>{{ $title }}</title>
+
+  {{ partial "head.html" . }}
+
+  {{/* Optional per-page head injections */}}
+  {{ block "head_extra" . }}{{ end }}
 </head>
-<body>
-  <header class="container header">
-    <div class="brand"><a href="/"><img src="/img/logo/logo-dark.png" alt="Bee Planet Connection"></a></div>
+<body class="site {{ .Type }} {{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }}">
+  {{/* Optional header partial if present */}}
+  {{ if templates.Exists "partials/header.html" }}
+    {{ partial "header.html" . }}
+  {{ end }}
 
-    <nav class="main-nav" aria-label="Main">
-      {{ with .Site.Menus.main }}
-        {{ range . }}
-          {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
-          <a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page" class="active"{{ end }}>{{ .Name }}</a>
-        {{ end }}
-      {{ else }}
-        <!-- Fallback if no menu configured -->
-        <a href="{{ "wiki/"   | relURL }}">Wiki</a>
-        <a href="{{ "sops/"   | relURL }}">SOPs &amp; Templates</a>
-        <a href="{{ "alerts/" | relURL }}">Alerts</a>
-        <a href="{{ "tools/"  | relURL }}">Tools</a>
-        <a href="{{ "about/"  | relURL }}">About</a>
-        <a href="{{ "contact/"| relURL }}">Contact</a>
-        <a href="{{ "blog/"   | relURL }}">Blog</a>
-      {{ end }}
-    </nav>
-  </header>
-
-  <main class="container">
+  <main id="content" role="main">
     {{ block "main" . }}{{ end }}
   </main>
 
-  <footer class="container footer">
-    <small>&copy; {{ now.Format "2006" }} Bee Planet Connection</small>
-  </footer>
+  {{/* Optional footer partial if present */}}
+  {{ if templates.Exists "partials/footer.html" }}
+    {{ partial "footer.html" . }}
+  {{ end }}
+
+  {{/* Optional scripts block (per-page or per-list) */}}
+  {{ block "scripts" . }}{{ end }}
 </body>
 </html>
