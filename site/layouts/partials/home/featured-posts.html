@@ -1,11 +1,12 @@
 <section class="featured-article">
   <div class="container">
-    {{/* Collect featured blog/post pages, newest first */}}
-    {{ $candidates := where site.RegularPages "Type" "in" (slice "blog" "post") }}
-    {{ $featured := first 1 (where $candidates "Params.featured" true | sort "Date" "desc") }}
+    {{/* Collect featured blog/post pages, newest first (safe sort) */}}
+    {{ $candidates := where .Site.RegularPages "Type" "in" (slice "blog" "post") }}
+    {{ $featuredPages := sort (where $candidates "Params.featured" true) "Date" "desc" }}
+    {{ $top := first 1 $featuredPages }}
 
-    {{ if gt (len $featured) 0 }}
-      {{ range $featured }}
+    {{ if gt (len $top) 0 }}
+      {{ range $top }}
         <article class="card featured-article-card">
           <header class="featured-article-head">
             <h2 class="featured-article-title">
@@ -25,8 +26,6 @@
           </p>
         </article>
       {{ end }}
-    {{ else }}
-      {{/* No featured posts yet: render nothing (quietly) */}}
     {{ end }}
   </div>
 </section>
