@@ -1,4 +1,4 @@
-{{- /* Home: two-column Featured Wiki (left) + Featured Blog (right) */ -}}
+{{- /* Home: Featured Wiki (latest) + Featured Blog (Bee Line pinned) */ -}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,12 +31,9 @@
       <p style="margin:0;color:var(--muted)">Practical knowledge, tools, and alerts to keep bees healthy and communities informed.</p>
     </section>
 
-    {{/* Build safe, pre-sorted collections and filter out drafts */}}
     {{ $pages := .Site.RegularPages }}
     {{ $wikiAll  := where (where $pages ".Draft" false) "Section" "wiki" }}
-    {{ $blogAll  := where (where $pages ".Draft" false) "Section" "blog" }}
     {{ $wikiLatest := first 1 $wikiAll.ByDate.Reverse }}
-    {{ $blogLatest := first 1 $blogAll.ByDate.Reverse }}
 
     <section class="grid" aria-label="Featured content">
       <div class="card">
@@ -56,15 +53,13 @@
 
       <div class="card">
         <p class="eyebrow">Featured Blog</p>
-        {{ if gt (len $blogAll) 0 }}
-          {{ range $blogLatest }}
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
-            <a class="btn" href="{{ .RelPermalink }}">Read blog</a>
-          {{ end }}
+        {{ with site.GetPage "blog/2025-09-18-the-bee-line.md" }}
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
+          <a class="btn" href="{{ .RelPermalink }}">Read blog</a>
         {{ else }}
-          <h3>Blog coming soon</h3>
-          <p>Add a post under <code>content/blog/</code> to feature it here.</p>
+          <h3>The Bee Line not found</h3>
+          <p>Check <code>content/blog/2025-09-18-the-bee-line.md</code>.</p>
           <a class="btn" href="/blog/">Browse Blog</a>
         {{ end }}
       </div>
