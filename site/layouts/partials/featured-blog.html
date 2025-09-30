@@ -1,0 +1,15 @@
+{{ $featured := first 1 (where (where .Site.RegularPages "Section" "blog") "Params.featured" true) }}
+<div class="featured-blog" style="border:1px solid #eee;border-radius:12px;padding:1rem;">
+  <h3 style="margin:0 0 .75rem 0;">Featured blog</h3>
+  {{ if gt (len $featured) 0 }}
+    {{ range $featured }}
+      {{ $img := .Params.featured_image }}
+      {{ if $img }}<img src="{{ $img }}" alt="" style="display:block;width:100%;height:auto;border-radius:8px;margin-bottom:.75rem;">{{ end }}
+      <h4 style="margin:.2rem 0 .4rem 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+      <p style="margin:0 0 .6rem 0;opacity:.9;">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}</p>
+      <a href="{{ .RelPermalink }}" style="text-decoration:none;">Read the full post →</a>
+    {{ end }}
+  {{ else }}
+    <p>No featured post marked yet.</p>
+  {{ end }}
+</div>

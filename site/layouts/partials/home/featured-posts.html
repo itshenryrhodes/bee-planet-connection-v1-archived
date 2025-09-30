@@ -1,0 +1,31 @@
+<section class="featured-article">
+  <div class="container">
+    {{/* Collect featured blog/post pages, newest first (safe sort) */}}
+    {{ $candidates := where .Site.RegularPages "Type" "in" (slice "blog" "post") }}
+    {{ $featuredPages := sort (where $candidates "Params.featured" true) "Date" "desc" }}
+    {{ $top := first 1 $featuredPages }}
+
+    {{ if gt (len $top) 0 }}
+      {{ range $top }}
+        <article class="card featured-article-card">
+          <header class="featured-article-head">
+            <h2 class="featured-article-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <p class="featured-article-meta">{{ .Date | time.Format "2 Jan 2006" }}</p>
+          </header>
+          <p class="featured-article-excerpt">
+            {{ with .Params.description }}
+              {{ . }}
+            {{ else }}
+              {{ .Summary | plainify | truncate 220 }}
+            {{ end }}
+          </p>
+          <p class="featured-article-cta">
+            <a class="btn" href="{{ .RelPermalink }}">Read the article</a>
+          </p>
+        </article>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
