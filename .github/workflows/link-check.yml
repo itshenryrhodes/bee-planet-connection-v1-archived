@@ -1,4 +1,4 @@
-﻿name: Build and Link Check
+name: Build & Link Check
 
 on:
   push:
@@ -16,20 +16,19 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.134.3"
+          hugo-version: '0.134.3'
           extended: true
 
-      - name: Build site
-        run: hugo -s site -d ../docs --baseURL "/"
+      - name: Build site (use config baseURL)
+        run: |
+          hugo -s site -d ../docs
 
-      - name: Lychee link check
+      - name: Lychee Link Check
         uses: lycheeverse/lychee-action@v2
         with:
           args: >
+            --no-progress --verbose
             --config .lychee.toml
-            --verbose
-            docs/**/*.html
-            docs/sitemap.xml
-          fail: true
+            docs/**/*.html docs/sitemap.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
