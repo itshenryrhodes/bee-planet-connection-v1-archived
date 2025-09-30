@@ -7,9 +7,22 @@
 {{/* === Canonical & basic meta === */}}
 {{ $title := cond (ne .Title "") .Title .Site.Title }}
 {{ $desc  := (or .Description (.Params.description) (.Summary | plainify | truncate 160)) | default .Site.Params.description }}
-{{ $url   := (cond .IsHome .Site.BaseURL .Permalink) }}
+{{ $url   := cond .IsHome .Site.BaseURL .Permalink }}
+
 <link rel="canonical" href="{{ $url }}">
 <meta name="description" content="{{ $desc }}">
+
+{{/* Optionally keep drafts out of the index */}}
+{{ if .Draft }}<meta name="robots" content="noindex,follow">{{ end }}
+
+{{/* === OG/Twitter image resolution === */}}
+{{ $img := "" }}
+{{ with .Params.images }}
+  {{ $img = (index . 0) | absURL }}
+{{ end }}
+{{ if and (eq $img "") .Site.Params.og_image }}
+  {{ $img = (.Site.Params.og_image | absURL) }}
+{{ end }}
 
 {{/* === Open Graph === */}}
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
@@ -17,42 +30,15 @@
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ $url }}">
-{{ with .Params.images }}
-  {{- range first 1 . -}}
-    <meta property="og:image" content="{{ . | absURL }}">
-  {{- end -}}
-{{ else if .Site.Params.og_image }}
-  <meta property="og:image" content="{{ .Site.Params.og_image | absURL }}">
-{{ end }}
+{{ if $img }}<meta property="og:image" content="{{ $img }}">{{ end }}
 
 {{/* === Twitter Cards === */}}
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="{{ if $img }}summary_large_image{{ else }}summary{{ end }}">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
-{{ with .Params.images }}
-  {{- range first 1 . -}}
-    <meta name="twitter:image" content="{{ . | absURL }}">
-  {{- end -}}
-{{ else if .Site.Params.og_image }}
-  <meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}">
-{{ end }}
+{{ if $img }}<meta name="twitter:image" content="{{ $img }}">{{ end }}
 
-<style>
-  :root{
-    --bg:#ffffff;--text:#121212;--muted:#676767;--brand:#0b3d91;--brand-2:#f3b400;--card:#f7f7f8;--radius:16px
-  }
-  body{margin:0;background:#fff;color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
-  a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
-  .container{max-width:1100px;margin:0 auto;padding:24px}
-  header.site{display:flex;align-items:center;gap:16px;padding:16px 0}
-  header.site img{height:32px}
-  nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-  .hero{background:var(--card);border-radius:var(--radius);padding:20px;margin:8px 0 24px}
-  .grid{display:grid;grid-template-columns:1fr;gap:16px}
-  @media (min-width:900px){.grid{grid-template-columns:1fr 1fr}}
-  .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:18px}
-  .eyebrow{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:0 0 6px}
-  .card h3{margin:.25rem 0 .5rem;font-size:1.2rem}
-  .card p{margin:.5rem 0 1rem;color:#333}
-  .btn{display:inline-block;border-radius:12px;padding:8px 12px;background:var(--brand);color:#fff}
-</style>
+{{/* === RSS (if enabled) === */}}
+{{ with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+{{ end }}
