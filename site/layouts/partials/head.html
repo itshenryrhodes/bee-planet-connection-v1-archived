@@ -7,7 +7,7 @@
 {{/* === Canonical & basic meta === */}}
 {{ $title := cond (ne .Title "") .Title .Site.Title }}
 {{ $desc  := (or .Description (.Params.description) (.Summary | plainify | truncate 160)) | default .Site.Params.description }}
-{{ $url   := .Permalink | default .Site.BaseURL }}
+{{ $url   := (cond .IsHome .Site.BaseURL .Permalink) }}
 <link rel="canonical" href="{{ $url }}">
 <meta name="description" content="{{ $desc }}">
 
