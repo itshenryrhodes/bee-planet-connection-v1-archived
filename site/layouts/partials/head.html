@@ -1,0 +1,50 @@
+<!-- Minimal head partial + SEO -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="color-scheme" content="light">
+
+<!-- Icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="/css/brand.css"><!-- safe if present; ignored if 404 -->
+
+{{/* === Canonical & basic meta === */}}
+{{ $title := cond (ne .Title "") .Title .Site.Title }}
+{{ $desc  := (or .Description (.Params.description) (.Summary | plainify | truncate 160)) | default .Site.Params.description }}
+{{ $url   := cond .IsHome .Site.BaseURL .Permalink }}
+
+<link rel="canonical" href="{{ $url }}">
+<meta name="description" content="{{ $desc }}">
+
+{{/* Optionally keep drafts out of the index */}}
+{{ if .Draft }}<meta name="robots" content="noindex,follow">{{ end }}
+
+{{/* === OG/Twitter image resolution === */}}
+{{ $img := "" }}
+{{ with .Params.images }}
+  {{ $img = (index . 0) | absURL }}
+{{ end }}
+{{ if and (eq $img "") .Site.Params.og_image }}
+  {{ $img = (.Site.Params.og_image | absURL) }}
+{{ end }}
+
+{{/* === Open Graph === */}}
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ $url }}">
+{{ if $img }}<meta property="og:image" content="{{ $img }}">{{ end }}
+
+{{/* === Twitter Cards === */}}
+<meta name="twitter:card" content="{{ if $img }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{ if $img }}<meta name="twitter:image" content="{{ $img }}">{{ end }}
+
+{{/* === RSS (if enabled) === */}}
+{{ with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+{{ end }}

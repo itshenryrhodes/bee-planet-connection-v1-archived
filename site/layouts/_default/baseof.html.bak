@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}Bee Planet Connection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $css := resources.Get "css/styles.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+  {{ if .IsHome }}<link rel="canonical" href="{{ .Site.BaseURL }}">{{ end }}
+  <link rel="icon" href="{{ "img/logo.svg" | relURL }}" type="image/svg+xml">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <a href="{{ "/" | relURL }}" class="brand-link">
+        <img class="brand-logo" src="{{ "img/logo.svg" | relURL }}" alt="Bee Planet Connection logo" width="112" height="28" decoding="async">
+        <span class="wordmark">Bee Planet Connection</span>
+      </a>
+    </div>
+    <nav class="main-nav">
+      <a href="{{ "blog/"   | relURL }}">Blog</a>
+      <a href="{{ "wiki/"   | relURL }}">Wiki</a>
+      <a href="{{ "sops/"   | relURL }}">SOPs &amp; Templates</a>
+      <a href="{{ "alerts/" | relURL }}">Alerts</a>
+      <a href="{{ "tools/"  | relURL }}">Tools</a>
+      <a href="{{ "about/"  | relURL }}">About</a>
+      <a href="{{ "contact/"| relURL }}">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="container footer">
+    <small>&copy; {{ now.Format "2006" }} Bee Planet Connection</small>
+  </footer>
+</body>
+</html>

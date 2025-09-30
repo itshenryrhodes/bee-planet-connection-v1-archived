@@ -1,0 +1,9 @@
+# robots.txt for {{ .Site.Title }}
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+
+{{- with .Site.BaseURL -}}
+# Host: {{ . }}
+{{- end -}}

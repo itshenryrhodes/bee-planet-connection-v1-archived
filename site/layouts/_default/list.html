@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="list">
+  <header class="list-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ if .Paginator.Pages }}
+    <ul class="post-list">
+      {{ range .Paginator.Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+          {{ with .Date }}<span class="meta"> · {{ .Format "02 Jan 2006" }}</span>{{ end }}
+          {{ with .Params.description }}<p>{{ . }}</p>{{ else }}{{ with .Summary }}<p>{{ . | plainify | truncate 160 }}</p>{{ end }}{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+    <nav class="pager">
+      {{ template "_internal/pagination.html" . }}
+    </nav>
+  {{ else }}
+    <p>No entries yet.</p>
+  {{ end }}
+</section>
+{{ end }}

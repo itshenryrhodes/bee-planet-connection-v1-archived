@@ -1,0 +1,9 @@
+<nav class="section-menu" aria-label="Section">
+  <a href="{{ "wiki/"   | relURL }}">Wiki</a>
+  <a href="{{ "sops/"   | relURL }}">SOPs & Templates</a>
+  <a href="{{ "alerts/" | relURL }}">Alerts</a>
+  <a href="{{ "tools/"  | relURL }}">Tools</a>
+  <a href="{{ "about/"  | relURL }}">About</a>
+  <a href="{{ "contact/"| relURL }}">Contact</a>
+  <a href="{{ "blog/"   | relURL }}">Blog</a>
+</nav>

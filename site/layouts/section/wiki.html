@@ -1,0 +1,31 @@
+{{ define "main" }}
+  {{- $hid := .Params.hero_id | default "01" -}}
+  <section class="hero">
+    <picture class="hero block">
+      <!-- WebP -->
+      <source srcset="/img/hero/hero-{{ $hid }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
+      <source srcset="/img/hero/hero-{{ $hid }}-sm.webp"     media="(max-width: 768px)"  type="image/webp">
+      <source srcset="/img/hero/hero-{{ $hid }}-md.webp"     media="(max-width: 1024px)" type="image/webp">
+      <source srcset="/img/hero/hero-{{ $hid }}-lg.webp"                              type="image/webp">
+      <!-- JPG fallback -->
+      <img src="/img/hero/hero-{{ $hid }}-lg.jpg" alt="{{ .Title }}" loading="eager" width="1600" height="900">
+    </picture>
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}<p class="muted">{{ . }}</p>{{ end }}
+    </div>
+  </section>
+
+  <main class="container flow">
+    {{ .Content }}
+    <div class="grid cards">
+      {{ range .Pages.ByTitle }}
+        <article class="card">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          {{ with .Params.description }}<p class="muted">{{ . }}</p>{{ else }}{{ with .Summary }}<p class="muted">{{ . }}</p>{{ end }}{{ end }}
+          <p><a class="btn" href="{{ .RelPermalink }}">Read article</a></p>
+        </article>
+      {{ end }}
+    </div>
+  </main>
+{{ end }}
