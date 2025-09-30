@@ -12,3 +12,4 @@ __pycache__/
 .seed-list.*
 
 content/topics.dryrun/
+/site/public/
