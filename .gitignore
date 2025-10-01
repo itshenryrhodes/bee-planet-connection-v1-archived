@@ -14,3 +14,6 @@ __pycache__/
 content/topics.dryrun/
 /site/public/
 site/public_check_*
+
+# Build output
+/docs/

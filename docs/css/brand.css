@@ -1,9 +1,0 @@
-/* Bee Planet: header brand logo sizing */
-.header .brand img{
-  height:84px;
-  width:auto;
-  display:block;
-}
-@media (max-width:600px){
-  .header .brand img{ height:64px; }
-}
