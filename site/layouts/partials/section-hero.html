@@ -1,0 +1,74 @@
+﻿{{/* Reusable hero for top-level sections (Wiki, SOPs & Templates, Alerts, Tools, About, Contact, Blog)
+     Usage (later): include this partial in your section/list templates.
+     Optional front matter:
+       [hero]
+         title = "Wiki"
+         subtitle = "All knowledge articles"
+         image = "/img/hero/hero-01-lg.jpg"  # .webp fallback handled
+         alt = "Wildflower bank with bees"
+*/}}
+
+{{ $title := or .Params.hero.title .Title }}
+{{ $subtitle := .Params.hero.subtitle }}
+{{ $img := or .Params.hero.image "/img/hero/hero-01-lg.jpg" }}
+{{ $alt := or .Params.hero.alt (printf "%s hero" $title) }}
+
+<style>
+  /* Scoped to this partial to avoid regressions */
+  .section-hero {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 520px);
+    gap: clamp(16px, 3vw, 32px);
+    align-items: start;
+    padding: clamp(16px, 3vw, 32px) 0;
+  }
+  .section-hero .copy h1 {
+    margin: 0 0 .25rem 0;
+    line-height: 1.1;
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  }
+  .section-hero .copy p.lead {
+    margin: .25rem 0 0 0;
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    color: var(--muted, #666);
+  }
+  .section-hero .media {
+    justify-self: end;
+    max-width: 520px;
+    width: 100%;
+    aspect-ratio: 4 / 3;          /* approx size; keeps proportions sensible */
+    overflow: hidden;
+    border-radius: var(--radius, 16px);
+    box-shadow: var(--shadow, 0 8px 24px rgba(0,0,0,.08));
+  }
+  .section-hero .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;             /* no distortion; gentle crop */
+    object-position: top right;    /* align like home */
+    display: block;
+  }
+  @media (max-width: 860px) {
+    .section-hero {
+      grid-template-columns: 1fr;
+    }
+    .section-hero .media {
+      order: -1;                   /* image above text on mobile */
+      aspect-ratio: 16 / 9;
+    }
+  }
+</style>
+
+<section class="section-hero container">
+  <div class="copy">
+    <h1>{{ $title }}</h1>
+    {{ with $subtitle }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+  <div class="media" role="img" aria-label="{{ $alt }}">
+    <picture>
+      {{ $webp := replace $img ".jpg" ".webp" }}
+      <source srcset="{{ $webp }}" type="image/webp">
+      <img src="{{ $img }}" alt="{{ $alt }}" loading="eager" fetchpriority="high">
+    </picture>
+  </div>
+</section>
