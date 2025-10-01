@@ -1,0 +1,25 @@
+﻿# Lychee configuration
+
+# Treat these as OK (e.g., 429 on rate-limited CDNs).
+accept = [200, 206, 429]
+
+# Be gentle.
+max_retries = 2
+retry_wait = 2
+timeout = 20
+max_redirects = 5
+
+# Ignore links we know will fail in CI:
+# - local files that Hugo may emit in dev or that appear in templates
+# - localhost dev URLs
+# - Google Fonts (often rate-limited / blocked in CI)
+# - Absolute production URLs (sitemap points at the live site which may not exist in PRs)
+exclude = [
+  '^file://.*',
+  '^http://localhost(:\\d+)?/.*',
+  '^https://fonts\\.(googleapis|gstatic)\\.com/.*',
+  '^https://www\\.beeplanetconnection\\.org/.*'
+]
+
+# Don't traverse anything under backups/ if it sneaks in.
+exclude_path = ["backups"]
