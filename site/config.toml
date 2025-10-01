@@ -1,0 +1,14 @@
+baseURL = "https://www.beeplanetconnection.org/"
+title = "Bee Planet Connection"
+languageCode = "en"
+
+[outputs]
+home = ["HTML","RSS","Sitemap"]
+section = ["HTML","RSS"]
+taxonomy = ["HTML","RSS"]
+term = ["HTML","RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
