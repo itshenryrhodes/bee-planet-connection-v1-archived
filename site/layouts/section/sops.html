@@ -2,7 +2,7 @@
   {{ partial "section-hero.html" . }}
   <section class="container">
     {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
-    <ul class="wiki-list">
+    <ul class="sops-list">
       {{ range .Pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
     </ul>
   </section>
