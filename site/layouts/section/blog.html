@@ -1,0 +1,11 @@
+﻿{{ define "main" }}
+  {{ partial "section-hero.html" . }}
+  <section class="container" style="display:flex;flex-direction:column;gap:1rem;">
+    {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
+    <ul class="blog-list">
+      {{ range .Pages.ByDate.Reverse }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

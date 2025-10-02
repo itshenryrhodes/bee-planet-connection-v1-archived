@@ -1,26 +1,30 @@
-﻿{{/* Reusable hero for top-level sections (compact, no distortion) */}}
-{{ $title := or .Params.hero.title .Title }}
-{{ $subtitle := .Params.hero.subtitle }}
-{{ $img := or .Params.hero.image "/img/hero/hero-01-lg.jpg" }}
-{{ $alt := or .Params.hero.alt (printf "%s hero" $title) }}
-<style>
-  .section-hero{display:grid;grid-template-columns:1fr minmax(320px,520px);gap:clamp(16px,3vw,32px);align-items:start;padding:clamp(16px,3vw,32px) 0}
-  .section-hero .copy h1{margin:0 0 .25rem 0;line-height:1.1;font-size:clamp(1.8rem,3.2vw,2.6rem)}
-  .section-hero .copy p.lead{margin:.25rem 0 0 0;font-size:clamp(1rem,1.6vw,1.2rem);color:#666}
-  .section-hero .media{justify-self:end;max-width:520px;width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
-  .section-hero .media img{width:100%;height:100%;object-fit:cover;object-position:top right;display:block}
-  @media (max-width:860px){.section-hero{grid-template-columns:1fr}.section-hero .media{order:-1;aspect-ratio:16/9}}
-</style>
-<section class="section-hero container">
-  <div class="copy">
-    <h1>{{ $title }}</h1>
-    {{ with $subtitle }}<p class="lead">{{ . }}</p>{{ end }}
+﻿{{/* partials/section-hero.html
+   Per-section hero (image top-right, descriptor top-left).
+*/}}
+{{- $isHome := .IsHome -}}
+{{- $sec := cond $isHome "home" .Section -}}
+{{- $map := site.Data.sections -}}
+{{- $cfg := cond (and $map (index $map $sec)) (index $map $sec) (dict) -}}
+{{- $title := or ($cfg.title) .Title -}}
+{{- $blurb := or ($cfg.blurb) "" -}}
+{{- $base  := or ($cfg.hero)  $sec -}}  {{/* <- FORCE section key if no explicit hero */}}
+{{- $hero  := printf "/img/hero/%s" $base -}}
+
+<section class="section-hero container" style="display:grid;grid-template-columns:1fr minmax(280px,42%);gap:clamp(1rem,2vw,2rem);align-items:start;margin-block:clamp(1rem,3vw,2rem);">
+  <div class="copy" style="display:flex;flex-direction:column;gap:.5rem;">
+    <h1 style="margin:0;font-family:var(--bpc-font-head);font-size:clamp(1.75rem,3vw,2.25rem);line-height:1.2;">{{ $title }}</h1>
+    {{ with $blurb }}<p style="margin:0;color:var(--bpc-slate);max-width:65ch;">{{ . }}</p>{{ end }}
   </div>
-  <div class="media" role="img" aria-label="{{ $alt }}">
+  <div class="media" style="justify-self:end;max-width:680px;aspect-ratio:16/10;overflow:hidden;border-radius:var(--bpc-radius);box-shadow:var(--bpc-shadow-1);">
     <picture>
-      {{ $webp := replace $img ".jpg" ".webp" }}
-      <source srcset="{{ $webp }}" type="image/webp">
-      <img src="{{ $img }}" alt="{{ $alt }}" loading="eager" fetchpriority="high">
+      <source type="image/webp"
+              srcset="{{ $hero }}-mobile.webp 480w, {{ $hero }}-sm.webp 640w, {{ $hero }}-md.webp 960w, {{ $hero }}-lg.webp 1280w"
+              sizes="(max-width: 800px) 100vw, 42vw">
+      <img src="{{ $hero }}-md.jpg"
+           srcset="{{ $hero }}-mobile.jpg 480w, {{ $hero }}-sm.jpg 640w, {{ $hero }}-md.jpg 960w, {{ $hero }}-lg.jpg 1280w"
+           sizes="(max-width: 800px) 100vw, 42vw"
+           alt="" loading="eager" decoding="async"
+           style="width:100%;height:100%;object-fit:cover;object-position:top right;">
     </picture>
   </div>
 </section>
