@@ -1,25 +1,31 @@
+﻿{{/* layouts/_default/list.html
+   Guarded override: for these sections only, render our compact hero, then a simple list.
+   Sections: wiki, sops, alerts, tools, about, contact, blog
+*/}}
 {{ define "main" }}
-<section class="list">
-  <header class="list-header">
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
-  </header>
-
-  {{ if .Paginator.Pages }}
-    <ul class="post-list">
-      {{ range .Paginator.Pages }}
-        <li>
-          <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
-          {{ with .Date }}<span class="meta"> · {{ .Format "02 Jan 2006" }}</span>{{ end }}
-          {{ with .Params.description }}<p>{{ . }}</p>{{ else }}{{ with .Summary }}<p>{{ . | plainify | truncate 160 }}</p>{{ end }}{{ end }}
-        </li>
-      {{ end }}
-    </ul>
-    <nav class="pager">
-      {{ template "_internal/pagination.html" . }}
-    </nav>
+  {{ $targets := slice "wiki" "sops" "alerts" "tools" "about" "contact" "blog" }}
+  {{ if and (eq .Kind "section") (in $targets .Section) }}
+    {{ partial "section-hero.html" . }}
+    <section class="container" style="display:flex;flex-direction:column;gap:1rem;">
+      {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
+      <ul class="{{ .Section }}-list">
+        {{ range .Pages.ByTitle }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
   {{ else }}
-    <p>No entries yet.</p>
+    {{/* Fallback: let theme/default list render if not a target section */}}
+    {{ block "list_fallback" . }}
+      <section class="container">
+        <h1>{{ .Title }}</h1>
+        {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
+        <ul>
+          {{ range .Pages }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
   {{ end }}
-</section>
 {{ end }}
