@@ -1,28 +1,6 @@
-﻿{{/* layouts/_default/section.html
-   Guarded hero injection for top-level sections; simple listing fallback.
-*/}}
-{{ define "main" }}
-  {{ $targets := slice "wiki" "sops" "alerts" "tools" "about" "contact" "blog" }}
-  {{ if and (eq .Kind "section") (in $targets .Section) }}
-    {{ partial "section-hero.html" . }}
-    <section class="container" style="display:flex;flex-direction:column;gap:1rem;">
-      {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
-      <ul class="{{ .Section }}-list">
-        {{ range .Pages.ByTitle }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
-    </section>
-  {{ else }}
-    {{/* Default minimal */}}
-    <section class="container">
-      <h1>{{ .Title }}</h1>
-      {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
-      <ul>
-        {{ range .Pages }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
-    </section>
-  {{ end }}
+﻿{{ define "main" }}
+  <!-- bpc-marker: _default/section.html kind={{ .Kind }} section={{ .Section }} -->
+  {{ partial "bpc-diagnostic.html" . }}
+  <h1>{{ .Title }}</h1>
+  <ul>{{ range .Pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
 {{ end }}
