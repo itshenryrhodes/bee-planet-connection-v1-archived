@@ -1,5 +1,8 @@
-﻿{{ define "main" }}
+﻿{{/* bpc: per-section template */}}
+{{ define "h" }}
+  <!-- bpc-marker: section-hero wired -->
   {{ partial "section-hero.html" . }}
+
   <section class="container" style="display:flex;flex-direction:column;gap:1rem;">
     {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
     <ul class="{{ .Section }}-list">
