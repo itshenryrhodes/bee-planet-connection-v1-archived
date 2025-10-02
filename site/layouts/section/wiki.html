@@ -1,12 +1,8 @@
-﻿{{/* layouts/section/wiki.html
-     Wiki section list with compact hero (image top-right, copy left).
-     Reversible: delete this file to undo.
-*/}}
-{{ define "main" }}
+﻿{{ define "main" }}
   {{ partial "section-hero.html" . }}
-  <section class="container">
+  <section class="container" style="display:flex;flex-direction:column;gap:1rem;">
     {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
-    <ul class="wiki-list">
+    <ul class="{{ .Section }}-list">
       {{ range .Pages.ByTitle }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
