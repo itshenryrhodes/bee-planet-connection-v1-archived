@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="64" viewBox="0 0 256 64" role="img" aria-label="Bee Planet Connection">
+  <defs>
+    <linearGradient id="honey" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f3b400"/>
+      <stop offset="1" stop-color="#f7ce4a"/>
+    </linearGradient>
+  </defs>
+  <!-- simple hexagon + wordmark -->
+  <g fill="none" stroke="#0b3d91" stroke-width="2">
+    <polygon points="28,8 48,19 48,41 28,52 8,41 8,19" fill="url(#honey)"/>
+    <circle cx="28" cy="30" r="6" fill="#0b3d91" stroke="none"/>
+  </g>
+  <text x="64" y="40" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="24" fill="#0b3d91">Bee Planet Connection</text>
+</svg>

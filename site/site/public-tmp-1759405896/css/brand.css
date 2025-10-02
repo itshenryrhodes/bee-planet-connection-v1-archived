@@ -1,0 +1,27 @@
+/* Bee Planet: header brand logo sizing */
+.header .brand img{
+  height:84px;
+  width:auto;
+  display:block;
+}
+@media (max-width:600px){
+  .header .brand img{ height:64px; }
+}
+.brand img{height:36px; width:auto; display:block}
+
+/* === Home hero & featured === */
+.home-hero{background:var(--card);border-bottom:1px solid #ececec}
+.home-hero .container{padding:42px 0}
+.home-hero h1{margin:0 0 6px 0;font-size:2rem}
+.home-hero .lead{color:var(--muted);max-width:60ch}
+.cta-row{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;box-shadow:var(--shadow);background:var(--brand);color:#fff}
+.btn.ghost{background:transparent;border:1px solid var(--brand);color:var(--brand);box-shadow:none}
+.featured .container{padding:28px 0}
+.featured-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media (min-width:820px){.featured-grid{grid-template-columns:1fr 1fr}}
+.card{background:#fff;border:1px solid #ececec;border-radius:var(--radius);padding:18px}
+.card h2{margin:0 0 8px 0;font-size:1.1rem;color:var(--muted)}
+.card h3{margin:.2rem 0 .3rem 0}
+.muted{color:var(--muted)}
+.link{color:var(--brand);font-weight:600}

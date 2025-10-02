@@ -1,0 +1,5 @@
+﻿{{ define "main" }}
+  <!-- bpc-marker: _default/home.html -->
+  {{ partial "bpc-diagnostic.html" . }}
+  <h1>{{ .Title }}</h1>
+{{ end }}

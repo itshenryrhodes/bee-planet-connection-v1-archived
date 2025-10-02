@@ -1,0 +1,14 @@
+﻿{{ define "main" }}
+  <!-- bpc-marker: list.html -->
+  {{ partial "bpc-diagnostic.html" . }}
+  {{ if .IsHome }}
+    <!-- bpc-marker: list-home -->
+  {{ else }}
+    <!-- bpc-marker: list-section kind={{ .Kind }} section={{ .Section }} -->
+  {{ end }}
+  {{ block "bpc_fallback" . }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
+    <ul>{{ range .Pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+  {{ end }}
+{{ end }}
