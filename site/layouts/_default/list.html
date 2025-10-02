@@ -1,31 +1,14 @@
-﻿{{/* layouts/_default/list.html
-   Guarded override: for these sections only, render our compact hero, then a simple list.
-   Sections: wiki, sops, alerts, tools, about, contact, blog
-*/}}
-{{ define "main" }}
-  {{ $targets := slice "wiki" "sops" "alerts" "tools" "about" "contact" "blog" }}
-  {{ if and (eq .Kind "section") (in $targets .Section) }}
-    {{ partial "section-hero.html" . }}
-    <section class="container" style="display:flex;flex-direction:column;gap:1rem;">
-      {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
-      <ul class="{{ .Section }}-list">
-        {{ range .Pages.ByTitle }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
-    </section>
+﻿{{ define "main" }}
+  <!-- bpc-marker: list.html -->
+  {{ partial "bpc-diagnostic.html" . }}
+  {{ if .IsHome }}
+    <!-- bpc-marker: list-home -->
   {{ else }}
-    {{/* Fallback: let theme/default list render if not a target section */}}
-    {{ block "list_fallback" . }}
-      <section class="container">
-        <h1>{{ .Title }}</h1>
-        {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
-        <ul>
-          {{ range .Pages }}
-            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-          {{ end }}
-        </ul>
-      </section>
-    {{ end }}
+    <!-- bpc-marker: list-section kind={{ .Kind }} section={{ .Section }} -->
+  {{ end }}
+  {{ block "bpc_fallback" . }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
+    <ul>{{ range .Pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
   {{ end }}
 {{ end }}
