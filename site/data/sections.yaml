@@ -1,0 +1,40 @@
+# data/sections.yaml — per-section hero + copy
+home:
+  title: "Bee Planet Connection"
+  blurb: "Practical knowledge, tools, and alerts to keep bees healthy and communities informed."
+  hero: "wiki"        # reuse Wiki's hero image on Home for now
+
+wiki:
+  title: "Wiki"
+  blurb: "Authoritative, plain-English articles on bee health, biology, and practice."
+  # hero defaults to "wiki" (omit or set explicitly)
+
+sops:
+  title: "SOPs & Templates"
+  blurb: "Downloadable checklists and standard operating procedures you can trust."
+  # hero: "sops"
+
+alerts:
+  title: "Alerts"
+  blurb: "Time-sensitive guidance on pests, disease, forage, and seasonal risks."
+  # hero: "alerts"
+
+tools:
+  title: "Tools"
+  blurb: "Calculators, checkers, and handy utilities for day-to-day beekeeping."
+  # hero: "tools"
+
+about:
+  title: "About"
+  blurb: "Why we exist, how we work, and what we stand for."
+  # hero: "about"
+
+contact:
+  title: "Contact"
+  blurb: "Questions, suggestions, partnerships — we'd love to hear from you."
+  # hero: "contact"
+
+blog:
+  title: "Blog"
+  blurb: "Essays, updates, and commentary from the Bee Planet team."
+  # hero: "blog"
