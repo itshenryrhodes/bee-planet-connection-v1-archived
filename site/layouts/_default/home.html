@@ -1,0 +1,33 @@
+﻿{{ define "main" }}
+  {{ partial "section-hero.html" . }}
+
+  <section class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,3vw,2rem);align-items:start;">
+    {{/* Featured Wiki: latest */}}
+    {{ $wiki := site.GetPage "section" "wiki" }}
+    {{ $fw := cond (and $wiki (gt (len $wiki.Pages) 0)) ($wiki.Pages.ByDate.Reverse | first 1) (slice) }}
+    <article>
+      <h2 style="margin:.25rem 0;">Featured Wiki</h2>
+      {{ with index $fw 0 }}
+        <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+        {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+      {{ else }}<p>No wiki articles yet.</p>{{ end }}
+    </article>
+
+    {{/* Featured Blog: prefer slug the-bee-line else latest */}}
+    {{ $blog := site.GetPage "section" "blog" }}
+    {{ $bee := cond $blog ($blog.Pages | where "File.BaseFileName" "eq" "the-bee-line" | first) nil }}
+    <article>
+      <h2 style="margin:.25rem 0;">Featured Blog</h2>
+      {{ with $bee }}
+        <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+        {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+      {{ else }}
+        {{ $latest := cond (and $blog (gt (len $blog.Pages) 0)) ($blog.Pages.ByDate.Reverse | first 1 | first) nil }}
+        {{ with $latest }}
+          <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+          {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+        {{ else }}<p>No blog posts yet.</p>{{ end }}
+      {{ end }}
+    </article>
+  </section>
+{{ end }}
