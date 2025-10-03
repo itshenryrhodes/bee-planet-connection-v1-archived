@@ -1,21 +1,43 @@
-﻿{{/* site/layouts/partials/fonts.html */}}
-{{- $fraunces := resources.Get "fonts/fraunces-var.woff2" -}}
-{{- $inter    := resources.Get "fonts/inter-var.woff2" -}}
+﻿{{/* site/layouts/partials/fonts.html
+     - Put font files in: site/assets/fonts/
+     - In production, URLs are fingerprinted for long-term caching.
+*/}}
 
-{{/* Preload critical faces; fingerprint in production for cache-busting */}}
-{{- $list := slice $fraunces $inter -}}
-{{- range $f := $list -}}
-  {{- $fp := cond hugo.IsProduction ($f | fingerprint) $f -}}
-  <link rel="preload" as="font" href="{{ $fp.RelPermalink }}" type="font/woff2" crossorigin>
+{{ $have := dict }}
+
+{{ $inter := resources.Get "fonts/Inter-Variable.woff2" }}
+{{ if $inter }}{{ $have = merge $have (dict "inter" (cond hugo.IsProduction ($inter | fingerprint) $inter)) }}{{ end }}
+
+{{ $serif := resources.Get "fonts/SourceSerif4-Variable.woff2" }}
+{{ if $serif }}{{ $have = merge $have (dict "serif" (cond hugo.IsProduction ($serif | fingerprint) $serif)) }}{{ end }}
+
+{{/* 1) Preload when present */}}
+{{ with $have.inter }}
+<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
+{{ end }}
+{{ with $have.serif }}
+<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
+{{ end }}
+
+{{/* 2) Inline @font-face with the exact same URLs */}}
+<style>
+{{- with $have.inter -}}
+@font-face{
+  font-family:"Inter";
+  src:url("{{ .RelPermalink }}") format("woff2");
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
+}
 {{- end -}}
 
-<style>
-  @font-face{
-    font-family:"Fraunces"; src: url('{{ (cond hugo.IsProduction ($fraunces|fingerprint) $fraunces).RelPermalink }}') format("woff2");
-    font-display:swap; font-weight:1 999; font-style:normal;
-  }
-  @font-face{
-    font-family:"Inter"; src: url('{{ (cond hugo.IsProduction ($inter|fingerprint) $inter).RelPermalink }}') format("woff2");
-    font-display:swap; font-weight:100 900; font-style:normal;
-  }
+{{- with $have.serif -}}
+@font-face{
+  font-family:"Source Serif 4";
+  src:url("{{ .RelPermalink }}") format("woff2");
+  font-weight:200 900;
+  font-style:normal;
+  font-display:swap;
+}
+{{- end -}}
 </style>
