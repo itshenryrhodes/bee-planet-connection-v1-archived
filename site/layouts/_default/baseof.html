@@ -12,6 +12,7 @@
 
   {{/* Optional per-page head injections */}}
   {{ block "head_extra" . }}{{ end }}
+{{ partial "styles.html" . }}
 </head>
 <body class="site {{ .Type }} {{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }}">
   {{/* Optional header partial if present */}}
@@ -32,4 +33,5 @@
   {{ block "scripts" . }}{{ end }}
 </body>
 </html>
+
 

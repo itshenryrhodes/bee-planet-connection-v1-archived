@@ -1,0 +1,9 @@
+﻿{{- /* site/layouts/partials/styles.html */ -}}
+{{- /* Pipe plain CSS; if you switch to SCSS, change to toCSS. */ -}}
+{{- $hero := resources.Get "css/hero.css" -}}
+{{- if hugo.IsProduction -}}
+  {{- $hero = $hero | minify | fingerprint -}}
+{{- end -}}
+<link rel="stylesheet"
+      href="{{ $hero.RelPermalink }}"
+      {{- if hugo.IsProduction }} integrity="{{ $hero.Data.Integrity }}" crossorigin="anonymous"{{ end -}}>
