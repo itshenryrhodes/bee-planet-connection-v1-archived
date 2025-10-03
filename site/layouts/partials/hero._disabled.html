@@ -1,24 +1,8 @@
 ﻿{{/* site/layouts/partials/hero.html */}}
 {{ $section := .Section }}
-{{ if eq $section "" }}
-  {{ $section = .Kind }}
-{{ end }}
-{{ if eq $section "page" }}
-  {{ $section = .Type }}
-{{ end }}
-
-{{/* Map "standard" sections to their hero keys */}}
-{{ $map := dict
-  "home" "home"
-  "wiki" "wiki"
-  "sops" "sops"
-  "alerts" "alerts"
-  "tools" "tools"
-  "about" "about"
-  "contact" "contact"
-  "blog" "blog"
-}}
-
+{{ if eq $section "" }}{{ $section = .Kind }}{{ end }}
+{{ if eq $section "page" }}{{ $section = .Type }}{{ end }}
+{{ $map := dict "home" "home" "wiki" "wiki" "sops" "sops" "alerts" "alerts" "tools" "tools" "about" "about" "contact" "contact" "blog" "blog" }}
 {{ $key := index $map $section }}
 {{ if $key }}
 <section class="page-hero">
@@ -27,16 +11,11 @@
     <source srcset="/img/hero/{{ $key }}-sm.webp" media="(max-width: 768px)" type="image/webp">
     <source srcset="/img/hero/{{ $key }}-md.webp" media="(max-width: 1024px)" type="image/webp">
     <source srcset="/img/hero/{{ $key }}-lg.webp" media="(min-width: 1025px)" type="image/webp">
-
     <source srcset="/img/hero/{{ $key }}-mobile.jpg" media="(max-width: 480px)" type="image/jpeg">
     <source srcset="/img/hero/{{ $key }}-sm.jpg" media="(max-width: 768px)" type="image/jpeg">
     <source srcset="/img/hero/{{ $key }}-md.jpg" media="(max-width: 1024px)" type="image/jpeg">
     <source srcset="/img/hero/{{ $key }}-lg.jpg" media="(min-width: 1025px)" type="image/jpeg">
-
-    <img src="/img/hero/{{ $key }}-lg.jpg"
-         alt="{{ $section | title }} hero image"
-         loading="lazy"
-         width="1200" height="800">
+    <img src="/img/hero/{{ $key }}-lg.jpg" alt="{{ $section | title }} hero image" loading="lazy" width="1200" height="800">
   </picture>
 </section>
 {{ end }}
