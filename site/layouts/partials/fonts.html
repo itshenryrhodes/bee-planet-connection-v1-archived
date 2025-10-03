@@ -1,17 +1,22 @@
 ﻿{{/* site/layouts/partials/fonts.html
-     - Put font files in: site/assets/fonts/
-     - In production, URLs are fingerprinted for long-term caching.
+     Looks up any Inter/Source Serif 4 WOFF2 in site/assets/fonts (filename-agnostic).
 */}}
 
 {{ $have := dict }}
 
-{{ $inter := resources.Get "fonts/Inter-Variable.woff2" }}
-{{ if $inter }}{{ $have = merge $have (dict "inter" (cond hugo.IsProduction ($inter | fingerprint) $inter)) }}{{ end }}
+{{/* Find a matching Inter woff2 by pattern (first match wins). */}}
+{{ with resources.GetMatch "fonts/*Inter*.woff2" }}
+  {{ $f := cond hugo.IsProduction (. | fingerprint) . }}
+  {{ $have = merge $have (dict "inter" $f) }}
+{{ end }}
 
-{{ $serif := resources.Get "fonts/SourceSerif4-Variable.woff2" }}
-{{ if $serif }}{{ $have = merge $have (dict "serif" (cond hugo.IsProduction ($serif | fingerprint) $serif)) }}{{ end }}
+{{/* Find a matching Source Serif 4 woff2. */}}
+{{ with resources.GetMatch "fonts/*Source*Serif*4*.woff2" }}
+  {{ $f := cond hugo.IsProduction (. | fingerprint) . }}
+  {{ $have = merge $have (dict "serif" $f) }}
+{{ end }}
 
-{{/* 1) Preload when present */}}
+{{/* 1) Preload any that were found */}}
 {{ with $have.inter }}
 <link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
 {{ end }}
@@ -19,7 +24,7 @@
 <link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
 {{ end }}
 
-{{/* 2) Inline @font-face with the exact same URLs */}}
+{{/* 2) Inline @font-face with exact URLs we’ll serve */}}
 <style>
 {{- with $have.inter -}}
 @font-face{
