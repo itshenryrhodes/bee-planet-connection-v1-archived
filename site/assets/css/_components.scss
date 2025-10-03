@@ -10,3 +10,8 @@
 .alert--warning{background:color-mix(in oklab, var(--bpc-warning) 12%, white);}
 .alert--danger{ background:color-mix(in oklab, var(--bpc-danger) 12%, white);}
 .alert--info{   background:color-mix(in oklab, var(--bpc-info) 12%,   white);}
+/* Header brand + logo */
+.site-header{background:var(--bpc-card)}
+.brand{display:flex;align-items:center;gap:.5rem;text-decoration:none}
+.brand-logo{inline-size:32px;block-size:32px;display:inline-block}
+.brand-text{font-family:var(--bpc-font-head);font-weight:700}
