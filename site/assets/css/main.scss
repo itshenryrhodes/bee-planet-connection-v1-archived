@@ -1,3 +1,8 @@
 ﻿@import "tokens";
 
 /* Add small component rules here or split them later if needed. */
+/* --- brand (site header) --- */
+.brand { display:flex; align-items:center; gap:.5rem; text-decoration:none; }
+.brand-logo { width:48px; height:48px; object-fit:contain; inline-size:auto; block-size:auto; }
+@media (max-width: 960px){ .brand-logo{ width:40px; height:40px; } }
+@media (max-width: 480px){ .brand-logo{ width:32px; height:32px; } }
