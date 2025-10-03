@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="{{ or .Site.Language.Lang "en" }}" dir="{{ or .Site.Language.LanguageDirection "ltr" }}">
-<head>
+<head>`n  {{ partial "fonts.html" . }}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -33,5 +33,6 @@
   {{ block "scripts" . }}{{ end }}
 </body>
 </html>
+
 
 

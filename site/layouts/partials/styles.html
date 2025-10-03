@@ -1,9 +1,12 @@
-﻿{{- /* site/layouts/partials/styles.html */ -}}
-{{- /* Pipe plain CSS; if you switch to SCSS, change to toCSS. */ -}}
-{{- $hero := resources.Get "css/hero.css" -}}
+﻿{{/* site/layouts/partials/styles.html */}}
+{{- $tokens     := (resources.Get "css/_tokens.scss"     | toCSS) -}}
+{{- $base       := (resources.Get "css/_base.scss"       | toCSS) -}}
+{{- $components := (resources.Get "css/_components.scss" | toCSS) -}}
+{{- $hero       := (resources.Get "css/hero.css") -}}
+{{- $bundle     := (slice $tokens $base $hero $components | resources.Concat "css/main.css") -}}
 {{- if hugo.IsProduction -}}
-  {{- $hero = $hero | minify | fingerprint -}}
+  {{- $bundle = $bundle | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous">
+{{- else -}}
+  <link rel="stylesheet" href="{{ $bundle.RelPermalink }}">
 {{- end -}}
-<link rel="stylesheet"
-      href="{{ $hero.RelPermalink }}"
-      {{- if hugo.IsProduction }} integrity="{{ $hero.Data.Integrity }}" crossorigin="anonymous"{{ end -}}>

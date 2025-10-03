@@ -1,0 +1,37 @@
+﻿/* Basic reset-ish */
+*{box-sizing:border-box}
+html{font-size:16px}
+body{
+  margin:0;
+  color:var(--bpc-ink);
+  background:var(--bpc-card);
+  font-family:var(--bpc-font-body);
+  line-height:1.6;
+}
+img,picture,svg,video{max-width:100%;display:block}
+a{color:var(--bpc-brand);text-decoration:none}
+a:hover,a:focus{text-decoration:underline}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--bpc-font-head);
+  line-height:1.2;
+  margin:0 0 .5rem;
+}
+
+/* Utility containers (match your existing .container) */
+.container{width:min(1100px, 92vw); margin-inline:auto}
+
+/* Buttons (primary example) */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:44px; padding:.6rem 1rem; gap:.5rem;
+  border-radius:var(--bpc-radius);
+  background:var(--bpc-honey); color:#1B1B1B; border:none; cursor:pointer;
+}
+.btn:focus{outline:3px solid var(--bpc-brand); outline-offset:2px}
+
+/* Hero block tweaks */
+.page-hero{ margin: 0 0 1.5rem 0; }
+.page-hero picture, .page-hero img{ display:block; width:100%; height:auto; border-radius:.5rem; }
+.section-hero .media img{ object-position:top right }

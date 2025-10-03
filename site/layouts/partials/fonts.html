@@ -1,0 +1,21 @@
+﻿{{/* site/layouts/partials/fonts.html */}}
+{{- $fraunces := resources.Get "fonts/fraunces-var.woff2" -}}
+{{- $inter    := resources.Get "fonts/inter-var.woff2" -}}
+
+{{/* Preload critical faces; fingerprint in production for cache-busting */}}
+{{- $list := slice $fraunces $inter -}}
+{{- range $f := $list -}}
+  {{- $fp := cond hugo.IsProduction ($f | fingerprint) $f -}}
+  <link rel="preload" as="font" href="{{ $fp.RelPermalink }}" type="font/woff2" crossorigin>
+{{- end -}}
+
+<style>
+  @font-face{
+    font-family:"Fraunces"; src: url('{{ (cond hugo.IsProduction ($fraunces|fingerprint) $fraunces).RelPermalink }}') format("woff2");
+    font-display:swap; font-weight:1 999; font-style:normal;
+  }
+  @font-face{
+    font-family:"Inter"; src: url('{{ (cond hugo.IsProduction ($inter|fingerprint) $inter).RelPermalink }}') format("woff2");
+    font-display:swap; font-weight:100 900; font-style:normal;
+  }
+</style>
