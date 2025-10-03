@@ -1,0 +1,29 @@
+name: Move Logos to img/icons
+
+on:
+  workflow_dispatch:   # run manually from Actions tab
+
+jobs:
+  move-logos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create img/icons folder if missing
+        run: mkdir -p img/icons
+
+      - name: Move root logo PNGs into img/icons/
+        run: |
+          shopt -s nullglob
+          for f in logo-*.png; do
+            mv "$f" img/icons/
+          done
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/icons/ || true
+          git rm -f logo-*.png || true
+          git commit -m "Move logo PNGs into img/icons/" || echo "No changes to commit"
+          git push

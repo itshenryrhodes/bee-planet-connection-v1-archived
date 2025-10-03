@@ -1,0 +1,17 @@
+﻿:root{
+  /* Brand + UI */
+  --bpc-brand:#2E7D32; --bpc-honey:#F6B800; --bpc-accent:#3E9E49;
+  --bpc-ink:#1E293B; --bpc-slate:#475569; --bpc-paper:#FFFBF2; --bpc-card:#FFFFFF; --bpc-stroke:#E2E8F0;
+  --bpc-success:#2F9E44; --bpc-warning:#F59F00; --bpc-danger:#D64545; --bpc-info:#0CA6E9;
+
+  /* Shape + Elevation */
+  --bpc-radius:16px;
+  --bpc-shadow-1:0 8px 24px rgba(0,0,0,.08);
+
+  /* Typography stacks (Fraunces + Inter as per spec)  :contentReference[oaicite:3]{index=3} */
+  --bpc-font-head:"Fraunces", Georgia, "Times New Roman", serif;
+  --bpc-font-body:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-reduced-motion: reduce){
+  *{transition-duration:0s!important;animation-duration:0s!important}
+}

@@ -1,0 +1,12 @@
+﻿{{/* site/layouts/partials/styles.html (CSS-only) */}}
+{{- $tokens     := resources.Get "css/tokens.css" -}}
+{{- $base       := resources.Get "css/base.css" -}}
+{{- $components := resources.Get "css/components.css" -}}
+{{- $hero       := resources.Get "css/hero.css" -}}
+{{- $bundle     := (slice $tokens $base $hero $components | resources.Concat "css/main.css") -}}
+{{- if hugo.IsProduction -}}
+  {{- $bundle = $bundle | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous">
+{{- else -}}
+  <link rel="stylesheet" href="{{ $bundle.RelPermalink }}">
+{{- end -}}

@@ -17,3 +17,11 @@ site/public_check_*
 
 # Build output
 /docs/
+
+# Hugo outputs
+site/resources/
+
+
+# Hugo cache/output
+site/resources/_gen/
+

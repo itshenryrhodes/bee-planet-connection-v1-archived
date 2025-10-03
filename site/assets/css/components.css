@@ -1,0 +1,17 @@
+﻿.card{
+  background:var(--bpc-card);
+  border:1px solid var(--bpc-stroke);
+  border-radius:var(--bpc-radius);
+  box-shadow:var(--bpc-shadow-1);
+  padding:1rem;
+}
+.alert{padding:.75rem 1rem;border-radius:12px;margin:.75rem 0}
+.alert--success{background:color-mix(in oklab, var(--bpc-success) 12%, white);}
+.alert--warning{background:color-mix(in oklab, var(--bpc-warning) 12%, white);}
+.alert--danger{ background:color-mix(in oklab, var(--bpc-danger) 12%, white);}
+.alert--info{   background:color-mix(in oklab, var(--bpc-info) 12%,   white);}
+/* Header brand + logo */
+.site-header{background:var(--bpc-card)}
+.brand{display:flex;align-items:center;gap:.5rem;text-decoration:none}
+.brand-logo{inline-size:32px;block-size:32px;display:inline-block}
+.brand-text{font-family:var(--bpc-font-head);font-weight:700}

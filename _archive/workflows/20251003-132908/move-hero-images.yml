@@ -1,0 +1,71 @@
+name: Move hero images to /img/hero
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Ensure target folder exists
+        run: mkdir -p img/hero
+
+      - name: Move hero images (collision-safe)
+        shell: bash
+        run: |
+          set -e
+          shopt -s nullglob
+
+          # Find candidates in repo root or /img, but not already in /img/hero
+          candidates=( hero-*-*.jpg hero-*-*.webp img/hero-*-*.jpg img/hero-*-*.webp img/hero-*.jpg img/hero-*.webp )
+          moved_any=0
+
+          for f in "${candidates[@]}"; do
+            [[ "$f" == img/hero/* ]] && continue
+            base="$(basename "$f")"
+            target="img/hero/$base"
+
+            if [[ -e "$target" ]]; then
+              # If content is identical, just remove the source
+              if cmp -s "$f" "$target"; then
+                echo "Duplicate (identical) found: $base — removing source."
+                git rm -f "$f" 2>/dev/null || rm -f "$f"
+              else
+                # Create a non-conflicting name
+                stem="${base%.*}"
+                ext="${base##*.}"
+                n=2
+                while [[ -e "img/hero/${stem}-${n}.${ext}" ]]; do n=$((n+1)); done
+                new="img/hero/${stem}-${n}.${ext}"
+                echo "Conflict: $base — moving as $(basename "$new")"
+                git mv "$f" "$new" 2>/dev/null || mv "$f" "$new"
+              fi
+            else
+              echo "Moving $f -> $target"
+              git mv "$f" "$target" 2>/dev/null || mv "$f" "$target"
+            fi
+            moved_any=1
+          done
+
+          if [[ $moved_any -eq 0 ]]; then
+            echo "No hero files found to move. (Nothing to do.)"
+          fi
+
+      - name: Commit & push (if changed)
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add -A
+            git commit -m "Normalize hero images under img/hero (collision-safe)"
+            git push
+          else
+            echo "Nothing to commit."
+          fi
