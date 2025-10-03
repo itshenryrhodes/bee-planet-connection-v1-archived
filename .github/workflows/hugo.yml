@@ -1,0 +1,83 @@
+name: Build and deploy (Hugo → GitHub Pages)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.150.1
+      TZ: Europe/London
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install Hugo (extended)
+        run: |
+          curl -sLJO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          mkdir -p "$HOME/.local/hugo"
+          tar -C "$HOME/.local/hugo" -xf "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          echo "$HOME/.local/hugo" >> "$GITHUB_PATH"
+          hugo version
+
+      - name: Build site (from ./site to ./site/public)
+        working-directory: site
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --cacheDir "${{ runner.temp }}/hugo_cache"
+
+      # --- Guard rails on built output ---
+      - name: Verify CSS present and non-trivial
+        run: |
+          test -s site/public/css/brand.css || (echo "brand.css missing"; exit 1)
+          BYTES=$(wc -c < site/public/css/brand.css || echo 0)
+          [ "$BYTES" -ge 1000 ] || (echo "brand.css too small ($BYTES bytes)"; exit 1)
+
+      - name: Verify homepage contains expected classes
+        run: |
+          grep -q 'home-hero' site/public/index.html || (echo "home-hero class missing on homepage"; exit 1)
+          grep -q 'featured-grid' site/public/index.html || (echo "featured-grid class missing on homepage"; exit 1)
+
+      - name: Verify no template syntax leaked to output
+        run: |
+          if grep -R -E "{%|{{[^}]}" site/public >/dev/null; then
+            echo "Template syntax detected in built output (Liquid/Handlebars)"; exit 1
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
