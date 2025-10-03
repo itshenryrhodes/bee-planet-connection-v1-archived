@@ -6,3 +6,55 @@
 .brand-logo { width:48px; height:48px; object-fit:contain; inline-size:auto; block-size:auto; }
 @media (max-width: 960px){ .brand-logo{ width:40px; height:40px; } }
 @media (max-width: 480px){ .brand-logo{ width:32px; height:32px; } }
+
+/* --- brand helpers --- */
+.brand-accent{ color: var(--bpc-forest-700) !important; }
+.brand-bg{ background-color: var(--bpc-forest-700) !important; color:#fff !important; }
+a.brand, .brand{ text-decoration:none; color: inherit; }
+
+/* --- brand text accents --- */
+:root{ --bpc-accent: var(--bpc-forest-700); }
+
+a, a:visited { color: var(--bpc-accent); }
+a:hover, a:focus { color: var(--bpc-forest-800); }
+
+h1, h2, h3 { color: var(--bpc-forest-700); }
+.brand-accent { color: var(--bpc-forest-700) !important; }
+
+/* --- brand buttons & callouts --- */
+.button, .btn, a.button, button,
+input[type=submit], input[type=button]{
+  background: var(--bpc-forest-700);
+  color: #fff;
+  border: 0;
+  border-radius: .5rem;
+  padding: .65rem 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  display: inline-flex; align-items:center; gap:.5rem;
+}
+.button:hover, .btn:hover,
+a.button:hover, button:hover,
+input[type=submit]:hover, input[type=button]:hover{
+  background: var(--bpc-forest-800);
+}
+.button:focus, .btn:focus,
+a.button:focus, button:focus,
+input[type=submit]:focus, input[type=button]:focus{
+  outline: 3px solid #0000; /* reset */
+  box-shadow: 0 0 0 3px rgba(24,80,56,.35);
+}
+
+/* Callouts */
+.callout{
+  border-left: .4rem solid var(--bpc-forest-700);
+  background: #f7faf9;
+  padding: .9rem 1rem;
+  border-radius: .5rem;
+  margin: 1rem 0;
+}
+.callout h3, .callout h4 { margin: 0 0 .25rem; color: var(--bpc-forest-700); }
+.callout--info    { border-color: var(--bpc-forest-700); }
+.callout--success { border-color: #2e7d32; }
+.callout--warn    { border-color: #b26a00; }

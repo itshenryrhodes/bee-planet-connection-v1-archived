@@ -1,9 +1,9 @@
----
+﻿---
 permalink: /sw.js
 layout: null
 ---
 
-/* Bee Planet Connection Service Worker — auto-versioned */
+/* Bee Planet Connection Service Worker â€” auto-versioned */
 const BUILD_TS = '{{ site.time | date: "%Y%m%d%H%M%S" }}';
 const CACHE_NAME = `bpc-${BUILD_TS}`;
 
@@ -114,3 +114,4 @@ self.addEventListener('fetch', (event) => {
 self.addEventListener('message', (event) => {
   if (event && event.data === 'SKIP_WAITING') self.skipWaiting();
 });
+
