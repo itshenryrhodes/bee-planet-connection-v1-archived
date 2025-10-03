@@ -1,48 +1,52 @@
 ﻿{{/* site/layouts/partials/fonts.html
-     Looks up any Inter/Source Serif 4 WOFF2 in site/assets/fonts (filename-agnostic).
+     1) Try local .woff2 in /assets/fonts via GetMatch (Inter / Source Serif 4)
+     2) If not found, fall back to Google Fonts CSS (variable families)
 */}}
 
 {{ $have := dict }}
 
-{{/* Find a matching Inter woff2 by pattern (first match wins). */}}
 {{ with resources.GetMatch "fonts/*Inter*.woff2" }}
   {{ $f := cond hugo.IsProduction (. | fingerprint) . }}
   {{ $have = merge $have (dict "inter" $f) }}
 {{ end }}
 
-{{/* Find a matching Source Serif 4 woff2. */}}
 {{ with resources.GetMatch "fonts/*Source*Serif*4*.woff2" }}
   {{ $f := cond hugo.IsProduction (. | fingerprint) . }}
   {{ $have = merge $have (dict "serif" $f) }}
 {{ end }}
 
-{{/* 1) Preload any that were found */}}
-{{ with $have.inter }}
-<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
-{{ end }}
-{{ with $have.serif }}
-<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
-{{ end }}
+{{ if or $have.inter $have.serif }}
+  {{/* Local path(s) found — preload + @font-face */}}
+  {{ with $have.inter }}
+  <link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
+  {{ end }}
+  {{ with $have.serif }}
+  <link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
+  {{ end }}
 
-{{/* 2) Inline @font-face with exact URLs we’ll serve */}}
-<style>
-{{- with $have.inter -}}
-@font-face{
-  font-family:"Inter";
-  src:url("{{ .RelPermalink }}") format("woff2");
-  font-weight:100 900;
-  font-style:normal;
-  font-display:swap;
-}
-{{- end -}}
-
-{{- with $have.serif -}}
-@font-face{
-  font-family:"Source Serif 4";
-  src:url("{{ .RelPermalink }}") format("woff2");
-  font-weight:200 900;
-  font-style:normal;
-  font-display:swap;
-}
-{{- end -}}
-</style>
+  <style>
+  {{- with $have.inter -}}
+  @font-face{
+    font-family:"Inter";
+    src:url("{{ .RelPermalink }}") format("woff2");
+    font-weight:100 900;
+    font-style:normal;
+    font-display:swap;
+  }
+  {{- end -}}
+  {{- with $have.serif -}}
+  @font-face{
+    font-family:"Source Serif 4";
+    src:url("{{ .RelPermalink }}") format("woff2");
+    font-weight:200 900;
+    font-style:normal;
+    font-display:swap;
+  }
+  {{- end -}}
+  </style>
+{{ else }}
+  {{/* No local files — use Google Fonts CDN */}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap" rel="stylesheet">
+{{ end }}
