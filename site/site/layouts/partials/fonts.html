@@ -1,0 +1,48 @@
+﻿{{/* site/layouts/partials/fonts.html
+     Looks up any Inter/Source Serif 4 WOFF2 in site/assets/fonts (filename-agnostic).
+*/}}
+
+{{ $have := dict }}
+
+{{/* Find a matching Inter woff2 by pattern (first match wins). */}}
+{{ with resources.GetMatch "fonts/*Inter*.woff2" }}
+  {{ $f := cond hugo.IsProduction (. | fingerprint) . }}
+  {{ $have = merge $have (dict "inter" $f) }}
+{{ end }}
+
+{{/* Find a matching Source Serif 4 woff2. */}}
+{{ with resources.GetMatch "fonts/*Source*Serif*4*.woff2" }}
+  {{ $f := cond hugo.IsProduction (. | fingerprint) . }}
+  {{ $have = merge $have (dict "serif" $f) }}
+{{ end }}
+
+{{/* 1) Preload any that were found */}}
+{{ with $have.inter }}
+<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
+{{ end }}
+{{ with $have.serif }}
+<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
+{{ end }}
+
+{{/* 2) Inline @font-face with exact URLs we’ll serve */}}
+<style>
+{{- with $have.inter -}}
+@font-face{
+  font-family:"Inter";
+  src:url("{{ .RelPermalink }}") format("woff2");
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
+}
+{{- end -}}
+
+{{- with $have.serif -}}
+@font-face{
+  font-family:"Source Serif 4";
+  src:url("{{ .RelPermalink }}") format("woff2");
+  font-weight:200 900;
+  font-style:normal;
+  font-display:swap;
+}
+{{- end -}}
+</style>
