@@ -20,7 +20,9 @@
     {{ partial "header.html" . }}
   {{ end }}
 
-  <main id="content" role="main">{{ partial "hero.html" . }}
+  <main id="content" role="main">
+  {{ block "hero" . }}{{ partial "section-hero.html" . }}{{ end }}
+
     {{ block "main" . }}{{ end }}
   </main>
 
@@ -33,6 +35,9 @@
   {{ block "scripts" . }}{{ end }}
 </body>
 </html>
+
+
+
 
 
 
