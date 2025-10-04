@@ -102,3 +102,9 @@ th{ background:#fafafa; }
   background:linear-gradient(0deg, rgba(43,122,11,.04), rgba(43,122,11,.04));
   padding: .9rem 1rem; border-radius: 8px; margin: 1rem 0;
 }
+/* Site header with centered logo */
+.site-header{
+  display:block; width:100%; min-height:84px; margin:0 0 1.25rem 0;
+  background: no-repeat center/contain url("/img/icons/logo.svg");
+}
+@media (min-width: 768px){ .site-header{ min-height:100px; } }

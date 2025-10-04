@@ -1,4 +1,4 @@
-baseURL = "https://www.beeplanetconnection.org/"
+﻿baseURL = "https://www.beeplanetconnection.org/"
 languageCode = "en-gb"
 title = "Bee Planet Connection"
 
@@ -10,3 +10,12 @@ weight = 10
 [taxonomies]
   topic = "topics"
   audience = "audiences"
+[[menu.main]]
+name = "Topics"
+url  = "/topics/"
+weight = 15
+
+[[menu.main]]
+name = "Audiences"
+url  = "/audiences/"
+weight = 16
