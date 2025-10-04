@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Husbandry Overview"
 description: "Stub — outline for Husbandry. Replace with real content."
 date: "2025-10-04"

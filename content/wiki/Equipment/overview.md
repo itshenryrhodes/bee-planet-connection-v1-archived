@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Equipment Overview"
 description: "Stub — outline for Equipment. Replace with real content."
 date: "2025-10-04"

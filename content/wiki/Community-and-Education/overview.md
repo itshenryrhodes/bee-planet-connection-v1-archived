@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Community and Education Overview"
 description: "Stub — outline for Community and Education. Replace with real content."
 date: "2025-10-04"

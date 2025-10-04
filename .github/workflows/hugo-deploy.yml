@@ -1,4 +1,4 @@
-﻿name: Deploy Hugo via Pages artifact
+name: Deploy Hugo via Pages artifact
 
 on:
   push:

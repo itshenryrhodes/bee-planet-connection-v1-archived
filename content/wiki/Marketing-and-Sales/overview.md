@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Marketing and Sales Overview"
 description: "Stub — outline for Marketing and Sales. Replace with real content."
 date: "2025-10-04"

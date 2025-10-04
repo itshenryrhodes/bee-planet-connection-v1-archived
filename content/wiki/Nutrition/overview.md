@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Nutrition Overview"
 description: "Stub — outline for Nutrition. Replace with real content."
 date: "2025-10-04"

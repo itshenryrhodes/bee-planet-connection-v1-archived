@@ -1,4 +1,4 @@
-﻿{{/* Build and include CSS with cache-busting via Hugo Pipes */}}
+{{/* Build and include CSS with cache-busting via Hugo Pipes */}}
 {{ $css := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
 

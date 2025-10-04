@@ -1,4 +1,4 @@
-﻿name: Guard: No Generated HTML in Git
+name: Guard: No Generated HTML in Git
 
 on:
   pull_request:

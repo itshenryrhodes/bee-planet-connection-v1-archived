@@ -1,4 +1,4 @@
-﻿# Hero Archive
+# Hero Archive
 
 - Purpose: keep legacy hero-0X-* sources for future creative reuse.
 - Live site only serves section-based heroes from site/static/img/hero/.
