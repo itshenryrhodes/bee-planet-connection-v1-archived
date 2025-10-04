@@ -1,0 +1,104 @@
+﻿/* static/css/brand.css
+   Purpose:
+   - Provide design tokens and base styles without editing templates.
+   - Add a logo to every page using CSS only (no authored HTML).
+   - Offer component primitives (buttons, cards) for consistent styling of markdown-rendered content.
+*/
+
+/* ---------- Tokens ---------- */
+:root{
+  --bp-font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --bp-text: #1a1a1a;
+  --bp-bg:   #ffffff;
+  --bp-muted:#5c5c5c;
+  --bp-accent:#2b7a0b;         /* forest green */
+  --bp-accent-2:#f6c453;       /* honey */
+  --bp-surface:#f8faf8;
+  --bp-border:#e5e7eb;
+  --bp-radius:12px;
+  --bp-shadow:0 6px 20px rgba(0,0,0,.06);
+}
+
+/* ---------- Base ---------- */
+html{ box-sizing:border-box; font-size:16px; }
+*,*::before,*::after{ box-sizing:inherit; }
+body{
+  margin:0; color:var(--bp-text); background:var(--bp-bg);
+  font-family:var(--bp-font-sans); line-height:1.65;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+
+a{ color:var(--bp-accent); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+/* ---------- Typography helpers ---------- */
+.prose h1,.prose h2,.prose h3{ line-height:1.25; margin:1.25em 0 .5em; }
+.prose p{ margin:.75em 0; color:var(--bp-text); }
+.prose small{ color:var(--bp-muted); }
+
+/* ---------- Components ---------- */
+.btn{
+  display:inline-block; padding:.6rem 1rem; border-radius:calc(var(--bp-radius) - 4px);
+  border:1px solid var(--bp-accent); color:#fff; background:var(--bp-accent);
+  box-shadow:var(--bp-shadow); text-decoration:none; font-weight:600;
+}
+.btn:hover{ filter:brightness(1.05); text-decoration:none; }
+.btn.secondary{
+  color:var(--bp-accent); background:#fff; border-color:var(--bp-accent);
+}
+
+.card{
+  background:#fff; border:1px solid var(--bp-border); border-radius:var(--bp-radius);
+  box-shadow:var(--bp-shadow); padding:1.25rem; margin:1rem 0;
+}
+
+/* ---------- Page container (for wiki/article content) ---------- */
+.container{
+  max-width: 72rem; margin: 0 auto; padding: clamp(1rem, 2vw, 2rem);
+}
+.content .card{ margin: 1.25rem 0; }
+
+/* ---------- Logo on every page, without HTML changes ----------
+   Strategy A: if the theme exposes a header element, decorate it.
+*/
+header, .site-header, header[aria-label="Site header"]{
+  position: relative;
+  min-height: 56px;
+  display: flex; align-items: center;
+}
+header::after, .site-header::after, header[aria-label="Site header"]::after{
+  content: ""; position:absolute; left:16px; top:10px; width:126px; height:30px;
+  background: url("/img/logo.svg") no-repeat center/contain;
+  opacity: 1;
+}
+
+/* Strategy B (fallback): if no recognizable header exists, show a discrete fixed logo */
+body:not(:has(header)):not(:has(.site-header))::after{
+  content:""; position: fixed; left: 12px; top: 12px; width: 126px; height: 30px;
+  background: url("/img/logo.svg") no-repeat center/contain;
+  opacity: .95; z-index: 9999; pointer-events: none;
+}
+
+/* ---------- Wiki nav (optional hooks for your taxonomy pages) ---------- */
+.wiki-nav{
+  display:flex; flex-wrap:wrap; gap:.5rem; margin: 1rem 0 2rem;
+}
+.wiki-nav a{
+  padding:.4rem .7rem; border:1px solid var(--bp-border);
+  border-radius:999px; background:var(--bp-surface); text-decoration:none; color:var(--bp-text);
+}
+.wiki-nav a:hover{ border-color:var(--bp-accent); color:var(--bp-accent); }
+
+/* ---------- Tables (common in SOPs) ---------- */
+table{
+  width:100%; border-collapse:collapse; margin: 1rem 0; font-size:.95rem;
+}
+th, td{ border:1px solid var(--bp-border); padding:.6rem .7rem; text-align:left; }
+th{ background:#fafafa; }
+
+/* ---------- Callouts ---------- */
+.callout{
+  border-left:4px solid var(--bp-accent);
+  background:linear-gradient(0deg, rgba(43,122,11,.04), rgba(43,122,11,.04));
+  padding: .9rem 1rem; border-radius: 8px; margin: 1rem 0;
+}
