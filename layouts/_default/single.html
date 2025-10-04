@@ -1,0 +1,9 @@
+﻿{{ define "main" }}
+<main class="container content prose">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}<p class="lead">{{ . }}</p>{{ end }}
+  <article class="card">
+    {{ .Content }}
+  </article>
+</main>
+{{ end }}
