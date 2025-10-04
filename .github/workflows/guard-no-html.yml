@@ -1,8 +1,8 @@
 ﻿name: Guard: No Generated HTML in Git
 
 on:
-  push:
   pull_request:
+    branches: [ "main" ]
 
 jobs:
   no-generated-html:
@@ -37,3 +37,4 @@ jobs:
             exit 1
           fi
           echo "No generated HTML files were committed ✅"
+
