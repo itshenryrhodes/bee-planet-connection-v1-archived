@@ -7,3 +7,6 @@ name  = "Wiki"
 url   = "/wiki/"
 weight = 10
 
+[taxonomies]
+  topic = "topics"
+  audience = "audiences"

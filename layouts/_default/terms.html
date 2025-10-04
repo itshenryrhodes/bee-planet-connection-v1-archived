@@ -1,0 +1,12 @@
+﻿{{ define "main" }}
+<main class="container content prose">
+  <h1>{{ .Title }}</h1>
+  <div class="card">
+    <ul>
+      {{ range .Data.Terms.Alphabetical }}
+        <li><a href="{{ .Page.RelPermalink }}">{{ .LinkTitle }}</a> ({{ .Count }})</li>
+      {{ end }}
+    </ul>
+  </div>
+</main>
+{{ end }}
