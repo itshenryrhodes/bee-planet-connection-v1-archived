@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Pests and Diseases Overview"
 description: "Stub â€” outline for Pests and Diseases. Replace with real content."
 date: "2025-10-04"

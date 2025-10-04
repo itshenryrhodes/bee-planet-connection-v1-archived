@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /sw.js
 layout: null
 ---

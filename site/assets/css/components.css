@@ -1,4 +1,4 @@
-﻿.card{
+.card{
   background:var(--bpc-card);
   border:1px solid var(--bpc-stroke);
   border-radius:var(--bpc-radius);

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Operations and SOPs Overview"
 description: "Stub â€” outline for Operations and SOPs. Replace with real content."
 date: "2025-10-04"

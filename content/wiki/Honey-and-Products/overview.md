@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Honey and Products Overview"
 description: "Stub â€” outline for Honey and Products. Replace with real content."
 date: "2025-10-04"

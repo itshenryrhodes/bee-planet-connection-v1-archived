@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Forage and Environment Overview"
 description: "Stub â€” outline for Forage and Environment. Replace with real content."
 date: "2025-10-04"
