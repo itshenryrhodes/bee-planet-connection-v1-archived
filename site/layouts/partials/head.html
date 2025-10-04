@@ -1,8 +1,17 @@
-{{/* Build and include CSS with cache-busting via Hugo Pipes */}}
-{{ $css := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ if .Title }}{{ .Title }} – {{ end }}{{ .Site.Title }}</title>
 
-{{/* Preload a primary font example (replace path if you add fonts) */}}
-{{ with resources.Get "fonts/Inter-Variable.woff2" }}
-<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin>
-{{ end }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+
+{{ with .OutputFormats.Get "RSS" -}}
+  <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">
+{{- end }}
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+<link rel="icon" type="image/png" href="/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
