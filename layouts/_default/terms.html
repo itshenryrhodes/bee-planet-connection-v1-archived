@@ -4,7 +4,11 @@
   <div class="card">
     <ul>
       {{ range .Data.Terms.Alphabetical }}
-        <li><a href="{{ .Page.RelPermalink }}">{{ .LinkTitle }}</a> ({{ .Count }})</li>
+        {{ $p := .Page }}
+        <li>
+          <a href="{{ $p.RelPermalink }}">{{ with $p }}{{ .LinkTitle }}{{ else }}{{ .Term }}{{ end }}</a>
+          ({{ .Count }})
+        </li>
       {{ end }}
     </ul>
   </div>
