@@ -4,7 +4,11 @@
   <div class="card">
     <ul>
       {{ range .Pages.ByDate.Reverse }}
-        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ if .Draft }} <small>(draft)</small>{{ end }}</li>
+        <li>
+          <a href="{{ .RelPermalink }}">{{ or .LinkTitle .Title }}</a>{{ if .Draft }} <small>(draft)</small>{{ end }}
+        </li>
+      {{ else }}
+        <li>No content yet.</li>
       {{ end }}
     </ul>
   </div>
