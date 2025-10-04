@@ -1,42 +1,17 @@
-{{/* site/layouts/partials/hero.html */}}
-{{ $section := .Section }}
-{{ if eq $section "" }}
-  {{ $section = .Kind }}
-{{ end }}
-{{ if eq $section "page" }}
-  {{ $section = .Type }}
-{{ end }}
+{{/* Renders if a "hero" param exists in front matter; falls back to .Site.Params.homeHero on home */}}
+{{ $img := .Params.hero }}
+{{ if and (not $img) .IsHome }}{{ $img = .Site.Params.homeHero }}{{ end }}
 
-{{/* Map "standard" sections to their hero keys */}}
-{{ $map := dict
-  "home" "home"
-  "wiki" "wiki"
-  "sops" "sops"
-  "alerts" "alerts"
-  "tools" "tools"
-  "about" "about"
-  "contact" "contact"
-  "blog" "blog"
-}}
-
-{{ $key := index $map $section }}
-{{ if $key }}
-<section class="page-hero">
-  <picture>
-    <source srcset="/img/hero/{{ $key }}-mobile.webp" media="(max-width: 480px)" type="image/webp">
-    <source srcset="/img/hero/{{ $key }}-sm.webp" media="(max-width: 768px)" type="image/webp">
-    <source srcset="/img/hero/{{ $key }}-md.webp" media="(max-width: 1024px)" type="image/webp">
-    <source srcset="/img/hero/{{ $key }}-lg.webp" media="(min-width: 1025px)" type="image/webp">
-
-    <source srcset="/img/hero/{{ $key }}-mobile.jpg" media="(max-width: 480px)" type="image/jpeg">
-    <source srcset="/img/hero/{{ $key }}-sm.jpg" media="(max-width: 768px)" type="image/jpeg">
-    <source srcset="/img/hero/{{ $key }}-md.jpg" media="(max-width: 1024px)" type="image/jpeg">
-    <source srcset="/img/hero/{{ $key }}-lg.jpg" media="(min-width: 1025px)" type="image/jpeg">
-
-    <img src="/img/hero/{{ $key }}-lg.jpg"
-         alt="{{ $section | title }} hero image"
-         loading="lazy"
-         width="1200" height="800">
-  </picture>
+{{ if $img }}
+<section class="section-hero container">
+  <div class="copy">
+    <h1 style="margin:0;font-family:var(--bpc-font-head);font-size:clamp(1.75rem,3vw,2.25rem);line-height:1.2;">
+      {{ .Title }}
+    </h1>
+    {{ with .Params.description }}<p class="text-muted">{{ . }}</p>{{ end }}
+  </div>
+  <div class="media">
+    <img src="{{ $img }}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+  </div>
 </section>
 {{ end }}
