@@ -1,0 +1,8 @@
+﻿baseURL = "/"
+languageCode = "en-gb"
+title = "Bee Planet Connection"
+
+[[menu.main]]
+name  = "Wiki"
+url   = "/wiki/"
+weight = 10
