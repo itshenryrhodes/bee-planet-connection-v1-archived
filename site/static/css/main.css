@@ -1,0 +1,30 @@
+﻿/* === BPC brand marker v1 === */
+:root{
+  --bpc-forest-700:#185038;
+  --bpc-forest-800:#105038;
+}
+
+/* Links + headings */
+a, a:visited{ color: var(--bpc-forest-700); }
+a:hover, a:focus{ color: var(--bpc-forest-800); }
+h1, h2, h3{ color: var(--bpc-forest-700); }
+.brand-accent{ color: var(--bpc-forest-700) !important; }
+
+/* Buttons */
+.button,.btn,a.button,button,input[type=submit],input[type=button]{
+  background: var(--bpc-forest-700);
+  color:#fff; border:0; border-radius:.5rem;
+  padding:.65rem 1rem; font-weight:700; line-height:1.2;
+  text-decoration:none; display:inline-flex; align-items:center; gap:.5rem;
+}
+.button:hover,.btn:hover,a.button:hover,button:hover,
+input[type=submit]:hover,input[type=button]:hover{
+  background: var(--bpc-forest-800);
+}
+
+/* Callouts */
+.callout{
+  border-left:.4rem solid var(--bpc-forest-700);
+  background:#f7faf9; padding:.9rem 1rem;
+  border-radius:.5rem; margin:1rem 0;
+}
