@@ -5,10 +5,11 @@
 
   <div class="card">
     <ul>
-      {{ range .Pages.ByTitle }}
+      {{ range .Pages.ByWeight.ByTitle }}
         <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ if .Draft }} <small>(draft)</small>{{ end }}</li>
       {{ end }}
     </ul>
   </div>
 </main>
 {{ end }}
+
