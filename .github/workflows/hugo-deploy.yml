@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "pages-${{ github.workflow }}-${{ github.ref }}"
   cancel-in-progress: true
 
 jobs:
@@ -26,6 +26,10 @@ jobs:
         with:
           hugo-version: "0.134.2"
           extended: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
       - name: Cache Hugo resources
         uses: actions/cache@v4
@@ -55,7 +59,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-concurrency:
-  group: "pages-${{ github.workflow }}-${{ github.ref }}"
-  cancel-in-progress: true
