@@ -1,125 +1,31 @@
+﻿/* assets/css/site.css
+   Purpose:
+     - Provide a minimal, safe base so the CSS pipeline always emits styles.min.[hash].css
+     - You can add/keep other files (wiki.css, blog.css, tokens-*.css) alongside this.
+*/
+
 :root{
-  --bg:#ffffff;
-  --text:#132018;
-  --muted:#3a574b;
-  --brand:#0B3D2E; /* deep green */
-  --brand-2:#116149; /* accent */
-  --accent:#FFD166; /* warm honey */
-  --surface:#f6faf8;
-  --link:#0b5ed7;
+  --bp-font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --bp-text: #1a1a1a;
+  --bp-bg:   #ffffff;
+  --bp-accent:#2b7a0b;
 }
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
+html{ box-sizing:border-box; font-size:16px; }
+*,*::before,*::after{ box-sizing:inherit; }
+
 body{
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  color:var(--text);
-  background:var(--bg);
+  margin:0;
+  color:var(--bp-text);
+  background:var(--bp-bg);
+  font-family:var(--bp-font-sans);
   line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-.container{max-width:1100px;margin:0 auto;padding:0 16px}
+a{ color:var(--bp-accent); text-decoration:none; }
+a:hover{ text-decoration:underline; }
 
-.site-header{
-  position:sticky;top:0;z-index:40;
-  background:rgba(255,255,255,.9);
-  backdrop-filter:saturate(180%) blur(8px);
-  border-bottom:1px solid #e6eee9;
-}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--brand)}
-.brand span{font-weight:700;letter-spacing:.2px}
-
-/* Exact logo sizing */
-.brand img{
-  width: 40px;
-  height: 40px;
-  display: block;
-  border-radius: 8px;
-}
-
-/* Slightly smaller logo on narrow screens */
-@media (max-width: 520px){
-  .brand img{
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.menu-toggle{display:none;background:transparent;border:1px solid #e6eee9;border-radius:10px;padding:6px 10px}
-.site-nav{display:flex;gap:12px;align-items:center}
-.site-nav a{
-  text-decoration:none;color:var(--text);
-  padding:8px 10px;border-radius:10px
-}
-.site-nav a:hover{background:var(--surface)}
-.site-nav .cta{
-  background:var(--brand);color:#fff;font-weight:600;
-}
-.site-nav .cta:hover{background:var(--brand-2);color:#fff}
-
-@media (max-width: 780px){
-  .menu-toggle{display:inline-block}
-  .site-nav{display:none;flex-direction:column;position:absolute;right:16px;top:56px;background:#fff;border:1px solid #e6eee9;border-radius:12px;padding:8px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-  .site-nav.open{display:flex}
-}
-
-.hero{
-  position:relative;min-height:52vh;display:grid;place-items:center;
-  color:#fff;isolation:isolate;overflow:hidden
-}
-.hero.overlay-dark .hero-media{
-  position:absolute;inset:0;background:
-    linear-gradient(180deg,rgba(11,61,46,.55),rgba(11,61,46,.85)),
-    var(--hero-image, url('/img/pooh/pooh-hero.webp')) center/cover no-repeat;
-  z-index:-1;
-}
-.hero.overlay-light .hero-media{
-  position:absolute;inset:0;background:
-    linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,.1)),
-    var(--hero-image, url('/img/pooh/pooh-hero.webp')) center/cover no-repeat;
-  z-index:-1;
-}
-.hero.overlay-light{color:#0e241b}
-.hero.overlay-light .btn.ghost{border-color:#0e241b;color:#0e241b}
-
-.hero-content{padding:60px 0;text-align:center}
-.hero h1{
-  margin:0 0 8px 0;font-size:clamp(28px,5vw,44px);line-height:1.15
-}
-.lead{font-size:clamp(16px,2.4vw,20px);opacity:.95;margin-bottom:18px}
-.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-
-.btn{
-  display:inline-block;padding:10px 16px;border-radius:12px;
-  background:var(--accent);color:#000;text-decoration:none;font-weight:700
-}
-.btn.ghost{background:transparent;border:2px solid #fff;color:#fff}
-
-.home-panels{padding:40px 0;background:var(--surface)}
-.grid{
-  display:grid;gap:18px;
-  grid-template-columns:repeat(12,1fr)
-}
-.panel{
-  grid-column:span 12;background:#fff;border:1px solid #e6eee9;border-radius:16px;
-  padding:20px;box-shadow:0 1px 2px rgba(0,0,0,.03)
-}
-.panel h2{margin:0 0 6px 0;color:var(--brand)}
-.panel h3{margin:8px 0 8px 0}
-.text-link{color:var(--link);text-decoration:none}
-.text-link:hover{text-decoration:underline}
-
-@media (min-width: 780px){
-  .panel{grid-column:span 4}
-}
-
-.cta-band{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff}
-.cta-inner{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:26px 0;flex-wrap:wrap}
-.cta-inner h2{margin:0}
-.cta-inner p{margin:0;opacity:.95}
-
-.site-footer{border-top:1px solid #e6eee9;background:#fff;margin-top:30px}
-.site-footer .container{padding:18px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.footer-nav a{color:var(--muted);text-decoration:none;margin-right:12px}
-.footer-nav a:hover{text-decoration:underline}
+/* Simple visibility hook so you can confirm new CSS is live */
+html.bp-css-ok body{ outline: 2px dashed rgba(43,122,11,.25); outline-offset: 4px; }

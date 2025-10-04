@@ -1,0 +1,40 @@
+﻿name: Guard: No HTML Changes
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  no-html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history for PR comparisons)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine diff range
+        id: range
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "base_sha=${{ github.event.pull_request.base.sha }}" >> $GITHUB_OUTPUT
+            echo "head_sha=${{ github.event.pull_request.head.sha }}" >> $GITHUB_OUTPUT
+          else
+            echo "base_sha=$(git rev-parse HEAD^ || git rev-parse HEAD)" >> $GITHUB_OUTPUT
+            echo "head_sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+          fi
+
+      - name: List changed files
+        id: changes
+        run: |
+          git diff --name-only ${{ steps.range.outputs.base_sha }} ${{ steps.range.outputs.head_sha }} > changed_files.txt
+          echo "Changed files:"
+          cat changed_files.txt
+
+      - name: Fail if HTML files changed
+        run: |
+          if grep -E '\.html$' changed_files.txt; then
+            echo "::error::HTML files were modified in this commit/PR, which is not allowed."
+            exit 1
+          fi
+          echo "No HTML changes detected ✅"

@@ -1,4 +1,4 @@
-.DS_Store
+﻿.DS_Store
 Thumbs.db
 node_modules/
 dist/
@@ -7,21 +7,18 @@ wiki_quality_report.csv
 wiki/_backup/
 __pycache__/
 *.pyc
-__pycache__/
-*.pyc
 .seed-list.*
-
 content/topics.dryrun/
 /site/public/
 site/public_check_*
-
 # Build output
 /docs/
-
 # Hugo outputs
 site/resources/
-
-
 # Hugo cache/output
 site/resources/_gen/
-
+# --- Hugo output & caches ---
+resources/_gen/
+hugo_stats.json
+# --- OS/editor files ---
+public/
