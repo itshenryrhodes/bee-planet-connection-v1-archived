@@ -1,27 +1,19 @@
 <header class="site-header" role="banner">
-  <div class="container">
-    <a class="brand" href="{{ .Site.BaseURL }}">
-  <img class="brand-logo" src="/img/logo.svg" alt="" aria-hidden="true" width="32" height="32" decoding="async">
-  <span class="brand-text">{{ .Site.Title }}</span>
-</a>
-
-    {{ $menu := or .Site.Menus.main (slice
-      (dict "Name" "Wiki" "URL" "/wiki/")
-      (dict "Name" "SOPs & Templates" "URL" "/sops/")
-      (dict "Name" "Alerts" "URL" "/alerts/")
-      (dict "Name" "Tools" "URL" "/tools/")
-      (dict "Name" "About" "URL" "/about/")
-      (dict "Name" "Contact" "URL" "/contact/")
-      (dict "Name" "Blog" "URL" "/blog/")
-    ) }}
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.75rem;">
+    <a class="brand" href="{{ "/" | relURL }}" style="display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;">
+      <img class="brand-logo" src="/img/logo.svg" alt="Bee Planet Connection" width="32" height="32" decoding="async" />
+      <span class="brand-text" style="font-weight:600;font-family:Inter,system-ui,sans-serif;">{{ .Site.Title }}</span>
+    </a>
     <nav class="nav" role="navigation" aria-label="Primary">
-      <ul>
-        {{ range $menu }}
-          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-        {{ end }}
+      <ul style="display:flex;gap:clamp(.5rem,2vw,1rem);list-style:none;margin:0;padding:0;">
+        <li><a href="{{ "/wiki/" | relURL }}">Wiki</a></li>
+        <li><a href="{{ "/sops/" | relURL }}">SOPs &amp; Templates</a></li>
+        <li><a href="{{ "/alerts/" | relURL }}">Alerts</a></li>
+        <li><a href="{{ "/tools/" | relURL }}">Tools</a></li>
+        <li><a href="{{ "/about/" | relURL }}">About</a></li>
+        <li><a href="{{ "/contact/" | relURL }}">Contact</a></li>
+        <li><a href="{{ "/blog/" | relURL }}">Blog</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
-
