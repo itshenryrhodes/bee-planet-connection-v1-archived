@@ -2,7 +2,7 @@
 title: "Husbandry Overview"
 description: "Stub — outline for Husbandry. Replace with real content."
 date: "2025-10-04"
-draft: true
+draft: false
 tags: ["stub","wiki"]
 ---
 This is a **stub** page for **Husbandry**. 
