@@ -1,43 +1,18 @@
-<!DOCTYPE html>
-<html lang="{{ or .Site.Language.Lang "en" }}" dir="{{ or .Site.Language.LanguageDirection "ltr" }}">
-<head>`n  {{ partial "fonts.html" . }}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  {{/* Title (keep simple; SEO metas handled in head partial) */}}
-  {{ $title := cond (ne .Title "") .Title .Site.Title }}
-  <title>{{ $title }}</title>
-
-  {{ partial "head.html" . }}
-
-  {{/* Optional per-page head injections */}}
-  {{ block "head_extra" . }}{{ end }}
-{{ partial "styles.html" . }}
-</head>
-<body class="site {{ .Type }} {{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }}">
-  {{/* Optional header partial if present */}}
-  {{ if templates.Exists "partials/header.html" }}
+{{ define "base" -}}
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="site page {{ .Kind }} {{ .Type }}">
     {{ partial "header.html" . }}
-  {{ end }}
-
-  <main id="content" role="main">
-  {{ block "hero" . }}{{ partial "section-hero.html" . }}{{ end }}
-
-    {{ block "main" . }}{{ end }}
-  </main>
-
-  {{/* Optional footer partial if present */}}
-  {{ if templates.Exists "partials/footer.html" }}
+    <main id="content" role="main" class="container content prose">
+      {{ block "main" . }}{{ end }}
+    </main>
     {{ partial "footer.html" . }}
-  {{ end }}
-
-  {{/* Optional scripts block (per-page or per-list) */}}
-  {{ block "scripts" . }}{{ end }}
-</body>
+    {{ if .Site.IsServer -}}
+      <script src="/livereload.js?mindelay=10&v=2&port={{ .Site.ServerPort }}&path=livereload" defer></script>
+    {{- end }}
+  </body>
 </html>
-
-
-
-
-
-
+{{- end }}
