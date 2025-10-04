@@ -115,3 +115,4 @@ self.addEventListener('message', (event) => {
   if (event && event.data === 'SKIP_WAITING') self.skipWaiting();
 });
 
+
