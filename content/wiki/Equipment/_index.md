@@ -1,5 +1,5 @@
 ﻿---
 title: "Equipment"
-summary: "Hardware, software, tools, maintenance."
+summary: "Tools, hardware and maintenance."
 weight: 20
 ---

@@ -1,5 +1,5 @@
 ﻿---
 title: "Operations & SOPs"
-summary: "Processes, SOPs, day-to-day running."
+summary: "Standard procedures and operational guides."
 weight: 30
 ---

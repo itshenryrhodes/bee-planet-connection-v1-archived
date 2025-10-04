@@ -1,5 +1,5 @@
 ﻿---
 title: "Husbandry"
-summary: "Care, biology, nutrition, welfare."
+summary: "Care, welfare and colony management."
 weight: 10
 ---
