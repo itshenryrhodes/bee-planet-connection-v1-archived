@@ -1,4 +1,4 @@
-﻿baseURL = "/"
+﻿baseURL = "https://www.beeplanetconnection.org/"
 languageCode = "en-gb"
 title = "Bee Planet Connection"
 
@@ -6,3 +6,4 @@ title = "Bee Planet Connection"
 name  = "Wiki"
 url   = "/wiki/"
 weight = 10
+
