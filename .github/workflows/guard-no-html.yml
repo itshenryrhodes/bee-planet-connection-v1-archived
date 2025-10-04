@@ -8,26 +8,13 @@ jobs:
   no-generated-html:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout (full history for PR comparisons)
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Determine diff range
-        id: range
-        run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            echo "base_sha=${{ github.event.pull_request.base.sha }}" >> $GITHUB_OUTPUT
-            echo "head_sha=${{ github.event.pull_request.head.sha }}" >> $GITHUB_OUTPUT
-          else
-            echo "base_sha=$(git rev-parse HEAD^ || git rev-parse HEAD)" >> $GITHUB_OUTPUT
-            echo "head_sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
-          fi
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
 
       - name: List changed files
-        id: changes
         run: |
-          git diff --name-only "${{ steps.range.outputs.base_sha }}" "${{ steps.range.outputs.head_sha }}" > changed_files.txt
+          git fetch origin ${{ github.event.pull_request.base.ref }} --depth=1
+          git diff --name-only origin/${{ github.event.pull_request.base.ref }}...HEAD > changed_files.txt
           echo "Changed files:"; cat changed_files.txt
 
       - name: Fail if generated HTML under public/ or docs/ is committed
@@ -37,4 +24,3 @@ jobs:
             exit 1
           fi
           echo "No generated HTML files were committed ✅"
-

@@ -27,7 +27,7 @@ jobs:
           hugo-version: "0.134.2"
           extended: true
 
-      - name: Setup Pages
+      - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
 
