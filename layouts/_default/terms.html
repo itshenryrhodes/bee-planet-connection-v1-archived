@@ -5,10 +5,9 @@
     <ul>
       {{ range .Data.Terms.Alphabetical }}
         {{ $p := .Page }}
-        <li>
-          <a href="{{ $p.RelPermalink }}">{{ with $p }}{{ .LinkTitle }}{{ else }}{{ .Term }}{{ end }}</a>
-          ({{ .Count }})
-        </li>
+        {{ $href := (cond (ne $p nil) $p.RelPermalink (printf "/%s/%s/" .Plural (urlize .Term))) }}
+        {{ $text := (or (and $p $p.LinkTitle) (and $p $p.Title) .Term) }}
+        <li><a href="{{ $href }}">{{ $text }}</a> ({{ .Count }})</li>
       {{ end }}
     </ul>
   </div>
