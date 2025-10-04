@@ -1,4 +1,8 @@
-/* Bee Planet Connection — Minimal Theme */
+/* ========================================================================== 
+   Bee Planet Connection — Minimal Theme (no Sass, static CSS)
+   ========================================================================== */
+
+/* ---- CSS Reset (light) ---- */
 *,*::before,*::after{box-sizing:border-box}
 html,body{margin:0;padding:0}
 img,svg,video{display:block;max-width:100%;height:auto}
@@ -6,32 +10,127 @@ img,svg,video{display:block;max-width:100%;height:auto}
 :where(p,ul,ol){margin:.5rem 0 1rem}
 :where(ul,ol){padding-left:1.25rem}
 
+/* ---- Design Tokens ---- */
 :root{
   --bpc-font-ui: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   --bpc-font-head: "Source Serif 4", ui-serif, Georgia, serif;
-  --bpc-text:#0d1321; --bpc-muted:#4b5563; --bpc-bg:#fff; --bpc-surface:#f7fafc; --bpc-border:#e7ecf2;
-  --bpc-accent:#0b6; --bpc-link:#0c6dff;
-  --bpc-radius:14px; --bpc-shadow-1:0 6px 24px rgba(0,0,0,.06); --bpc-shadow-2:0 2px 8px rgba(0,0,0,.08);
+  --bpc-text:#0d1321;
+  --bpc-muted:#4b5563;
+  --bpc-bg:#ffffff;
+  --bpc-surface:#f7fafc;
+  --bpc-border:#e7ecf2;
+  --bpc-accent:#0b6;           /* Brand green */
+  --bpc-link:#0c6dff;          /* Secondary blue */
+  --bpc-radius:14px;
+  --bpc-shadow-1:0 6px 24px rgba(0,0,0,.06);
+  --bpc-shadow-2:0 2px 8px rgba(0,0,0,.08);
   --container-w:72rem;
 }
 
-body{background:var(--bpc-bg);color:var(--bpc-text);font-family:var(--bpc-font-ui);line-height:1.6;font-size:16px}
-a{color:var(--bpc-link);text-decoration:none} a:hover{text-decoration:underline}
-.container{max-width:var(--container-w);margin-inline:auto;padding-inline:clamp(1rem,3vw,1.5rem)}
+/* ---- Base Styles ---- */
+body{
+  background:var(--bpc-bg);
+  color:var(--bpc-text);
+  font-family:var(--bpc-font-ui);
+  line-height:1.6;
+  font-size:16px;
+}
+
+a{color:var(--bpc-link);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{
+  max-width:var(--container-w);
+  margin-inline:auto;
+  padding-inline:clamp(1rem,3vw,1.5rem);
+}
+
+/* ---- Typography ---- */
 .prose{font-size:1.0625rem}
-.prose h1{font-family:var(--bpc-font-head);font-size:clamp(1.9rem,3.5vw,2.4rem);line-height:1.2;margin:0 0 .75rem}
-.prose h2{font-size:clamp(1.5rem,2.5vw,1.75rem);margin:1.25rem 0 .5rem}
-.prose pre{background:#0f172a;color:#e5e7eb;padding:1rem;border-radius:12px;overflow:auto}
-.prose code{background:rgba(15,23,42,.06);padding:.15rem .35rem;border-radius:8px}
+.prose h1{
+  font-family:var(--bpc-font-head);
+  font-size:clamp(1.9rem,3.5vw,2.4rem);
+  line-height:1.2;
+  margin:0 0 .75rem;
+}
+.prose h2{
+  font-size:clamp(1.5rem,2.5vw,1.75rem);
+  margin:1.25rem 0 .5rem;
+}
+.prose pre{
+  background:#0f172a;
+  color:#e5e7eb;
+  padding:1rem;
+  border-radius:12px;
+  overflow:auto;
+}
+.prose code{
+  background:rgba(15,23,42,.06);
+  padding:.15rem .35rem;
+  border-radius:8px;
+}
 
-.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--bpc-border);box-shadow:0 2px 10px rgba(0,0,0,.03)}
-.brand-logo{filter:drop-shadow(0 2px 4px rgba(0,0,0,.08))}
-.nav ul{display:flex;gap:clamp(.5rem,2vw,1rem);list-style:none;margin:0;padding:0}
-.nav a{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .6rem;border-radius:10px;color:#111827}
-.nav a:hover{background:var(--bpc-surface)}
+/* ---- Layout Elements ---- */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:#fff;
+  border-bottom:1px solid var(--bpc-border);
+  box-shadow:0 2px 10px rgba(0,0,0,.03);
+}
 
-.site-footer{margin-top:clamp(1.5rem,3vw,2.5rem);border-top:1px solid var(--bpc-border);color:var(--bpc-muted)}
+.brand-logo{
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,.08));
+}
 
-.section-hero{display:grid;grid-template-columns:1fr minmax(280px,42%);gap:clamp(1rem,3vw,2rem);align-items:start;margin-block:clamp(1rem,3vw,2rem)}
-.section-hero .copy h1{font-family:var(--bpc-font-head)}
-.section-hero .media{justify-self:end;max-width:680px;aspect-ratio:16/10;overflow:hidden;border-radius:var(--bpc-radius);box-shadow:var(--bpc-shadow-1)}
+.nav ul{
+  display:flex;
+  gap:clamp(.5rem,2vw,1rem);
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.nav a{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.4rem .6rem;
+  border-radius:10px;
+  color:#111827;
+}
+
+.nav a:hover{
+  background:var(--bpc-surface);
+}
+
+/* ---- Footer ---- */
+.site-footer{
+  border-top:1px solid var(--bpc-border);
+  margin-top:2rem;
+  padding-block:1rem;
+  text-align:center;
+  color:var(--bpc-muted);
+  font-size:.9rem;
+}
+
+/* ---- Hero Section ---- */
+.section-hero{
+  margin-block:1rem 2rem;
+  display:grid;
+  gap:1.5rem;
+}
+.section-hero .copy{
+  z-index:2;
+}
+.section-hero .media img{
+  border-radius:var(--bpc-radius);
+  box-shadow:var(--bpc-shadow-1);
+  max-height:480px;
+  object-fit:cover;
+  width:100%;
+}
+
+/* ---- Utility ---- */
+.text-muted{color:var(--bpc-muted)}
