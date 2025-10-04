@@ -1,14 +1,18 @@
-baseURL = "https://www.beeplanetconnection.org/"
+baseURL = "https://YOUR-USERNAME.github.io/"
+languageCode = "en-us"
 title = "Bee Planet Connection"
-languageCode = "en"
+paginate = 10
 
-[outputs]
-home = ["HTML","RSS","Sitemap"]
-section = ["HTML","RSS"]
-taxonomy = ["HTML","RSS"]
-term = ["HTML","RSS"]
+# keep Hugo from touching quarantined or raw files if you add them later
+ignoreFiles = [
+  '^assets/_scss_off/.*',
+  '^raw/.*\\.csv$'
+]
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+# you can change this later; if present, it’ll be used on the home page hero
+homeHero = "/img/hero/home-md.jpg"
