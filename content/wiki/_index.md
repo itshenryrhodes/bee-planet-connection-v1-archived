@@ -1,14 +1,7 @@
 ---
-title: "Wiki"
-summary: "Bee Planet Connection knowledge base."
-# weight controls sort vs other sections (optional)
-weight: 10
+title: "Bee Planet Connection"
+description: "Practical knowledge for better bee health."
+draft: false
+hero: "/img/hero/placeholder.png"
 ---
-
-<div class="card">
-  <p>Browse by taxonomy:</p>
-  <ul>
-    <li><a href="/topics/">Topics</a></li>
-    <li><a href="/audiences/">Audiences</a></li>
-  </ul>
-</div>
+Welcome! This is the home page. Replace the placeholder hero by uploading your real image to **static/img/hero/home-md.jpg** and updating front matter if needed.
