@@ -1,5 +1,5 @@
 ﻿---
 title: "Equipment"
-summary: "Topics under Equipment."
-layout: ""
+summary: "Hardware, software, tools, maintenance."
+weight: 20
 ---

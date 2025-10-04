@@ -1,5 +1,5 @@
 ﻿---
 title: "Husbandry"
-summary: "Topics under Husbandry."
-layout: ""
+summary: "Care, biology, nutrition, welfare."
+weight: 10
 ---

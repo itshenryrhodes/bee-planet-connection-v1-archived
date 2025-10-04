@@ -1,5 +1,5 @@
 ﻿---
-title: "Operations and SOPs"
-summary: "Topics under Operations and SOPs."
-layout: ""
+title: "Operations & SOPs"
+summary: "Processes, SOPs, day-to-day running."
+weight: 30
 ---
