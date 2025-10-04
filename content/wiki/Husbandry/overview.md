@@ -9,3 +9,4 @@ This is a **stub** page for **Husbandry**.
 
 - Purpose: capture structure, not content.
 - Next: replace this text with the real article.
+
