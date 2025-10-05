@@ -1,0 +1,92 @@
+name: Pages safety checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  safety:
+    name: Validate Pages publish tree
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify /docs exists and has required markers
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -d docs ]]; then
+            echo "::error::Missing 'docs/' (GitHub Pages publish root)."
+            exit 1
+          fi
+          if [[ ! -f docs/.nojekyll ]]; then
+            echo "::error::Missing 'docs/.nojekyll' to disable Jekyll processing."
+            exit 1
+          fi
+          if [[ -f docs/CNAME && ! -s docs/CNAME ]]; then
+            echo "::error::Found 'docs/CNAME' but it is empty."
+            exit 1
+          fi
+          if [[ ! -f docs/index.html ]]; then
+            echo "::error::Missing 'docs/index.html' (site entrypoint)."
+            exit 1
+          fi
+          echo "OK: docs/ present with .nojekyll and index.html"
+
+      - name: Block localhost links in /docs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RniE 'http://(127\.0\.0\.1|localhost)' docs >/tmp/localhost_hits.txt 2>/dev/null; then
+            echo "::group::localhost references"
+            cat /tmp/localhost_hits.txt
+            echo "::endgroup::"
+            echo "::error::Found localhost/127.0.0.1 references in /docs"
+            exit 1
+          fi
+          echo "OK: no localhost references in /docs"
+
+      - name: Forbid generated HTML outside /docs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if find . -type f -name '*.html' -not -path './docs/*' -not -path './.git/*' -print -quit | grep -q .; then
+            echo "::group::HTML outside docs/"
+            find . -type f -name '*.html' -not -path './docs/*' -not -path './.git/*'
+            echo "::endgroup::"
+            echo "::error::HTML detected outside docs/. In Pages-only mode, commit HTML under docs/ only."
+            exit 1
+          fi
+          echo "OK: no stray HTML outside docs/"
+
+      - name: Guard against committed generator outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          bad=0
+          for d in public site/public dist build out _site; do
+            if [[ -d "$d" ]]; then
+              echo "::error::Found generated output directory '$d' committed. Remove from repo (Pages serves docs/ only)."
+              bad=1
+            fi
+          done
+          if [[ $bad -ne 0 ]]; then exit 1; fi
+          echo "OK: no generator output dirs committed"
+
+      - name: (Non-blocking) CSS sanity
+        shell: bash
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          if [[ -d docs/css ]]; then
+            if [[ -f docs/css/main.css ]]; then
+              echo "Found docs/css/main.css"
+            else
+              echo "::warning::docs/css/ exists but main.css not found."
+            fi
+          else
+            echo "::notice::No docs/css directory present."
+          fi
