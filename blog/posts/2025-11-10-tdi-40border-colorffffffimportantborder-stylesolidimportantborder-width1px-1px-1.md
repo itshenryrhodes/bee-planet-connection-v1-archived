@@ -1,0 +1,2 @@
+---\ntitle: ".tdi_40{border-color:#ffffff!important;border-style:solid!important;border-width:1px 1px 1px 1px!important}@media (max-width:767px){.tdi_40{display:none!importa"\ndate: "2025-11-10"\nsource: "coloss.org"\nlink: "https://coloss.org/activities/beebook/"\ntags: [europe]\n---
+\n> Read at **coloss.org** → https://coloss.org/activities/beebook/\n
