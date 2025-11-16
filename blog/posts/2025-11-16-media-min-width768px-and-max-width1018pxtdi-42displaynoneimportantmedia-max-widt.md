@@ -1,0 +1,2 @@
+---\ntitle: "@media (min-width:768px) and (max-width:1018px){.tdi_42{display:none!important}}@media (max-width:767px){.tdi_42{display:none!important}}"\ndate: "2025-11-16"\nsource: "coloss.org"\nlink: "https://coloss.org/support/"\ntags: [europe]\n---
+\n> Read at **coloss.org** → https://coloss.org/support/\n
