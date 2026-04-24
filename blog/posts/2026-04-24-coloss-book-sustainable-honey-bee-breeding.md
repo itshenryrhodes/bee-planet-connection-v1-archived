@@ -1,0 +1,2 @@
+---\ntitle: "COLOSS book: Sustainable honey bee breeding"\ndate: "2026-04-24"\nsource: "coloss.org"\nlink: "https://coloss.org/coloss-book-sustainable-honey-bee-breeding/"\ntags: [europe]\n---
+\n> Read at **coloss.org** → https://coloss.org/coloss-book-sustainable-honey-bee-breeding/\n
